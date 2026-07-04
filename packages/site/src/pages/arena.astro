@@ -76,6 +76,22 @@ const voteApi = import.meta.env.PUBLIC_VOTE_API ?? ''
       stage.style.display = 'block'
     }
 
+    // Node-based rendering (no innerHTML) — defense-in-depth even though names
+    // come from the committed roster, never from model output.
+    function span(text: string, kind?: 'win' | 'dim'): HTMLSpanElement {
+      const s = document.createElement('span')
+      if (kind === 'win') s.style.color = 'var(--yellow)'
+      if (kind === 'dim') s.className = 'dim'
+      s.textContent = text
+      return s
+    }
+
+    function renderResult(...lines: HTMLSpanElement[][]) {
+      result.replaceChildren(
+        ...lines.flatMap((nodes, i) => (i ? [document.createElement('br'), ...nodes] : nodes)),
+      )
+    }
+
     async function vote(winner: 'a' | 'b') {
       if (!current) return
       btnA.disabled = btnB.disabled = true
@@ -89,9 +105,15 @@ const voteApi = import.meta.env.PUBLIC_VOTE_API ?? ''
         })
         if (!res.ok) throw new Error(String(res.status))
         const data = (await res.json()) as { winner: { model: string; rating: number }; loser: { model: string; rating: number } }
-        result.innerHTML = `<span style="color: var(--yellow)">WINNER: ${w.name}</span> — new rating ${data.winner.rating}<br /><span class="dim">${l.name} falls to ${data.loser.rating}</span>`
+        renderResult(
+          [span(`WINNER: ${w.name}`, 'win'), span(` — new rating ${data.winner.rating}`)],
+          [span(`${l.name} falls to ${data.loser.rating}`, 'dim')],
+        )
       } catch {
-        result.innerHTML = `<span style="color: var(--yellow)">WINNER: ${w.name}</span><br /><span class="dim">(vote not recorded — the machine blinked. it happens.)</span>`
+        renderResult(
+          [span(`WINNER: ${w.name}`, 'win')],
+          [span('(vote not recorded — the machine blinked. it happens.)', 'dim')],
+        )
       }
       result.style.display = 'block'
       next.style.display = 'inline-block'

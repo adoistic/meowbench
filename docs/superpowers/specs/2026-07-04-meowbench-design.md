@@ -133,4 +133,6 @@ Cloudflare Worker + D1:
 - Local-weights inference (Ollama/HF) for dead models — noted as a v2 "archaeology tier"
 - Turnstile/CAPTCHA on voting
 - Historical trend charts across runs (needs ≥2 runs first)
+- Rank-movement arrows on the leaderboard (needs ≥2 comparable runs; site ships "NEW"-state rows until then)
+- Gallery model-name and validity filters (v1 ships prompt jump-links only, keeping the gallery fully JS-free; model filtering is available via the per-model pages)
 - Non-cat subjects (no. it's cats.)
