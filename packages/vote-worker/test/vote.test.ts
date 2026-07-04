@@ -88,6 +88,16 @@ test('11th vote in a minute from one IP → 429', async () => {
   expect(other.status).toBe(200)
 })
 
+test('oversized body → 413 (before parsing)', async () => {
+  const res = await SELF.fetch('https://vote.test/api/vote', {
+    method: 'POST',
+    headers: { 'content-type': 'application/json', 'CF-Connecting-IP': '9.9.9.9' },
+    body: JSON.stringify({ winnerId: 'x'.repeat(3000), loserId: 'y', promptId: 'action' }),
+  })
+  expect(res.status).toBe(413)
+  expect((await res.json<{ error: string }>()).error).toBe('body-too-large')
+})
+
 test('CORS preflight returns 204 with allow headers', async () => {
   const res = await SELF.fetch('https://vote.test/api/vote', { method: 'OPTIONS' })
   expect(res.status).toBe(204)

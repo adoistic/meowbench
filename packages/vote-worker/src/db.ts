@@ -1,3 +1,5 @@
+import { START_RATING } from './elo.js'
+
 export interface Entrant {
   sample_id: string
   model_slug: string
@@ -31,20 +33,24 @@ export interface RecordVoteInput {
   loserSample: string
   winnerModel: string
   loserModel: string
-  winnerRating: number // already-computed new rating
-  loserRating: number
+  winnerDelta: number // rating change to apply (winner's gain, typically > 0)
+  loserDelta: number // rating change to apply (loser's loss, typically < 0)
 }
 
-/** Atomically upsert both models' standings and append the vote row. */
+/** Atomically upsert both models' standings and append the vote row.
+ * Ratings are stored as a compounded DELTA (`rating = rating + ?`) so SQLite
+ * performs the read-modify-write atomically — this prevents the lost-update
+ * race two concurrent votes on the same model would otherwise cause. A
+ * brand-new model's INSERT branch seeds START_RATING + delta. */
 export async function recordVote(db: D1Database, v: RecordVoteInput): Promise<void> {
   const upsertWinner = db.prepare(
     `INSERT INTO standings (model_slug, rating, games, wins, losses) VALUES (?, ?, 1, 1, 0)
-     ON CONFLICT(model_slug) DO UPDATE SET rating = ?, games = games + 1, wins = wins + 1`,
-  ).bind(v.winnerModel, v.winnerRating, v.winnerRating)
+     ON CONFLICT(model_slug) DO UPDATE SET rating = rating + ?, games = games + 1, wins = wins + 1`,
+  ).bind(v.winnerModel, START_RATING + v.winnerDelta, v.winnerDelta)
   const upsertLoser = db.prepare(
     `INSERT INTO standings (model_slug, rating, games, wins, losses) VALUES (?, ?, 1, 0, 1)
-     ON CONFLICT(model_slug) DO UPDATE SET rating = ?, games = games + 1, losses = losses + 1`,
-  ).bind(v.loserModel, v.loserRating, v.loserRating)
+     ON CONFLICT(model_slug) DO UPDATE SET rating = rating + ?, games = games + 1, losses = losses + 1`,
+  ).bind(v.loserModel, START_RATING + v.loserDelta, v.loserDelta)
   const insertVote = db.prepare(
     `INSERT INTO votes (ts, ip_hash, prompt_id, winner_sample, loser_sample, winner_model, loser_model)
      VALUES (?, ?, ?, ?, ?, ?, ?)`,

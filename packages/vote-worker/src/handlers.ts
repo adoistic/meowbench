@@ -17,6 +17,9 @@ interface VoteBody {
 
 /** POST /api/vote — validate, rate-limit, update Elo, record. */
 export async function handleVote(req: Request, env: Env, now: number): Promise<Response> {
+  if (Number(req.headers.get('content-length') ?? '0') > 2048) {
+    return json({ error: 'body-too-large' }, 413)
+  }
   let body: VoteBody
   try {
     body = (await req.json()) as VoteBody
@@ -54,7 +57,7 @@ export async function handleVote(req: Request, env: Env, now: number): Promise<R
     now, ipHash, promptId,
     winnerSample: winnerId, loserSample: loserId,
     winnerModel: winner.model_slug, loserModel: loser.model_slug,
-    winnerRating: updated.winner, loserRating: updated.loser,
+    winnerDelta: updated.delta, loserDelta: -updated.delta,
   })
 
   return json({

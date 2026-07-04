@@ -23,6 +23,13 @@ test('updateRatings: equal ratings, winner gains K/2, loser loses K/2', () => {
   expect(winner + loser).toBeCloseTo(3000, 6)
 })
 
+test('updateRatings: exposes the delta (winner gain == loser loss)', () => {
+  const r = updateRatings(1500, 1500)
+  expect(r.delta).toBeCloseTo(16, 6)
+  expect(r.delta).toBeCloseTo(r.winner - 1500, 6)
+  expect(r.delta).toBeCloseTo(1500 - r.loser, 6)
+})
+
 test('updateRatings: a heavy favorite winning gains little', () => {
   const { winner, loser } = updateRatings(1900, 1500)
   expect(winner - 1900).toBeLessThan(4) // favorite barely moves

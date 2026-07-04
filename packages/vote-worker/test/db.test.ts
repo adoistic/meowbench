@@ -26,7 +26,7 @@ test('recordVote updates both models and inserts a vote row', async () => {
     now, ipHash: 'h', promptId: 'action',
     winnerSample: 'mA|action|1', loserSample: 'mB|action|1',
     winnerModel: 'mA', loserModel: 'mB',
-    winnerRating: 1516, loserRating: 1484,
+    winnerDelta: 16, loserDelta: -16,
   })
   expect(await getRating(env.DB, 'mA')).toBeCloseTo(1516, 6)
   expect(await getRating(env.DB, 'mB')).toBeCloseTo(1484, 6)
@@ -47,7 +47,7 @@ test('recordVote from a pre-seeded 1500/0/0/0 row hits DO UPDATE correctly', asy
   await recordVote(env.DB, {
     now: 7_000_000_000_000, ipHash: 'h3', promptId: 'action',
     winnerSample: 'mA|action|1', loserSample: 'mB|action|1',
-    winnerModel: 'mA', loserModel: 'mB', winnerRating: 1516, loserRating: 1484,
+    winnerModel: 'mA', loserModel: 'mB', winnerDelta: 16, loserDelta: -16,
   })
   const standings = await listStandings(env.DB)
   const mA = standings.find((s) => s.model_slug === 'mA')!
@@ -76,10 +76,27 @@ test('listStandings is sorted by rating desc', async () => {
   await recordVote(env.DB, {
     now: 6_000_000_000_000, ipHash: 'h2', promptId: 'action',
     winnerSample: 'mA|action|1', loserSample: 'mB|action|1',
-    winnerModel: 'mA', loserModel: 'mB', winnerRating: 1520, loserRating: 1480,
+    winnerModel: 'mA', loserModel: 'mB', winnerDelta: 20, loserDelta: -20,
   })
   const standings = await listStandings(env.DB)
   for (let i = 1; i < standings.length; i++) {
     expect(standings[i - 1].rating).toBeGreaterThanOrEqual(standings[i].rating)
   }
+})
+
+test('recordVote compounds rating across sequential votes for the same model (no lost update)', async () => {
+  await seed()
+  await env.DB.batch([
+    env.DB.prepare("INSERT OR IGNORE INTO standings (model_slug) VALUES ('mA')"),
+    env.DB.prepare("INSERT OR IGNORE INTO standings (model_slug) VALUES ('mB')"),
+  ])
+  const vote = (delta: number, ts: number) => recordVote(env.DB, {
+    now: ts, ipHash: 'h', promptId: 'action',
+    winnerSample: 'mA|action|1', loserSample: 'mB|action|1',
+    winnerModel: 'mA', loserModel: 'mB', winnerDelta: delta, loserDelta: -delta,
+  })
+  await vote(16, 1)
+  await vote(15, 2)
+  expect(await getRating(env.DB, 'mA')).toBeCloseTo(1531, 6) // 1500+16+15, compounded not overwritten
+  expect(await getRating(env.DB, 'mB')).toBeCloseTo(1469, 6)
 })
