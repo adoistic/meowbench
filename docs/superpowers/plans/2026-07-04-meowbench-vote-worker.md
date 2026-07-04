@@ -993,21 +993,33 @@ import { seedSql } from '../scripts/seed.js'
 const SCORES = [
   { modelSlug: 'openai/gpt-4o', promptId: 'action', sample: 1, valid: true },
   { modelSlug: 'openai/gpt-4o', promptId: 'action', sample: 2, valid: false }, // invalid — skipped
+  { modelSlug: 'openai/gpt-4o', promptId: 'minimal', sample: 1, valid: true },  // same model, 2nd entrant
   { modelSlug: 'qwen/qwen-2.5-72b-instruct', promptId: 'minimal', sample: 1, valid: true },
 ]
 
-test('seedSql emits one INSERT per valid sample and escapes quotes', () => {
+test('seedSql emits one entrants INSERT per valid sample and escapes quotes', () => {
   const sql = seedSql(SCORES)
   expect(sql).toContain("INSERT OR IGNORE INTO entrants (sample_id, model_slug, prompt_id) VALUES ('openai/gpt-4o|action|1', 'openai/gpt-4o', 'action');")
   expect(sql).toContain("'qwen/qwen-2.5-72b-instruct|minimal|1'")
   expect(sql).not.toContain('action|2') // invalid sample excluded
-  const lines = sql.trim().split('\n').filter((l) => l.startsWith('INSERT'))
-  expect(lines).toHaveLength(2)
+  const entrantLines = sql.trim().split('\n').filter((l) => l.includes('INTO entrants'))
+  expect(entrantLines).toHaveLength(3) // 3 valid samples
+})
+
+test('seedSql seeds one standings row per distinct model (rating defaults to 1500)', () => {
+  const sql = seedSql(SCORES)
+  // every model that has an entrant gets a standings row so it appears on the
+  // leaderboard's Crowd Score column immediately, before anyone votes on it.
+  expect(sql).toContain("INSERT OR IGNORE INTO standings (model_slug) VALUES ('openai/gpt-4o');")
+  expect(sql).toContain("INSERT OR IGNORE INTO standings (model_slug) VALUES ('qwen/qwen-2.5-72b-instruct');")
+  const standingLines = sql.trim().split('\n').filter((l) => l.includes('INTO standings'))
+  expect(standingLines).toHaveLength(2) // 2 distinct models, deduped (gpt-4o appears once despite 2 entrants)
 })
 
 test('seedSql escapes single quotes in ids', () => {
   const sql = seedSql([{ modelSlug: "o'hare/m", promptId: 'p', sample: 1, valid: true }])
   expect(sql).toContain("o''hare/m|p|1")
+  expect(sql).toContain("INSERT OR IGNORE INTO standings (model_slug) VALUES ('o''hare/m');")
 })
 ```
 
@@ -1032,15 +1044,23 @@ function esc(s: string): string {
   return s.replaceAll("'", "''")
 }
 
-/** Emit idempotent INSERTs seeding the entrants manifest from valid scored samples. */
+/**
+ * Emit idempotent INSERTs seeding both the entrants manifest and one standings
+ * row per distinct model, from valid scored samples. The standings rows (rating
+ * defaults to 1500 per the schema) ensure every model shows on the leaderboard's
+ * Crowd Score column immediately, before it has received any votes.
+ */
 export function seedSql(scores: ScoreRow[]): string {
-  const lines = scores
-    .filter((s) => s.valid)
-    .map((s) => {
-      const id = `${s.modelSlug}|${s.promptId}|${s.sample}`
-      return `INSERT OR IGNORE INTO entrants (sample_id, model_slug, prompt_id) VALUES ('${esc(id)}', '${esc(s.modelSlug)}', '${esc(s.promptId)}');`
-    })
-  return lines.join('\n') + '\n'
+  const valid = scores.filter((s) => s.valid)
+  const entrantLines = valid.map((s) => {
+    const id = `${s.modelSlug}|${s.promptId}|${s.sample}`
+    return `INSERT OR IGNORE INTO entrants (sample_id, model_slug, prompt_id) VALUES ('${esc(id)}', '${esc(s.modelSlug)}', '${esc(s.promptId)}');`
+  })
+  const models = [...new Set(valid.map((s) => s.modelSlug))]
+  const standingLines = models.map(
+    (m) => `INSERT OR IGNORE INTO standings (model_slug) VALUES ('${esc(m)}');`,
+  )
+  return [...entrantLines, ...standingLines].join('\n') + '\n'
 }
 
 // CLI: node/tsx scripts/seed.ts <path-to-scores.json>  > seed.sql
