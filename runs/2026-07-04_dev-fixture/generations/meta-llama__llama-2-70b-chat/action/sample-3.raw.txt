@@ -1,0 +1,4 @@
+Here is your cat!
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><circle cx="65" cy="172" r="18" fill="none" stroke="#4dc9ff" stroke-width="4"/><circle cx="145" cy="172" r="18" fill="none" stroke="#4dc9ff" stroke-width="4"/><path d="M65 172 L100 140 L145 172 M100 140 L118 172" stroke="#4dc9ff" stroke-width="4" fill="none"/><rect x="70" y="80" width="70" height="70" fill="#a09585"/><rect x="72" y="58" width="14" height="24" fill="#a09585"/><rect x="124" y="58" width="14" height="24" fill="#a09585"/><rect x="88" y="102" width="8" height="8" fill="#fff"/><rect x="114" y="102" width="8" height="8" fill="#fff"/></svg>
+```

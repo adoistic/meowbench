@@ -1,0 +1,9 @@
+{
+  "modelSlug": "anthropic/claude-3-haiku",
+  "promptId": "minimal",
+  "sample": 1,
+  "status": "ok",
+  "temperature": 1,
+  "rawPath": "generations/anthropic__claude-3-haiku/minimal/sample-1.raw.txt",
+  "svgPath": "generations/anthropic__claude-3-haiku/minimal/sample-1.svg"
+}

@@ -1,0 +1,4 @@
+Here is your cat!
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><ellipse cx="105" cy="124" rx="46" ry="40" fill="#8a55cc" opacity="0.85"/><ellipse cx="105" cy="98" rx="34" ry="30" fill="#8a55cc"/><path d="M70 70 L80 40 L94 66 Z" fill="#8a55cc"/><path d="M112 66 L126 40 L136 70 Z" fill="#8a55cc"/><circle cx="86" cy="106" r="6" fill="#241040"/><circle cx="124" cy="106" r="6" fill="#241040"/><path d="M96 124 Q105 132 114 124" stroke="#241040" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M150 150 Q175 130 168 105" stroke="#8a55cc" stroke-width="9" fill="none" stroke-linecap="round"><animateTransform attributeName="transform" type="rotate" values="-8 150 150;8 150 150;-8 150 150" dur="1.6s" repeatCount="indefinite"/></path></svg>
+```

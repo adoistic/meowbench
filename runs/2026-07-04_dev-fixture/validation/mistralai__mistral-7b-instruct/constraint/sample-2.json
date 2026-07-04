@@ -1,0 +1,12 @@
+{
+  "valid": false,
+  "reasons": [
+    "raster-image"
+  ],
+  "stats": {
+    "bytes": 96,
+    "elements": 2,
+    "paths": 0,
+    "colors": []
+  }
+}

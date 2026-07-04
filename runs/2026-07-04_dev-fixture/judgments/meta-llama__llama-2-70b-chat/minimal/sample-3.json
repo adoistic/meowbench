@@ -1,0 +1,11 @@
+[
+  {
+    "judgeSlug": "fixture/judge",
+    "scores": {
+      "cat_likeness": 3.8,
+      "aesthetic": 4.2,
+      "technique": 5.1,
+      "prompt_fidelity": 4.7
+    }
+  }
+]

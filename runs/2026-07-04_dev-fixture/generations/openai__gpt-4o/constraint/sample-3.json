@@ -1,0 +1,9 @@
+{
+  "modelSlug": "openai/gpt-4o",
+  "promptId": "constraint",
+  "sample": 3,
+  "status": "ok",
+  "temperature": 1,
+  "rawPath": "generations/openai__gpt-4o/constraint/sample-3.raw.txt",
+  "svgPath": "generations/openai__gpt-4o/constraint/sample-3.svg"
+}
