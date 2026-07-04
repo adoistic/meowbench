@@ -24,3 +24,13 @@ test('returns null when no svg present', () => {
   expect(extractSvg('I cannot draw cats, sorry.')).toBeNull()
   expect(extractSvg('</svg> before <svg')).toBeNull()
 })
+
+test('extracts self-closing svg root', () => {
+  expect(extractSvg('here: <svg viewBox="0 0 10 10"/> done')).toBe('<svg viewBox="0 0 10 10"/>')
+  expect(extractSvg('<svg/>')).toBe('<svg/>')
+})
+
+test('prefers paired close tag over self-closing fallback', () => {
+  const doc = '<svg viewBox="0 0 5 5"><rect/></svg>'
+  expect(extractSvg('x ' + doc + ' y')).toBe(doc)
+})
