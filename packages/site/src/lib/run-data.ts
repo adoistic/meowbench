@@ -35,6 +35,8 @@ export interface RunData {
 
 function pickRunId(): string {
   if (process.env.MEOWBENCH_RUN) return process.env.MEOWBENCH_RUN
+  // Invariant: run directory names must sort lexically in chronological order (YYYY-MM-DD prefix);
+  // a same-date name sorting before the fixture would silently lose.
   const dirs = readdirSync(RUNS, { withFileTypes: true })
     .filter((d) => d.isDirectory() && existsSync(join(RUNS, d.name, 'leaderboard.json')))
     .map((d) => d.name)
