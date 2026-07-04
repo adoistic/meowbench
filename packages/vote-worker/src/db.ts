@@ -54,7 +54,7 @@ export async function recordVote(db: D1Database, v: RecordVoteInput): Promise<vo
 
 export async function listStandings(db: D1Database): Promise<Standing[]> {
   const { results } = await db.prepare(
-    'SELECT model_slug, rating, games, wins, losses FROM standings ORDER BY rating DESC',
+    'SELECT model_slug, rating, games, wins, losses FROM standings ORDER BY rating DESC, model_slug ASC',
   ).all<Standing>()
   return results
 }
