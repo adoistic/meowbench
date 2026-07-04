@@ -2,6 +2,7 @@
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "meowbench-vote",
   "main": "src/index.ts",
+  // Local test runs may warn and fall back to an older compat date until @cloudflare/vitest-pool-workers bundles a newer workerd — expected, does not affect production.
   "compatibility_date": "2026-06-01",
   "d1_databases": [
     {
