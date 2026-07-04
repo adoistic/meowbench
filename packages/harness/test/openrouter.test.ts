@@ -35,3 +35,42 @@ test('does not retry 4xx client errors', async () => {
   await expect(client.chat({ model: 'x/y', messages: [] })).rejects.toThrow('openrouter 400')
   expect(fetchImpl).toHaveBeenCalledTimes(1)
 })
+
+test('retries transport rejections then succeeds', async () => {
+  const fetchImpl = vi
+    .fn()
+    .mockRejectedValueOnce(new Error('ECONNRESET'))
+    .mockRejectedValueOnce(new Error('ETIMEDOUT'))
+    .mockResolvedValueOnce(
+      new Response(JSON.stringify({ choices: [{ message: { content: 'ok' } }] }), { status: 200 }),
+    )
+  const client = new OpenRouterClient('key', fetchImpl as unknown as typeof fetch, { retryDelayMs: 1 })
+  expect(await client.chat({ model: 'x/y', messages: [] })).toBe('ok')
+  expect(fetchImpl).toHaveBeenCalledTimes(3)
+})
+
+test('gives up after exhausting transport retries', async () => {
+  const fetchImpl = vi.fn().mockRejectedValue(new Error('ECONNRESET'))
+  const client = new OpenRouterClient('key', fetchImpl as unknown as typeof fetch, { retryDelayMs: 1 })
+  await expect(client.chat({ model: 'x/y', messages: [] })).rejects.toThrow('ECONNRESET')
+  expect(fetchImpl).toHaveBeenCalledTimes(3) // 1 + MAX_RETRIES
+})
+
+test('throws on 200 body carrying an error object', async () => {
+  const fetchImpl = vi.fn(async () => new Response(JSON.stringify({ error: { message: 'upstream sad' } }), { status: 200 }))
+  const client = new OpenRouterClient('key', fetchImpl as unknown as typeof fetch, { retryDelayMs: 1 })
+  await expect(client.chat({ model: 'x/y', messages: [] })).rejects.toThrow('openrouter error')
+  expect(fetchImpl).toHaveBeenCalledTimes(1)
+})
+
+test('retries malformed 200 bodies', async () => {
+  const fetchImpl = vi
+    .fn()
+    .mockResolvedValueOnce(new Response('not json{', { status: 200 }))
+    .mockResolvedValueOnce(
+      new Response(JSON.stringify({ choices: [{ message: { content: 'ok' } }] }), { status: 200 }),
+    )
+  const client = new OpenRouterClient('key', fetchImpl as unknown as typeof fetch, { retryDelayMs: 1 })
+  expect(await client.chat({ model: 'x/y', messages: [] })).toBe('ok')
+  expect(fetchImpl).toHaveBeenCalledTimes(2)
+})
