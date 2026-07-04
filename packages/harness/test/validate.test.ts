@@ -40,3 +40,25 @@ test('rejects oversized documents', () => {
   const fat = `<svg>${'<rect/>'.repeat(80_000)}</svg>`
   expect(validateSvg(fat).reasons).toContain('too-large')
 })
+
+test('never throws on degenerate input, returns parse-error', () => {
+  const deep = '<svg>' + '<g>'.repeat(60_000) + '</g>'.repeat(60_000) + '</svg>'
+  const r = validateSvg(deep)
+  expect(r.valid).toBe(false)
+  expect(r.reasons.length).toBeGreaterThan(0) // parse-error or too-large, must not throw
+})
+
+test('rejects doctype declarations (entity smuggling)', () => {
+  const sneaky = '<!DOCTYPE svg [<!ENTITY p "https:"><!ENTITY u "&p;//evil.example/x.svg#a">]><svg><use href="&u;"/></svg>'
+  expect(validateSvg(sneaky).reasons).toContain('doctype')
+})
+
+test('rejects css url() refs in style attrs and style elements', () => {
+  expect(validateSvg('<svg><rect style="fill:url(https://evil.com/x.png)"/></svg>').reasons).toContain('css-url')
+  expect(validateSvg('<svg><style>@import url(https://evil.com/a.css);</style></svg>').reasons).toContain('css-url')
+})
+
+test('case tricks are caught (regression)', () => {
+  expect(validateSvg('<svg><SCRIPT>alert(1)</SCRIPT></svg>').reasons).toContain('forbidden-tag:script')
+  expect(validateSvg('<svg><ForeignObject/></svg>').reasons).toContain('forbidden-tag:foreignobject')
+})

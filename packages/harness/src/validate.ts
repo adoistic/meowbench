@@ -1,8 +1,21 @@
 import { XMLParser, XMLValidator } from 'fast-xml-parser'
 import type { ValidationResult } from './types.js'
 
+/**
+ * Deliberate v1 limitations (downstream is resvg rasterization only,
+ * never a browser):
+ * - Colors and refs inside CSS class rules are not fully parsed; any
+ *   url(...) in style attrs or <style> blocks is rejected wholesale
+ *   instead of being resolved.
+ * - SMIL animation tags (<animate> etc.) are allowed since resvg never
+ *   executes them.
+ * - javascript: hrefs are unchecked because nothing downstream executes
+ *   scripts or follows link navigation.
+ */
+
 const MAX_BYTES = 500_000
 const FORBIDDEN_TAGS = new Set(['script', 'foreignobject'])
+const CSS_URL = /url\s*\(/i
 
 interface Node {
   tag: string
@@ -34,17 +47,33 @@ function* walk(nodes: Node[]): Generator<Node> {
 export function validateSvg(svg: string): ValidationResult {
   const bytes = Buffer.byteLength(svg, 'utf8')
   if (bytes > MAX_BYTES) return { valid: false, reasons: ['too-large'], stats: null }
+  // DTDs allow entity indirection that can smuggle external refs past
+  // attribute checks; legit cat SVGs never need a DOCTYPE.
+  if (/<!doctype/i.test(svg)) return { valid: false, reasons: ['doctype'], stats: null }
   if (XMLValidator.validate(svg) !== true) return { valid: false, reasons: ['not-xml'], stats: null }
 
-  const parser = new XMLParser({ ignoreAttributes: false, preserveOrder: true, attributeNamePrefix: '@_' })
-  const roots = toNodes(parser.parse(svg) as Record<string, unknown>[])
-  const root = roots.find((n) => !n.tag.startsWith('?') && !n.tag.startsWith('!'))
+  let root: Node | undefined
+  try {
+    const parser = new XMLParser({ ignoreAttributes: false, preserveOrder: true, attributeNamePrefix: '@_' })
+    const roots = toNodes(parser.parse(svg) as Record<string, unknown>[])
+    root = roots.find((n) => !n.tag.startsWith('?') && !n.tag.startsWith('!'))
+  } catch {
+    // e.g. fast-xml-parser "Maximum nested tags exceeded" on degenerate
+    // input; the validator must never throw on arbitrary model output.
+    return { valid: false, reasons: ['parse-error'], stats: null }
+  }
   if (!root || root.tag !== 'svg') return { valid: false, reasons: ['root-not-svg'], stats: null }
 
   const reasons = new Set<string>()
   const colors = new Set<string>()
   let elements = 0
   let paths = 0
+
+  // <style> blocks are checked on the raw string since the parser folds
+  // their text content away from the attribute view we walk below.
+  for (const block of svg.match(/<style[\s\S]*?<\/style>/gi) ?? []) {
+    if (CSS_URL.test(block)) reasons.add('css-url')
+  }
 
   for (const node of walk([root])) {
     elements++
@@ -56,6 +85,8 @@ export function validateSvg(svg: string): ValidationResult {
     for (const key of Object.keys(node.attrs)) {
       if (key.startsWith('on')) reasons.add('script-attr')
     }
+    const style = node.attrs['style']
+    if (style && CSS_URL.test(style)) reasons.add('css-url')
     for (const key of ['fill', 'stroke'] as const) {
       const v = node.attrs[key]?.toLowerCase()
       if (v && v !== 'none') colors.add(v)
