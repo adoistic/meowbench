@@ -18,12 +18,13 @@ export interface RunAllOpts {
   samples: number
   judgeSlugs: string[]
   dryRun: boolean
+  concurrency?: number
   apiKey?: string
   log?: (line: string) => void
 }
 
 export async function runAll(opts: RunAllOpts): Promise<void> {
-  const { runDir, samples, judgeSlugs, log = console.log } = opts
+  const { runDir, samples, judgeSlugs, concurrency = 1, log = console.log } = opts
   const models = loadModels(opts.modelsPath)
   const suite = loadSuite(opts.promptsPath)
 
@@ -36,11 +37,11 @@ export async function runAll(opts: RunAllOpts): Promise<void> {
     client = new OpenRouterClient(key)
   }
 
-  const records = await runGenerate({ runDir, models, suite, samples, client, log })
+  const records = await runGenerate({ runDir, models, suite, samples, client, concurrency, log })
   const validations = runValidate(runDir, records)
   const rendered = runRender(runDir, records, validations)
   log(`rendered ${rendered} pngs`)
-  const judged = await runJudge({ runDir, records, validations, suite, judgeSlugs, client, log })
+  const judged = await runJudge({ runDir, records, validations, suite, judgeSlugs, client, concurrency, log })
   log(`judged ${judged} samples`)
   const { leaderboard } = compileRun({ runDir, records, validations, suite, models, runId: basename(runDir) })
   log(`leaderboard: ${leaderboard.entries.map((e) => `${e.name}=${e.meowscore}`).join('  ')}`)
@@ -66,6 +67,7 @@ program
   .option('--models <path>', 'models.json', join(REPO_ROOT, 'models.json'))
   .option('--prompts <path>', 'prompts json', join(REPO_ROOT, 'prompts/prompts.json'))
   .option('--samples <n>', 'samples per model x prompt', '4')
+  .option('--concurrency <n>', 'max in-flight generations', '1')
   .option('--judges <slugs>', 'comma-separated judge slugs', '')
   .option('--dry-run', 'offline canned client', false)
   .option('--estimate', 'print projected calls/cost and exit', false)
@@ -75,6 +77,7 @@ program
     const suite = loadSuite(String(o.prompts))
     const judgeSlugs = String(o.judges).split(',').filter(Boolean)
     const samples = parseSamples(String(o.samples))
+    const concurrency = parseSamples(String(o.concurrency)) // same positive-int guard
     if (o.estimate) {
       const est = estimateRun({
         modelCount: models.length, promptCount: suite.prompts.length,
@@ -93,7 +96,7 @@ program
     }
     await runAll({
       runDir: String(o.runDir), modelsPath: String(o.models), promptsPath: String(o.prompts),
-      samples, judgeSlugs: judgeSlugs.length ? judgeSlugs : ['judge/a', 'judge/b', 'judge/c'],
+      samples, concurrency, judgeSlugs: judgeSlugs.length ? judgeSlugs : ['judge/a', 'judge/b', 'judge/c'],
       dryRun: Boolean(o.dryRun),
     })
   })

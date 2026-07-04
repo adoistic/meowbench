@@ -49,7 +49,7 @@ export class OpenRouterClient implements ChatClient {
             temperature: req.temperature,
             max_tokens: req.maxTokens,
           }),
-          signal: AbortSignal.timeout(this.opts.timeoutMs ?? 120_000),
+          signal: AbortSignal.timeout(this.opts.timeoutMs ?? 240_000),
         })
       } catch (err) {
         // transport failure (DNS, ECONNRESET, timeout abort) — retryable
