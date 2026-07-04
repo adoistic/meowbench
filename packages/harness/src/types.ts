@@ -68,7 +68,7 @@ export interface LeaderboardEntry {
   origin: string
   license: ModelSpec['license']
   meowscore: number // 0-100
-  perPrompt: Record<string, { median: number; best: number }>
+  perPrompt: Record<string, { median: number; best: number; samples: number }>
   refusalRate: number // 0-1 over all samples
   avgElements: number | null
 }

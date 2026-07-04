@@ -46,9 +46,10 @@ export function compileRun(opts: CompileOpts): { leaderboard: Leaderboard; sampl
     for (const p of suite.prompts) {
       const scores = mine.filter((s) => s.promptId === p.id).map((s) => s.score)
       perPrompt[p.id] = scores.length
-        ? { median: round1(median(scores)), best: round1(Math.max(...scores)) }
-        : { median: 0, best: 0 }
+        ? { median: round1(median(scores)), best: round1(Math.max(...scores)), samples: scores.length }
+        : { median: 0, best: 0, samples: 0 }
     }
+    // Validation stats are non-null for flagged-but-parseable SVGs by design (display stat, not a scoring gate), so avgElements includes them.
     const elementCounts = myRecords
       .map((r) => validations[sampleKey(r)]?.stats?.elements)
       .filter((n): n is number => typeof n === 'number')

@@ -39,6 +39,6 @@ test('compileRun produces a sorted leaderboard with refusals scored zero', async
   expect(leaderboard.entries[0].meowscore).toBe(70)
   expect(leaderboard.entries[1].meowscore).toBe(0) // refuser
   expect(leaderboard.entries[1].refusalRate).toBe(1)
-  expect(leaderboard.entries[0].perPrompt['minimal']).toEqual({ median: 7, best: 7 })
+  expect(leaderboard.entries[0].perPrompt['minimal']).toEqual({ median: 7, best: 7, samples: 2 })
   expect(sampleScores.filter((s) => s.modelSlug === 'acme/refuser-1').every((s) => s.score === 0)).toBe(true)
 })
