@@ -46,3 +46,26 @@ test('resumes: existing records are not regenerated', async () => {
   await runGenerate({ runDir, models: MODELS, suite: SUITE, samples: 2, client: counting })
   expect(calls).toBe(4) // no new calls on resume
 })
+
+test('resumes: error records ARE retried, terminal records are not', async () => {
+  const runDir = mkdtempSync(join(tmpdir(), 'meow-'))
+  let calls = 0
+  const flaky = {
+    chat: async (req: ChatRequest) => {
+      calls++
+      if (calls <= 4) throw new Error('ECONNRESET') // first full pass: all 4 samples error
+      return new CannedClient().chat(req)
+    },
+  }
+  const first = await runGenerate({ runDir, models: MODELS, suite: SUITE, samples: 2, client: flaky })
+  expect(first.every((r) => r.status === 'error')).toBe(true)
+  expect(calls).toBe(4)
+
+  const second = await runGenerate({ runDir, models: MODELS, suite: SUITE, samples: 2, client: flaky })
+  expect(calls).toBe(8) // all 4 error records retried
+  expect(second.filter((r) => r.status === 'ok')).toHaveLength(2)
+  expect(second.filter((r) => r.status === 'refusal')).toHaveLength(2)
+
+  await runGenerate({ runDir, models: MODELS, suite: SUITE, samples: 2, client: flaky })
+  expect(calls).toBe(8) // now all terminal — no retries
+})

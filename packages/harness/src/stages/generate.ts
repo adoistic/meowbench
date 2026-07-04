@@ -6,6 +6,7 @@ import { ensureDirFor, samplePaths } from '../run-store.js'
 import type { GenerationRecord, ModelSpec, PromptSuite, SampleStatus } from '../types.js'
 
 const TEMPERATURE = 1.0
+// English-only heuristic: non-English refusals fall through to 'no-svg' (same score, different diagnostic bucket — v1 limitation).
 const REFUSAL_RE = /\b(cannot|can't|unable|won't|sorry)\b/i
 
 export interface GenerateOpts {
@@ -28,8 +29,12 @@ export async function runGenerate(opts: GenerateOpts): Promise<GenerationRecord[
         const paths = samplePaths(model.slug, prompt.id, sample)
         const recordAbs = join(runDir, paths.record)
         if (existsSync(recordAbs)) {
-          records.push(JSON.parse(readFileSync(recordAbs, 'utf8')) as GenerationRecord)
-          continue
+          const prior = JSON.parse(readFileSync(recordAbs, 'utf8')) as GenerationRecord
+          if (prior.status !== 'error') {
+            records.push(prior)
+            continue
+          }
+          // fall through: transient errors are retried on resume
         }
 
         let status: SampleStatus
