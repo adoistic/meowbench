@@ -10,7 +10,14 @@ export function sampleKey(r: GenerationRecord): string {
   return `${r.modelSlug}|${r.promptId}|${r.sample}`
 }
 
-/** Validate every generated SVG; returns map keyed by sampleKey. Idempotent. */
+/**
+ * Validate every generated SVG; returns map keyed by sampleKey. Idempotent.
+ *
+ * Ordering invariant: the persisted validation JSON is only trustworthy after
+ * runRender has followed it in the same pass — runValidate re-validates from the
+ * SVG (overwriting any prior 'render-failed' demotion), and render then
+ * re-demotes deterministically.
+ */
 export function runValidate(runDir: string, records: GenerationRecord[]): ValidationMap {
   const out: ValidationMap = {}
   for (const r of records) {

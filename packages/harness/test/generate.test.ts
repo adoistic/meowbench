@@ -1,4 +1,4 @@
-import { mkdtempSync, readFileSync, existsSync } from 'node:fs'
+import { mkdtempSync, readFileSync, existsSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { expect, test } from 'vitest'
@@ -85,4 +85,22 @@ test('validate + render stages produce validation json and pngs for ok samples',
   expect(rendered).toBe(okKeys.length)
   const p = samplePaths(okKeys[0].modelSlug, okKeys[0].promptId, 1)
   expect(existsSync(join(runDir, p.png))).toBe(true)
+})
+
+test('render failure demotes a validated sample to invalid', async () => {
+  const runDir = mkdtempSync(join(tmpdir(), 'meow-'))
+  const records = await runGenerate({ runDir, models: [MODELS[0]], suite: SUITE, samples: 1, client: new CannedClient() })
+  const rec = records[0]
+  // overwrite the generated svg with a validator-clean but renderer-hostile doc
+  writeFileSync(join(runDir, rec.svgPath!), '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 100000"><rect width="1" height="100000" fill="black"/></svg>')
+  const validations = runValidate(runDir, records)
+  expect(validations[`${rec.modelSlug}|${rec.promptId}|${rec.sample}`].valid).toBe(true)
+  const rendered = runRender(runDir, records, validations)
+  expect(rendered).toBe(0)
+  const v = validations[`${rec.modelSlug}|${rec.promptId}|${rec.sample}`]
+  expect(v.valid).toBe(false)
+  expect(v.reasons).toContain('render-failed')
+  // on-disk JSON matches the demotion
+  const onDisk = JSON.parse(readFileSync(join(runDir, samplePaths(rec.modelSlug, rec.promptId, rec.sample).validation), 'utf8'))
+  expect(onDisk.valid).toBe(false)
 })
