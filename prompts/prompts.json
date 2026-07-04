@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "system": "You are an expert SVG artist. Respond with exactly one complete, self-contained SVG document. Output only the SVG markup — no explanations, no markdown fences.",
+  "prompts": [
+    { "id": "minimal", "title": "Minimal", "user": "Draw a minimal, flat-design cat as an SVG." },
+    { "id": "realistic", "title": "Realistic", "user": "Draw a realistic sitting cat with visible fur shading as an SVG." },
+    { "id": "action", "title": "Action", "user": "Draw a cat riding a bicycle as an SVG." },
+    { "id": "style", "title": "Origami", "user": "Draw an origami-style cat with geometric folds as an SVG." },
+    { "id": "constraint", "title": "Constraint", "user": "Draw a recognizable cat as an SVG using at most 12 SVG elements." },
+    { "id": "animation", "title": "Animation", "user": "Draw a cat whose tail sways continuously, as an SVG using SMIL or CSS animation only (no JavaScript)." }
+  ]
+}
