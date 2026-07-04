@@ -1,0 +1,40 @@
+---
+import { Code } from 'astro:components'
+import type { Sample } from '../lib/run-data'
+interface Props { sample: Sample; anchor: string }
+const { sample, anchor } = Astro.props
+const axes = sample.axisMedians ?? {}
+---
+{sample.pngPath ? (
+  <>
+    <a class="cat-card" href={`#${anchor}`}>
+      <img src={sample.pngPath} alt={`${sample.modelName} — ${sample.promptId} attempt ${sample.sample}`} loading="lazy" width="360" height="360" />
+      <span class="label"><span>{sample.promptId} #{sample.sample}</span><span class="score">{sample.score.toFixed(1)}</span></span>
+    </a>
+    <div class="lightbox" id={anchor}>
+      <a class="close" href="#!" aria-label="close">✕ CLOSE</a>
+      <div class="frame">
+        <img src={sample.pngPath} alt="" />
+        <div class="panel" style="margin-top: 1rem;">
+          <p class="pixel" style="margin: 0 0 0.6rem; color: var(--yellow);">
+            {sample.modelName} · {sample.promptId} · attempt {sample.sample} · score {sample.score.toFixed(1)}
+          </p>
+          <div style="display: flex; gap: 1.2rem; flex-wrap: wrap;" class="pixel dim">
+            {Object.entries(axes).map(([k, v]) => <span>{k.replace('_', ' ')}: <span style="color: var(--mint)">{Number(v).toFixed(1)}</span></span>)}
+          </div>
+        </div>
+        {sample.svgSource && (
+          <div style="margin-top: 1rem;">
+            <p class="pixel dim" style="font-size: 0.75rem;">the actual svg, as the machine wrote it:</p>
+            <Code code={sample.svgSource} lang="xml" theme="synthwave-84" />
+          </div>
+        )}
+      </div>
+    </div>
+  </>
+) : (
+  <div class="gameover">
+    <span class="go-title">GAME OVER</span>
+    <p class="pixel dim" style="margin: 0.4rem 0 0; font-size: 0.75rem;">{sample.promptId} #{sample.sample} · {sample.status === 'refusal' ? 'refused to draw' : 'invalid svg'}</p>
+  </div>
+)}

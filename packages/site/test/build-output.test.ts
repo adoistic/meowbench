@@ -23,3 +23,13 @@ test('rows carry per-prompt bars and best-cat images without JS', () => {
   expect(html).toContain('/run/renders/')
   expect(html).toContain('<details') // expandable rows are native details
 })
+
+test('model pages exist with all samples and lightboxes', () => {
+  const model = readFileSync(join(SITE, 'dist', 'models', 'anthropic__claude-sonnet-4', 'index.html'), 'utf8')
+  expect(model).toContain('Claude Sonnet 4')
+  expect((model.match(/class="cat-card"/g) ?? []).length).toBeGreaterThanOrEqual(20)
+  expect(model).toContain('class="lightbox"') // :target lightbox, no JS
+  expect(model).toContain('astro-code synthwave-84') // Shiki-highlighted SVG source present
+  // Shiki tokenizes `<svg` into adjacent spans and escapes `<` as a numeric entity, not `&lt;`
+  expect(model).toMatch(/&#x3C;<\/span><span[^>]*>svg/)
+})
