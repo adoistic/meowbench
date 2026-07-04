@@ -1,0 +1,15 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "meowbench-vote",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-06-01",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "meowbench-votes",
+      "database_id": "PLACEHOLDER_CREATE_WITH_wrangler_d1_create",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "observability": { "enabled": true }
+}
