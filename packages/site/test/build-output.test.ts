@@ -54,3 +54,10 @@ test('arena page ships the fighter manifest and offline fallback', () => {
   expect(arena).toContain('id="fighter-manifest"')
   expect(arena).toContain('ARCADE OFFLINE')
 })
+
+test('methodology documents the full protocol', () => {
+  const m = readFileSync(join(SITE, 'dist', 'methodology', 'index.html'), 'utf8')
+  for (const s of ['meowscore', 'K=32', 'OpenRouter', 'resvg', 'prompt_fidelity', 'rate limit']) {
+    expect(m.toLowerCase()).toContain(s.toLowerCase())
+  }
+})
