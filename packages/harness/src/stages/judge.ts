@@ -16,25 +16,45 @@ Score the attached rendered image (SVG source also included) on four axes, each 
 Respond with ONLY a JSON object: {"cat_likeness": n, "aesthetic": n, "technique": n, "prompt_fidelity": n}`
 
 export function judgeUserContent(promptText: string, png: Buffer, svgSource: string): ContentPart[] {
+  // Strip XML comments so SVG-comment prompt injection never reaches the judges.
+  // Remaining injection surface (e.g. <title>/<desc> text) is a disclosed methodology limitation.
+  const svgSansComments = svgSource.replace(/<!--[\s\S]*?-->/g, '')
   return [
     { type: 'text', text: RUBRIC.replace('%PROMPT%', promptText) },
     { type: 'image_url', image_url: { url: `data:image/png;base64,${png.toString('base64')}` } },
-    { type: 'text', text: `SVG source:\n${svgSource}` },
+    { type: 'text', text: `SVG source:\n${svgSansComments}` },
   ]
 }
 
 export function parseJudgeReply(text: string): AxisScores | null {
-  const match = text.match(/\{[\s\S]*?\}/)
-  if (!match) return null
-  let parsed: Record<string, unknown>
+  // Balanced-brace scan: try every candidate object, accept the first containing all four axes.
+  // Handles nested wrappers ({"scores": {...}}) and stray braces in prose before the JSON.
+  for (let start = text.indexOf('{'); start !== -1; start = text.indexOf('{', start + 1)) {
+    let depth = 0
+    for (let i = start; i < text.length; i++) {
+      if (text[i] === '{') depth++
+      else if (text[i] === '}' && --depth === 0) {
+        const scores = tryAxes(text.slice(start, i + 1))
+        if (scores) return scores
+        break // this candidate failed; advance to the next '{'
+      }
+    }
+  }
+  return null
+}
+
+function tryAxes(candidate: string): AxisScores | null {
+  let parsed: unknown
   try {
-    parsed = JSON.parse(match[0]) as Record<string, unknown>
+    parsed = JSON.parse(candidate)
   } catch {
     return null
   }
+  if (typeof parsed !== 'object' || parsed === null) return null
+  const rec = parsed as Record<string, unknown>
   const out = {} as AxisScores
   for (const axis of RUBRIC_AXES) {
-    const v = parsed[axis]
+    const v = rec[axis]
     if (typeof v !== 'number' || Number.isNaN(v)) return null
     out[axis] = Math.min(10, Math.max(0, v))
   }
@@ -65,6 +85,7 @@ export async function runJudge(opts: JudgeOpts): Promise<number> {
     if (!validations[sampleKey(r)]?.valid || !r.svgPath) continue
     const paths = samplePaths(r.modelSlug, r.promptId, r.sample)
     const judgmentAbs = join(runDir, paths.judgment)
+    // Idempotency is keyed on file existence: changing judgeSlugs after a partial run requires deleting judgments/ to re-judge with the new panel.
     if (existsSync(judgmentAbs)) {
       judged++
       continue
