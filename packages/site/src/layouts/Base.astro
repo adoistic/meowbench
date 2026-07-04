@@ -1,0 +1,45 @@
+---
+import '@fontsource/bungee'
+import '@fontsource/silkscreen'
+import '@fontsource/rubik'
+import '@fontsource/rubik/500.css'
+import '../styles/arcade.css'
+
+interface Props {
+  title: string
+  description?: string
+  current?: string
+}
+const { title, description = 'Which AI draws the best cat as an SVG? An unreasonably rigorous benchmark.', current = '' } = Astro.props
+const nav = [
+  ['/', 'leaderboard'],
+  ['/gallery/', 'gallery'],
+  ['/arena/', 'arena'],
+  ['/shame/', 'hall of shame'],
+  ['/methodology/', 'methodology'],
+]
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title} · meowbench</title>
+  </head>
+  <body>
+    <nav class="site-nav">
+      <a class="logo" href="/">meowbench</a>
+      {nav.map(([href, label]) => (
+        <a href={href} aria-current={current === href ? 'page' : undefined}>{label}</a>
+      ))}
+    </nav>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <span>© 2026 meowbench · no cats were harmed. several were poorly drawn.</span>
+      <span><a href="https://github.com/adoistic/meowbench">source</a> · <span class="blink">INSERT CAT TO CONTINUE</span></span>
+    </footer>
+  </body>
+</html>
