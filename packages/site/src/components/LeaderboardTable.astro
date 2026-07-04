@@ -1,0 +1,50 @@
+---
+import type { RunData } from '../lib/run-data'
+import { modelDir } from '../lib/slug'
+import PromptBars from './PromptBars.astro'
+interface Props { run: RunData }
+const { run } = Astro.props
+---
+<ol class="scoreboard">
+  {run.entries.map((entry, i) => {
+    const best = run.bestCatFor(entry.slug)
+    return (
+      <li>
+        <details class={`score-row ${i < 3 ? `top-${i + 1}` : ''}`}>
+          <summary>
+            <span class="rank">{String(i + 1).padStart(2, '0')}</span>
+            <span>{entry.name}</span>
+            <span class="meow">{entry.meowscore.toFixed(1)}</span>
+            <span class="crowd" data-crowd={entry.slug}>—</span>
+          </summary>
+          <div class="row-detail">
+            <div style="display: grid; grid-template-columns: 180px 1fr; gap: 1.2rem; align-items: start;">
+              {best && best.pngPath ? (
+                <a class="cat-card" href={`/models/${modelDir(entry.slug)}/`}>
+                  <img src={best.pngPath} alt={`Best cat by ${entry.name}`} loading="lazy" width="360" height="360" />
+                  <span class="label"><span>best cat</span><span class="score">{best.score.toFixed(1)}</span></span>
+                </a>
+              ) : (
+                <div class="gameover"><span class="go-title">NO CAT</span><p class="pixel dim" style="margin:0.5rem 0 0">every attempt was rejected</p></div>
+              )}
+              <div>
+                <PromptBars entry={entry} prompts={run.prompts} />
+                <p class="pixel dim" style="margin: 0.9rem 0 0; font-size: 0.75rem;">
+                  refusal rate {(entry.refusalRate * 100).toFixed(0)}%
+                  {entry.avgElements !== null && <> · avg {entry.avgElements} elements</>}
+                  · {entry.era} · {entry.origin} · {entry.license}
+                  · <a href={`/models/${modelDir(entry.slug)}/`}>all 24 attempts →</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </details>
+      </li>
+    )
+  })}
+</ol>
+<style>
+  @media (max-width: 640px) {
+    .row-detail > div { grid-template-columns: 1fr !important; }
+  }
+</style>

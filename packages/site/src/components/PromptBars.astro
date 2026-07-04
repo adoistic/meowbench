@@ -1,0 +1,17 @@
+---
+import type { Entry, PromptSpec } from '../lib/run-data'
+interface Props { entry: Entry; prompts: PromptSpec[] }
+const { entry, prompts } = Astro.props
+---
+<div>
+  {prompts.map((p) => {
+    const pp = entry.perPrompt[p.id]
+    return (
+      <div class="bar">
+        <span class="dim">{p.id}</span>
+        <div class="track"><div class="fill" style={`width: ${(pp?.median ?? 0) * 10}%`}></div></div>
+        <span class="val">{(pp?.median ?? 0).toFixed(1)}</span>
+      </div>
+    )
+  })}
+</div>

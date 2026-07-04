@@ -1,7 +1,35 @@
 ---
 import Base from '../layouts/Base.astro'
+import LeaderboardTable from '../components/LeaderboardTable.astro'
+import CrowdScore from '../components/CrowdScore.astro'
+import { loadRun } from '../lib/run-data'
+const run = loadRun()
+const isFixture = run.runId.includes('fixture')
 ---
 <Base title="Leaderboard" current="/">
-  <h1>WHICH AI DRAWS THE BEST CAT?</h1>
-  <p class="pixel dim">machine is warming up…</p>
+  <section class="marquee" style="text-align: center; margin-top: 1rem;">
+    <h1>WHICH AI DRAWS THE BEST CAT?</h1>
+    <p class="pixel" style="color: var(--mint); margin: 1rem 0 0.4rem;">
+      an unreasonably rigorous investigation
+    </p>
+    <p class="pixel dim" style="font-size: 0.8rem; margin: 0;">
+      {run.entries.length} models · 6 prompts · 4 attempts each · 3 vision judges · zero mercy
+    </p>
+    <p style="margin: 1.4rem 0 0;">
+      <a class="btn" href="/arena/">VOTE IN THE ARENA</a>
+    </p>
+  </section>
+
+  {isFixture && (
+    <p class="pixel" style="text-align:center; color: var(--pink); font-size: 0.8rem; margin-top: 1rem;">
+      ⚠ DEMO MODE — synthetic dev data. real benchmark run coming soon.
+    </p>
+  )}
+
+  <h2 style="margin-top: 3rem;">HIGH SCORES</h2>
+  <p class="pixel dim" style="font-size: 0.8rem; margin-top: -0.6rem;">
+    meowscore = judge panel 0–100 · crowd = your votes (elo) · click a row for the evidence
+  </p>
+  <LeaderboardTable run={run} />
+  <CrowdScore />
 </Base>
