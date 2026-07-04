@@ -1,0 +1,48 @@
+import { mkdtempSync, readFileSync, existsSync } from 'node:fs'
+import { tmpdir } from 'node:os'
+import { join } from 'node:path'
+import { expect, test } from 'vitest'
+import { CannedClient } from '../src/fake-client.js'
+import { runGenerate } from '../src/stages/generate.js'
+import type { ChatRequest } from '../src/openrouter.js'
+import type { ModelSpec, PromptSuite } from '../src/types.js'
+
+const SUITE: PromptSuite = {
+  version: 1,
+  system: 'Output only SVG markup.',
+  prompts: [{ id: 'minimal', title: 'Minimal', user: 'Draw a minimal cat as an SVG.' }],
+}
+const MODELS: ModelSpec[] = [
+  { slug: 'openai/gpt-test', name: 'GPT Test', era: 'current', origin: 'US', license: 'closed' },
+  { slug: 'acme/refuser-1', name: 'Refuser', era: 'legacy', origin: 'US', license: 'open' },
+]
+
+test('generates samples, writes svg + raw + record, classifies refusals', async () => {
+  const runDir = mkdtempSync(join(tmpdir(), 'meow-'))
+  const records = await runGenerate({ runDir, models: MODELS, suite: SUITE, samples: 2, client: new CannedClient() })
+  expect(records).toHaveLength(4) // 2 models x 1 prompt x 2 samples
+
+  const ok = records.filter((r) => r.status === 'ok')
+  const refused = records.filter((r) => r.status === 'refusal')
+  expect(ok).toHaveLength(2)
+  expect(refused).toHaveLength(2)
+
+  const first = ok[0]
+  expect(readFileSync(join(runDir, first.svgPath!), 'utf8')).toContain('<svg')
+  expect(existsSync(join(runDir, first.rawPath))).toBe(true)
+})
+
+test('resumes: existing records are not regenerated', async () => {
+  const runDir = mkdtempSync(join(tmpdir(), 'meow-'))
+  let calls = 0
+  const counting = {
+    chat: async (req: ChatRequest) => {
+      calls++
+      return new CannedClient().chat(req)
+    },
+  }
+  await runGenerate({ runDir, models: MODELS, suite: SUITE, samples: 2, client: counting })
+  expect(calls).toBe(4)
+  await runGenerate({ runDir, models: MODELS, suite: SUITE, samples: 2, client: counting })
+  expect(calls).toBe(4) // no new calls on resume
+})
