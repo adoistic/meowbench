@@ -53,6 +53,13 @@ test('rejects doctype declarations (entity smuggling)', () => {
   expect(validateSvg(sneaky).reasons).toContain('doctype')
 })
 
+test('allows benign legacy doctype without internal subset', () => {
+  const legacy = '<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg><rect fill="tan"/></svg>'
+  const r = validateSvg(legacy)
+  expect(r.reasons).not.toContain('doctype')
+  expect(r.valid).toBe(true)
+})
+
 test('rejects css url() refs in style attrs and style elements', () => {
   expect(validateSvg('<svg><rect style="fill:url(https://evil.com/x.png)"/></svg>').reasons).toContain('css-url')
   expect(validateSvg('<svg><style>@import url(https://evil.com/a.css);</style></svg>').reasons).toContain('css-url')

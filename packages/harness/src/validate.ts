@@ -47,9 +47,11 @@ function* walk(nodes: Node[]): Generator<Node> {
 export function validateSvg(svg: string): ValidationResult {
   const bytes = Buffer.byteLength(svg, 'utf8')
   if (bytes > MAX_BYTES) return { valid: false, reasons: ['too-large'], stats: null }
-  // DTDs allow entity indirection that can smuggle external refs past
-  // attribute checks; legit cat SVGs never need a DOCTYPE.
-  if (/<!doctype/i.test(svg)) return { valid: false, reasons: ['doctype'], stats: null }
+  // A DTD internal subset ("[...]") allows entity indirection that can
+  // smuggle external refs past attribute checks. Benign legacy doctypes
+  // (<!DOCTYPE svg PUBLIC ... "...svg11.dtd">, no subset) are allowed —
+  // older models emit them routinely and must not be penalized.
+  if (/<!doctype[^>]*\[/i.test(svg)) return { valid: false, reasons: ['doctype'], stats: null }
   if (XMLValidator.validate(svg) !== true) return { valid: false, reasons: ['not-xml'], stats: null }
 
   let root: Node | undefined
