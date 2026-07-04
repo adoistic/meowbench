@@ -113,6 +113,15 @@ a:hover { color: var(--mint); }
   * { transition: none !important; }
 }
 
+/* Keyboard focus — visible against the dark cabinet on every interactive element */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
 /* Buttons — chunky cabinet buttons */
 .btn {
   display: inline-block;
@@ -200,7 +209,7 @@ a:hover { color: var(--mint); }
 .gameover blockquote::before { content: '> '; color: var(--ink-dim); }
 
 /* Nav + footer */
-.site-nav { display: flex; flex-wrap: wrap; align-items: baseline; gap: 1.4rem; padding: 1.2rem 1.25rem; max-width: 68rem; margin: 0 auto; }
+.site-nav { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 1.4rem; row-gap: 0.5rem; padding: 1.2rem 1.25rem; max-width: 68rem; margin: 0 auto; }
 .site-nav .logo { font-family: var(--font-marquee); font-size: 1.5rem; color: var(--yellow); text-shadow: var(--glow-yellow); text-decoration: none; }
 .site-nav a:not(.logo) { font-family: var(--font-pixel); font-size: 0.85rem; color: var(--ink); text-decoration: none; }
 .site-nav a:not(.logo):hover { color: var(--mint); }
