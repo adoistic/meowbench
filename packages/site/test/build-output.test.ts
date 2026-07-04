@@ -47,3 +47,10 @@ test('hall of shame shows game-over cards and refusal quotes', () => {
   expect(shame).toContain('GAME OVER')
   expect(shame).toContain('cannot create an animated SVG') // fixture refusal quote
 })
+
+test('arena page ships the fighter manifest and offline fallback', () => {
+  const arena = readFileSync(join(SITE, 'dist', 'arena', 'index.html'), 'utf8')
+  expect(arena).toContain('CAT FIGHT')
+  expect(arena).toContain('id="fighter-manifest"')
+  expect(arena).toContain('ARCADE OFFLINE')
+})

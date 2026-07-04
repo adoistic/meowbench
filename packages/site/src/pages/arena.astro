@@ -1,0 +1,112 @@
+---
+import Base from '../layouts/Base.astro'
+import { loadRun } from '../lib/run-data'
+const run = loadRun()
+// fighters: valid rendered samples grouped by prompt, ≥2 distinct models per prompt
+const manifest = Object.fromEntries(
+  run.prompts
+    .map((p) => [
+      p.id,
+      run.allSamples
+        .filter((s) => s.promptId === p.id && s.valid && s.pngPath)
+        .map((s) => ({ id: s.id, model: s.modelSlug, name: s.modelName, png: s.pngPath })),
+    ])
+    .filter(([, list]) => new Set((list as { model: string }[]).map((f) => f.model)).size >= 2),
+)
+const voteApi = import.meta.env.PUBLIC_VOTE_API ?? ''
+---
+<Base title="Arena" current="/arena/">
+  <h1 style="margin-top: 1.5rem; text-align: center;">CAT FIGHT</h1>
+  <p class="pixel" style="text-align: center; color: var(--mint);">two cats. same assignment. <span class="blink">CHOOSE YOUR FIGHTER</span></p>
+
+  <div id="arena-stage" style="display: none;">
+    <p class="pixel dim" id="arena-prompt" style="text-align: center;"></p>
+    <div style="display: grid; grid-template-columns: 1fr auto 1fr; gap: 1rem; align-items: center; margin-top: 1rem;">
+      <button class="cat-card" id="fighter-a" style="cursor: pointer;"><img alt="fighter A" /></button>
+      <span class="pixel" style="color: var(--pink); font-size: 1.4rem; text-shadow: var(--glow-pink);">VS</span>
+      <button class="cat-card" id="fighter-b" style="cursor: pointer;"><img alt="fighter B" /></button>
+    </div>
+    <div id="arena-result" class="panel pixel" style="display: none; text-align: center; margin-top: 1.2rem;"></div>
+    <p style="text-align: center; margin-top: 1.2rem;"><button class="btn btn--mint" id="next-battle" style="display: none;">NEXT BATTLE ▸</button></p>
+  </div>
+
+  <noscript>
+    <div class="gameover" style="margin-top: 2rem; text-align: center;">
+      <span class="go-title">ARCADE NEEDS JAVASCRIPT</span>
+      <p class="pixel dim">voting requires js — everything else on this site works without it.</p>
+    </div>
+  </noscript>
+
+  <div id="arena-offline" class="gameover" style="display: none; margin-top: 2rem; text-align: center;">
+    <span class="go-title">ARCADE OFFLINE</span>
+    <p class="pixel dim">the vote machine is unplugged. scores are safe. try again later.</p>
+  </div>
+
+  <script type="application/json" id="fighter-manifest" set:html={JSON.stringify(manifest)} />
+  <script type="application/json" id="vote-api" set:html={JSON.stringify(voteApi)} />
+  <script>
+    const manifest = JSON.parse(document.getElementById('fighter-manifest')!.textContent!) as Record<string, { id: string; model: string; name: string; png: string }[]>
+    const VOTE_API = JSON.parse(document.getElementById('vote-api')!.textContent!) as string
+    const stage = document.getElementById('arena-stage')!
+    const offline = document.getElementById('arena-offline')!
+    const promptEl = document.getElementById('arena-prompt')!
+    const result = document.getElementById('arena-result')!
+    const next = document.getElementById('next-battle')!
+    const btnA = document.getElementById('fighter-a') as HTMLButtonElement
+    const btnB = document.getElementById('fighter-b') as HTMLButtonElement
+
+    let current: { promptId: string; a: (typeof manifest)[string][number]; b: (typeof manifest)[string][number] } | null = null
+
+    function pick() {
+      const prompts = Object.keys(manifest)
+      const promptId = prompts[Math.floor(Math.random() * prompts.length)]
+      const pool = manifest[promptId]
+      let a = pool[Math.floor(Math.random() * pool.length)]
+      let b = pool[Math.floor(Math.random() * pool.length)]
+      let guard = 0
+      while (b.model === a.model && guard++ < 50) b = pool[Math.floor(Math.random() * pool.length)]
+      if (b.model === a.model) return pick()
+      current = { promptId, a, b }
+      promptEl.textContent = `assignment: ${promptId}`
+      ;(btnA.querySelector('img') as HTMLImageElement).src = a.png
+      ;(btnB.querySelector('img') as HTMLImageElement).src = b.png
+      result.style.display = 'none'
+      next.style.display = 'none'
+      btnA.disabled = btnB.disabled = false
+      stage.style.display = 'block'
+    }
+
+    async function vote(winner: 'a' | 'b') {
+      if (!current) return
+      btnA.disabled = btnB.disabled = true
+      const w = winner === 'a' ? current.a : current.b
+      const l = winner === 'a' ? current.b : current.a
+      try {
+        const res = await fetch(`${VOTE_API}/api/vote`, {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({ winnerId: w.id, loserId: l.id, promptId: current.promptId }),
+        })
+        if (!res.ok) throw new Error(String(res.status))
+        const data = (await res.json()) as { winner: { model: string; rating: number }; loser: { model: string; rating: number } }
+        result.innerHTML = `<span style="color: var(--yellow)">WINNER: ${w.name}</span> — new rating ${data.winner.rating}<br /><span class="dim">${l.name} falls to ${data.loser.rating}</span>`
+      } catch {
+        result.innerHTML = `<span style="color: var(--yellow)">WINNER: ${w.name}</span><br /><span class="dim">(vote not recorded — the machine blinked. it happens.)</span>`
+      }
+      result.style.display = 'block'
+      next.style.display = 'inline-block'
+    }
+
+    btnA.addEventListener('click', () => vote('a'))
+    btnB.addEventListener('click', () => vote('b'))
+    next.addEventListener('click', pick)
+
+    if (!VOTE_API) {
+      offline.style.display = 'block'
+      // still let people play offline — votes just aren't recorded
+      pick()
+    } else {
+      pick()
+    }
+  </script>
+</Base>
