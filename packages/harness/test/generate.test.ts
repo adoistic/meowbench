@@ -4,6 +4,9 @@ import { join } from 'node:path'
 import { expect, test } from 'vitest'
 import { CannedClient } from '../src/fake-client.js'
 import { runGenerate } from '../src/stages/generate.js'
+import { runValidate } from '../src/stages/validate.js'
+import { runRender } from '../src/stages/render.js'
+import { samplePaths } from '../src/run-store.js'
 import type { ChatRequest } from '../src/openrouter.js'
 import type { ModelSpec, PromptSuite } from '../src/types.js'
 
@@ -68,4 +71,18 @@ test('resumes: error records ARE retried, terminal records are not', async () =>
 
   await runGenerate({ runDir, models: MODELS, suite: SUITE, samples: 2, client: flaky })
   expect(calls).toBe(8) // now all terminal — no retries
+})
+
+test('validate + render stages produce validation json and pngs for ok samples', async () => {
+  const runDir = mkdtempSync(join(tmpdir(), 'meow-'))
+  const records = await runGenerate({ runDir, models: MODELS, suite: SUITE, samples: 1, client: new CannedClient() })
+  const validations = runValidate(runDir, records)
+  const okKeys = records.filter((r) => r.status === 'ok')
+  expect(Object.keys(validations)).toHaveLength(okKeys.length)
+  for (const v of Object.values(validations)) expect(v.valid).toBe(true)
+
+  const rendered = runRender(runDir, records, validations)
+  expect(rendered).toBe(okKeys.length)
+  const p = samplePaths(okKeys[0].modelSlug, okKeys[0].promptId, 1)
+  expect(existsSync(join(runDir, p.png))).toBe(true)
 })
