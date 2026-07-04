@@ -33,3 +33,17 @@ test('model pages exist with all samples and lightboxes', () => {
   // Shiki tokenizes `<svg` into adjacent spans and escapes `<` as a numeric entity, not `&lt;`
   expect(model).toMatch(/&#x3C;<\/span><span[^>]*>svg/)
 })
+
+test('gallery groups every valid cat by prompt', () => {
+  const gallery = readFileSync(join(SITE, 'dist', 'gallery', 'index.html'), 'utf8')
+  for (const p of ['minimal', 'realistic', 'action', 'style', 'constraint', 'animation']) {
+    expect(gallery).toContain(`id="${p}"`)
+  }
+  expect((gallery.match(/class="cat-card"/g) ?? []).length).toBeGreaterThanOrEqual(200)
+})
+
+test('hall of shame shows game-over cards and refusal quotes', () => {
+  const shame = readFileSync(join(SITE, 'dist', 'shame', 'index.html'), 'utf8')
+  expect(shame).toContain('GAME OVER')
+  expect(shame).toContain('cannot create an animated SVG') // fixture refusal quote
+})

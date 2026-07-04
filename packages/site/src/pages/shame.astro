@@ -1,0 +1,27 @@
+---
+import Base from '../layouts/Base.astro'
+import CatCard from '../components/CatCard.astro'
+import { loadRun } from '../lib/run-data'
+import { modelDir } from '../lib/slug'
+const run = loadRun()
+const { worstCats, refusals } = run.shame()
+---
+<Base title="Hall of Shame" current="/shame/">
+  <h1 style="margin-top: 1.5rem; color: var(--pink); text-shadow: var(--glow-pink);">HALL OF SHAME</h1>
+  <p class="pixel dim">we celebrate their courage. the judges did not.</p>
+
+  <h2 style="margin-top: 2rem;">LOWEST SURVIVING SCORES</h2>
+  <div class="cat-grid">
+    {worstCats.map((s) => <CatCard sample={s} anchor={`shame-${modelDir(s.modelSlug)}-${s.promptId}-${s.sample}`} />)}
+  </div>
+
+  <h2 style="margin-top: 3rem;">THE CONSCIENTIOUS OBJECTORS</h2>
+  <p class="pixel dim" style="font-size: 0.8rem;">models that declined the assignment, quoted verbatim.</p>
+  {refusals.map((r) => (
+    <div class="gameover" style="margin-top: 1rem;">
+      <span class="go-title">GAME OVER — {r.modelName}</span>
+      <p class="pixel dim" style="margin: 0.3rem 0 0; font-size: 0.75rem;">asked for: {r.promptId}</p>
+      <blockquote>{r.quote}</blockquote>
+    </div>
+  ))}
+</Base>

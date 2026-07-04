@@ -1,0 +1,27 @@
+---
+import Base from '../layouts/Base.astro'
+import CatCard from '../components/CatCard.astro'
+import { loadRun } from '../lib/run-data'
+import { modelDir } from '../lib/slug'
+const run = loadRun()
+const byPrompt = run.prompts.map((p) => ({
+  prompt: p,
+  samples: run.allSamples.filter((s) => s.promptId === p.id && s.valid && s.pngPath).sort((a, b) => b.score - a.score),
+}))
+---
+<Base title="Gallery" current="/gallery/">
+  <h1 style="margin-top: 1.5rem;">THE GALLERY</h1>
+  <p class="pixel dim">every cat, every attempt. sorted by score. judge for yourself — literally, in the <a href="/arena/">arena</a>.</p>
+  <nav class="pixel" style="display: flex; gap: 1rem; flex-wrap: wrap; font-size: 0.85rem;">
+    {run.prompts.map((p) => <a href={`#${p.id}`}>{p.id}</a>)}
+  </nav>
+  {byPrompt.map(({ prompt, samples }) => (
+    <section id={prompt.id} style="scroll-margin-top: 1rem;">
+      <h2 style="margin-top: 2.4rem;">{prompt.id}</h2>
+      <p class="dim" style="margin-top: -0.5rem;">“{prompt.user}” · {samples.length} survivors</p>
+      <div class="cat-grid">
+        {samples.map((s) => <CatCard sample={s} anchor={`g-${modelDir(s.modelSlug)}-${s.promptId}-${s.sample}`} />)}
+      </div>
+    </section>
+  ))}
+</Base>
