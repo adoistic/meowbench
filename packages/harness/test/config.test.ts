@@ -1,8 +1,9 @@
+import { fileURLToPath } from 'node:url'
 import { expect, test } from 'vitest'
 import { loadModels, loadSuite } from '../src/config.js'
 
 test('loads the prompt suite with 6 prompts and a system prompt', () => {
-  const suite = loadSuite(new URL('../../../prompts/prompts.json', import.meta.url).pathname)
+  const suite = loadSuite(fileURLToPath(new URL('../../../prompts/prompts.json', import.meta.url)))
   expect(suite.version).toBe(1)
   expect(suite.prompts).toHaveLength(6)
   expect(suite.system).toContain('SVG')
@@ -12,7 +13,7 @@ test('loads the prompt suite with 6 prompts and a system prompt', () => {
 })
 
 test('loads models with required fields', () => {
-  const models = loadModels(new URL('../../../models.json', import.meta.url).pathname)
+  const models = loadModels(fileURLToPath(new URL('../../../models.json', import.meta.url)))
   expect(models.length).toBeGreaterThanOrEqual(2)
   for (const m of models) {
     expect(m.slug).toMatch(/^[\w.-]+\/[\w.:-]+$/)
