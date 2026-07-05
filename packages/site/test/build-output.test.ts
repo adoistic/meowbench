@@ -1,5 +1,5 @@
 import { execSync } from 'node:child_process'
-import { existsSync, readFileSync } from 'node:fs'
+import { existsSync, readFileSync, readdirSync } from 'node:fs'
 import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { beforeAll, expect, test } from 'vitest'
@@ -46,6 +46,18 @@ test('gallery ships the filter panel and a card per valid cat', () => {
   // cards deep-link to model pages (no-JS fallback) instead of embedding lightboxes
   expect((gallery.match(/class="lightbox"/g) ?? []).length).toBe(1) // just the shared quick-view
   expect(gallery).not.toContain('astro-code') // no Shiki blocks on the gallery anymore
+})
+
+test('filter-hidden cards are actually display:none in the compiled CSS', () => {
+  // Regression: `.cat-card { display: block }` outranks the UA `[hidden]` rule,
+  // so filtering set the property but nothing visually disappeared. A rule at
+  // least as specific as .cat-card must force the hide. Astro minifies CSS.
+  const cssDir = join(SITE, 'dist', '_astro')
+  const css = readdirSync(cssDir)
+    .filter((f) => f.endsWith('.css'))
+    .map((f) => readFileSync(join(cssDir, f), 'utf8'))
+    .join('')
+  expect(css).toMatch(/\.cat-card\[hidden\]\s*\{\s*display:\s*none/)
 })
 
 test('hall of shame shows lowest scores and did-not-finish cards', () => {

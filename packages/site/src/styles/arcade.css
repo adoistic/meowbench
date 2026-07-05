@@ -189,6 +189,10 @@ summary:focus-visible {
 /* Cat cards */
 .cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 1rem; }
 .cat-card { display: block; background: var(--panel); border: 2px solid var(--panel-edge); border-radius: 10px; padding: 0.6rem; text-decoration: none; transition: transform 0.1s, border-color 0.1s; }
+/* Filters hide cards via the [hidden] property. `.cat-card { display: block }`
+   outranks the UA `[hidden] { display: none }`, so without this the cards stay
+   visible and filtering appears to do nothing. */
+.cat-card[hidden] { display: none; }
 .cat-card:hover { transform: translateY(-3px) rotate(-0.5deg); border-color: var(--yellow); }
 .cat-card img { width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; background: #fff; border-radius: 6px; image-rendering: auto; display: block; }
 .cat-card .label { font-family: var(--font-pixel); font-size: 0.72rem; color: var(--ink-dim); margin-top: 0.5rem; display: flex; justify-content: space-between; gap: 0.6rem; }
