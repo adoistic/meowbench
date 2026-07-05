@@ -5,16 +5,16 @@ interface Props { sample: Sample; anchor: string }
 const { sample, anchor } = Astro.props
 const axes = sample.axisMedians ?? {}
 ---
-{sample.pngPath ? (
+{sample.svgUrl ? (
   <>
     <a class="cat-card" href={`#${anchor}`}>
-      <img src={sample.pngPath} alt={`${sample.modelName} — ${sample.promptId} attempt ${sample.sample}`} loading="lazy" width="360" height="360" />
+      <img src={sample.svgUrl} alt={`${sample.modelName} — ${sample.promptId} attempt ${sample.sample}`} loading="lazy" width="360" height="360" />
       <span class="label"><span>{sample.promptId} #{sample.sample}</span><span class="score">{sample.score.toFixed(1)}</span></span>
     </a>
     <div class="lightbox" id={anchor}>
       <a class="close" href="#!" aria-label="close">✕ CLOSE</a>
       <div class="frame">
-        <img src={sample.pngPath} alt="" />
+        <img src={sample.svgUrl} alt="" />
         <div class="panel" style="margin-top: 1rem;">
           <p class="pixel" style="margin: 0 0 0.6rem; color: var(--yellow);">
             {sample.modelName} · {sample.promptId} · attempt {sample.sample} · score {sample.score.toFixed(1)}

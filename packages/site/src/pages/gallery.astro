@@ -6,7 +6,7 @@ import { modelDir } from '../lib/slug'
 const run = loadRun()
 const byPrompt = run.prompts.map((p) => ({
   prompt: p,
-  samples: run.allSamples.filter((s) => s.promptId === p.id && s.valid && s.pngPath).sort((a, b) => b.score - a.score),
+  samples: run.allSamples.filter((s) => s.promptId === p.id && s.valid && s.svgUrl).sort((a, b) => b.score - a.score),
 }))
 ---
 <Base title="Gallery" current="/gallery/">

@@ -19,9 +19,9 @@ const { run } = Astro.props
           </summary>
           <div class="row-detail">
             <div style="display: grid; grid-template-columns: 180px 1fr; gap: 1.2rem; align-items: start;">
-              {best && best.pngPath ? (
+              {best && best.svgUrl ? (
                 <a class="cat-card" href={`/models/${modelDir(entry.slug)}/`}>
-                  <img src={best.pngPath} alt={`Best cat by ${entry.name}`} loading="lazy" width="360" height="360" />
+                  <img src={best.svgUrl} alt={`Best cat by ${entry.name}`} loading="lazy" width="360" height="360" />
                   <span class="label"><span>best cat</span><span class="score">{best.score.toFixed(1)}</span></span>
                 </a>
               ) : (

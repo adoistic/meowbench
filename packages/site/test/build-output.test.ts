@@ -20,7 +20,7 @@ test('home page renders the full leaderboard', () => {
 
 test('rows carry per-prompt bars and best-cat images without JS', () => {
   expect(html).toContain('class="bar"')
-  expect(html).toContain('/run/renders/')
+  expect(html).toContain('/run/svg/')
   expect(html).toContain('<details') // expandable rows are native details
 })
 

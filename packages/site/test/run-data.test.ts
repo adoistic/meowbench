@@ -11,7 +11,7 @@ test('loads the latest run (dev fixture) with entries, prompts, and samples', ()
   const s = run.samplesFor(top.slug)
   expect(s.length).toBe(24)
   const valid = s.find((x) => x.valid)!
-  expect(valid.pngPath).toMatch(/^\/run\/renders\//)
+  expect(valid.svgUrl).toMatch(/^\/run\/svg\//)
   expect(valid.svgSource).toContain('<svg')
   expect(valid.id).toBe(`${top.slug}|${valid.promptId}|${valid.sample}`)
 })

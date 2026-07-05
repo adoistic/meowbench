@@ -16,7 +16,8 @@ export interface Sample {
   id: string; modelSlug: string; modelName: string; promptId: string; sample: number
   valid: boolean; score: number
   axisMedians: Record<string, number> | null
-  pngPath: string | null // public URL path (synced by sync-assets)
+  svgUrl: string | null // public URL to the actual .svg — what the UI displays (crisp, animated)
+  pngPath: string | null // rasterized judge input; not displayed, kept for reference
   svgSource: string | null
   status: string
 }
@@ -74,6 +75,7 @@ export function loadRun(): RunData {
       valid: s.valid,
       score: s.score,
       axisMedians: s.axisMedians,
+      svgUrl: existsSync(svgAbs) ? `/run/svg/${md}/${s.promptId}/sample-${s.sample}.svg` : null,
       pngPath: existsSync(pngAbs) ? `/run/renders/${md}/${s.promptId}/sample-${s.sample}.png` : null,
       svgSource: existsSync(svgAbs) ? readFileSync(svgAbs, 'utf8') : null,
       status,
@@ -88,12 +90,12 @@ export function loadRun(): RunData {
     allSamples,
     samplesFor: (slug) => allSamples.filter((s) => s.modelSlug === slug),
     bestCatFor: (slug) => {
-      const valid = allSamples.filter((s) => s.modelSlug === slug && s.valid && s.pngPath)
+      const valid = allSamples.filter((s) => s.modelSlug === slug && s.valid && s.svgUrl)
       return valid.length ? valid.reduce((a, b) => (b.score > a.score ? b : a)) : null
     },
     shame: () => {
       const worstCats = allSamples
-        .filter((s) => s.valid && s.pngPath)
+        .filter((s) => s.valid && s.svgUrl)
         .sort((a, b) => a.score - b.score)
         .slice(0, 8)
       const refusals: Refusal[] = allSamples

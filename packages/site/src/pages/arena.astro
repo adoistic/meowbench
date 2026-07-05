@@ -8,8 +8,8 @@ const manifest = Object.fromEntries(
     .map((p) => [
       p.id,
       run.allSamples
-        .filter((s) => s.promptId === p.id && s.valid && s.pngPath)
-        .map((s) => ({ id: s.id, model: s.modelSlug, name: s.modelName, png: s.pngPath })),
+        .filter((s) => s.promptId === p.id && s.valid && s.svgUrl)
+        .map((s) => ({ id: s.id, model: s.modelSlug, name: s.modelName, svg: s.svgUrl })),
     ])
     .filter(([, list]) => new Set((list as { model: string }[]).map((f) => f.model)).size >= 2),
 )
@@ -45,7 +45,7 @@ const voteApi = import.meta.env.PUBLIC_VOTE_API ?? ''
   <script type="application/json" id="fighter-manifest" set:html={JSON.stringify(manifest)} />
   <script type="application/json" id="vote-api" set:html={JSON.stringify(voteApi)} />
   <script>
-    const manifest = JSON.parse(document.getElementById('fighter-manifest')!.textContent!) as Record<string, { id: string; model: string; name: string; png: string }[]>
+    const manifest = JSON.parse(document.getElementById('fighter-manifest')!.textContent!) as Record<string, { id: string; model: string; name: string; svg: string }[]>
     const VOTE_API = JSON.parse(document.getElementById('vote-api')!.textContent!) as string
     const stage = document.getElementById('arena-stage')!
     const offline = document.getElementById('arena-offline')!
@@ -68,8 +68,8 @@ const voteApi = import.meta.env.PUBLIC_VOTE_API ?? ''
       if (b.model === a.model) return pick()
       current = { promptId, a, b }
       promptEl.textContent = `assignment: ${promptId}`
-      ;(btnA.querySelector('img') as HTMLImageElement).src = a.png
-      ;(btnB.querySelector('img') as HTMLImageElement).src = b.png
+      ;(btnA.querySelector('img') as HTMLImageElement).src = a.svg
+      ;(btnB.querySelector('img') as HTMLImageElement).src = b.svg
       result.style.display = 'none'
       next.style.display = 'none'
       btnA.disabled = btnB.disabled = false
