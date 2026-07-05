@@ -1,0 +1,123 @@
+
+<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Fur gradient for body -->
+    <radialGradient id="bodyGradient" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#8B7355"/>
+      <stop offset="70%" style="stop-color:#6B5443"/>
+      <stop offset="100%" style="stop-color:#4A3829"/>
+    </radialGradient>
+    
+    <!-- Fur gradient for head -->
+    <radialGradient id="headGradient" cx="45%" cy="40%">
+      <stop offset="0%" style="stop-color:#9B8365"/>
+      <stop offset="60%" style="stop-color:#7B6345"/>
+      <stop offset="100%" style="stop-color:#5B4325"/>
+    </radialGradient>
+    
+    <!-- Ear gradient -->
+    <radialGradient id="earGradient" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#B39A78"/>
+      <stop offset="100%" style="stop-color:#8B7355"/>
+    </radialGradient>
+    
+    <!-- Belly gradient -->
+    <radialGradient id="bellyGradient" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#D4C4B0"/>
+      <stop offset="100%" style="stop-color:#C4B4A0"/>
+    </radialGradient>
+    
+    <!-- Pattern for fur texture -->
+    <pattern id="furTexture" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.5" fill="#6B5443" opacity="0.3"/>
+    </pattern>
+  </defs>
+  
+  <!-- Shadow -->
+  <ellipse cx="200" cy="460" rx="80" ry="20" fill="#000000" opacity="0.2"/>
+  
+  <!-- Tail -->
+  <path d="M 320 280 Q 360 250, 370 200 Q 375 170, 360 150 Q 350 140, 340 145" 
+        fill="none" stroke="url(#bodyGradient)" stroke-width="45" stroke-linecap="round"/>
+  <path d="M 320 280 Q 360 250, 370 200 Q 375 170, 360 150 Q 350 140, 340 145" 
+        fill="none" stroke="#4A3829" stroke-width="45" stroke-linecap="round" opacity="0.3"
+        transform="translate(3,3)"/>
+  
+  <!-- Back leg -->
+  <ellipse cx="150" cy="380" rx="35" ry="55" fill="url(#bodyGradient)"
+           transform="rotate(-10 150 380)"/>
+  
+  <!-- Sitting body -->
+  <ellipse cx="200" cy="300" rx="90" ry="110" fill="url(#bodyGradient)"/>
+  
+  <!-- Belly patch -->
+  <ellipse cx="190" cy="310" rx="60" ry="70" fill="url(#bellyGradient)" opacity="0.7"/>
+  
+  <!-- Front paws -->
+  <ellipse cx="260" cy="380" rx="30" ry="50" fill="url(#bodyGradient)"
+           transform="rotate(15 260 380)"/>
+  <ellipse cx="300" cy="370" rx="25" ry="45" fill="url(#bodyGradient)"
+           transform="rotate(20 300 370)"/>
+  
+  <!-- Front paw details -->
+  <ellipse cx="265" cy="410" rx="18" ry="8" fill="#8B7355" opacity="0.5"/>
+  <ellipse cx="305" cy="400" rx="16" ry="7" fill="#8B7355" opacity="0.5"/>
+  
+  <!-- Head -->
+  <ellipse cx="200" cy="180" rx="70" ry="65" fill="url(#headGradient)"/>
+  
+  <!-- Ears -->
+  <path d="M 150 160 L 140 120 L 170 140 Z" fill="url(#earGradient)"/>
+  <path d="M 250 160 L 260 120 L 230 140 Z" fill="url(#earGradient)"/>
+  
+  <!-- Inner ear -->
+  <path d="M 155 150 L 148 130 L 165 142 Z" fill="#D4C4B0" opacity="0.8"/>
+  <path d="M 245 150 L 252 130 L 235 142 Z" fill="#D4C4B0" opacity="0.8"/>
+  
+  <!-- Eye sockets -->
+  <ellipse cx="175" cy="175" rx="20" ry="22" fill="#5B4325"/>
+  <ellipse cx="225" cy="175" rx="20" ry="22" fill="#5B4325"/>
+  
+  <!-- Eyes -->
+  <ellipse cx="175" cy="175" rx="15" ry="18" fill="#2C1810"/>
+  <ellipse cx="225" cy="175" rx="15" ry="18" fill="#2C1810"/>
+  
+  <!-- Eye shine -->
+  <ellipse cx="170" cy="170" rx="5" ry="6" fill="#FFFFFF" opacity="0.8"/>
+  <ellipse cx="220" cy="170" rx="5" ry="6" fill="#FFFFFF" opacity="0.8"/>
+  
+  <ellipse cx="178" cy="180" rx="2" ry="3" fill="#FFFFFF" opacity="0.4"/>
+  <ellipse cx="228" cy="180" rx="2" ry="3" fill="#FFFFFF" opacity="0.4"/>
+  
+  <!-- Nose -->
+  <path d="M 200 195 L 193 200 L 200 205 L 207 200 Z" fill="#4A3829"/>
+  
+  <!-- Mouth -->
+  <path d="M 200 205 Q 185 210, 180 205" fill="none" stroke="#4A3829" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 200 205 Q 215 210, 220 205" fill="none" stroke="#4A3829" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Whiskers -->
+  <line x1="90" y1="180" x2="140" y2="175" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6"/>
+  <line x1="90" y1="195" x2="140" y2="190" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6"/>
+  <line x1="90" y1="210" x2="140" y2="205" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6"/>
+  
+  <line x1="260" y1="175" x2="310" y2="180" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6"/>
+  <line x1="260" y1="190" x2="310" y2="195" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6"/>
+  <line x1="260" y1="205" x2="310" y2="210" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6"/>
+  
+  <!-- Chin shadow -->
+  <ellipse cx="200" cy="220" rx="25" ry="15" fill="#4A3829" opacity="0.3"/>
+  
+  <!-- Fur highlights and texture -->
+  <ellipse cx="180" cy="250" rx="30" ry="40" fill="#9B8365" opacity="0.3"/>
+  <ellipse cx="220" cy="280" rx="25" ry="35" fill="#9B8365" opacity="0.3"/>
+  <ellipse cx="160" cy="320" rx="20" ry="30" fill="#8B7355" opacity="0.4"/>
+  
+  <!-- Fur texture overlay -->
+  <ellipse cx="200" cy="300" rx="90" ry="110" fill="url(#furTexture)" opacity="0.4"/>
+  <ellipse cx="200" cy="180" rx="70" ry="65" fill="url(#furTexture)" opacity="0.4"/>
+  
+  <!-- Chest fur detail -->
+  <path d="M 170 340 Q 180 330, 190 335 Q 200 330, 210 335 Q 220 330, 230 340" 
+        fill="none" stroke="#D4C4B0" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <rect width="400" height="400" fill="#f4ede1"/>
+
+  <!-- Tail -->
+  <polygon points="290,300 340,260 335,275 355,255 340,290 300,315" fill="#e8b06a" stroke="#c98f4a" stroke-width="2"/>
+  <polygon points="300,300 335,270 320,285" fill="#d99f57" stroke="#c98f4a" stroke-width="1.5"/>
+
+  <!-- Body -->
+  <polygon points="120,260 200,180 290,260 260,330 150,330" fill="#f0c078" stroke="#c98f4a" stroke-width="2"/>
+  <polygon points="120,260 200,180 200,330 150,330" fill="#e8b06a" stroke="#c98f4a" stroke-width="2"/>
+  <polygon points="200,180 290,260 260,330 200,330" fill="#f4d493" stroke="#c98f4a" stroke-width="2"/>
+
+  <!-- Front legs -->
+  <polygon points="160,330 175,330 175,380 155,380" fill="#e8b06a" stroke="#c98f4a" stroke-width="2"/>
+  <polygon points="225,330 245,330 250,380 225,380" fill="#f4d493" stroke="#c98f4a" stroke-width="2"/>
+
+  <!-- Head -->
+  <polygon points="200,90 260,150 200,210 140,150" fill="#f4d493" stroke="#c98f4a" stroke-width="2"/>
+  <polygon points="200,90 260,150 200,150" fill="#f0c078" stroke="#c98f4a" stroke-width="2"/>
+  <polygon points="200,90 140,150 200,150" fill="#e8b06a" stroke="#c98f4a" stroke-width="2"/>
+
+  <!-- Ears -->
+  <polygon points="150,110 170,140 130,140" fill="#e8b06a" stroke="#c98f4a" stroke-width="2"/>
+  <polygon points="250,110 270,140 230,140" fill="#f4d493" stroke="#c98f4a" stroke-width="2"/>
+  <polygon points="150,118 163,138 138,135" fill="#d99f57" stroke="#c98f4a" stroke-width="1"/>
+  <polygon points="250,118 262,135 238,138" fill="#e8b569" stroke="#c98f4a" stroke-width="1"/>
+
+  <!-- Face fold lines -->
+  <line x1="200" y1="90" x2="200" y2="210" stroke="#c98f4a" stroke-width="1.5"/>
+  <line x1="140" y1="150" x2="260" y2="150" stroke="#c98f4a" stroke-width="1.5"/>
+
+  <!-- Eyes -->
+  <polygon points="170,155 180,150 178,162" fill="#333"/>
+  <polygon points="230,155 220,150 222,162" fill="#333"/>
+
+  <!-- Nose -->
+  <polygon points="196,170 204,170 200,178" fill="#c9704a"/>
+
+  <!-- Whiskers -->
+  <line x1="140" y1="175" x2="100" y2="170" stroke="#555" stroke-width="1.5"/>
+  <line x1="140" y1="182" x2="100" y2="185" stroke="#555" stroke-width="1.5"/>
+  <line x1="260" y1="175" x2="300" y2="170" stroke="#555" stroke-width="1.5"/>
+  <line x1="260" y1="182" x2="300" y2="185" stroke="#555" stroke-width="1.5"/>
+
+  <!-- Fold lines on body -->
+  <line x1="200" y1="180" x2="200" y2="330" stroke="#c98f4a" stroke-width="1.5"/>
+  <line x1="120" y1="260" x2="290" y2="260" stroke="#c98f4a" stroke-width="1.5"/>
+  <line x1="150" y1="330" x2="200" y2="260" stroke="#c98f4a" stroke-width="1"/>
+  <line x1="260" y1="330" x2="200" y2="260" stroke="#c98f4a" stroke-width="1"/>
+</svg>

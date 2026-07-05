@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <rect width="400" height="400" fill="#f5f0e8"/>
+
+  <!-- Body -->
+  <polygon points="150,250 260,240 300,340 120,350" fill="#e8853a"/>
+  <polygon points="150,250 260,240 220,300 160,300" fill="#f5a15e"/>
+  <polygon points="120,350 160,300 220,300 200,360" fill="#d9752c"/>
+  <polygon points="200,360 220,300 260,340 300,340" fill="#c96820"/>
+
+  <!-- Tail -->
+  <polygon points="290,300 340,220 360,240 320,330" fill="#e8853a"/>
+  <polygon points="290,300 340,220 320,290" fill="#f5a15e"/>
+  <polygon points="320,290 340,220 360,240 335,300" fill="#d9752c"/>
+
+  <!-- Head base -->
+  <polygon points="130,130 220,130 240,220 110,220" fill="#f5a15e"/>
+
+  <!-- Left ear -->
+  <polygon points="130,130 110,60 175,120" fill="#e8853a"/>
+  <polygon points="130,130 175,120 150,140" fill="#d9752c"/>
+  <polygon points="128,110 118,75 155,118" fill="#f7c6a0"/>
+
+  <!-- Right ear -->
+  <polygon points="220,130 240,60 175,120" fill="#e8853a"/>
+  <polygon points="220,130 175,120 200,140" fill="#d9752c"/>
+  <polygon points="222,110 232,75 195,118" fill="#f7c6a0"/>
+
+  <!-- Face geometric folds -->
+  <polygon points="130,130 220,130 175,175" fill="#f7b884"/>
+  <polygon points="110,220 175,175 240,220 175,255" fill="#e8853a"/>
+  <polygon points="130,130 175,175 110,220" fill="#f5a15e"/>
+  <polygon points="220,130 175,175 240,220" fill="#f5a15e"/>
+
+  <!-- Chin fold -->
+  <polygon points="110,220 175,255 240,220 175,240" fill="#d9752c"/>
+
+  <!-- Eyes -->
+  <polygon points="140,170 160,165 152,185" fill="#2e2e2e"/>
+  <polygon points="210,170 190,165 198,185" fill="#2e2e2e"/>
+
+  <!-- Nose -->
+  <polygon points="170,200 180,200 175,212" fill="#7a3b2e"/>
+
+  <!-- Whisker lines -->
+  <line x1="175" y1="208" x2="120" y2="200" stroke="#7a3b2e" stroke-width="1.5"/>
+  <line x1="175" y1="212" x2="122" y2="222" stroke="#7a3b2e" stroke-width="1.5"/>
+  <line x1="175" y1="208" x2="230" y2="200" stroke="#7a3b2e" stroke-width="1.5"/>
+  <line x1="175" y1="212" x2="228" y2="222" stroke="#7a3b2e" stroke-width="1.5"/>
+
+  <!-- Legs -->
+  <polygon points="130,340 155,340 150,375 125,375" fill="#d9752c"/>
+  <polygon points="240,335 265,335 270,370 245,370" fill="#c96820"/>
+
+  <!-- Fold accent lines -->
+  <line x1="130" y1="130" x2="220" y2="130" stroke="#c96820" stroke-width="1" opacity="0.6"/>
+  <line x1="150" y1="250" x2="260" y2="240" stroke="#c96820" stroke-width="1" opacity="0.5"/>
+</svg>

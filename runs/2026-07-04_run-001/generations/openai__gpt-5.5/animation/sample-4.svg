@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="500" height="400" role="img" aria-labelledby="title desc">
+  <title id="title">Animated cat with swaying tail</title>
+  <desc id="desc">A smiling orange cat sits while its tail continuously sways from side to side using SVG SMIL animation.</desc>
+
+  <defs>
+    <linearGradient id="fur" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffb35c"/>
+      <stop offset="100%" stop-color="#e9842c"/>
+    </linearGradient>
+    <linearGradient id="belly" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffe1b3"/>
+      <stop offset="100%" stop-color="#ffc978"/>
+    </linearGradient>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5"/>
+      <feOffset dx="0" dy="5" result="offset"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.25"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="500" height="400" fill="#f4fbff"/>
+  <ellipse cx="250" cy="340" rx="145" ry="25" fill="#c7d7df" opacity="0.45"/>
+
+  <g id="tail" filter="url(#softShadow)">
+    <animateTransform attributeName="transform" type="rotate" values="-13 336 238; 13 336 238; -13 336 238" keyTimes="0;0.5;1" dur="2s" repeatCount="indefinite" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+    <path d="M336 238 C390 224 422 177 397 131 C379 98 327 92 311 125 C299 150 319 174 349 164" fill="none" stroke="#e9842c" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M336 238 C390 224 422 177 397 131 C379 98 327 92 311 125 C299 150 319 174 349 164" fill="none" stroke="#ffb35c" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M371 215 C384 205 394 194 400 181" fill="none" stroke="#c76b22" stroke-width="5" stroke-linecap="round" opacity="0.65"/>
+    <path d="M399 148 C392 134 379 124 364 119" fill="none" stroke="#c76b22" stroke-width="5" stroke-linecap="round" opacity="0.65"/>
+    <path d="M318 137 C319 151 330 158 345 158" fill="none" stroke="#c76b22" stroke-width="5" stroke-linecap="round" opacity="0.65"/>
+  </g>
+
+  <g id="cat" filter="url(#softShadow)">
+    <ellipse cx="250" cy="246" rx="88" ry="96" fill="url(#fur)"/>
+    <ellipse cx="250" cy="270" rx="48" ry="58" fill="url(#belly)" opacity="0.95"/>
+
+    <path d="M192 198 C205 211 222 216 239 214" fill="none" stroke="#c76b22" stroke-width="6" stroke-linecap="round" opacity="0.65"/>
+    <path d="M308 198 C295 211 278 216 261 214" fill="none" stroke="#c76b22" stroke-width="6" stroke-linecap="round" opacity="0.65"/>
+    <path d="M250 162 C244 180 244 194 250 207" fill="none" stroke="#c76b22" stroke-width="6" stroke-linecap="round" opacity="0.65"/>
+
+    <ellipse cx="215" cy="326" rx="30" ry="18" fill="#de7d2a"/>
+    <ellipse cx="285" cy="326" rx="30" ry="18" fill="#de7d2a"/>
+    <path d="M201 325 L229 325" stroke="#b95f20" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+    <path d="M271 325 L299 325" stroke="#b95f20" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+
+    <circle cx="250" cy="145" r="72" fill="url(#fur)"/>
+    <path d="M197 105 L211 43 L244 93 Z" fill="#e9842c"/>
+    <path d="M303 105 L289 43 L256 93 Z" fill="#e9842c"/>
+    <path d="M209 91 L216 64 L232 88 Z" fill="#ffc0b8"/>
+    <path d="M291 91 L284 64 L268 88 Z" fill="#ffc0b8"/>
+
+    <path d="M224 82 C236 72 264 72 276 82" fill="none" stroke="#c76b22" stroke-width="6" stroke-linecap="round" opacity="0.65"/>
+    <path d="M250 72 C246 88 246 99 250 111" fill="none" stroke="#c76b22" stroke-width="5" stroke-linecap="round" opacity="0.65"/>
+    <path d="M221 106 C231 113 238 116 247 116" fill="none" stroke="#c76b22" stroke-width="5" stroke-linecap="round" opacity="0.65"/>
+    <path d="M279 106 C269 113 262 116 253 116" fill="none" stroke="#c76b22" stroke-width="5" stroke-linecap="round" opacity="0.65"/>
+
+    <ellipse cx="225" cy="142" rx="11" ry="15" fill="#263238"/>
+    <ellipse cx="275" cy="142" rx="11" ry="15" fill="#263238"/>
+    <circle cx="229" cy="136" r="3" fill="#fff"/>
+    <circle cx="279" cy="136" r="3" fill="#fff"/>
+
+    <path d="M250 156 L241 166 L259 166 Z" fill="#d75f73"/>
+    <path d="M250 166 C244 177 232 176 229 167" fill="none" stroke="#6d3a25" stroke-width="3" stroke-linecap="round"/>
+    <path d="M250 166 C256 177 268 176 271 167" fill="none" stroke="#6d3a25" stroke-width="3" stroke-linecap="round"/>
+
+    <path d="M213 164 C187 157 165 158 146 169" fill="none" stroke="#6d3a25" stroke-width="3" stroke-linecap="round"/>
+    <path d="M214 174 C188 175 168 183 151 197" fill="none" stroke="#6d3a25" stroke-width="3" stroke-linecap="round"/>
+    <path d="M287 164 C313 157 335 158 354 169" fill="none" stroke="#6d3a25" stroke-width="3" stroke-linecap="round"/>
+    <path d="M286 174 C312 175 332 183 349 197" fill="none" stroke="#6d3a25" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

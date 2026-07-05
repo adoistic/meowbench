@@ -1,0 +1,37 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 8699,
+    "elements": 107,
+    "paths": 36,
+    "colors": [
+      "#241640",
+      "#312861",
+      "#333",
+      "#473c8b",
+      "#6c5ce7",
+      "#a29bfe",
+      "#a8987e",
+      "#bdb8e8",
+      "#ccb597",
+      "#ccc8eb",
+      "#daa520",
+      "#e0d7ff",
+      "#e3def5",
+      "#e6c200",
+      "#e6d2b5",
+      "#ff69b4",
+      "#ff8fab",
+      "#ffb6ff",
+      "#ffd700",
+      "#ffe0ff",
+      "#ffffff",
+      "rgba(0,0,0,0.1)",
+      "rgba(36, 22, 64, 0.2)",
+      "url(#lightlavender)",
+      "url(#weave)",
+      "white"
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%" role="img" aria-labelledby="title desc">
+  <title>Origami-style Cat</title>
+  <desc>Geometric folded paper cat composed of polygon facets with subtle fold lines, evoking an origami sculpture.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbf9f6"/>
+      <stop offset="100%" stop-color="#f2eee8"/>
+    </linearGradient>
+    <radialGradient id="shadowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(0,0,0,0.25)"/>
+      <stop offset="100%" stop-color="rgba(0,0,0,0)"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="800" height="600" fill="url(#bg)"/>
+
+  <!-- Ground shadow -->
+  <ellipse cx="450" cy="470" rx="170" ry="24" fill="url(#shadowGrad)"/>
+
+  <!-- Tail (behind body) -->
+  <g id="tail">
+    <!-- Tail facets -->
+    <polygon points="540,370 585,335 620,280" fill="#d7c5b2"/>
+    <polygon points="540,370 620,280 600,300" fill="#c9b39e"/>
+    <!-- Tail tip fold highlight -->
+    <polygon points="620,280 608,288 612,276" fill="#eee2d6"/>
+  </g>
+
+  <!-- Body facets -->
+  <g id="body">
+    <!-- Triangulated body using center (460,360) -->
+    <polygon points="380,300 520,310 460,360" fill="#e3d4c4"/>
+    <polygon points="520,310 540,370 460,360" fill="#d7c5b2"/>
+    <polygon points="540,370 500,440 460,360" fill="#c9b39e"/>
+    <polygon points="500,440 420,455 460,360" fill="#b99f87"/>
+    <polygon points="420,455 370,440 460,360" fill="#c9b39e"/>
+    <polygon points="370,440 360,380 460,360" fill="#d7c5b2"/>
+    <polygon points="360,380 380,300 460,360" fill="#e3d4c4"/>
+
+    <!-- Front leg accent facet -->
+    <polygon points="370,440 385,395 395,440" fill="#b99f87"/>
+  </g>
+
+  <!-- Head facets -->
+  <g id="head">
+    <!-- Triangulated head using center (340,260) -->
+    <polygon points="300,220 360,230 340,260" fill="#eee2d6"/>
+    <polygon points="360,230 380,300 340,260" fill="#e3d4c4"/>
+    <polygon points="380,300 330,315 340,260" fill="#d7c5b2"/>
+    <polygon points="330,315 295,300 340,260" fill="#c9b39e"/>
+    <polygon points="295,300 300,220 340,260" fill="#e3d4c4"/>
+  </g>
+
+  <!-- Fold lines -->
+  <g id="fold-lines" stroke="#8b7762" stroke-linecap="round" stroke-dasharray="8 8" stroke-opacity="0.5" fill="none">
+    <!-- Head center to vertices -->
+    <line x1="340" y1="260" x2="300" y2="220"/>
+    <line x1="340" y1="260" x2="360" y2="230"/>
+    <line x1="340" y1="260" x2="380" y2="300"/>
+    <line x1="340" y1="260" x2="330" y2="315"/>
+    <line x1="340" y1="260" x2="295" y2="300"/>
+    <!-- Subtle ear ridge -->
+    <line x1="300" y1="220" x2="360" y2="230"/>
+
+    <!-- Body center to vertices -->
+    <line x1="460" y1="360" x2="380" y2="300"/>
+    <line x1="460" y1="360" x2="520" y2="310"/>
+    <line x1="460" y1="360" x2="540" y2="370"/>
+    <line x1="460" y1="360" x2="500" y2="440"/>
+    <line x1="460" y1="360" x2="420" y2="455"/>
+    <line x1="460" y1="360" x2="370" y2="440"/>
+    <line x1="460" y1="360" x2="360" y2="380"/>
+
+    <!-- Tail folds -->
+    <line x1="540" y1="370" x2="620" y2="280"/>
+    <line x1="540" y1="370" x2="585" y2="335"/>
+  </g>
+
+  <!-- Silhouette outlines -->
+  <g id="outlines" fill="none" stroke="#8b7762" stroke-width="2" stroke-linejoin="round">
+    <path d="M300,220 L360,230 L380,300 L330,315 L295,300 Z"/>
+    <path d="M380,300 L520,310 L540,370 L500,440 L420,455 L370,440 L360,380 Z"/>
+    <path d="M540,370 L585,335 L620,280 L600,300 Z"/>
+  </g>
+</svg>

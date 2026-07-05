@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <style>
+      .paper-light { fill: #FFCC80; stroke: #3E2723; stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
+      .paper-dark { fill: #F57C00; stroke: #3E2723; stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
+      .paper-inner { fill: #FFE0B2; stroke: #3E2723; stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
+      .feature { fill: #3E2723; stroke: none; }
+      .whisker { stroke: #3E2723; stroke-width: 2; stroke-linecap: round; fill: none; }
+    </style>
+  </defs>
+
+  <!-- Background Circle -->
+  <circle cx="200" cy="200" r="180" fill="#FFF3E0" />
+
+  <!-- Main Head Shape: Left Half -->
+  <!-- Chin -> Left Cheek -> Left Ear Tip -> Forehead Center -->
+  <path class="paper-light" d="M 200 380 L 60 220 L 110 40 L 200 120 Z" />
+
+  <!-- Main Head Shape: Right Half -->
+  <!-- Chin -> Right Cheek -> Right Ear Tip -> Forehead Center -->
+  <path class="paper-dark" d="M 200 380 L 340 220 L 290 40 L 200 120 Z" />
+
+  <!-- Inner Ears (Triangles to show fold) -->
+  <!-- Left Inner Ear -->
+  <path class="paper-inner" d="M 110 40 L 160 100 L 120 100 Z" />
+  <!-- Right Inner Ear -->
+  <path class="paper-inner" d="M 290 40 L 240 100 L 280 100 Z" />
+
+  <!-- Nose -->
+  <path class="feature" d="M 200 260 L 185 290 L 215 290 Z" />
+
+  <!-- Eyes -->
+  <!-- Left Eye -->
+  <path class="feature" d="M 140 210 L 170 220 L 140 230 Z" />
+  <!-- Right Eye -->
+  <path class="feature" d="M 260 210 L 230 220 L 260 230 Z" />
+
+  <!-- Mouth / Muzzle Lines -->
+  <path class="whisker" d="M 200 290 Q 180 310 160 300" />
+  <path class="whisker" d="M 200 290 Q 220 310 240 300" />
+
+  <!-- Whiskers -->
+  <g class="whisker">
+    <!-- Left Side -->
+    <line x1="160" y1="280" x2="100" y2="270" />
+    <line x1="160" y1="290" x2="100" y2="290" />
+    <line x1="160" y1="300" x2="100" y2="310" />
+    
+    <!-- Right Side -->
+    <line x1="240" y1="280" x2="300" y2="270" />
+    <line x1="240" y1="290" x2="300" y2="290" />
+    <line x1="240" y1="300" x2="300" y2="310" />
+  </g>
+</svg>

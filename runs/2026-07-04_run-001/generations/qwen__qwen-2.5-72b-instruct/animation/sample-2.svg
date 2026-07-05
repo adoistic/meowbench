@@ -1,0 +1,15 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <ellipse cx="50" cy="60" rx="20" ry="15" fill="#f6e7c9" />
+    <ellipse cx="50" cy="40" rx="15" ry="10" fill="#e0b57a" />
+    <path d="M35 45C35 50 40 60 50 60C60 60 65 50 65 45" stroke="#000" fill="none" stroke-width="2" />
+    <path d="M48 35a5 5 0 100 10 5 5 0 000-10zm0 0a6 6 0 110 12 6 6 0 010-12z" fill="#000" />
+    <path d="M43 38a3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3 3 3 0 003-3zm14-2a3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3 3 3 0 003-3z" fill="#000" />
+    <path d="M36 64C27 55 21 61 21 69C21 74 26 80 36 81C46 82 52 75 52 69C52 61 46 55 36 64z" fill="#d16643" />
+    <path d="M45 70C45 76 40 81 33 81C26 81 21 76 21 70C21 64 26 59 33 59C40 59 45 64 45 70z" fill="#f6e7c9" />
+    <path d="M40 64C35 64 31 68 31 73C31 78 35 82 40 82C45 82 49 78 49 73C49 68 45 64 40 64z" fill="#e0b57a" />
+    <path d="M20 75C20 70 25 65 35 65C45 65 50 70 50 75" stroke="#000" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" >
+      <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 35 75" to="10 35 75" dur="2s" repeatCount="indefinite" />
+    </path>
+  </g>
+</svg>

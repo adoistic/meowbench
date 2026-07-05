@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#cfeeff"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="groundGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8bd17a"/>
+      <stop offset="100%" stop-color="#5db05b"/>
+    </linearGradient>
+    <radialGradient id="tireGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#444"/>
+      <stop offset="100%" stop-color="#1f1f1f"/>
+    </radialGradient>
+    <radialGradient id="hubGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f0f0f0"/>
+      <stop offset="100%" stop-color="#b0b0b0"/>
+    </radialGradient>
+    <linearGradient id="frameGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3AB6C2"/>
+      <stop offset="100%" stop-color="#2A9D8F"/>
+    </linearGradient>
+    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+      <feOffset dx="0" dy="2" result="off"/>
+      <feMerge>
+        <feMergeNode in="off"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <g id="wheel">
+      <circle r="75" fill="url(#tireGrad)"/>
+      <circle r="62" fill="#d9d9d9" stroke="#b9b9b9" stroke-width="4"/>
+      <g stroke="#9a9a9a" stroke-width="2">
+        <line x1="0" y1="0" x2="0" y2="-62" transform="rotate(0)"/>
+        <line x1="0" y1="0" x2="0" y2="-62" transform="rotate(15)"/>
+        <line x1="0" y1="0" x2="0" y2="-62" transform="rotate(30)"/>
+        <line x1="0" y1="0" x2="0" y2="-62" transform="rotate(45)"/>
+        <line x1="0" y1="0" x2="0" y2="-62" transform="rotate(60)"/>
+        <line x1="0" y1="0" x2="0" y2="-62" transform="rotate(75)"/>
+        <line x1="0" y1="0" x2="0" y2="-62" transform="rotate(90)"/>
+        <line x1="0" y1="0" x2="0" y2="-62" transform="rotate(105)"/>
+        <line x1="0" y1="0" x2="0" y2="-62" transform="rotate(120)"/>
+        <line x1="0" y1="0" x2="0" y2="-62" transform="rotate(135)"/>
+        <line x1="0" y1="0" x2="0" y2="-62" transform="rotate(150)"/>
+        <line x1="0" y1="0" x2="0" y2="-62" transform="rotate(165)"/>
+        <line x1="0" y1="0" x2="0" y2="-62" transform="rotate(180)"/>
+        <line x1="0" y1="0" x2="0" y2="-62" transform="rotate(195)"/>
+        <line x1="0" y1="0" x2="0" y2="-62" transform="rotate(210)"/>
+      </g>
+      <circle r="10" fill="url(#hubGrad)" stroke="#8a8a8a" stroke-width="2"/>
+    </g>
+    <style>
+      .frame { stroke: url(#frameGrad); stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .metal { stroke: #5b5b5b; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .handlebar { stroke: #3f3f3f; stroke-width: 8; stroke-linecap: round; }
+      .fur { fill: #f6a55d; }
+      .furStroke { stroke: #f6a55d; stroke-linecap: round; stroke-linejoin: round; }
+      .stripe { fill: #d9792c; }
+      .paw { fill: #f7c493; }
+      .eyeWhite { fill: #ffffff; }
+      .pupil { fill: #222; }
+      .whisker { stroke: #8a5a34; stroke-width: 2; stroke-linecap: round; }
+      .groundShadow { fill: rgba(0,0,0,0.18); filter: url(#softShadow); }
+      .scarf { fill: #e74c3c; }
+      .scarfDark { fill: #c0392b; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="500" fill="url(#skyGrad)"/>
+
+  <path d="M0,430 C120,400 220,450 360,440 C520,430 600,455 800,430 L800,500 L0,500 Z" fill="url(#groundGrad)"/>
+
+  <g opacity="0.3">
+    <ellipse class="groundShadow" cx="250" cy="440" rx="85" ry="12"/>
+    <ellipse class="groundShadow" cx="540" cy="440" rx="85" ry="12"/>
+  </g>
+
+  <g id="bicycle" filter="url(#softShadow)">
+    <g transform="translate(250,360)">
+      <use href="#wheel"/>
+    </g>
+    <g transform="translate(540,360)">
+      <use href="#wheel"/>
+    </g>
+
+    <g>
+      <path class="frame" d="M250,360 L330,345"/>
+      <path class="frame" d="M250,360 L300,240"/>
+      <path class="frame" d="M300,240 L330,345"/>
+      <path class="frame" d="M300,240 L500,230"/>
+      <path class="frame" d="M500,230 L515,290"/>
+      <path class="frame" d="M515,290 L330,345"/>
+      <path class="frame" d="M515,290 Q540,330 540,360"/>
+    </g>
+
+    <g>
+      <line class="handlebar" x1="500" y1="230" x2="515" y2="210"/>
+      <line class="handlebar" x1="485" y1="210" x2="555" y2="210"/>
+      <circle cx="485" cy="210" r="7" fill="#2e2e2e"/>
+      <circle cx="555" cy="210" r="7" fill="#2e2e2e"/>
+    </g>
+
+    <g>
+      <path d="M298,242 Q320,230 345,236 Q330,246 298,242 Z" fill="#2f2f2f"/>
+    </g>
+
+    <g>
+      <circle cx="330" cy="345" r="22" fill="#bfbfbf" stroke="#8a8a8a" stroke-width="4"/>
+      <line x1="330" y1="345" x2="364.3" y2="352.8" class="metal" stroke-width="6"/>
+      <line x1="330" y1="345" x2="275.7" y2="337.2" class="metal" stroke-width="6"/>
+      <rect x="360.5" y="348.5" width="16" height="8" fill="#2e2e2e" transform="rotate(10 368.5 352.5)" rx="2"/>
+      <rect x="265" y="333" width="16" height="8" fill="#2e2e2e" transform="rotate(190 273 337)" rx="2"/>
+      <circle cx="250" cy="360" r="9" fill="#bfbfbf" stroke="#8a8a8a" stroke-width="3"/>
+      <path d="M342,335 L238,350" stroke="#555" stroke-width="3" fill="none"/>
+      <path d="M342,355 L262,370" stroke="#555" stroke-width="3" fill="none"/>
+    </g>
+  </g>
+
+  <g id="cat">
+    <ellipse cx="355" cy="265" rx="95" ry="58" transform="rotate(-10 355 265)" class="fur" stroke="#e08a40" stroke-width="2"/>
+
+    <g opacity="0.9">
+      <path d="M300,245 q18,-12 38,-10 q-10,14 -34,18 z" class="stripe"/>
+      <path d="M330,235 q22,-12 44,-8 q-10 16 -38 18 z" class="stripe"/>
+      <path d="M360,228 q22,-10 44,-6 q-10 14 -38 16 z" class="stripe"/>
+    </g>
+
+    <path d="M285,265 C275,250 265,235 275,220 C300,195 345,235 345,235" stroke="#f6a55d" stroke-width="18" fill="none" stroke-linecap="round"/>
+
+    <g>
+      <circle cx="480" cy="190" r="45" class="fur" stroke="#e08a40" stroke-width="2"/>
+      <path d="M448,180 L466,156 L470,188 Z" fill="#f6a55d" stroke="#e08a40" stroke-width="2"/>
+      <path d="M512,180 L494,156 L490,188 Z" fill="#f6a55d" stroke="#e08a40" stroke-width="2"/>
+      <path d="M458,173 L466,162 L468,180 Z" fill="#f6b3c4"/>
+      <path d="M502,173 L494,162 L492,180 Z" fill="#f6b3c4"/>
+
+      <ellipse cx="465" cy="190" rx="11" ry="13" class="eyeWhite"/>
+      <ellipse cx="493" cy="190" rx="11" ry="13" class="eyeWhite"/>
+      <circle cx="465" cy="193" r="5" class="pupil"/>
+      <circle cx="493" cy="193" r="5" class="pupil"/>
+      <circle cx="463" cy="191" r="1.5" fill="#ffffff" opacity="0.9"/>
+      <circle cx="491" cy="191" r="1.5" fill="#ffffff" opacity="0.9"/>
+
+      <path d="M478,204 L486,204 L482,210 Z" fill="#d47a5a"/>
+      <path d="M482,210 q-6,6 -14,6" stroke="#8a5a34" stroke-width="2" fill="none"/>
+      <path d="M482,210 q6,6 14,6" stroke="#8a5a34" stroke-width="2" fill="none"/>
+
+      <g>
+        <line x1="450" y1="205" x2="430" y2="200" class="whisker"/>
+        <line x1="450" y1="210" x2="427" y2="210" class="whisker"/>
+        <line x1="450" y1="215" x2="430" y2="220" class="whisker"/>
+        <line x1="514" y1="205" x2="534" y2="200" class="whisker"/>
+        <line x1="514" y1="210" x2="537" y2="210" class="whisker"/>
+        <line x1="514" y1="215" x2="534" y2="220" class="whisker"/>
+      </g>
+
+      <path d="M452,182 q14,-10 28,0" stroke="#d9792c" stroke-width="3" fill="none" opacity="0.7"/>
+    </g>
+
+    <g>
+      <path d="M438,210 q-32,12 -64,26 q-22,9 -34,8" class="scarf"/>
+      <path d="M438,210 q-6,12 -8,20 q16,-6 28,-2 q-8,-10 -20,-18 z" class="scarfDark"/>
+    </g>
+
+    <path d="M405,240 Q450,220 495,210" class="furStroke" stroke-width="18" fill="none"/>
+    <path d="M415,245 Q470,222 540,210" class="furStroke" stroke-width="14" opacity="0.85" fill="none"/>
+    <circle cx="495" cy="210" r="9" class="paw"/>
+    <circle cx="540" cy="210" r="9" class="paw"/>
+
+    <path d="M340,300 Q360,330 365,352" class="furStroke" stroke-width="20" fill="none"/>
+    <circle cx="365" cy="352" r="9" class="paw"/>
+    <path d="M330,300 Q305,325 276,337" class="furStroke" stroke-width="18" fill="none" opacity="0.95"/>
+    <circle cx="276" cy="337" r="8" class="paw"/>
+
+    <path d="M285,262 q-18,8 -8,18 q18,16 40,8" stroke="#d9792c" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.7"/>
+  </g>
+
+  <g opacity="0.15">
+    <circle cx="90" cy="80" r="28" fill="#fff59d"/>
+    <circle cx="90" cy="80" r="40" fill="#fff59d" opacity="0.4"/>
+  </g>
+</svg>

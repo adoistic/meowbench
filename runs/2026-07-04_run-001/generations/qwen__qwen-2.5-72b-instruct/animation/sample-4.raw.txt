@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <path id="cat-body" d="M50,40 q-20,30 20,30 q20-30 -20-30" fill="#F6E4D7" />
+    <path id="cat-earL" d="M35,20 l10,10 l-10,10 z" fill="#E4CCBE" />
+    <path id="cat-earR" d="M65,20 l-10,10 l10,10 z" fill="#E4CCBE" />
+    <path id="cat-eyeL" d="M38,30 a8,5 0 1,0 0,-10 a8,5 0 1,0 0,10" fill="#000" />
+    <path id="cat-eyeR" d="M62,30 a8,5 0 1,0 0,-10 a8,5 0 1,0 0,10" fill="#000" />
+    <path id="cat-nose" d="M50,35 a2,2 0 1,0 0,-4 a2,2 0 1,0 0,4" fill="#8B4513" />
+    <path id="cat-mouth" d="M47,40 q2,5 5,0 q2,-5 -5,0" stroke="#000" stroke-width="1" fill="none" />
+    <path id="cat-tail" d="M50,60 q-15,15 15,15" fill="#C19870" />
+  </defs>
+  <use href="#cat-body" />
+  <use href="#cat-earL" />
+  <use href="#cat-earR" />
+  <use href="#cat-eyeL" />
+  <use href="#cat-eyeR" />
+  <use href="#cat-nose" />
+  <use href="#cat-mouth" />
+  <use href="#cat-tail" transform="translate(50, 60)">
+    <animateTransform attributeName="transform" type="rotate" from="0 50 60" to="45 50 60" begin="0s" dur="2s" repeatCount="indefinite" />
+  </use>
+</svg>

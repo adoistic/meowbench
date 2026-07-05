@@ -1,0 +1,99 @@
+```xml
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="softBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" />
+    </filter>
+    <filter id="furTexture">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" result="noise"/>
+      <feDiffuseLighting in="noise" lighting-color="#a09080" surfaceScale="2">
+        <feDistantLight azimuth="45" elevation="60" />
+      </feDiffuseLighting>
+      <feComposite in="SourceGraphic" in2="SourceAlpha" operator="in" />
+      <feBlend in2="SourceGraphic" mode="multiply" />
+    </filter>
+    <radialGradient id="bodyGradient" cx="50%" cy="40%" r="55%" fx="50%" fy="40%">
+      <stop offset="0%" stop-color="#d3c8b9" />
+      <stop offset="60%" stop-color="#a89987" />
+      <stop offset="100%" stop-color="#5a4d3f" />
+    </radialGradient>
+    <radialGradient id="eyeGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#d4d87e" />
+      <stop offset="60%" stop-color="#809c48" />
+      <stop offset="100%" stop-color="#4a592b" />
+    </radialGradient>
+    <clipPath id="catClip">
+      <path d="M305,115 C330,85 370,80 390,110 C410,140 395,190 380,210 C385,220 405,250 400,285 C395,320 370,335 345,340 C350,370 340,410 310,425 C280,440 250,420 230,390 C180,415 130,410 110,380 C90,350 100,290 125,270 C90,265 75,220 90,180 C105,140 150,135 180,155 C170,120 190,90 225,85 C260,80 285,95 305,115 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Ground Shadow -->
+  <ellipse cx="250" cy="425" rx="130" ry="20" fill="#000" opacity="0.2" filter="url(#softBlur)" />
+
+  <!-- Main Body -->
+  <g clip-path="url(#catClip)">
+    <path fill="url(#bodyGradient)" d="M305,115 C330,85 370,80 390,110 C410,140 395,190 380,210 C385,220 405,250 400,285 C395,320 370,335 345,340 C350,370 340,410 310,425 C280,440 250,420 230,390 C180,415 130,410 110,380 C90,350 100,290 125,270 C90,265 75,220 90,180 C105,140 150,135 180,155 C170,120 190,90 225,85 C260,80 285,95 305,115 Z"/>
+    <!-- Fur Texture Overlay -->
+    <rect x="75" y="80" width="370" height="365" opacity="0.4" filter="url(#furTexture)" />
+  </g>
+  
+  <!-- Shadow & Detail Paths -->
+  <g fill="#42382f" opacity="0.5">
+    <!-- Stripes -->
+    <path d="M295,95 Q285,115 290,130 Q305,115 295,95Z" style="filter:blur(1px)"/>
+    <path d="M265,88 Q255,110 260,125 Q275,110 265,88Z" style="filter:blur(1px)"/>
+    <path d="M328,110 Q320,135 330,145 Q340,130 328,110Z" style="filter:blur(1px)"/>
+    <path d="M350,125 Q345,150 355,160 Q365,145 350,125Z" style="filter:blur(1px)"/>
+    <path d="M200,140 Q190,165 200,175 Q210,160 200,140Z" style="filter:blur(1px)"/>
+    <path d="M175,160 Q165,185 175,195 Q185,180 175,160Z" style="filter:blur(1px)"/>
+    <path d="M235,380 a 60 80 0 0 1 20,40 a 50 60 0 0 0 30 -50 Z" style="filter:blur(2px)"/>
+    <path d="M140,300 Q150,350 130,370 Q120,340 140,300Z" style="filter:blur(2px)"/>
+    <!-- Shadows -->
+    <path d="M205,250 c -20,-5 -35,10 -30,30 c 25,10 40,-5 40,-20 z" opacity="0.7" style="filter:blur(5px)"/>
+    <path d="M245,340 c 0,10 -10,30 -40,40 c -10,-20 10,-35 30,-45 z" opacity="0.8" style="filter:blur(6px)"/>
+  </g>
+
+  <!-- Facial Features -->
+  <g>
+    <!-- Left Eye -->
+    <g transform="translate(265, 155)">
+      <path d="M 0,0 C 15,5 20,20 0,25 C -20,20 -15,5 0,0" fill="#f0eade"/>
+      <circle r="10" fill="url(#eyeGradient)"/>
+      <circle r="5" fill="#111"/>
+      <circle cx="2" cy="-3" r="2.5" fill="#fff" opacity="0.9"/>
+      <path d="M-15,3 q 15 -10 30 0" stroke="#42382f" stroke-width="2" fill="none" opacity="0.7"/>
+    </g>
+    <!-- Right Eye -->
+    <g transform="translate(320, 160)">
+      <path d="M 0,0 C 15,5 20,20 0,25 C -20,20 -15,5 0,0" fill="#f0eade"/>
+      <circle r="10" fill="url(#eyeGradient)"/>
+      <circle r="5" fill="#111"/>
+      <circle cx="2" cy="-3" r="2.5" fill="#fff" opacity="0.9"/>
+      <path d="M-15,3 q 15 -10 30 0" stroke="#42382f" stroke-width="2" fill="none" opacity="0.7"/>
+    </g>
+    <!-- Nose and Mouth -->
+    <path d="M298,185 l 5,5 l -5,3 l -5,-3 Z" fill="#d4a3a3"/>
+    <path d="M298,193 v 10 m -7,-3 c 5,8 15,8 20,0" stroke="#42382f" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <path d="M293,188 l 1,-2 M303,188 l -1,-2" stroke="#42382f" stroke-width="1" fill="none"/>
+    <!-- Inner Ears -->
+    <path d="M225,85 Q235,105 220,120 C210,110 215,90 225,85Z" fill="#c4a899" opacity="0.8"/>
+    <path d="M370,100 Q360,120 375,135 C385,125 380,105 370,100Z" fill="#c4a899" opacity="0.8"/>
+  </g>
+
+  <!-- Whiskers & Fur Details -->
+  <g stroke="#f0eade" stroke-width="0.8" fill="none" stroke-linecap="round">
+    <path d="M260,195 q -30,5 -60,0" />
+    <path d="M260,202 q -35,2 -70,-5" />
+    <path d="M260,209 q -30,-5 -60,-15" />
+    <path d="M335,195 q 30,5 60,0" />
+    <path d="M335,202 q 35,2 70,-5" />
+    <path d="M335,209 q 30,-5 60,-15" />
+    <!-- Fine fur highlights -->
+    <path d="M180,155 q 10,-15 -5,-20" opacity="0.7" />
+    <path d="M200,280 q 15,5 10,20" opacity="0.7" />
+    <path d="M375,210 q 10,10 0,20 " opacity="0.7" />
+    <path d="M310,420 q -10,-10 5,-15 " opacity="0.7" />
+    <path d="M230,90 q -5,10 5,15 " opacity="0.7" />
+  </g>
+</svg>
+```

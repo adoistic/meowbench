@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Reusable Wheel Spokes and Rim -->
+    <g id="spokes">
+       <line x1="0" y1="-72" x2="0" y2="72" stroke="#8D99AE" stroke-width="2"/>
+       <line x1="-72" y1="0" x2="72" y2="0" stroke="#8D99AE" stroke-width="2"/>
+       <line x1="-51" y1="-51" x2="51" y2="51" stroke="#8D99AE" stroke-width="2"/>
+       <line x1="-51" y1="51" x2="51" y2="-51" stroke="#8D99AE" stroke-width="2"/>
+       <line x1="-27" y1="-67" x2="27" y2="67" stroke="#8D99AE" stroke-width="2"/>
+       <line x1="27" y1="-67" x2="-27" y2="67" stroke="#8D99AE" stroke-width="2"/>
+       <line x1="-67" y1="-27" x2="67" y2="27" stroke="#8D99AE" stroke-width="2"/>
+       <line x1="-67" y1="27" x2="67" y2="-27" stroke="#8D99AE" stroke-width="2"/>
+    </g>
+    <!-- Reusable Complete Wheel -->
+    <g id="wheel">
+       <use href="#spokes" />
+       <circle cx="0" cy="0" r="85" fill="none" stroke="#2B2D42" stroke-width="22" />
+       <circle cx="0" cy="0" r="74" fill="none" stroke="#FFFFFF" stroke-width="4" />
+       <circle cx="0" cy="0" r="72" fill="none" stroke="#E5E5E5" stroke-width="6" />
+       <circle cx="0" cy="0" r="10" fill="#E63946" />
+       <path d="M 60 -40 A 72 72 0 0 1 70 20" stroke="#FFFFFF" stroke-width="4" fill="none" stroke-linecap="round" />
+       <path d="M -60 40 A 72 72 0 0 1 -70 -20" stroke="#FFFFFF" stroke-width="4" fill="none" stroke-linecap="round" />
+    </g>
+    <!-- Reusable Stylized Cloud -->
+    <g id="cloud" fill="#FFFFFF">
+       <circle cx="50" cy="0" r="30" />
+       <circle cx="90" cy="10" r="25" />
+       <circle cx="10" cy="10" r="20" />
+       <rect x="10" y="-10" width="80" height="40" rx="20" />
+    </g>
+  </defs>
+
+  <!-- Sky Background -->
+  <rect x="0" y="0" width="800" height="600" fill="#E8F4F8" />
+  
+  <!-- Sun -->
+  <circle cx="650" cy="150" r="80" fill="#FFD166" opacity="0.9" />
+
+  <!-- Background Clouds -->
+  <use href="#cloud" x="100" y="100" opacity="0.8" transform="scale(1.2)" />
+  <use href="#cloud" x="400" y="50" opacity="0.6" transform="scale(0.8)" />
+  <use href="#cloud" x="650" y="200" opacity="0.7" transform="scale(0.9)" />
+
+  <!-- Background Motion Sparks & Wind Lines -->
+  <g stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" opacity="0.7">
+     <line x1="750" y1="200" x2="600" y2="200" />
+     <line x1="250" y1="120" x2="100" y2="120" />
+     <line x1="850" y1="400" x2="650" y2="400" />
+  </g>
+
+  <!-- Ground Layer -->
+  <path d="M 0 540 L 800 540 L 800 600 L 0 600 Z" fill="#2A9D8F" />
+  
+  <!-- Ground Shadow under Bicycle -->
+  <ellipse cx="425" cy="540" rx="240" ry="12" fill="#155D54" opacity="0.6" />
+
+  <!-- Dust / Motion Puffs Trailing Behind -->
+  <circle cx="150" cy="530" r="15" fill="#FFFFFF" opacity="0.8" />
+  <circle cx="120" cy="520" r="11" fill="#FFFFFF" opacity="0.6" />
+  <circle cx="90" cy="535" r="7" fill="#FFFFFF" opacity="0.4" />
+
+  <!-- CAT BACKGROUND LAYER -->
+  
+  <!-- Secondary Tail of the Scarf -->
+  <path d="M 435 185 C 380 220, 270 170, 200 180" stroke="#E9C46A" stroke-width="16" stroke-linecap="round" fill="none" />
+  
+  <!-- Left Leg (Background Leg) -->
+  <path d="M 350 255 L 370 320 L 380 415" stroke="#E76F51" stroke-width="40" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  <line x1="375" y1="375" x2="380" y2="415" stroke="#FFF3B0" stroke-width="40" stroke-linecap="round" />
+  
+  <!-- Left Arm (Background Arm) -->
+  <path d="M 440 220 C 470 240, 490 240, 520 230" stroke="#E76F51" stroke-width="26" stroke-linecap="round" fill="none" />
+  <path d="M 505 235 L 530 232" stroke="#FFF3B0" stroke-width="26" stroke-linecap="round" fill="none" />
+
+  <!-- BICYCLE LAYER -->
+  
+  <!-- Left Pedal & Crank -->
+  <rect x="360" y="405" width="25" height="15" rx="5" fill="#2B2D42" />
+  <line x1="400" y1="450" x2="375" y2="412" stroke="#4A4E69" stroke-width="8" stroke-linecap="round" />
+
+  <!-- Back and Front Wheels -->
+  <use href="#wheel" x="250" y="450" />
+  <use href="#wheel" x="600" y="450" />
+
+  <!-- Bike Frame Diamond Geometry -->
+  <path d="M 250 450 L 400 450 L 340 280 L 250 450 Z M 400 450 L 550 280 L 340 280" fill="none" stroke="#EF233C" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Front Fork -->
+  <line x1="550" y1="280" x2="600" y2="450" stroke="#D90429" stroke-width="14" stroke-linecap="round" />
+  <!-- Head Tube Accent -->
+  <line x1="545" y1="265" x2="555" y2="295" stroke="#EF233C" stroke-width="16" stroke-linecap="round" />
+
+  <!-- Seat Post and Seat -->
+  <line x1="340" y1="280" x2="335" y2="245" stroke="#8D99AE" stroke-width="8" stroke-linecap="round" />
+  <path d="M 310 240 Q 330 235 360 240 L 360 248 L 310 248 Z" fill="#2B2D42" />
+
+  <!-- Handlebars -->
+  <line x1="550" y1="280" x2="550" y2="245" stroke="#8D99AE" stroke-width="8" stroke-linecap="round" />
+  <path d="M 515 245 C 530 245, 550 245, 560 245" fill="none" stroke="#8D99AE" stroke-width="8" stroke-linecap="round" />
+  <!-- Right Grip -->
+  <line x1="525" y1="245" x2="540" y2="245" stroke="#2B2D42" stroke-width="14" stroke-linecap="round" />
+
+  <!-- Drivetrain, Chain, Derailleur -->
+  <path d="M 250 435 L 400 425 C 415 425, 425 435, 425 450 C 425 465, 415 475, 400 475 L 250 465 C 240 465, 235 455, 235 450 C 235 440, 240 435, 250 435 Z" fill="none" stroke="#2B2D42" stroke-width="4" stroke-linejoin="round" />
+  <circle cx="400" cy="450" r="24" fill="none" stroke="#8D99AE" stroke-width="6" />
+  <circle cx="250" cy="450" r="14" fill="#6C757D" />
+
+  <!-- Right Pedal & Crank -->
+  <line x1="400" y1="450" x2="425" y2="488" stroke="#4A4E69" stroke-width="8" stroke-linecap="round" />
+  <rect x="415" y="480" width="25" height="15" rx="5" fill="#2B2D42" />
+  <!-- Bottom Bracket Bolt -->
+  <circle cx="400" cy="450" r="5" fill="#4A4E69" />
+
+  <!-- CAT FOREGROUND LAYER -->
+  
+  <!-- Cat Tail Base & Stripes -->
+  <path d="M 320 250 C 250 260, 180 200, 140 150 C 110 110, 160 50, 200 80 C 230 100, 210 140, 180 160" stroke="#F4A261" stroke-width="36" stroke-linecap="round" fill="none" />
+  <path d="M 320 250 C 250 260, 180 200, 140 150 C 110 110, 160 50, 200 80 C 230 100, 210 140, 180 160" stroke="#E76F51" stroke-width="36" stroke-linecap="round" stroke-dasharray="10 32" stroke-dashoffset="15" fill="none" />
+
+  <!-- Cat Torso & Belly -->
+  <path d="M 320 250 C 310 160, 410 170, 440 220 C 450 260, 410 300, 350 270 C 330 265, 310 260, 320 250 Z" fill="#F4A261" />
+  <path d="M 390 275 C 410 265, 435 240, 430 210 C 420 200, 400 220, 380 245 C 370 255, 380 270, 390 275 Z" fill="#FFF3B0" /> 
+  <!-- Tiger Stripes on Back -->
+  <path d="M 335 195 Q 355 210 345 225 M 365 185 Q 380 210 370 235 M 395 190 Q 405 210 395 235 M 420 200 Q 425 215 415 230" fill="none" stroke="#E76F51" stroke-width="6" stroke-linecap="round" />
+
+  <!-- Right Leg (Foreground Leg) -->
+  <path d="M 335 260 L 400 340 L 425 486" stroke="#F4A261" stroke-width="42" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  <line x1="412" y1="420" x2="425" y2="486" stroke="#FFF3B0" stroke-width="42" stroke-linecap="round" />
+  <line x1="432" y1="480" x2="440" y2="495" stroke="#E76F51" stroke-width="3" stroke-linecap="round" />
+  <line x1="422" y1="482" x2="430" y2="498" stroke="#E76F51" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Right Arm (Foreground Arm) -->
+  <path d="M 425 230 Q 470 280 535 245" stroke="#F4A261" stroke-width="30" stroke-linecap="round" fill="none" />
+  <!-- Mitten Paw overlaying the Handlebar -->
+  <path d="M 515 257 Q 530 245 545 245" stroke="#FFF3B0" stroke-width="30" stroke-linecap="round" fill="none" /> 
+
+  <!-- Cat Head -->
+  <g id="cat-head">
+     <!-- Left Ear -->
+     <polygon points="410,135 415,75 450,125" fill="#E76F51" />
+     <polygon points="418,125 422,88 442,122" fill="#FFA5A5" />
+
+     <!-- Main Head Shape -->
+     <ellipse cx="460" cy="165" rx="55" ry="45" fill="#F4A261" />
+
+     <!-- Right Ear -->
+     <polygon points="470,125 505,75 505,140" fill="#F4A261" />
+     <polygon points="478,123 498,90 498,132" fill="#FFA5A5" />
+
+     <!-- Cheek Tufts (Windblown effect) -->
+     <path d="M 405 165 L 385 175 L 413 185 L 390 195 L 420 200" fill="none" stroke="#F4A261" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+
+     <!-- Snout & Mouth -->
+     <ellipse cx="495" cy="175" rx="25" ry="18" fill="#FFF3B0" />
+     <path d="M 495 185 C 500 190, 505 190, 510 185" fill="none" stroke="#2B2D42" stroke-width="2" stroke-linecap="round" />
+     <circle cx="510" cy="170" r="6" fill="#FFB5A7" />
+
+     <!-- Eyes with Catchlights -->
+     <circle cx="484" cy="155" r="5" fill="#2B2D42" />
+     <circle cx="485.5" cy="153" r="1.5" fill="#FFFFFF" />
+     <circle cx="448" cy="155" r="5" fill="#2B2D42" />
+     <circle cx="449.5" cy="153" r="1.5" fill="#FFFFFF" />
+
+     <!-- Forehead Orange Stripes -->
+     <path d="M 450 120 L 460 140 L 470 120 M 470 122 L 475 142 L 485 125 M 435 125 L 445 142 L 450 122" fill="none" stroke="#E76F51" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+
+     <!-- High-Speed Whiskers Blown Backwards -->
+     <path d="M 470 170 Q 430 180 410 190 M 475 160 Q 440 170 420 175 M 475 180 Q 430 200 415 210" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+  </g>
+
+  <!-- Flowing Yellow Aviator Scarf -->
+  <!-- Primary Trailing Tail -->
+  <path d="M 445 195 C 400 240, 250 205, 180 235" stroke="#F4D03F" stroke-width="20" stroke-linecap="round" fill="none" />
+  <path d="M 445 195 C 400 240, 250 205, 180 235" stroke="#E9C46A" stroke-width="20" stroke-linecap="round" stroke-dasharray="15 30" fill="none" />
+  <!-- Around the Neck Wrap -->
+  <path d="M 425 178 C 440 188, 470 188, 455 208 C 440 218, 415 193, 425 178 Z" fill="#F4D03F" />
+  <path d="M 432 182 L 448 200 M 442 182 L 452 195" fill="none" stroke="#E9C46A" stroke-width="4" stroke-linecap="round" />
+
+  <!-- Foreground Motion Blur Lines over Composition -->
+  <g stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity="0.9">
+     <line x1="780" y1="350" x2="620" y2="350" />
+     <line x1="570" y1="350" x2="520" y2="350" />
+     <line x1="180" y1="280" x2="80" y2="280" />
+  </g>
+</svg>

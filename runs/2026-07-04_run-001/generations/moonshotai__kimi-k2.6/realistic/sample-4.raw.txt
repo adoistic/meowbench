@@ -1,0 +1,337 @@
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <!-- Soft Glow Filter for Atmospheric Highlights -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Fluffy Edge Filter for Multi-colored Fur Details -->
+    <filter id="fur-fluff" x="-50%" y="-50%" width="200%" height="200%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.045 0.015" numOctaves="5" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+
+    <!-- Background Vignette -->
+    <radialGradient id="bg-gradient" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#403736"/>
+      <stop offset="100%" stop-color="#1c1818"/>
+    </radialGradient>
+    
+    <!-- Floor Shadow -->
+    <radialGradient id="floor-shadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0d0b0b" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#0d0b0b" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Fine Single Flicked Hair Pattern for Tabbing -->
+    <pattern id="hair-flick" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M 10,10 Q 10,35 30,35 Q 10,35 5,40" fill="none" stroke="#ab8855" stroke-width="0.8" opacity="0.4"/>
+      <path d="M 55,60 Q 55,85 75,85 Q 55,85 50,90" fill="none" stroke="#d4ab72" stroke-width="0.8" opacity="0.3"/>
+      <path d="M 80,15 Q 80,40 95,40 Q 80,40 75,45" fill="none" stroke="#ffe8c4" stroke-width="0.8" opacity="0.5"/>
+    </pattern>
+
+    <!-- Main Fur Gradients to sculpt form -->
+    <radialGradient id="base-fur" cx="50%" cy="100%" r="130%">
+      <stop offset="0%" stop-color="#d4ab72"/>
+      <stop offset="40%" stop-color="#ab8855"/>
+      <stop offset="90%" stop-color="#6b5039"/>
+      <stop offset="100%" stop-color="#4b3621"/>
+    </radialGradient>
+
+    <radialGradient id="head-fur" cx="40%" cy="80%" r="130%">
+      <stop offset="0%" stop-color="#ffe8c4"/>
+      <stop offset="25%" stop-color="#d4ab72"/>
+      <stop offset="70%" stop-color="#8a6642"/>
+      <stop offset="100%" stop-color="#4b3621"/>
+    </radialGradient>
+
+    <radialGradient id="ear-fur" cx="50%" cy="100%" r="90%">
+      <stop offset="0%" stop-color="#ffe8c4"/>
+      <stop offset="40%" stop-color="#d4ab72"/>
+      <stop offset="100%" stop-color="#704e2d"/>
+    </radialGradient>
+
+    <radialGradient id="tail-fur" cx="20%" cy="50%" r="90%">
+      <stop offset="0%" stop-color="#ab8855"/>
+      <stop offset="50%" stop-color="#6b5039"/>
+      <stop offset="100%" stop-color="#362519"/>
+    </radialGradient>
+
+    <linearGradient id="hind-leg-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6b5039"/>
+      <stop offset="40%" stop-color="#8a6642"/>
+      <stop offset="100%" stop-color="#d4ab72"/>
+    </linearGradient>
+
+    <linearGradient id="toe-grad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ffe8c4"/>
+      <stop offset="100%" stop-color="#d4ab72"/>
+    </linearGradient>
+
+    <!-- Dramatic Eye Gradients -->
+    <radialGradient id="eye-iris" cx="50%" cy="50%" r="50%">
+      <stop offset="10%" stop-color="#75e6da"/>
+      <stop offset="40%" stop-color="#00a896"/>
+      <stop offset="85%" stop-color="#003630"/>
+      <stop offset="100%" stop-color="#001312"/>
+    </radialGradient>
+
+    <radialGradient id="eye-pupil" cx="50%" cy="50%" r="50%">
+      <stop offset="85%" stop-color="#000000"/>
+      <stop offset="100%" stop-color="#001312"/>
+    </radialGradient>
+
+    <radialGradient id="eye-highlight" cx="0%" cy="0%" r="70%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="800" fill="url(#bg-gradient)" />
+  
+  <!-- Floor Shadow -->
+  <ellipse cx="420" cy="680" rx="320" ry="55" fill="url(#floor-shadow)"/>
+
+  <!-- ========================================== -->
+  <!-- TAIL (Rendered behind body to wrap around) -->
+  <!-- ========================================== -->
+  <path d="M 480,560 C 620,560 680,650 580,690 C 540,705 490,700 480,670 C 450,600 510,520 640,480" 
+        fill="none" stroke="url(#tail-fur)" stroke-width="55" stroke-linecap="round" filter="url(#glow)"/>
+  
+  <!-- Tail Fluff Detail Overlay (The 'feathers' of the tail) -->
+  <path d="M 640,480 Q 660,460 670,490 Q 660,470 640,480 M 630,475 Q 650,450 660,480 Q 650,460 630,475" 
+        fill="none" stroke="#ffe8c4" stroke-width="2.5" opacity="0.7"/>
+  <path d="M 580,690 Q 600,715 570,725 Q 590,710 580,690 M 540,705 Q 560,730 530,735 Q 550,720 540,705" 
+        fill="none" stroke="#ffe8c4" stroke-width="2.5" opacity="0.5"/>
+
+  <!-- Tail Cast Shadow -->
+  <path d="M 480,560 C 620,560 680,650 580,690" fill="none" stroke="#000000" stroke-width="55" stroke-linecap="round" opacity="0.25"/>
+
+  <!-- ========================================== -->
+  <!-- MAIN BODY SHAPE (Wide, Sleeper Cat)        -->
+  <!-- ========================================== -->
+  <g filter="url(#glow)">
+    <path d="M 240,660 C 190,660 160,620 160,560 C 160,440 260,360 400,360 C 530,360 620,440 620,540 C 620,610 560,660 480,660 Z" 
+          fill="url(#base-fur)"/>
+    <!-- Shading Profile along rump curve -->
+    <path d="M 160,560 C 160,440 260,360 400,360 C 300,370 230,420 230,560 Z" fill="#000000" opacity="0.15"/>
+    <!-- Top Lumbar Highlight -->
+    <path d="M 400,360 C 530,360 620,440 620,540 C 620,480 530,380 400,380 Z" fill="#ffffff" opacity="0.15"/>
+  </g>
+
+  <!-- Body Fluff (Core large multi-colored tassels) -->
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 225,570 Q 190,610 160,590 Q 190,615 225,580 Z" fill="#fff5e0" opacity="0.6" filter="url(#fur-fluff)"/>
+    <path d="M 230,520 Q 170,500 160,560 Q 180,480 230,510 Z" fill="#fff5e0" opacity="0.4" filter="url(#fur-fluff)"/>
+    <path d="M 290,580 Q 230,640 270,660 Q 240,620 290,580 Z" fill="#ffe8c4" opacity="0.7" filter="url(#fur-fluff)"/>
+    <path d="M 570,600 Q 630,610 610,650 Q 640,600 570,590 Z" fill="#ffe8c4" opacity="0.6" filter="url(#fur-fluff)"/>
+    <path d="M 580,480 Q 650,470 620,540 Q 650,460 590,470 Z" fill="#ffe8c4" opacity="0.5" filter="url(#fur-fluff)"/>
+  </g>
+
+  <!-- Hind Legs (Blended into the body's roundness) -->
+  <!-- Repaired Hind Shapes to prevent pixelation -->
+  <g filter="url(#glow)">
+    <!-- Left Hind: curves in from left -->
+    <path d="M 180,560 C 160,660 240,660 250,660 C 220,630 215,600 240,570 C 210,570 190,560 180,560 Z" fill="url(#hind-leg-grad)"/>
+    <path d="M 180,560 C 190,630 230,660 250,660 C 220,630 215,600 240,570 Z" fill="#000000" opacity="0.2"/>
+    <!-- Right Hind -->
+    <path d="M 620,540 C 500,620 620,660 460,660 C 490,630 510,580 570,540 Z" fill="url(#hind-leg-grad)"/>
+    <path d="M 620,540 C 580,600 620,660 460,660 C 490,630 510,580 570,540 Z" fill="#000000" opacity="0.2"/>
+  </g>
+
+  <!-- Front Paws (Sleeping paws crossed together) -->
+  <g filter="url(#glow)">
+    <ellipse cx="410" cy="650" rx="65" ry="38" transform="rotate(-12 410 650)" fill="url(#toe-grad)"/>
+    <ellipse cx="410" cy="650" rx="65" ry="38" transform="rotate(-12 410 650)" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.4"/>
+    
+    <!-- Left Finger Toes -->
+    <ellipse cx="370" cy="650" rx="14" ry="9" transform="rotate(-30 370 650)" fill="url(#toe-grad)" stroke="#ab8855" stroke-width="1.5"/>
+    <ellipse cx="395" cy="655" rx="14" ry="9" transform="rotate(-15 395 655)" fill="url(#toe-grad)" stroke="#ab8855" stroke-width="1.5"/>
+    <ellipse cx="420" cy="655" rx="14" ry="9" transform="rotate(0 420 655)" fill="url(#toe-grad)" stroke="#ab8855" stroke-width="1.5"/>
+    <ellipse cx="445" cy="645" rx="14" ry="9" transform="rotate(15 445 645)" fill="url(#toe-grad)" stroke="#ab8855" stroke-width="1.5"/>
+    <ellipse cx="460" cy="630" rx="14" ry="9" transform="rotate(40 460 630)" fill="url(#toe-grad)" stroke="#ab8855" stroke-width="1.5"/>
+
+    <!-- Right Thumb Toe (On top) -->
+    <ellipse cx="360" cy="640" rx="13" ry="8" transform="rotate(-45 360 640)" fill="url(#toe-grad)" stroke="#ab8855" stroke-width="1.5"/>
+  </g>
+
+  <!-- Paw Fur Fluff (Heels and Back Tassels) -->
+  <g stroke-linecap="round" stroke-linejoin="round" filter="url(#fur-fluff)">
+    <!-- Heel Left -->
+    <path d="M 290,660 Q 260,640 280,680" fill="none" stroke="#ffe8c4" stroke-width="7" opacity="0.8"/>
+    <path d="M 295,665 Q 270,660 285,690" fill="none" stroke="#d4ab72" stroke-width="7" opacity="0.8"/>
+    <!-- Heel Right -->
+    <path d="M 470,660 Q 500,640 480,680" fill="none" stroke="#ffe8c4" stroke-width="7" opacity="0.8"/>
+    <path d="M 475,665 Q 500,660 480,690" fill="none" stroke="#ab8855" stroke-width="7" opacity="0.8"/>
+    <path d="M 480,660 Q 520,650 500,690" fill="none" stroke="#ffe8c4" stroke-width="8" opacity="0.7"/>
+  </g>
+
+  <!-- Toenails -->
+  <g fill="#e8c3a8">
+    <path d="M 459,629 Q 466,625 467,632 Z" />
+    <path d="M 444,644 Q 449,640 448,649 Z" />
+    <path d="M 419,654 Q 423,650 420,659 Z" />
+    <path d="M 394,654 Q 397,650 393,659 Z" />
+    <path d="M 369,649 Q 371,645 366,653 Z" />
+  </g>
+
+  <!-- ========================================== -->
+  <!-- NECK & CHEST FUR (Luxurious Ruff)          -->
+  <!-- ========================================== -->
+  <g clip-path="url(#ruff-clip)">
+    <g stroke-linecap="round">
+      <!-- Light Creamy Top Ruff (Cascading down) -->
+      <path d="M 230,320 Q 280,260 330,310 L 310,390 Q 270,390 230,330 Z" fill="#fff5e0" opacity="0.6" filter="url(#fur-fluff)"/>
+      <path d="M 330,310 Q 380,240 480,310 L 460,400 Q 400,400 330,360 Z" fill="#ffe8c4" opacity="0.5" filter="url(#fur-fluff)"/>
+      <path d="M 480,310 Q 550,290 580,350 L 540,410 Q 480,420 460,400 Z" fill="#d4ab72" opacity="0.6" filter="url(#fur-fluff)"/>
+      
+      <!-- Rich Aegean Middle Ruff -->
+      <path d="M 210,380 Q 260,320 320,390 L 280,470 Q 240,430 210,380 Z" fill="#ffe8c4" opacity="0.7" filter="url(#fur-fluff)"/>
+      <path d="M 320,390 Q 400,320 500,390 L 460,480 Q 400,490 320,430 Z" fill="#f4dcb6" opacity="0.6" filter="url(#fur-fluff)"/>
+      <path d="M 500,390 Q 580,340 610,420 L 550,490 Q 480,500 460,480 Z" fill="#ffe8c4" opacity="0.7" filter="url(#fur-fluff)"/>
+
+      <!-- Dark Shadowed Bottom Ruff -->
+      <path d="M 220,460 Q 270,400 330,470 L 290,560 Q 250,520 220,460 Z" fill="#ab8855" opacity="0.8" filter="url(#fur-fluff)"/>
+      <path d="M 330,470 Q 420,400 520,470 L 470,570 Q 400,580 330,500 Z" fill="#ab8855" opacity="0.7" filter="url(#fur-fluff)"/>
+      <path d="M 520,470 Q 600,430 630,510 L 580,580 Q 520,590 470,570 Z" fill="#c49a65" opacity="0.7" filter="url(#fur-fluff)"/>
+    </g>
+  </g>
+
+  <!-- Back-facing lighting V sheen on chest ruff -->
+  <path d="M 330,310 Q 380,240 480,310 Q 400,400 330,360 Z" fill="url(#eye-highlight)" opacity="0.2" filter="url(#glow)"/>
+  <path d="M 320,390 Q 400,320 500,390 Q 400,490 320,430 Z" fill="url(#eye-highlight)" opacity="0.15" filter="url(#glow)"/>
+
+  <!-- Fur Hair Overlay Pattern over whole torso/ruff -->
+  <ellipse cx="380" cy="560" rx="240" ry="200" fill="url(#hair-flick)" opacity="0.4" filter="url(#glow)"/>
+
+  <!-- ========================================== -->
+  <!-- HEAD (Massive Cinematic Ruff matched Cat) -->
+  <!-- ========================================== -->
+  <g id="head" filter="url(#glow)">
+    <!-- Base Dome -->
+    <ellipse cx="400" cy="270" rx="155" ry="105" fill="url(#head-fur)"/>
+    
+    <!-- Forehead Overhead Soft Highlight -->
+    <ellipse cx="380" cy="240" rx="120" ry="60" fill="#ffffff" opacity="0.15" filter="url(#glow)"/>
+    
+    <!-- Left Temple Shading -->
+    <path d="M 245,270 C 245,210 290,165 310,165 Q 260,210 270,280 Z" fill="#000000" opacity="0.25"/>
+    <!-- Right Temple Shading -->
+    <path d="M 555,270 C 555,210 510,165 490,165 Q 540,210 530,280 Z" fill="#000000" opacity="0.25"/>
+
+    <!-- Massive Sideburn Ruffs (Ears collide but persist over cheeks) -->
+    <!-- Left Sideburn Layers -->
+    <path d="M 290,280 Q 220,300 250,350 Q 210,340 220,390 Q 230,440 290,380 Z" fill="url(#head-fur)" opacity="0.85"/>
+    <path d="M 290,280 Q 220,300 250,350 Q 210,340 220,390 Q 230,440 290,380 Z" fill="none" stroke="#ffe8c4" stroke-width="3" opacity="0.6" filter="url(#fur-fluff)"/>
+    <path d="M 260,330 Q 200,360 230,410 Q 210,400 200,440 Q 210,480 280,410 Z" fill="url(#head-fur)" opacity="0.9"/>
+    <path d="M 260,330 Q 200,360 230,410 Q 210,400 200,440 Q 210,480 280,410 Z" fill="none" stroke="#f4dcb6" stroke-width="3" opacity="0.5" filter="url(#fur-fluff)"/>
+    
+    <!-- Right Sideburn Layers -->
+    <path d="M 510,280 Q 580,300 550,350 Q 590,340 580,390 Q 570,440 510,380 Z" fill="url(#head-fur)" opacity="0.85"/>
+    <path d="M 510,280 Q 580,300 550,350 Q 590,340 580,390 Q 570,440 510,380 Z" fill="none" stroke="#ffe8c4" stroke-width="3" opacity="0.6" filter="url(#fur-fluff)"/>
+    <path d="M 540,330 Q 600,360 570,410 Q 590,400 600,440 Q 590,480 520,410 Z" fill="url(#head-fur)" opacity="0.9"/>
+    <path d="M 540,330 Q 600,360 570,410 Q 590,400 600,440 Q 590,480 520,410 Z" fill="none" stroke="#ffe8c4" stroke-width="3" opacity="0.5" filter="url(#fur-fluff)"/>
+    
+    <!-- Fluff Flick Tips details -->
+    <path d="M 220,390 Q 190,410 180,400 Q 195,415 230,400" fill="none" stroke="#ffe8c4" stroke-width="0.75" opacity="0.8"/>
+    <path d="M 580,390 Q 610,410 620,400 Q 605,415 570,400" fill="none" stroke="#ffe8c4" stroke-width="0.75" opacity="0.8"/>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- EARS (Tall peaks piercing through sideburns) -->
+  <!-- ========================================== -->
+  <g id="ears" filter="url(#glow)">
+    <!-- Left Ear -->
+    <g>
+      <path d="M 255,220 C 210,140 230,80 270,60 C 310,80 345,140 325,220 Z" fill="url(#ear-fur)"/>
+      <!-- Inner Ear Shadow -->
+      <path d="M 270,180 C 265,120 270,100 290,80 C 305,100 310,140 300,180 Z" fill="#704e2d" opacity="0.8"/>
+      <!-- Fluff Spikes on tip -->
+      <path d="M 255,220 L 240,160 L 255,190 L 230,140 L 260,170 L 240,110 L 270,150 L 255,80 L 285,130 Z" fill="#fff5e0" opacity="0.7" filter="url(#fur-fluff)"/>
+    </g>
+
+    <!-- Right Ear -->
+    <g>
+      <path d="M 545,220 C 590,140 570,80 530,60 C 490,80 455,140 475,220 Z" fill="url(#ear-fur)"/>
+      <!-- Inner Ear Shadow -->
+      <path d="M 530,180 C 535,120 530,100 510,80 C 495,100 490,140 500,180 Z" fill="#704e2d" opacity="0.8"/>
+      <!-- Fluff Spikes on tip -->
+      <path d="M 545,220 L 560,160 L 545,190 L 570,140 L 540,170 L 560,110 L 530,150 L 545,80 L 515,130 Z" fill="#fff5e0" opacity="0.7" filter="url(#fur-fluff)"/>
+    </g>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- FACE (Muzzle and Sleepy Eyes)               -->
+  <!-- ========================================== -->
+  <g id="face" filter="url(#glow)">
+    <!-- Muzzle (White mask fading to cheeks) -->
+    <circle cx="400" cy="335" r="70" fill="#ffe8c4"/>
+    <!-- Subtle highlight on nose bridge -->
+    <ellipse cx="400" cy="315" rx="45" ry="30" fill="#ffffff" opacity="0.3" filter="url(#glow)"/>
+
+    <!-- Sleek Muzzle Shadow -->
+    <path d="M 360,345 A 45,45 0 0 0 440,345 Z" fill="#f4c09f" opacity="0.7"/>
+
+    <!-- Sleeping Eyes (Effortless Almond Cloak) -->
+    <path d="M 270,280 Q 310,260 340,280" fill="none" stroke="#362519" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 270,280 Q 310,270 340,280" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+    
+    <path d="M 460,280 Q 490,260 530,280" fill="none" stroke="#362519" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 460,280 Q 490,270 530,280" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Flawless Slit Nose (True cat profile) -->
+    <path d="M 387,330 C 374,355 395,355 400,348 C 405,355 426,355 413,330 Z" fill="#e88c80"/>
+    <!-- Deep Nose Depth -->
+    <path d="M 387,330 C 374,355 395,355 400,348 C 405,355 426,355 413,330 Z" fill="#000000" opacity="0.2"/>
+    <!-- Philtrum -->
+    <path d="M 400,348 Q 395,362 400,370" fill="none" stroke="#f4c09f" stroke-width="1.5"/>
+
+    <!-- Mouth Carved Fear Line -->
+    <path d="M 400,370 Q 375,385 360,375 M 400,370 Q 425,385 440,375" fill="none" stroke="#362519" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- Chin Ago Bleeding Highlight -->
+    <ellipse cx="400" cy="380" rx="35" ry="18" fill="#ffffff" opacity="0.15" filter="url(#glow)"/>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- WHISKERS (Sweeping from Muzzle Chamber)     -->
+  <!-- ========================================== -->
+  <g id="whiskers" stroke-linecap="round" opacity="0.75">
+    <!-- Left Group -->
+    <path d="M 370,340 Q 260,325 150,345" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <path d="M 370,345 Q 260,345 150,365" fill="none" stroke="#d7d7d7" stroke-width="1.5"/>
+    <path d="M 370,350 Q 260,365 150,385" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <path d="M 370,355 Q 260,385 150,405" fill="none" stroke="#d7d7d7" stroke-width="1.5"/>
+    
+    <!-- Right Group -->
+    <path d="M 430,340 Q 540,325 650,345" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <path d="M 430,345 Q 540,345 650,365" fill="none" stroke="#d7d7d7" stroke-width="1.5"/>
+    <path d="M 430,350 Q 540,365 650,385" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <path d="M 430,355 Q 540,385 650,405" fill="none" stroke="#d7d7d7" stroke-width="1.5"/>
+
+    <!-- Eye Brow Whiskers (Accents) -->
+    <path d="M 280,255 Q 240,235 220,245" fill="none" stroke="#ffffff" stroke-width="1"/>
+    <path d="M 520,255 Q 560,235 580,245" fill="none" stroke="#ffffff" stroke-width="1"/>
+    <path d="M 295,250 Q 260,215 245,220" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+    <path d="M 505,250 Q 540,215 555,220" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- GLOBAL HAIR FLYAWAYS (Environmental)        -->
+  <!-- ========================================== -->
+  <g opacity="0.6" stroke-linecap="round">
+    <path d="M 160,360 Q 120,370 100,340" fill="none" stroke="#ffe8c4" stroke-width="1.5"/>
+    <path d="M 200,300 Q 160,310 140,280" fill="none" stroke="#ffe8c4" stroke-width="1.5"/>
+    <path d="M 220,240 Q 180,250 160,220" fill="none" stroke="#ffe8c4" stroke-width="1.5"/>
+    <path d="M 640,360 Q 680,370 700,340" fill="none" stroke="#ffe8c4" stroke-width="1.5"/>
+    <path d="M 600,300 Q 640,310 660,280" fill="none" stroke="#ffe8c4" stroke-width="1.5"/>
+    <path d="M 580,240 Q 620,250 640,220" fill="none" stroke="#ffe8c4" stroke-width="1.5"/>
+  </g>
+
+</svg>

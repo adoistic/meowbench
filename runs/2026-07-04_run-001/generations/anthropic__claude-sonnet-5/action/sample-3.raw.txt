@@ -1,0 +1,123 @@
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- Sky -->
+  <rect x="0" y="0" width="400" height="300" fill="#bfe8f5"/>
+  <!-- Ground -->
+  <rect x="0" y="245" width="400" height="55" fill="#7bc47f"/>
+  <rect x="0" y="245" width="400" height="6" fill="#5da65f"/>
+
+  <!-- ================= BICYCLE ================= -->
+  <g stroke="#2b2b2b" stroke-width="5" fill="none" stroke-linecap="round">
+    <!-- Rear wheel -->
+    <circle cx="110" cy="210" r="45"/>
+    <!-- Front wheel -->
+    <circle cx="290" cy="210" r="45"/>
+  </g>
+
+  <!-- Spokes -->
+  <g stroke="#888" stroke-width="2">
+    <line x1="110" y1="165" x2="110" y2="255"/>
+    <line x1="65" y1="210" x2="155" y2="210"/>
+    <line x1="79" y1="179" x2="141" y2="241"/>
+    <line x1="79" y1="241" x2="141" y2="179"/>
+
+    <line x1="290" y1="165" x2="290" y2="255"/>
+    <line x1="245" y1="210" x2="335" y2="210"/>
+    <line x1="259" y1="179" x2="321" y2="241"/>
+    <line x1="259" y1="241" x2="321" y2="179"/>
+  </g>
+
+  <!-- Hubs -->
+  <circle cx="110" cy="210" r="6" fill="#333"/>
+  <circle cx="290" cy="210" r="6" fill="#333"/>
+
+  <!-- Frame -->
+  <g stroke="#3a3a3a" stroke-width="7" fill="none" stroke-linecap="round">
+    <line x1="110" y1="210" x2="180" y2="205"/>
+    <line x1="180" y1="205" x2="290" y2="210"/>
+    <line x1="180" y1="205" x2="185" y2="140"/>
+    <line x1="185" y1="140" x2="255" y2="128"/>
+    <line x1="255" y1="128" x2="290" y2="210"/>
+    <line x1="110" y1="210" x2="185" y2="140"/>
+  </g>
+
+  <!-- Seat -->
+  <ellipse cx="182" cy="136" rx="16" ry="6" fill="#3a3a3a"/>
+
+  <!-- Handlebar -->
+  <g stroke="#3a3a3a" stroke-width="6" stroke-linecap="round">
+    <line x1="255" y1="128" x2="255" y2="110"/>
+    <line x1="235" y1="112" x2="270" y2="112"/>
+  </g>
+
+  <!-- Pedal crank -->
+  <g stroke="#3a3a3a" stroke-width="5" stroke-linecap="round">
+    <line x1="180" y1="205" x2="205" y2="222"/>
+    <line x1="180" y1="205" x2="155" y2="188"/>
+  </g>
+  <circle cx="205" cy="222" r="5" fill="#333"/>
+  <circle cx="155" cy="188" r="5" fill="#333"/>
+  <circle cx="180" cy="205" r="7" fill="#222"/>
+
+  <!-- ================= CAT ================= -->
+
+  <!-- Tail -->
+  <path d="M165,165 C110,175 90,155 95,120 C100,150 120,165 165,175 Z"
+        fill="#e8934a" stroke="#c9762e" stroke-width="2"/>
+
+  <!-- Back leg (extended to lower pedal) -->
+  <path d="M170,150 C165,175 190,195 205,222"
+        fill="none" stroke="#e8934a" stroke-width="14" stroke-linecap="round"/>
+  <path d="M170,150 C165,175 190,195 205,222"
+        fill="none" stroke="#c9762e" stroke-width="14" stroke-linecap="round" opacity="0.15"/>
+
+  <!-- Back leg (bent to upper pedal) -->
+  <path d="M195,155 C170,165 150,170 155,188"
+        fill="none" stroke="#e8934a" stroke-width="14" stroke-linecap="round"/>
+
+  <!-- Body -->
+  <ellipse cx="195" cy="150" rx="30" ry="40" fill="#e8934a" stroke="#c9762e" stroke-width="2" transform="rotate(-12 195 150)"/>
+  <ellipse cx="192" cy="165" rx="15" ry="24" fill="#fff5e6" transform="rotate(-12 192 165)"/>
+
+  <!-- Front leg/arm to handlebar -->
+  <path d="M215,120 C245,110 250,115 255,112"
+        fill="none" stroke="#e8934a" stroke-width="13" stroke-linecap="round"/>
+  <circle cx="255" cy="112" r="7" fill="#e8934a"/>
+
+  <path d="M205,130 C235,128 250,122 255,112"
+        fill="none" stroke="#e8934a" stroke-width="13" stroke-linecap="round"/>
+
+  <!-- Stripes on body -->
+  <g stroke="#c9762e" stroke-width="3" fill="none" opacity="0.6">
+    <path d="M180,120 q10,-5 20,0" />
+    <path d="M178,135 q12,-5 24,0" />
+    <path d="M180,150 q12,-5 24,0" />
+  </g>
+
+  <!-- Head -->
+  <circle cx="200" cy="92" r="26" fill="#e8934a" stroke="#c9762e" stroke-width="2"/>
+
+  <!-- Ears -->
+  <path d="M180,75 L172,50 L195,68 Z" fill="#e8934a" stroke="#c9762e" stroke-width="2"/>
+  <path d="M220,75 L232,50 L206,66 Z" fill="#e8934a" stroke="#c9762e" stroke-width="2"/>
+  <path d="M182,70 L178,58 L192,66 Z" fill="#f5b98a"/>
+  <path d="M218,70 L224,58 L210,64 Z" fill="#f5b98a"/>
+
+  <!-- Face -->
+  <circle cx="191" cy="90" r="3.5" fill="#222"/>
+  <circle cx="209" cy="90" r="3.5" fill="#222"/>
+  <path d="M197,98 q3,4 6,0" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M200,96 l0,4" stroke="#222" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Whiskers -->
+  <g stroke="#7a5230" stroke-width="1.5">
+    <line x1="178" y1="96" x2="150" y2="90"/>
+    <line x1="178" y1="101" x2="150" y2="100"/>
+    <line x1="222" y1="96" x2="250" y2="90"/>
+    <line x1="222" y1="101" x2="250" y2="100"/>
+  </g>
+
+  <!-- Nose -->
+  <path d="M197,95 L203,95 L200,99 Z" fill="#b5651d"/>
+</svg>
+```

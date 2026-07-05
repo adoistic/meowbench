@@ -1,0 +1,87 @@
+<svg viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" style="stop-color:#FF9A56;stop-opacity:1" />
+<stop offset="100%" style="stop-color:#E86A33;stop-opacity:1" />
+</linearGradient>
+<linearGradient id="headGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" style="stop-color:#FFB347;stop-opacity:1" />
+<stop offset="100%" style="stop-color:#FF8C42;stop-opacity:1" />
+</linearGradient>
+<linearGradient id="earGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+<stop offset="0%" style="stop-color:#E86A33;stop-opacity:1" />
+<stop offset="100%" style="stop-color:#FF6B35;stop-opacity:1" />
+</linearGradient>
+<linearGradient id="tailGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" style="stop-color:#FF8C42;stop-opacity:1" />
+<stop offset="100%" style="stop-color:#D64A1A;stop-opacity:1" />
+</linearGradient>
+<filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+<feDropShadow dx="3" dy="3" stdDeviation="2" flood-color="#B03000" flood-opacity="0.3"/>
+</filter>
+</defs>
+
+<g filter="url(#shadow)">
+<!-- Tail -->
+<polygon points="380,280 520,180 500,220 450,260 420,320" fill="url(#tailGrad)"/>
+<polygon points="380,280 450,260 420,320" fill="#C73E1D"/>
+<polygon points="450,260 520,180 500,220" fill="#FF9A56"/>
+
+<!-- Body -->
+<polygon points="200,180 380,280 320,400 180,350" fill="url(#bodyGrad)"/>
+<polygon points="200,180 380,280 280,220" fill="#FFAA5C"/>
+<polygon points="280,220 380,280 320,400 240,280" fill="#D64A1A"/>
+<polygon points="180,350 320,400 280,450" fill="#B03000"/>
+
+<!-- Front leg -->
+<polygon points="180,350 240,280 200,400 160,380" fill="url(#bodyGrad)"/>
+<polygon points="180,350 200,400 160,380" fill="#FF8C42"/>
+<polygon points="240,280 280,380 200,400" fill="#C73E1D"/>
+
+<!-- Back leg -->
+<polygon points="320,400 380,320 400,420 340,440" fill="#E86A33"/>
+<polygon points="320,400 400,420 340,440" fill="#B03000"/>
+<polygon points="320,400 380,280 380,320" fill="#D64A1A"/>
+
+<!-- Head -->
+<polygon points="120,80 280,160 220,240 80,180" fill="url(#headGrad)"/>
+<polygon points="120,80 280,160 200,120" fill="#FFC875"/>
+<polygon points="200,120 280,160 220,240 180,180" fill="#E86A33"/>
+
+<!-- Ears -->
+<polygon points="120,80 60,20 100,100" fill="url(#earGrad)"/>
+<polygon points="60,20 100,100 80,60" fill="#FF6B35"/>
+<polygon points="60,20 40,50 80,60" fill="#C73E1D"/>
+
+<polygon points="280,160 340,80 300,140" fill="url(#earGrad)"/>
+<polygon points="280,160 340,80 260,120" fill="#FF6B35"/>
+<polygon points="340,80 300,140 320,100" fill="#D64A1A"/>
+
+<!-- Neck/collar area -->
+<polygon points="180,180 220,240 200,280 160,220" fill="#FF8C42"/>
+<polygon points="160,220 200,280 180,350" fill="#E86A33"/>
+
+<!-- Eye (geometric) -->
+<polygon points="140,140 170,155 155,165 130,155" fill="#2D2D2D"/>
+<polygon points="140,140 170,155 160,145" fill="#4A4A4A"/>
+<polygon points="145,150 155,150 150,158" fill="#FFF"/>
+
+<!-- Nose -->
+<polygon points="100,175 115,185 105,195" fill="#FF6B6B"/>
+<polygon points="100,175 115,185 110,180" fill="#FFB6B6"/>
+
+<!-- Whiskers (geometric lines) -->
+<line x1="90" y1="180" x2="40" y2="165" stroke="#5A3A2A" stroke-width="2"/>
+<line x1="95" y1="190" x2="45" y2="195" stroke="#5A3A2A" stroke-width="2"/>
+<line x1="90" y1="200" x2="50" y2="215" stroke="#5A3A2A" stroke-width="2"/>
+</g>
+
+<!-- Fold lines (crease patterns) -->
+<g stroke="#8B4513" stroke-width="1" fill="none" opacity="0.4">
+<line x1="120" y1="80" x2="220" y2="240"/>
+<line x1="200" y2="120" x2="220" y2="240"/>
+<line x1="280" y1="220" x2="240" y2="280"/>
+<line x1="240" y1="280" x2="320" y2="400"/>
+<line x1="380" y1="280" x2="450" y2="260"/>
+</g>
+</svg>

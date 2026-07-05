@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 80">
+    <circle cx="30" cy="30" r="10" fill="black" />        <!-- Head -->
+    <circle cx="70" cy="30" r="10" fill="black" />        <!-- Head -->
+    <path d="M30,40 Q50,60 70,40" fill="black" />        <!-- Body -->
+    <path d="M25,30 Q30,20 35,30" fill="white" />        <!-- Left Eye -->
+    <path d="M65,30 Q70,20 75,30" fill="white" />        <!-- Right Eye -->
+    <circle cx="30" cy="30" r="2" fill="white" />        <!-- Left Eye Ball -->
+    <circle cx="70" cy="30" r="2" fill="white" />        <!-- Right Eye Ball -->
+    <path d="M50,40 Q52,45 50,50" fill="pink" />        <!-- Nose -->
+    <path d="M50,50 L50,60" stroke="pink" stroke-width="1" fill="none" />  <!-- Mouth Mid Line -->
+    <path d="M50,50 Q45,55 50,60" stroke="pink" stroke-width="1" fill="none" /> <!-- Left Part of Mouth -->
+    <path d="M50,50 Q55,55 50,60" stroke="pink" stroke-width="1" fill="none" /> <!-- Right Part of Mouth -->
+</svg>

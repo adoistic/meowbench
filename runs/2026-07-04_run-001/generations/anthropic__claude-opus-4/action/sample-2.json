@@ -1,0 +1,9 @@
+{
+  "modelSlug": "anthropic/claude-opus-4",
+  "promptId": "action",
+  "sample": 2,
+  "status": "ok",
+  "temperature": 1,
+  "rawPath": "generations/anthropic__claude-opus-4/action/sample-2.raw.txt",
+  "svgPath": "generations/anthropic__claude-opus-4/action/sample-2.svg"
+}

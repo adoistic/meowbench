@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px"
+_width="100%" height="100%" viewBox="0 0 520 460" enable-background="new 0 0 520 460" xml:space="preserve">
+  <path fill="#000000" d="M147.364,396.615c46.022-144.136-75.656-192.929-75.656-192.929s120.742-93.723,177.836-13.456  c35.19-82.505,166.733-90.732,166.733-90.732s-25.474,100.973-100.584,112.105c59.989,29.625,67.273,151.522,67.273,151.522  s-111.31-36.853-154.37-127.007C178.484,335.477,147.364,396.615,147.364,396.615z">
+  <animateTransform attributeType="xml" attributeName="transform" type="rotate" dur="3s" from="0 240 220" to="360 240 220" repeatCount="indefinite"/>
+  </path>
+  <circle fill="#FFFFFF" cx="343.255" cy="198.486" r="24.542"/>
+  <circle fill="#FFFFFF" cx="217.605" cy="198.486" r="24.542"/>
+  <circle fill="#000000" cx="343.255" cy="198.486" r="8.649"/>
+  <circle fill="#000000" cx="217.605" cy="198.486" r="8.649"/>
+</svg>

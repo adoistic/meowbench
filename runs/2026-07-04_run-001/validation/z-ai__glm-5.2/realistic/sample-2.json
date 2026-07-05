@@ -1,0 +1,30 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 10872,
+    "elements": 159,
+    "paths": 94,
+    "colors": [
+      "#1a0f08",
+      "#1f1208",
+      "#2a1608",
+      "#3a2010",
+      "#5a2030",
+      "#5c3318",
+      "#a86a3a",
+      "#c88555",
+      "#d8a060",
+      "#f0e8da",
+      "#fff4d0",
+      "url(#bg)",
+      "url(#earinner)",
+      "url(#eyeg)",
+      "url(#furbody)",
+      "url(#furface)",
+      "url(#furlight)",
+      "url(#noseg)",
+      "url(#shadowg)"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 4207,
+    "elements": 59,
+    "paths": 1,
+    "colors": [
+      "#000000",
+      "#1f2a33",
+      "#26343f",
+      "#42535f",
+      "#7a3010",
+      "#7d8f9c",
+      "#8f3c14",
+      "#8fd6c9",
+      "#b54e1c",
+      "#d96528",
+      "#e97f3d",
+      "#e9b477",
+      "#f3c88f",
+      "#f4995c",
+      "#f7b267",
+      "#fbd9ae",
+      "#fde8cf",
+      "#ffffff",
+      "url(#bgglow)"
+    ]
+  }
+}

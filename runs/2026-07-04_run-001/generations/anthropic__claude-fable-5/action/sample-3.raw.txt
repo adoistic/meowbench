@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="500" height="400">
+  <!-- background -->
+  <rect width="500" height="400" fill="#bde3f5"/>
+  <circle cx="420" cy="60" r="30" fill="#ffd94d"/>
+  <rect y="310" width="500" height="90" fill="#8fc873"/>
+  <rect y="305" width="500" height="10" fill="#7ab35e"/>
+
+  <!-- rear wheel -->
+  <g stroke="#333" fill="none">
+    <circle cx="140" cy="300" r="58" stroke-width="8"/>
+    <circle cx="140" cy="300" r="6" fill="#333"/>
+    <g stroke-width="2.5">
+      <line x1="140" y1="242" x2="140" y2="358"/>
+      <line x1="82" y1="300" x2="198" y2="300"/>
+      <line x1="99" y1="259" x2="181" y2="341"/>
+      <line x1="99" y1="341" x2="181" y2="259"/>
+    </g>
+  </g>
+
+  <!-- front wheel -->
+  <g stroke="#333" fill="none">
+    <circle cx="370" cy="300" r="58" stroke-width="8"/>
+    <circle cx="370" cy="300" r="6" fill="#333"/>
+    <g stroke-width="2.5">
+      <line x1="370" y1="242" x2="370" y2="358"/>
+      <line x1="312" y1="300" x2="428" y2="300"/>
+      <line x1="329" y1="259" x2="411" y2="341"/>
+      <line x1="329" y1="341" x2="411" y2="259"/>
+    </g>
+  </g>
+
+  <!-- frame -->
+  <g stroke="#e0413f" stroke-width="8" fill="none" stroke-linecap="round">
+    <line x1="140" y1="300" x2="245" y2="300"/>
+    <line x1="140" y1="300" x2="205" y2="215"/>
+    <line x1="205" y1="215" x2="330" y2="215"/>
+    <line x1="245" y1="300" x2="205" y2="215"/>
+    <line x1="245" y1="300" x2="330" y2="215"/>
+    <line x1="330" y1="215" x2="370" y2="300"/>
+  </g>
+  <!-- seat post + seat -->
+  <line x1="205" y1="215" x2="198" y2="192" stroke="#555" stroke-width="6"/>
+  <path d="M178 190 Q198 180 220 190 Q200 200 178 190 Z" fill="#333"/>
+  <!-- handlebar -->
+  <line x1="330" y1="215" x2="322" y2="175" stroke="#555" stroke-width="6"/>
+  <path d="M322 175 Q300 165 295 150" stroke="#555" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <!-- crank / pedals -->
+  <circle cx="245" cy="300" r="10" fill="#555"/>
+  <line x1="245" y1="300" x2="262" y2="322" stroke="#555" stroke-width="5"/>
+  <rect x="252" y="318" width="24" height="8" rx="3" fill="#333"/>
+  <line x1="245" y1="300" x2="228" y2="278" stroke="#555" stroke-width="5"/>
+  <rect x="216" y="272" width="24" height="8" rx="3" fill="#333"/>
+
+  <!-- tail -->
+  <path d="M175 205 Q130 190 125 150 Q123 130 140 128 Q152 127 150 142 Q148 165 185 178" fill="none" stroke="#f5a742" stroke-width="14" stroke-linecap="round"/>
+
+  <!-- cat back leg to pedal -->
+  <path d="M200 195 Q215 250 258 320" fill="none" stroke="#f5a742" stroke-width="16" stroke-linecap="round"/>
+  <!-- cat front leg to other pedal -->
+  <path d="M205 200 Q210 245 232 274" fill="none" stroke="#e8952e" stroke-width="16" stroke-linecap="round"/>
+
+  <!-- body -->
+  <path d="M185 200 Q195 145 240 128 Q265 120 278 138 L262 190 Q240 205 210 205 Z" fill="#f5a742"/>
+  <ellipse cx="205" cy="192" rx="26" ry="20" fill="#f5a742"/>
+  <!-- belly patch -->
+  <path d="M205 195 Q212 160 240 145 Q250 158 244 178 Q228 196 208 198 Z" fill="#ffd9a0"/>
+
+  <!-- arm to handlebar -->
+  <path d="M250 145 Q285 150 300 158" fill="none" stroke="#f5a742" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="301" cy="158" r="8" fill="#e8952e"/>
+
+  <!-- head -->
+  <g>
+    <!-- ears -->
+    <path d="M240 100 L232 68 L260 84 Z" fill="#f5a742"/>
+    <path d="M245 74 L240 80 L252 86 Z" fill="#f7b6c2"/>
+    <path d="M285 96 L298 66 L305 98 Z" fill="#f5a742"/>
+    <path d="M295 76 L292 88 L300 90 Z" fill="#f7b6c2"/>
+    <circle cx="270" cy="115" r="34" fill="#f5a742"/>
+    <!-- eyes -->
+    <circle cx="262" cy="110" r="4.5" fill="#333"/>
+    <circle cx="284" cy="110" r="4.5" fill="#333"/>
+    <circle cx="263.5" cy="108.5" r="1.5" fill="#fff"/>
+    <circle cx="285.5" cy="108.5" r="1.5" fill="#fff"/>
+    <!-- nose & mouth -->
+    <path d="M271 120 L277 120 L274 125 Z" fill="#e0413f"/>
+    <path d="M274 125 Q274 131 268 131 M274 125 Q274 131 280 131" stroke="#333" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- whiskers -->
+    <g stroke="#333" stroke-width="1.5" stroke-linecap="round">
+      <line x1="240" y1="118" x2="256" y2="120"/>
+      <line x1="240" y1="127" x2="256" y2="125"/>
+      <line x1="288" y1="120" x2="304" y2="118"/>
+      <line x1="288" y1="125" x2="304" y2="127"/>
+    </g>
+    <!-- stripes -->
+    <path d="M256 88 Q262 94 268 88" stroke="#e8952e" stroke-width="3" fill="none"/>
+    <path d="M266 84 Q272 90 278 84" stroke="#e8952e" stroke-width="3" fill="none"/>
+  </g>
+
+  <!-- motion lines -->
+  <g stroke="#7fbfd8" stroke-width="4" stroke-linecap="round">
+    <line x1="40" y1="260" x2="75" y2="260"/>
+    <line x1="25" y1="285" x2="65" y2="285"/>
+    <line x1="45" y1="310" x2="78" y2="310"/>
+  </g>
+</svg>

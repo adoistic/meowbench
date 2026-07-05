@@ -1,0 +1,28 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 5447,
+    "elements": 65,
+    "paths": 34,
+    "colors": [
+      "#1c1c1c",
+      "#4a3c31",
+      "#4e443a",
+      "#795548",
+      "#8c6239",
+      "#a8835c",
+      "#b08b62",
+      "#c47a69",
+      "#d9a999",
+      "#e6cfa9",
+      "#f5deb3",
+      "#ffffff",
+      "url(#gradbody)",
+      "url(#gradeye)",
+      "url(#gradhead)",
+      "url(#gradmuzzle)",
+      "url(#shadow)"
+    ]
+  }
+}

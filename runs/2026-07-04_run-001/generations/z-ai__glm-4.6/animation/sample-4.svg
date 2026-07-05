@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <style>
+      .tail {
+        transform-origin: 130px 110px;
+        animation: sway 2.5s ease-in-out infinite;
+      }
+      @keyframes sway {
+        0% { transform: rotate(-15deg); }
+        50% { transform: rotate(15deg); }
+        100% { transform: rotate(-15deg); }
+      }
+      .eye {
+        transform-origin: center;
+        animation: blink 4s infinite;
+      }
+      @keyframes blink {
+        0%, 48%, 52%, 100% { transform: scaleY(1); }
+        50% { transform: scaleY(0.1); }
+      }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="200" height="200" fill="#f4f4f9"/>
+  
+  <!-- Tail (Grouped for animation) -->
+  <g class="tail">
+    <path d="M 130,110 Q 170,140 175,90 Q 180,50 160,40" 
+          fill="none" 
+          stroke="#e67e22" 
+          stroke-width="12" 
+          stroke-linecap="round" />
+  </g>
+
+  <!-- Body -->
+  <ellipse cx="100" cy="125" rx="40" ry="50" fill="#e67e22" />
+  
+  <!-- Head -->
+  <circle cx="100" cy="80" r="35" fill="#e67e22" />
+  
+  <!-- Left Ear -->
+  <path d="M 70,60 L 80,30 L 95,60 Z" fill="#e67e22" />
+  <path d="M 75,55 L 82,35 L 90,55 Z" fill="#fab1a0" />
+  
+  <!-- Right Ear -->
+  <path d="M 130,60 L 120,30 L 105,60 Z" fill="#e67e22" />
+  <path d="M 125,55 L 118,35 L 110,55 Z" fill="#fab1a0" />
+
+  <!-- Eyes -->
+  <ellipse class="eye" cx="85" cy="75" rx="3" ry="4" fill="#2d3436" />
+  <ellipse class="eye" cx="115" cy="75" rx="3" ry="4" fill="#2d3436" />
+  
+  <!-- Nose -->
+  <path d="M 100,80 L 96,86 L 104,86 Z" fill="#fab1a0" />
+  
+  <!-- Mouth -->
+  <path d="M 100,86 L 100,92 M 100,92 Q 90,98 85,92 M 100,92 Q 110,98 115,92" 
+        fill="none" 
+        stroke="#2d3436" 
+        stroke-width="2" 
+        stroke-linecap="round" />
+
+  <!-- Whiskers -->
+  <g stroke="#2d3436" stroke-width="1" opacity="0.6">
+    <line x1="60" y1="85" x2="80" y2="88" />
+    <line x1="60" y1="92" x2="80" y2="92" />
+    <line x1="140" y1="85" x2="120" y2="88" />
+    <line x1="140" y1="92" x2="120" y2="92" />
+  </g>
+  
+  <!-- Paws -->
+  <ellipse cx="80" cy="170" rx="12" ry="8" fill="#e67e22" />
+  <ellipse cx="120" cy="170" rx="12" ry="8" fill="#e67e22" />
+</svg>

@@ -1,0 +1,31 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 11643,
+    "elements": 134,
+    "paths": 1,
+    "colors": [
+      "#0a0c12",
+      "#1a1a1a",
+      "#1c2230",
+      "#2a3245",
+      "#4a2207",
+      "#e05555",
+      "#e5e5e5",
+      "#ff6666",
+      "#ffccb0",
+      "#ffe3d1",
+      "#ffffff",
+      "url(#bginner)",
+      "url(#bgouter)",
+      "url(#floorlight)",
+      "url(#nmlight)",
+      "url(#pgrad)",
+      "url(#wobase)",
+      "url(#wodeep)",
+      "url(#woshad)",
+      "url(#woshadflat)"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 3876,
+    "elements": 48,
+    "paths": 10,
+    "colors": [
+      "#000000",
+      "#eaddb2",
+      "#ffefc2",
+      "#fff",
+      "url(#skygrad)"
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cat body -->
+  <ellipse cx="200" cy="180" rx="60" ry="40" fill="#FF8C00" stroke="#000" stroke-width="2"/>
+  
+  <!-- Cat head -->
+  <circle cx="200" cy="120" r="45" fill="#FF8C00" stroke="#000" stroke-width="2"/>
+  
+  <!-- Cat ears -->
+  <polygon points="170,90 185,60 200,90" fill="#FF8C00" stroke="#000" stroke-width="2"/>
+  <polygon points="200,90 215,60 230,90" fill="#FF8C00" stroke="#000" stroke-width="2"/>
+  <polygon points="175,85 185,70 195,85" fill="#FFB6C1"/>
+  <polygon points="205,85 215,70 225,85" fill="#FFB6C1"/>
+  
+  <!-- Cat eyes -->
+  <ellipse cx="185" cy="115" rx="8" ry="12" fill="#000"/>
+  <ellipse cx="215" cy="115" rx="8" ry="12" fill="#000"/>
+  <ellipse cx="185" cy="112" rx="3" ry="6" fill="#32CD32"/>
+  <ellipse cx="215" cy="112" rx="3" ry="6" fill="#32CD32"/>
+  
+  <!-- Cat nose -->
+  <polygon points="200,125 195,135 205,135" fill="#FFB6C1"/>
+  
+  <!-- Cat mouth -->
+  <path d="M 200,135 Q 190,145 185,140" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 200,135 Q 210,145 215,140" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Cat whiskers -->
+  <line x1="140" y1="120" x2="170" y2="125" stroke="#000" stroke-width="1"/>
+  <line x1="140" y1="130" x2="170" y2="130" stroke="#000" stroke-width="1"/>
+  <line x1="230" y1="125" x2="260" y2="120" stroke="#000" stroke-width="1"/>
+  <line x1="230" y1="130" x2="260" y2="130" stroke="#000" stroke-width="1"/>
+  
+  <!-- Cat legs -->
+  <rect x="160" y="210" width="15" height="30" fill="#FF8C00" stroke="#000" stroke-width="2"/>
+  <rect x="185" y="210" width="15" height="30" fill="#FF8C00" stroke="#000" stroke-width="2"/>
+  <rect x="210" y="210" width="15" height="30" fill="#FF8C00" stroke="#000" stroke-width="2"/>
+  <rect x="235" y="210" width="15" height="30" fill="#FF8C00" stroke="#000" stroke-width="2"/>
+  
+  <!-- Cat paws -->
+  <ellipse cx="167" cy="245" rx="10" ry="6" fill="#000"/>
+  <ellipse cx="192" cy="245" rx="10" ry="6" fill="#000"/>
+  <ellipse cx="217" cy="245" rx="10" ry="6" fill="#000"/>
+  <ellipse cx="242" cy="245" rx="10" ry="6" fill="#000"/>
+  
+  <!-- Animated tail -->
+  <path d="M 260,170 Q 300,150 320,180 Q 340,210 310,240" fill="none" stroke="#FF8C00" stroke-width="15" stroke-linecap="round">
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      values="0 260 170; 15 260 170; -15 260 170; 0 260 170"
+      dur="2s"
+      repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Tail tip -->
+  <circle cx="310" cy="240" r="8" fill="#FF8C00">
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      values="0 260 170; 15 260 170; -15 260 170; 0 260 170"
+      dur="2s"
+      repeatCount="indefinite"/>
+  </circle>
+</svg>

@@ -1,0 +1,31 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 14634,
+    "elements": 133,
+    "paths": 54,
+    "colors": [
+      "#000",
+      "#000000",
+      "#1a0d08",
+      "#2b1408",
+      "#4a2e35",
+      "#5c3c4a",
+      "#a14213",
+      "#a97c8d",
+      "#b15215",
+      "#e5954d",
+      "#f2c2b6",
+      "#fcdba8",
+      "#fce9d4",
+      "#fff",
+      "#ffffff",
+      "url(#bggradient)",
+      "url(#bodygradient)",
+      "url(#eyegradient)",
+      "url(#furpattern)",
+      "url(#headgradient)"
+    ]
+  }
+}

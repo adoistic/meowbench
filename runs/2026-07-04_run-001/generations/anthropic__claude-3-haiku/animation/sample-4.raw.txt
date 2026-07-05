@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <path id="cat-body" d="M139 222c-11 0-21-10-21-22 0-12 10-22 21-22s21 10 21 22c0 12-10 22-21 22z m39-51c-5 5-13 5-18 0-5-5-5-13 0-18 5-5 13-5 18 0 5 5 5 13 0 18z m7-34c0 7-6 13-13 13s-13-6-13-13 6-13 13-13 13 6 13 13z" />
+    <path id="cat-tail" d="M216 240c6-5 18-1 26 9 8 10 12 19 7 24-5 5-16 1-24-9-8-10-15-19-9-24z" />
+  </defs>
+  
+  <g transform="translate(10, 10)">
+    <use xlink:href="#cat-body" fill="#e8e8e8" />
+    
+    <g id="cat-tail-group" transform="translate(140, 190)">
+      <use xlink:href="#cat-tail" fill="#e8e8e8" />
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="2s" repeatCount="indefinite" />
+    </g>
+  </g>
+</svg>

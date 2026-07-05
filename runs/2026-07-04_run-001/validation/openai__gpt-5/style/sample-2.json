@@ -1,0 +1,15 @@
+{
+  "valid": false,
+  "reasons": [
+    "css-url"
+  ],
+  "stats": {
+    "bytes": 5671,
+    "elements": 56,
+    "paths": 2,
+    "colors": [
+      "#000000",
+      "#ffffff"
+    ]
+  }
+}

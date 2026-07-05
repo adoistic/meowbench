@@ -1,0 +1,311 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+    <defs>
+        <!-- Gradients -->
+        <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#FFFBF9"/>
+            <stop offset="100%" stop-color="#F2E8E6"/>
+        </linearGradient>
+
+        <linearGradient id="catBody" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#FF9F1C"/>
+            <stop offset="100%" stop-color="#F77F00"/>
+        </linearGradient>
+
+        <linearGradient id="catDark" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#E85D04"/>
+            <stop offset="100%" stop-color="#DC2F02"/>
+        </linearGradient>
+
+        <linearGradient id="bikeTeal" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#00B4D8"/>
+            <stop offset="100%" stop-color="#0077B6"/>
+        </linearGradient>
+
+        <!-- Reusable Wheel Definition -->
+        <g id="wheel">
+            <!-- Tire Outer Edge -->
+            <circle cx="0" cy="0" r="110" fill="none" class="tire" stroke="#2B2D42" stroke-width="15"/>
+            <!-- Tire Inner Trim -->
+            <circle cx="0" cy="0" r="102" fill="none" class="tire-trim" stroke="#1A1C29" stroke-width="2"/>
+            <!-- Rim -->
+            <circle cx="0" cy="0" r="99" fill="none" class="rim-outer" stroke="#8D99AE" stroke-width="4"/>
+            <circle cx="0" cy="0" r="92" fill="none" class="rim-inner" stroke="#ADB5BD" stroke-width="4"/>
+            
+            <!-- Spokes -->
+            <g stroke="#CED4DA" stroke-width="2" stroke-linecap="round">
+                <line x1="-92" y1="0" x2="92" y2="0"/>
+                <line x1="0" y1="-92" x2="0" y2="92"/>
+                <line x1="-65" y1="-65" x2="65" y2="65"/>
+                <line x1="-65" y1="65" x2="65" y2="-65"/>
+                <line x1="-85" y1="-35" x2="85" y2="35"/>
+                <line x1="-85" y1="35" x2="85" y2="-35"/>
+                <line x1="-35" y1="-85" x2="35" y2="85"/>
+                <line x1="-35" y1="85" x2="35" y2="-85"/>
+            </g>
+            
+            <!-- Central Hub -->
+            <circle cx="0" cy="0" r="14" fill="#2B2D42"/>
+            <circle cx="0" cy="0" r="6" fill="#D3D3D3"/>
+        </g>
+    </defs>
+
+    <!-- Background -->
+    <rect width="100%" height="100%" fill="url(#skyGrad)"/>
+
+    <!-- Speed/Wind Lines -->
+    <g stroke="#E3DADA" stroke-width="4" stroke-linecap="round">
+        <line x1="200" y1="380" x2="60" y2="380"/>
+        <line x1="140" y1="480" x2="30" y2="480"/>
+        <line x1="750" y1="500" x2="660" y2="500"/>
+        <line x1="780" y1="280" x2="710" y2="280"/>
+        <line x1="120" y1="250" x2="80" y2="250"/>
+    </g>
+
+    <!-- Ground Shadow -->
+    <ellipse cx="400" cy="545" rx="300" ry="16" fill="#DED0CD" opacity="0.8"/>
+    <ellipse cx="400" cy="545" rx="150" ry="8" fill="#C5B3B0" opacity="0.6"/>
+
+    <!-- ==================== BACK LAYER ==================== -->
+    
+    <!-- Left Wheel (Back) -->
+    <g transform="translate(230, 430)">
+        <use href="#wheel"/>
+    </g>
+
+    <!-- Left Crank & Pedal (Back Side) -->
+    <g id="left-drivetrain">
+        <!-- Rear Axle Bolt -->
+        <circle cx="230" cy="430" r="8" fill="#2B2D42"/>
+        <!-- Crank Arm -->
+        <line x1="370" y1="430" x2="345" y2="385" stroke="#7F8C8D" stroke-width="10" stroke-linecap="round"/>
+        <!-- Pedal -->
+        <rect x="330" y="380" width="30" height="10" rx="4" fill="#2B2D42" transform="rotate(-15, 345, 385)"/>
+    </g>
+
+    <!-- Cat Left Leg (Pedaling back side) -->
+    <g id="cat-left-leg">
+        <path d="M 315 260 Q 345 300 345 340 L 340 385" fill="none" stroke="url(#catDark)" stroke-width="24" stroke-linecap="round"/>
+        <ellipse cx="340" cy="385" rx="14" ry="10" fill="#FFFFFF" transform="rotate(-15, 340, 385)"/>
+    </g>
+
+    <!-- Cat Left Arm (Reaching forward) -->
+    <g id="cat-left-arm">
+        <path d="M 380 150 C 400 160, 420 190, 450 210" fill="none" stroke="url(#catDark)" stroke-width="22" stroke-linecap="round"/>
+        <circle cx="450" cy="210" r="11" fill="#FFFFFF"/>
+    </g>
+
+    <!-- Cat Tail -->
+    <g id="cat-tail">
+        <!-- Thick Base Tail -->
+        <path d="M 285 240 C 200 245, 130 180, 140 100 C 145 50, 180 50, 210 90 C 240 130, 210 170, 260 200 C 275 210, 290 220, 305 230" 
+              fill="none" stroke="url(#catBody)" stroke-width="32" stroke-linecap="round"/>
+        <!-- Tail Stripes via dasharray magical hack -->
+        <path d="M 285 240 C 200 245, 130 180, 140 100 C 145 50, 180 50, 210 90 C 240 130, 210 170, 260 200 C 275 210, 290 220, 305 230" 
+              fill="none" stroke="#D65A31" stroke-width="32" stroke-linecap="round" stroke-dasharray="10 32" stroke-dashoffset="15"/>
+    </g>
+
+    <!-- ==================== BIKE FRAME ==================== -->
+    
+    <g id="bicycle-frame-back" stroke-linecap="round" stroke-linejoin="round" fill="none">
+        <!-- Main structural path (Chainstay, Downtube, Headtube, Toptube, Seatstay) -->
+        <g>
+            <!-- 3D Shadow -->
+            <path d="M230,430 L370,430 L480,310 L450,250 L310,270 Z" stroke="#0077B6" stroke-width="18" transform="translate(0, 4)"/>
+            <!-- Main Teal -->
+            <path d="M230,430 L370,430 L480,310 L450,250 L310,270 Z" stroke="url(#bikeTeal)" stroke-width="14"/>
+            <!-- Highlight -->
+            <path d="M230,430 L370,430 L480,310 L450,250 L310,270 Z" stroke="#E0FBFC" stroke-width="4" transform="translate(-2, -3)" opacity="0.6"/>
+        </g>
+        
+        <!-- Seat Tube (Bisecting triangle) -->
+        <g>
+            <line x1="310" y1="270" x2="370" y2="430" stroke="#0077B6" stroke-width="18" transform="translate(0, 4)"/>
+            <line x1="310" y1="270" x2="370" y2="430" stroke="url(#bikeTeal)" stroke-width="14"/>
+            <line x1="310" y1="270" x2="370" y2="430" stroke="#E0FBFC" stroke-width="4" transform="translate(-2, -3)" opacity="0.6"/>
+        </g>
+    </g>
+
+    <!-- Seat & Post -->
+    <g id="bicycle-seat">
+        <!-- Post -->
+        <line x1="310" y1="270" x2="301" y2="245" stroke="#7F8C8D" stroke-width="12" stroke-linecap="round"/>
+        <line x1="310" y1="270" x2="301" y2="245" stroke="#BDC3C7" stroke-width="6" stroke-linecap="round" transform="translate(-2,0)"/>
+        <!-- Saddle Base / Leather -->
+        <path d="M 270 245 C 270 235, 300 240, 320 240 C 330 240, 340 245, 340 250 C 340 255, 320 255, 300 255 C 280 255, 270 255, 270 245 Z" fill="#6A3B18"/>
+        <!-- Saddle Highlight -->
+        <path d="M 275 245 C 280 240, 300 242, 320 242" fill="none" stroke="#9E5D2A" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <!-- ==================== CAT BODY ==================== -->
+    
+    <g id="cat-body">
+        <!-- Main Orange Torso -->
+        <path d="M 310,250 C 350,250 400,210 410,160 C 420,110 370,100 350,110 C 310,130 270,170 280,210 C 285,230 295,250 310,250 Z" 
+              fill="url(#catBody)"/>
+        
+        <!-- Back Stripes (Inset path with dasharray) -->
+        <path d="M 290 210 C 285 170, 315 140, 345 125" fill="none" stroke="#D65A31" stroke-width="18" stroke-dasharray="10 25"/>
+        
+        <!-- Light Orange / Marigold Belly Patch -->
+        <path d="M 360 140 C 390 150, 410 170, 410 200 C 410 220, 370 245, 345 245 C 370 235, 385 210, 375 145 Z" fill="#FCBF49"/>
+    </g>
+
+    <!-- Scarf Tails (Blowing beautifully in the wind behind neck) -->
+    <g id="scarf-tails">
+        <path d="M 360 135 C 310 130, 275 145, 210 135 C 250 160, 300 150, 350 145 Z" fill="#9E1A1A"/>
+        <path d="M 355 140 C 310 140, 260 165, 200 175 C 240 185, 290 160, 350 150 Z" fill="#D62828"/>
+        <path d="M 355 140 C 320 150, 280 185, 230 205 C 265 205, 305 175, 350 155 Z" fill="#E63946"/>
+    </g>
+
+    <!-- Cat Head Base (Ears drawn first so they sit behind) -->
+    <g id="cat-head-ears">
+        <!-- Far Left Ear -->
+        <polygon points="362,55 330,15 385,45" fill="url(#catDark)"/>
+        <polygon points="358,45 340,25 375,45" fill="#F4A261"/>
+        <!-- Near Right Ear -->
+        <polygon points="405,45 440,15 430,65" fill="url(#catBody)"/>
+        <polygon points="415,45 435,25 425,55" fill="#F4A261"/>
+        
+        <!-- Head Fluff & Main Circle -->
+        <circle cx="395" cy="95" r="45" fill="url(#catBody)"/>
+        <path d="M 365 85 Q 320 100 355 130 Z" fill="url(#catBody)"/>
+        <path d="M 425 85 Q 470 100 435 130 Z" fill="url(#catBody)"/>
+        
+        <!-- Small Head Stripes (The tabby M) -->
+        <path d="M 380 65 L 387 75 L 395 65 L 403 75 L 410 65" fill="none" stroke="#D65A31" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Face Details (Muzzle, Nose, Mouth) -->
+    <g id="cat-face">
+        <ellipse cx="395" cy="118" rx="22" ry="14" fill="#FFFFFF"/>
+        <!-- Nose -->
+        <polygon points="388,112 402,112 395,119" fill="#E76F51"/>
+        <polygon points="390,113 400,113 395,117" fill="#F4A261"/>
+        <!-- Mouth -->
+        <path d="M 395 119 L 395 125 Q 388 129 382 125 M 395 125 Q 402 129 408 125" fill="none" stroke="#2B2D42" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Cool Sunglasses -->
+    <g id="cat-sunglasses">
+        <!-- Left Lens (Cat's Right) -->
+        <path d="M 355 80 L 390 80 C 395 80, 395 90, 390 102 C 385 110, 360 110, 355 102 C 350 90, 350 80, 355 80 Z" fill="#1C1D26"/>
+        <!-- Right Lens (Cat's Left) -->
+        <path d="M 395 80 L 430 80 C 435 80, 435 90, 430 102 C 425 110, 400 110, 395 102 C 390 90, 390 80, 395 80 Z" fill="#1C1D26"/>
+        <!-- Bridge -->
+        <line x1="385" y1="85" x2="400" y2="85" stroke="#1C1D26" stroke-width="5" stroke-linecap="round"/>
+        <!-- Frame Accents -->
+        <path d="M 350 82 L 358 82 M 427 82 L 435 82" stroke="#1C1D26" stroke-width="5" stroke-linecap="round"/>
+        <!-- Retro Reflections -->
+        <path d="M 365 80 L 380 80 L 370 102 L 358 96 Z" fill="#FFFFFF" opacity="0.25"/>
+        <path d="M 405 80 L 420 80 L 410 102 L 398 96 Z" fill="#FFFFFF" opacity="0.25"/>
+    </g>
+
+    <!-- Majestic Whiskers -->
+    <g stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round">
+        <line x1="375" y1="112" x2="330" y2="102"/>
+        <line x1="375" y1="118" x2="325" y2="116"/>
+        <line x1="375" y1="124" x2="330" y2="130"/>
+        
+        <line x1="415" y1="112" x2="460" y2="102"/>
+        <line x1="415" y1="118" x2="465" y2="116"/>
+        <line x1="415" y1="124" x2="460" y2="130"/>
+    </g>
+
+    <!-- Scarf Neck Wrap (Overlapping Body & Lower Face) -->
+    <path d="M 365 125 C 385 145, 415 140, 420 130 C 410 155, 370 155, 355 135 Z" fill="#E63946"/>
+    <!-- Fold Highlight -->
+    <path d="M 370 135 C 385 145, 405 145, 415 135" fill="none" stroke="#EDAEB4" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- ==================== FRONT LAYER ==================== -->
+    
+    <!-- Right Wheel (Front) -->
+    <g transform="translate(570, 430)">
+        <use href="#wheel"/>
+    </g>
+
+    <!-- Bike Front Fork, Stem, Head Tube -->
+    <g id="bicycle-front" stroke-linecap="round" stroke-linejoin="round" fill="none">
+        <!-- Fork & Front Tube 3D Backing -->
+        <path d="M 450 250 L 480 310 L 570 430" stroke="#0077B6" stroke-width="16" transform="translate(0, 4)"/>
+        <!-- Fork Main Color -->
+        <path d="M 450 250 L 480 310 L 570 430" stroke="url(#bikeTeal)" stroke-width="12"/>
+        <!-- Fork Edge Highlight -->
+        <path d="M 450 250 L 480 310 L 570 430" stroke="#E0FBFC" stroke-width="3" transform="translate(-2, -3)" opacity="0.6"/>
+        
+        <!-- Stem -->
+        <g>
+            <line x1="450" y1="250" x2="440" y2="220" stroke="#7F8C8D" stroke-width="12"/>
+            <line x1="450" y1="250" x2="440" y2="220" stroke="#BDC3C7" stroke-width="6" transform="translate(-2,0)"/>
+        </g>
+    </g>
+
+    <!-- Front Axle Nut over Fork -->
+    <circle cx="570" cy="430" r="10" fill="#2B2D42"/>
+    <circle cx="570" cy="430" r="4" fill="#EAECEE"/>
+
+    <!-- Handlebars (Center @ 440, 220) -->
+    <g id="handlebars">
+        <!-- Center Bracket -->
+        <circle cx="440" cy="220" r="10" fill="#2B2D42"/>
+        <circle cx="440" cy="220" r="5" fill="#8D99AE"/>
+        
+        <!-- Chrome Swept Bars -->
+        <path d="M 450 210 Q 460 215 440 220" fill="none" stroke="#BDC3C7" stroke-width="12" stroke-linecap="round"/>
+        <path d="M 440 220 Q 410 225 390 230" fill="none" stroke="#BDC3C7" stroke-width="12" stroke-linecap="round"/>
+        
+        <!-- Retro Terracotta Grips -->
+        <line x1="450" y1="210" x2="465" y2="208" stroke="#E76F51" stroke-width="16" stroke-linecap="round"/>
+        <line x1="390" y1="230" x2="375" y2="232" stroke="#E76F51" stroke-width="16" stroke-linecap="round"/>
+    </g>
+
+    <!-- Drivetrain (Right Chainring & Chain over Frame) -->
+    <g id="right-drivetrain">
+        <!-- Chain Links (Top & Bottom via Dasharray) -->
+        <line x1="230" y1="418" x2="370" y2="398" stroke="#7F8C8D" stroke-width="6"/>
+        <line x1="230" y1="418" x2="370" y2="398" stroke="#2B2D42" stroke-width="6" stroke-dasharray="8 4"/>
+        
+        <line x1="230" y1="442" x2="370" y2="462" stroke="#7F8C8D" stroke-width="6"/>
+        <line x1="230" y1="442" x2="370" y2="462" stroke="#2B2D42" stroke-width="6" stroke-dasharray="8 4"/>
+        
+        <!-- Main Chainring (Bottom Bracket Center = 370, 430) -->
+        <circle cx="370" cy="430" r="32" fill="#EAECEE" stroke="#2B2D42" stroke-width="4"/>
+        <circle cx="370" cy="430" r="22" fill="none" stroke="#8D99AE" stroke-width="8" stroke-dasharray="12 8"/>
+        
+        <!-- Right Crank Arm -->
+        <line x1="370" y1="430" x2="400" y2="465" stroke="#BDC3C7" stroke-width="12" stroke-linecap="round"/>
+        <!-- Center Cap -->
+        <circle cx="370" cy="430" r="8" fill="#2B2D42"/>
+        <!-- Right Pedal -->
+        <!-- Right pedal is angled relative to the crank -->
+        <rect x="385" y="460" width="30" height="10" rx="4" fill="#2B2D42" transform="rotate(-15, 400, 465)"/>
+        <!-- Pedal Reflection -->
+        <rect x="388" y="462" width="24" height="2" fill="#EAECEE" opacity="0.5" transform="rotate(-15, 400, 465)"/>
+    </g>
+
+    <!-- Cat Right Leg (Pedaling front side) -->
+    <g id="cat-right-leg">
+        <!-- Plump Leg Structure -->
+        <path d="M 310 260 C 370 250, 410 320, 395 380 C 390 420, 390 450, 405 460 C 415 465, 420 470, 405 470 C 390 470, 385 460, 375 450 C 360 380, 320 295, 290 280 Z" fill="url(#catBody)"/>
+        
+        <!-- Right Leg Stripes -->
+        <path d="M 330 250 C 390 280, 390 360, 405 465" fill="none" stroke="#D65A31" stroke-width="26" stroke-linecap="round" stroke-dasharray="10 32"/>
+        
+        <!-- Cute White Right Foot/Sock overlapping precisely -->
+        <ellipse cx="402" cy="460" rx="16" ry="11" fill="#FFFFFF" transform="rotate(-15, 402, 460)"/>
+        <line x1="410" y1="455" x2="415" y2="452" stroke="#E5E5E5" stroke-width="2" stroke-linecap="round"/>
+        <line x1="412" y1="462" x2="417" y2="460" stroke="#E5E5E5" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Cat Right Arm (Securing front grip) -->
+    <g id="cat-right-arm">
+        <path d="M 390 160 C 400 190, 410 210, 390 230" fill="none" stroke="url(#catBody)" stroke-width="26" stroke-linecap="round"/>
+        <!-- Arm Stripes -->
+        <path d="M 390 160 C 400 190, 410 210, 390 230" fill="none" stroke="#D65A31" stroke-width="26" stroke-linecap="round" stroke-dasharray="8 20"/>
+        
+        <!-- White Front Paw Grip -->
+        <circle cx="390" cy="230" r="14" fill="#FFFFFF"/>
+        <!-- Paw Separation -->
+        <path d="M 395 225 C 390 225, 385 230, 385 235" fill="none" stroke="#E5E5E5" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+</svg>

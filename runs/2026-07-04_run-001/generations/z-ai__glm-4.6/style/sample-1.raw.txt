@@ -1,0 +1,74 @@
+
+<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="paperGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f5f0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e8ddc7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="shadowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4c5b0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c4b5a0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Body -->
+  <polygon points="200,250 120,400 160,420 240,420 280,400 200,250" 
+           fill="url(#paperGrad)" stroke="#a8957f" stroke-width="2"/>
+  
+  <!-- Body fold lines -->
+  <line x1="200" y1="250" x2="160" y2="400" stroke="#a8957f" stroke-width="1.5" opacity="0.5"/>
+  <line x1="200" y1="250" x2="240" y2="400" stroke="#a8957f" stroke-width="1.5" opacity="0.5"/>
+  <line x1="160" y1="400" x2="280" y2="400" stroke="#a8957f" stroke-width="1.5" opacity="0.5"/>
+  
+  <!-- Head base -->
+  <polygon points="200,120 100,220 200,250 300,220 200,120" 
+           fill="url(#paperGrad)" stroke="#a8957f" stroke-width="2"/>
+  
+  <!-- Left ear -->
+  <polygon points="100,220 80,120 200,120 100,220" 
+           fill="url(#shadowGrad)" stroke="#a8957f" stroke-width="2"/>
+  <polygon points="120,160 110,130 140,150 120,160" 
+           fill="#f8f5f0" stroke="#a8957f" stroke-width="1"/>
+  
+  <!-- Right ear -->
+  <polygon points="200,120 300,220 320,120 200,120" 
+           fill="url(#shadowGrad)" stroke="#a8957f" stroke-width="2"/>
+  <polygon points="280,160 260,150 290,130 280,160" 
+           fill="#f8f5f0" stroke="#a8957f" stroke-width="1"/>
+  
+  <!-- Face folds -->
+  <line x1="200" y1="120" x2="100" y2="220" stroke="#a8957f" stroke-width="1.5" opacity="0.5"/>
+  <line x1="200" y1="120" x2="300" y2="220" stroke="#a8957f" stroke-width="1.5" opacity="0.5"/>
+  <line x1="200" y1="120" x2="200" y2="250" stroke="#a8957f" stroke-width="1.5" opacity="0.5"/>
+  
+  <!-- Left eye triangle -->
+  <polygon points="150,170 165,190 135,190 150,170" 
+           fill="#2c2416" stroke="#a8957f" stroke-width="1.5"/>
+  
+  <!-- Right eye triangle -->
+  <polygon points="250,170 265,190 235,190 250,170" 
+           fill="#2c2416" stroke="#a8957f" stroke-width="1.5"/>
+  
+  <!-- Nose triangle -->
+  <polygon points="200,210 210,225 190,225 200,210" 
+           fill="#d4a373" stroke="#a8957f" stroke-width="1.5"/>
+  
+  <!-- Left whisker lines -->
+  <line x1="170" y1="215" x2="130" y2="210" stroke="#2c2416" stroke-width="1.5" opacity="0.7"/>
+  <line x1="170" y1="225" x2="130" y2="225" stroke="#2c2416" stroke-width="1.5" opacity="0.7"/>
+  
+  <!-- Right whisker lines -->
+  <line x1="230" y1="215" x2="270" y2="210" stroke="#2c2416" stroke-width="1.5" opacity="0.7"/>
+  <line x1="230" y1="225" x2="270" y2="225" stroke="#2c2416" stroke-width="1.5" opacity="0.7"/>
+  
+  <!-- Tail -->
+  <polygon points="120,380 60,340 40,380 80,400 120,380" 
+           fill="url(#shadowGrad)" stroke="#a8957f" stroke-width="2"/>
+  <line x1="60" y1="340" x2="80" y2="400" stroke="#a8957f" stroke-width="1" opacity="0.5"/>
+  
+  <!-- Fold highlights -->
+  <polygon points="200,120 200,180 250,210 200,120" 
+           fill="#ffffff" opacity="0.2"/>
+  <polygon points="120,400 150,380 160,420 120,400" 
+           fill="#ffffff" opacity="0.15"/>
+</svg>

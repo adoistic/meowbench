@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#87CEEB"/>
+  <rect y="250" width="400" height="50" fill="#7CFC00"/>
+  
+  <!-- Bicycle Frame -->
+  <path d="M150 200 L200 150 L250 150 L300 200" stroke="black" stroke-width="5" fill="none"/>
+  <circle cx="150" cy="200" r="30" stroke="black" stroke-width="5" fill="white"/>
+  <circle cx="300" cy="200" r="30" stroke="black" stroke-width="5" fill="white"/>
+  <path d="M200 150 L200 120" stroke="black" stroke-width="5" fill="none"/>
+  <circle cx="200" cy="120" r="10" stroke="black" stroke-width="3" fill="white"/>
+  <path d="M250 150 L270 130" stroke="black" stroke-width="5" fill="none"/>
+  
+  <!-- Cat Body -->
+  <ellipse cx="200" cy="130" rx="40" ry="30" fill="orange"/>
+  
+  <!-- Cat Head -->
+  <circle cx="200" cy="90" r="25" fill="orange"/>
+  <circle cx="190" cy="85" r="5" fill="black"/>
+  <circle cx="210" cy="85" r="5" fill="black"/>
+  <path d="M195 100 Q200 105 205 100" stroke="black" stroke-width="2" fill="none"/>
+  
+  <!-- Ears -->
+  <path d="M180 75 L190 65 L185 80 Z" fill="orange"/>
+  <path d="M220 75 L210 65 L215 80 Z" fill="orange"/>
+  
+  <!-- Legs -->
+  <path d="M180 160 L180 200 L170 200" stroke="orange" stroke-width="8" stroke-linecap="round"/>
+  <path d="M220 160 L220 200 L230 200" stroke="orange" stroke-width="8" stroke-linecap="round"/>
+  <path d="M170 160 L165 180 L160 180" stroke="orange" stroke-width="8" stroke-linecap="round"/>
+  <path d="M230 160 L235 180 L240 180" stroke="orange" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Tail -->
+  <path d="M140 130 Q110 100 120 70 Q130 50 160 70" stroke="orange" stroke-width="6" fill="none"/>
+  
+  <!-- Paws on Handlebars -->
+  <circle cx="170" cy="110" r="7" fill="orange"/>
+  <circle cx="230" cy="110" r="7" fill="orange"/>
+</svg>

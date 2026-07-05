@@ -1,0 +1,114 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient for stripes -->
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff8c42;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e86a33;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="earGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffb380;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff8c42;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="eyeGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#90ee90;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#228b22;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="400" fill="#fef5e7"/>
+  
+  <!-- Shadow -->
+  <ellipse cx="200" cy="340" rx="80" ry="20" fill="#d4a574" opacity="0.3">
+    <animate attributeName="rx" values="80;85;80" dur="2s" repeatCount="indefinite"/>
+  </ellipse>
+  
+  <!-- Tail - animated with SMIL -->
+  <path d="M 260 280 Q 320 240 340 180 Q 360 120 320 100 Q 300 90 310 70" 
+        fill="none" stroke="#e86a33" stroke-width="25" stroke-linecap="round">
+    <animate attributeName="d" 
+             values="M 260 280 Q 320 240 340 180 Q 360 120 320 100 Q 300 90 310 70;
+                     M 260 280 Q 320 260 360 220 Q 380 170 330 130 Q 310 110 340 90;
+                     M 260 280 Q 310 280 350 250 Q 370 200 320 160 Q 290 140 320 120;
+                     M 260 280 Q 320 260 360 220 Q 380 170 330 130 Q 310 110 340 90;
+                     M 260 280 Q 320 240 340 180 Q 360 120 320 100 Q 300 90 310 70"
+             dur="3s" repeatCount="indefinite"/>
+    <!-- Tail stripes -->
+    <animate attributeName="stroke" values="#e86a33;#d45a2a;#e86a33;#d45a2a;#e86a33" dur="3s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Tail tip -->
+  <ellipse cx="310" cy="70" rx="15" ry="12" fill="#c74e26">
+    <animate attributeName="cx" values="310;340;320;350;310" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="70;90;120;90;70" dur="3s" repeatCount="indefinite"/>
+  </ellipse>
+  
+  <!-- Back legs -->
+  <ellipse cx="150" cy="320" rx="35" ry="45" fill="url(#bodyGrad)"/>
+  <ellipse cx="250" cy="320" rx="35" ry="45" fill="url(#bodyGrad)"/>
+  
+  <!-- Body -->
+  <ellipse cx="200" cy="260" rx="90" ry="85" fill="url(#bodyGrad)"/>
+  
+  <!-- Body stripes -->
+  <path d="M 140 220 Q 200 240 260 220" stroke="#c74e26" stroke-width="8" fill="none" opacity="0.6"/>
+  <path d="M 130 260 Q 200 280 270 260" stroke="#c74e26" stroke-width="8" fill="none" opacity="0.6"/>
+  
+  <!-- Front legs -->
+  <ellipse cx="170" cy="330" rx="25" ry="40" fill="url(#bodyGrad)"/>
+  <ellipse cx="230" cy="330" rx="25" ry="40" fill="url(#bodyGrad)"/>
+  
+  <!-- Paws -->
+  <ellipse cx="170" cy="355" rx="20" ry="12" fill="#ffb380"/>
+  <ellipse cx="230" cy="355" rx="20" ry="12" fill="#ffb380"/>
+  
+  <!-- Head -->
+  <ellipse cx="200" cy="150" rx="85" ry="75" fill="url(#bodyGrad)"/>
+  
+  <!-- Ears -->
+  <path d="M 135 110 L 120 50 Q 160 70 175 100 Z" fill="url(#bodyGrad)"/>
+  <path d="M 140 100 L 130 60 Q 155 75 165 95 Z" fill="#ffb380"/>
+  <path d="M 265 110 L 280 50 Q 240 70 225 100 Z" fill="url(#bodyGrad)"/>
+  <path d="M 260 100 L 270 60 Q 245 75 235 95 Z" fill="#ffb380"/>
+  
+  <!-- Face markings -->
+  <ellipse cx="170" cy="165" rx="25" ry="20" fill="#f4a460" opacity="0.5"/>
+  <ellipse cx="230" cy="165" rx="25" ry="20" fill="#f4a460" opacity="0.5"/>
+  
+  <!-- Eyes -->
+  <g>
+    <ellipse cx="165" cy="140" rx="22" ry="28" fill="url(#eyeGrad)"/>
+    <ellipse cx="235" cy="140" rx="22" ry="28" fill="url(#eyeGrad)"/>
+    <!-- Pupils -->
+    <ellipse cx="165" cy="140" rx="8" ry="18" fill="#1a1a1a">
+      <animate attributeName="ry" values="18;5;18" dur="4s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="235" cy="140" rx="8" ry="18" fill="#1a1a1a">
+      <animate attributeName="ry" values="18;5;18" dur="4s" repeatCount="indefinite" begin="0.5s"/>
+    </ellipse>
+    <!-- Eye shine -->
+    <circle cx="160" cy="132" r="4" fill="white" opacity="0.8"/>
+    <circle cx="230" cy="132" r="4" fill="white" opacity="0.8"/>
+  </g>
+  
+  <!-- Nose -->
+  <ellipse cx="200" cy="180" rx="8" ry="6" fill="#ffb380"/>
+  
+  <!-- Mouth -->
+  <path d="M 200 186 Q 190 200 180 195 M 200 186 Q 210 200 220 195" 
+        stroke="#c74e26" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Whiskers -->
+  <g stroke="#d4a574" stroke-width="1" stroke-linecap="round">
+    <line x1="120" y1="175" x2="80" y2="165"/>
+    <line x1="120" y1="185" x2="75" y2="185"/>
+    <line x1="120" y1="195" x2="80" y2="205"/>
+    <line x1="280" y1="175" x2="320" y2="165"/>
+    <line x1="280" y1="185" x2="325" y2="185"/>
+    <line x1="280" y1="195" x2="320" y2="205"/>
+  </g>
+  
+  <!-- Blush -->
+  <ellipse cx="145" cy="185" rx="12" ry="8" fill="#ff9999" opacity="0.4"/>
+  <ellipse cx="255" cy="185" rx="12" ry="8" fill="#ff9999" opacity="0.4"/>
+</svg>

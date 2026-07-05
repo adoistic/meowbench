@@ -1,0 +1,15 @@
+```svg
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <ellipse cx="100" cy="120" rx="50" ry="50" fill="grey"/> <!-- body -->
+  <circle cx="100" cy="70" r="30" fill="grey"/> <!-- head -->
+  <circle cx="85" cy="65" r="5" fill="black"/> <!-- left eye -->
+  <circle cx="115" cy="65" r="5" fill="black"/> <!-- right eye -->
+  <path d="M90 80 Q100 90 110 80" stroke="black" fill="transparent"/> <!-- mouth -->
+  <polygon points="70,60 85,40 100,60" fill="grey" /> <!-- left ear -->
+  <polygon points="130,60 115,40 100,60" fill="grey" /> <!-- right ear -->
+  <ellipse cx="100" cy="170" rx="15" ry="5" fill="grey"/> <!-- left foot -->
+  <ellipse cx="130" cy="170" rx="15" ry="5" fill="grey"/> <!-- right foot -->
+  <ellipse cx="70" cy="170" rx="15" ry="5" fill="grey"/> <!-- left hand -->
+  <ellipse cx="130" cy="150" rx="5" ry="15" fill="grey"/> <!-- tail -->
+</svg>
+```

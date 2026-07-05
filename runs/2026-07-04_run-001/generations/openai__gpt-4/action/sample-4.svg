@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
+    <!-- drawing a basic bicycle -->
+    <circle cx="150" cy="375" r="100" fill="none" stroke="black" stroke-width="10"/>
+    <circle cx="350" cy="375" r="100" fill="none" stroke="black" stroke-width="10"/>
+    <path d="M150 375 Q250 275 350 375 T550 375" fill="none" stroke="black" stroke-width="10"/>
+    <line x1="150" y1="375" x2="350" y2="375" stroke="black" stroke-width="10"/>
+
+    <!-- drawing a basic cat -->
+    <circle cx="250" cy="200" r="50" fill="gray"/> <!-- head -->
+    <ellipse cx="230" cy="185" rx="10" ry="15" fill="white"/> <!-- left eye -->
+    <ellipse cx="270" cy="185" rx="10" ry="15" fill="white"/> <!-- right eye -->
+    <polyline points="250,210 260,230 240,230 250,210" fill="black"/> <!-- mouth -->
+    <path d="M200 200 Q250 150 300 200" fill="none" stroke="gray" stroke-width="10"/> <!-- body -->
+    <path d="M200 200 Q150 250 200 300" fill="none" stroke="gray" stroke-width="10"/> <!-- left leg -->
+    <path d="M300 200 Q350 250 300 300" fill="none" stroke="gray" stroke-width="10"/> <!-- right leg -->
+
+    <!-- drawing cat's tail -->
+    <path d="M300 250 Q350 200 400 250" fill="none" stroke="gray" stroke-width="15"/>
+
+    <!-- drawing cat's ears -->
+    <polygon points="225,175 250,125 275,175" fill="gray"/> <!-- left ear -->
+    <polygon points="225,175 250,125 275,175" fill="pink"/> <!-- left ear inner -->
+    <polygon points="225,225 250,175 275,225" fill="gray"/> <!-- right ear -->
+    <polygon points="225,225 250,175 275,225" fill="pink"/> <!-- right ear inner -->
+</svg>

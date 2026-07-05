@@ -1,0 +1,215 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="600" height="500">
+  <defs>
+    <radialGradient id="sky" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#fef6e4"/>
+      <stop offset="100%" stop-color="#f8d7c2"/>
+    </radialGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a8d5a2"/>
+      <stop offset="100%" stop-color="#6fa86b"/>
+    </linearGradient>
+    <radialGradient id="catBody" cx="40%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#ffd29c"/>
+      <stop offset="100%" stop-color="#e8a06a"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect x="0" y="0" width="600" height="500" fill="url(#sky)"/>
+
+  <!-- Sun -->
+  <circle cx="500" cy="90" r="40" fill="#ffd166" opacity="0.85"/>
+  <circle cx="500" cy="90" r="55" fill="#ffd166" opacity="0.25"/>
+
+  <!-- Clouds -->
+  <g fill="#ffffff" opacity="0.9">
+    <ellipse cx="120" cy="90" rx="35" ry="14"/>
+    <ellipse cx="150" cy="80" rx="25" ry="12"/>
+    <ellipse cx="380" cy="130" rx="28" ry="11"/>
+  </g>
+
+  <!-- Ground -->
+  <path d="M0,380 Q300,360 600,385 L600,500 L0,500 Z" fill="url(#ground)"/>
+
+  <!-- Flowers -->
+  <g>
+    <g transform="translate(60,420)">
+      <line x1="0" y1="0" x2="0" y2="20" stroke="#3a7a3a" stroke-width="2"/>
+      <circle cx="-5" cy="-2" r="4" fill="#ff8fab"/>
+      <circle cx="5" cy="-2" r="4" fill="#ff8fab"/>
+      <circle cx="0" cy="-7" r="4" fill="#ff8fab"/>
+      <circle cx="-3" cy="3" r="4" fill="#ff8fab"/>
+      <circle cx="3" cy="3" r="4" fill="#ff8fab"/>
+      <circle cx="0" cy="0" r="3" fill="#ffe066"/>
+    </g>
+    <g transform="translate(490,430)">
+      <line x1="0" y1="0" x2="0" y2="18" stroke="#3a7a3a" stroke-width="2"/>
+      <circle cx="-5" cy="-2" r="4" fill="#c89ff0"/>
+      <circle cx="5" cy="-2" r="4" fill="#c89ff0"/>
+      <circle cx="0" cy="-7" r="4" fill="#c89ff0"/>
+      <circle cx="-3" cy="3" r="4" fill="#c89ff0"/>
+      <circle cx="3" cy="3" r="4" fill="#c89ff0"/>
+      <circle cx="0" cy="0" r="3" fill="#ffe066"/>
+    </g>
+    <g transform="translate(540,445)">
+      <line x1="0" y1="0" x2="0" y2="14" stroke="#3a7a3a" stroke-width="2"/>
+      <circle cx="-4" cy="-1" r="3" fill="#ff8fab"/>
+      <circle cx="4" cy="-1" r="3" fill="#ff8fab"/>
+      <circle cx="0" cy="-5" r="3" fill="#ff8fab"/>
+      <circle cx="0" cy="2" r="2.5" fill="#ffe066"/>
+    </g>
+  </g>
+
+  <!-- Grass tufts -->
+  <g stroke="#3a7a3a" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M30,395 q2,-8 4,0 M34,395 q3,-10 5,0 M38,395 q2,-7 4,0"/>
+    <path d="M230,388 q2,-8 4,0 M234,388 q3,-10 5,0 M238,388 q2,-7 4,0"/>
+    <path d="M440,395 q2,-8 4,0 M444,395 q3,-10 5,0 M448,395 q2,-7 4,0"/>
+    <path d="M560,398 q2,-8 4,0 M564,398 q3,-10 5,0"/>
+  </g>
+
+  <!-- Motion lines -->
+  <g stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.7">
+    <line x1="60" y1="270" x2="110" y2="270"/>
+    <line x1="40" y1="295" x2="100" y2="295"/>
+    <line x1="70" y1="320" x2="115" y2="320"/>
+  </g>
+
+  <!-- ====== BICYCLE ====== -->
+  <g stroke="#2b2d42" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Rear wheel -->
+    <g transform="translate(200,360)">
+      <circle r="42" fill="#2b2d42"/>
+      <circle r="36" fill="#f4f1de"/>
+      <circle r="32" fill="none" stroke="#2b2d42" stroke-width="1.5"/>
+      <line x1="0" y1="-32" x2="0" y2="32" stroke="#2b2d42" stroke-width="1.5"/>
+      <line x1="-32" y1="0" x2="32" y2="0" stroke="#2b2d42" stroke-width="1.5"/>
+      <line x1="-23" y1="-23" x2="23" y2="23" stroke="#2b2d42" stroke-width="1.5"/>
+      <line x1="-23" y1="23" x2="23" y2="-23" stroke="#2b2d42" stroke-width="1.5"/>
+      <circle r="5" fill="#ffd166" stroke="#2b2d42" stroke-width="2"/>
+    </g>
+    <!-- Front wheel -->
+    <g transform="translate(420,360)">
+      <circle r="42" fill="#2b2d42"/>
+      <circle r="36" fill="#f4f1de"/>
+      <circle r="32" fill="none" stroke="#2b2d42" stroke-width="1.5"/>
+      <line x1="0" y1="-32" x2="0" y2="32" stroke="#2b2d42" stroke-width="1.5"/>
+      <line x1="-32" y1="0" x2="32" y2="0" stroke="#2b2d42" stroke-width="1.5"/>
+      <line x1="-23" y1="-23" x2="23" y2="23" stroke="#2b2d42" stroke-width="1.5"/>
+      <line x1="-23" y1="23" x2="23" y2="-23" stroke="#2b2d42" stroke-width="1.5"/>
+      <circle r="5" fill="#ffd166" stroke="#2b2d42" stroke-width="2"/>
+    </g>
+    <!-- Frame -->
+    <path d="M200,360 L260,300 L200,360 M260,300 L420,360 M260,300 L300,290 L420,360 M300,290 L300,250 M200,360 L260,300" stroke="#e63946" stroke-width="5"/>
+    <line x1="260" y1="300" x2="260" y2="300" stroke="#e63946"/>
+    <!-- Seat post -->
+    <line x1="260" y1="300" x2="250" y2="265" stroke="#2b2d42" stroke-width="4"/>
+    <!-- Handlebar post -->
+    <line x1="300" y1="250" x2="320" y2="230" stroke="#2b2d42" stroke-width="4"/>
+    <!-- Pedal crank -->
+    <circle cx="260" cy="300" r="6" fill="#ffd166" stroke="#2b2d42" stroke-width="2"/>
+    <line x1="260" y1="300" x2="240" y2="320" stroke="#2b2d42" stroke-width="3"/>
+    <line x1="260" y1="300" x2="280" y2="280" stroke="#2b2d42" stroke-width="3"/>
+  </g>
+
+  <!-- Seat -->
+  <ellipse cx="250" cy="262" rx="14" ry="6" fill="#2b2d42"/>
+
+  <!-- Handlebars -->
+  <path d="M320,230 Q340,225 345,235 M320,230 Q305,225 300,235" stroke="#2b2d42" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- Pedals -->
+  <rect x="234" y="316" width="12" height="6" rx="1" fill="#2b2d42"/>
+  <rect x="274" y="277" width="12" height="6" rx="1" fill="#2b2d42"/>
+
+  <!-- Basket -->
+  <g transform="translate(310,215)">
+    <path d="M0,0 L40,0 L36,28 L4,28 Z" fill="#d4a574" stroke="#8b5e34" stroke-width="2"/>
+    <path d="M0,8 L40,8 M2,16 L38,16 M0,0 L4,28 M40,0 L36,28 M20,0 L20,28" stroke="#8b5e34" stroke-width="1.5" fill="none"/>
+    <!-- fish in basket -->
+    <path d="M14,4 Q22,-2 28,5 Q24,8 14,8 Q10,7 14,4 Z" fill="#7fb3d5" stroke="#3a7a8a" stroke-width="1"/>
+    <path d="M10,5 L6,2 L6,8 Z" fill="#7fb3d5" stroke="#3a7a8a" stroke-width="1"/>
+    <circle cx="24" cy="4" r="1" fill="#2b2d42"/>
+  </g>
+
+  <!-- ====== CAT ====== -->
+  <g>
+    <!-- Tail -->
+    <path d="M250,250 Q200,235 180,200 Q175,180 195,175" stroke="#e8a06a" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <path d="M250,250 Q200,235 180,200 Q175,180 195,175" stroke="#c97f4a" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+
+    <!-- Back leg to pedal -->
+    <path d="M245,265 Q230,290 240,320" stroke="#e8a06a" stroke-width="11" fill="none" stroke-linecap="round"/>
+    <ellipse cx="240" cy="322" rx="8" ry="4" fill="#d4884a"/>
+
+    <!-- Body -->
+    <ellipse cx="260" cy="230" rx="38" ry="32" fill="url(#catBody)"/>
+    <!-- Belly -->
+    <ellipse cx="265" cy="240" rx="22" ry="20" fill="#fff4e0" opacity="0.7"/>
+
+    <!-- Front leg to handlebar/pedal -->
+    <path d="M280,245 Q295,255 300,235" stroke="#e8a06a" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <!-- paw on handlebar -->
+    <ellipse cx="322" cy="228" rx="9" ry="6" fill="#e8a06a" transform="rotate(-20 322 228)"/>
+
+    <!-- Other front leg to pedal -->
+    <path d="M275,250 Q290,275 280,282" stroke="#e8a06a" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <ellipse cx="278" cy="280" rx="7" ry="4" fill="#d4884a"/>
+
+    <!-- Head -->
+    <g>
+      <!-- Ears -->
+      <path d="M270,170 L262,148 L282,160 Z" fill="#e8a06a"/>
+      <path d="M310,168 L322,148 L318,162 Z" fill="#e8a06a"/>
+      <path d="M268,164 L266,154 L276,160 Z" fill="#ffb6a3"/>
+      <path d="M312,162 L318,154 L316,161 Z" fill="#ffb6a3"/>
+
+      <!-- Head shape -->
+      <ellipse cx="294" cy="185" rx="28" ry="25" fill="url(#catBody)"/>
+
+      <!-- Cheek fluff -->
+      <path d="M268,190 Q262,196 268,200 M268,196 Q264,202 270,204" stroke="#e8a06a" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <path d="M320,190 Q326,196 320,200 M320,196 Q324,202 318,204" stroke="#e8a06a" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+      <!-- Stripes -->
+      <path d="M278,168 Q282,172 280,176 M288,164 Q290,170 286,174 M300,164 Q300,170 304,174 M310,166 Q308,172 312,176" stroke="#c97f4a" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+      <!-- Eyes (happy, closed/blink) -->
+      <path d="M282,182 Q286,178 290,182" stroke="#2b2d42" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <path d="M298,182 Q302,178 306,182" stroke="#2b2d42" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+      <!-- Nose -->
+      <path d="M292,193 L296,193 L294,196 Z" fill="#ff8fab"/>
+
+      <!-- Mouth -->
+      <path d="M294,196 Q294,200 290,200 M294,196 Q294,200 298,200" stroke="#2b2d42" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+      <!-- Whiskers -->
+      <g stroke="#2b2d42" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.7">
+        <line x1="270" y1="192" x2="252" y2="188"/>
+        <line x1="270" y1="196" x2="250" y2="198"/>
+        <line x1="318" y1="192" x2="336" y2="188"/>
+        <line x1="318" y1="196" x2="338" y2="198"/>
+      </g>
+
+      <!-- Blush -->
+      <circle cx="278" cy="195" r="4" fill="#ff8fab" opacity="0.5"/>
+      <circle cx="310" cy="195" r="4" fill="#ff8fab" opacity="0.5"/>
+    </g>
+
+    <!-- Scarf flowing -->
+    <g>
+      <path d="M250,225 Q235,235 220,228 Q230,240 248,238 Z" fill="#e63946" stroke="#a8222e" stroke-width="1.5"/>
+      <path d="M248,238 Q258,250 240,258" stroke="#e63946" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <path d="M248,238 Q258,250 240,258" stroke="#a8222e" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.6"/>
+      <path d="M240,258 L236,268 L244,266 Z" fill="#e63946" stroke="#a8222e" stroke-width="1.5"/>
+    </g>
+  </g>
+
+  <!-- Sparkles -->
+  <g fill="#ffd166" opacity="0.9">
+    <path d="M160,150 l2,5 5,2 -5,2 -2,5 -2,-5 -5,-2 5,-2 z"/>
+    <path d="M440,200 l1.5,4 4,1.5 -4,1.5 -1.5,4 -1.5,-4 -4,-1.5 4,-1.5 z"/>
+    <path d="M90,220 l1.5,4 4,1.5 -4,1.5 -1.5,4 -1.5,-4 -4,-1.5 4,-1.5 z"/>
+  </g>
+</svg>

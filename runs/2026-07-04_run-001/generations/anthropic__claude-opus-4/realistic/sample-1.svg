@@ -1,0 +1,88 @@
+<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B7355;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#6B5D4F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5B4E42;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="bellyGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#D2B48C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A0826D;stop-opacity:1" />
+    </radialGradient>
+    <filter id="fur">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02 0.1" numOctaves="4" result="turbulence" seed="5"/>
+      <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  
+  <!-- Shadow -->
+  <ellipse cx="200" cy="470" rx="120" ry="20" fill="#00000020"/>
+  
+  <!-- Tail -->
+  <path d="M 280 400 Q 350 380 370 320 T 340 250 Q 320 220 300 240" 
+        stroke="none" fill="url(#bodyGrad)" filter="url(#fur)">
+    <animateTransform attributeName="transform" type="rotate" 
+                      values="0 280 400;2 280 400;0 280 400" dur="6s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Back leg -->
+  <ellipse cx="260" cy="420" rx="50" ry="60" fill="url(#bodyGrad)" transform="rotate(15 260 420)"/>
+  <path d="M 260 460 Q 270 480 290 480 L 280 460" fill="#5B4E42"/>
+  
+  <!-- Body -->
+  <ellipse cx="200" cy="350" rx="100" ry="120" fill="url(#bodyGrad)" filter="url(#fur)"/>
+  
+  <!-- Belly -->
+  <ellipse cx="190" cy="370" rx="60" ry="80" fill="url(#bellyGrad)" opacity="0.7"/>
+  
+  <!-- Front legs -->
+  <ellipse cx="150" cy="420" rx="35" ry="70" fill="url(#bodyGrad)"/>
+  <ellipse cx="190" cy="420" rx="35" ry="70" fill="url(#bodyGrad)"/>
+  <path d="M 130 480 Q 140 490 160 490 L 155 475" fill="#5B4E42"/>
+  <path d="M 175 480 Q 185 490 205 490 L 200 475" fill="#5B4E42"/>
+  
+  <!-- Chest fur -->
+  <path d="M 140 320 Q 170 340 200 320 Q 180 350 160 340 Q 140 350 140 320" 
+        fill="#D2B48C" opacity="0.6" filter="url(#fur)"/>
+  
+  <!-- Head -->
+  <ellipse cx="200" cy="200" rx="80" ry="75" fill="url(#bodyGrad)" filter="url(#fur)"/>
+  
+  <!-- Ears -->
+  <path d="M 140 180 L 130 140 L 160 160 Z" fill="url(#bodyGrad)"/>
+  <path d="M 260 180 L 270 140 L 240 160 Z" fill="url(#bodyGrad)"/>
+  <path d="M 145 160 L 140 150 L 155 158 Z" fill="#FFB6C1" opacity="0.6"/>
+  <path d="M 255 160 L 260 150 L 245 158 Z" fill="#FFB6C1" opacity="0.6"/>
+  
+  <!-- Muzzle -->
+  <ellipse cx="200" cy="220" rx="35" ry="30" fill="#D2B48C" opacity="0.8"/>
+  
+  <!-- Eyes -->
+  <ellipse cx="175" cy="195" rx="15" ry="18" fill="#2F4F2F"/>
+  <ellipse cx="225" cy="195" rx="15" ry="18" fill="#2F4F2F"/>
+  <ellipse cx="178" cy="190" rx="5" ry="6" fill="#90EE90"/>
+  <ellipse cx="228" cy="190" rx="5" ry="6" fill="#90EE90"/>
+  <ellipse cx="180" cy="188" rx="2" ry="3" fill="white"/>
+  <ellipse cx="230" cy="188" rx="2" ry="3" fill="white"/>
+  
+  <!-- Nose -->
+  <path d="M 200 230 L 190 235 L 200 240 L 210 235 Z" fill="#8B4513"/>
+  
+  <!-- Mouth -->
+  <path d="M 200 240 Q 190 245 185 240 M 200 240 Q 210 245 215 240" 
+        stroke="#8B4513" stroke-width="2" fill="none"/>
+  
+  <!-- Whiskers -->
+  <line x1="120" y1="210" x2="80" y2="205" stroke="#444" stroke-width="1.5" opacity="0.8"/>
+  <line x1="125" y1="220" x2="85" y2="220" stroke="#444" stroke-width="1.5" opacity="0.8"/>
+  <line x1="280" y1="210" x2="320" y2="205" stroke="#444" stroke-width="1.5" opacity="0.8"/>
+  <line x1="275" y1="220" x2="315" y2="220" stroke="#444" stroke-width="1.5" opacity="0.8"/>
+  
+  <!-- Fur stripes -->
+  <path d="M 150 170 Q 160 175 170 170 M 230 170 Q 240 175 250 170" 
+        stroke="#5B4E42" stroke-width="3" fill="none" opacity="0.6"/>
+  <path d="M 140 260 Q 150 265 160 260 M 240 260 Q 250 265 260 260" 
+        stroke="#5B4E42" stroke-width="4" fill="none" opacity="0.5"/>
+  <path d="M 130 300 Q 140 305 150 300 M 250 300 Q 260 305 270 300" 
+        stroke="#5B4E42" stroke-width="5" fill="none" opacity="0.4"/>
+</svg>

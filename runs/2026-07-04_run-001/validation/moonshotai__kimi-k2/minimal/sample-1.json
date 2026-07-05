@@ -1,0 +1,15 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 1047,
+    "elements": 17,
+    "paths": 2,
+    "colors": [
+      "#333",
+      "#f5f5f5",
+      "#ffb6c1",
+      "#fff"
+    ]
+  }
+}

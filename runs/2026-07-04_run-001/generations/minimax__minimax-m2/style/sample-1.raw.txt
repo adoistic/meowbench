@@ -1,0 +1,52 @@
+```svg
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="500" height="500" fill="#f4f4f4" />
+
+  <!-- Origami Cat Group -->
+  <g transform="translate(0, 20)">
+    
+    <!-- Tail (Back Layer) -->
+    <path d="M360 320 L440 260 L400 240 L350 300 Z" fill="#b0b0b0" stroke="#a0a0a0" stroke-width="1" stroke-linejoin="round"/>
+
+    <!-- Left Ear (Back Layer) -->
+    <path d="M210 120 L160 60 L240 120 Z" fill="#d9d9d9" />
+    
+    <!-- Right Ear (Back Layer) -->
+    <path d="M290 120 L340 60 L260 120 Z" fill="#a3a3a3" />
+
+    <!-- Body Right (Shadow Side) -->
+    <path d="M250 220 L320 220 L370 330 L250 430 Z" fill="#b0b0b0" />
+
+    <!-- Body Left (Light Side) -->
+    <path d="M250 220 L180 220 L130 330 L250 430 Z" fill="#e6e6e6" />
+
+    <!-- Head Right (Shadow Side) -->
+    <path d="M250 120 L320 220 L250 220 Z" fill="#d1d1d1" />
+    
+    <!-- Head Left (Light Side) -->
+    <path d="M250 120 L180 220 L250 220 Z" fill="#f7f7f7" />
+
+    <!-- Front Paw Left -->
+    <path d="M160 330 L210 330 L185 370 Z" fill="#e6e6e6" />
+
+    <!-- Front Paw Right -->
+    <path d="M290 330 L340 330 L315 370 Z" fill="#b0b0b0" />
+
+    <!-- Facial Features -->
+    <!-- Eyes -->
+    <path d="M215 175 L225 185 L215 195 Z" fill="#333" />
+    <path d="M285 175 L275 185 L285 195 Z" fill="#333" />
+    
+    <!-- Nose / Mouth Fold -->
+    <path d="M250 220 L240 210 L260 210 Z" fill="#ffcccc" opacity="0.8"/>
+    <line x1="250" y1="210" x2="250" y2="220" stroke="#ccc" stroke-width="1" />
+
+    <!-- Subtle Crease Lines -->
+    <line x1="250" y1="120" x2="250" y2="430" stroke="#fff" stroke-width="1" opacity="0.3" />
+    <line x1="250" y1="120" x2="180" y2="220" stroke="#fff" stroke-width="1" opacity="0.3" />
+    <line x1="250" y1="120" x2="320" y2="220" stroke="#888" stroke-width="1" opacity="0.2" />
+
+  </g>
+</svg>
+```

@@ -1,0 +1,120 @@
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f4b28a"/>
+      <stop offset="100%" stop-color="#d98050"/>
+    </linearGradient>
+    <linearGradient id="paperLight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f9cbaa"/>
+      <stop offset="100%" stop-color="#eea47a"/>
+    </linearGradient>
+    <linearGradient id="paperDark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c87348"/>
+      <stop offset="100%" stop-color="#a3582f"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fdf6ee"/>
+      <stop offset="100%" stop-color="#f0e3d1"/>
+    </linearGradient>
+    <radialGradient id="shadow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="rgba(0,0,0,0.25)"/>
+      <stop offset="100%" stop-color="rgba(0,0,0,0)"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="500" fill="url(#bg)"/>
+  <!-- Subtle ground pattern -->
+  <path d="M 0,440 Q 200,430 400,445 L 400,500 L 0,500 Z" fill="#e8d5bb" opacity="0.6"/>
+
+  <!-- Shadow under cat -->
+  <ellipse cx="200" cy="445" rx="120" ry="14" fill="url(#shadow)"/>
+
+  <g stroke="#8a4f2a" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round">
+
+    <!-- Tail (layered triangular folds behind body) -->
+    <polygon points="260,370 330,320 340,380" fill="url(#paperDark)"/>
+    <polygon points="285,390 340,380 325,425" fill="url(#paper)"/>
+    <polygon points="325,425 340,380 360,410" fill="url(#paperLight)"/>
+
+    <!-- Body: main faceted shape -->
+    <!-- Back facet (darker) -->
+    <polygon points="265,250 305,340 270,430 200,440" fill="url(#paperDark)"/>
+    <!-- Main body front facet -->
+    <polygon points="200,250 265,250 305,340 270,430 200,440 130,420 115,330 155,250" fill="url(#paper)"/>
+    <!-- Light highlight facet on chest -->
+    <polygon points="155,250 200,250 210,340 165,400 130,420 115,330" fill="url(#paperLight)"/>
+    <!-- Crease lines on body -->
+    <line x1="200" y1="250" x2="210" y2="340" opacity="0.5"/>
+    <line x1="210" y1="340" x2="165" y2="400" opacity="0.4"/>
+    <line x1="265" y1="250" x2="305" y2="340" opacity="0.3"/>
+    <line x1="210" y1="340" x2="265" y2="330" opacity="0.4"/>
+    <line x1="265" y1="330" x2="270" y2="430" opacity="0.35"/>
+
+    <!-- Front paw facets -->
+    <polygon points="130,420 170,415 180,440 125,445" fill="url(#paperDark)"/>
+    <polygon points="170,415 210,430 205,445 180,440" fill="url(#paper)"/>
+    <polygon points="210,430 240,425 245,446 205,445" fill="url(#paperLight)"/>
+    <line x1="170" y1="415" x2="180" y2="440" opacity="0.5"/>
+    <line x1="210" y1="430" x2="205" y2="445" opacity="0.5"/>
+
+    <!-- HEAD -->
+    <!-- Left ear (inner darker) -->
+    <polygon points="140,135 175,180 155,200" fill="url(#paperDark)"/>
+    <!-- Right ear -->
+    <polygon points="255,135 220,180 240,200" fill="url(#paperDark)"/>
+
+    <!-- Head main shape (pentagon/diamond) -->
+    <!-- Top head facet -->
+    <polygon points="175,180 220,180 235,215 198,230 160,215" fill="url(#paperLight)"/>
+    <!-- Cheek left facet -->
+    <polygon points="155,200 175,180 160,215 145,235 150,225" fill="url(#paper)"/>
+    <!-- Cheek right facet -->
+    <polygon points="240,200 220,180 235,215 250,235 245,225" fill="url(#paper)"/>
+    <!-- Snout/lower face facet (lighter) -->
+    <polygon points="160,215 198,230 235,215 245,225 225,265 198,275 170,265 150,225" fill="url(#paperLight)"/>
+    <!-- Central muzzle crease -->
+    <polygon points="198,230 208,268 198,275 188,268" fill="url(#paper)" opacity="0.6"/>
+
+    <!-- Neck connecting to body -->
+    <polygon points="170,265 198,275 225,265 265,250 200,250 155,250 145,235" fill="url(#paperDark)"/>
+
+    <!-- Head creases -->
+    <line x1="175" y1="180" x2="198" y2="230" opacity="0.4"/>
+    <line x1="220" y1="180" x2="198" y2="230" opacity="0.4"/>
+    <line x1="160" y1="215" x2="198" y2="230" opacity="0.35"/>
+    <line x1="235" y1="215" x2="198" y2="230" opacity="0.35"/>
+    <line x1="145" y1="235" x2="170" y2="265" opacity="0.4"/>
+    <line x1="250" y1="235" x2="225" y2="265" opacity="0.4"/>
+
+    <!-- Ear creases -->
+    <line x1="140" y1="135" x2="162" y2="195" opacity="0.5"/>
+    <line x1="255" y1="135" x2="233" y2="195" opacity="0.5"/>
+    <!-- Inner ear triangles -->
+    <polygon points="148,150 168,185 158,190" fill="#8a4f2a" opacity="0.55" stroke="none"/>
+    <polygon points="247,150 227,185 237,190" fill="#8a4f2a" opacity="0.55" stroke="none"/>
+
+    <!-- Eyes (origami folded slashes) -->
+    <line x1="172" y1="215" x2="185" y2="210" stroke="#2b1a10" stroke-width="2.5"/>
+    <line x1="223" y1="215" x2="210" y2="210" stroke="#2b1a10" stroke-width="2.5"/>
+
+    <!-- Nose -->
+    <polygon points="195,240 201,240 198,247" fill="#5a2e1a" stroke="none"/>
+
+    <!-- Mouth (simple V) -->
+    <path d="M 198,247 L 192,254 M 198,247 L 204,254" stroke="#5a2e1a" stroke-width="1.4" fill="none"/>
+
+    <!-- Whiskers (angular dashed) -->
+    <line x1="150" y1="238" x2="118" y2="232" opacity="0.6"/>
+    <line x1="150" y1="245" x2="120" y2="248" opacity="0.6"/>
+    <line x1="245" y1="238" x2="277" y2="232" opacity="0.6"/>
+    <line x1="245" y1="245" x2="275" y2="248" opacity="0.6"/>
+
+  </g>
+
+  <!-- Tiny highlight spark -->
+  <circle cx="175" cy="208" r="1.5" fill="#fff" opacity="0.8"/>
+  <circle cx="220" cy="208" r="1.5" fill="#fff" opacity="0.8"/>
+</svg>
+```

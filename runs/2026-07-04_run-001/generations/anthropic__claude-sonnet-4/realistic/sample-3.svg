@@ -1,0 +1,98 @@
+<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bodyGradient" cx="0.3" cy="0.3">
+      <stop offset="0%" stop-color="#E5D5C0"/>
+      <stop offset="50%" stop-color="#D4C4A8"/>
+      <stop offset="100%" stop-color="#B8A082"/>
+    </radialGradient>
+    <radialGradient id="headGradient" cx="0.4" cy="0.2">
+      <stop offset="0%" stop-color="#F0E5D0"/>
+      <stop offset="70%" stop-color="#D4C4A8"/>
+      <stop offset="100%" stop-color="#B8A082"/>
+    </radialGradient>
+    <radialGradient id="earGradient" cx="0.5" cy="0.3">
+      <stop offset="0%" stop-color="#F5EAD5"/>
+      <stop offset="80%" stop-color="#C5B598"/>
+    </radialGradient>
+    <linearGradient id="tailGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E5D5C0"/>
+      <stop offset="50%" stop-color="#D4C4A8"/>
+      <stop offset="100%" stop-color="#A08060"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Shadow -->
+  <ellipse cx="200" cy="480" rx="80" ry="15" fill="#00000020"/>
+  
+  <!-- Tail -->
+  <path d="M120 380 Q80 340 90 280 Q100 240 130 220 Q140 210 145 215" 
+        fill="url(#tailGradient)" stroke="#9A7F5F" stroke-width="1"/>
+  
+  <!-- Back legs -->
+  <ellipse cx="160" cy="420" rx="25" ry="40" fill="url(#bodyGradient)"/>
+  <ellipse cx="240" cy="420" rx="25" ry="40" fill="url(#bodyGradient)"/>
+  
+  <!-- Main body -->
+  <ellipse cx="200" cy="350" rx="70" ry="80" fill="url(#bodyGradient)"/>
+  
+  <!-- Front legs -->
+  <ellipse cx="170" cy="400" rx="18" ry="35" fill="url(#bodyGradient)"/>
+  <ellipse cx="230" cy="400" rx="18" ry="35" fill="url(#bodyGradient)"/>
+  
+  <!-- Chest -->
+  <ellipse cx="200" cy="310" rx="50" ry="35" fill="url(#bodyGradient)"/>
+  
+  <!-- Head -->
+  <circle cx="200" cy="240" r="55" fill="url(#headGradient)"/>
+  
+  <!-- Ears -->
+  <path d="M165 200 L175 160 L190 180 Z" fill="url(#earGradient)" stroke="#B8A082" stroke-width="1"/>
+  <path d="M210 180 L225 160 L235 200 Z" fill="url(#earGradient)" stroke="#B8A082" stroke-width="1"/>
+  
+  <!-- Inner ears -->
+  <path d="M170 185 L177 170 L185 180 Z" fill="#E8B4B8"/>
+  <path d="M215 180 L223 170 L230 185 Z" fill="#E8B4B8"/>
+  
+  <!-- Facial markings -->
+  <path d="M200 220 Q180 230 170 250 Q175 270 200 270 Q225 270 230 250 Q220 230 200 220 Z" 
+        fill="#F8F0E0"/>
+  
+  <!-- Eyes -->
+  <ellipse cx="185" cy="235" rx="12" ry="15" fill="#4A5D23"/>
+  <ellipse cx="215" cy="235" rx="12" ry="15" fill="#4A5D23"/>
+  
+  <!-- Eye highlights -->
+  <ellipse cx="188" cy="230" rx="3" ry="4" fill="#FFFFFF"/>
+  <ellipse cx="218" cy="230" rx="3" ry="4" fill="#FFFFFF"/>
+  
+  <!-- Pupils -->
+  <ellipse cx="185" cy="237" rx="6" ry="9" fill="#000000"/>
+  <ellipse cx="215" cy="237" rx="6" ry="9" fill="#000000"/>
+  
+  <!-- Nose -->
+  <path d="M200 250 L195 258 Q200 262 205 258 Z" fill="#D4A5A5"/>
+  
+  <!-- Mouth -->
+  <path d="M200 262 Q190 268 185 275" fill="none" stroke="#8B6F47" stroke-width="2" stroke-linecap="round"/>
+  <path d="M200 262 Q210 268 215 275" fill="none" stroke="#8B6F47" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Whiskers -->
+  <line x1="130" y1="250" x2="165" y2="255" stroke="#8B6F47" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="130" y1="260" x2="165" y2="265" stroke="#8B6F47" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="235" y1="255" x2="270" y2="250" stroke="#8B6F47" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="235" y1="265" x2="270" y2="260" stroke="#8B6F47" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- Fur texture strokes -->
+  <path d="M150 320 Q155 315 160 320" fill="none" stroke="#9A7F5F" stroke-width="1" opacity="0.6"/>
+  <path d="M240 315 Q245 310 250 315" fill="none" stroke="#9A7F5F" stroke-width="1" opacity="0.6"/>
+  <path d="M175 360 Q180 355 185 360" fill="none" stroke="#9A7F5F" stroke-width="1" opacity="0.6"/>
+  <path d="M215 360 Q220 355 225 360" fill="none" stroke="#9A7F5F" stroke-width="1" opacity="0.6"/>
+  <path d="M160 280 Q165 275 170 280" fill="none" stroke="#9A7F5F" stroke-width="1" opacity="0.5"/>
+  <path d="M230 280 Q235 275 240 280" fill="none" stroke="#9A7F5F" stroke-width="1" opacity="0.5"/>
+  
+  <!-- Paws -->
+  <ellipse cx="170" cy="435" rx="15" ry="8" fill="#B8A082"/>
+  <ellipse cx="230" cy="435" rx="15" ry="8" fill="#B8A082"/>
+  <ellipse cx="160" cy="455" rx="12" ry="6" fill="#B8A082"/>
+  <ellipse cx="240" cy="455" rx="12" ry="6" fill="#B8A082"/>
+</svg>

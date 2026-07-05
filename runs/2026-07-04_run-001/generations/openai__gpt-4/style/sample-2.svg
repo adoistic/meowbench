@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+<style type="text/css">
+    .st0{ fill:#FFFFFF; stroke:#000000;}
+</style>
+
+<polygon class="st0" points="21,19 32,5 44,19 "/> <!-- head -->
+<polygon class="st0" points="24,23 26,23 25,24 "/> <!-- left eye -->
+<polygon class="st0" points="40,23 38,23 39,24 "/> <!-- right eye -->
+<polygon class="st0" points="32,23 35,26 33,30 31,26 "/> <!-- nose -->
+<polygon class="st0" points="22,31 42,31 42,33 22,33 "/> <!-- mouth -->
+
+<polygon class="st0" points="18,39 22,35 24,39 "/> <!-- left paw -->
+<polygon class="st0" points="46,39 42,35 40,39 "/> <!-- right paw -->
+
+<polygon class="st0" points="21,39 28,52 22,61 18,55 "/> <!-- left leg -->
+<polygon class="st0" points="43,39 36,52 38,61 44,55 "/> <!-- right leg -->
+
+<polygon class="st0" points="23,30 16,39 32,39 "/> <!-- left body -->
+<polygon class="st0" points="41,30 48,39 32,39 "/> <!-- right body -->
+
+<polygon class="st0" points="32,38 37,42 37,46 32,43 "/> <!-- center-upper tail -->
+<polygon class="st0" points="28,42 23,46 23,50 28,47 "/> <!-- left upper tail -->
+<polygon class="st0" points="36,42 41,46 41,50 36,47 "/> <!-- right upper tail -->
+
+<polygon class="st0" points="29,46 32,50 31,54 28,50 "/> <!-- center-lower tail -->
+<polygon class="st0" points="25,50 22,54 23,58 26,54 "/> <!-- left lower tail -->
+<polygon class="st0" points="39,50 42,54 41,58 38,54 "/> <!-- right lower tail -->
+
+</svg>

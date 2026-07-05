@@ -1,0 +1,70 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff9a56"/>
+      <stop offset="100%" stop-color="#ff6b35"/>
+    </linearGradient>
+    <linearGradient id="tailGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff6b35"/>
+      <stop offset="100%" stop-color="#e85d04"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Tail with SMIL animation -->
+  <path d="M 280 180 Q 320 160 340 120 Q 360 80 350 40 Q 345 20 355 10 Q 365 5 370 15 Q 380 35 375 70 Q 370 110 340 150 Q 320 180 290 200" 
+        fill="none" stroke="url(#tailGrad)" stroke-width="18" stroke-linecap="round">
+    <animate attributeName="d" 
+             values="M 280 180 Q 320 160 340 120 Q 360 80 350 40 Q 345 20 355 10 Q 365 5 370 15 Q 380 35 375 70 Q 370 110 340 150 Q 320 180 290 200;
+                     M 280 180 Q 330 170 360 140 Q 390 100 385 60 Q 382 40 392 35 Q 402 32 405 42 Q 412 60 400 95 Q 385 135 350 165 Q 325 190 295 205;
+                     M 280 180 Q 320 160 340 120 Q 360 80 350 40 Q 345 20 355 10 Q 365 5 370 15 Q 380 35 375 70 Q 370 110 340 150 Q 320 180 290 200;
+                     M 280 180 Q 310 150 320 110 Q 330 70 315 35 Q 310 20 300 15 Q 290 12 288 22 Q 285 40 300 75 Q 315 115 330 145 Q 310 175 285 195;
+                     M 280 180 Q 320 160 340 120 Q 360 80 350 40 Q 345 20 355 10 Q 365 5 370 15 Q 380 35 375 70 Q 370 110 340 150 Q 320 180 290 200"
+             dur="2s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Back legs -->
+  <ellipse cx="160" cy="240" rx="25" ry="35" fill="#e85d04"/>
+  <ellipse cx="240" cy="240" rx="25" ry="35" fill="#e85d04"/>
+  
+  <!-- Body -->
+  <ellipse cx="200" cy="200" rx="80" ry="70" fill="url(#bodyGrad)"/>
+  
+  <!-- Front legs -->
+  <ellipse cx="180" cy="250" rx="18" ry="40" fill="#ff9a56"/>
+  <ellipse cx="220" cy="250" rx="18" ry="40" fill="#ff9a56"/>
+  
+  <!-- Head -->
+  <ellipse cx="200" cy="130" rx="55" ry="50" fill="url(#bodyGrad)"/>
+  
+  <!-- Ears -->
+  <path d="M 155 100 L 145 60 L 180 85 Z" fill="#ff6b35"/>
+  <path d="M 245 100 L 255 60 L 220 85 Z" fill="#ff6b35"/>
+  <path d="M 160 95 L 152 70 L 175 88 Z" fill="#ffb4a2"/>
+  <path d="M 240 95 L 248 70 L 225 88 Z" fill="#ffb4a2"/>
+  
+  <!-- Eyes -->
+  <ellipse cx="180" cy="125" rx="12" ry="15" fill="#2d3436"/>
+  <ellipse cx="220" cy="125" rx="12" ry="15" fill="#2d3436"/>
+  <ellipse cx="183" cy="122" rx="4" ry="5" fill="white"/>
+  <ellipse cx="223" cy="122" rx="4" ry="5" fill="white"/>
+  
+  <!-- Nose -->
+  <path d="M 195 145 L 205 145 L 200 152 Z" fill="#ff8585"/>
+  
+  <!-- Mouth -->
+  <path d="M 200 152 Q 190 160 185 155 M 200 152 Q 210 160 215 155" stroke="#2d3436" stroke-width="2" fill="none"/>
+  
+  <!-- Whiskers -->
+  <line x1="160" y1="145" x2="130" y2="140" stroke="#2d3436" stroke-width="1.5"/>
+  <line x1="160" y1="150" x2="125" y2="152" stroke="#2d3436" stroke-width="1.5"/>
+  <line x1="160" y1="155" x2="130" y2="165" stroke="#2d3436" stroke-width="1.5"/>
+  <line x1="240" y1="145" x2="270" y2="140" stroke="#2d3436" stroke-width="1.5"/>
+  <line x1="240" y1="150" x2="275" y2="152" stroke="#2d3436" stroke-width="1.5"/>
+  <line x1="240" y1="155" x2="270" y2="165" stroke="#2d3436" stroke-width="1.5"/>
+  
+  <!-- Paws -->
+  <ellipse cx="180" cy="285" rx="15" ry="10" fill="white"/>
+  <ellipse cx="220" cy="285" rx="15" ry="10" fill="white"/>
+  <ellipse cx="160" cy="270" rx="18" ry="12" fill="white"/>
+  <ellipse cx="240" cy="270" rx="18" ry="12" fill="white"/>
+</svg>

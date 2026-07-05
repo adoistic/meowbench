@@ -1,0 +1,9 @@
+{
+  "modelSlug": "z-ai/glm-4.6",
+  "promptId": "constraint",
+  "sample": 3,
+  "status": "ok",
+  "temperature": 1,
+  "rawPath": "generations/z-ai__glm-4.6/constraint/sample-3.raw.txt",
+  "svgPath": "generations/z-ai__glm-4.6/constraint/sample-3.svg"
+}

@@ -1,0 +1,9 @@
+{
+  "modelSlug": "mistralai/mistral-large-2407",
+  "promptId": "constraint",
+  "sample": 1,
+  "status": "ok",
+  "temperature": 1,
+  "rawPath": "generations/mistralai__mistral-large-2407/constraint/sample-1.raw.txt",
+  "svgPath": "generations/mistralai__mistral-large-2407/constraint/sample-1.svg"
+}

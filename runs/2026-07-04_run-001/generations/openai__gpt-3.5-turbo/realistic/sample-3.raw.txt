@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <circle cx="150" cy="120" r="80" fill="#FFDBAC" />
+  <path d="M216 120a57 100 0 01-114 0" fill="#FFDBAC" />
+  <path d="M84 120a55 100 0 01112 0" fill="#FFDBAC" />
+  <path d="M150 160c-40 0-70 20-70 50h140c0-30-30-50-70-50z" fill="#FFDBAC" />
+  <path d="M104 120c-20 0-20-30 0-30s20 30 0 30z" fill="#000" />
+  <path d="M196 120c-20 0-20-30 0-30s20 30 0 30z" fill="#000" />
+  <circle cx="130" cy="100" r="10" fill="#FFF" />
+  <circle cx="170" cy="100" r="10" fill="#FFF" />
+  <circle cx="130" cy="100" r="4" fill="#000" />
+  <circle cx="170" cy="100" r="4" fill="#000" />
+</svg>

@@ -1,0 +1,60 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bicycle frame -->
+  <path d="M150 200 L200 150 L250 200 M200 150 L220 100 M180 140 L210 130" 
+        stroke="#2c3e50" stroke-width="4" fill="none" stroke-linecap="round"/>
+  
+  <!-- Seat -->
+  <ellipse cx="220" cy="100" rx="25" ry="8" fill="#34495e"/>
+  
+  <!-- Handlebars -->
+  <path d="M250 120 L260 100 L280 100" 
+        stroke="#2c3e50" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <circle cx="280" cy="100" r="4" fill="#2c3e50"/>
+  
+  <!-- Rear wheel -->
+  <circle cx="150" cy="200" r="35" fill="none" stroke="#2c3e50" stroke-width="3"/>
+  <circle cx="150" cy="200" r="28" fill="none" stroke="#2c3e50" stroke-width="1"/>
+  <circle cx="150" cy="200" r="3" fill="#2c3e50"/>
+  <path d="M150 200 L150 165 L175 200 L150 235 L125 200 Z" 
+        stroke="#2c3e50" stroke-width="1" fill="none"/>
+  
+  <!-- Front wheel -->
+  <circle cx="250" cy="200" r="35" fill="none" stroke="#2c3e50" stroke-width="3"/>
+  <circle cx="250" cy="200" r="28" fill="none" stroke="#2c3e50" stroke-width="1"/>
+  <circle cx="250" cy="200" r="3" fill="#2c3e50"/>
+  <path d="M250 200 L250 165 L275 200 L250 235 L225 200 Z" 
+        stroke="#2c3e50" stroke-width="1" fill="none"/>
+  
+  <!-- Pedals -->
+  <circle cx="200" cy="200" r="5" fill="#2c3e50"/>
+  <rect x="185" y="198" width="30" height="4" rx="2" fill="#2c3e50"/>
+  <rect x="198" y="183" width="4" height="30" rx="2" fill="#2c3e50"/>
+  
+  <!-- Cat body -->
+  <ellipse cx="210" cy="130" rx="35" ry="30" fill="#ff6b35"/>
+  
+  <!-- Cat head -->
+  <circle cx="210" cy="105" r="22" fill="#ff6b35"/>
+  
+  <!-- Cat ears -->
+  <path d="M190 100 L190 88 L195 95 Z" fill="#ff6b35"/>
+  <path d="M230 100 L230 88 L225 95 Z" fill="#ff6b35"/>
+  
+  <!-- Cat face details -->
+  <circle cx="200" cy="103" r="2" fill="#2c3e50"/>
+  <circle cx="220" cy="103" r="2" fill="#2c3e50"/>
+  <path d="M210 108 Q205 112 210 114 Q215 112 210 108" 
+        stroke="#2c3e50" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Cat tail -->
+  <path d="M175 135 Q155 140 150 155 Q148 165 155 168" 
+        stroke="#ff6b35" stroke-width="14" fill="none" stroke-linecap="round"/>
+  
+  <!-- Cat front paws gripping handlebars -->
+  <ellipse cx="240" cy="115" rx="6" ry="10" fill="#ff6b35" transform="rotate(-20 240 115)"/>
+  <ellipse cx="255" cy="110" rx="6" ry="10" fill="#ff6b35" transform="rotate(-15 255 110)"/>
+  
+  <!-- Decorative whiskers -->
+  <path d="M188 105 L175 103 M188 108 L175 109" stroke="#2c3e50" stroke-width="1" stroke-linecap="round"/>
+  <path d="M232 105 L245 103 M232 108 L245 109" stroke="#2c3e50" stroke-width="1" stroke-linecap="round"/>
+</svg>

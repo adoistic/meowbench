@@ -1,0 +1,17 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 2000,
+    "elements": 24,
+    "paths": 0,
+    "colors": [
+      "#666",
+      "#999",
+      "#d8d8d8",
+      "#e0e0e0",
+      "url(#fold1)",
+      "url(#fold2)"
+    ]
+  }
+}

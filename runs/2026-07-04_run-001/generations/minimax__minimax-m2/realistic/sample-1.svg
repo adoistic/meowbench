@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 600">
+  <defs>
+    <!-- Gradients for volume and lighting -->
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2a2a2a"/>
+      <stop offset="30%" stop-color="#4a4a4a"/>
+      <stop offset="50%" stop-color="#5e5e5e"/> <!-- Highlight in center -->
+      <stop offset="70%" stop-color="#4a4a4a"/>
+      <stop offset="100%" stop-color="#2a2a2a"/>
+    </linearGradient>
+    
+    <radialGradient id="headGrad" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#5e5e5e"/>
+      <stop offset="100%" stop-color="#333333"/>
+    </radialGradient>
+
+    <radialGradient id="tailGrad" cx="30%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#4a4a4a"/>
+      <stop offset="100%" stop-color="#1a1a1a"/>
+    </radialGradient>
+
+    <linearGradient id="earGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#333333"/>
+      <stop offset="100%" stop-color="#555555"/>
+    </linearGradient>
+
+    <filter id="blurShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+    </filter>
+  </defs>
+
+  <!-- Floor Shadow -->
+  <ellipse cx="250" cy="520" rx="160" ry="20" fill="#000" opacity="0.3" filter="url(#blurShadow)"/>
+
+  <!-- Tail -->
+  <path d="M 350 450 Q 450 450 450 350 Q 450 250 400 280" 
+        fill="none" stroke="url(#tailGrad)" stroke-width="45" stroke-linecap="round"/>
+  
+  <!-- Body Base -->
+  <!-- Using a complex path to create the sitting 'loaf' shape with implied fur spikes on the back -->
+  <path d="M 170 480 
+           C 150 300, 180 180, 250 180 
+           C 320 180, 350 300, 330 480 
+           Z" 
+        fill="url(#bodyGrad)"/>
+
+  <!-- Back Fur Texture (Spiky details) -->
+  <path d="M 180 250 L 160 245 L 175 230 L 155 220 L 170 200" 
+        fill="#333" stroke="none"/>
+  <path d="M 320 250 L 340 245 L 325 230 L 345 220 L 330 200" 
+        fill="#333" stroke="none"/>
+
+  <!-- Hind Paws -->
+  <ellipse cx="180" cy="490" rx="25" ry="15" fill="#222"/>
+  <ellipse cx="320" cy="490" rx="25" ry="15" fill="#222"/>
+  
+  <!-- Front Paws -->
+  <ellipse cx="220" cy="500" rx="18" ry="12" fill="#333"/>
+  <ellipse cx="280" cy="500" rx="18" ry="12" fill="#333"/>
+
+  <!-- Chest Fur (Lighter area) -->
+  <path d="M 220 250 Q 250 300 280 250" fill="#666" opacity="0.5"/>
+  <path d="M 230 260 L 220 280 L 240 270 Z" fill="#666"/>
+  <path d="M 270 260 L 280 280 L 260 270 Z" fill="#666"/>
+
+  <!-- Head Group -->
+  <g transform="translate(0, -20)">
+    <!-- Ears -->
+    <path d="M 190 160 L 170 80 L 230 130 Z" fill="#222"/> <!-- Left Ear Base -->
+    <path d="M 310 160 L 330 80 L 270 130 Z" fill="#222"/> <!-- Right Ear Base -->
+    <path d="M 195 150 L 180 95 L 220 135 Z" fill="url(#earGrad)"/> <!-- Left Ear Inner -->
+    <path d="M 305 150 L 320 95 L 280 135 Z" fill="url(#earGrad)"/> <!-- Right Ear Inner -->
+
+    <!-- Head Shape -->
+    <path d="M 180 200 
+             C 160 200, 150 150, 180 120 
+             C 210 90, 290 90, 320 120 
+             C 350 150, 340 200, 320 200 
+             C 320 250, 180 250, 180 200 Z" 
+          fill="url(#headGrad)"/>
+
+    <!-- Cheek Fluff (Jagged edges for fur) -->
+    <path d="M 180 200 L 170 210 L 185 220 L 175 230 L 190 235" fill="#4a4a4a"/>
+    <path d="M 320 200 L 330 210 L 315 220 L 325 230 L 310 235" fill="#4a4a4a"/>
+
+    <!-- Eyes -->
+    <g>
+      <!-- Left Eye -->
+      <ellipse cx="215" cy="165" rx="18" ry="22" fill="#8db600"/>
+      <ellipse cx="215" cy="165" rx="2" ry="18" fill="#000"/> <!-- Pupil -->
+      <circle cx="210" cy="158" r="4" fill="#fff" opacity="0.8"/> <!-- Highlight -->
+      
+      <!-- Right Eye -->
+      <ellipse cx="285" cy="165" rx="18" ry="22" fill="#8db600"/>
+      <ellipse cx="285" cy="165" rx="2" ry="18" fill="#000"/> <!-- Pupil -->
+      <circle cx="280" cy="158" r="4" fill="#fff" opacity="0.8"/> <!-- Highlight -->
+    </g>
+
+    <!-- Nose -->
+    <path d="M 242 195 L 258 195 L 250 205 Z" fill="#ffb7b2"/>
+
+    <!-- Mouth -->
+    <path d="M 250 205 Q 240 215 230 210 M 250 205 Q 260 215 270 210" 
+          fill="none" stroke="#ccc" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Whiskers -->
+    <g stroke="#fff" stroke-width="1" opacity="0.6">
+      <line x1="230" y1="200" x2="160" y2="190"/>
+      <line x1="230" y1="205" x2="160" y2="205"/>
+      <line x1="230" y1="210" x2="165" y2="220"/>
+      
+      <line x1="270" y1="200" x2="340" y2="190"/>
+      <line x1="270" y1="205" x2="340" y2="205"/>
+      <line x1="270" y1="210" x2="335" y2="220"/>
+    </g>
+  </g>
+</svg>

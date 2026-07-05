@@ -1,0 +1,34 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 13737,
+    "elements": 148,
+    "paths": 56,
+    "colors": [
+      "#111",
+      "#1a1a1a",
+      "#3b82f6",
+      "#4a8074",
+      "#5a9689",
+      "#5d4037",
+      "#64748b",
+      "#6d4c41",
+      "#8d6e63",
+      "#94a3b8",
+      "#d946ef",
+      "#d97706",
+      "#e2e8f0",
+      "#f97316",
+      "#fdba74",
+      "#ff007f",
+      "#ff8c00",
+      "#ffd700",
+      "#fff",
+      "#ffffff",
+      "url(#sunglow)",
+      "url(#sunset)",
+      "url(#tirepattern)"
+    ]
+  }
+}

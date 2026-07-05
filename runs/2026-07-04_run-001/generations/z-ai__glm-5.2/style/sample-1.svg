@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" text-rendering="geometricPrecision">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="65%">
+      <stop offset="0%" stop-color="#f3ecdd"/>
+      <stop offset="100%" stop-color="#d9cdb4"/>
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7a6a4c" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#7a6a4c" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#bg)"/>
+
+  <!-- floor shadow -->
+  <ellipse cx="300" cy="540" rx="190" ry="22" fill="url(#floor)"/>
+
+  <g id="cat" stroke="#6f5e44" stroke-width="1.4" stroke-linejoin="round">
+
+    <!-- TAIL -->
+    <polygon points="425,505 478,452 440,432" fill="#c4b48f"/>
+    <polygon points="425,505 440,432 458,470" fill="#a0895f"/>
+    <line x1="425" y1="505" x2="458" y2="470" stroke="#6f5e44" stroke-width="1"/>
+
+    <!-- BODY facets -->
+    <polygon points="300,320 175,505 240,420" fill="#f1e8d4"/>
+    <polygon points="240,420 175,505 300,505" fill="#e2d3b3"/>
+    <polygon points="300,320 425,505 360,420" fill="#c4b187"/>
+    <polygon points="360,420 425,505 300,505" fill="#a0875c"/>
+
+    <!-- center crease on body -->
+    <line x1="300" y1="320" x2="300" y2="505" stroke="#6f5e44" stroke-width="1.2"/>
+    <line x1="240" y1="420" x2="360" y2="420" stroke="#6f5e44" stroke-width="1.2"/>
+
+    <!-- PAWS -->
+    <polygon points="255,505 295,505 275,528" fill="#dac8a2"/>
+    <polygon points="305,505 345,505 325,528" fill="#9c8458"/>
+
+    <!-- HEAD: ear + face facets -->
+    <polygon points="235,135 300,200 230,275" fill="#f3ead6"/>
+    <polygon points="365,135 370,275 300,200" fill="#c0ad82"/>
+    <polygon points="300,200 230,275 300,315" fill="#ece2c8"/>
+    <polygon points="300,200 300,315 370,275" fill="#d2c19a"/>
+
+    <!-- inner ear folds -->
+    <polygon points="255,162 290,205 268,205" fill="#d6c39c"/>
+    <polygon points="345,162 332,205 310,205" fill="#a08a60"/>
+
+    <!-- center face crease -->
+    <line x1="300" y1="200" x2="300" y2="315" stroke="#6f5e44" stroke-width="1.2"/>
+    <line x1="230" y1="275" x2="370" y2="275" stroke="#6f5e44" stroke-width="1.2"/>
+
+    <!-- EYES (folded triangles) -->
+    <polygon points="272,252 292,252 282,271" fill="#3a342b" stroke="#3a342b"/>
+    <polygon points="308,252 328,252 318,271" fill="#3a342b" stroke="#3a342b"/>
+
+    <!-- NOSE -->
+    <polygon points="293,283 307,283 300,294" fill="#d08479" stroke="#8a4a44" stroke-width="0.8"/>
+
+    <!-- mouth crease -->
+    <path d="M300,294 L293,302 M300,294 L307,302" fill="none" stroke="#6f5e44" stroke-width="1"/>
+
+    <!-- WHISKERS -->
+    <g stroke="#8a7556" stroke-width="0.9" fill="none">
+      <path d="M232,283 L168,278"/>
+      <path d="M232,293 L170,298"/>
+      <path d="M232,303 L172,318"/>
+      <path d="M368,283 L432,278"/>
+      <path d="M368,293 L430,298"/>
+      <path d="M368,303 L428,318"/>
+    </g>
+
+  </g>
+</svg>

@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <defs>
+    <!-- Filter for a subtle paper shadow effect -->
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="2" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Ground Shadow -->
+  <ellipse cx="250" cy="480" rx="140" ry="15" fill="#000000" opacity="0.15" />
+
+  <!-- TAIL: A folded geometric shape behind the body -->
+  <polygon points="340,420 440,350 460,380 360,450" fill="#C4C4C4" stroke="#A0A0A0" stroke-width="1"/>
+  <polygon points="440,350 460,380 450,410 430,380" fill="#DCDCDC" /> <!-- Tail tip fold -->
+
+  <!-- BODY -->
+  <g filter="url(#dropShadow)">
+    <!-- Left Body Panel -->
+    <polygon points="250,360 140,480 250,480" fill="#E6E6E6" stroke="#D0D0D0" stroke-width="1"/>
+    <!-- Right Body Panel (Darker for shadow) -->
+    <polygon points="250,360 360,480 250,480" fill="#C4C4C4" stroke="#A0A0A0" stroke-width="1"/>
+  </g>
+
+  <!-- HEAD -->
+  <g filter="url(#dropShadow)">
+    <!-- Chin (Bottom Muzzle) - Left Side -->
+    <polygon points="250,320 250,390 190,350" fill="#E6E6E6" stroke="#D0D0D0" stroke-width="1"/>
+    <!-- Chin (Bottom Muzzle) - Right Side (Shadowed) -->
+    <polygon points="250,320 250,390 310,350" fill="#D0D0D0" stroke="#A0A0A0" stroke-width="1"/>
+
+    <!-- Cheeks/Face Base -->
+    <!-- Left Cheek -->
+    <polygon points="90,220 210,170 250,220 250,320" fill="#F2F2F2" stroke="#D0D0D0" stroke-width="1"/>
+    <!-- Right Cheek -->
+    <polygon points="410,220 290,170 250,220 250,320" fill="#D6D6D6" stroke="#A0A0A0" stroke-width="1"/>
+
+    <!-- Forehead Center -->
+    <polygon points="250,140 210,170 250,220 290,170" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1"/>
+
+    <!-- Left Ear -->
+    <polygon points="150,60 250,140 210,170" fill="#E6E6E6" stroke="#D0D0D0" stroke-width="1"/>
+    
+    <!-- Right Ear -->
+    <polygon points="350,60 250,140 290,170" fill="#C4C4C4" stroke="#A0A0A0" stroke-width="1"/>
+  </g>
+
+  <!-- FACE DETATURES -->
+  <g fill="#333333">
+    <!-- Eyes: Geometric Triangles -->
+    <!-- Left Eye -->
+    <polygon points="215,240 235,245 215,250" />
+    <!-- Right Eye -->
+    <polygon points="285,240 265,245 285,250" />
+
+    <!-- Nose: Small Diamond -->
+    <polygon points="242,275 258,275 250,285" />
+  </g>
+
+  <!-- Mouth Creases -->
+  <g stroke="#555555" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M250,285 L230,305" />
+    <path d="M250,285 L270,305" />
+    <path d="M230,305 L250,315" opacity="0.5"/> <!-- Small link -->
+    <path d="M270,305 L250,315" opacity="0.5"/>
+  </g>
+
+  <!-- Whiskers -->
+  <g stroke="#999999" stroke-width="1.5" stroke-linecap="round">
+    <!-- Left Side -->
+    <line x1="200" y1="280" x2="140" y2="270" />
+    <line x1="200" y1="290" x2="135" y2="290" />
+    <line x1="200" y1="300" x2="140" y2="310" />
+    
+    <!-- Right Side -->
+    <line x1="300" y1="280" x2="360" y2="270" />
+    <line x1="300" y1="290" x2="365" y2="290" />
+    <line x1="300" y1="300" x2="360" y2="310" />
+  </g>
+
+</svg>

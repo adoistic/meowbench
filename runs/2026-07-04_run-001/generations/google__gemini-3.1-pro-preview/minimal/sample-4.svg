@@ -1,0 +1,53 @@
+<svg width="100%" height="100%" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="250" height="500" fill="#F5F0E6" />
+  <rect x="250" y="0" width="250" height="500" fill="#E6DDCF" />
+
+  <path d="M 250,80 A 160 160 0 0 0 250 400 Z" fill="#F07C60" />
+  <path d="M 250,80 A 160 160 0 0 1 250 400 Z" fill="#D96950" />
+
+  <rect x="0" y="390" width="250" height="110" fill="#E2D9CB" />
+  <rect x="250" y="390" width="250" height="110" fill="#D8CEBF" />
+
+  <path d="M 170,390 C 170,396.6 206,402 250,402 L 250,390 Z" fill="#D2C8BA" />
+  <path d="M 250,402 C 294,402 330,396.6 330,390 L 250,390 Z" fill="#C6BCAD" />
+
+  <path d="M 315,375 C 400,390 420,260 370,195" fill="none" stroke="#1F262D" stroke-width="20" stroke-linecap="round" />
+
+  <polygon points="190,95 215,220 250,180" fill="#2C363F" />
+  <polygon points="310,95 285,220 250,180" fill="#1F262D" />
+
+  <polygon points="200,125 215,190 235,175" fill="#F07C60" />
+  <polygon points="300,125 285,190 265,175" fill="#D96950" />
+
+  <path d="M 250,390 L 170,390 C 170,290 205,230 250,230 Z" fill="#2C363F" />
+  <path d="M 250,390 L 330,390 C 330,290 295,230 250,230 Z" fill="#1F262D" />
+
+  <path d="M 250,160 A 60 60 0 0 0 250 280 Z" fill="#2C363F" />
+  <path d="M 250,160 A 60 60 0 0 1 250 280 Z" fill="#1F262D" />
+
+  <path d="M 221,272 Q 238,281 250,283" fill="none" stroke="#EF476F" stroke-width="6" stroke-linecap="round" />
+  <path d="M 250,283 Q 262,281 279,272" fill="none" stroke="#D33E60" stroke-width="6" stroke-linecap="round" />
+
+  <path d="M 250,277 A 8 8 0 0 0 250 293 Z" fill="#FFCF56" />
+  <path d="M 250,277 A 8 8 0 0 1 250 293 Z" fill="#E5B94C" />
+
+  <circle cx="225" cy="225" r="9" fill="#FFD166" />
+  <circle cx="275" cy="225" r="9" fill="#E5BB5C" />
+
+  <ellipse cx="225" cy="225" rx="2" ry="6" fill="#2C363F" />
+  <ellipse cx="275" cy="225" rx="2" ry="6" fill="#1F262D" />
+
+  <circle cx="222" cy="222" r="2.5" fill="#FFFFFF" />
+  <circle cx="272" cy="222" r="2.5" fill="#EAEAEA" />
+
+  <polygon points="245,244 250,244 250,249" fill="#EF476F" />
+  <polygon points="255,244 250,244 250,249" fill="#D33E60" />
+
+  <line x1="210" y1="238" x2="175" y2="233" stroke="#F5F0E6" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="211" y1="248" x2="180" y2="248" stroke="#F5F0E6" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="212" y1="258" x2="185" y2="263" stroke="#F5F0E6" stroke-width="2.5" stroke-linecap="round" />
+
+  <line x1="290" y1="238" x2="325" y2="233" stroke="#E6DDCF" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="289" y1="248" x2="320" y2="248" stroke="#E6DDCF" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="288" y1="258" x2="315" y2="263" stroke="#E6DDCF" stroke-width="2.5" stroke-linecap="round" />
+</svg>

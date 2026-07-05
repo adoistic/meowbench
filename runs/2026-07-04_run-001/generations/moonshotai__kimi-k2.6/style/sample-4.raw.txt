@@ -1,0 +1,284 @@
+ <svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- PAPER TEXTURE BACKGROUND -->
+    <pattern id="paper" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="#f7f3e8"/>
+      <circle cx="1" cy="1" r="0.8" fill="#eaddc8" opacity="0.4"/>
+      <circle cx="10" cy="10" r="0.6" fill="#eaddc8" opacity="0.3"/>
+    </pattern>
+    
+    <!-- POLYGON SHADOWS FOR DEPTH -->
+    <filter id="shadow-small" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="1.5" dy="2.5" stdDeviation="2.5" flood-color="#252231" flood-opacity="0.2"/>
+    </filter>
+    <filter id="shadow-main" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="4" dy="8" stdDeviation="8" flood-color="#2d2a37" flood-opacity="0.22"/>
+    </filter>
+
+    <!-- BODY GRADIENTS -->
+    <linearGradient id="chest" x1="280" y1="420" x2="480" y2="460" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#44526d"/>
+      <stop offset="50%" stop-color="#333f55"/>
+      <stop offset="100%" stop-color="#273044"/>
+    </linearGradient>
+    <linearGradient id="belly" x1="500" y1="450" x2="560" y2="530" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#858ca0"/>
+      <stop offset="100%" stop-color="#6b738a"/>
+    </linearGradient>
+    
+    <!-- HEAD & FACE GRADIENTS -->
+    <linearGradient id="face-top" x1="310" y1="70" x2="450" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#8f99b0"/>
+      <stop offset="60%" stop-color="#687088"/>
+      <stop offset="100%" stop-color="#4d5569"/>
+    </linearGradient>
+    <linearGradient id="face-bottom" x1="280" y1="130" x2="480" y2="230" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#535b73"/>
+      <stop offset="100%" stop-color="#3a435b"/>
+    </linearGradient>
+    
+    <!-- LIMB GRADIENTS -->
+    <linearGradient id="arm-front" x1="180" y1="420" x2="400" y2="460" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2d3447"/>
+      <stop offset="100%" stop-color="#3f4a64"/>
+    </linearGradient>
+    <linearGradient id="arm-back" x1="10" y1="380" x2="250" y2="430" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4a536b"/>
+      <stop offset="100%" stop-color="#22293a"/>
+    </linearGradient>
+    <linearGradient id="leg-light" x1="530" y1="440" x2="590" y2="690" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#707890"/>
+      <stop offset="100%" stop-color="#525c75"/>
+    </linearGradient>
+    <linearGradient id="leg-dark" x1="610" y1="470" x2="690" y2="690" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#303748"/>
+      <stop offset="100%" stop-color="#202535"/>
+    </linearGradient>
+    
+    <!-- TAIL & OTHER GRADIENTS -->
+    <linearGradient id="tail" x1="600" y1="220" x2="780" y2="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#565f7a"/>
+      <stop offset="100%" stop-color="#3a425b"/>
+    </linearGradient>
+    <linearGradient id="ear-left" x1="260" y1="30" x2="340" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4c546d"/>
+      <stop offset="100%" stop-color="#2d354a"/>
+    </linearGradient>
+    <linearGradient id="ear-right" x1="420" y1="20" x2="540" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3c445c"/>
+      <stop offset="100%" stop-color="#22293a"/>
+    </linearGradient>
+    <linearGradient id="back-body" x1="480" y1="180" x2="640" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2a3247"/>
+      <stop offset="100%" stop-color="#1c2233"/>
+    </linearGradient>
+    
+    <!-- CREASE DEFINITION -->
+    <linearGradient id="crease" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#141928" stop-opacity="0"/>
+      <stop offset="15%" stop-color="#141928" stop-opacity="0.4"/>
+      <stop offset="85%" stop-color="#141928" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#141928" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#paper)"/>
+  
+  <!-- Guide Grid -->
+  <g stroke="#d6c8b4" stroke-width="1">
+    <line x1="0" y1="0" x2="800" y2="700" opacity="0.4"/>
+    <line x1="800" y1="0" x2="0" y2="700" opacity="0.4"/>
+    <line x1="400" y1="0" x2="400" y2="700" opacity="0.7" stroke-dasharray="6,6"/>
+    <line x1="0" y1="350" x2="800" y2="350" opacity="0.7" stroke-dasharray="6,6"/>
+  </g>
+
+  <!-- TAIL GROUP -->
+  <g filter="url(#shadow-main)">
+    <!-- Tail Base Shadow (Underside of paper) -->
+    <path d="M 670,260 L 800,20 L 790,190 L 570,540 Z" fill="#151926"/>
+    <!-- Tail Top & Side -->
+    <path d="M 670,260 L 800,20 L 750,170 L 580,480 Z" fill="url(#tail)"/>
+    <!-- Tail Shadow Fold (Butt to Tail) -->
+    <path d="M 670,260 L 580,480 L 620,490 L 670,260" fill="#141926" opacity="0.5"/>
+    <!-- Tail Crease -->
+    <line x1="782" y1="35" x2="735" y2="160" stroke="url(#crease)" stroke-width="2.5" stroke-dasharray="8 5"/>
+  </g>
+
+  <!-- REAR LEG / HAUNCH GROUP -->
+  <g filter="url(#shadow-main)">
+    <!-- Hidden Internal Fold (Under belly) -->
+    <polygon points="420,500 520,530 630,470 540,440" fill="#1p2024" opacity="0.65"/>
+    
+    <!-- Back Body (Haunch) -->
+    <polygon points="520,530 630,470 540,440" fill="url(#back-body)"/>
+    
+    <!-- Dark Back Leg (Rear/Outer) -->
+    <g filter="url(#shadow-small)">
+      <polygon points="620,480 700,500 690,690 650,510" fill="url(#leg-dark)"/>
+    </g>
+    <polygon points="700,500 690,690 670,690" fill="#191d2a"/>
+    <!-- Dark Paw Hint -->
+    <path d="M 640,670 L 670,670 A 15 15 0 0 1 640,670 Z" fill="#151926"/>
+    
+    <!-- Light Back Leg (Front/Inner overlap) -->
+    <g filter="url(#shadow-small)">
+      <polygon points="510,440 620,470 660,690 530,510" fill="url(#leg-light)"/>
+    </g>
+    <polygon points="620,470 660,690 530,510" fill="#ffffff" opacity="0.05"/>
+    <!-- Light Paw -->
+    <polygon points="650,650 660,690 620,690 600,650" fill="#5c647d"/>
+    
+    <!-- Haunch Fold Lines -->
+    <line x1="520" y1="530" x2="540" y2="440" stroke="#141926" stroke-width="2" opacity="0.4"/>
+  </g>
+
+  <!-- TORSO GROUP -->
+  <g filter="url(#shadow-main)">
+    <!-- Internal Shadow (Armpit) -->
+    <polygon points="180,180 410,445 470,450 250,190" fill="#141926" opacity="0.5"/>
+    
+    <!-- Chest -->
+    <polygon points="180,180 410,445 470,450 230,205" fill="url(#chest)"/>
+    
+    <!-- Belly (Center piece) -->
+    <polygon points="410,445 470,450 580,470 500,440" fill="url(#belly)"/>
+    
+    <!-- Chest Crease (Vertical) -->
+    <line x1="250" y1="420" x2="450" y2="450" stroke="#141926" stroke-width="2.5" stroke-dasharray="10 6" opacity="0.65"/>
+    <!-- Belly Debug/Ambient Shadow -->
+    <polygon points="520,480 560,510 500,460" fill="#ffffff" opacity="0.03"/>
+  </g>
+
+  <!-- FRONT LIMBS GROUP -->
+  <!-- Back Arm (Outer) -->
+  <g filter="url(#shadow-small)">
+    <polygon points="180,180 280,180 260,400 130,410" fill="url(#arm-back)"/>
+  </g>
+  <polygon points="180,180 280,180 260,400" fill="#ffffff" opacity="0.04"/>
+  <!-- Back Arm Crease -->
+  <line x1="180" y1="180" x2="130" y2="410" stroke="url(#crease)" stroke-width="2" stroke-dasharray="10 6"/>
+  
+  <!-- Front Arm (Inner/Closer) -->
+  <g filter="url(#shadow-small)">
+    <polygon points="280,180 400,160 410,460 220,440" fill="url(#arm-front)"/>
+  </g>
+  <polygon points="400,160 410,460 280,180" fill="#ffffff" opacity="0.08"/>
+  <!-- Front Arm Crease -->
+  <line x1="250" y1="180" x2="220" y2="440" stroke="url(#crease)" stroke-width="2" stroke-dasharray="10 6"/>
+  
+  <!-- Front Paws -->
+  <!-- Back Paw -->
+  <g filter="url(#shadow-small)">
+    <polygon points="110,420 145,390 165,440 140,465" fill="#20273a"/>
+  </g>
+  <!-- Front Paw -->
+  <g filter="url(#shadow-small)">
+    <polygon points="210,440 250,420 280,480 240,500" fill="#2a3247"/>
+  </g>
+  <!-- Paw Detail -->
+  <polygon points="240,420 265,440 250,475 220,455" fill="#ffffff" opacity="0.12"/>
+
+  <!-- HEAD GROUP -->
+  <g filter="url(#shadow-main)">
+    <!-- BACK FACE (The piece folded back behind the muzzle) -->
+    <polygon points="310,100 410,60 450,20 480,220 330,190" fill="#23293d"/>
+    <polygon points="310,100 280,210 410,260 480,220" fill="#3d4559"/>
+    
+    <!-- CREASE: Top of Head / Forehead Scroll Bias -->
+    <line x1="330" y1="90" x2="440" y2="65" stroke="url(#crease)" stroke-width="2.5" stroke-dasharray="10 6" opacity="0.4"/>
+
+    <!-- MUZZLE GROUP (The piece folding forward over the bottom face) -->
+    <g filter="url(#shadow-small)">
+      <!-- Muzzle Top Polygon -->
+      <polygon points="330,225 390,115 440,125 410,270" fill="url(#face-top)"/>
+      <!-- Sector bleed fix (cleans up the hard line between top and bottom muzzle) -->
+      <polygon points="390,115 440,125 410,270 370,260" fill="url(#face-top)"/>
+      
+      <!-- Muzzle Bottom Polygon -->
+      <polygon points="330,225 410,270 390,295 300,270" fill="url(#face-bottom)"/>
+      <!-- Shadow under the folded lip -->
+      <polygon points="330,225 410,270 390,295" fill="#1a2033" opacity="0.5"/>
+    </g>
+    
+    <!-- CHEEKS (Bottom Large Hinge Points) -->
+    <g filter="url(#shadow-small)">
+      <!-- Right Cheek (Background) -->
+      <polygon points="410,260 420,340 470,350 450,240" fill="#2a3247"/>
+      <!-- Right Cheek (Light) -->
+      <polygon points="410,260 420,340 380,330 390,230" fill="#4a536b"/>
+      
+      <!-- Left Cheek (Deeper shadow due to lighting) -->
+      <polygon points="280,210 280,250 320,310 350,250" fill="#2a3247"/>
+      <!-- Left Cheek (Medium light) -->
+      <polygon points="280,210 350,250 305,200" fill="#353d52"/>
+    </g>
+    
+    <!-- SHADOW FIXES & FACE DETAILS -->
+    <!-- Deep fold shadow where cheek meets muzzle -->
+    <polygon points="390,295 410,270 420,340 390,340" fill="#13161e" opacity="0.8"/>
+    <polygon points="330,225 300,270 280,250 310,205" fill="#1a2033" opacity="0.4"/>
+
+    <!-- EYES (Crisp Geometric Diamonds) -->
+    <g opacity="0.85">
+      <!-- Left Eye -->
+      <polygon points="335,250 350,265 335,280 320,265" fill="#141928"/>
+      <!-- Right Eye -->
+      <polygon points="365,255 380,270 365,285 350,270" fill="#141928"/>
+    </g>
+
+    <!-- NOSE (Single Triangle) -->
+    <polygon points="342,278 360,260 375,280" fill="#4c546d"/>
+    <!-- Nose Highlight/Sheen -->
+    <polygon points="355,268 368,275 360,280" fill="#ffffff" opacity="0.3"/>
+
+    <!-- WHISKERS (Needle-like strokes) -->
+    <!-- Left side -->
+    <line x1="330" y1="275" x2="250" y2="265" stroke="#141928" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+    <line x1="332" y1="280" x2="240" y2="285" stroke="#141928" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+    <line x1="331" y1="285" x2="250" y2="300" stroke="#141928" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+    
+    <!-- Right side -->
+    <line x1="380" y1="275" x2="460" y2="265" stroke="#141928" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+    <line x1="382" y1="280" x2="470" y2="285" stroke="#141928" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+    <line x1="381" y1="285" x2="460" y2="300" stroke="#141928" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+  </g>
+
+  <!-- EARS GROUP -->
+  <!-- Left Ear -->
+  <g filter="url(#shadow-small)">
+    <polygon points="370,95 280,30 250,70" fill="url(#ear-left)"/>
+    <!-- Ear Backfold Highlight -->
+    <polygon points="370,95 280,30 325,45" fill="#ffffff" opacity="0.08"/>
+    <polygon points="370,95 250,70 280,30" fill="#ffffff" opacity="0.03"/>
+  </g>
+  
+  <!-- Right Ear -->
+  <g filter="url(#shadow-small)">
+    <polygon points="400,85 450,10 530,45" fill="url(#ear-right)"/>
+    <!-- Ear Backfold Shadow -->
+    <polygon points="400,85 530,45 470,55" fill="#141928" opacity="0.35"/>
+  </g>
+
+  <!-- GLOBAL FOLD MARKERS (Accentuate the directions of folds) -->
+  <g stroke="#141928" stroke-width="2" stroke-linecap="round" opacity="0.45">
+    <!-- Top Chest Fold -->
+    <line x1="280" y1="220" x2="225" y2="205"/>
+    <!-- Muzzle-Cheek Separation -->
+    <line x1="340" y1="250" x2="350" y2="270"/>
+    <!-- Back Leg Fold -->
+    <line x1="580" y1="490" x2="630" y2="510"/>
+    <!-- Neck Fold -->
+    <line x1="280" y1="180" x2="240" y2="180"/>
+  </g>
+
+  <!-- BOTTOM CORNER LIGHTING SPECKS -->
+  <g opacity="0.6">
+    <circle cx="140" cy="660" r="3" fill="#fff"/>
+    <circle cx="160" cy="680" r="2" fill="#fff"/>
+    <circle cx="120" cy="675" r="1.5" fill="#fff"/>
+    <circle cx="650" cy="630" r="2.5" fill="#fff"/>
+    <circle cx="680" cy="650" r="1.5" fill="#fff"/>
+  </g>
+
+</svg>

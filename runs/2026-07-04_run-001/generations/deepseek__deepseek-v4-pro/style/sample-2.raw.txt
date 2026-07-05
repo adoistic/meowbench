@@ -1,0 +1,162 @@
+I’ll create an origami-style SVG cat with sharp geometric folds and a clean paper-like color palette.
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </radialGradient>
+    
+    <!-- Shadow Gradient -->
+    <radialGradient id="shadowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#CBD5E1" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#CBD5E1" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="1000" fill="url(#bgGrad)"/>
+
+  <!-- Decorative Origami Elements -->
+  <g stroke="#1E3A8A" stroke-width="1.5" stroke-linejoin="round">
+    <!-- Top Left Diamond -->
+    <polygon points="100,150 70,190 100,230 130,190" fill="#DBEAFE"/>
+    <polygon points="100,150 100,190 70,190" fill="#93C5FD"/>
+    <polygon points="100,150 130,190 100,190" fill="#60A5FA"/>
+    <polygon points="100,230 100,190 70,190" fill="#60A5FA"/>
+    <polygon points="100,230 130,190 100,190" fill="#3B82F6"/>
+    
+    <!-- Top Right Diamond -->
+    <polygon points="680,250 650,280 680,310 710,280" fill="#DBEAFE"/>
+    <polygon points="680,250 680,280 650,280" fill="#93C5FD"/>
+    <polygon points="680,250 710,280 680,280" fill="#60A5FA"/>
+    <polygon points="680,310 680,280 650,280" fill="#60A5FA"/>
+    <polygon points="680,310 710,280 680,280" fill="#3B82F6"/>
+
+    <!-- Bottom Left Diamond -->
+    <polygon points="150,620 125,655 150,690 175,655" fill="#DBEAFE"/>
+    <polygon points="150,620 150,655 125,655" fill="#93C5FD"/>
+    <polygon points="150,620 175,655 150,655" fill="#60A5FA"/>
+    <polygon points="150,690 150,655 125,655" fill="#60A5FA"/>
+    <polygon points="150,690 175,655 150,655" fill="#3B82F6"/>
+  </g>
+
+  <!-- Cast Shadow -->
+  <ellipse cx="400" cy="860" rx="180" ry="30" fill="url(#shadowGrad)"/>
+
+  <!-- ORIGAMI CAT -->
+  <g stroke="#172554" stroke-width="2" stroke-linejoin="round">
+    
+    <!-- TAIL -->
+    <g id="tail">
+      <polygon points="280,800 120,780 200,850" fill="#60A5FA"/>
+      <polygon points="120,780 60,700 200,850" fill="#2563EB"/>
+      <polygon points="60,700 140,650 200,850" fill="#1D4ED8"/>
+      <polygon points="60,700 140,650 100,720" fill="#1D4ED8"/>
+      <polygon points="60,700 140,650 80,680" fill="#93C5FD"/>
+    </g>
+
+    <!-- LOWER BODY (BASE) -->
+    <g id="base">
+      <polygon points="280,800 400,850 300,850" fill="#60A5FA"/>
+      <polygon points="520,800 400,850 500,850" fill="#2563EB"/>
+    </g>
+
+    <!-- PAWS -->
+    <g id="paws">
+      <polygon points="330,750 380,820 350,850" fill="#DBEAFE"/>
+      <polygon points="380,820 400,850 350,850" fill="#BFDBFE"/>
+      <polygon points="470,750 420,820 450,850" fill="#93C5FD"/>
+      <polygon points="420,820 400,850 450,850" fill="#60A5FA"/>
+    </g>
+
+    <!-- ABDOMEN -->
+    <g id="abdomen">
+      <polygon points="220,600 400,700 280,800" fill="#3B82F6"/>
+      <polygon points="580,600 400,700 520,800" fill="#1D4ED8"/>
+      <polygon points="280,800 520,800 400,700" fill="#1E3A8A"/>
+    </g>
+
+    <!-- CHEST -->
+    <g id="chest">
+      <polygon points="360,620 220,600 400,700" fill="#60A5FA"/>
+      <polygon points="440,620 580,600 400,700" fill="#2563EB"/>
+    </g>
+
+    <!-- SHOULDERS -->
+    <g id="shoulders">
+      <polygon points="360,620 360,530 220,600" fill="#BFDBFE"/>
+      <polygon points="440,620 440,530 580,600" fill="#1D4ED8"/>
+    </g>
+
+    <!-- UPPER CHEST -->
+    <g id="upper-chest">
+      <polygon points="360,530 400,560 360,620" fill="#93C5FD"/>
+      <polygon points="440,530 400,560 440,620" fill="#3B82F6"/>
+      <polygon points="360,530 440,530 400,560" fill="#DBEAFE"/>
+    </g>
+
+    <!-- CHIN & JAW -->
+    <g id="chin-jaw">
+      <polygon points="350,460 450,460 400,490" fill="#93C5FD"/>
+      <polygon points="350,460 450,460 400,410" fill="#DBEAFE"/>
+      <polygon points="280,390 390,410 350,460" fill="#60A5FA"/>
+      <polygon points="520,390 410,410 450,460" fill="#1D4ED8"/>
+    </g>
+
+    <!-- EYES -->
+    <g id="eyes">
+      <!-- Left Eye -->
+      <polygon points="340,330 365,350 350,355" fill="#172554"/>
+      <polygon points="340,330 352,345 348,355" fill="#FFFFFF"/>
+      <!-- Right Eye -->
+      <polygon points="460,330 435,350 450,355" fill="#172554"/>
+      <polygon points="460,330 448,345 452,355" fill="#FFFFFF"/>
+    </g>
+
+    <!-- MID-FACE BRIDGE -->
+    <g id="face-bridge">
+      <polygon points="370,300 390,410 280,390" fill="#93C5FD"/>
+      <polygon points="430,300 410,410 520,390" fill="#3B82F6"/>
+    </g>
+
+    <!-- FOREHEAD -->
+    <g id="forehead">
+      <polygon points="320,200 360,320 280,390" fill="#DBEAFE"/>
+      <polygon points="480,200 440,320 520,390" fill="#60A5FA"/>
+    </g>
+
+    <!-- EARS -->
+    <g id="ears">
+      <!-- Left Ear -->
+      <polygon points="320,200 400,260 360,320" fill="#93C5FD"/>
+      <polygon points="320,200 360,320 340,300" fill="#1D4ED8"/>
+      <!-- Right Ear -->
+      <polygon points="480,200 400,260 440,320" fill="#172554"/>
+      <polygon points="480,200 440,320 460,300" fill="#0F172A"/>
+    </g>
+
+    <!-- CENTRAL HIGHLIGHTS (NOSE & CREASE) -->
+    <g id="central-highlights">
+      <polygon points="370,300 390,410 400,260" fill="#FFFFFF"/>
+      <polygon points="430,300 410,410 400,260" fill="#BFDBFE"/>
+    </g>
+
+    <!-- WHISKERS -->
+    <g id="whiskers" fill="none" stroke="#1E3A8A" stroke-width="4" stroke-linecap="round">
+      <!-- Left Whiskers -->
+      <polyline points="280,390 200,370"/>
+      <polyline points="280,400 190,400"/>
+      <polyline points="280,410 200,430"/>
+      <!-- Right Whiskers -->
+      <polyline points="520,390 600,370"/>
+      <polyline points="520,400 610,400"/>
+      <polyline points="520,410 600,430"/>
+    </g>
+
+  </g>
+</svg>
+```
+The cat is built from layered triangular and angular facets across the face, ears, body, paws, and tail, giving it a crisp folded-paper look. A soft gradient background, a subtle shadow, and a few small decorative diamond forms help the design feel polished while keeping the cat as the main focus.

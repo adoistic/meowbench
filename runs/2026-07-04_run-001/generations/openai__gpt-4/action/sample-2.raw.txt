@@ -1,0 +1,13 @@
+<!-- Self-contained SVG showing a cat riding a bicycle -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="300">
+    <!-- Cat -->
+    <circle cx="120" cy="120" r="50" style="fill: orange;" />
+    <circle cx="110" cy="110" r="10" style="fill: white;" />
+    <circle cx="130" cy="110" r="10" style="fill: white;" />
+    <!-- Bicyle -->
+    <circle cx="80" cy="200" r="50" stroke="black" stroke-width="2px" fill="none" /> <!-- back wheel -->
+    <circle cx="170" cy="200" r="50" stroke="black" stroke-width="2px" fill="none" /> <!-- front wheel -->
+    <line x1="80" y1="200" x2="120" y2="150" stroke="black" stroke-width="2px" />     <!-- back wheel to seat -->
+    <line x1="120" y1="150" x2="170" y2="200" stroke="black" stroke-width="2px" />    <!-- seat to front wheel -->
+    <line x1="170" y1="200" x2="120" y2="120" stroke="black" stroke-width="2px" />    <!-- handlebars to cat -->
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <style>
+    @keyframes sway {
+      0% { transform: rotate(30deg); }
+      50% { transform: rotate(-30deg); }
+      100% { transform: rotate(30deg); }
+    }
+  </style>
+  <g id="cat">
+    <circle cx="50" cy="50" r="20" fill="#ccc" />
+    <path d="M 40,60 L 60,60 L 50,80 Z" fill="#ccc" />
+    <circle cx="40" cy="40" r="5" fill="#000" />
+    <circle cx="60" cy="40" r="5" fill="#000" />
+    <path id="tail" d="M 50,80 L 70,90 L 50,100 Z" fill="#ccc" />
+  </g>
+  <animateTransform xlink:href="#tail" attributeName="transform" attributeType="XML" type="rotate" from="30 50 80" to="-30 50 80" dur="1s" repeatCount="indefinite" />
+</svg>

@@ -1,0 +1,29 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill="#8B4513">
+  <!-- Left ear -->
+  <polygon points="60,30 75,60 50,60" fill="#A0522D"/>
+  <!-- Right ear -->
+  <polygon points="140,30 125,60 150,60" fill="#A0522D"/>
+  <!-- Head -->
+  <polygon points="60,60 140,60 130,100 70,100" fill="#D2B48C"/>
+  <!-- Left eye -->
+  <polygon points="80,75 85,75 82.5,80" fill="#000"/>
+  <!-- Right eye -->
+  <polygon points="120,75 115,75 117.5,80" fill="#000"/>
+  <!-- Nose -->
+  <polygon points="100,85 95,90 105,90" fill="#000"/>
+  <!-- Mouth -->
+  <line x1="95" y1="92" x2="100" y2="95" stroke="#000" stroke-width="1"/>
+  <line x1="105" y1="92" x2="100" y2="95" stroke="#000" stroke-width="1"/>
+  <!-- Body -->
+  <polygon points="70,100 130,100 120,140 80,140" fill="#D2B48C"/>
+  <!-- Left front leg -->
+  <polygon points="80,140 85,140 85,160 75,160" fill="#A0522D"/>
+  <!-- Right front leg -->
+  <polygon points="120,140 115,140 115,160 125,160" fill="#A0522D"/>
+  <!-- Tail -->
+  <polygon points="120,140 140,130 135,125 115,135" fill="#A0522D"/>
+  <!-- Fold lines (optional subtle detail) -->
+  <line x1="100" y1="60" x2="100" y2="100" stroke="#A0522D" stroke-width="0.5" stroke-opacity="0.5"/>
+  <line x1="70" y1="100" x2="80" y2="140" stroke="#A0522D" stroke-width="0.5" stroke-opacity="0.5"/>
+  <line x1="130" y1="100" x2="120" y2="140" stroke="#A0522D" stroke-width="0.5" stroke-opacity="0.5"/>
+</svg>

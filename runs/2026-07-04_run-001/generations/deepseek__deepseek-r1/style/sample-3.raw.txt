@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="paper" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f9f3e9" />
+      <stop offset="100%" stop-color="#e8dfd1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Body -->
+  <polygon points="100,40 60,100 140,100" fill="url(#paper)" stroke="#333" stroke-width="1.5" stroke-dasharray="2,2"/>
+  
+  <!-- Head -->
+  <polygon points="100,20 80,40 120,40" fill="url(#paper)" stroke="#333" stroke-width="1.5"/>
+  
+  <!-- Ears -->
+  <polygon points="75,25 80,20 85,25" fill="url(#paper)" stroke="#333" stroke-width="1.5"/>
+  <polygon points="115,25 120,20 125,25" fill="url(#paper)" stroke="#333" stroke-width="1.5"/>
+  
+  <!-- Legs -->
+  <polygon points="70,100 65,130 75,130" fill="url(#paper)" stroke="#333" stroke-width="1.5"/>
+  <polygon points="90,100 85,130 95,130" fill="url(#paper)" stroke="#333" stroke-width="1.5"/>
+  <polygon points="110,100 105,130 115,130" fill="url(#paper)" stroke="#333" stroke-width="1.5"/>
+  <polygon points="130,100 125,130 135,130" fill="url(#paper)" stroke="#333" stroke-width="1.5"/>
+  
+  <!-- Tail -->
+  <polygon points="140,90 160,70 145,85" fill="url(#paper)" stroke="#333" stroke-width="1.5"/>
+  
+  <!-- Facial features -->
+  <polygon points="95,50 100,55 105,50" fill="#333" stroke="#333" stroke-width="0.5"/>
+  <line x1="85" y1="45" x2="90" y2="45" stroke="#333" stroke-width="1.5"/>
+  <line x1="110" y1="45" x2="115" y2="45" stroke="#333" stroke-width="1.5"/>
+  
+  <!-- Fold lines -->
+  <line x1="100" y1="20" x2="100" y2="100" stroke="#777" stroke-width="0.8" stroke-dasharray="3,2"/>
+  <line x1="80" y1="40" x2="140" y2="100" stroke="#777" stroke-width="0.8" stroke-dasharray="3,2"/>
+  <line x1="120" y1="40" x2="60" y2="100" stroke="#777" stroke-width="0.8" stroke-dasharray="3,2"/>
+</svg>

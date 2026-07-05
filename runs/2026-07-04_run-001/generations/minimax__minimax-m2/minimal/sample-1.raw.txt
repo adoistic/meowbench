@@ -1,0 +1,26 @@
+```xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background Circle (Optional, adds to the composition) -->
+  <circle cx="256" cy="256" r="240" fill="#f0f3f4" />
+
+  <!-- Tail -->
+  <path d="M320 400 Q 440 420 420 280" fill="none" stroke="#2c3e50" stroke-width="35" stroke-linecap="round" />
+
+  <!-- Body -->
+  <ellipse cx="230" cy="360" rx="90" ry="95" fill="#2c3e50" />
+
+  <!-- Ears -->
+  <path d="M160 190 L 150 90 L 230 170 Z" fill="#2c3e50" stroke="#2c3e50" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M300 190 L 310 90 L 230 170 Z" fill="#2c3e50" stroke="#2c3e50" stroke-width="10" stroke-linejoin="round"/>
+
+  <!-- Head -->
+  <circle cx="230" cy="220" r="90" fill="#2c3e50" />
+
+  <!-- Eyes -->
+  <circle cx="205" cy="210" r="10" fill="#ffffff" />
+  <circle cx="255" cy="210" r="10" fill="#ffffff" />
+
+  <!-- Nose -->
+  <path d="M222 240 L 238 240 L 230 252 Z" fill="#e74c3c" />
+</svg>
+```

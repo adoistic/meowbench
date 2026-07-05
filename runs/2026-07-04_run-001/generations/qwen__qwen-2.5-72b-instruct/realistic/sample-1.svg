@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="furGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E9E5E6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#BDBDBD;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <path d="M100 300 C 150 150, 300 180, 400 300" stroke="black" fill="url(#furGrad)" stroke-width="2" />
+  <path d="M100 300 C 120 280, 160 260, 200 280" stroke="black" fill="#E9E5E6" stroke-width="2" />
+  <path d="M400 300 C 380 280, 340 260, 300 280" stroke="black" fill="#E9E5E6" stroke-width="2" />
+  <circle cx="200" cy="280" r="20" fill="#333" />
+  <circle cx="300" cy="280" r="20" fill="#333" />
+  <circle cx="200" cy="280" r="10" fill="white" />
+  <circle cx="300" cy="280" r="10" fill="white" />
+  <circle cx="200" cy="280" r="5" fill="black" />
+  <circle cx="300" cy="280" r="5" fill="black" />
+  <path d="M190 290 Q 205 300, 220 290" fill="#333" />
+  <path d="M290 290 Q 305 300, 320 290" fill="#333" />
+  <path d="M240 330 Q 260 350, 280 330" stroke="black" fill="#E9E5E6" stroke-width="2" />
+</svg>

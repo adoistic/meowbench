@@ -1,0 +1,17 @@
+{
+  "valid": false,
+  "reasons": [
+    "render-failed"
+  ],
+  "stats": {
+    "bytes": 737,
+    "elements": 13,
+    "paths": 3,
+    "colors": [
+      "#000",
+      "#964b00",
+      "#ff69b4",
+      "#ffd700"
+    ]
+  }
+}

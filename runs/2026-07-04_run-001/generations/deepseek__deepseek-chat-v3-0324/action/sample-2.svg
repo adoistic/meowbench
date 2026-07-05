@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150">
+  <rect width="200" height="150" fill="#87CEEB"/>
+  <circle cx="60" cy="100" r="30" fill="#FFA07A"/>
+  <circle cx="140" cy="100" r="30" fill="#FFA07A"/>
+  <circle cx="60" cy="100" r="20" fill="white" stroke="black" stroke-width="2"/>
+  <circle cx="140" cy="100" r="20" fill="white" stroke="black" stroke-width="2"/>
+  <line x1="60" y1="100" x2="100" y2="70" stroke="black" stroke-width="2"/>
+  <line x1="140" y1="100" x2="100" y2="70" stroke="black" stroke-width="2"/>
+  <circle cx="100" cy="70" r="15" fill="#FFA07A"/>
+  <circle cx="95" cy="65" r="3" fill="black"/>
+  <circle cx="105" cy="65" r="3" fill="black"/>
+  <path d="M95 75 Q100 80 105 75" fill="none" stroke="black" stroke-width="1"/>
+  <ellipse cx="100" cy="50" rx="10" ry="5" fill="#FFA07A"/>
+  <path d="M60 70 L80 60 L100 70" fill="none" stroke="black" stroke-width="2"/>
+  <path d="M100 70 L120 60 L140 70" fill="none" stroke="black" stroke-width="2"/>
+  <path d="M100 70 L100 90" fill="none" stroke="black" stroke-width="2"/>
+  <path d="M100 90 L80 110" fill="none" stroke="black" stroke-width="2"/>
+  <path d="M100 90 L120 110" fill="none" stroke="black" stroke-width="2"/>
+  <path d="M60 100 L40 100" stroke="black" stroke-width="2"/>
+  <path d="M140 100 L160 100" stroke="black" stroke-width="2"/>
+</svg>

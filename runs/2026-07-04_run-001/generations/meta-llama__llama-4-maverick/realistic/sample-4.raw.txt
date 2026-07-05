@@ -1,0 +1,40 @@
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <!-- Body -->
+  <ellipse cx="200" cy="200" rx="80" ry="60" fill="#964B00" stroke="#786C3B" stroke-width="2" />
+  
+  <!-- Head -->
+  <circle cx="200" cy="120" r="50" fill="#964B00" stroke="#786C3B" stroke-width="2" />
+  
+  <!-- Ears -->
+  <path d="M 170,90 L 150,60 L 180,70 Z" fill="#964B00" stroke="#786C3B" stroke-width="2" />
+  <path d="M 230,90 L 250,60 L 220,70 Z" fill="#964B00" stroke="#786C3B" stroke-width="2" />
+  
+  <!-- Eyes -->
+  <circle cx="180" cy="110" r="10" fill="#000" stroke="#FFF" stroke-width="2" />
+  <circle cx="220" cy="110" r="10" fill="#000" stroke="#FFF" stroke-width="2" />
+  
+  <!-- Nose and Mouth -->
+  <circle cx="200" cy="130" r="5" fill="#FFC0CB" stroke="#FFF" stroke-width="1" />
+  <path d="M 190,140 Q 200,145 210,140" fill="none" stroke="#FFC0CB" stroke-width="2" />
+  
+  <!-- Fur shading on body -->
+  <path d="M 150,180 Q 170,200 200,210 Q 230,200 250,180" stroke="#786C3B" stroke-width="5" fill="none" />
+  <path d="M 160,200 Q 180,220 200,230 Q 220,220 240,200" stroke="#786C3B" stroke-width="5" fill="none" />
+  <path d="M 170,220 Q 190,240 200,250 Q 210,240 230,220" stroke="#786C3B" stroke-width="5" fill="none" />
+  
+  <!-- Fur shading on head -->
+  <path d="M 180,100 Q 190,90 200,80 Q 210,90 220,100" stroke="#786C3B" stroke-width="3" fill="none" />
+  <path d="M 190,120 Q 200,110 210,120" stroke="#786C3B" stroke-width="3" fill="none" />
+  
+  <!-- Tail -->
+  <path d="M 250,220 L 280,250 L 300,220 Z" fill="#964B00" stroke="#786C3B" stroke-width="2" />
+  <path d="M 280,250 L 310,280" stroke="#786C3B" stroke-width="5" fill="none" />
+  
+  <!-- Legs -->
+  <ellipse cx="160" cy="240" rx="20" ry="15" fill="#964B00" stroke="#786C3B" stroke-width="2" />
+  <ellipse cx="240" cy="240" rx="20" ry="15" fill="#964B00" stroke="#786C3B" stroke-width="2" />
+  <ellipse cx="180" cy="260" rx="20" ry="15" fill="#964B00" stroke="#786C3B" stroke-width="2" />
+  <ellipse cx="220" cy="260" rx="20" ry="15" fill="#964B00" stroke="#786C3B" stroke-width="2" />
+</svg>
+```

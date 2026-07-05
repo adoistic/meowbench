@@ -1,0 +1,147 @@
+ <svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .cat-fill {
+        fill: #111111;
+      }
+      .eye-fill {
+        fill: #FFFFFF;
+      }
+      .pupil-fill {
+        fill: #111111;
+      }
+      .nose-fill {
+        fill: #FF6B6B;
+      }
+      .whisker-stroke {
+        stroke: #EEEEEE;
+        stroke-width: 2;
+        stroke-linecap: round;
+        fill: none;
+      }
+      .shadow {
+        fill: #000000;
+        opacity: 0.20;
+      }
+
+      /* Breathing animation for the body */
+      @keyframes breathe {
+        0%, 100% { transform: scale(1, 1); }
+        50% { transform: scale(1, 1.04); }
+      }
+      .breathing-body {
+        transform-origin: 200px 270px;
+        animation: breathe 4s ease-in-out infinite;
+      }
+
+      /* Tail swaying animation */
+      @keyframes tail-sway {
+        0%, 100% { transform: rotate(0deg); }
+        25% { transform: rotate(-12deg); }
+        75% { transform: rotate(10deg); }
+      }
+      .tail-sway {
+        transform-origin: 172px 222px;
+        animation: tail-sway 3s ease-in-out infinite;
+      }
+
+      /* Eye blinking animation */
+      @keyframes blink {
+        0%, 96%, 100% { transform: scaleY(1); }
+        98% { transform: scaleY(0.1); }
+      }
+      .eye-shut {
+        transform-origin: 200px 152px;
+        animation: blink 4s ease-in-out infinite;
+      }
+
+      /* Ear twitching animation */
+      @keyframes ear-twitch-left {
+        0%, 92%, 100% { transform: rotate(0deg); }
+        94%, 96% { transform: rotate(-5deg); }
+      }
+      @keyframes ear-twitch-right {
+        0%, 92%, 100% { transform: rotate(0deg); }
+        94%, 96% { transform: rotate(5deg); }
+      }
+      .ear-left {
+        transform-origin: 156px 82px;
+        animation: ear-twitch-left 4s ease-in-out infinite;
+      }
+      .ear-right {
+        transform-origin: 244px 82px;
+        animation: ear-twitch-right 4s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <rect width="400" height="400" fill="#B8D5E8"/>
+
+  <!-- Floor shadow -->
+  <ellipse class="shadow" cx="200" cy="335" rx="130" ry="25"/>
+
+  <!-- Tail (behind body) -->
+  <g class="tail-sway">
+    <path class="cat-fill" d="M 172,222 C 172,194 168,144 152,164 C 136,184 158,222 158,222 Z"/>
+    <path class="cat-fill" d="M 172,222 C 186,198 204,150 224,168 C 244,186 212,222 212,222 Z"/>
+    <path class="cat-fill" d="M 212,222 C 234,206 274,170 290,194 C 306,218 270,234 254,242 C 238,250 226,246 212,226 Z"/>
+    <path class="cat-fill" d="M 254,242 C 282,236 324,214 334,240 C 344,266 302,280 280,284 C 262,288 248,280 248,260 Z"/>
+  </g>
+
+  <!-- Body base and feet (static background layer of the group) -->
+  <g class="breathing-body">
+    <!-- Body -->
+    <path class="cat-fill" d="M 130,220 C 120,250 110,270 120,300 C 130,330 150,340 200,340 C 250,340 270,330 280,300 C 290,270 280,250 270,220 C 260,190 240,180 200,180 C 160,180 140,190 130,220 Z"/>
+    <!-- Left Back Paw -->
+    <ellipse class="cat-fill" cx="140" cy="340" rx="18" ry="14"/>
+    <!-- Right Back Paw -->
+    <ellipse class="cat-fill" cx="260" cy="340" rx="18" ry="14"/>
+    <!-- Left Front Paw -->
+    <ellipse class="cat-fill" cx="175" cy="340" rx="16" ry="12"/>
+    <!-- Right Front Paw -->
+    <ellipse class="cat-fill" cx="225" cy="340" rx="16" ry="12"/>
+  </g>
+
+  <!-- Collar (static but sits well on the body) -->
+  <ellipse fill="#FF4757" cx="200" cy="212" rx="68" ry="8"/>
+  <circle fill="#FFD700" cx="200" cy="218" r="7"/>
+  <circle fill="#E6C200" cx="200" cy="218" r="3"/>
+
+  <!-- Head -->
+  <g class="ear-left">
+    <path class="cat-fill" d="M 142,120 L 124,34 L 178,82 Z"/>
+  </g>
+  <g class="ear-right">
+    <path class="cat-fill" d="M 258,120 L 276,34 L 222,82 Z"/>
+  </g>
+
+  <!-- Head Base -->
+  <ellipse class="cat-fill" cx="200" cy="130" rx="62" ry="54"/>
+
+  <!-- Muzzle -->
+  <ellipse class="cat-fill" cx="200" cy="154" rx="34" ry="24"/>
+
+  <!-- Eyes -->
+  <g class="eye-shut">
+    <ellipse class="eye-fill" cx="174" cy="130" rx="14" ry="16"/>
+    <ellipse class="eye-fill" cx="226" cy="130" rx="14" ry="16"/>
+    <ellipse class="pupil-fill" cx="174" cy="130" rx="4" ry="10"/>
+    <ellipse class="pupil-fill" cx="226" cy="130" rx="4" ry="10"/>
+    <circle fill="#FFFFFF" cx="177" cy="126" r="4"/>
+    <circle fill="#FFFFFF" cx="229" cy="126" r="4"/>
+  </g>
+
+  <!-- Nose -->
+  <path class="nose-fill" d="M 194,148 L 206,148 L 200,156 Z"/>
+  <path class="cat-fill" d="M 200,156 C 195,166 188,174 200,174 C 212,174 205,166 200,156 Z"/>
+  <path class="cat-fill" d="M 200,174 C 200,174 194,178 194,176 C 194,174 200,172 200,172 Z"/>
+  <path class="cat-fill" d="M 200,172 C 200,172 206,178 206,176 C 206,174 200,170 200,170 Z"/>
+
+  <!-- Whiskers -->
+  <g class="whisker-stroke">
+    <line x1="168" y1="156" x2="112" y2="148"/>
+    <line x1="170" y1="162" x2="124" y2="170"/>
+    <line x1="232" y1="156" x2="288" y2="148"/>
+    <line x1="230" y1="162" x2="276" y2="170"/>
+  </g>
+</svg>

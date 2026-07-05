@@ -1,0 +1,56 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="fold1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f0f0"/>
+      <stop offset="100%" style="stop-color:#d0d0d0"/>
+    </linearGradient>
+    <linearGradient id="fold2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8e8e8"/>
+      <stop offset="100%" style="stop-color:#c8c8c8"/>
+    </linearGradient>
+    <linearGradient id="fold3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e0e0e0"/>
+      <stop offset="100%" style="stop-color:#b8b8b8"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Body -->
+  <polygon points="200,280 120,380 280,380" fill="url(#fold1)" stroke="#999" stroke-width="1"/>
+  <polygon points="200,280 280,380 340,340 320,260" fill="url(#fold2)" stroke="#999" stroke-width="1"/>
+  <polygon points="200,280 80,340 120,380" fill="url(#fold3)" stroke="#999" stroke-width="1"/>
+  <polygon points="200,280 320,260 340,340 280,380" fill="#e5e5e5" stroke="#999" stroke-width="1"/>
+  <polygon points="200,280 60,260 80,340" fill="#d8d8d8" stroke="#999" stroke-width="1"/>
+  
+  <!-- Head -->
+  <polygon points="200,180 160,120 240,120" fill="url(#fold1)" stroke="#999" stroke-width="1"/>
+  <polygon points="200,180 240,120 280,140 260,200" fill="#f0f0f0" stroke="#999" stroke-width="1"/>
+  <polygon points="200,180 120,140 160,120" fill="#e8e8e8" stroke="#999" stroke-width="1"/>
+  <polygon points="200,180 140,200 120,140" fill="url(#fold3)" stroke="#999" stroke-width="1"/>
+  <polygon points="200,180 260,200 280,140 240,120" fill="#d8d8d8" stroke="#999" stroke-width="1"/>
+  
+  <!-- Ears -->
+  <polygon points="160,120 140,80 180,100" fill="url(#fold2)" stroke="#999" stroke-width="1"/>
+  <polygon points="240,120 260,80 220,100" fill="url(#fold2)" stroke="#999" stroke-width="1"/>
+  <polygon points="140,80 160,120 120,140" fill="#c8c8c8" stroke="#999" stroke-width="1"/>
+  <polygon points="260,80 240,120 280,140" fill="#c8c8c8" stroke="#999" stroke-width="1"/>
+  
+  <!-- Connecting triangles -->
+  <polygon points="200,180 200,280 140,200" fill="#e0e0e0" stroke="#999" stroke-width="1"/>
+  <polygon points="200,180 200,280 260,200" fill="#d5d5d5" stroke="#999" stroke-width="1"/>
+  <polygon points="200,280 60,260 140,200" fill="#c8c8c8" stroke="#999" stroke-width="1"/>
+  <polygon points="200,280 320,260 260,200" fill="#c0c0c0" stroke="#999" stroke-width="1"/>
+  
+  <!-- Face details -->
+  <circle cx="170" cy="160" r="4" fill="#333"/>
+  <circle cx="230" cy="160" r="4" fill="#333"/>
+  <polygon points="200,170 190,180 210,180" fill="#666" opacity="0.5"/>
+  <line x1="200" y1="180" x2="200" y2="195" stroke="#666" stroke-width="2"/>
+  <path d="M 200,195 Q 185,190 175,195" stroke="#666" stroke-width="2" fill="none"/>
+  <path d="M 200,195 Q 215,190 225,195" stroke="#666" stroke-width="2" fill="none"/>
+  
+  <!-- Whiskers -->
+  <line x1="120" y1="165" x2="80" y2="160" stroke="#666" stroke-width="1"/>
+  <line x1="120" y1="175" x2="80" y2="180" stroke="#666" stroke-width="1"/>
+  <line x1="280" y1="165" x2="320" y2="160" stroke="#666" stroke-width="1"/>
+  <line x1="280" y1="175" x2="320" y2="180" stroke="#666" stroke-width="1"/>
+</svg>

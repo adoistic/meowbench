@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <!-- Background (Optional, kept transparent for versatility) -->
+  
+  <!-- Tail: Placed behind body -->
+  <path d="M300 400 L420 360 L390 300 Z" fill="#455a64"/>
+  <path d="M300 400 L420 360 L430 410 Z" fill="#90a4ae"/>
+
+  <!-- Body -->
+  <!-- Left Side (Shadowed) -->
+  <polygon points="250,280 160,450 250,400" fill="#37474f"/>
+  <!-- Right Side (Lit) -->
+  <polygon points="250,280 340,450 250,400" fill="#78909c"/>
+  <!-- Central Fold Line -->
+  <polygon points="250,280 250,400 205,425" fill="#546e7a" opacity="0.3"/>
+
+  <!-- Head -->
+  <!-- Chin -->
+  <polygon points="250,230 225,260 275,260" fill="#37474f"/>
+
+  <!-- Left Cheek (Shadowed) -->
+  <polygon points="225,180 175,210 250,230" fill="#455a64"/>
+  <!-- Right Cheek (Lit) -->
+  <polygon points="275,180 325,210 250,230" fill="#90a4ae"/>
+
+  <!-- Forehead -->
+  <polygon points="250,120 225,180 250,230 275,180" fill="#607d8b"/>
+
+  <!-- Left Ear -->
+  <polygon points="250,120 205,50 225,180" fill="#37474f"/>
+  <!-- Right Ear -->
+  <polygon points="250,120 295,50 275,180" fill="#cfd8dc"/>
+
+  <!-- Face Details -->
+  <!-- Eyes -->
+  <path d="M230 195 L245 200 L230 205 Z" fill="#263238"/>
+  <path d="M270 195 L255 200 L270 205 Z" fill="#263238"/>
+  
+  <!-- Nose -->
+  <path d="M250 235 L245 245 L255 245 Z" fill="#263238"/>
+
+  <!-- Whiskers -->
+  <g stroke="#cfd8dc" stroke-width="2" stroke-linecap="round">
+    <line x1="185" y1="220" x2="145" y2="210" />
+    <line x1="185" y1="230" x2="140" y2="235" />
+    <line x1="315" y1="220" x2="355" y2="210" />
+    <line x1="315" y1="230" x2="360" y2="235" />
+  </g>
+</svg>

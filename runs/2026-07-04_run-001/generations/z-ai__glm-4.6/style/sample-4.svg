@@ -1,0 +1,86 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="paperGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f4f1de;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e8ddb7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="darkPaperGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4c5a5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c3b495;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Body -->
+  <polygon points="200,300 120,280 100,220 120,180 180,160 220,160 280,180 300,220 280,280" 
+           fill="url(#paperGrad)" stroke="#8b7355" stroke-width="2" stroke-linejoin="miter"/>
+  
+  <!-- Body crease lines -->
+  <line x1="200" y1="160" x2="200" y2="300" stroke="#8b7355" stroke-width="1.5" opacity="0.5"/>
+  <line x1="140" y1="180" x2="140" y2="260" stroke="#8b7355" stroke-width="1.5" opacity="0.5"/>
+  <line x1="260" y1="180" x2="260" y2="260" stroke="#8b7355" stroke-width="1.5" opacity="0.5"/>
+  
+  <!-- Head -->
+  <polygon points="200,160 140,140 120,100 140,60 200,40 260,60 280,100 260,140" 
+           fill="url(#paperGrad)" stroke="#8b7355" stroke-width="2" stroke-linejoin="miter"/>
+  
+  <!-- Left ear -->
+  <polygon points="120,100 100,60 140,60" 
+           fill="url(#darkPaperGrad)" stroke="#8b7355" stroke-width="2" stroke-linejoin="miter"/>
+  <polygon points="100,60 90,40 140,60" 
+           fill="url(#paperGrad)" stroke="#8b7355" stroke-width="2" stroke-linejoin="miter"/>
+  
+  <!-- Right ear -->
+  <polygon points="280,100 300,60 260,60" 
+           fill="url(#darkPaperGrad)" stroke="#8b7355" stroke-width="2" stroke-linejoin="miter"/>
+  <polygon points="300,60 310,40 260,60" 
+           fill="url(#paperGrad)" stroke="#8b7355" stroke-width="2" stroke-linejoin="miter"/>
+  
+  <!-- Face features using geometric shapes -->
+  
+  <!-- Left eye -->
+  <polygon points="165,85 155,90 165,95 175,90" 
+           fill="#3d2914" stroke="#8b7355" stroke-width="1.5" stroke-linejoin="miter"/>
+  <polygon points="165,88 162,89 165,91 168,89" 
+           fill="#87ceeb" opacity="0.7"/>
+  
+  <!-- Right eye -->
+  <polygon points="235,85 225,90 235,95 245,90" 
+           fill="#3d2914" stroke="#8b7355" stroke-width="1.5" stroke-linejoin="miter"/>
+  <polygon points="235,88 232,89 235,91 238,89" 
+           fill="#87ceeb" opacity="0.7"/>
+  
+  <!-- Nose -->
+  <polygon points="200,105 190,110 200,115 210,110" 
+           fill="#d4a574" stroke="#8b7355" stroke-width="1.5" stroke-linejoin="miter"/>
+  
+  <!-- Whiskers (lines for origami style) -->
+  <line x1="190" y1="110" x2="120" y2="100" stroke="#8b7355" stroke-width="1.5" opacity="0.7"/>
+  <line x1="190" y1="115" x2="120" y2="115" stroke="#8b7355" stroke-width="1.5" opacity="0.7"/>
+  <line x1="210" y1="110" x2="280" y2="100" stroke="#8b7355" stroke-width="1.5" opacity="0.7"/>
+  <line x1="210" y1="115" x2="280" y2="115" stroke="#8b7355" stroke-width="1.5" opacity="0.7"/>
+  
+  <!-- Tail -->
+  <polygon points="280,240 350,260 360,200 320,180 280,200" 
+           fill="url(#paperGrad)" stroke="#8b7355" stroke-width="2" stroke-linejoin="miter"/>
+  <line x1="280" y1="200" x2="350" y2="210" stroke="#8b7355" stroke-width="1.5" opacity="0.5"/>
+  
+  <!-- Front left leg -->
+  <polygon points="140,260 130,320 150,330 160,280" 
+           fill="url(#darkPaperGrad)" stroke="#8b7355" stroke-width="2" stroke-linejoin="miter"/>
+  <line x1="150" y1="280" x2="145" y2="310" stroke="#8b7355" stroke-width="1.5" opacity="0.5"/>
+  
+  <!-- Front right leg -->
+  <polygon points="260,260 270,320 250,330 240,280" 
+           fill="url(#darkPaperGrad)" stroke="#8b7355" stroke-width="2" stroke-linejoin="miter"/>
+  <line x1="250" y1="280" x2="255" y2="310" stroke="#8b7355" stroke-width="1.5" opacity="0.5"/>
+  
+  <!-- Fold accent triangles -->
+  <polygon points="160,140 180,150 180,120" 
+           fill="#d4c5a5" opacity="0.3"/>
+  <polygon points="240,140 220,150 220,120" 
+           fill="#d4c5a5" opacity="0.3"/>
+  <polygon points="160,220 180,230 180,200" 
+           fill="#d4c5a5" opacity="0.3"/>
+  <polygon points="240,220 220,230 220,200" 
+           fill="#d4c5a5" opacity="0.3"/>
+</svg>

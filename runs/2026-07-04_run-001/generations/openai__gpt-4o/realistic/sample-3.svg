@@ -1,0 +1,25 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="furGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:rgb(200,200,200);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgb(100,100,100);stop-opacity:1" />
+    </radialGradient>
+    <filter id="furryTexture">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8 0.8" numOctaves="5" stitchTiles="stitch" />
+      <feDisplacementMap in="SourceGraphic" scale="1.5" />
+    </filter>
+  </defs>
+  <g filter="url(#furryTexture)">
+    <ellipse cx="200" cy="280" rx="100" ry="130" fill="url(#furGradient)" />
+    <circle cx="150" cy="160" r="50" fill="url(#furGradient)" />
+    <circle cx="250" cy="160" r="50" fill="url(#furGradient)" />
+    <ellipse cx="160" cy="150" rx="15" ry="20" fill="#fff" />
+    <ellipse cx="240" cy="150" rx="15" ry="20" fill="#fff" />
+    <circle cx="160" cy="150" r="10" fill="#222" />
+    <circle cx="240" cy="150" r="10" fill="#222" />
+    <ellipse cx="200" cy="200" rx="15" ry="10" fill="#f88" />
+  </g>
+  <line x1="200" y1="215" x2="190" y2="225" stroke="#000" stroke-width="2" />
+  <line x1="200" y1="215" x2="210" y2="225" stroke="#000" stroke-width="2" />
+  <path d="M150,250 C130,310,180,340,220,310" fill="none" stroke="#000" stroke-width="8" stroke-linecap="round"/>
+</svg>

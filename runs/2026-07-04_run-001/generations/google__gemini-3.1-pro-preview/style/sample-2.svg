@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="60%" fx="50%" fy="40%">
+      <stop offset="0%" stop-color="#34495E"/>
+      <stop offset="100%" stop-color="#11181D"/>
+    </radialGradient>
+  </defs>
+  
+  <rect width="100%" height="100%" fill="url(#bgGlow)"/>
+
+  <polygon points="290,750 420,830 720,800 780,680 670,650 630,710 600,770 520,780 450,780 420,770 400,750" fill="#0A0F12" opacity="0.6"/>
+
+  <g stroke="#4A1800" stroke-width="1.5" stroke-linejoin="round">
+    <polygon points="400,170 340,160 460,160" fill="#FFCC80"/>
+    <polygon points="400,170 340,160 330,220" fill="#FFE0B2"/>
+    <polygon points="400,170 460,160 470,220" fill="#FFA726"/>
+
+    <polygon points="400,170 330,220 400,280" fill="#FFB74D"/>
+    <polygon points="400,170 470,220 400,280" fill="#FB8C00"/>
+    <polygon points="380,360 400,340 400,280" fill="#FF9800"/>
+    <polygon points="420,360 400,340 400,280" fill="#F57C00"/>
+
+    <polygon points="400,340 400,280 350,330" fill="#FFCC80"/>
+    <polygon points="400,340 400,280 450,330" fill="#FF9800"/>
+    <polygon points="380,360 400,340 350,330" fill="#FFA726"/>
+    <polygon points="420,360 400,340 450,330" fill="#EF6C00"/>
+
+    <polygon points="400,280 330,220 350,330" fill="#F57C00"/>
+    <polygon points="330,220 345,310 320,320" fill="#FFB74D"/>
+    <polygon points="330,220 350,330 345,310" fill="#FF9800"/>
+    <polygon points="320,320 345,310 350,330" fill="#FFE700"/>
+
+    <polygon points="400,280 470,220 450,330" fill="#E65100"/>
+    <polygon points="470,220 455,310 480,320" fill="#EF6C00"/>
+    <polygon points="470,220 450,330 455,310" fill="#E65100"/>
+    <polygon points="480,320 455,310 450,330" fill="#FFB300"/>
+
+    <polygon points="330,220 190,260 320,320" fill="#FFB74D"/>
+    <polygon points="320,320 190,260 220,350" fill="#FF9800"/>
+    <polygon points="320,320 220,350 360,390" fill="#FFA726"/>
+    <polygon points="350,330 320,320 360,390" fill="#FFCC80"/>
+    <polygon points="380,360 350,330 360,390" fill="#FFA726"/>
+
+    <polygon points="470,220 610,260 480,320" fill="#F57C00"/>
+    <polygon points="480,320 610,260 580,350" fill="#EF6C00"/>
+    <polygon points="480,320 580,350 440,390" fill="#F57C00"/>
+    <polygon points="450,330 480,320 440,390" fill="#FF9800"/>
+    <polygon points="420,360 450,330 440,390" fill="#EF6C00"/>
+
+    <polygon points="380,360 400,360 400,380" fill="#F4B3AD"/>
+    <polygon points="420,360 400,360 400,380" fill="#E05D5D"/>
+
+    <polygon points="400,380 380,360 360,390" fill="#FFB74D"/>
+    <polygon points="400,380 420,360 440,390" fill="#FB8C00"/>
+    <polygon points="400,380 360,390 400,460" fill="#FF9800"/>
+    <polygon points="400,380 440,390 400,460" fill="#EF6C00"/>
+    <polygon points="360,390 270,440 400,460" fill="#F57C00"/>
+    <polygon points="440,390 530,440 400,460" fill="#BF360C"/>
+    <polygon points="220,350 270,440 360,390" fill="#FF9800"/>
+    <polygon points="580,350 530,440 440,390" fill="#E65100"/>
+
+    <polygon points="240,90 340,160 270,180" fill="#E05D5D"/>
+    <polygon points="340,160 330,220 270,180" fill="#F4B3AD"/>
+    <polygon points="240,90 270,180 190,260" fill="#FFE0B2"/>
+    <polygon points="270,180 330,220 190,260" fill="#FFB74D"/>
+
+    <polygon points="560,90 460,160 530,180" fill="#F8D3D0"/>
+    <polygon points="460,160 470,220 530,180" fill="#E05D5D"/>
+    <polygon points="560,90 530,180 610,260" fill="#FF9800"/>
+    <polygon points="530,180 470,220 610,260" fill="#F57C00"/>
+
+    <polygon points="400,460 270,440 350,490" fill="#E65100"/>
+    <polygon points="400,460 530,440 450,490" fill="#870000"/>
+    <polygon points="400,460 350,490 400,520" fill="#EF6C00"/>
+    <polygon points="400,460 450,490 400,520" fill="#BF360C"/>
+    <polygon points="400,520 350,490 290,570" fill="#FF9800"/>
+    <polygon points="400,520 450,490 510,570" fill="#F57C00"/>
+    <polygon points="400,520 290,570 400,620" fill="#FFA726"/>
+    <polygon points="400,520 510,570 400,620" fill="#FB8C00"/>
+    <polygon points="400,620 290,570 330,690" fill="#FF9800"/>
+    <polygon points="400,620 510,570 470,690" fill="#EF6C00"/>
+    <polygon points="400,620 330,690 400,720" fill="#F57C00"/>
+    <polygon points="400,620 470,690 400,720" fill="#E65100"/>
+
+    <polygon points="220,350 190,260 170,400" fill="#FFCC80"/>
+    <polygon points="220,350 170,400 270,440" fill="#FFB74D"/>
+    <polygon points="270,440 170,400 230,510" fill="#FFA726"/>
+    <polygon points="270,440 230,510 350,490" fill="#FB8C00"/>
+    <polygon points="350,490 230,510 290,570" fill="#EF6C00"/>
+    <polygon points="230,510 190,620 290,570" fill="#FFB74D"/>
+    <polygon points="290,570 190,620 240,680" fill="#FF9800"/>
+    <polygon points="290,570 240,680 330,690" fill="#F57C00"/>
+    <polygon points="240,680 290,750 330,690" fill="#FFA726"/>
+    <polygon points="330,690 290,750 330,750" fill="#FF9800"/>
+    <polygon points="330,690 330,750 370,750" fill="#FB8C00"/>
+    <polygon points="330,690 370,750 400,720" fill="#E65100"/>
+    <polygon points="400,720 370,750 400,750" fill="#EF6C00"/>
+
+    <polygon points="580,350 610,260 630,400" fill="#EF6C00"/>
+    <polygon points="580,350 630,400 530,440" fill="#F57C00"/>
+    <polygon points="530,440 630,400 570,510" fill="#FB8C00"/>
+    <polygon points="530,440 570,510 450,490" fill="#EF6C00"/>
+    <polygon points="450,490 570,510 510,570" fill="#BF360C"/>
+    <polygon points="570,510 610,620 510,570" fill="#E65100"/>
+    <polygon points="510,570 610,620 560,680" fill="#F57C00"/>
+    <polygon points="510,570 560,680 470,690" fill="#E65100"/>
+    <polygon points="560,680 510,750 470,690" fill="#F57C00"/>
+    <polygon points="470,690 510,750 470,750" fill="#EF6C00"/>
+    <polygon points="470,690 470,750 430,750" fill="#BF360C"/>
+    <polygon points="470,690 430,750 400,720" fill="#BF360C"/>
+    <polygon points="400,720 430,750 400,750" fill="#870000"/>
+
+    <polygon points="610,620 670,650 630,710" fill="#E65100"/>
+    <polygon points="610,620 630,710 560,680" fill="#F57C00"/>
+    <polygon points="560,680 630,710 580,750" fill="#FF9800"/>
+    <polygon points="580,750 510,750 560,680" fill="#FFA726"/>
+    <polygon points="630,710 600,770 580,750" fill="#FFB74D"/>
+    <polygon points="600,770 580,750 520,780" fill="#EF6C00"/>
+    <polygon points="520,780 580,750 510,750" fill="#F57C00"/>
+    <polygon points="520,780 510,750 450,780" fill="#EF6C00"/>
+    <polygon points="510,750 470,750 450,780" fill="#BF360C"/>
+    <polygon points="450,780 470,750 420,770" fill="#870000"/>
+    <polygon points="420,770 470,750 430,750" fill="#F57C00"/>
+  </g>
+</svg>

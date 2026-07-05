@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="100 80 200 150" width="400" height="300">
+  <!-- Tail with continuous sway animation -->
+  <g transform="translate(180,150)">
+    <animateTransform attributeName="transform" attributeType="XML" type="rotate" 
+                      from="-15" to="15" dur="1.5s" repeatCount="indefinite" direction="alternate"/>
+    <path d="M0,0 C30,-20 50,-40 60,-70" stroke="#7F5539" stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Body -->
+  <circle cx="150" cy="140" r="40" fill="#FFA94D" stroke="#7F5539" stroke-width="2"/>
+  
+  <!-- Head -->
+  <circle cx="190" cy="110" r="35" fill="#FFA94D" stroke="#7F5539" stroke-width="2"/>
+  
+  <!-- Ears -->
+  <path d="M170,80 L180,60 L190,80 Z" fill="#FFA94D" stroke="#7F5539" stroke-width="1.5"/>
+  <path d="M200,80 L210,60 L220,80 Z" fill="#FFA94D" stroke="#7F5539" stroke-width="1.5"/>
+  
+  <!-- Eyes -->
+  <circle cx="180" cy="105" r="5" fill="#333"/>
+  <circle cx="200" cy="105" r="5" fill="#333"/>
+  
+  <!-- Nose -->
+  <path d="M190,120 L190,125 L185,125 Z" fill="#FF6B6B"/>
+  
+  <!-- Whiskers -->
+  <line x1="170" y1="115" x2="150" y2="115" stroke="#7F5539" stroke-width="1"/>
+  <line x1="170" y1="120" x2="150" y2="125" stroke="#7F5539" stroke-width="1"/>
+  <line x1="170" y1="125" x2="150" y2="135" stroke="#7F5539" stroke-width="1"/>
+  <line x1="210" y1="115" x2="230" y2="115" stroke="#7F5539" stroke-width="1"/>
+  <line x1="210" y1="120" x2="230" y2="125" stroke="#7F5539" stroke-width="1"/>
+  <line x1="210" y1="125" x2="230" y2="135" stroke="#7F5539" stroke-width="1"/>
+  
+  <!-- Legs -->
+  <rect x="130" y="170" width="15" height="25" rx="5" fill="#FFA94D" stroke="#7F5539" stroke-width="1.5"/>
+  <rect x="155" y="170" width="15" height="25" rx="5" fill="#FFA94D" stroke="#7F5539" stroke-width="1.5"/>
+</svg>

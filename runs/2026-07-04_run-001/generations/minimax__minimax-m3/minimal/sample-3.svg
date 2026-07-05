@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Background -->
+  <rect width="400" height="400" fill="#F5F1E8"/>
+  
+  <!-- Tail -->
+  <path d="M 280 280 Q 340 250 330 180 Q 325 150 305 155" 
+        fill="none" stroke="#3A3A3A" stroke-width="22" stroke-linecap="round"/>
+  
+  <!-- Body -->
+  <ellipse cx="200" cy="290" rx="90" ry="80" fill="#4A4A4A"/>
+  
+  <!-- Front legs/paws -->
+  <ellipse cx="165" cy="355" rx="25" ry="15" fill="#3A3A3A"/>
+  <ellipse cx="235" cy="355" rx="25" ry="15" fill="#3A3A3A"/>
+  
+  <!-- Chest patch -->
+  <ellipse cx="200" cy="280" rx="45" ry="55" fill="#F5F1E8"/>
+  
+  <!-- Head -->
+  <circle cx="200" cy="170" r="75" fill="#4A4A4A"/>
+  
+  <!-- Left ear -->
+  <path d="M 140 130 L 145 70 L 185 110 Z" fill="#4A4A4A"/>
+  <path d="M 152 118 L 155 85 L 178 110 Z" fill="#FF9EB5"/>
+  
+  <!-- Right ear -->
+  <path d="M 260 130 L 255 70 L 215 110 Z" fill="#4A4A4A"/>
+  <path d="M 248 118 L 245 85 L 222 110 Z" fill="#FF9EB5"/>
+  
+  <!-- Eyes -->
+  <ellipse cx="170" cy="170" rx="10" ry="14" fill="#2D5F3F"/>
+  <ellipse cx="230" cy="170" rx="10" ry="14" fill="#2D5F3F"/>
+  <circle cx="170" cy="168" r="3" fill="#1A1A1A"/>
+  <circle cx="230" cy="168" r="3" fill="#1A1A1A"/>
+  
+  <!-- Nose -->
+  <path d="M 192 195 L 208 195 L 200 205 Z" fill="#FF9EB5"/>
+  
+  <!-- Mouth -->
+  <path d="M 200 205 L 200 215 Q 188 225 180 218" 
+        fill="none" stroke="#2A2A2A" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 200 215 Q 212 225 220 218" 
+        fill="none" stroke="#2A2A2A" stroke-width="2.5" stroke-linecap="round"/>
+  
+  <!-- Whiskers -->
+  <line x1="120" y1="200" x2="160" y2="205" stroke="#2A2A2A" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="120" y1="210" x2="160" y2="210" stroke="#2A2A2A" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="120" y1="220" x2="160" y2="215" stroke="#2A2A2A" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="280" y1="200" x2="240" y2="205" stroke="#2A2A2A" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="280" y1="210" x2="240" y2="210" stroke="#2A2A2A" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="280" y1="220" x2="240" y2="215" stroke="#2A2A2A" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

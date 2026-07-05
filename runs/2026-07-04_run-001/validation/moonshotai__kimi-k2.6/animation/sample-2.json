@@ -1,0 +1,19 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 6174,
+    "elements": 69,
+    "paths": 27,
+    "colors": [
+      "#151515",
+      "#1d1d1d",
+      "#2d4059",
+      "#e5b181",
+      "#e76f51",
+      "#f4a261",
+      "#ffd6a5",
+      "url(#sun-grad)"
+    ]
+  }
+}

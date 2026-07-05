@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fdf3e3"/>
+      <stop offset="1" stop-color="#f3ddc0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="800" height="800" fill="url(#bg)"/>
+
+  <!-- ground shadow -->
+  <polygon points="215,655 655,655 700,700 180,700" fill="#d9bf9d" opacity="0.6"/>
+
+  <!-- tail -->
+  <polygon points="540,650 622,650 642,578 572,600" fill="#e08a3f"/>
+  <polygon points="572,600 642,578 626,498 588,528" fill="#f2a45c"/>
+  <polygon points="588,528 626,498 602,436" fill="#f7b877"/>
+  <polygon points="540,650 572,600 588,612 566,650" fill="#c96f2e"/>
+
+  <!-- body -->
+  <polygon points="470,400 545,640 400,560" fill="#cf7130"/>
+  <polygon points="545,640 400,640 400,560" fill="#b85f28"/>
+  <polygon points="330,400 255,640 400,560" fill="#eb9a4e"/>
+  <polygon points="255,640 400,640 400,560" fill="#d97b32"/>
+  <polygon points="400,370 330,400 400,560" fill="#f2a45c"/>
+  <polygon points="400,370 470,400 400,560" fill="#e08a3f"/>
+
+  <!-- front paws -->
+  <polygon points="400,560 362,642 400,642" fill="#f7b877"/>
+  <polygon points="400,560 438,642 400,642" fill="#f0a55e"/>
+  <line x1="400" y1="560" x2="400" y2="642" stroke="#b8642c" stroke-width="2"/>
+
+  <!-- ears -->
+  <polygon points="295,105 285,215 340,197" fill="#e08a3f"/>
+  <polygon points="295,105 340,197 365,185" fill="#a8522a"/>
+  <polygon points="505,105 515,215 460,197" fill="#c96f2e"/>
+  <polygon points="505,105 460,197 435,185" fill="#8f4423"/>
+
+  <!-- head -->
+  <polygon points="365,185 435,185 400,265" fill="#f2a45c"/>
+  <polygon points="285,215 365,185 400,265" fill="#f7b877"/>
+  <polygon points="435,185 515,215 400,265" fill="#e08a3f"/>
+  <polygon points="285,215 400,265 290,310" fill="#eb9a4e"/>
+  <polygon points="515,215 400,265 510,310" fill="#d97b32"/>
+  <polygon points="290,310 400,265 400,370" fill="#f9cd93"/>
+  <polygon points="510,310 400,265 400,370" fill="#eeb06a"/>
+
+  <!-- subtle crease highlights -->
+  <g stroke="#ffffff" stroke-width="1.5" opacity="0.35">
+    <line x1="400" y1="265" x2="400" y2="370"/>
+    <line x1="400" y1="370" x2="400" y2="560"/>
+    <line x1="330" y1="400" x2="255" y2="640"/>
+    <line x1="470" y1="400" x2="545" y2="640"/>
+  </g>
+
+  <!-- eyes -->
+  <polygon points="343,278 378,264 368,294" fill="#2f2a26"/>
+  <polygon points="457,278 422,264 432,294" fill="#2f2a26"/>
+
+  <!-- nose and mouth -->
+  <polygon points="388,314 412,314 400,334" fill="#c1543c"/>
+  <polyline points="384,352 400,334 416,352" fill="none" stroke="#8f4423" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- whiskers -->
+  <g stroke="#8f4423" stroke-width="2" stroke-linecap="round" opacity="0.8">
+    <line x1="352" y1="322" x2="288" y2="312"/>
+    <line x1="354" y1="336" x2="292" y2="342"/>
+    <line x1="448" y1="322" x2="512" y2="312"/>
+    <line x1="446" y1="336" x2="508" y2="342"/>
+  </g>
+</svg>

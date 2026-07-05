@@ -1,0 +1,76 @@
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <!-- Tail -->
+  <path d="M 330 400 Q 450 350 430 470" fill="none" stroke="#27272A" stroke-width="25" stroke-linecap="round"/>
+  
+  <!-- Body -->
+  <rect x="170" y="310" width="160" height="150" rx="30" fill="#27272A"/>
+  
+  <!-- Paws -->
+  <rect x="190" y="440" width="40" height="25" rx="12.5" fill="#27272A"/>
+  <rect x="270" y="440" width="40" height="25" rx="12.5" fill="#27272A"/>
+  
+  <!-- Paw toes -->
+  <line x1="205" y1="455" x2="205" y2="460" stroke="#18181B" stroke-width="2" stroke-linecap="round"/>
+  <line x1="215" y1="455" x2="215" y2="460" stroke="#18181B" stroke-width="2" stroke-linecap="round"/>
+  <line x1="285" y1="455" x2="285" y2="460" stroke="#18181B" stroke-width="2" stroke-linecap="round"/>
+  <line x1="295" y1="455" x2="295" y2="460" stroke="#18181B" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Ears -->
+  <polygon points="150,150 180,60 230,130" fill="#27272A"/>
+  <polygon points="270,130 320,60 350,150" fill="#27272A"/>
+
+  <!-- Inner Ears -->
+  <polygon points="175,140 180,85 220,130" fill="#F472B6"/>
+  <polygon points="280,130 320,85 325,140" fill="#F472B6"/>
+
+  <!-- Head -->
+  <circle cx="250" cy="230" r="110" fill="#27272A"/>
+
+  <!-- Cheeks (Blush) -->
+  <ellipse cx="155" cy="240" rx="18" ry="10" fill="#F472B6" opacity="0.3"/>
+  <ellipse cx="345" cy="240" rx="18" ry="10" fill="#F472B6" opacity="0.3"/>
+
+  <!-- Eyes -->
+  <circle cx="195" cy="220" r="24" fill="#FDE047"/>
+  <circle cx="305" cy="220" r="24" fill="#FDE047"/>
+
+  <!-- Pupils -->
+  <circle cx="195" cy="220" r="11" fill="#18181B"/>
+  <circle cx="305" cy="220" r="11" fill="#18181B"/>
+
+  <!-- Eye Highlights -->
+  <circle cx="190" cy="215" r="4.5" fill="#FFFFFF"/>
+  <circle cx="300" cy="215" r="4.5" fill="#FFFFFF"/>
+
+  <!-- Nose -->
+  <polygon points="240,255 260,255 250,265" fill="#F472B6"/>
+
+  <!-- Mouth -->
+  <path d="M 235 270 Q 250 280 250 265" fill="none" stroke="#18181B" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 265 270 Q 250 280 250 265" fill="none" stroke="#18181B" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Tongue -->
+  <path d="M 244 275 L 256 275 L 250 288 Z" fill="#F472B6" stroke="#F472B6" stroke-width="2" stroke-linejoin="round"/>
+  <line x1="250" y1="275" x2="250" y2="285" stroke="#DB2777" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Whiskers -->
+  <!-- Left -->
+  <line x1="150" y1="245" x2="70" y2="235" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"/>
+  <line x1="150" y1="260" x2="70" y2="260" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"/>
+  <line x1="150" y1="275" x2="80" y2="285" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"/>
+  <!-- Right -->
+  <line x1="350" y1="245" x2="430" y2="235" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"/>
+  <line x1="350" y1="260" x2="430" y2="260" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"/>
+  <line x1="350" y1="275" x2="420" y2="285" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Collar -->
+  <rect x="165" y="325" width="170" height="18" rx="9" fill="#EF4444"/>
+
+  <!-- Bell -->
+  <circle cx="250" cy="350" r="12" fill="#FBBF24"/>
+  <rect x="245" y="338" width="10" height="8" rx="2" fill="#FBBF24"/>
+  <line x1="250" y1="362" x2="250" y2="366" stroke="#B45309" stroke-width="2.5"/>
+  <circle cx="250" cy="368" r="2.5" fill="#B45309"/>
+</svg>
+```

@@ -1,0 +1,9 @@
+{
+  "modelSlug": "qwen/qwen3.7-max",
+  "promptId": "constraint",
+  "sample": 2,
+  "status": "ok",
+  "temperature": 1,
+  "rawPath": "generations/qwen__qwen3.7-max/constraint/sample-2.raw.txt",
+  "svgPath": "generations/qwen__qwen3.7-max/constraint/sample-2.svg"
+}

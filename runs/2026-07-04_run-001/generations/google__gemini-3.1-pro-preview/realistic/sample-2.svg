@@ -1,0 +1,313 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#2a2522"/>
+      <stop offset="60%" stop-color="#141211"/>
+      <stop offset="100%" stop-color="#080707"/>
+    </radialGradient>
+    
+    <filter id="shadowBlur" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="35" />
+    </filter>
+    <filter id="stripeBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" />
+    </filter>
+    <filter id="softBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" />
+    </filter>
+
+    <radialGradient id="headGrad" cx="60%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#F29A4D"/>
+      <stop offset="50%" stop-color="#C76722"/>
+      <stop offset="85%" stop-color="#803810"/>
+      <stop offset="100%" stop-color="#411B07"/>
+    </radialGradient>
+
+    <linearGradient id="chestGrad" x1="0.1" y1="0.1" x2="0.9" y2="0.8">
+      <stop offset="0%" stop-color="#9C775D"/>
+      <stop offset="35%" stop-color="#EBC6A6"/>
+      <stop offset="70%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#EED5C0"/>
+    </linearGradient>
+
+    <radialGradient id="leftHipGrad" cx="90%" cy="30%" r="100%">
+      <stop offset="0%" stop-color="#6B290B"/>
+      <stop offset="50%" stop-color="#B8591B"/>
+      <stop offset="100%" stop-color="#471A06"/>
+    </radialGradient>
+
+    <radialGradient id="rightHipGrad" cx="20%" cy="20%" r="100%">
+      <stop offset="0%" stop-color="#F4A254"/>
+      <stop offset="60%" stop-color="#C25916"/>
+      <stop offset="100%" stop-color="#702F0E"/>
+    </radialGradient>
+
+    <linearGradient id="tailGrad" x1="1" y1="0.5" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D96E25"/>
+      <stop offset="40%" stop-color="#AE4B12"/>
+      <stop offset="80%" stop-color="#552207"/>
+      <stop offset="100%" stop-color="#2F1102"/>
+    </linearGradient>
+    
+    <linearGradient id="frontLegL" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#A95A2B"/>
+      <stop offset="50%" stop-color="#E0A678"/>
+      <stop offset="100%" stop-color="#C88E65"/>
+    </linearGradient>
+
+    <linearGradient id="frontLegR" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F7B272"/>
+      <stop offset="50%" stop-color="#DC8944"/>
+      <stop offset="100%" stop-color="#A95822"/>
+    </linearGradient>
+
+    <radialGradient id="eyeGradL" cx="60%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#E2FF61"/>
+      <stop offset="50%" stop-color="#9BC71B"/>
+      <stop offset="80%" stop-color="#41730C"/>
+      <stop offset="100%" stop-color="#1B3803"/>
+    </radialGradient>
+    <radialGradient id="eyeGradR" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#E2FF61"/>
+      <stop offset="50%" stop-color="#9BC71B"/>
+      <stop offset="80%" stop-color="#41730C"/>
+      <stop offset="100%" stop-color="#1B3803"/>
+    </radialGradient>
+
+    <linearGradient id="noseGrad" x1="0.3" y1="0.1" x2="0.7" y2="0.9">
+      <stop offset="0%" stop-color="#FFA8A1"/>
+      <stop offset="70%" stop-color="#D66056"/>
+      <stop offset="100%" stop-color="#8E2D25"/>
+    </linearGradient>
+
+    <linearGradient id="earGrad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#8F3F1A"/>
+      <stop offset="70%" stop-color="#DE844D"/>
+      <stop offset="100%" stop-color="#FBB489"/>
+    </linearGradient>
+    <linearGradient id="earInner" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#160803"/>
+      <stop offset="40%" stop-color="#6F2825"/>
+      <stop offset="100%" stop-color="#CC786E"/>
+    </linearGradient>
+
+    <pattern id="microFurR" width="30" height="30" patternUnits="userSpaceOnUse" patternTransform="scale(1.3) rotate(20)">
+      <path d="M 5,20 C 8,10 12,0 8,-5 C 10,5 15,15 15,22 Z" fill="#FFF" opacity="0.08"/>
+      <path d="M 15,25 C 18,15 22,5 18,0 C 20,10 25,20 25,27 Z" fill="#2E0E02" opacity="0.12"/>
+      <path d="M 22,20 C 27,10 25,5 28,0 C 30,10 32,20 28,25 Z" fill="#F4953A" opacity="0.06"/>
+    </pattern>
+
+    <pattern id="microFurL" width="30" height="30" patternUnits="userSpaceOnUse" patternTransform="scale(1.3) rotate(-20)">
+      <path d="M 5,20 C 8,10 12,0 8,-5 C 10,5 15,15 15,22 Z" fill="#FFF" opacity="0.08"/>
+      <path d="M 15,25 C 18,15 22,5 18,0 C 20,10 25,20 25,27 Z" fill="#2E0E02" opacity="0.12"/>
+      <path d="M 22,20 C 27,10 25,5 28,0 C 30,10 32,20 28,25 Z" fill="#F4953A" opacity="0.06"/>
+    </pattern>
+
+    <path id="defLeftHip" d="M 380,450 C 270,450 200,600 220,780 C 220,830 250,860 300,850 C 350,840 370,820 380,800 C 390,750 390,550 380,450 Z" />
+    <path id="defRightHip" d="M 620,450 C 730,450 800,600 780,780 C 780,830 750,860 700,850 C 650,840 630,820 620,800 C 610,750 610,550 620,450 Z" />
+    
+    <path id="defChest" d="
+        M 380,380
+        L 340,430 L 375,445
+        L 325,490 L 365,510
+        L 310,550 L 355,575
+        L 300,630 L 370,640
+        L 330,710 L 400,700
+        C 430,740 470,750 500,750
+        C 530,750 570,740 600,700
+        L 670,710 L 630,640
+        L 700,630 L 645,575
+        L 690,550 L 635,510
+        L 675,490 L 625,445
+        L 660,430 L 620,380 Z" />
+        
+    <path id="defHead" d="
+        M 500,120
+        C 530,120 560,130 580,140
+        C 610,160 630,200 640,240
+        L 660,260 L 645,265
+        L 680,290 L 650,295
+        L 690,320 L 650,330
+        L 700,350 L 640,360
+        L 680,380 L 630,385
+        L 650,400 L 600,395
+        C 570,410 540,420 500,420
+        C 460,420 430,410 400,395
+        L 350,400 L 370,385
+        L 320,380 L 360,360
+        L 300,350 L 350,330
+        L 310,320 L 350,295
+        L 320,290 L 355,265
+        L 340,260
+        C 370,200 390,160 420,140
+        C 440,130 470,120 500,120 Z" />
+        
+    <path id="defTail" d="
+        M 720,780 
+        C 820,800 880,880 750,920 
+        C 600,950 400,930 250,880 
+        C 120,840 180,770 240,760 
+        C 280,750 320,805 500,825 
+        C 650,845 700,800 720,780 Z" />
+
+    <clipPath id="leftHipClip"><use href="#defLeftHip" /></clipPath>
+    <clipPath id="rightHipClip"><use href="#defRightHip" /></clipPath>
+    <clipPath id="chestClip"><use href="#defChest" /></clipPath>
+    <clipPath id="headClip"><use href="#defHead" /></clipPath>
+    <clipPath id="tailClip"><use href="#defTail" /></clipPath>
+
+    <g id="whiskerGroupL">
+      <path d="M0,0 Q-150,15 -250,-10" stroke="#FFF" stroke-width="2.5" fill="none" opacity="0.8" stroke-linecap="round"/>
+      <path d="M0,8 Q-160,30 -240,20" stroke="#FFF" stroke-width="2" fill="none" opacity="0.6" stroke-linecap="round"/>
+      <path d="M5,18 Q-130,50 -200,60" stroke="#FFF" stroke-width="1.5" fill="none" opacity="0.5" stroke-linecap="round"/>
+      <path d="M8,-12 Q-140,-30 -220,-50" stroke="#FFF" stroke-width="1.8" fill="none" opacity="0.7" stroke-linecap="round"/>
+      <path d="M12,-20 Q-100,-40 -150,-80" stroke="#FFF" stroke-width="1.5" fill="none" opacity="0.4" stroke-linecap="round"/>
+    </g>
+    <g id="whiskerGroupR">
+      <path d="M0,0 Q150,15 250,-10" stroke="#FFF" stroke-width="2.5" fill="none" opacity="0.8" stroke-linecap="round"/>
+      <path d="M0,8 Q160,30 240,20" stroke="#FFF" stroke-width="2" fill="none" opacity="0.6" stroke-linecap="round"/>
+      <path d="M-5,18 Q130,50 200,60" stroke="#FFF" stroke-width="1.5" fill="none" opacity="0.5" stroke-linecap="round"/>
+      <path d="M-8,-12 Q140,-30 220,-50" stroke="#FFF" stroke-width="1.8" fill="none" opacity="0.7" stroke-linecap="round"/>
+      <path d="M-12,-20 Q100,-40 150,-80" stroke="#FFF" stroke-width="1.5" fill="none" opacity="0.4" stroke-linecap="round"/>
+    </g>
+  </defs>
+
+  <rect width="1000" height="1000" fill="url(#bgGrad)" />
+  <ellipse cx="500" cy="850" rx="420" ry="90" fill="#030202" opacity="0.8" filter="url(#shadowBlur)" />
+  <ellipse cx="650" cy="840" rx="200" ry="60" fill="#000" opacity="0.9" filter="url(#shadowBlur)" />
+  <ellipse cx="300" cy="840" rx="150" ry="70" fill="#000" opacity="0.9" filter="url(#shadowBlur)" />
+
+  <g id="Ears">
+    <path d="M 370,180 C 320,80 300,50 330,40 C 360,30 410,70 440,140 Z" fill="url(#earGrad)" />
+    <path d="M 380,165 C 340,90 325,70 340,60 C 355,50 395,80 420,135 Z" fill="url(#earInner)" />
+    <path d="M 630,180 C 680,80 700,50 670,40 C 640,30 590,70 560,140 Z" fill="url(#earGrad)" />
+    <path d="M 620,165 C 660,90 675,70 660,60 C 645,50 605,80 580,135 Z" fill="url(#earInner)" />
+    
+    <path d="M 360,140 Q 365,60 410,80" stroke="#FFE9D9" stroke-width="2.5" fill="none" opacity="0.6"/>
+    <path d="M 375,150 Q 370,70 425,95" stroke="#FFE9D9" stroke-width="2" fill="none" opacity="0.5"/>
+    <path d="M 390,150 Q 380,80 435,110" stroke="#FFE9D9" stroke-width="1.5" fill="none" opacity="0.4"/>
+    <path d="M 640,140 Q 635,60 590,80" stroke="#FFE9D9" stroke-width="2.5" fill="none" opacity="0.6"/>
+    <path d="M 625,150 Q 630,70 575,95" stroke="#FFE9D9" stroke-width="2" fill="none" opacity="0.5"/>
+    <path d="M 610,150 Q 620,80 565,110" stroke="#FFE9D9" stroke-width="1.5" fill="none" opacity="0.4"/>
+  </g>
+
+  <g id="Hips_and_Hind">
+    <use href="#defLeftHip" fill="url(#leftHipGrad)" />
+    <g clip-path="url(#leftHipClip)">
+      <use href="#defLeftHip" fill="url(#microFurL)" />
+      <path d="M250,500 C 350,550 380,700 230,750 C 270,720 300,600 230,550 Z M220,580 C 280,630 280,680 200,700 C 250,680 240,620 200,600 Z" fill="#2E0E04" opacity="0.8" filter="url(#stripeBlur)"/>
+      <path d="M180,650 Q 280,720 240,820 M 230,680 Q 320,750 280,850 M 280,700 Q 360,780 320,850" stroke="#2E0E04" stroke-width="18" fill="none" opacity="0.6" filter="url(#stripeBlur)" />
+      <path d="M 380,450 C 270,450 200,600 220,780" stroke="#A6583A" stroke-width="6" fill="none" opacity="0.5" filter="url(#softBlur)" />
+    </g>
+
+    <use href="#defRightHip" fill="url(#rightHipGrad)" />
+    <g clip-path="url(#rightHipClip)">
+      <use href="#defRightHip" fill="url(#microFurR)" />
+      <path d="M750,500 C 650,550 620,700 770,750 C 730,720 700,600 770,550 Z M780,580 C 720,630 720,680 800,700 C 750,680 760,620 800,600 Z" fill="#6A2204" opacity="0.75" filter="url(#stripeBlur)"/>
+      <path d="M820,650 Q 720,720 760,820 M 770,680 Q 680,750 720,850 M 720,700 Q 640,780 680,850" stroke="#6A2204" stroke-width="18" fill="none" opacity="0.6" filter="url(#stripeBlur)" />
+      <path d="M 620,450 C 730,450 800,600 780,780" stroke="#FFD8AB" stroke-width="8" fill="none" stroke-linecap="round" filter="url(#softBlur)" opacity="0.85" />
+      <path d="M 780,780 C 780,830 750,860 700,850" stroke="#FFCE93" stroke-width="5" fill="none" filter="url(#softBlur)" opacity="0.6" />
+    </g>
+  </g>
+
+  <g id="Front_Legs">
+    <path id="defLeftLeg" d="M 400,600 L 390,830 C 370,860 380,890 415,890 C 445,890 470,880 470,850 C 475,820 460,700 460,600 Z" fill="url(#frontLegL)" />
+    <path id="defRightLeg" d="M 600,600 L 610,830 C 630,860 620,890 585,890 C 555,890 530,880 530,850 C 525,820 540,700 540,600 Z" fill="url(#frontLegR)" />
+    
+    <path d="M 390,650 Q 420,800 395,850 M 420,650 Q 450,780 435,840 M 450,650 Q 480,750 465,840" stroke="#A9654C" stroke-width="12" fill="none" opacity="0.5" filter="url(#stripeBlur)" />
+    <path d="M 610,650 Q 580,800 605,850 M 580,650 Q 550,780 565,840 M 550,650 Q 520,750 535,840" stroke="#87351A" stroke-width="12" fill="none" opacity="0.6" filter="url(#stripeBlur)" />
+
+    <path d="M 400,890 C 400,870 395,865 395,855 M 420,890 C 420,870 415,860 415,845 M 445,885 C 440,865 440,855 435,840" stroke="#260C03" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M 600,890 C 600,870 605,865 605,855 M 580,890 C 580,870 585,860 585,845 M 555,885 C 560,865 560,855 565,840" stroke="#260C03" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <g id="Chest_Neck">
+    <use href="#defChest" fill="url(#chestGrad)" />
+    <g clip-path="url(#chestClip)">
+      <use href="#defChest" fill="url(#microFurL)" />
+      
+      <path d="
+        M360,480 Q500,560 640,480 L650,500 Q500,600 350,500 Z
+        M330,550 Q500,630 670,550 L680,580 Q500,680 320,580 Z
+        M315,620 Q500,700 685,620 L695,650 Q500,740 310,650 Z" fill="#D1743E" opacity="0.65" filter="url(#stripeBlur)" />
+        
+      <path d="M495,380 Q450,550 350,680 M505,380 Q550,550 650,680 M480,380 Q430,500 350,550 M520,380 Q570,500 650,550" stroke="#FFFFFF" stroke-width="8" fill="none" opacity="0.8" stroke-linecap="round" filter="url(#softBlur)" />
+      <path d="M495,380 Q460,600 400,740 M505,380 Q540,600 600,740" stroke="#FFFFFF" stroke-width="6" fill="none" opacity="0.6" stroke-linecap="round" />
+      <path d="M470,400 Q400,550 340,580 M530,400 Q600,550 660,580" stroke="#FFFFFF" stroke-width="4" fill="none" opacity="0.8" stroke-linecap="round" />
+    </g>
+  </g>
+
+  <g id="Head_Base_Details">
+    <path d="M 460,400 Q 500,460 540,400 Z" fill="#EBCBB5" opacity="0.9" />
+
+    <use href="#defHead" fill="url(#headGrad)" />
+    <g clip-path="url(#headClip)">
+      <use href="#defHead" fill="url(#microFurL)" />
+
+      <path d="M 390 220 C 420 200 460 210 470 240 C 450 220 410 220 390 220 Z" fill="#2E0E01" opacity="0.75" filter="url(#stripeBlur)" />
+      <path d="M 610 220 C 580 200 540 210 530 240 C 550 220 590 220 610 220 Z" fill="#2E0E01" opacity="0.75" filter="url(#stripeBlur)" />
+
+      <path d="
+        M497,120 L480,180 L495,190 L503,145 L511,190 L526,180 Z
+        M475,175 L450,140 L440,145 L465,195 Z
+        M525,175 L550,140 L560,145 L535,195 Z
+        M490,200 L503,240 L516,200 Z" fill="#3D1201" opacity="0.8" filter="url(#stripeBlur)" />
+        
+      <path d="
+        M400,260 L320,265 L310,275 L380,285 Z
+        M380,300 L290,320 L280,335 L370,325 Z
+        M600,260 L680,265 L690,275 L620,285 Z
+        M620,300 L710,320 L720,335 L630,325 Z" fill="#3D1201" opacity="0.75" filter="url(#stripeBlur)" />
+        
+      <path d="M370,340 L300,380 L300,390 L360,360 Z M630,340 L700,380 L700,390 L640,360 Z" fill="#3D1201" opacity="0.7" filter="url(#stripeBlur)" />
+
+      <path d="M 400 310 C 370 280 340 310 370 340 Z M 600 310 C 630 280 660 310 630 340 Z" fill="#F4E9DF" opacity="0.4" filter="url(#stripeBlur)" />
+      <path d="M 500 240 L 485 300 L 515 300 Z" fill="#F4B785" opacity="0.7" filter="url(#softBlur)" />
+    </g>
+
+    <path d="M 437,243 C 445,215 480,225 485,245 C 470,253 450,255 437,243 Z" fill="#EA9592" />
+    <path d="M 563,243 C 555,215 520,225 515,245 C 530,253 550,255 563,243 Z" fill="#EA9592" />
+
+    <path d="M 395 245 C 420 215 455 220 465 240 C 450 265 415 265 395 245 Z" fill="url(#eyeGradL)" />
+    <ellipse cx="433" cy="242" rx="4" ry="15" fill="#131B05" />
+    <circle cx="430" cy="235" r="3.5" fill="#FFF" opacity="0.9" />
+    <circle cx="438" cy="245" r="1.5" fill="#FFF" opacity="0.6" />
+    
+    <path d="M 605 245 C 580 215 545 220 535 240 C 550 265 585 265 605 245 Z" fill="url(#eyeGradR)" />
+    <ellipse cx="567" cy="242" rx="4" ry="15" fill="#131B05" />
+    <circle cx="563" cy="235" r="3.5" fill="#FFF" opacity="0.9" />
+    <circle cx="572" cy="245" r="1.5" fill="#FFF" opacity="0.6" />
+
+    <path d="M 390 248 C 420 212 460 215 470 240 C 455 268 415 270 390 248 Z" fill="none" stroke="#160803" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 465 242 C 475 235 485 235 490 240 C 480 245 470 245 465 242 Z" fill="#160803" />
+    <path d="M 610 248 C 580 212 540 215 530 240 C 545 268 585 270 610 248 Z" fill="none" stroke="#160803" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 535 242 C 525 235 515 235 510 240 C 520 245 530 245 535 242 Z" fill="#160803" />
+
+    <path d="M 480 300 Q 500 295 520 300 Q 525 315 500 325 Q 475 315 480 300 Z" fill="url(#noseGrad)" />
+    <ellipse cx="490" cy="310" rx="3.5" ry="2" transform="rotate(25 490 310)" fill="#44130F" />
+    <ellipse cx="510" cy="310" rx="3.5" ry="2" transform="rotate(-25 510 310)" fill="#44130F" />
+    <path d="M 500 325 L 500 345" stroke="#2B1412" stroke-width="2.5" fill="none" />
+    <path d="M 470 355 Q 500 365 500 345 Q 500 365 530 355" stroke="#2B1412" stroke-width="2.5" fill="none" stroke-linecap="round" />
+
+    <path d="M 500 325 C 460 330 450 365 500 380 C 550 365 540 330 500 325" fill="#E8D1BE" opacity="0.7" filter="url(#softBlur)" />
+    
+    <circle cx="480" cy="345" r="1.5" fill="#5F3119" opacity="0.6"/><circle cx="470" cy="355" r="1.5" fill="#5F3119" opacity="0.6"/><circle cx="460" cy="345" r="1.5" fill="#5F3119" opacity="0.6"/>
+    <circle cx="520" cy="345" r="1.5" fill="#5F3119" opacity="0.6"/><circle cx="530" cy="355" r="1.5" fill="#5F3119" opacity="0.6"/><circle cx="540" cy="345" r="1.5" fill="#5F3119" opacity="0.6"/>
+
+    <use href="#whiskerGroupL" x="480" y="340" />
+    <use href="#whiskerGroupR" x="520" y="340" />
+  </g>
+
+  <g id="Tail_FG">
+    <use href="#defTail" fill="url(#tailGrad)" />
+    <g clip-path="url(#tailClip)">
+      <use href="#defTail" fill="url(#microFurR)" />
+      
+      <path d="M 120 750 L 150 900 M 200 750 L 230 900 M 280 750 L 310 900 M 360 760 L 390 910 M 440 760 L 470 910 M 520 760 L 550 910 M 600 750 L 630 900 M 680 730 L 710 880" stroke="#310F02" stroke-width="35" opacity="0.8" filter="url(#stripeBlur)" />
+      <path d="M 120 750 L 150 900 M 200 750 L 230 900 M 280 750 L 310 900 M 360 760 L 390 910 M 440 760 L 470 910 M 520 760 L 550 910 M 600 750 L 630 900 M 680 730 L 710 880" stroke="#752808" stroke-width="15" opacity="0.9" filter="url(#stripeBlur)" />
+      
+      <path d="M 720,780 C 820,800 880,880 750,920" stroke="#FFAE6E" stroke-width="6" fill="none" opacity="0.6" stroke-linecap="round" filter="url(#softBlur)" />
+      <path d="M 750,920 C 600,950 400,930 250,880" stroke="#FFCF9E" stroke-width="4" fill="none" opacity="0.4" stroke-linecap="round" filter="url(#softBlur)" />
+    </g>
+  </g>
+</svg>

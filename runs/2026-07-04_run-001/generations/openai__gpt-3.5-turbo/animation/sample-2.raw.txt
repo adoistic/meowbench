@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <path d="M50 30 Q45 18 40 30 Q37 40 32 40 Q30 45 35 50 Q40 55 40 62 Q40 65 35 68 Q30 70 25 68 Q20 65 20 62 Q20 55 25 50 Q30 45 28 40 Q23 40 20 30" fill="#FFCCCB">
+    <animate attributeName="d" dur="2s" repeatCount="indefinite" values="M50 30 Q45 18 40 30 Q37 40 32 40 Q30 45 35 50 Q40 55 40 62 Q40 65 35 68 Q30 70 25 68 Q20 65 20 62 Q20 55 25 50 Q30 45 28 40 Q23 40 20 30; M50 30 Q55 40 60 30 Q63 20 68 30 Q70 45 65 50 Q60 55 60 62 Q60 65 65 68 Q70 70 75 68 Q80 65 80 62 Q80 55 75 50 Q70 45 72 40 Q77 40 80 30" />
+  </path>
+  <circle cx="38" cy="28" r="5" fill="#000"/>
+  <circle cx="62" cy="28" r="5" fill="#000"/>
+  <path d="M45 42 Q50 60 55 42" fill="none" stroke="#000" stroke-width="2">
+    <animate attributeName="d" dur="2s" repeatCount="indefinite" values="M45 42 Q50 60 55 42; M45 42 Q50 55 55 42; M45 42 Q50 60 55 42" />
+  </path>
+</svg>

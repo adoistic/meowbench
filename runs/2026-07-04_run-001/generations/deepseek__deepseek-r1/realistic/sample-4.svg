@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bodyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d3d3d3" />
+      <stop offset="100%" stop-color="#a9a9a9" />
+    </linearGradient>
+    <radialGradient id="chestGradient" cx="50%" cy="50%" r="50%" fx="30%" fy="30%">
+      <stop offset="0%" stop-color="#f0f0f0" />
+      <stop offset="100%" stop-color="#d3d3d3" />
+    </radialGradient>
+    <filter id="furTexture" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </defs>
+  
+  <!-- Body silhouette with fur texture -->
+  <g filter="url(#furTexture)">
+    <!-- Main body -->
+    <path d="M400,450 Q500,400 550,350 Q600,300 550,250 Q500,200 400,220 Q300,200 250,250 Q200,300 250,350 Q300,400 400,450Z" fill="url(#bodyGradient)" stroke="#808080" stroke-width="2" />
+    
+    <!-- Chest -->
+    <ellipse cx="400" cy="350" rx="120" ry="80" fill="url(#chestGradient)" stroke="#c0c0c0" stroke-width="1" />
+    
+    <!-- Head -->
+    <path d="M400,200 Q450,180 480,200 Q500,230 480,250 Q450,270 400,260 Q350,270 320,250 Q300,230 320,200 Q350,180 400,200Z" fill="url(#bodyGradient)" stroke="#808080" stroke-width="2" />
+    
+    <!-- Ears -->
+    <path d="M350,150 L370,120 L390,150 Z" fill="#a9a9a9" stroke="#808080" stroke-width="1" />
+    <path d="M450,150 L470,120 L490,150 Z" fill="#a9a9a9" stroke="#808080" stroke-width="1" />
+    
+    <!-- Tail -->
+    <path d="M550,350 Q600,320 620,300 Q640,280 630,250 Q620,220 580,230 Q540,240 550,270 Q560,300 550,350Z" fill="url(#bodyGradient)" stroke="#808080" stroke-width="2" />
+    
+    <!-- Front legs -->
+    <path d="M330,450 L320,550 L340,550 L350,450Z" fill="#a9a9a9" stroke="#808080" stroke-width="1" />
+    <path d="M470,450 L460,550 L480,550 L490,450Z" fill="#a9a9a9" stroke="#808080" stroke-width="1" />
+    
+    <!-- Back leg (visible) -->
+    <path d="M520,400 L510,500 L530,500 L540,400Z" fill="#a9a9a9" stroke="#808080" stroke-width="1" />
+  </g>
+  
+  <!-- Facial features -->
+  <ellipse cx="370" cy="230" rx="10" ry="8" fill="#222" />
+  <ellipse cx="430" cy="230" rx="10" ry="8" fill="#222" />
+  <ellipse cx="370" cy="230" rx="4" ry="4" fill="#fff" />
+  <ellipse cx="430" cy="230" rx="4" ry="4" fill="#fff" />
+  
+  <!-- Nose -->
+  <path d="M400,250 Q405,260 395,260 Q390,255 400,250Z" fill="#ffb6c1" stroke="#d87093" stroke-width="1" />
+  
+  <!-- Whiskers -->
+  <line x1="390" y1="255" x2="340" y2="250" stroke="#aaa" stroke-width="1" />
+  <line x1="390" y1="260" x2="340" y2="260" stroke="#aaa" stroke-width="1" />
+  <line x1="390" y1="265" x2="340" y2="270" stroke="#aaa" stroke-width="1" />
+  <line x1="410" y1="255" x2="460" y2="250" stroke="#aaa" stroke-width="1" />
+  <line x1="410" y1="260" x2="460" y2="260" stroke="#aaa" stroke-width="1" />
+  <line x1="410" y1="265" x2="460" y2="270" stroke="#aaa" stroke-width="1" />
+  
+  <!-- Fur details -->
+  <path d="M400,220 Q380,210 360,215" stroke="#909090" stroke-width="1" fill="none" />
+  <path d="M400,220 Q420,210 440,215" stroke="#909090" stroke-width="1" fill="none" />
+  <path d="M390,350 Q380,340 370,345" stroke="#909090" stroke-width="1" fill="none" />
+  <path d="M410,350 Q420,340 430,345" stroke="#909090" stroke-width="1" fill="none" />
+</svg>

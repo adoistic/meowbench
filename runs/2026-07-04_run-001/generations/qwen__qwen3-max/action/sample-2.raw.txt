@@ -1,0 +1,45 @@
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bicycle wheels -->
+  <circle cx="70" cy="150" r="30" stroke="black" stroke-width="4" fill="none"/>
+  <circle cx="210" cy="150" r="30" stroke="black" stroke-width="4" fill="none"/>
+  <!-- Bicycle frame -->
+  <line x1="70" y1="120" x2="210" y2="120" stroke="black" stroke-width="4"/>
+  <line x1="210" y1="120" x2="230" y2="90" stroke="black" stroke-width="4"/>
+  <line x1="230" y1="90" x2="180" y2="90" stroke="black" stroke-width="4"/>
+  <line x1="180" y1="90" x2="210" y2="120" stroke="black" stroke-width="4"/>
+  <line x1="70" y1="120" x2="90" y2="90" stroke="black" stroke-width="4"/>
+  <line x1="90" y1="90" x2="180" y2="90" stroke="black" stroke-width="4"/>
+  <!-- Handlebars -->
+  <line x1="230" y1="90" x2="240" y2="80" stroke="black" stroke-width="3"/>
+  <line x1="230" y1="90" x2="220" y2="80" stroke="black" stroke-width="3"/>
+  <!-- Seat -->
+  <ellipse cx="130" cy="80" rx="15" ry="8" fill="saddlebrown"/>
+  <!-- Pedals -->
+  <circle cx="140" cy="150" r="5" fill="gray"/>
+  <line x1="135" y1="150" x2="145" y2="150" stroke="black" stroke-width="2"/>
+  
+  <!-- Cat body -->
+  <ellipse cx="130" cy="70" rx="25" ry="15" fill="orange"/>
+  <!-- Cat head -->
+  <circle cx="165" cy="60" r="20" fill="orange"/>
+  <!-- Cat ears -->
+  <polygon points="150,45 155,30 160,45" fill="orange" stroke="black" stroke-width="1"/>
+  <polygon points="170,45 175,30 180,45" fill="orange" stroke="black" stroke-width="1"/>
+  <!-- Cat eyes -->
+  <circle cx="158" cy="55" r="4" fill="white"/>
+  <circle cx="172" cy="55" r="4" fill="white"/>
+  <circle cx="158" cy="55" r="2" fill="black"/>
+  <circle cx="172" cy="55" r="2" fill="black"/>
+  <!-- Cat nose -->
+  <circle cx="165" cy="65" r="2" fill="pink"/>
+  <!-- Cat mouth -->
+  <path d="M165,67 Q162,70 165,72 Q168,70 165,67" stroke="black" stroke-width="1" fill="none"/>
+  <!-- Cat front legs -->
+  <line x1="120" y1="80" x2="115" y2="100" stroke="orange" stroke-width="6" stroke-linecap="round"/>
+  <line x1="140" y1="80" x2="145" y2="100" stroke="orange" stroke-width="6" stroke-linecap="round"/>
+  <!-- Cat back legs (pedaling) -->
+  <line x1="100" y1="80" x2="95" y2="110" stroke="orange" stroke-width="6" stroke-linecap="round"/>
+  <line x1="160" y1="80" x2="170" y2="110" stroke="orange" stroke-width="6" stroke-linecap="round"/>
+  <!-- Cat tail -->
+  <path d="M105,70 Q90,60 85,80" stroke="orange" stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

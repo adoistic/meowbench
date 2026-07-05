@@ -1,0 +1,37 @@
+
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cat body -->
+  <ellipse cx="100" cy="140" rx="45" ry="35" fill="#2c3e50"/>
+  
+  <!-- Cat head -->
+  <circle cx="100" cy="90" r="35" fill="#2c3e50"/>
+  
+  <!-- Left ear -->
+  <path d="M 70 75 L 60 50 L 80 65 Z" fill="#2c3e50"/>
+  
+  <!-- Right ear -->
+  <path d="M 120 75 L 140 50 L 120 65 Z" fill="#2c3e50"/>
+  
+  <!-- Inner ear left -->
+  <path d="M 72 68 L 68 60 L 78 64 Z" fill="#95a5a6"/>
+  
+  <!-- Inner ear right -->
+  <path d="M 122 68 L 128 60 L 132 64 Z" fill="#95a5a6"/>
+  
+  <!-- Tail -->
+  <path d="M 140 150 Q 160 140, 165 115 Q 168 100, 155 95" 
+        stroke="#2c3e50" stroke-width="20" fill="none" stroke-linecap="round"/>
+  
+  <!-- Eyes -->
+  <circle cx="88" cy="88" r="3" fill="#ecf0f1"/>
+  <circle cx="112" cy="88" r="3" fill="#ecf0f1"/>
+  
+  <!-- Nose -->
+  <path d="M 100 98 L 96 102 L 104 102 Z" fill="#95a5a6"/>
+  
+  <!-- Whiskers -->
+  <line x1="100" y1="100" x2="75" y2="95" stroke="#95a5a6" stroke-width="1.5"/>
+  <line x1="100" y1="102" x2="75" y2="105" stroke="#95a5a6" stroke-width="1.5"/>
+  <line x1="100" y1="100" x2="125" y2="95" stroke="#95a5a6" stroke-width="1.5"/>
+  <line x1="100" y1="102" x2="125" y2="105" stroke="#95a5a6" stroke-width="1.5"/>
+</svg>

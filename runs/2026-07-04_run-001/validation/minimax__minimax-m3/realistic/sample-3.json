@@ -1,0 +1,33 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 19690,
+    "elements": 232,
+    "paths": 72,
+    "colors": [
+      "#000",
+      "#0a1a04",
+      "#1a2a08",
+      "#2a1004",
+      "#3a1a08",
+      "#5c3010",
+      "#8a1a1a",
+      "#8a7020",
+      "#a82828",
+      "#a88050",
+      "#d4af37",
+      "#fff",
+      "transparent",
+      "url(#bellyfur)",
+      "url(#bggrad)",
+      "url(#bodyfur)",
+      "url(#earinner)",
+      "url(#eyegrad)",
+      "url(#headfur)",
+      "url(#legfur)",
+      "url(#nosegrad)",
+      "url(#tailfur)"
+    ]
+  }
+}

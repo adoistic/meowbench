@@ -1,0 +1,29 @@
+{
+  "valid": false,
+  "reasons": [
+    "css-url"
+  ],
+  "stats": {
+    "bytes": 9252,
+    "elements": 116,
+    "paths": 32,
+    "colors": [
+      "#1f1f1f",
+      "#2b2b2b",
+      "#7a3b3b",
+      "#7c8a96",
+      "#9aa7b4",
+      "#b8860b",
+      "#c7d4df",
+      "#d12929",
+      "#d39f1f",
+      "#e6eef5",
+      "#ffb0b0",
+      "#ffd247",
+      "#fff",
+      "#ffffff",
+      "url(#roadgrad)",
+      "url(#sky)"
+    ]
+  }
+}

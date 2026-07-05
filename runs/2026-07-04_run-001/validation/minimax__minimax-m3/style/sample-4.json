@@ -1,0 +1,25 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 7045,
+    "elements": 62,
+    "paths": 0,
+    "colors": [
+      "#000",
+      "#3d2817",
+      "#5a3a20",
+      "#8b6a3f",
+      "#c97a5b",
+      "#e8b878",
+      "#f5d8a0",
+      "#f8d8a8",
+      "#f8e0b8",
+      "#faf3e3",
+      "#fff4e0",
+      "url(#paper)",
+      "url(#paper2)",
+      "url(#paper3)"
+    ]
+  }
+}

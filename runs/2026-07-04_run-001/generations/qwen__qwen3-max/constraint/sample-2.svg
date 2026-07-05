@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="200" height="200">
+  <!-- Head -->
+  <circle cx="50" cy="40" r="20" fill="#ccc"/>
+  <!-- Ears -->
+  <polygon points="40,25 35,10 45,20" fill="#ccc"/>
+  <polygon points="60,25 65,10 55,20" fill="#ccc"/>
+  <!-- Eyes -->
+  <circle cx="42" cy="35" r="3" fill="#000"/>
+  <circle cx="58" cy="35" r="3" fill="#000"/>
+  <!-- Nose -->
+  <path d="M50,42 Q48,46 52,46 Q50,42 50,42 Z" fill="#f99"/>
+  <!-- Mouth -->
+  <path d="M50,46 Q47,50 45,48" stroke="#000" fill="none" stroke-width="1"/>
+  <path d="M50,46 Q53,50 55,48" stroke="#000" fill="none" stroke-width="1"/>
+  <!-- Body -->
+  <ellipse cx="50" cy="70" rx="15" ry="20" fill="#ccc"/>
+</svg>

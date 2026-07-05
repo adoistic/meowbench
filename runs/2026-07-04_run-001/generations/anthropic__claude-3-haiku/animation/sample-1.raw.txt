@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes tail-sway {
+      0% { transform: rotate(-20deg); }
+      50% { transform: rotate(20deg); }
+      100% { transform: rotate(-20deg); }
+    }
+    
+    .cat {
+      fill: #333;
+    }
+    
+    .tail {
+      transform-origin: 0% 100%;
+      animation: tail-sway 3s infinite linear;
+    }
+  </style>
+  
+  <g class="cat">
+    <path d="m50 80c-10 0-20-6-25-15-5-9-5-20 0-29 5-9 15-15 25-15s20 6 25 15c5 9 5 20 0 29-5 9-15 15-25 15z" />
+    <path class="tail" d="m50 90c0 0 10-20 20-20s10 20 10 20z" />
+  </g>
+</svg>

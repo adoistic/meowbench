@@ -1,0 +1,247 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 900" width="100%" height="100%">
+  <defs>
+    <!-- Background gradations -->
+    <linearGradient id="bgOuter" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0F121A" />
+      <stop offset="100%" stop-color="#1C2230" />
+    </linearGradient>
+    <linearGradient id="bgInner" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#161B26" />
+      <stop offset="100%" stop-color="#252B3B" />
+    </linearGradient>
+
+    <!-- Floor shadow -->
+    <linearGradient id="floorLight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FF8A4D" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#FF8A4D" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Cat body gradients to mimic paper folds -->
+    <linearGradient id="pGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FAFAFC" />
+      <stop offset="100%" stop-color="#E2E4E9" />
+    </linearGradient>
+
+    <linearGradient id="woBase" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E67E3B" />
+      <stop offset="100%" stop-color="#B85A21" />
+    </linearGradient>
+
+    <linearGradient id="woShad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9B4C1A" />
+      <stop offset="100%" stop-color="#703510" />
+    </linearGradient>
+
+    <linearGradient id="woShadFlat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C46228" />
+      <stop offset="100%" stop-color="#9B4C1A" />
+    </linearGradient>
+
+    <linearGradient id="nmLight" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C46228" />
+      <stop offset="100%" stop-color="#9B4C1A" />
+    </linearGradient>
+
+    <linearGradient id="woDeep" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#703510" />
+      <stop offset="100%" stop-color="#4A2207" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="900" fill="url(#bgOuter)" />
+  <rect x="45" y="45" width="910" height="810" rx="20" fill="url(#bgInner)" stroke="#2A3245" stroke-width="4" />
+
+  <!-- Decorative Origami Planes -->
+  <g fill-opacity="0.08">
+    <polygon points="0 0, 380 0, 0 280" fill="#FFCCB0" />
+    <polygon points="380 0, 150 350, 0 280" fill="#FFE3D1" />
+    <polygon points="0 900, 150 350, 480 900" fill="#FFCCB0" />
+    <polygon points="150 350, 480 900, 580 900" fill="#FFE3D1" />
+    <polygon points="1000 0, 750 250, 750 0" fill="#FFE3D1" />
+    <polygon points="1000 0, 1000 250, 750 250" fill="#FFCCB0" />
+    <polygon points="1000 250, 1000 900, 640 900" fill="#FFCCB0" />
+    <polygon points="750 250, 1000 250, 640 900" fill="#FFE3D1" />
+  </g>
+
+  <!-- Ambient Floor Shadow -->
+  <polygon points="245 805, 531 835, 635 835, 710 763" fill="url(#floorLight)" style="filter: blur(8px)" />
+
+  <!-- CAT SHADOW (Depth Hints) -->
+  <g fill="#0A0C12">
+    <polygon points="500 660, 722 800, 690 360" />
+    <polygon points="328 420, 610 599, 532 269" />
+    <polygon points="630 460, 800 830, 820 830" />
+    <polygon points="570 745, 804 830, 832 830" />
+    <polygon points="310 728, 330 728, 345 640" />
+    <polygon points="270 800, 280 800, 295 678" />
+  </g>
+
+  <!-- CAT -->
+  <g id="cat-group">
+    <!-- Tail (Pleated) -->
+    <polygon points="630 460, 800 830, 820 830" fill="url(#woBase)" />
+    <polygon points="820 830, 790 740, 630 850" fill="url(#woShad)" />
+    <!-- Tail Crease Line -->
+    <line x1="630" y1="460" x2="820" y2="830" stroke="#4A2207" stroke-width="6" stroke-linejoin="round" />
+
+    <!-- Tail Base (Behind Body) -->
+    <polygon points="610 599, 630 460, 520 599" fill="url(#woBase)" />
+    <polygon points="610 599, 630 460, 580 700" fill="url(#woShadFlat)" />
+
+    <!-- Back Left Leg (Dark) -->
+    <polygon points="250 660, 260 800, 280 800, 290 660" fill="url(#woShad)" />
+    <polygon points="245 665, 232 720, 280 800, 260 800" fill="url(#woDeep)" />
+    <!-- Outline for Depth -->
+    <polyline points="260 800, 250 660, 290 660, 280 800" fill="none" stroke="#4A2207" stroke-width="6" stroke-linejoin="round" />
+
+    <!-- Rear Body Plane -->
+    <polygon points="610 599, 360 600, 320 420" fill="url(#woBase)" />
+
+    <!-- Paws -->
+    <!-- Ears (As Triangles) -->
+    <!-- Large Background Triangles Flaring -->
+    <polygon points="320 420, 220 160, 420 150" fill="url(#woBase)" />
+    <polygon points="410 190, 530 180, 390 110" fill="url(#woBase)" />
+
+    <!-- Triangular Folded Heads & Accents (The Origami Ears) -->
+    <!-- Inner White Layer -->
+    <polygon points="320 420, 260 200, 360 195" fill="#FFFFFF" />
+    <polyline points="320 420, 260 200, 360 195" fill="none" stroke="#E5E5E5" stroke-width="2" />
+    
+    <!-- Inner Highlights -->
+    <polygon points="280 420, 320 330, 360 420" fill="url(#pGrad)" />
+    
+    <!-- Ear Back Overlay -->
+    <polygon points="320 420, 240 150, 410 165" fill="url(#woShad)" />
+    <!-- Right Ear Inner White -->
+    <polygon points="320 420, 410 165, 360 140" fill="#FFFFFF" />
+    <polyline points="320 420, 410 165, 360 140" fill="none" stroke="#E5E5E5" stroke-width="2" />
+    <!-- Right Ear Outer Orange Overlap -->
+    <polygon points="320 420, 480 165, 360 140" fill="url(#woBase)" />
+    
+    <!-- Thick Crease Line for Flap Connection -->
+    <polyline points="320 420, 240 150, 410 165" fill="none" stroke="#4A2207" stroke-width="6" stroke-linejoin="round" />
+    <polyline points="320 420, 480 165, 360 140" fill="none" stroke="#4A2207" stroke-width="6" stroke-linejoin="round" />
+    <line x1="320" y1="420" x2="360" y2="140" stroke="#4A2207" stroke-width="6" stroke-linejoin="round" />
+
+    <!-- Neck Base -->
+    <polygon points="360 500, 410 525, 360 560" fill="url(#woShad)" />
+
+    <!-- FACE & MAIN CREASES -->
+    <!-- Center Nose/Muzzle Point and Flaps -->
+    <polygon points="360 420, 210 380, 320 220" fill="url(#woBase)" />
+    <polygon points="360 420, 510 380, 400 220" fill="url(#woShad)" />
+    
+    <!-- Right Flap Crease -->
+    <polyline points="360 420, 510 380, 400 220" fill="none" stroke="#4A2207" stroke-width="6" stroke-linejoin="round" />
+    <!-- Center Crease -->
+    <polyline points="360 420, 320 220" fill="none" stroke="#4A2207" stroke-width="4" stroke-linejoin="round" />
+    
+    <!-- Left Flap Highlight -->
+    <polygon points="360 420, 210 380, 210 250, 350 340" fill="url(#woBase)" fill-opacity="0.5" />
+
+    <!-- Left Flap Crease -->
+    <polyline points="360 420, 210 380, 210 250, 350 340" fill="none" stroke="#4A2207" stroke-width="6" stroke-linejoin="round" />
+    
+    <!-- Inner Glow for Depth -->
+    <polygon points="360 420, 210 380, 320 220" fill="#4A2207" fill-opacity="0.01" />
+
+    <!-- Eyes (Geometric Triangles) -->
+    <polygon points="330 270, 280 310, 270 340" fill="#1A1A1A" />
+    <polygon points="390 270, 440 310, 450 340" fill="#1A1A1A" />
+    <!-- Eye Shadows -->
+    <polygon points="320 222, 340 243, 320 270" fill="#4A2207" fill-opacity="0.3" />
+    <polygon points="400 222, 380 243, 400 270" fill="#4A2207" fill-opacity="0.3" />
+
+    <!-- Nose (Pinkish Triangular Unit) -->
+    <polygon points="360 420, 328 370, 392 370" fill="#FF6666" />
+    
+    <!-- Hidden Thickness / Nose Shadow -->
+    <polygon points="360 420, 328 380, 392 380" fill="#E05555" />
+    
+    <!-- Nose Crease Line -->
+    <polyline points="328 370, 360 420, 392 370" fill="none" stroke="#4A2207" stroke-width="4" stroke-linejoin="round" />
+
+    <!-- Front Left Leg (Shadowed) -->
+    <polygon points="280 660, 350 660, 350 720, 270 720" fill="url(#woDeep)" />
+    <polygon points="280 660, 350 660, 370 600, 300 600" fill="url(#woShad)" />
+    
+    <!-- Paw Details Front Left (Darker) -->
+    <polygon points="270 800, 270 720, 280 720, 290 660, 350 660, 350 720, 330 720, 330 800" fill="url(#woDeep)" />
+    <polygon points="270 720, 270 800, 250 800, 250 680" fill="url(#nmLight)" />
+    <polygon points="270 800, 330 800, 330 720, 270 720" fill="url(#nmLight)" />
+    <polyline points="270 720, 270 800, 330 800, 330 720" fill="none" stroke="#4A2207" stroke-width="6" stroke-linejoin="round" />
+
+    <!-- Back Right Leg (Sunny) -->
+    <polygon points="540 660, 610 660, 610 745, 530 745" fill="url(#woDeep)" />
+    <polygon points="540 660, 610 660, 630 600, 560 600" fill="url(#woBase)" />
+    
+    <!-- Paw Details Back Right (Light) -->
+    <polygon points="530 745, 530 830, 590 830, 590 745, 610 745, 610 830, 335 830, 335 745, 355 745, 355 800, 530 800" fill="url(#woBase)" />
+    <polygon points="530 745, 610 745, 610 830, 530 830" fill="url(#woShad)" />
+    <polyline points="530 745, 610 745, 610 830, 530 830" fill="none" stroke="#4A2207" stroke-width="6" stroke-linejoin="round" />
+    
+    <!-- Front Right Leg (Sunny) -->
+    <polygon points="380 660, 510 660, 510 720, 370 720" fill="url(#woDeep)" />
+    <polygon points="380 660, 510 660, 530 600, 400 600" fill="url(#woBase)" />
+    
+    <!-- Paw Details Front Right -->
+    <polygon points="510 660, 510 720, 490 720, 490 800, 450 800, 450 720, 420 720, 420 800, 380 800, 380 720, 370 720, 370 830, 450 830, 450 720, 530 720, 530 800, 450 800, 450 830, 670 830, 670 720, 690 720, 690 830, 750 830, 750 720" fill="url(#woDeep)" />
+    <polygon points="510 720, 510 800, 450 800, 450 720" fill="url(#woBase)" />
+    <polyline points="510 720, 510 800, 450 800, 450 720" fill="none" stroke="#4A2207" stroke-width="6" stroke-linejoin="round" />
+
+    <!-- Underbelly Crease Highlights -->
+    <polygon points="342 550, 450 500, 290 600" fill="#FFFFFF" fill-opacity="0.1" />
+    <polygon points="360 500, 440 540, 290 600" fill="url(#pGrad)" />
+    <polyline points="360 500, 440 540, 290 600, 360 500" fill="none" stroke="#E5E5E5" stroke-width="2" />
+  </g>
+
+  <!-- Global Crease Lines (Volume & Flow) to Tie Origami Together -->
+  <g stroke="#1C2230" stroke-width="2" fill="none">
+    <!-- Head connecting to Body -->
+    <polyline points="320 420, 360 500, 342 550, 360 600, 370 425" />
+    <!-- Body Flow to Back Right Leg -->
+    <polyline points="360 500, 390 600, 510 660, 560 600" />
+    <!-- Face Symmetry -->
+    <polyline points="360 420, 360 600" />
+  </g>
+
+  <!-- Highlights / Texture to represent paper grain -->
+  <g stroke="#FFFFFF" stroke-width="1.5" fill="none" opacity="0.5">
+    <line x1="260" y1="200" x2="270" y2="220" />
+    <line x1="280" y1="230" x2="290" y2="250" />
+    <line x1="320" y1="240" x2="330" y2="260" />
+    <line x1="340" y1="260" x2="350" y2="280" />
+    
+    <line x1="410" y1="165" x2="420" y2="180" />
+    <line x1="430" y1="180" x2="440" y2="195" />
+    <line x1="450" y1="195" x2="460" y2="210" />
+    <line x1="460" y1="210" x2="470" y2="220" />
+
+    <line x1="210" y1="250" x2="220" y2="270" />
+    <line x1="220" y1="300" x2="230" y2="320" />
+    <line x1="210" y1="340" x2="220" y2="360" />
+    
+    <line x1="400" y1="220" x2="410" y2="240" />
+    <line x1="420" y1="260" x2="430" y2="280" />
+    <line x1="440" y1="280" x2="450" y2="300" />
+  </g>
+
+  <!-- Sharp Drop Shadows / Volumes (The 3DS秘密) -->
+  <g fill="none" stroke="#0A0C12" stroke-width="3" opacity="0.6">
+    <path d="M 245,805 L 650,805" stroke-linecap="round" />
+    <polyline points="320 420, 210 380, 210 250, 350 340" stroke-linejoin="round" />
+    <polyline points="320 420, 240 150, 410 165" stroke-linejoin="round" />
+    <polyline points="320 420, 480 165, 360 140" stroke-linejoin="round" />
+  </g>
+
+  <!-- Subtle origami "plumb line" dots -->
+  <g fill="#FFCCB0">
+    <circle cx="150" cy="350" r="2" />
+    <circle cx="750" cy="250" r="2" />
+    <circle cx="480" cy="900" r="2" />
+    <circle cx="580" cy="900" r="2" />
+    <circle cx="640" cy="900" r="2" />
+  </g>
+</svg>

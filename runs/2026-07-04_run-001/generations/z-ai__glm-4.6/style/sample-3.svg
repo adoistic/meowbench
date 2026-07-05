@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <defs>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5"/>
+      <feOffset dx="2" dy="4" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background / Floor Shadow -->
+  <ellipse cx="250" cy="440" rx="120" ry="15" fill="#000" opacity="0.15"/>
+
+  <g filter="url(#softShadow)" transform="translate(0, 10)">
+    <!-- Tail -->
+    <path d="M340,380 Q400,360 420,300 L430,290 L415,310 Q390,370 340,400 Z" fill="#E65100"/>
+    
+    <!-- Back Leg (Left) -->
+    <path d="M160,340 L130,430 L230,430 L210,340 Z" fill="#F57C00"/>
+    
+    <!-- Body (Main Mass) -->
+    <!-- Left Side Shadow -->
+    <path d="M200,280 L130,430 L250,430 L240,260 Z" fill="#E65100"/>
+    <!-- Right Side Highlight -->
+    <path d="M300,280 L370,430 L250,430 L260,260 Z" fill="#FFB74D"/>
+    
+    <!-- Chest/Center Fold -->
+    <path d="M230,280 L250,430 L270,280 Z" fill="#FFE0B2"/>
+    
+    <!-- Head Base -->
+    <!-- Left Cheek (Shadow) -->
+    <path d="M190,150 L140,260 L250,260 L240,170 Z" fill="#EF6C00"/>
+    <!-- Right Cheek (Highlight) -->
+    <path d="M310,150 L360,260 L250,260 L260,170 Z" fill="#FF9800"/>
+    <!-- Forehead (Center Highlight) -->
+    <path d="M240,170 L260,170 L260,260 L240,260" fill="#FFCC80"/>
+
+    <!-- Ears -->
+    <!-- Left Ear Outer -->
+    <path d="M190,150 L150,60 L240,170 Z" fill="#FB8C00"/>
+    <!-- Left Ear Inner -->
+    <path d="M190,150 L170,90 L220,140 Z" fill="#FF3D00"/>
+    <!-- Right Ear Outer -->
+    <path d="M310,150 L350,60 L260,170 Z" fill="#FFB74D"/>
+    <!-- Right Ear Inner -->
+    <path d="M310,150 L330,90 L280,140 Z" fill="#D84315"/>
+
+    <!-- Face Details -->
+    <!-- Nose Tip (Small Triangle) -->
+    <path d="M250,260 L240,245 L260,245 Z" fill="#3E2723"/>
+    
+    <!-- Eyes (Geometric Diamonds) -->
+    <g fill="#FFFFFF">
+      <path d="M210,200 L200,215 L210,230 L220,215 Z"/>
+      <path d="M290,200 L280,215 L290,230 L300,215 Z"/>
+    </g>
+    <!-- Pupils -->
+    <g fill="#212121">
+      <circle cx="210" cy="215" r="4"/>
+      <circle cx="290" cy="215" r="4"/>
+    </g>
+    <!-- Whiskers (lines) -->
+    <g stroke="#FFF3E0" stroke-width="2" stroke-linecap="round">
+      <line x1="140" y1="235" x2="190" y2="225"/>
+      <line x1="135" y1="250" x2="185" y2="245"/>
+      <line x1="360" y1="235" x2="310" y2="225"/>
+      <line x1="365" y1="250" x2="315" y2="245"/>
+    </g>
+  </g>
+</svg>

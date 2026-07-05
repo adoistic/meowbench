@@ -1,0 +1,9 @@
+{
+  "modelSlug": "qwen/qwen3-max",
+  "promptId": "action",
+  "sample": 4,
+  "status": "ok",
+  "temperature": 1,
+  "rawPath": "generations/qwen__qwen3-max/action/sample-4.raw.txt",
+  "svgPath": "generations/qwen__qwen3-max/action/sample-4.svg"
+}

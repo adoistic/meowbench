@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a8e0ff"/>
+      <stop offset="100%" stop-color="#fde2ff"/>
+    </linearGradient>
+
+    <!-- Drop Shadow Filter for the Cat -->
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="15" stdDeviation="10" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+
+    <!-- Cutting path for fabric-like internal shapes -->
+    <clipPath id="body-clip">
+      <path d="M 320 450 L 480 450 L 480 320 C 480 280 320 280 320 320 Z"/>
+    </clipPath>
+
+    <style>
+      /* Blinking Animation */
+      @keyframes blink {
+        0%, 96%, 98% { transform: scaleY(1); }
+        97% { transform: scaleY(0.1); }
+      }
+      
+      /* Gentle Ear Twitch */
+      @keyframes twitch-left {
+        0%, 100%, 92%, 96% { transform: rotate(0deg); }
+        93%, 95% { transform: rotate(-8deg); }
+      }
+      @keyframes twitch-right {
+        0%, 100%, 88%, 92% { transform: rotate(0deg); }
+        89%, 91% { transform: rotate(8deg); }
+      }
+
+      /* Wiggle for nose and whiskers */
+      @keyframes wiggle {
+        0%, 100% { transform: rotate(0deg); }
+        25% { transform: rotate(2deg); }
+        75% { transform: rotate(-2deg); }
+      }
+
+      /* Breathing Animation (subtle background detail) */
+      @keyframes breathe {
+        0%, 100% { transform: scaleY(1) scaleX(1); }
+        50% { transform: scaleY(0.998) scaleX(1.002); }
+      }
+
+      .eyes {
+        transform-origin: 400px 270px;
+        animation: blink 6s infinite cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .ear-left { transform-origin: 335px 120px; animation: twitch-left 6s infinite cubic-bezier(0.4, 0, 0.2, 1) 1s; }
+      .ear-right { transform-origin: 465px 120px; animation: twitch-right 6s infinite cubic-bezier(0.4, 0, 0.2, 1) 2s; }
+      .nose-group { transform-origin: 400px 300px; animation: wiggle 6s infinite ease-in-out; }
+      .cat-breath {
+        transform-origin: 400px 460px;
+        animation: breathe 5s infinite ease-in-out;
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bg-grad)"/>
+
+  <!-- Base Shadow -->
+  <ellipse cx="400" cy="530" rx="200" ry="30" fill="#f23e8d" opacity="0.2"/>
+  <ellipse cx="400" cy="530" rx="120" ry="15" fill="#000000" opacity="0.1"/>
+
+  <!-- The Cat's Waving Tail (Animated behind body) -->
+  <!-- Center of rotation is exactly at the tip of the curve connecting to the body -->
+  <g id="tail-group" transform="translate(400, 420)">
+    <animateTransform attributeName="transform" type="rotate"
+      from="-15 0 0" to="15 0 0"
+      dur="2.5s"
+      repeatCount="indefinite"
+      calcMode="spline"
+      keySplines="0.37 0 0.63 1"
+      additive="sum"/>
+    
+    <path d="M 40 0 C 120 -20 200 50 220 180 C 240 310 180 450 220 550"
+          stroke="#07005e"
+          stroke-width="40"
+          stroke-linecap="round"
+          fill="none"/>
+    <path d="M 40 0 C 120 -20 200 50 220 180 C 240 310 180 450 220 550"
+          stroke="#f98e26"
+          stroke-width="40"
+          stroke-linecap="round"
+          fill="none"
+          stroke-dasharray="0, 400, 100"
+          opacity="0.85"/>
+    <path d="M 40 0 C 120 -20 200 50 220 180 C 240 310 180 450 220 550"
+          stroke="#ffffff"
+          stroke-width="40"
+          stroke-linecap="round"
+          fill="none"
+          stroke-dasharray="0, 30, 100, 50, 100, 30"
+          opacity="0.5"/>
+  </g>
+
+  <!-- The Cat Body Group -->
+  <g class="cat-breath">
+    <!-- Main Body -->
+    <path d="M 320 450 L 480 450 L 480 320 C 480 280 320 280 320 320 Z" fill="#07005e" filter="url(#shadow)"/>
+    
+    <!-- Body Patterns (Fabric Patches) -->
+    <g clip-path="url(#body-clip)">
+      <circle cx="350" cy="350" r="90" fill="#f23e8d"/>
+      <rect x="380" y="280" width="100" height="170" fill="#f98e26"/>
+      <circle cx="460" cy="430" r="50" fill="#44b4ea"/>
+      
+      <!-- Seam Lines -->
+      <g stroke="#07005e" stroke-width="3" stroke-dasharray="8, 6">
+        <path d="M 260 350 C 300 350, 320 380, 350 415"/>
+        <path d="M 540 350 C 500 350, 480 380, 450 415"/>
+        <path d="M 320 320 L 390 450 L 480 280"/>
+      </g>
+    </g>
+
+    <!-- Hanging Legs -->
+    <g fill="#07005e" filter="url(#shadow)">
+      <!-- Left Arm -->
+      <ellipse cx="290" cy="390" rx="35" ry="65" transform="rotate(15 290 390)"/>
+      <ellipse cx="295" cy="435" rx="28" ry="22" fill="#f98e26"/>
+      <!-- Right Arm -->
+      <ellipse cx="510" cy="390" rx="35" ry="65" transform="rotate(-15 510 390)"/>
+      <ellipse cx="505" cy="435" rx="28" ry="22" fill="#f98e26"/>
+      <!-- Left Foot -->
+      <ellipse cx="340" cy="560" rx="45" ry="35"/>
+      <ellipse cx="340" cy="550" rx="35" ry="28" fill="#44b4ea"/>
+      <!-- Right Foot -->
+      <ellipse cx="460" cy="560" rx="45" ry="35"/>
+      <ellipse cx="460" cy="550" rx="35" ry="28" fill="#44b4ea"/>
+    </g>
+
+    <!-- Main Head -->
+    <g filter="url(#shadow)">
+      <!-- Base Head -->
+      <circle cx="400" cy="230" r="90" fill="#07005e"/>
+      
+      <!-- Head Patch (Left Eye) -->
+      <circle cx="355" cy="210" r="50" fill="#f23e8d"/>
+      <path d="M 320 150 A 90 90 0 0 1 480 150" fill="none" stroke="#07005e" stroke-width="4" stroke-dasharray="6, 5"/>
+      
+      <!-- Head Patch (Right Eye) -->
+      <circle cx="460" cy="240" r="40" fill="#44b4ea"/>
+      
+      <!-- Ears -->
+      <g class="ear-left">
+        <path d="M 330 160 L 370 100 L 400 170 Z" fill="#07005e" stroke="#07005e" stroke-width="10" stroke-linejoin="round"/>
+        <path d="M 342 150 L 368 105 L 388 158 Z" fill="#f98e26"/>
+      </g>
+      <g class="ear-right">
+        <path d="M 470 160 L 430 100 L 400 170 Z" fill="#07005e" stroke="#07005e" stroke-width="10" stroke-linejoin="round"/>
+        <path d="M 458 150 L 432 105 L 412 158 Z" fill="#ffffff"/>
+      </g>
+      
+      <!-- Button / Zipper -->
+      <circle cx="400" cy="160" r="12" fill="#fde2ff"/>
+      <circle cx="400" cy="160" r="4" fill="#07005e"/>
+      <path d="M 400 175 L 400 190 L 380 190" fill="none" stroke="#fde2ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Facial Details -->
+    <g class="nose-group">
+      <!-- Whiskers -->
+      <g stroke="#07005e" stroke-width="3" stroke-linecap="round">
+        <path d="M 380 290 L 270 270"/>
+        <path d="M 380 300 L 250 305"/>
+        <path d="M 380 310 L 280 340"/>
+        
+        <path d="M 420 290 L 530 270"/>
+        <path d="M 420 300 L 550 305"/>
+        <path d="M 420 310 L 520 340"/>
+      </g>
+      
+      <!-- Nose -->
+      <path d="M 385 280 L 415 280 L 400 300 Z" fill="#fde2ff" stroke="#07005e" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M 400 300 Q 400 320 380 330" fill="none" stroke="#07005e" stroke-width="3" stroke-linecap="round"/>
+      <path d="M 400 300 Q 400 320 420 330" fill="none" stroke="#07005e" stroke-width="3" stroke-linecap="round"/>
+
+      <!-- Mouth -->
+      <path d="M 380 330 Q 370 345 400 345 Q 430 345 420 330" fill="none" stroke="#07005e" stroke-width="3.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Eyes -->
+    <g class="eyes">
+      <circle cx="360" cy="260" r="14" fill="#07005e"/>
+      <circle cx="360" cy="260" r="14" fill="none" stroke="#07005e" stroke-width="4"/>
+      <circle cx="364" cy="256" r="5" fill="#ffffff"/>
+      
+      <circle cx="440" cy="260" r="14" fill="#07005e"/>
+      <circle cx="440" cy="260" r="14" fill="none" stroke="#07005e" stroke-width="4"/>
+      <circle cx="444" cy="256" r="5" fill="#ffffff"/>
+    </g>
+
+  </g>
+</svg>

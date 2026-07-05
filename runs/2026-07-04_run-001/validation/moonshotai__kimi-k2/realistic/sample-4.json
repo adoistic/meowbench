@@ -1,0 +1,31 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 9043,
+    "elements": 113,
+    "paths": 48,
+    "colors": [
+      "#1a3010",
+      "#2a5010",
+      "#3a3020",
+      "#5a4010",
+      "#6b5010",
+      "#8b6910",
+      "#8b6914",
+      "#a05050",
+      "#a08050",
+      "#c4a574",
+      "#d0c0a0",
+      "#d4b890",
+      "#e8d4b8",
+      "#e8f5d0",
+      "#f5e6d0",
+      "url(#earinner)",
+      "url(#eyegreen)",
+      "url(#furbase)",
+      "url(#furdark)",
+      "url(#nosepink)"
+    ]
+  }
+}

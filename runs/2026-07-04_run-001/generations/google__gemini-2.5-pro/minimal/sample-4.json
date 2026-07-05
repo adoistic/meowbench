@@ -1,0 +1,9 @@
+{
+  "modelSlug": "google/gemini-2.5-pro",
+  "promptId": "minimal",
+  "sample": 4,
+  "status": "ok",
+  "temperature": 1,
+  "rawPath": "generations/google__gemini-2.5-pro/minimal/sample-4.raw.txt",
+  "svgPath": "generations/google__gemini-2.5-pro/minimal/sample-4.svg"
+}

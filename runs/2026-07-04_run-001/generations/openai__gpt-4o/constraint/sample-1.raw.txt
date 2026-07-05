@@ -1,0 +1,16 @@
+```svg
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="100" cy="100" r="50" fill="gray" /> <!-- Head -->
+  <circle cx="85" cy="90" r="5" fill="white" /> <!-- Left Eye -->
+  <circle cx="115" cy="90" r="5" fill="white" /> <!-- Right Eye -->
+  <circle cx="85" cy="90" r="2" fill="black" /> <!-- Left Pupil -->
+  <circle cx="115" cy="90" r="2" fill="black" /> <!-- Right Pupil -->
+  <path d="M90,110 C95,115 105,115 110,110" stroke="black" fill="transparent" /> <!-- Mouth -->
+  <polygon points="70,60 85,80 55,80" fill="gray" /> <!-- Left Ear -->
+  <polygon points="130,60 115,80 145,80" fill="gray" /> <!-- Right Ear -->
+  <ellipse cx="75" cy="125" rx="2" ry="8" fill="gray" /> <!-- Left Whisker -->
+  <ellipse cx="125" cy="125" rx="2" ry="8" fill="gray" /> <!-- Right Whisker -->
+  <line x1="60" y1="110" x2="65" y2="115" stroke="black" /> <!-- Left Whisker Line -->
+  <line x1="140" y1="110" x2="135" y2="115" stroke="black" /> <!-- Right Whisker Line -->
+</svg>
+```

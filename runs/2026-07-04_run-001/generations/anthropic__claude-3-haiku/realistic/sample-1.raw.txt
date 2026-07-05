@@ -1,0 +1,17 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="fur-gradient" cx="50%" cy="50%" r="50%" fx="30%" fy="30%">
+      <stop offset="0%" stop-color="#ffdab9" />
+      <stop offset="100%" stop-color="#cd853f" />
+    </radialGradient>
+  </defs>
+  <g transform="translate(50, 50)">
+    <path d="M115,180 C115,180 155,160 170,130 C185,100 175,50 150,20 C125,-10 90,-10 65,20 C40,50 30,100 45,130 C60,160 100,180 115,180 Z" fill="url(#fur-gradient)" />
+    <path d="M115,180 C115,180 155,160 170,130 C185,100 175,50 150,20 C125,-10 90,-10 65,20 C40,50 30,100 45,130 C60,160 100,180 115,180 Z" fill="none" stroke="#8b4513" stroke-width="5" />
+    <ellipse cx="100" cy="130" rx="40" ry="30" fill="#ffffff" />
+    <path d="M80,120 A20,15 0 0,0 120,120" fill="none" stroke="#000000" stroke-width="5" />
+    <circle cx="90" cy="115" r="10" fill="#000000" />
+    <circle cx="110" cy="115" r="10" fill="#000000" />
+    <path d="M80,150 A40,30 0 0,0 120,150" fill="none" stroke="#8b4513" stroke-width="5" />
+  </g>
+</svg>

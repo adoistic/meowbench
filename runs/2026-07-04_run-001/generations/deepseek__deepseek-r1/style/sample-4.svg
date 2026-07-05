@@ -1,0 +1,33 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Body -->
+  <polygon points="100,50 50,100 100,150 150,100" fill="#ffcc99" stroke="#cc9966" stroke-width="2"/>
+  
+  <!-- Head -->
+  <polygon points="100,30 70,70 100,90 130,70" fill="#ffcc99" stroke="#cc9966" stroke-width="2"/>
+  
+  <!-- Ears -->
+  <polygon points="70,70 60,50 75,65" fill="#ffcc99" stroke="#cc9966" stroke-width="2"/>
+  <polygon points="130,70 140,50 125,65" fill="#ffcc99" stroke="#cc9966" stroke-width="2"/>
+  
+  <!-- Tail -->
+  <polygon points="150,100 180,80 170,110 160,100" fill="#ffcc99" stroke="#cc9966" stroke-width="2"/>
+  
+  <!-- Legs -->
+  <polygon points="50,100 40,130 60,130" fill="#ffcc99" stroke="#cc9966" stroke-width="2"/>
+  <polygon points="100,150 90,180 110,180" fill="#ffcc99" stroke="#cc9966" stroke-width="2"/>
+  <polygon points="150,100 140,130 160,130" fill="#ffcc99" stroke="#cc9966" stroke-width="2"/>
+  <polygon points="100,150 90,180 110,180" fill="#ffcc99" stroke="#cc9966" stroke-width="2" transform="translate(50)"/>
+  
+  <!-- Eyes -->
+  <polygon points="85,65 75,70 85,75" fill="#333"/>
+  <polygon points="115,65 125,70 115,75" fill="#333"/>
+  
+  <!-- Nose -->
+  <polygon points="100,80 95,85 105,85" fill="#ff6666"/>
+  
+  <!-- Whiskers -->
+  <line x1="90" y1="85" x2="60" y2="80" stroke="#666" stroke-width="1"/>
+  <line x1="90" y1="90" x2="60" y2="90" stroke="#666" stroke-width="1"/>
+  <line x1="110" y1="85" x2="140" y2="80" stroke="#666" stroke-width="1"/>
+  <line x1="110" y1="90" x2="140" y2="90" stroke="#666" stroke-width="1"/>
+</svg>

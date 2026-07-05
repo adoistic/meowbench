@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#EFEFED"/>
+  
+  <!-- Cat Shadow -->
+  <ellipse cx="200" cy="345" rx="70" ry="8" fill="#D3D2CF"/>
+  
+  <!-- Tail -->
+  <path d="M245,265 C290,265 290,175 260,180 C250,182 250,210 270,225" stroke="#E69335" stroke-width="24" stroke-linecap="round" fill="none"/>
+  
+  <!-- Body (White Belly) -->
+  <ellipse cx="200" cy="265" rx="45" ry="75" fill="#FFFFFF"/>
+  <!-- Body (Orange Base) -->
+  <ellipse cx="200" cy="260" rx="45" ry="70" fill="#F5AE6B"/>
+  
+  <!-- Front Legs -->
+  <rect x="175" y="285" width="16" height="50" rx="8" fill="#E69335"/>
+  <rect x="209" y="285" width="16" height="50" rx="8" fill="#E69335"/>
+  
+  <!-- Back Legs -->
+  <rect x="150" y="275" width="20" height="55" rx="10" fill="#E69335"/>
+  <rect x="230" y="275" width="20" height="55" rx="10" fill="#E69335"/>
+  
+  <rect x="150" y="305" width="22" height="22" rx="11" fill="#FFFFFF"/>
+  <rect x="228" y="305" width="22" height="22" rx="11" fill="#FFFFFF"/>
+  
+  <!-- Head Base -->
+  <circle cx="200" cy="145" r="60" fill="#F5AE6B"/>
+  
+  <!-- Head Patch (Left Side) -->
+  <circle cx="145" cy="145" r="40" fill="#FFFFFF"/>
+  
+  <!-- Ears -->
+  <polygon points="148,99 123,35 178,75" fill="#E69335" transform="rotate(-12 148 99)"/>
+  <polygon points="252,99 277,35 222,75" fill="#E69335" transform="rotate(12 252 99)"/>
+  
+  <polygon points="148,99 138,58 163,75" fill="#FFFFFF" transform="rotate(-12 148 99)"/>
+  <polygon points="252,99 262,58 237,75" fill="#FFFFFF" transform="rotate(12 252 99)"/>
+  
+  <!-- Face Markings -->
+  <!-- Left Eye Patch -->
+  <circle cx="168" cy="132" r="16" fill="#E69335"/>
+  <circle cx="168" cy="142" r="20" fill="#E69335"/>
+  
+  <!-- Back head cutout overlay (ensures perfect roundness) -->
+  <circle cx="200" cy="145" r="60" fill="#F5AE6B" opacity="0" pointer-events="none"/>
+  
+  <!-- Eyes -->
+  <circle cx="172" cy="135" r="5" fill="#1A1A1A"/>
+  <circle cx="228" cy="135" r="5" fill="#1A1A1A"/>
+  
+  <!-- Eye Highlights -->
+  <circle cx="170" cy="133" r="1.5" fill="#FFFFFF"/>
+  <circle cx="226" cy="133" r="1.5" fill="#FFFFFF"/>
+  
+  <!-- Eyebrows -->
+  <path d="M160,115 Q172,110 180,118" stroke="#1A1A1A" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M220,118 Q228,110 240,115" stroke="#1A1A1A" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Nose -->
+  <polygon points="192,155 208,155 200,165" fill="#1A1A1A" rx="2"/>
+  <circle cx="194" cy="157" r="2.5" fill="#FF9A9A"/>
+  <circle cx="206" cy="157" r="2.5" fill="#FF9A9A"/>
+  
+  <!-- Whiskers -->
+  <path d="M135,150 L105,140" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M135,155 L100,155" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M135,160 L105,170" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M265,150 L295,140" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M265,155 L300,155" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M265,160 L295,170" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- Mouth -->
+  <path d="M174,172 Q186,184 192,176" stroke="#1A1A1A" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M226,172 Q214,184 208,176" stroke="#1A1A1A" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Cheek Blush -->
+  <ellipse cx="140" cy="165" rx="10" ry="5" fill="#FF9A9A" opacity="0.4"/>
+  <ellipse cx="260" cy="165" rx="10" ry="5" fill="#FF9A9A" opacity="0.4"/>
+</svg>

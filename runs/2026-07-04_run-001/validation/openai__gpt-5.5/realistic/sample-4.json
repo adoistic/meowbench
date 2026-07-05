@@ -1,0 +1,40 @@
+{
+  "valid": false,
+  "reasons": [
+    "css-url"
+  ],
+  "stats": {
+    "bytes": 13581,
+    "elements": 162,
+    "paths": 94,
+    "colors": [
+      "#080706",
+      "#160f0d",
+      "#17120e",
+      "#1a1712",
+      "#211714",
+      "#231514",
+      "#241a17",
+      "#3a2521",
+      "#3a2822",
+      "#3f2b25",
+      "#4a2928",
+      "#4b332b",
+      "#5a3b2e",
+      "#5a3b2f",
+      "#6a4936",
+      "#6b4937",
+      "#8b6044",
+      "#c9a47e",
+      "#e6c7a0",
+      "#e7c8a4",
+      "#fff9df",
+      "url(#bodygrad)",
+      "url(#earinnergrad)",
+      "url(#eyegrad)",
+      "url(#headgrad)",
+      "url(#muzzlegrad)",
+      "url(#tailgrad)"
+    ]
+  }
+}

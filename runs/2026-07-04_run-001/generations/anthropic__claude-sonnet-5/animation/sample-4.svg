@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Background -->
+  <rect width="400" height="400" fill="#f0e6d2"/>
+
+  <!-- Tail (animated) -->
+  <g transform="translate(270,260)">
+    <path d="M0,0 C 40,-10 70,-60 50,-110 C 40,-140 10,-150 -10,-140"
+          fill="none" stroke="#4a4a4a" stroke-width="18" stroke-linecap="round">
+      <animateTransform attributeName="transform"
+                         type="rotate"
+                         values="0;25;0;-20;0"
+                         keyTimes="0;0.3;0.5;0.8;1"
+                         dur="2.4s"
+                         repeatCount="indefinite"
+                         calcMode="spline"
+                         keySplines="0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1"/>
+    </path>
+  </g>
+
+  <!-- Body -->
+  <ellipse cx="200" cy="290" rx="90" ry="60" fill="#4a4a4a"/>
+
+  <!-- Front legs -->
+  <rect x="150" y="320" width="18" height="45" rx="8" fill="#4a4a4a"/>
+  <rect x="230" y="320" width="18" height="45" rx="8" fill="#4a4a4a"/>
+
+  <!-- Head -->
+  <circle cx="180" cy="180" r="70" fill="#4a4a4a"/>
+
+  <!-- Ears -->
+  <polygon points="130,140 110,80 160,120" fill="#4a4a4a"/>
+  <polygon points="230,140 260,75 200,115" fill="#4a4a4a"/>
+  <polygon points="128,132 118,100 148,120" fill="#f0a6b8"/>
+  <polygon points="228,132 245,95 205,118" fill="#f0a6b8"/>
+
+  <!-- Face -->
+  <circle cx="155" cy="175" r="8" fill="#222"/>
+  <circle cx="205" cy="175" r="8" fill="#222"/>
+  <circle cx="157" cy="172" r="2.5" fill="#fff"/>
+  <circle cx="207" cy="172" r="2.5" fill="#fff"/>
+
+  <!-- Nose -->
+  <polygon points="180,195 172,205 188,205" fill="#f0a6b8"/>
+
+  <!-- Mouth -->
+  <path d="M180,205 Q170,215 160,208" stroke="#222" stroke-width="2" fill="none"/>
+  <path d="M180,205 Q190,215 200,208" stroke="#222" stroke-width="2" fill="none"/>
+
+  <!-- Whiskers -->
+  <g stroke="#222" stroke-width="1.5">
+    <line x1="120" y1="190" x2="60" y2="180"/>
+    <line x1="120" y1="200" x2="60" y2="200"/>
+    <line x1="120" y1="210" x2="60" y2="220"/>
+
+    <line x1="240" y1="190" x2="300" y2="180"/>
+    <line x1="240" y1="200" x2="300" y2="200"/>
+    <line x1="240" y1="210" x2="300" y2="220"/>
+  </g>
+</svg>

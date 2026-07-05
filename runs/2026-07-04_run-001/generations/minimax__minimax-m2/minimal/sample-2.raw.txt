@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="95" fill="#ffe0b2" />
+  
+  <!-- Tail -->
+  <path d="M125 145 Q155 155 155 125" stroke="#37474f" stroke-width="10" fill="none" stroke-linecap="round" />
+  
+  <!-- Body -->
+  <ellipse cx="100" cy="145" rx="38" ry="35" fill="#37474f" />
+  
+  <!-- Head -->
+  <circle cx="100" cy="90" r="35" fill="#37474f" />
+  
+  <!-- Ears -->
+  <polygon points="72,65 60,30 95,55" fill="#37474f" />
+  <polygon points="128,65 140,30 105,55" fill="#37474f" />
+  
+  <!-- Eyes -->
+  <circle cx="88" cy="85" r="4" fill="#ffffff" />
+  <circle cx="112" cy="85" r="4" fill="#ffffff" />
+  
+  <!-- Nose -->
+  <polygon points="96,94 104,94 100,100" fill="#ff8a65" />
+  
+  <!-- Whiskers -->
+  <g stroke="#90a4ae" stroke-width="1.5">
+    <line x1="80" y1="95" x2="60" y2="92" />
+    <line x1="80" y1="100" x2="60" y2="102" />
+    <line x1="120" y1="95" x2="140" y2="92" />
+    <line x1="120" y1="100" x2="140" y2="102" />
+  </g>
+</svg>

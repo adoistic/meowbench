@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Head -->
+  <ellipse cx="100" cy="120" rx="55" ry="45" fill="#FFB347"/>
+  
+  <!-- Ears -->
+  <polygon points="55,90 35,45 80,70" fill="#FFB347"/>
+  <polygon points="145,90 165,45 120,70" fill="#FFB347"/>
+  
+  <!-- Eyes -->
+  <ellipse cx="75" cy="115" rx="10" ry="12" fill="white"/>
+  <ellipse cx="125" cy="115" rx="10" ry="12" fill="white"/>
+  <ellipse cx="75" cy="115" rx="4" ry="6" fill="#333"/>
+  <ellipse cx="125" cy="115" rx="4" ry="6" fill="#333"/>
+  
+  <!-- Nose -->
+  <polygon points="95,135 105,135 100,145" fill="#FF69B4"/>
+  
+  <!-- Mouth -->
+  <path d="M100,145 Q90,155 82,148 M100,145 Q110,155 118,148" fill="none" stroke="#333" stroke-width="2"/>
+  
+  <!-- Whiskers -->
+  <path d="M55,135 L25,125 M55,140 L25,140 M55,145 L25,155 M145,135 L175,125 M145,140 L175,140 M145,145 L175,155" stroke="#333" stroke-width="2" fill="none"/>
+</svg>

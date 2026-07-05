@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="12" dy="20" stdDeviation="15" flood-color="#000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="800" fill="#1e1e24" />
+  <circle cx="400" cy="400" r="340" fill="#f4f0eb" opacity="0.04" />
+
+  <g filter="url(#shadow)" stroke="#73675D" stroke-width="1.5" stroke-opacity="0.6" stroke-linejoin="round">
+    
+    <!-- TAIL -->
+    <polygon points="550,550 680,580 600,680" fill="#D9CEC2" />
+    <polygon points="600,680 740,640 680,580" fill="#B7AC9E" />
+    <polygon points="680,580 740,640 780,580" fill="#F2EAE0" />
+
+    <!-- BODY -->
+    <polygon points="400,600 650,720 550,550" fill="#514940" />
+    <polygon points="550,550 550,720 400,600" fill="#F2EAE0" />
+    <polygon points="400,600 350,720 250,550" fill="#B7AC9E" />
+    <polygon points="250,550 200,720 400,600" fill="#73675D" />
+    
+    <polygon points="500,450 400,600 550,550" fill="#D9CEC2" />
+    <polygon points="250,550 400,600 350,450" fill="#95897D" />
+    <polygon points="550,400 500,450 350,450" fill="#F2EAE0" />
+    <polygon points="200,400 350,450 250,550" fill="#514940" />
+
+    <!-- NECK -->
+    <polygon points="350,390 350,450 550,400" fill="#D9CEC2" />
+    <polygon points="480,320 550,400 350,390" fill="#95897D" />
+    <polygon points="350,390 200,400 350,450" fill="#73675D" />
+    <polygon points="230,320 200,400 350,390" fill="#514940" />
+
+    <!-- HEAD -->
+    <!-- Chin & Mouth -->
+    <polygon points="350,300 380,360 350,390" fill="#514940" />
+    <polygon points="350,300 320,360 350,390" fill="#73675D" />
+    <polygon points="350,300 420,260 380,360" fill="#F2EAE0" />
+    <polygon points="290,280 350,300 320,360" fill="#B7AC9E" />
+    
+    <!-- Cheeks & Nose -->
+    <polygon points="420,260 450,260 480,320" fill="#D9CEC2" />
+    <polygon points="290,280 230,320 350,300" fill="#95897D" />
+    <polygon points="420,260 450,230 450,260" fill="#F2EAE0" />
+    <polygon points="290,280 350,300 420,260" fill="#B7AC9E" />
+    
+    <!-- Forehead & Ears (Right) -->
+    <polygon points="380,180 290,280 420,260" fill="#F2EAE0" />
+    <polygon points="550,170 450,230 480,240" fill="#95897D" />
+    <polygon points="550,170 480,200 450,230" fill="#73675D" />
+
+    <!-- Forehead & Ears (Left) -->
+    <polygon points="320,200 290,280 380,180" fill="#D9CEC2" />
+    <polygon points="320,200 230,260 290,280" fill="#B7AC9E" />
+    <polygon points="200,150 230,260 320,200" fill="#73675D" />
+    <polygon points="200,150 280,220 230,260" fill="#514940" />
+
+    <!-- EYES -->
+    <!-- Left Eye -->
+    <polygon points="280,275 295,270 285,260 270,265" fill="#D9CEC2" />
+    <polygon points="284,271 290,268 283,264 278,267" fill="#1e1e24" />
+    <polygon points="288,269 289,268 290,268 289,269" fill="#F2EAE0" />
+    
+    <!-- Right Eye -->
+    <polygon points="410,255 425,250 415,240 405,245" fill="#D9CEC2" />
+    <polygon points="414,251 420,248 413,244 408,247" fill="#1e1e24" />
+    <polygon points="418,249 419,248 420,248 419,249" fill="#F2EAE0" />
+
+    <!-- NOSE -->
+    <polygon points="345,295 355,295 350,305" fill="#1e1e24" />
+    <polygon points="348,296 350,295 350,297 348,298" fill="#F2EAE0" />
+
+    <!-- WHISKERS (Left) -->
+    <line x1="240" y1="320" x2="140" y2="300" stroke="#73675D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+    <line x1="230" y1="340" x2="130" y2="340" stroke="#73675D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+    <line x1="240" y1="360" x2="150" y2="380" stroke="#73675D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- WHISKERS (Right) -->
+    <line x1="480" y1="300" x2="570" y2="280" stroke="#73675D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+    <line x1="490" y1="320" x2="580" y2="320" stroke="#73675D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+    <line x1="480" y1="340" x2="560" y2="360" stroke="#73675D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+
+  </g>
+</svg>

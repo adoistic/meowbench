@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <!-- Base fur (light brown) -->
+  <path d="M100,30 C85,20 65,20 55,35 C45,50 50,70 60,80 C55,90 58,105 70,110 C75,120 85,125 100,125 C115,125 125,120 130,110 C142,105 145,90 140,80 C150,70 155,50 145,35 C135,20 115,20 100,30 Z" fill="#D2B48C"/>
+
+  <!-- Body shadow (darker brown) -->
+  <path d="M100,40 C88,30 72,30 62,42 C55,55 60,70 68,78 C65,85 68,95 78,100 C82,107 88,110 100,110 C112,110 118,107 122,100 C132,95 135,85 132,78 C140,70 145,55 138,42 C128,30 112,30 100,40 Z" fill="#A0522D" opacity="0.3"/>
+
+  <!-- Head fur shading -->
+  <ellipse cx="100" cy="35" rx="20" ry="15" fill="#A0522D" opacity="0.2"/>
+  
+  <!-- Left ear -->
+  <path d="M85,25 L80,15 L90,20 Z" fill="#D2B48C"/>
+  <path d="M85,25 L83,18 L88,20 Z" fill="#A0522D" opacity="0.4"/>
+  
+  <!-- Right ear -->
+  <path d="M115,25 L120,15 L110,20 Z" fill="#D2B48C"/>
+  <path d="M115,25 L117,18 L112,20 Z" fill="#A0522D" opacity="0.4"/>
+
+  <!-- Left eye -->
+  <ellipse cx="90" cy="35" rx="4" ry="5" fill="white"/>
+  <ellipse cx="90" cy="35" rx="2" ry="3" fill="black"/>
+  <ellipse cx="89" cy="34" rx="1" ry="1" fill="white" opacity="0.7"/>
+
+  <!-- Right eye -->
+  <ellipse cx="110" cy="35" rx="4" ry="5" fill="white"/>
+  <ellipse cx="110" cy="35" rx="2" ry="3" fill="black"/>
+  <ellipse cx="109" cy="34" rx="1" ry="1" fill="white" opacity="0.7"/>
+
+  <!-- Nose -->
+  <path d="M100,42 L97,46 L103,46 Z" fill="#FFB6C1"/>
+
+  <!-- Mouth/whisker area -->
+  <path d="M100,46 L100,50" stroke="#A0522D" stroke-width="1"/>
+  <path d="M95,48 L85,46" stroke="#A0522D" stroke-width="0.5"/>
+  <path d="M95,50 L85,52" stroke="#A0522D" stroke-width="0.5"/>
+  <path d="M105,48 L115,46" stroke="#A0522D" stroke-width="0.5"/>
+  <path d="M105,50 L115,52" stroke="#A0522D" stroke-width="0.5"/>
+
+  <!-- Front legs -->
+  <path d="M75,85 L70,110 L80,115 L85,90 Z" fill="#D2B48C"/>
+  <path d="M125,85 L130,110 L120,115 L115,90 Z" fill="#D2B48C"/>
+  
+  <!-- Leg shading -->
+  <path d="M72,90 L70,110 L78,113 L82,92 Z" fill="#A0522D" opacity="0.2"/>
+  <path d="M128,90 L130,110 L122,113 L118,92 Z" fill="#A0522D" opacity="0.2"/>
+
+  <!-- Tail -->
+  <path d="M140,80 C160,70 170,50 160,40 C155,50 150,65 140,80 Z" fill="#D2B48C"/>
+  <path d="M142,82 C158,72 165,55 158,45 C154,52 150,63 142,80 Z" fill="#A0522D" opacity="0.3"/>
+
+  <!-- Belly and inner leg fur -->
+  <path d="M80,80 C90,90 110,90 120,80 C125,100 115,115 100,115 C85,115 75,100 80,80 Z" fill="#D2B48C"/>
+  <path d="M85,85 C95,92 105,92 115,85 C118,95 112,108 100,108 C88,108 82,95 85,85 Z" fill="#C19A6B" opacity="0.4"/>
+
+  <!-- Additional fur texture (subtle) -->
+  <path d="M90,60 Q95,58 100,62 Q105,58 110,60" stroke="#A0522D" stroke-width="0.5" fill="none" opacity="0.3"/>
+  <path d="M95,70 Q100,68 105,70" stroke="#A0522D" stroke-width="0.5" fill="none" opacity="0.2"/>
+</svg>

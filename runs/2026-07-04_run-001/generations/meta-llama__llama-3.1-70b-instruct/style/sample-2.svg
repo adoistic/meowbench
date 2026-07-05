@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <!-- face -->
+  <path d="M200 100 L220 80 L180 80 Z" fill="#FFFFFF" stroke="#000000" stroke-width="4" />
+  <!-- ear -->
+  <path d="M220 80 L240 60 L240 100 L220 80 Z" fill="#FFFFFF" stroke="#000000" stroke-width="4" />
+  <!-- ear -->
+  <path d="M180 80 L160 60 L160 100 L180 80 Z" fill="#FFFFFF" stroke="#000000" stroke-width="4" />
+  <!-- body -->
+  <path d="M200 150 L250 250 L150 250 L200 150 Z" fill="#FFFFFF" stroke="#000000" stroke-width="4" />
+  <!-- tail -->
+  <path d="M200 250 L200 300 L180 320 L220 320 L200 250 Z" fill="#FFFFFF" stroke="#000000" stroke-width="4" />
+  <!-- leg -->
+  <path d="M220 250 L250 300 L230 320 L200 300 L220 250 Z" fill="#FFFFFF" stroke="#000000" stroke-width="4" />
+  <!-- leg -->
+  <path d="M180 250 L150 300 L170 320 L200 300 L180 250 Z" fill="#FFFFFF" stroke="#000000" stroke-width="4" />
+  <!-- whisker -->
+  <path d="M220 120 L250 150" stroke="#000000" stroke-width="6" />
+  <!-- whisker -->
+  <path d="M180 120 L150 150" stroke="#000000" stroke-width="6" />
+  <!-- eye -->
+  <circle cx="200" cy="100" r="10" fill="#000000" />
+  <!-- eye -->
+  <circle cx="220" cy="100" r="10" fill="#000000" />
+  <!-- nose -->
+  <circle cx="200" cy="120" r="5" fill="#000000" />
+</svg>

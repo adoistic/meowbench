@@ -1,0 +1,9 @@
+{
+  "modelSlug": "openai/gpt-3.5-turbo",
+  "promptId": "style",
+  "sample": 3,
+  "status": "ok",
+  "temperature": 1,
+  "rawPath": "generations/openai__gpt-3.5-turbo/style/sample-3.raw.txt",
+  "svgPath": "generations/openai__gpt-3.5-turbo/style/sample-3.svg"
+}

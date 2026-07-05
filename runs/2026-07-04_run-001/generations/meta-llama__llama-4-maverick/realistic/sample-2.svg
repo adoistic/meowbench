@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- Cat body -->
+  <ellipse cx="200" cy="150" rx="80" ry="60" fill="#964B00" stroke="#786C3B" stroke-width="2" />
+  
+  <!-- Fur shading -->
+  <path d="M 180,100 C 160,120 140,140 120,160" stroke="#786C3B" stroke-width="2" fill="none" />
+  <path d="M 220,100 C 240,120 260,140 280,160" stroke="#786C3B" stroke-width="2" fill="none" />
+  <path d="M 150,180 C 170,200 190,220 210,240" stroke="#786C3B" stroke-width="2" fill="none" />
+  
+  <!-- Head and ears -->
+  <circle cx="200" cy="80" r="40" fill="#964B00" stroke="#786C3B" stroke-width="2" />
+  <path d="M 180,60 L 160,40 L 180,20 Z" fill="#964B00" stroke="#786C3B" stroke-width="2" />
+  <path d="M 220,60 L 240,40 L 220,20 Z" fill="#964B00" stroke="#786C3B" stroke-width="2" />
+  
+  <!-- Eyes and nose -->
+  <circle cx="190" cy="70" r="10" fill="#000" />
+  <circle cx="210" cy="70" r="10" fill="#000" />
+  <circle cx="200" cy="90" r="5" fill="#FF0000" />
+  
+  <!-- Legs and tail -->
+  <rect x="170" y="200" width="20" height="50" fill="#964B00" stroke="#786C3B" stroke-width="2" />
+  <rect x="210" y="200" width="20" height="50" fill="#964B00" stroke="#786C3B" stroke-width="2" />
+  <path d="M 200,250 L 220,280 L 240,300" stroke="#786C3B" stroke-width="2" fill="#964B00" />
+</svg>

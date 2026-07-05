@@ -1,0 +1,24 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cat body -->
+  <circle cx="200" cy="220" r="80" fill="gray"/>
+  <!-- Cat head -->
+  <circle cx="140" cy="180" r="40" fill="gray"/>
+  <!-- Cat ears -->
+  <circle cx="110" cy="140" r="20" fill="gray"/>
+  <circle cx="170" cy="140" r="20" fill="gray"/>
+  <!-- Cat eyes -->
+  <circle cx="130" cy="170" r="5" fill="black"/>
+  <circle cx="150" cy="170" r="5" fill="black"/>
+  <!-- Cat nose -->
+  <circle cx="140" cy="190" r="3" fill="black"/>
+  <!-- Cat mouth -->
+  <path d="M130 200 Q140 220 150 200" stroke="black" fill="transparent" />
+  <!-- Cat body -->
+  <path d="M120 240 Q140 260 160 240 Q180 220 200 240 Q220 220 240 240" fill="gray"/>
+  <!-- Cat legs -->
+  <path d="M160 240 L160 280" stroke="gray" />
+  <path d="M200 240 L200 280" stroke="gray" />
+  <!-- Bicycle -->
+  <path d="M100 280 L100 300 L240 300 L240 280 Z" fill="black"/>
+  <path d="M100 300 L120 320 L220 320 L240 300" fill="transparent" stroke="black" />
+</svg>

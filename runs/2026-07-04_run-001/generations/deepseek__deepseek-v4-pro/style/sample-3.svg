@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="500" height="500" fill="#1a1a24" rx="30" />
+  
+  <!-- Floor Shadow -->
+  <ellipse cx="250" cy="470" rx="110" ry="12" fill="#0d0d14" />
+
+  <!-- Tail (Drawn behind the body) -->
+  <!-- Tail Base -->
+  <polygon points="160,380 80,320 110,280 180,360" fill="#D4D4D8" />
+  <!-- Tail Mid -->
+  <polygon points="80,320 40,240 100,220 110,280" fill="#A1A1AA" />
+  <!-- Tail Tip -->
+  <polygon points="40,240 70,160 130,170 100,220" fill="#D4D4D8" />
+
+  <!-- Body -->
+  <!-- Left Flank -->
+  <polygon points="170,260 140,440 250,440 250,260" fill="#D4D4D8" />
+  <!-- Right Flank -->
+  <polygon points="330,260 360,440 250,440 250,260" fill="#A1A1AA" />
+  <!-- Center Chest -->
+  <polygon points="170,260 330,260 250,440" fill="#FFFFFF" />
+  
+  <!-- Paws -->
+  <!-- Left Paw -->
+  <polygon points="140,440 180,470 250,470 250,440" fill="#D4D4D8" />
+  <!-- Right Paw -->
+  <polygon points="360,440 320,470 250,470 250,440" fill="#A1A1AA" />
+  <!-- Center Paw Fold -->
+  <polygon points="250,440 180,470 320,470" fill="#F4F4F5" />
+
+  <!-- Head -->
+  <!-- Left Ear -->
+  <polygon points="160,210 210,80 210,200" fill="#D4D4D8" />
+  <!-- Right Ear -->
+  <polygon points="340,210 290,80 290,200" fill="#A1A1AA" />
+  
+  <!-- Inner Ears (Pink Accent) -->
+  <polygon points="175,195 210,105 205,195" fill="#F9A8D4" />
+  <polygon points="325,195 290,105 295,195" fill="#F9A8D4" />
+
+  <!-- Face -->
+  <!-- Forehead -->
+  <polygon points="250,120 210,200 290,200" fill="#FFFFFF" />
+  <!-- Left Cheek -->
+  <polygon points="210,200 170,260 250,280" fill="#D4D4D8" />
+  <!-- Right Cheek -->
+  <polygon points="290,200 330,260 250,280" fill="#A1A1AA" />
+  
+  <!-- Snout -->
+  <polygon points="250,170 210,200 250,240 290,200" fill="#FFFFFF" />
+  
+  <!-- Mouth Folds -->
+  <polygon points="210,200 250,240 230,260" fill="#E5E5E6" />
+  <polygon points="290,200 250,240 270,260" fill="#D4D4D8" />
+  <polygon points="230,260 250,240 270,260 250,280" fill="#F4F4F5" />
+
+  <!-- Eyes (Dark Geometric Slits) -->
+  <polygon points="215,180 230,190 215,190" fill="#52525B" />
+  <polygon points="285,180 270,190 285,190" fill="#52525B" />
+
+  <!-- Nose -->
+  <polygon points="240,205 250,215 260,205 250,195" fill="#F9A8D4" />
+
+  <!-- Whiskers -->
+  <!-- Left Whiskers -->
+  <polygon points="170,260 100,240 150,250" fill="#71717A" />
+  <polygon points="170,270 100,270 155,270" fill="#71717A" />
+  <!-- Right Whiskers -->
+  <polygon points="330,260 400,240 350,250" fill="#71717A" />
+  <polygon points="330,270 400,270 345,270" fill="#71717A" />
+</svg>

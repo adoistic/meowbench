@@ -1,0 +1,105 @@
+<svg viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <style>
+            .bg-circle { fill: #fdf6e3; }
+            .cat-body { fill: #2D2D2D; }
+            .cat-light { fill: #F2F2F2; }
+            .cat-pink { fill: #F8BBD0; }
+            .cat-stripe { stroke: #1A1A1A; stroke-width: 5; stroke-linecap: round; }
+            .whisker { stroke: rgba(255,255,255,0.8); stroke-width: 2; stroke-linecap: round; }
+            .collar { stroke: #FF5252; stroke-width: 6; stroke-linecap: round; }
+        </style>
+    </defs>
+
+    <!-- Background -->
+    <rect width="100%" height="100%" fill="#FDFBF7" />
+    <circle cx="125" cy="125" r="115" class="bg-circle" opacity="0.8" />
+
+    <!-- Ground Shadow -->
+    <ellipse cx="110" cy="185" rx="70" ry="15" fill="rgba(0,0,0,0.08)" />
+    <ellipse cx="110" cy="185" rx="40" ry="8" fill="rgba(0,0,0,0.12)" />
+
+    <!-- Back Legs -->
+    <ellipse cx="115" cy="158" rx="18" ry="14" class="cat-body" />
+    <ellipse cx="135" cy="156" rx="15" ry="10" class="cat-body" />
+
+    <!-- Tail (Animated) -->
+    <g>
+        <animateTransform 
+            attributeName="transform" 
+            type="rotate" 
+            values="-35 135 145; 0 135 145; 35 135 145; 0 135 145; -35 135 145" 
+            keyTimes="0; 0.25; 0.5; 0.75; 1" 
+            dur="2s" 
+            repeatCount="indefinite" 
+            calcMode="spline" 
+            keySplines="0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1" />
+        
+        <!-- Base Tail -->
+        <path d="M 135 145 C 180 120, 220 170, 180 200" fill="none" class="cat-body" stroke-width="16" stroke-linecap="round" />
+        <!-- Striped Tail Detail -->
+        <path d="M 135 145 C 180 120, 220 170, 180 200" fill="none" stroke="#1A1A1A" stroke-width="12" stroke-dasharray="8 16" stroke-linecap="round" />
+    </g>
+
+    <!-- Cat Body -->
+    <ellipse cx="100" cy="130" rx="45" ry="35" class="cat-body" />
+    
+    <!-- Body Stripes -->
+    <path d="M 65 120 Q 100 130 135 120" class="cat-stripe" fill="none" />
+    <path d="M 60 130 Q 100 140 130 130" class="cat-stripe" fill="none" />
+    <path d="M 70 140 Q 100 148 120 140" class="cat-stripe" fill="none" />
+
+    <!-- Front Legs & Paws -->
+    <rect x="75" y="150" width="16" height="30" rx="8" class="cat-body" />
+    <rect x="95" y="150" width="16" height="30" rx="8" class="cat-body" />
+    <ellipse cx="83" cy="180" rx="10" ry="6" class="cat-light" />
+    <ellipse cx="103" cy="180" rx="10" ry="6" class="cat-light" />
+
+    <!-- Cat Head -->
+    <circle cx="80" cy="90" r="30" class="cat-body" />
+    
+    <!-- Ears -->
+    <polygon points="55,65 45,35 75,60" class="cat-body" />
+    <polygon points="85,60 115,35 105,65" class="cat-body" />
+    <polygon points="58,62 50,45 70,60" class="cat-pink" />
+    <polygon points="88,60 108,45 100,62" class="cat-pink" />
+
+    <!-- Cheeks -->
+    <ellipse cx="60" cy="100" rx="14" ry="12" class="cat-body" />
+    <ellipse cx="100" cy="100" rx="14" ry="12" class="cat-body" />
+
+    <!-- Eyes -->
+    <ellipse cx="65" cy="90" rx="7" ry="8" class="cat-light" />
+    <ellipse cx="95" cy="90" rx="7" ry="8" class="cat-light" />
+
+    <!-- Pupils & Sparkles -->
+    <ellipse cx="67" cy="90" rx="3" ry="6" fill="#1A1A1A" />
+    <ellipse cx="97" cy="90" rx="3" ry="6" fill="#1A1A1A" />
+    <circle cx="64" cy="88" r="2" fill="#FFFFFF" />
+    <circle cx="94" cy="88" r="2" fill="#FFFFFF" />
+
+    <!-- Nose & Mouth -->
+    <polygon points="78,98 82,98 80,102" class="cat-pink" />
+    <path d="M 73 106 Q 80 112 80 105 Q 80 112 87 106" fill="none" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" />
+
+    <!-- Whiskers -->
+    <line x1="45" y1="98" x2="20" y2="95" class="whisker" />
+    <line x1="45" y1="102" x2="18" y2="102" class="whisker" />
+    <line x1="115" y1="98" x2="140" y2="95" class="whisker" />
+    <line x1="115" y1="102" x2="142" y2="102" class="whisker" />
+
+    <!-- Collar -->
+    <path d="M 60 110 Q 80 120 100 110" fill="none" class="collar" />
+
+    <!-- Animated Bell -->
+    <g>
+        <animateTransform 
+            attributeName="transform" 
+            type="translate" 
+            values="0 0; 0 2; 0 0; 0 -2; 0 0" 
+            dur="0.4s" 
+            repeatCount="indefinite" />
+        <circle cx="80" cy="115" r="7" fill="#FFD700" />
+        <circle cx="80" cy="116" r="2.5" stroke="#DAA520" stroke-width="1.5" fill="none" />
+    </g>
+</svg>

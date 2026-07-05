@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs/>
+  <!-- ground shadow -->
+  <ellipse cx="128" cy="214" rx="62" ry="12" fill="black" opacity="0.1"/>
+  <!-- tail behind body -->
+  <path d="M168 152 C 198 148 212 168 206 186 C 202 198 188 204 178 198" fill="none" stroke="#7E8394" stroke-width="20" stroke-linecap="round"/>
+  <!-- ears (behind head) -->
+  <polygon points="104,54 92,84 114,78" fill="#7E8394"/>
+  <polygon points="152,54 164,84 142,78" fill="#7E8394"/>
+  <!-- inner ears -->
+  <polygon points="104,62 96,80 108,76" fill="#F2B8C6"/>
+  <polygon points="152,62 160,80 148,76" fill="#F2B8C6"/>
+  <!-- body -->
+  <ellipse cx="128" cy="160" rx="56" ry="64" fill="#7E8394"/>
+  <!-- head -->
+  <circle cx="128" cy="98" r="38" fill="#7E8394"/>
+  <!-- face -->
+  <circle cx="114" cy="96" r="5" fill="#2E2F38"/>
+  <circle cx="142" cy="96" r="5" fill="#2E2F38"/>
+  <polygon points="128,108 122,114 134,114" fill="#E79DA8"/>
+  <!-- whiskers -->
+  <g stroke="#2E2F38" stroke-width="3" stroke-linecap="round">
+    <!-- left -->
+    <line x1="96" y1="104" x2="114" y2="102"/>
+    <line x1="96" y1="114" x2="114" y2="114"/>
+    <!-- right -->
+    <line x1="160" y1="102" x2="142" y2="104"/>
+    <line x1="160" y1="114" x2="142" y2="114"/>
+  </g>
+</svg>

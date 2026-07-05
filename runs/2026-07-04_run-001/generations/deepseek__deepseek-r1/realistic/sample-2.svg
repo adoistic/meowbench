@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 350">
+  <defs>
+    <filter id="fur" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox">
+      <feTurbulence baseFrequency="0.03" type="fractalNoise" numOctaves="4" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <linearGradient id="shadow" gradientUnits="userSpaceOnUse" x1="200" y1="50" x2="200" y2="300">
+      <stop offset="0" stop-color="#9e9e9e"/>
+      <stop offset="0.5" stop-color="#7a7a7a"/>
+      <stop offset="1" stop-color="#5a5a5a"/>
+    </linearGradient>
+    <radialGradient id="chest" cx="195" cy="190" r="25" gradientUnits="userSpaceOnUse">
+      <stop offset="0.8" stop-color="#d6d6d6"/>
+      <stop offset="1" stop-color="#a0a0a0"/>
+    </radialGradient>
+    <linearGradient id="leg" gradientUnits="userSpaceOnUse" x1="240" y1="200" x2="200" y2="230">
+      <stop offset="0.3" stop-color="#cccccc"/>
+      <stop offset="1" stop-color="#8c8c8c"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Body -->
+  <path d="M180 150 Q220 90 280 120 Q320 150 310 200 Q310 250 260 280 Q210 300 170 290 Q140 270 130 240 Q100 220 120 190 Q140 160 180 150Z" fill="url(#shadow)" filter="url(#fur)"/>
+  
+  <!-- Chest -->
+  <ellipse cx="195" cy="195" rx="35" ry="25" fill="url(#chest)" filter="url(#fur)"/>
+  
+  <!-- Head -->
+  <path d="M240 110 Q270 80 300 90 Q330 110 310 130 Q290 160 240 150 Q230 130 240 110Z" fill="url(#shadow)" filter="url(#fur)"/>
+  
+  <!-- Ears -->
+  <path d="M290 80 L310 60 L300 85 Z" fill="#444" filter="url(#fur)"/>
+  <path d="M280 100 L290 70 L305 95 Z" fill="#444" filter="url(#fur)"/>
+  
+  <!-- Forelegs -->
+  <path d="M220 170 L210 230 L190 240 L195 210 Z" fill="url(#leg)" filter="url(#fur)"/>
+  <path d="M260 170 L250 220 L230 230 L240 200 Z" fill="url(#leg)" filter="url(#fur)"/>
+  
+  <!-- Hind leg -->
+  <path d="M135 230 L115 280 L135 300 L155 260 Z" fill="#6e6e6e" filter="url(#fur)"/>
+  
+  <!-- Tail -->
+  <path d="M165 285 Q130 270 110 290 Q90 320 120 330 Q160 340 180 310 Z" fill="#5a5a5a" filter="url(#fur)"/>
+  
+  <!-- Facial features -->
+  <circle cx="270" cy="120" r="6" fill="#1a1a1a"/>
+  <circle cx="250" cy="125" r="6" fill="#1a1a1a"/>
+  <path d="M265 140 Q260 145 255 143" stroke="#333" stroke-width="2" fill="none"/>
+  <polygon points="280 138, 275 140, 280 142" fill="#111"/>
+</svg>

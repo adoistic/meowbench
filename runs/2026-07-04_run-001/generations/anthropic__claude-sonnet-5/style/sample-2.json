@@ -1,0 +1,9 @@
+{
+  "modelSlug": "anthropic/claude-sonnet-5",
+  "promptId": "style",
+  "sample": 2,
+  "status": "ok",
+  "temperature": 1,
+  "rawPath": "generations/anthropic__claude-sonnet-5/style/sample-2.raw.txt",
+  "svgPath": "generations/anthropic__claude-sonnet-5/style/sample-2.svg"
+}

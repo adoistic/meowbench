@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <g transform="translate(0, 10)">
+    <rect x="45" y="40" width="110" height="100" rx="50" fill="#E76F51"/>
+    <path d="M50 50 L30 10 L80 35 Z" fill="#E76F51"/>
+    <path d="M150 50 L170 10 L120 35 Z" fill="#E76F51"/>
+    <ellipse cx="100" cy="115" rx="35" ry="28" fill="#F4A261"/>
+    <ellipse cx="100" cy="110" rx="20" ry="14" fill="#FFF"/>
+    <path d="M94 110 L106 110 L100 118 Z" fill="#264653"/>
+    <path d="M100 118 L100 126" stroke="#264653" stroke-width="2" fill="none"/>
+    <path d="M100 126 Q85 132 75 126" stroke="#264653" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M100 126 Q115 132 125 126" stroke="#264653" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <circle cx="75" cy="80" r="7" fill="#264653"/>
+    <circle cx="125" cy="80" r="7" fill="#264653"/>
+    <circle cx="72" cy="77" r="2.5" fill="#FFF"/>
+    <circle cx="122" cy="77" r="2.5" fill="#FFF"/>
+    <g stroke="#264653" stroke-width="2" stroke-linecap="round" stroke-opacity="0.6">
+      <line x1="60" y1="100" x2="25" y2="90"/>
+      <line x1="60" y1="110" x2="20" y2="110"/>
+      <line x1="60" y1="120" x2="25" y2="130"/>
+      <line x1="140" y1="100" x2="175" y2="90"/>
+      <line x1="140" y1="110" x2="180" y2="110"/>
+      <line x1="140" y1="120" x2="175" y2="130"/>
+    </g>
+  </g>
+</svg>

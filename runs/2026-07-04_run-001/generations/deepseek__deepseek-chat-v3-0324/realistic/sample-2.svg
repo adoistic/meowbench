@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <defs>
+    <linearGradient id="furGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B4513" />
+      <stop offset="50%" stop-color="#A0522D" />
+      <stop offset="100%" stop-color="#8B4513" />
+    </linearGradient>
+    <filter id="furTexture" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="3" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  
+  <path d="M250,400 C200,400 180,350 200,300 C180,250 220,200 250,150 C280,200 320,250 300,300 C320,350 300,400 250,400 Z" fill="url(#furGradient)" filter="url(#furTexture)" stroke="#5D4037" stroke-width="2"/>
+  
+  <!-- Head -->
+  <ellipse cx="250" cy="120" rx="50" ry="40" fill="url(#furGradient)" filter="url(#furTexture)" stroke="#5D4037" stroke-width="2"/>
+  
+  <!-- Ears -->
+  <path d="M210,90 L230,70 L250,90" fill="url(#furGradient)" filter="url(#furTexture)" stroke="#5D4037" stroke-width="1"/>
+  <path d="M290,90 L270,70 L250,90" fill="url(#furGradient)" filter="url(#furTexture)" stroke="#5D4037" stroke-width="1"/>
+  
+  <!-- Eyes -->
+  <ellipse cx="230" cy="120" rx="8" ry="10" fill="#000"/>
+  <ellipse cx="270" cy="120" rx="8" ry="10" fill="#000"/>
+  <ellipse cx="228" cy="118" rx="3" ry="4" fill="#FFF"/>
+  <ellipse cx="268" cy="118" rx="3" ry="4" fill="#FFF"/>
+  
+  <!-- Nose and mouth -->
+  <path d="M250,140 L245,150 L255,150 Z" fill="#FF9999"/>
+  <path d="M250,150 Q245,160 240,155" fill="none" stroke="#000" stroke-width="1"/>
+  <path d="M250,150 Q255,160 260,155" fill="none" stroke="#000" stroke-width="1"/>
+  
+  <!-- Whiskers -->
+  <line x1="240" y1="150" x2="200" y2="145" stroke="#000" stroke-width="1"/>
+  <line x1="240" y1="153" x2="200" y2="153" stroke="#000" stroke-width="1"/>
+  <line x1="240" y1="156" x2="200" y2="161" stroke="#000" stroke-width="1"/>
+  <line x1="260" y1="150" x2="300" y2="145" stroke="#000" stroke-width="1"/>
+  <line x1="260" y1="153" x2="300" y2="153" stroke="#000" stroke-width="1"/>
+  <line x1="260" y1="156" x2="300" y2="161" stroke="#000" stroke-width="1"/>
+  
+  <!-- Tail -->
+  <path d="M320,350 C350,320 380,300 400,320 C420,340 400,370 370,380" fill="none" stroke="#5D4037" stroke-width="10" stroke-linecap="round"/>
+  <path d="M320,350 C350,320 380,300 400,320 C420,340 400,370 370,380" fill="none" stroke="url(#furGradient)" stroke-width="8" stroke-linecap="round" filter="url(#furTexture)"/>
+</svg>

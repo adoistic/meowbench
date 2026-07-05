@@ -1,0 +1,22 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <!-- Tail Shadow -->
+    <polygon points="70, 95 82, 85 80, 80" fill="#a98a72"/>
+    <!-- Body Shadow -->
+    <polygon points="50, 40 70, 95 40, 95" fill="#a98a72"/>
+    <!-- Tail Main -->
+    <polygon points="82, 85 92, 75 80, 80" fill="#c7a992"/>
+    <!-- Right Ear Shadow -->
+    <polygon points="50, 18 75, 15 65, 42" fill="#a98a72"/>
+    <!-- Chest / Front Body -->
+    <polygon points="50, 40 40, 95 30, 93" fill="#c7a992"/>
+    <!-- Left Ear Main -->
+    <polygon points="50, 18 25, 15 35, 42" fill="#c7a992"/>
+    <!-- Right Face -->
+    <polygon points="50, 18 65, 42 50, 50" fill="#c7a992"/>
+    <!-- Left Face -->
+    <polygon points="50, 18 35, 42 50, 50" fill="#e3c9b6"/>
+    <!-- Muzzle/Nose -->
+    <polygon points="50, 50 42, 44 50, 38 58, 44" fill="#f3e9e1"/>
+  </g>
+</svg>

@@ -1,0 +1,30 @@
+{
+  "valid": false,
+  "reasons": [
+    "css-url"
+  ],
+  "stats": {
+    "bytes": 16556,
+    "elements": 217,
+    "paths": 39,
+    "colors": [
+      "#050605",
+      "#090a08",
+      "#14100c",
+      "#1c150f",
+      "#241c17",
+      "#332518",
+      "#4a2e20",
+      "#4a3723",
+      "#966b4d",
+      "#fff0d4",
+      "#fff8e7",
+      "#ffffff",
+      "url(#bodybase)",
+      "url(#eyegrad)",
+      "url(#legshadow)",
+      "url(#nosegrad)",
+      "url(#whiskergrad)"
+    ]
+  }
+}

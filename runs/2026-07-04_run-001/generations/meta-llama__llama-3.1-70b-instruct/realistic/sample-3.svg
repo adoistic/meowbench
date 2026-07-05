@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <!-- fur shading gradient -->
+  <defs>
+    <radialGradient id="fur-shading" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="50%" stop-color="#ddd" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ccc" stop-opacity="0.4"/>
+    </radialGradient>
+    <filter id="fur-texture" x="0" y="0" width="100%" height="100%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
+      <feComponentTransfer in="blur" result="texture">
+        <feFuncR type="linear" slope="0.7"/>
+        <feFuncG type="linear" slope="0.7"/>
+        <feFuncB type="linear" slope="0.7"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+
+  <!-- cat body -->
+  <g transform="translate(100, 100)">
+    <path fill="url(#fur-shading)" filter="url(#fur-texture)" d="M 0, 50 C 80, 0 150, 100 100, 150 C 50, 200 0, 250 0, 200 Z"/>
+  </g>
+
+  <!-- head -->
+  <g transform="translate(120, 60)">
+    <path fill="url(#fur-shading)" filter="url(#fur-texture)" d="M 0, 20 C 20, 0 40, 20 20, 40 C 0, 60 0, 40 0, 20 Z"/>
+    <path fill="black" d="M 10, 10 C 20, 10 20, 20 10, 20 Z"/>
+    <path fill="black" d="M 30, 10 C 40, 10 40, 20 30, 20 Z"/>
+  </g>
+
+  <!-- ears -->
+  <g transform="translate(120, 20)">
+    <path fill="url(#fur-shading)" filter="url(#fur-texture)" d="M 0, 0 C 10, 20 0, 40 10, 50 C 20, 40 20, 20 10, 0 Z"/>
+    <path fill="url(#fur-shading)" filter="url(#fur-texture)" transform="translate(40, 0)" d="M 0, 0 C -10, 20 0, 40 10, 50 C 20, 40 20, 20 10, 0 Z"/>
+  </g>
+
+  <!-- legs -->
+  <g transform="translate(100, 200)">
+    <path fill="url(#fur-shading)" filter="url(#fur-texture)" d="M 0, 0 C 10, 20 0, 40 20, 40 C 30, 40 30, 20 20, 0 Z"/>
+    <path fill="url(#fur-shading)" filter="url(#fur-texture)" transform="translate(40, 0)" d="M 0, 0 C 10, 20 0, 40 20, 40 C 30, 40 30, 20 20, 0 Z"/>
+    <path fill="url(#fur-shading)" filter="url(#fur-texture)" transform="translate(80, 0)" d="M 0, 0 C 10, 20 0, 40 20, 40 C 30, 40 30, 20 20, 0 Z"/>
+    <path fill="url(#fur-shading)" filter="url(#fur-texture)" transform="translate(120, 0)" d="M 0, 0 C 10, 20 0, 40 20, 40 C 30, 40 30, 20 20, 0 Z"/>
+  </g>
+
+  <!-- tail -->
+  <path fill="url(#fur-shading)" filter="url(#fur-texture)" transform="translate(150, 200)" d="M 0, 20 C 20, 0 50, 20 60, 40 C 70, 40 60, 60 50, 80 C 40, 60 20, 40 0, 20 Z"/>
+</svg>

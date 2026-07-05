@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- background -->
+  <rect width="400" height="300" fill="#fdf6e3"/>
+  <ellipse cx="190" cy="252" rx="120" ry="14" fill="#e8dcc0"/>
+
+  <!-- tail (animated) -->
+  <g transform="translate(268,215)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate"
+        values="0; 28; 0; -18; 0" keyTimes="0;0.25;0.5;0.75;1"
+        dur="3s" repeatCount="indefinite" calcMode="spline"
+        keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1"/>
+      <path d="M0,0 C40,-10 70,-40 62,-85 C58,-108 40,-112 34,-98 C28,-84 46,-80 44,-62 C40,-30 20,-14 -4,-10 Z"
+            fill="#5a5a5a"/>
+      <circle cx="38" cy="-100" r="9" fill="#7a7a7a"/>
+    </g>
+  </g>
+
+  <!-- body -->
+  <ellipse cx="210" cy="210" rx="75" ry="52" fill="#5a5a5a"/>
+  <ellipse cx="210" cy="222" rx="45" ry="32" fill="#8c8c8c"/>
+
+  <!-- front paws -->
+  <ellipse cx="180" cy="250" rx="18" ry="10" fill="#6b6b6b"/>
+  <ellipse cx="230" cy="250" rx="18" ry="10" fill="#6b6b6b"/>
+
+  <!-- head -->
+  <g>
+    <!-- ears -->
+    <polygon points="105,90 118,40 148,78" fill="#5a5a5a"/>
+    <polygon points="205,90 192,40 162,78" fill="#5a5a5a"/>
+    <polygon points="113,84 121,55 138,77" fill="#f3a6b0"/>
+    <polygon points="197,84 189,55 172,77" fill="#f3a6b0"/>
+    <!-- face -->
+    <circle cx="155" cy="120" r="56" fill="#5a5a5a"/>
+    <!-- eyes -->
+    <g>
+      <ellipse cx="135" cy="112" rx="8" ry="10" fill="#ffd94a"/>
+      <ellipse cx="175" cy="112" rx="8" ry="10" fill="#ffd94a"/>
+      <ellipse cx="135" cy="113" rx="3" ry="8" fill="#222">
+        <animate attributeName="ry" values="8;8;0.5;8;8" keyTimes="0;0.46;0.5;0.54;1" dur="5s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="175" cy="113" rx="3" ry="8" fill="#222">
+        <animate attributeName="ry" values="8;8;0.5;8;8" keyTimes="0;0.46;0.5;0.54;1" dur="5s" repeatCount="indefinite"/>
+      </ellipse>
+    </g>
+    <!-- muzzle -->
+    <path d="M148,132 L162,132 L155,141 Z" fill="#f3a6b0"/>
+    <path d="M155,141 Q155,150 145,152 M155,141 Q155,150 165,152"
+          stroke="#2f2f2f" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- whiskers -->
+    <g stroke="#dcdcdc" stroke-width="2" stroke-linecap="round">
+      <line x1="118" y1="132" x2="80" y2="126"/>
+      <line x1="118" y1="140" x2="82" y2="144"/>
+      <line x1="192" y1="132" x2="230" y2="126"/>
+      <line x1="192" y1="140" x2="228" y2="144"/>
+    </g>
+  </g>
+
+  <!-- chest stripe -->
+  <path d="M150,180 q10,15 0,30" stroke="#8c8c8c" stroke-width="4" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,131 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <style>
+    @keyframes sway {
+      0%   { transform: rotate(-18deg); }
+      50%  { transform: rotate(18deg); }
+      100% { transform:rotate(-18deg); }
+    }
+    .tail {
+      transform-origin: 268px 268px;
+      animation: sway 1.8s ease-in-out infinite;
+    }
+    @keyframes tip-wiggle {
+      0%, 100% { transform: rotate(-6deg); }
+      50%      { transform: rotate(6deg); }
+    }
+    .tail-tip {
+      transform-origin: 340px 130px;
+      animation: tip-wiggle 1.8s ease-in-out infinite;
+    }
+    @keyframes blink {
+      0%, 92%, 100% { transform: scaleY(1); }
+      96%           { transform: scaleY(0.1); }
+    }
+    .eye {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: blink 4s infinite;
+    }
+  </style>
+
+  <!-- Background -->
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#fff4e0"/>
+      <stop offset="100%" stop-color="#f1d9b4"/>
+    </radialGradient>
+    <linearGradient id="fur" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6a6a72"/>
+      <stop offset="100%" stop-color="#3f3f47"/>
+    </linearGradient>
+    <linearGradient id="tailGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4d4d55"/>
+      <stop offset="100%" stop-color="#2f2f36"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg)"/>
+
+  <!-- Floor shadow -->
+  <ellipse cx="200" cy="372" rx="150" ry="12" fill="#000" opacity="0.15"/>
+
+  <!-- Tail (animated, behind body) -->
+  <g class="tail">
+    <path d="M 268 268
+             C 305 240, 335 215, 348 180
+             C 358 150, 348 120, 340 105"
+          stroke="url(#tailGrad)" stroke-width="22" fill="none" stroke-linecap="round"/>
+    <path d="M 268 268
+             C 305 240, 335 215, 348 180
+             C 358 150, 348 120, 340 105"
+          stroke="#5a5a62" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+    <!-- Tail tip with extra wiggle -->
+    <g class="tail-tip">
+      <circle cx="340" cy="105" r="12" fill="url(#tailGrad)"/>
+      <circle cx="340" cy="105" r="10" fill="#7a7a82"/>
+    </g>
+  </g>
+
+  <!-- Back haunches -->
+  <ellipse cx="155" cy="335" rx="38" ry="22" fill="url(#fur)"/>
+  <ellipse cx="245" cy="335" rx="38" ry="22" fill="url(#fur)"/>
+
+  <!-- Body -->
+  <ellipse cx="200" cy="285" rx="92" ry="80" fill="url(#fur)"/>
+  <ellipse cx="200" cy="300" rx="70" ry="55" fill="#5d5d66" opacity="0.5"/>
+
+  <!-- Front legs / paws -->
+  <ellipse cx="170" cy="350" rx="26" ry="18" fill="url(#fur)"/>
+  <ellipse cx="230" cy="350" rx="26" ry="18" fill="url(#fur)"/>
+  <ellipse cx="170" cy="352" rx="18" ry="8" fill="#2a2a30"/>
+  <ellipse cx="230" cy="352" rx="18" ry="8" fill="#2a2a30"/>
+
+  <!-- Chest patch -->
+  <ellipse cx="200" cy="270" rx="35" ry="45" fill="#e8d9c0" opacity="0.85"/>
+
+  <!-- Head -->
+  <circle cx="200" cy="180" r="66" fill="url(#fur)"/>
+
+  <!-- Ears -->
+  <polygon points="146,150 156,88 192,138" fill="url(#fur)"/>
+  <polygon points="254,150 244,88 208,138" fill="url(#fur)"/>
+  <polygon points="152,144 162,104 184,138" fill="#f4b8b8"/>
+  <polygon points="248,144 238,104 216,138" fill="#f4b8b8"/>
+
+  <!-- Eyes (with blink) -->
+  <g class="eye">
+    <ellipse cx="178" cy="178" rx="11" ry="15" fill="#d9f5a3"/>
+    <ellipse cx="178" cy="178" rx="9" ry="14" fill="#7fc54a"/>
+    <ellipse cx="178" cy="180" rx="2.5" ry="13" fill="#0a0a0a"/>
+    <ellipse cx="175" cy="172" rx="3" ry="4" fill="#fff"/>
+  </g>
+  <g class="eye">
+    <ellipse cx="222" cy="178" rx="11" ry="15" fill="#d9f5a3"/>
+    <ellipse cx="222" cy="178" rx="9" ry="14" fill="#7fc54a"/>
+    <ellipse cx="222" cy="180" rx="2.5" ry="13" fill="#0a0a0a"/>
+    <ellipse cx="219" cy="172" rx="3" ry="4" fill="#fff"/>
+  </g>
+
+  <!-- Nose -->
+  <polygon points="193,202 207,202 200,213" fill="#e89090"/>
+  <polygon points="200,202 200,213" stroke="#9b4a4a" stroke-width="0.8" fill="none"/>
+
+  <!-- Mouth -->
+  <path d="M 200 213 Q 191 224 184 219" stroke="#1a1a1a" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  <path d="M 200 213 Q 209 224 216 219" stroke="#1a1a1a" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+
+  <!-- Whiskers -->
+  <g stroke="#1a1a1a" stroke-width="1.4" stroke-linecap="round" fill="none" opacity="0.85">
+    <path d="M 160 207 Q 130 200 108 198"/>
+    <path d="M 160 213 Q 128 213 105 217"/>
+    <path d="M 160 219 Q 130 225 110 232"/>
+    <path d="M 240 207 Q 270 200 292 198"/>
+    <path d="M 240 213 Q 272 213 295 217"/>
+    <path d="M 240 219 Q 270 225 290 232"/>
+  </g>
+
+  <!-- Cheek blush -->
+  <ellipse cx="160" cy="200" rx="10" ry="5" fill="#f4a8a8" opacity="0.55"/>
+  <ellipse cx="240" cy="200" rx="10" ry="5" fill="#f4a8a8" opacity="0.55"/>
+</svg>

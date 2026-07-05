@@ -1,0 +1,28 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 13794,
+    "elements": 168,
+    "paths": 85,
+    "colors": [
+      "#000",
+      "#1a0f05",
+      "#3d2a17",
+      "#a08057",
+      "#c4a373",
+      "#f5e6d3",
+      "#ffb3a7",
+      "#fff",
+      "url(#bg)",
+      "url(#bodyfur)",
+      "url(#bodyshade)",
+      "url(#chest)",
+      "url(#eye)",
+      "url(#headfur)",
+      "url(#innerear)",
+      "url(#nose)",
+      "url(#tailfur)"
+    ]
+  }
+}

@@ -1,0 +1,98 @@
+```xml
+<svg width="450" height="350" viewBox="0 0 450 350" xmlns="http://www.w3.org/2000/svg">
+  <g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="5" stroke="#2c3e50">
+    <rect x="-10" y="-10" width="470" height="370" fill="#f4f9ff" stroke="none" />
+    <g stroke-opacity="0.7" stroke="#a2d6f9" stroke-width="3">
+      <path d="M20 180h40" />
+      <path d="M40 210h60" />
+      <path d="M30 250h30" />
+    </g>
+    <g transform="translate(120, 240)">
+      <circle r="55" stroke="#34495e" stroke-width="8" fill="#ecf0f1" />
+      <circle r="50" stroke="#bdc3c7" stroke-width="2" />
+      <circle r="8" fill="#7f8c8d" />
+      <g stroke="#95a5a6" stroke-width="2">
+        <path d="M0 0-38.9 38.9" />
+        <path d="M0 0-55 0" />
+        <path d="M0 0-38.9-38.9" />
+        <path d="M0 0 0-55" />
+        <path d="M0 0 38.9-38.9" />
+        <path d="M0 0 55 0" />
+        <path d="M0 0 38.9 38.9" />
+        <path d="M0 0 0 55" />
+      </g>
+    </g>
+    <g stroke="#f39c12" fill="#f39c12">
+      <path d="M150 180C70 160 80 250 50 240" stroke-width="12" />
+      <path d="M68 235c-5-5 5-5 0 0l-10 10" stroke="#fff" fill="#fff" stroke-width="8" />
+      <g stroke-width="14">
+        <path d="M190 180c-10 50 30 80 60 90" />
+        <path d="M160 180c40-60 120-50 140-20" />
+        <path d="M265 170c25 30 55 10 75 40" />
+      </g>
+      <g stroke="#fff" fill="#fff" stroke-width="6">
+        <circle cx="258" cy="275" r="10" />
+        <circle cx="348" cy="215" r="10" />
+      </g>
+    </g>
+    <g stroke="#c0392b" fill="#e74c3c">
+      <path d="M120 240h90l-50-80z" />
+      <path d="m160 160-10-30" />
+      <path d="M120 130h60" stroke-width="8" />
+    </g>
+    <g stroke="#7f8c8d">
+      <circle cx="210" cy="240" r="22" fill="#ecf0f1" />
+      <circle cx="210" cy="240" r="5" stroke="none" fill="#34495e" />
+      <circle cx="120" cy="240" r="12" fill="#ecf0f1" />
+      <path d="M210 218 120 228m90 34L120 252" stroke-width="2" />
+      <path d="m210 240 40 30" />
+      <rect x="240" y="265" width="25" height="10" rx="3" fill="#34495e" />
+      <path d="m210 240-40-30" />
+      <rect x="160" y="205" width="25" height="10" rx="3" fill="#34495e" />
+    </g>
+    <g stroke="#c0392b" fill="#e74c3c">
+      <path d="M210 240 310 170 160 160" />
+      <path d="m310 170 20 70" />
+    </g>
+    <g>
+      <g stroke="#f39c12" fill="#f39c12" stroke-width="14">
+        <path d="M285 165c10-15 25-15 30 0" />
+      </g>
+      <circle cx="318" cy="158" r="10" stroke="#fff" fill="#fff" stroke-width="6" />
+      <path d="m310 170-10-25h40" stroke="#7f8c8d" />
+      <circle cx="340" cy="145" r="6" fill="#34495e" />
+      <g transform="translate(330, 240)">
+        <circle r="55" stroke="#34495e" stroke-width="8" fill="#ecf0f1" />
+        <circle r="50" stroke="#bdc3c7" stroke-width="2" />
+        <circle r="8" fill="#7f8c8d" />
+        <g stroke="#95a5a6" stroke-width="2">
+          <path d="M0 0-38.9 38.9" transform="rotate(20)" />
+          <path d="M0 0-55 0" transform="rotate(20)" />
+          <path d="M0 0-38.9-38.9" transform="rotate(20)" />
+          <path d="M0 0 0-55" transform="rotate(20)" />
+          <path d="M0 0 38.9-38.9" transform="rotate(20)" />
+          <path d="M0 0 55 0" transform="rotate(20)" />
+          <path d="M0 0 38.9 38.9" transform="rotate(20)" />
+          <path d="M0 0 0 55" transform="rotate(20)" />
+        </g>
+      </g>
+    </g>
+    <g transform="translate(300 135)">
+      <path d="M0 0c15-30 40-25 40 5s-15 30-40 33c-25-3-40-8-40-28s25-35 40-38z" stroke="#f39c12" fill="#f39c12" />
+      <path d="M-28-20a20 20 0 0 1 20 0l-10 12z" fill="#e67e22" />
+      <path d="M28-20a20 20 0 0 0-20 0l10 12z" fill="#e67e22" />
+      <g stroke-width="2">
+        <circle cx="-15" cy="8" r="4" stroke="none" fill="#fff" />
+        <circle cx="15" cy="8" r="4" stroke="none" fill="#fff" />
+        <circle cx="-14" cy="9" r="2" stroke="none" fill="#2c3e50" />
+        <circle cx="16" cy="9" r="2" stroke="none" fill="#2c3e50" />
+        <path d="m0 15 4 4-4-2-4 2z" fill="#ffb9b9" />
+        <path d="M-5 22q5 4 10 0" />
+        <g stroke-width="1.5">
+          <path d="M-25 15l-15 2m15 3-15-2m30 4 15 2m-15-5 15-2" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
+```

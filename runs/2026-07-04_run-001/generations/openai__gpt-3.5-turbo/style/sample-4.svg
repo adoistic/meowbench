@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Head -->
+  <path fill="#f9e0d2" d="M30,25 L70,25 L85,50 L70,75 L30,75 L15,50 Z" />
+  <path fill="#ffffff" d="M30,25 L50,45 L70,25" />
+  <path fill="#ffffff" d="M50,46 L65,60 L50,74 L35,60 Z" />
+  <!-- Ears -->
+  <polygon fill="#f4c2a6" points="30,25 25,30 30,35" />
+  <polygon fill="#f4c2a6" points="70,25 75,30 70,35" />
+  <!-- Eyes -->
+  <circle cx="45" cy="40" r="2" fill="#34282c" />
+  <circle cx="55" cy="40" r="2" fill="#34282c" />
+  <!-- Nose -->
+  <polygon fill="#34282c" points="50,45 48,48 52,48" />
+  <!-- Body -->
+  <polygon fill="#f9e0d2" points="30,75 50,95 70,75" />
+  <polygon fill="#ffffff" points="30,75 50,60 70,75" />
+  <!-- Tail -->
+  <path fill="#ffffff" d="M25,60 Q20,80 25,95" />
+  <path fill="#f4c2a6" d="M27,70 Q24,85 30,95" />
+  <path fill="#f4c2a6" d="M29,80 Q27,90 33,94" />
+</svg>

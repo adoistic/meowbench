@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="500" height="400">
+  <defs>
+    <filter id="fur" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="3" result="noise"/>
+      <feDiffuseLighting in="noise" lighting-color="#f5d5b0" surfaceScale="3" result="diffuse">
+        <feDistantLight azimuth="45" elevation="60"/>
+      </feDiffuseLighting>
+      <feComposite in="SourceGraphic" in2="diffuse" operator="arithmetic" k1="0" k2="1" k3="0.5" k4="0"/>
+    </filter>
+    <linearGradient id="bodyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5d5b0"/>
+      <stop offset="50%" stop-color="#e8b882"/>
+      <stop offset="100%" stop-color="#d49a5a"/>
+    </linearGradient>
+    <linearGradient id="shadowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b4513" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#8b4513" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="furPattern" patternUnits="userSpaceOnUse" width="10" height="10">
+      <path d="M0,0 L10,10 M2,0 L10,8 M0,2 L8,10" stroke="#000" stroke-width="0.5" opacity="0.1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#f0e6d2"/>
+
+  <!-- Cat Body -->
+  <path d="M250,200 C250,150 200,120 150,150 C120,160 100,180 100,220 C100,280 180,320 250,320 C320,320 400,280 400,220 C400,180 380,160 350,150 C300,120 250,150 250,200 Z" fill="url(#bodyGradient)" filter="url(#fur)" stroke="#8b4513" stroke-width="1"/>
+
+  <!-- Cat Head -->
+  <circle cx="250" cy="120" r="50" fill="url(#bodyGradient)" filter="url(#fur)" stroke="#8b4513" stroke-width="1"/>
+  <path d="M200,100 C180,80 150,80 130,100 C120,110 120,130 130,140 C150,160 180,160 200,140 C210,130 210,110 200,100 Z" fill="url(#bodyGradient)" filter="url(#fur)"/>
+  <path d="M300,100 C320,80 350,80 370,100 C380,110 380,130 370,140 C350,160 320,160 300,140 C290,130 290,110 300,100 Z" fill="url(#bodyGradient)" filter="url(#fur)"/>
+
+  <!-- Ears -->
+  <path d="M180,70 L160,40 L200,80 Z" fill="url(#bodyGradient)" filter="url(#fur)" stroke="#8b4513" stroke-width="1"/>
+  <path d="M320,70 L340,40 L300,80 Z" fill="url(#bodyGradient)" filter="url(#fur)" stroke="#8b4513" stroke-width="1"/>
+  <path d="M185,75 L170,50 L195,80 Z" fill="#d49a5a"/>
+  <path d="M315,75 L330,50 L305,80 Z" fill="#d49a5a"/>
+
+  <!-- Eyes -->
+  <ellipse cx="230" cy="120" rx="8" ry="12" fill="#2c1810" transform="rotate(-10, 230, 120)"/>
+  <ellipse cx="270" cy="120" rx="8" ry="12" fill="#2c1810" transform="rotate(10, 270, 120)"/>
+  <circle cx="225" cy="115" r="3" fill="#f8f8f8"/>
+  <circle cx="265" cy="115" r="3" fill="#f8f8f8"/>
+
+  <!-- Nose -->
+  <path d="M250,130 L245,140 L255,140 Z" fill="#ff6b6b"/>
+  <line x1="250" y1="140" x2="250" y2="150" stroke="#2c1810" stroke-width="1"/>
+
+  <!-- Mouth -->
+  <path d="M250,150 Q240,160 230,150" stroke="#2c1810" stroke-width="1" fill="none"/>
+  <path d="M250,150 Q260,160 270,150" stroke="#2c1810" stroke-width="1" fill="none"/>
+
+  <!-- Whiskers -->
+  <line x1="220" y1="140" x2="180" y2="135" stroke="#2c1810" stroke-width="1"/>
+  <line x1="220" y1="145" x2="180" y2="145" stroke="#2c1810" stroke-width="1"/>
+  <line x1="220" y1="150" x2="180" y2="155" stroke="#2c1810" stroke-width="1"/>
+  <line x1="280" y1="140" x2="320" y2="135" stroke="#2c1810" stroke-width="1"/>
+  <line x1="280" y1="145" x2="320" y2="145" stroke="#2c1810" stroke-width="1"/>
+  <line x1="280" y1="150" x2="320" y2="155" stroke="#2c1810" stroke-width="1"/>
+
+  <!-- Front Legs -->
+  <path d="M180,250 C180,280 160,300 150,320 C140,340 150,350 170,350 L190,350 C210,350 220,340 220,320 C220,300 200,280 200,250 Z" fill="url(#bodyGradient)" filter="url(#fur)" stroke="#8b4513" stroke-width="1"/>
+  <path d="M320,250 C320,280 340,300 350,320 C360,340 350,350 330,350 L310,350 C290,350 280,340 280,320 C280,300 300,280 300,250 Z" fill="url(#bodyGradient)" filter="url(#fur)" stroke="#8b4513" stroke-width="1"/>
+
+  <!-- Back Legs -->
+  <path d="M120,250 C120,280 100,300 90,320 C80,340 90,350 110,350 L130,350 C150,350 160,340 160,320 C160,300 140,280 140,250 Z" fill="url(#bodyGradient)" filter="url(#fur)" stroke="#8b4513" stroke-width="1"/>
+  <ellipse cx="380" cy="280" rx="30" ry="50" fill="url(#bodyGradient)" filter="url(#fur)" stroke="#8b4513" stroke-width="1"/>
+
+  <!-- Tail -->
+  <path d="M400,220 C450,200 480,250 450,300 C420,350 380,320 380,280" fill="none" stroke="url(#bodyGradient)" stroke-width="20" stroke-linecap="round" filter="url(#fur)"/>
+
+  <!-- Fur Details -->
+  <path d="M150,150 C180,130 220,130 250,150" fill="none" stroke="url(#shadowGradient)" stroke-width="10"/>
+  <path d="M250,150 C280,130 320,130 350,150" fill="none" stroke="url(#shadowGradient)" stroke-width="10"/>
+  <path d="M150,200 C180,180 220,180 250,200" fill="none" stroke="url(#shadowGradient)" stroke-width="8"/>
+  <path d="M250,200 C280,180 320,180 350,200" fill="none" stroke="url(#shadowGradient)" stroke-width="8"/>
+
+  <!-- Paws -->
+  <circle cx="170" cy="350" r="10" fill="#d49a5a"/>
+  <circle cx="330" cy="350" r="10" fill="#d49a5a"/>
+  <circle cx="110" cy="350" r="10" fill="#d49a5a"/>
+  <ellipse cx="380" cy="330" rx="15" ry="10" fill="#d49a5a"/>
+
+  <!-- Fur Texture Overlay -->
+  <rect width="100%" height="100%" fill="url(#furPattern)" opacity="0.3"/>
+</svg>

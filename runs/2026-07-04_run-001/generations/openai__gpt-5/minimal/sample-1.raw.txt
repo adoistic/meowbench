@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Minimal flat-design cat</title>
+  <desc id="desc">A simple, flat orange cat with pointy ears, sitting with a curled tail.</desc>
+
+  <!-- Ground shadow -->
+  <ellipse cx="128" cy="214" rx="64" ry="10" fill="#E6E6E6"/>
+
+  <!-- Tail (behind body) -->
+  <path d="M170 176 Q 214 168 204 120" fill="none" stroke="#F4A261" stroke-width="16" stroke-linecap="round"/>
+
+  <!-- Body -->
+  <ellipse cx="128" cy="158" rx="56" ry="62" fill="#F4A261"/>
+
+  <!-- Ears (behind head) -->
+  <polygon points="96,60 112,28 128,60" fill="#F4A261"/>
+  <polygon points="160,60 144,28 128,60" fill="#F4A261"/>
+  <polygon points="104,60 112,38 122,60" fill="#F6B68E"/>
+  <polygon points="152,60 144,38 134,60" fill="#F6B68E"/>
+
+  <!-- Head -->
+  <circle cx="128" cy="96" r="44" fill="#F4A261"/>
+
+  <!-- Face -->
+  <circle cx="112" cy="100" r="5" fill="#2D2D2D"/>
+  <circle cx="144" cy="100" r="5" fill="#2D2D2D"/>
+  <polygon points="122,112 134,112 128,118" fill="#E76F51"/>
+  <path d="M128 118 v 7" fill="none" stroke="#2D2D2D" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Whiskers -->
+  <line x1="92" y1="108" x2="114" y2="108" stroke="#2D2D2D" stroke-width="2" stroke-linecap="round"/>
+  <line x1="92" y1="116" x2="114" y2="116" stroke="#2D2D2D" stroke-width="2" stroke-linecap="round"/>
+  <line x1="142" y1="108" x2="164" y2="108" stroke="#2D2D2D" stroke-width="2" stroke-linecap="round"/>
+  <line x1="142" y1="116" x2="164" y2="116" stroke="#2D2D2D" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Paws -->
+  <ellipse cx="108" cy="206" rx="14" ry="9" fill="#F6B68E"/>
+  <ellipse cx="148" cy="206" rx="14" ry="9" fill="#F6B68E"/>
+</svg>

@@ -1,0 +1,18 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 3381,
+    "elements": 31,
+    "paths": 0,
+    "colors": [
+      "#2c2416",
+      "#a8957f",
+      "#d4a373",
+      "#f8f5f0",
+      "#ffffff",
+      "url(#papergrad)",
+      "url(#shadowgrad)"
+    ]
+  }
+}

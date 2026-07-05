@@ -1,0 +1,14 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 2635,
+    "elements": 27,
+    "paths": 2,
+    "colors": [
+      "#333",
+      "#e0e0e0",
+      "url(#foldgradient)"
+    ]
+  }
+}

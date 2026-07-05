@@ -1,0 +1,42 @@
+Here's a minimal flat-design cat SVG featuring clean shapes and a simple, modern look.
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Body -->
+  <ellipse cx="100" cy="130" rx="45" ry="30" fill="#F4A460" />
+
+  <!-- Tail -->
+  <path d="M140 140 Q170 130 165 100 Q162 90 155 95" stroke="#F4A460" stroke-width="10" stroke-linecap="round" fill="none" />
+
+  <!-- Head -->
+  <circle cx="100" cy="90" r="35" fill="#F4A460" />
+
+  <!-- Left ear -->
+  <polygon points="70,70 55,30 85,55" fill="#F4A460" />
+  <polygon points="73,65 62,40 83,58" fill="#E8915A" />
+
+  <!-- Right ear -->
+  <polygon points="130,70 145,30 115,55" fill="#F4A460" />
+  <polygon points="127,65 138,40 117,58" fill="#E8915A" />
+
+  <!-- Eyes -->
+  <ellipse cx="87" cy="88" rx="7" ry="8" fill="#334" />
+  <ellipse cx="113" cy="88" rx="7" ry="8" fill="#334" />
+
+  <!-- Eye shine -->
+  <circle cx="89" cy="85" r="2.5" fill="white" />
+  <circle cx="115" cy="85" r="2.5" fill="white" />
+
+  <!-- Nose -->
+  <polygon points="100,95 96,100 104,100" fill="#E8915A" />
+
+  <!-- Mouth -->
+  <path d="M96 100 Q100 106 100 100 Q100 106 104 100" stroke="#5D4E37" stroke-width="1.5" fill="none" />
+
+  <!-- Whiskers -->
+  <line x1="60" y1="92" x2="82" y2="96" stroke="#5D4E37" stroke-width="1.2" />
+  <line x1="60" y1="100" x2="82" y2="100" stroke="#5D4E37" stroke-width="1.2" />
+  <line x1="118" y1="96" x2="140" y2="92" stroke="#5D4E37" stroke-width="1.2" />
+  <line x1="118" y1="100" x2="140" y2="100" stroke="#5D4E37" stroke-width="1.2" />
+</svg>
+```
+The design uses a soft orange body, rounded head, pointed ears, and a curved tail to keep the cat recognizable while staying minimal. Small facial details like the eyes, nose, mouth, and whiskers add character without breaking the flat style.

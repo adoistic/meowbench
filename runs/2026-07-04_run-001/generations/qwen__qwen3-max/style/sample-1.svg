@@ -1,0 +1,46 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill="#8B4513">
+  <!-- Body -->
+  <polygon points="60,150 140,150 120,110 80,110" />
+  
+  <!-- Head -->
+  <polygon points="70,110 130,110 120,70 80,70" />
+  
+  <!-- Left Ear -->
+  <polygon points="70,70 85,40 100,70" />
+  
+  <!-- Right Ear -->
+  <polygon points="130,70 115,40 100,70" />
+  
+  <!-- Left Eye -->
+  <polygon points="85,85 90,80 95,85 90,90" fill="#000" />
+  
+  <!-- Right Eye -->
+  <polygon points="115,85 110,80 105,85 110,90" fill="#000" />
+  
+  <!-- Nose -->
+  <polygon points="100,90 95,95 105,95" fill="#FFA500" />
+  
+  <!-- Tail -->
+  <polygon points="140,150 170,130 160,120 135,140" />
+  
+  <!-- Left Front Leg -->
+  <polygon points="75,150 65,170 85,170 85,150" />
+  
+  <!-- Right Front Leg -->
+  <polygon points="125,150 115,170 135,170 135,150" />
+  
+  <!-- Left Hind Leg -->
+  <polygon points="60,150 50,170 70,170 70,150" />
+  
+  <!-- Right Hind Leg -->
+  <polygon points="140,150 130,170 150,170 150,150" />
+  
+  <!-- Fold lines (white strokes for creases) -->
+  <polyline points="100,70 100,110" stroke="white" stroke-width="1" fill="none" />
+  <polyline points="80,110 100,150" stroke="white" stroke-width="1" fill="none" />
+  <polyline points="120,110 100,150" stroke="white" stroke-width="1" fill="none" />
+  <polyline points="100,150 140,150" stroke="white" stroke-width="1" fill="none" />
+  <polyline points="100,150 60,150" stroke="white" stroke-width="1" fill="none" />
+  <polyline points="85,40 100,70" stroke="white" stroke-width="1" fill="none" />
+  <polyline points="115,40 100,70" stroke="white" stroke-width="1" fill="none" />
+</svg>

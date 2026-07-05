@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <defs>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#3b2a1c" flood-opacity="0.22"/>
+    </filter>
+    <linearGradient id="paperWarm" x1="180" y1="120" x2="620" y2="700" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffd38a"/>
+      <stop offset="1" stop-color="#d8742d"/>
+    </linearGradient>
+    <style>
+      .edge{stroke:#8f5527;stroke-width:3;stroke-linejoin:round;stroke-linecap:round}
+      .crease{stroke:#7c471f;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;opacity:.45;fill:none}
+      .lightcrease{stroke:#fff4dc;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;opacity:.55;fill:none}
+      .feature{fill:#34231b}
+    </style>
+  </defs>
+
+  <rect width="800" height="800" fill="#f7efe3"/>
+  <circle cx="400" cy="720" r="250" fill="#eadcc8" opacity=".5"/>
+
+  <g filter="url(#softShadow)">
+    <polygon points="535,557 643,509 622,441 566,477 544,525" fill="#c76028" class="edge"/>
+    <polygon points="622,441 681,375 652,320 594,397 566,477" fill="#e18439" class="edge"/>
+    <polygon points="652,320 610,282 594,397" fill="#f1a653" class="edge"/>
+    <polygon points="566,477 622,441 643,509" fill="#b55124" opacity=".9"/>
+
+    <polygon points="318,372 478,372 560,610 240,610" fill="url(#paperWarm)" class="edge"/>
+    <polygon points="318,372 398,505 240,610" fill="#f2a956" class="edge"/>
+    <polygon points="478,372 398,505 560,610" fill="#d56e2e" class="edge"/>
+    <polygon points="318,372 478,372 398,505" fill="#f8bf67" class="edge"/>
+    <polygon points="240,610 398,505 395,610" fill="#de7d35" class="edge"/>
+    <polygon points="560,610 398,505 405,610" fill="#b95527" class="edge"/>
+
+    <polygon points="240,610 395,610 318,695 188,695" fill="#e99143" class="edge"/>
+    <polygon points="395,610 318,695 455,695" fill="#cc672d" class="edge"/>
+    <polygon points="405,610 560,610 612,695 482,695" fill="#df7c35" class="edge"/>
+    <polygon points="405,610 482,695 345,695" fill="#b95727" class="edge"/>
+
+    <polygon points="276,270 214,134 367,230" fill="#ea8f3d" class="edge"/>
+    <polygon points="214,134 286,292 250,230" fill="#f9c16f" class="edge"/>
+    <polygon points="367,230 286,292 214,134" fill="#d56b2d" opacity=".78" class="edge"/>
+
+    <polygon points="524,270 586,134 433,230" fill="#e58337" class="edge"/>
+    <polygon points="586,134 514,292 550,230" fill="#f6b861" class="edge"/>
+    <polygon points="433,230 514,292 586,134" fill="#c75d28" opacity=".78" class="edge"/>
+
+    <polygon points="260,252 400,190 540,252 555,362 476,450 324,450 245,362" fill="#f2a44e" class="edge"/>
+    <polygon points="260,252 400,190 400,322" fill="#ffc777" class="edge"/>
+    <polygon points="540,252 400,190 400,322" fill="#e78539" class="edge"/>
+    <polygon points="260,252 245,362 400,322" fill="#ef9442" class="edge"/>
+    <polygon points="540,252 555,362 400,322" fill="#d56c2f" class="edge"/>
+    <polygon points="245,362 324,450 400,322" fill="#e38339" class="edge"/>
+    <polygon points="555,362 476,450 400,322" fill="#c45b29" class="edge"/>
+    <polygon points="324,450 476,450 400,322" fill="#f4ad59" class="edge"/>
+
+    <polygon points="333,300 371,312 348,336 312,326" class="feature"/>
+    <polygon points="467,300 429,312 452,336 488,326" class="feature"/>
+    <polygon points="389,365 411,365 400,381" fill="#8a3d2d"/>
+    <path d="M400 381 L386 398 M400 381 L414 398" class="crease" stroke="#5d2e22" opacity=".8"/>
+    <path d="M314 368 L245 350 M315 387 L239 390 M486 368 L555 350 M485 387 L561 390" class="crease" stroke="#5d2e22" opacity=".65"/>
+
+    <path d="M400 190 L400 322 L400 450" class="lightcrease"/>
+    <path d="M260 252 L400 322 L540 252" class="lightcrease"/>
+    <path d="M245 362 L400 322 L555 362" class="crease"/>
+    <path d="M324 450 L400 322 L476 450" class="crease"/>
+    <path d="M214 134 L286 292 L367 230" class="lightcrease"/>
+    <path d="M586 134 L514 292 L433 230" class="lightcrease"/>
+    <path d="M318 372 L398 505 L478 372" class="lightcrease"/>
+    <path d="M240 610 L398 505 L560 610" class="crease"/>
+    <path d="M318 695 L395 610 L482 695" class="crease"/>
+    <path d="M594 397 L622 441 L643 509" class="crease"/>
+  </g>
+</svg>

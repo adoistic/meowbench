@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Tail -->
+  <path d="M135 160 Q 185 150 175 90" stroke="#2d3436" stroke-width="14" fill="none" stroke-linecap="round" />
+  
+  <!-- Body -->
+  <ellipse cx="100" cy="145" rx="45" ry="50" fill="#2d3436" />
+  
+  <!-- Head -->
+  <circle cx="100" cy="90" r="40" fill="#2d3436" />
+  
+  <!-- Ears -->
+  <path d="M65 70 L 60 30 L 90 55 Z" fill="#2d3436" />
+  <path d="M135 70 L 140 30 L 110 55 Z" fill="#2d3436" />
+  
+  <!-- Eyes -->
+  <circle cx="85" cy="85" r="5" fill="#ffffff" />
+  <circle cx="115" cy="85" r="5" fill="#ffffff" />
+  
+  <!-- Nose -->
+  <path d="M95 95 L 105 95 L 100 102 Z" fill="#ff7675" />
+</svg>

@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#87CEEB"/>
+  <rect y="400" width="800" height="200" fill="#90EE90"/>
+  
+  <!-- Sun -->
+  <circle cx="700" cy="80" r="40" fill="#FFD700"/>
+  
+  <!-- Clouds -->
+  <ellipse cx="150" cy="100" rx="40" ry="25" fill="white"/>
+  <ellipse cx="180" cy="90" rx="35" ry="22" fill="white"/>
+  <ellipse cx="120" cy="90" rx="30" ry="20" fill="white"/>
+  
+  <ellipse cx="550" cy="60" rx="45" ry="28" fill="white"/>
+  <ellipse cx="580" cy="50" rx="38" ry="24" fill="white"/>
+  <ellipse cx="520" cy="50" rx="32" ry="22" fill="white"/>
+  
+  <!-- Bicycle -->
+  <!-- Back wheel -->
+  <circle cx="280" cy="420" r="60" fill="none" stroke="#333" stroke-width="6"/>
+  <circle cx="280" cy="420" r="55" fill="none" stroke="#666" stroke-width="2"/>
+  <!-- Spokes back -->
+  <line x1="280" y1="420" x2="280" y2="365" stroke="#666" stroke-width="2"/>
+  <line x1="280" y1="420" x2="325" y2="390" stroke="#666" stroke-width="2"/>
+  <line x1="280" y1="420" x2="325" y2="450" stroke="#666" stroke-width="2"/>
+  <line x1="280" y1="420" x2="280" y2="475" stroke="#666" stroke-width="2"/>
+  <line x1="280" y1="420" x2="235" y2="450" stroke="#666" stroke-width="2"/>
+  <line x1="280" y1="420" x2="235" y2="390" stroke="#666" stroke-width="2"/>
+  
+  <!-- Front wheel -->
+  <circle cx="520" cy="420" r="60" fill="none" stroke="#333" stroke-width="6"/>
+  <circle cx="520" cy="420" r="55" fill="none" stroke="#666" stroke-width="2"/>
+  <!-- Spokes front -->
+  <line x1="520" y1="420" x2="520" y2="365" stroke="#666" stroke-width="2"/>
+  <line x1="520" y1="420" x2="565" y2="390" stroke="#666" stroke-width="2"/>
+  <line x1="520" y1="420" x2="565" y2="450" stroke="#666" stroke-width="2"/>
+  <line x1="520" y1="420" x2="520" y2="475" stroke="#666" stroke-width="2"/>
+  <line x1="520" y1="420" x2="475" y2="450" stroke="#666" stroke-width="2"/>
+  <line x1="520" y1="420" x2="475" y2="390" stroke="#666" stroke-width="2"/>
+  
+  <!-- Frame -->
+  <line x1="280" y1="420" x2="380" y2="420" stroke="#FF6B6B" stroke-width="5"/>
+  <line x1="380" y1="420" x2="460" y2="320" stroke="#FF6B6B" stroke-width="5"/>
+  <line x1="460" y1="320" x2="520" y2="420" stroke="#FF6B6B" stroke-width="5"/>
+  <line x1="380" y1="420" x2="420" y2="320" stroke="#FF6B6B" stroke-width="5"/>
+  <line x1="420" y1="320" x2="460" y2="320" stroke="#FF6B6B" stroke-width="5"/>
+  
+  <!-- Seat -->
+  <ellipse cx="380" cy="310" rx="25" ry="8" fill="#333"/>
+  <line x1="380" y1="310" x2="380" y2="340" stroke="#333" stroke-width="4"/>
+  
+  <!-- Handlebars -->
+  <line x1="460" y1="320" x2="460" y2="280" stroke="#333" stroke-width="4"/>
+  <line x1="440" y1="280" x2="480" y2="280" stroke="#333" stroke-width="4"/>
+  <circle cx="440" cy="280" r="5" fill="#333"/>
+  <circle cx="480" cy="280" r="5" fill="#333"/>
+  
+  <!-- Pedals and chain -->
+  <circle cx="420" cy="420" r="15" fill="#333"/>
+  <line x1="400" y1="450" x2="440" y2="390" stroke="#666" stroke-width="4"/>
+  <ellipse cx="400" cy="450" rx="12" ry="6" fill="#333"/>
+  <ellipse cx="440" cy="390" rx="12" ry="6" fill="#333"/>
+  
+  <!-- Chain -->
+  <line x1="280" y1="420" x2="420" y2="420" stroke="#333" stroke-width="2"/>
+  
+  <!-- Cat -->
+  <!-- Body -->
+  <ellipse cx="400" cy="290" rx="45" ry="35" fill="#FF8C00"/>
+  
+  <!-- Head -->
+  <circle cx="400" cy="245" r="30" fill="#FF8C00"/>
+  
+  <!-- Ears -->
+  <polygon points="375,230 385,200 395,225" fill="#FF8C00"/>
+  <polygon points="425,230 415,200 405,225" fill="#FF8C00"/>
+  <polygon points="378,228 385,208 390,223" fill="#FFB347"/>
+  <polygon points="422,228 415,208 410,223" fill="#FFB347"/>
+  
+  <!-- Face -->
+  <circle cx="390" cy="240" r="4" fill="#333"/>
+  <circle cx="410" cy="240" r="4" fill="#333"/>
+  <ellipse cx="400" cy="250" rx="3" ry="2" fill="#FF69B4"/>
+  <line x1="400" y1="252" x2="395" y2="258" stroke="#333" stroke-width="1"/>
+  <line x1="400" y1="252" x2="405" y2="258" stroke="#333" stroke-width="1"/>
+  
+  <!-- Whiskers -->
+  <line x1="370" y1="245" x2="385" y2="248" stroke="#333" stroke-width="1"/>
+  <line x1="370" y1="252" x2="385" y2="252" stroke="#333" stroke-width="1"/>
+  <line x1="430" y1="245" x2="415" y2="248" stroke="#333" stroke-width="1"/>
+  <line x1="430" y1="252" x2="415" y2="252" stroke="#333" stroke-width="1"/>
+  
+  <!-- Stripes -->
+  <polygon points="400,215 395,225 405,225" fill="#CC6600"/>
+  <polygon points="385,255 380,265 390,260" fill="#CC6600"/>
+  <polygon points="415,255 420,265 410,260" fill="#CC6600"/>
+  
+  <!-- Tail -->
+  <path d="M 445 300 Q 470 280 480 250 Q 485 230 475 220" fill="none" stroke="#FF8C00" stroke-width="12" stroke-linecap="round"/>
+  
+  <!-- Legs -->
+  <!-- Back leg (pedaling) -->
+  <ellipse cx="360" cy="380" rx="12" ry="25" fill="#FF8C00" transform="rotate(-20 360 380)"/>
+  <ellipse cx="400" cy="450" rx="10" ry="6" fill="#FF8C00"/>
+  
+  <!-- Front leg (on handlebar) -->
+  <ellipse cx="450" cy="310" rx="8" ry="20" fill="#FF8C00" transform="rotate(30 450 310)"/>
+  
+  <!-- Paws -->
+  <ellipse cx="445" cy="285" rx="8" ry="6" fill="#FFB347"/>
+  <ellipse cx="400" cy="450" rx="10" ry="6" fill="#FFB347"/>
+  
+  <!-- Basket on front -->
+  <rect x="470" y="290" width="50" height="35" fill="#8B4513" rx="3"/>
+  <line x1="475" y1="300" x2="515" y2="300" stroke="#654321" stroke-width="2"/>
+  <line x1="475" y1="310" x2="515" y2="310" stroke="#654321" stroke-width="2"/>
+  <line x1="475" y1="320" x2="515" y2="320" stroke="#654321" stroke-width="2"/>
+  
+  <!-- Flowers in basket -->
+  <circle cx="485" cy="285" r="8" fill="#FF69B4"/>
+  <circle cx="485" cy="285" r="4" fill="#FFD700"/>
+  <circle cx="505" cy="280" r="7" fill="#FF1493"/>
+  <circle cx="505" cy="280" r="3" fill="#FFD700"/>
+  <circle cx="495" cy="275" r="6" fill="#FF6347"/>
+  <circle cx="495" cy="275" r="3" fill="#FFD700"/>
+  
+  <!-- Ground details -->
+  <ellipse cx="100" cy="500" rx="30" ry="10" fill="#228B22" opacity="0.6"/>
+  <ellipse cx="600" cy="520" rx="40" ry="12" fill="#228B22" opacity="0.6"/>
+  <ellipse cx="700" cy="480" rx="25" ry="8" fill="#228B22" opacity="0.6"/>
+</svg>

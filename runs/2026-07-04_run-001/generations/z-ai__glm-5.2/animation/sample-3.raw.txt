@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" text-rendering="geometricPrecision">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="55%" r="65%">
+      <stop offset="0%" stop-color="#FFF6E6"/>
+      <stop offset="100%" stop-color="#F3E2C4"/>
+    </radialGradient>
+    <radialGradient id="belly" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#FFF3DE"/>
+      <stop offset="100%" stop-color="#F2D6A8"/>
+    </radialGradient>
+    <linearGradient id="fur" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F0A35A"/>
+      <stop offset="100%" stop-color="#D87E33"/>
+    </linearGradient>
+    <linearGradient id="tailGrad" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#D87E33"/>
+      <stop offset="100%" stop-color="#F0A35A"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <ellipse cx="200" cy="372" rx="130" ry="14" fill="#000" opacity="0.08"/>
+
+  <!-- Tail (sways continuously, pivots at base) -->
+  <g id="tail">
+    <animateTransform attributeName="transform" type="rotate"
+      values="-14 268 292; 13 268 292; -14 268 292"
+      keyTimes="0;0.5;1"
+      keySplines="0.42 0 0.58 1; 0.42 0 0.58 1"
+      calcMode="spline"
+      dur="2.6s" repeatCount="indefinite"/>
+    <path d="M268 292 C 300 296 326 282 332 250 C 338 218 326 188 308 176"
+      fill="none" stroke="url(#tailGrad)" stroke-width="22" stroke-linecap="round"/>
+    <path d="M300 286 Q 312 282 318 270" fill="none" stroke="#B56622" stroke-width="5" stroke-linecap="round" opacity="0.55"/>
+    <path d="M328 244 Q 336 232 332 220" fill="none" stroke="#B56622" stroke-width="5" stroke-linecap="round" opacity="0.55"/>
+    <circle cx="308" cy="176" r="11" fill="#E8924A"/>
+  </g>
+
+  <!-- Body -->
+  <g id="body">
+    <ellipse cx="200" cy="290" rx="92" ry="78" fill="url(#fur)"/>
+    <ellipse cx="200" cy="300" rx="52" ry="55" fill="url(#belly)"/>
+    <!-- tabby stripes -->
+    <path d="M150 244 Q 160 268 152 290" fill="none" stroke="#B56622" stroke-width="6" stroke-linecap="round" opacity="0.45"/>
+    <path d="M250 244 Q 240 268 248 290" fill="none" stroke="#B56622" stroke-width="6" stroke-linecap="round" opacity="0.45"/>
+    <!-- front legs -->
+    <rect x="168" y="320" width="26" height="44" rx="13" fill="url(#fur)"/>
+    <rect x="206" y="320" width="26" height="44" rx="13" fill="url(#fur)"/>
+    <ellipse cx="181" cy="362" rx="14" ry="6" fill="#F2D6A8"/>
+    <ellipse cx="219" cy="362" rx="14" ry="6" fill="#F2D6A8"/>
+  </g>
+
+  <!-- Head -->
+  <g id="head">
+    <animateTransform attributeName="transform" type="translate"
+      values="0 0; 0 -2; 0 0"
+      keyTimes="0;0.5;1"
+      calcMode="spline"
+      keySplines="0.42 0 0.58 1; 0.42 0 0.58 1"
+      dur="2.6s" repeatCount="indefinite"/>
+    <!-- ears -->
+    <path d="M148 118 L128 78 L168 104 Z" fill="url(#fur)"/>
+    <path d="M252 118 L272 78 L232 104 Z" fill="url(#fur)"/>
+    <path d="M152 114 L138 92 L162 106 Z" fill="#F2A8B0"/>
+    <path d="M248 114 L262 92 L238 106 Z" fill="#F2A8B0"/>
+    <!-- head shape -->
+    <ellipse cx="200" cy="160" rx="72" ry="64" fill="url(#fur)"/>
+    <!-- cheek fluff -->
+    <path d="M132 178 Q 124 186 132 192" fill="none" stroke="#B56622" stroke-width="3" opacity="0.4"/>
+    <path d="M268 178 Q 276 186 268 192" fill="none" stroke="#B56622" stroke-width="3" opacity="0.4"/>
+    <!-- face whites -->
+    <path d="M200 178 Q 178 196 168 188 Q 176 178 200 178 Z" fill="#FFF3DE"/>
+    <path d="M200 178 Q 222 196 232 188 Q 224 178 200 178 Z" fill="#FFF3DE"/>
+    <!-- eyes -->
+    <ellipse cx="174" cy="156" rx="11" ry="13" fill="#3A2A1A"/>
+    <ellipse cx="226" cy="156" rx="11" ry="13" fill="#3A2A1A"/>
+    <ellipse cx="174" cy="151" rx="4" ry="5" fill="#9CD17A" opacity="0.9"/>
+    <ellipse cx="226" cy="151" rx="4" ry="5" fill="#9CD17A" opacity="0.9"/>
+    <ellipse cx="174" cy="153" rx="2.2" ry="4" fill="#10100C"/>
+    <ellipse cx="226" cy="153" rx="2.2" ry="4" fill="#10100C"/>
+    <circle cx="178" cy="150" r="2.2" fill="#fff"/>
+    <circle cx="230" cy="150" r="2.2" fill="#fff"/>
+    <!-- nose -->
+    <path d="M196 176 L204 176 L200 182 Z" fill="#D97A7A"/>
+    <!-- mouth -->
+    <path d="M200 182 Q 196 190 190 188" fill="none" stroke="#7A4A2A" stroke-width="2" stroke-linecap="round"/>
+    <path d="M200 182 Q 204 190 210 188" fill="none" stroke="#7A4A2A" stroke-width="2" stroke-linecap="round"/>
+    <!-- whiskers -->
+    <g stroke="#5A4030" stroke-width="1.6" stroke-linecap="round" fill="none" opacity="0.75">
+      <path d="M156 174 Q 120 170 104 174"/>
+      <path d="M156 182 Q 122 184 100 188"/>
+      <path d="M244 174 Q 280 170 296 174"/>
+      <path d="M244 182 Q 278 184 300 188"/>
+    </g>
+  </g>
+</svg>

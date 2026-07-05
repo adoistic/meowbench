@@ -1,0 +1,19 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Head -->
+  <circle cx="50" cy="40" r="20" fill="#ccc"/>
+  <!-- Ears -->
+  <polygon points="35,25 30,10 40,20" fill="#ccc"/>
+  <polygon points="65,25 70,10 60,20" fill="#ccc"/>
+  <!-- Eyes -->
+  <circle cx="42" cy="35" r="3" fill="#000"/>
+  <circle cx="58" cy="35" r="3" fill="#000"/>
+  <!-- Nose -->
+  <path d="M50,45 L48,48 L52,48 Z" fill="#f9a"/>
+  <!-- Mouth -->
+  <path d="M45,50 Q50,55 55,50" stroke="#000" stroke-width="1" fill="none"/>
+  <!-- Whiskers -->
+  <line x1="35" y1="48" x2="25" y2="46" stroke="#000" stroke-width="0.5"/>
+  <line x1="35" y1="52" x2="25" y2="54" stroke="#000" stroke-width="0.5"/>
+  <line x1="65" y1="48" x2="75" y2="46" stroke="#000" stroke-width="0.5"/>
+  <line x1="65" y1="52" x2="75" y2="54" stroke="#000" stroke-width="0.5"/>
+</svg>

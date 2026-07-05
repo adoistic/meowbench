@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- background -->
+  <rect width="400" height="400" fill="#FCEED9"/>
+
+  <!-- tail -->
+  <path d="M290 300 Q345 300 345 250 Q345 215 315 215" fill="none" stroke="#4A4A58" stroke-width="20" stroke-linecap="round"/>
+
+  <!-- body -->
+  <path d="M130 330 Q130 230 200 230 Q270 230 270 330 Z" fill="#4A4A58"/>
+
+  <!-- ears -->
+  <polygon points="135,150 150,90 185,130" fill="#4A4A58"/>
+  <polygon points="265,150 250,90 215,130" fill="#4A4A58"/>
+  <polygon points="146,138 154,106 172,127" fill="#F49AB0"/>
+  <polygon points="254,138 246,106 228,127" fill="#F49AB0"/>
+
+  <!-- head -->
+  <circle cx="200" cy="185" r="75" fill="#4A4A58"/>
+
+  <!-- eyes -->
+  <circle cx="172" cy="178" r="9" fill="#FCEED9"/>
+  <circle cx="228" cy="178" r="9" fill="#FCEED9"/>
+
+  <!-- nose -->
+  <polygon points="192,205 208,205 200,216" fill="#F49AB0"/>
+
+  <!-- mouth -->
+  <path d="M200 216 Q200 228 189 228 M200 216 Q200 228 211 228" fill="none" stroke="#FCEED9" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- whiskers -->
+  <g stroke="#FCEED9" stroke-width="3" stroke-linecap="round">
+    <line x1="140" y1="200" x2="105" y2="193"/>
+    <line x1="140" y1="212" x2="107" y2="216"/>
+    <line x1="260" y1="200" x2="295" y2="193"/>
+    <line x1="260" y1="212" x2="293" y2="216"/>
+  </g>
+
+  <!-- paws -->
+  <circle cx="170" cy="330" r="14" fill="#3A3A46"/>
+  <circle cx="230" cy="330" r="14" fill="#3A3A46"/>
+
+  <!-- ground line -->
+  <line x1="80" y1="344" x2="320" y2="344" stroke="#E8C9A0" stroke-width="6" stroke-linecap="round"/>
+</svg>

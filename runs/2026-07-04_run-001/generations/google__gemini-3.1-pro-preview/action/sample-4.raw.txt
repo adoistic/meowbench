@@ -1,0 +1,207 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#F8F9FA"/>
+  <circle cx="450" cy="300" r="280" fill="#FFF3E0"/>
+  
+  <!-- Ground Shadow -->
+  <ellipse cx="380" cy="492" rx="280" ry="12" fill="#EADBC8"/>
+  
+  <!-- Motion Lines (Background) -->
+  <path d="M 70 300 L 160 300 M 50 280 L 100 280 M 90 320 L 200 320" stroke="#E2E8F0" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M 600 150 L 720 150 M 650 130 L 700 130" stroke="#E2E8F0" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M 120 180 Q 150 170 190 180" fill="none" stroke="#E2E8F0" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 620 400 Q 650 390 680 400" fill="none" stroke="#E2E8F0" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- ============================================== -->
+  <!-- FAR BICYCLE PARTS                              -->
+  <!-- ============================================== -->
+  <rect x="343" y="393" width="24" height="14" rx="4" fill="#2B2D42"/>
+  <line x1="380" y1="420" x2="355" y2="400" stroke="#8D99AE" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- ============================================== -->
+  <!-- FAR CAT LIMBS & TAIL                           -->
+  <!-- ============================================== -->
+  <!-- Tail -->
+  <path d="M 310 200 C 230 260, 100 220, 150 120 C 170 70, 230 90, 210 150" fill="none" stroke="#F77F00" stroke-width="26" stroke-linecap="round"/>
+  <path d="M 180 94 C 200 80, 225 105, 210 150" fill="none" stroke="#FFFFFF" stroke-width="26" stroke-linecap="round"/>
+  
+  <!-- Far Leg -->
+  <polyline points="320,200 370,280 355,400" fill="none" stroke="#C16600" stroke-width="30" stroke-linejoin="round" stroke-linecap="round"/>
+  <ellipse cx="355" cy="400" rx="16" ry="12" fill="#FFE5D9"/>
+
+  <!-- Far Arm -->
+  <polyline points="400,140 460,170 520,225" fill="none" stroke="#C16600" stroke-width="26" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="520" cy="225" r="13" fill="#FFE5D9"/>
+
+  <!-- ============================================== -->
+  <!-- WHEELS AND HUBS                                -->
+  <!-- ============================================== -->
+  <!-- Rear Wheel -->
+  <circle cx="220" cy="420" r="66" fill="none" stroke="#2B2D42" stroke-width="14"/>
+  <circle cx="220" cy="420" r="58" fill="none" stroke="#D3D9DF" stroke-width="4"/>
+  <line x1="155" y1="420" x2="285" y2="420" stroke="#8D99AE" stroke-width="2"/>
+  <line x1="220" y1="355" x2="220" y2="485" stroke="#8D99AE" stroke-width="2"/>
+  <line x1="174" y1="374" x2="266" y2="466" stroke="#8D99AE" stroke-width="2"/>
+  <line x1="174" y1="466" x2="266" y2="374" stroke="#8D99AE" stroke-width="2"/>
+  
+  <!-- Rear Fender -->
+  <path d="M 296 420 A 76 76 0 0 0 160 370" fill="none" stroke="#E9C46A" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="220" cy="420" r="10" fill="#2B2D42"/>
+
+  <!-- Front Wheel -->
+  <circle cx="540" cy="420" r="66" fill="none" stroke="#2B2D42" stroke-width="14"/>
+  <circle cx="540" cy="420" r="58" fill="none" stroke="#D3D9DF" stroke-width="4"/>
+  <line x1="475" y1="420" x2="605" y2="420" stroke="#8D99AE" stroke-width="2"/>
+  <line x1="540" y1="355" x2="540" y2="485" stroke="#8D99AE" stroke-width="2"/>
+  <line x1="494" y1="374" x2="586" y2="466" stroke="#8D99AE" stroke-width="2"/>
+  <line x1="494" y1="466" x2="586" y2="374" stroke="#8D99AE" stroke-width="2"/>
+  
+  <!-- Front Fender -->
+  <path d="M 470 395 A 76 76 0 0 1 610 395" fill="none" stroke="#E9C46A" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="540" cy="420" r="10" fill="#2B2D42"/>
+
+  <!-- ============================================== -->
+  <!-- BICYCLE FRAME (Teal Mint)                      -->
+  <!-- ============================================== -->
+  <!-- Headset & Seatpost clamps -->
+  <line x1="485" y1="255" x2="495" y2="285" stroke="#8D99AE" stroke-width="18" stroke-linecap="round"/>
+  <rect x="333" y="265" width="14" height="10" transform="rotate(-15 340 270)" fill="#8D99AE"/>
+
+  <!-- Main Tubes -->
+  <path d="M 220 420 L 380 420 M 220 420 L 340 270 M 380 420 L 330 230 M 340 270 L 490 270 M 380 420 L 490 270 M 480 240 L 540 420" stroke="#2A9D8F" stroke-width="14" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+  
+  <!-- Bottom Bracket Red Center -->
+  <circle cx="380" cy="420" r="14" fill="#2A9D8F"/>
+
+  <!-- ============================================== -->
+  <!-- BICYCLE DRIVETRAIN                             -->
+  <!-- ============================================== -->
+  <!-- Chainwheel Structure -->
+  <circle cx="380" cy="420" r="18" fill="none" stroke="#8D99AE" stroke-width="8"/>
+  <circle cx="380" cy="420" r="6" fill="#8D99AE"/>
+  <line x1="380" y1="402" x2="380" y2="438" stroke="#8D99AE" stroke-width="4"/>
+  <line x1="362" y1="420" x2="398" y2="420" stroke="#8D99AE" stroke-width="4"/>
+  
+  <!-- Chain -->
+  <line x1="220" y1="406" x2="380" y2="398" stroke="#555555" stroke-width="4" stroke-dasharray="4,4"/>
+  <line x1="220" y1="434" x2="380" y2="442" stroke="#555555" stroke-width="4" stroke-dasharray="4,4"/>
+
+  <!-- ============================================== -->
+  <!-- SADDLE                                         -->
+  <!-- ============================================== -->
+  <path d="M 295 235 C 285 230, 310 215, 330 215 C 350 215, 370 225, 370 230 C 370 240, 310 245, 295 235 Z" fill="#8B5A2B"/>
+
+  <!-- ============================================== -->
+  <!-- CAT BODY & SCARF (TAILS)                       -->
+  <!-- ============================================== -->
+  <!-- Flying Scarf Tails -->
+  <path d="M 400 120 Q 350 100 280 130" stroke="#EF233C" stroke-width="16" stroke-linecap="round" fill="none"/>
+  <path d="M 400 125 Q 360 120 310 160" stroke="#EF233C" stroke-width="12" stroke-linecap="round" fill="none"/>
+
+  <!-- Torso Capsule Curve -->
+  <path d="M 308 167 Q 350 100, 398 107 A 40 40 0 0 1 442 173 Q 380 230, 352 233 A 40 40 0 0 1 308 167 Z" fill="#F77F00" />
+  
+  <!-- Tiger Stripes (Back) -->
+  <path d="M 320 125 C 330 135, 340 145, 340 160" stroke="#D66800" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M 340 115 C 350 125, 360 135, 360 150" stroke="#D66800" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M 360 110 C 370 120, 380 130, 380 145" stroke="#D66800" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+  <!-- ============================================== -->
+  <!-- CAT HEAD                                       -->
+  <!-- ============================================== -->
+  <!-- Far Ear -->
+  <polygon points="410,45 400,0 435,30" fill="#F77F00"/>
+  <polygon points="412,40 405,10 428,30" fill="#F08080"/>
+  
+  <!-- Head Oval -->
+  <ellipse cx="450" cy="90" rx="55" ry="45" fill="#F77F00"/>
+  
+  <!-- Tabby Head Stripes -->
+  <polygon points="450,55 440,45 460,45" fill="#D66800"/>
+  <polygon points="435,58 425,50 440,50" fill="#D66800"/>
+  <polygon points="465,58 460,50 475,50" fill="#D66800"/>
+  
+  <!-- Near Ear -->
+  <polygon points="460,35 485,-5 475,45" fill="#F77F00"/>
+  <polygon points="463,35 480,5 471,40" fill="#F08080"/>
+
+  <!-- Cheek Fluff -->
+  <path d="M 400 90 L 385 85 L 398 100 L 382 105 L 398 110" fill="none" stroke="#F77F00" stroke-width="4" stroke-linejoin="round"/>
+  
+  <!-- Muzzle & Face -->
+  <ellipse cx="475" cy="105" rx="25" ry="18" fill="#FFFFFF"/>
+  <polygon points="480,95 490,95 485,103" fill="#F08080"/>
+  
+  <!-- Smile & Open Mouth -->
+  <path d="M 470 105 Q 477 115 485 105 Q 493 115 500 105" fill="none" stroke="#2B2D42" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 485 105 C 485 115, 493 115, 493 105 Z" fill="#D90429"/>
+  
+  <!-- Happy Closed Eyes -->
+  <path d="M 445 75 Q 455 65 460 75" fill="none" stroke="#2B2D42" stroke-width="4" stroke-linecap="round" />
+  <path d="M 480 75 Q 490 65 495 75" fill="none" stroke="#2B2D42" stroke-width="4" stroke-linecap="round" />
+  
+  <!-- Eyebrows -->
+  <path d="M 445 30 Q 452 22 460 30" fill="none" stroke="#D66800" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Whiskers -->
+  <line x1="480" y1="105" x2="520" y2="95" stroke="#2B2D42" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="485" y1="110" x2="525" y2="105" stroke="#2B2D42" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="480" y1="115" x2="515" y2="118" stroke="#2B2D42" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- Aviator Goggles -->
+  <line x1="415" y1="45" x2="485" y2="60" stroke="#2B2D42" stroke-width="6" stroke-linecap="round"/>
+  <rect x="440" y="40" width="20" height="25" rx="8" fill="#8ECAE6" stroke="#2B2D42" stroke-width="4" transform="rotate(15 450 52)"/>
+  <rect x="465" y="46" width="20" height="25" rx="8" fill="#8ECAE6" stroke="#2B2D42" stroke-width="4" transform="rotate(15 475 58)"/>
+
+  <!-- Scarf Wrap (Around Neck) -->
+  <path d="M 390 110 C 400 130, 430 140, 440 120" stroke="#EF233C" stroke-width="16" stroke-linecap="round" fill="none"/>
+
+  <!-- ============================================== -->
+  <!-- NEAR CAT LIMBS & NEAR BICYCLE PARTS             -->
+  <!-- ============================================== -->
+  <!-- Near Crank & Pedal -->
+  <line x1="380" y1="420" x2="405" y2="440" stroke="#8D99AE" stroke-width="10" stroke-linecap="round"/>
+  <rect x="393" y="433" width="24" height="14" rx="4" fill="#2B2D42"/>
+
+  <!-- Near Leg & Paw -->
+  <polyline points="340,210 375,320 405,440" fill="none" stroke="#F77F00" stroke-width="30" stroke-linejoin="round" stroke-linecap="round"/>
+  <ellipse cx="405" cy="440" rx="16" ry="12" fill="#FFFFFF"/>
+
+  <!-- ============================================== -->
+  <!-- FRONT EXTRAS (Basket & Handlebars)             -->
+  <!-- ============================================== -->
+  <!-- Far Handlebar Path -->
+  <path d="M 490 270 L 480 240 Q 500 230 520 225" fill="none" stroke="#D3D9DF" stroke-width="12" stroke-linecap="round"/>
+  <path d="M 505 228 L 525 223" stroke="#2B2D42" stroke-width="16" stroke-linecap="round"/>
+
+  <!-- Basket -->
+  <rect x="495" y="240" width="4" height="30" fill="#A98467"/>
+  <rect x="480" y="240" width="4" height="30" fill="#A98467"/>
+  <polygon points="500,285 540,285 555,235 480,235" fill="#EFA00B"/>
+  
+  <!-- Basket Woven Lines -->
+  <line x1="486" y1="245" x2="549" y2="245" stroke="#D48A00" stroke-width="3"/>
+  <line x1="492" y1="255" x2="543" y2="255" stroke="#D48A00" stroke-width="3"/>
+  <line x1="496" y1="265" x2="541" y2="265" stroke="#D48A00" stroke-width="3"/>
+  <line x1="499" y1="275" x2="540" y2="275" stroke="#D48A00" stroke-width="3"/>
+  
+  <!-- Basket Flowers -->
+  <path d="M 480 235 Q 470 220 480 210 Q 490 220 480 235" fill="#2DC653"/>
+  <path d="M 545 235 Q 560 225 555 210 Q 545 220 545 235" fill="#2DC653"/>
+  
+  <circle cx="495" cy="225" r="10" fill="#FFB5A7"/>
+  <circle cx="495" cy="225" r="4" fill="#FFFFFF"/>
+  <circle cx="515" cy="220" r="12" fill="#8ECAE6"/>
+  <circle cx="515" cy="220" r="5" fill="#FFFFFF"/>
+  <circle cx="535" cy="228" r="9" fill="#FFD166"/>
+  <circle cx="535" cy="228" r="3" fill="#FFFFFF"/>
+
+  <!-- Near Handlebar Path -->
+  <path d="M 480 240 Q 460 230 450 230" fill="none" stroke="#D3D9DF" stroke-width="12" stroke-linecap="round"/>
+  <path d="M 465 230 L 445 230" stroke="#2B2D42" stroke-width="16" stroke-linecap="round"/>
+
+  <!-- Near Arm & Hand (Overlaps Near Handlebar) -->
+  <polyline points="410,150 430,200 450,230" fill="none" stroke="#F77F00" stroke-width="26" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="450" cy="230" r="13" fill="#FFFFFF"/>
+
+</svg>

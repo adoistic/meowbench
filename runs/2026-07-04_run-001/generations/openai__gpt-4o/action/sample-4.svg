@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Bicycle Wheels -->
+  <circle cx="50" cy="150" r="30" stroke="black" stroke-width="4" fill="none" />
+  <circle cx="150" cy="150" r="30" stroke="black" stroke-width="4" fill="none" />
+  
+  <!-- Bicycle Frame -->
+  <line x1="50" y1="150" x2="100" y2="100" stroke="black" stroke-width="4" />
+  <line x1="100" y1="100" x2="150" y2="150" stroke="black" stroke-width="4" />
+  <line x1="50" y1="150" x2="150" y2="150" stroke="black" stroke-width="4" />
+  <line x1="100" y1="100" x2="100" y2="70" stroke="black" stroke-width="4" />
+  
+  <!-- Handlebars -->
+  <line x1="100" y1="70" x2="70" y2="50" stroke="black" stroke-width="4" />
+  <line x1="70" y1="50" x2="80" y2="50" stroke="black" stroke-width="4" />
+  <line x1="100" y1="70" x2="130" y2="50" stroke="black" stroke-width="4" />
+  <line x1="130" y1="50" x2="120" y2="50" stroke="black" stroke-width="4" />
+  
+  <!-- Cat -->
+  <circle cx="100" cy="60" r="12" fill="orange" stroke="black" stroke-width="3" />
+  <polygon points="92,58 95,48 100,53" fill="orange" stroke="black" stroke-width="3" />
+  <polygon points="108,58 105,48 100,53" fill="orange" stroke="black" stroke-width="3" />
+  <ellipse cx="97" cy="60" rx="2" ry="3" fill="black" />
+  <ellipse cx="103" cy="60" rx="2" ry="3" fill="black" />
+  <path d="M96 66 Q100 68 104 66" stroke="black" stroke-width="2" fill="none" />
+  
+  <!-- Cat Body -->
+  <ellipse cx="100" cy="90" rx="12" ry="20" fill="orange" stroke="black" stroke-width="3" />
+  
+  <!-- Cat Tail -->
+  <path d="M110 95 C120 85, 140 105, 130 115" stroke="orange" stroke-width="3" fill="none" />
+</svg>

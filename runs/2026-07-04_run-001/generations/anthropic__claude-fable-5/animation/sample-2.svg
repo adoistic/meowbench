@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#fdf3e3"/>
+      <stop offset="100%" stop-color="#f3ddc0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="400" height="400" fill="url(#bgGrad)"/>
+  <ellipse cx="200" cy="330" rx="140" ry="22" fill="#d8bd97" opacity="0.6"/>
+
+  <!-- TAIL: swaying continuously, pivot at base (275,290) -->
+  <g>
+    <path d="M275,295
+             C 320,290 345,265 340,225
+             C 337,200 320,190 305,196
+             C 293,201 292,214 300,219
+             C 308,224 316,219 315,211"
+          fill="none" stroke="#5b5148" stroke-width="20" stroke-linecap="round"/>
+    <animateTransform attributeName="transform" type="rotate"
+        values="0 275 295; 18 275 295; -12 275 295; 0 275 295"
+        keyTimes="0;0.35;0.75;1"
+        dur="3s" repeatCount="indefinite" calcMode="spline"
+        keySplines="0.45 0 0.55 1; 0.45 0 0.55 1; 0.45 0 0.55 1"/>
+  </g>
+
+  <!-- body -->
+  <path d="M130,330
+           C 118,265 150,215 200,215
+           C 250,215 282,265 270,330
+           Z" fill="#6e635a"/>
+  <!-- chest patch -->
+  <path d="M170,330 C 168,285 185,255 200,255 C 215,255 232,285 230,330 Z" fill="#e8dccb"/>
+
+  <!-- front paws -->
+  <ellipse cx="172" cy="326" rx="22" ry="12" fill="#7a6f65"/>
+  <ellipse cx="228" cy="326" rx="22" ry="12" fill="#7a6f65"/>
+  <path d="M164,322 v8 M172,322 v9 M180,322 v8" stroke="#5b5148" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <path d="M220,322 v8 M228,322 v9 M236,322 v8" stroke="#5b5148" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+  <!-- head -->
+  <g>
+    <!-- ears -->
+    <path d="M137,140 L150,90 L182,122 Z" fill="#6e635a"/>
+    <path d="M263,140 L250,90 L218,122 Z" fill="#6e635a"/>
+    <path d="M147,131 L154,103 L172,121 Z" fill="#e8a8a8"/>
+    <path d="M253,131 L246,103 L228,121 Z" fill="#e8a8a8"/>
+
+    <!-- face -->
+    <ellipse cx="200" cy="168" rx="70" ry="60" fill="#7a6f65"/>
+
+    <!-- stripes -->
+    <path d="M188,112 q12,-8 24,0 M180,120 q20,-12 40,0" stroke="#5b5148" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+    <!-- eyes (blinking) -->
+    <g>
+      <ellipse cx="175" cy="165" rx="10" ry="12" fill="#2e2a26">
+        <animate attributeName="ry" values="12;12;1;12;12" keyTimes="0;0.9;0.94;0.98;1" dur="4.5s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="225" cy="165" rx="10" ry="12" fill="#2e2a26">
+        <animate attributeName="ry" values="12;12;1;12;12" keyTimes="0;0.9;0.94;0.98;1" dur="4.5s" repeatCount="indefinite"/>
+      </ellipse>
+      <circle cx="178" cy="161" r="3" fill="#ffffff"/>
+      <circle cx="228" cy="161" r="3" fill="#ffffff"/>
+    </g>
+
+    <!-- muzzle -->
+    <path d="M200,185 l-8,7 q8,7 16,0 z" fill="#e8a8a8"/>
+    <path d="M200,192 q0,10 -12,12 M200,192 q0,10 12,12" stroke="#5b5148" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- whiskers -->
+    <g stroke="#e8dccb" stroke-width="2.5" stroke-linecap="round" fill="none">
+      <path d="M158,185 q-25,-4 -42,-10"/>
+      <path d="M158,193 q-25,2 -44,2"/>
+      <path d="M158,201 q-23,7 -40,13"/>
+      <path d="M242,185 q25,-4 42,-10"/>
+      <path d="M242,193 q25,2 44,2"/>
+      <path d="M242,201 q23,7 40,13"/>
+    </g>
+  </g>
+</svg>

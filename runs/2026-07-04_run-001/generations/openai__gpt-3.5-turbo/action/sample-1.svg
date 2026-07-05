@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Cat body -->
+  <circle cx="50" cy="60" r="30" fill="gray"/>
+  
+  <!-- Cat head -->
+  <circle cx="50" cy="40" r="20" fill="gray"/>
+  
+  <!-- Cat ears -->
+  <polygon points="40,30 45,15 50,30" fill="gray"/>
+  <polygon points="50,30 55,15 60,30" fill="gray"/>
+  
+  <!-- Cat eyes -->
+  <circle cx="45" cy="40" r="3" fill="black"/>
+  <circle cx="55" cy="40" r="3" fill="black"/>
+  
+  <!-- Cat nose -->
+  <circle cx="50" cy="45" r="2" fill="pink"/>
+  
+  <!-- Cat mouth -->
+  <ellipse cx="50" cy="48" rx="5" ry="2" fill="white" stroke="black"/>
+  
+  <!-- Bicycle body -->
+  <rect x="35" y="60" width="30" height="5" fill="black"/>
+  
+  <!-- Bicycle wheels -->
+  <circle cx="40" cy="65" r="5" fill="black"/>
+  <circle cx="60" cy="65" r="5" fill="black"/>
+  
+  <!-- Bicycle pedals -->
+  <circle cx="38" cy="60" r="2" fill="black"/>
+  <circle cx="62" cy="60" r="2" fill="black"/>
+</svg>

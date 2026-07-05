@@ -1,0 +1,29 @@
+[
+  {
+    "judgeSlug": "google/gemini-3.5-flash",
+    "scores": {
+      "cat_likeness": 7,
+      "aesthetic": 5,
+      "technique": 6,
+      "prompt_fidelity": 9
+    }
+  },
+  {
+    "judgeSlug": "x-ai/grok-4.3",
+    "scores": {
+      "cat_likeness": 8,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 10
+    }
+  },
+  {
+    "judgeSlug": "qwen/qwen3-vl-235b-a22b-instruct",
+    "scores": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 6,
+      "prompt_fidelity": 9
+    }
+  }
+]

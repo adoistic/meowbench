@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <style>
+      @keyframes sway {
+        0%   { transform: rotate(0deg); }
+        50%  { transform: rotate(-25deg); }
+        100% { transform: rotate(0deg); }
+      }
+      #tail {
+        transform-origin: 300px 210px;
+        animation: sway 2s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Ground shadow -->
+  <ellipse cx="190" cy="270" rx="120" ry="14" fill="#00000018"/>
+
+  <!-- Tail (animated) -->
+  <path id="tail" d="M300,215 C360,200 370,150 330,130 C360,160 330,190 295,205 Z"
+        fill="#f6a04d" stroke="#d9822b" stroke-width="3"/>
+
+  <!-- Body -->
+  <ellipse cx="200" cy="215" rx="110" ry="55" fill="#f6a04d" stroke="#d9822b" stroke-width="3"/>
+
+  <!-- Front legs -->
+  <rect x="120" y="235" width="22" height="45" rx="10" fill="#f6a04d" stroke="#d9822b" stroke-width="3"/>
+  <rect x="165" y="240" width="22" height="40" rx="10" fill="#f6a04d" stroke="#d9822b" stroke-width="3"/>
+
+  <!-- Head -->
+  <circle cx="115" cy="150" r="55" fill="#f6a04d" stroke="#d9822b" stroke-width="3"/>
+
+  <!-- Ears -->
+  <path d="M75,115 L65,70 L110,100 Z" fill="#f6a04d" stroke="#d9822b" stroke-width="3"/>
+  <path d="M155,115 L165,70 L120,100 Z" fill="#f6a04d" stroke="#d9822b" stroke-width="3"/>
+  <path d="M78,110 L72,84 L98,102 Z" fill="#ffc9a0"/>
+  <path d="M152,110 L158,84 L132,102 Z" fill="#ffc9a0"/>
+
+  <!-- Eyes -->
+  <ellipse cx="95" cy="145" rx="10" ry="13" fill="#fff"/>
+  <ellipse cx="135" cy="145" rx="10" ry="13" fill="#fff"/>
+  <circle cx="95" cy="147" r="5" fill="#333"/>
+  <circle cx="135" cy="147" r="5" fill="#333"/>
+
+  <!-- Nose -->
+  <path d="M110,163 L120,163 L115,171 Z" fill="#e06377"/>
+
+  <!-- Mouth -->
+  <path d="M115,171 Q108,180 100,174 M115,171 Q122,180 130,174"
+        fill="none" stroke="#333" stroke-width="2"/>
+
+  <!-- Whiskers -->
+  <g stroke="#666" stroke-width="1.5">
+    <line x1="90" y1="165" x2="45" y2="158"/>
+    <line x1="90" y1="170" x2="45" y2="172"/>
+    <line x1="140" y1="165" x2="185" y2="158"/>
+    <line x1="140" y1="170" x2="185" y2="172"/>
+  </g>
+</svg>

@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="A smiling cat with a continuously swaying tail">
+  <defs>
+    <radialGradient id="fur" cx="45%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ffcf79"/>
+      <stop offset="75%" stop-color="#f5a23b"/>
+      <stop offset="100%" stop-color="#d97823"/>
+    </radialGradient>
+    <linearGradient id="tailFur" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffc66b"/>
+      <stop offset="100%" stop-color="#e88428"/>
+    </linearGradient>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5"/>
+      <feOffset dx="0" dy="6" result="offset"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.22"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .outline{stroke:#6b371c;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .stripe{stroke:#b95f22;stroke-width:8;stroke-linecap:round}
+      .whisker{stroke:#5a2b17;stroke-width:3;stroke-linecap:round}
+    </style>
+  </defs>
+
+  <rect width="640" height="480" fill="#fff4dc"/>
+  <ellipse cx="320" cy="422" rx="190" ry="28" fill="#d49b56" opacity="0.25"/>
+
+  <g id="tail">
+    <animateTransform attributeName="transform"
+      type="rotate"
+      values="-16 384 292; 18 384 292; -16 384 292"
+      keyTimes="0;0.5;1"
+      dur="2.2s"
+      repeatCount="indefinite"
+      calcMode="spline"
+      keySplines=".45 0 .55 1; .45 0 .55 1"/>
+    <path d="M384 292 C456 270 470 195 416 152 C386 128 388 93 423 82"
+      fill="none" stroke="url(#tailFur)" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M384 292 C456 270 470 195 416 152 C386 128 388 93 423 82"
+      fill="none" class="outline" stroke-width="6"/>
+    <path d="M438 255 C453 249 459 241 462 229" class="stripe"/>
+    <path d="M443 203 C429 200 417 193 408 182" class="stripe"/>
+    <path d="M398 134 C409 127 421 124 434 126" class="stripe"/>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <ellipse cx="318" cy="305" rx="103" ry="112" fill="url(#fur)" class="outline"/>
+    <path d="M236 285 C250 322 280 346 318 346 C356 346 388 322 401 285" fill="none" stroke="#e58a2e" stroke-width="8" stroke-linecap="round" opacity="0.45"/>
+
+    <ellipse cx="274" cy="390" rx="35" ry="25" fill="#ffbd5c" class="outline"/>
+    <ellipse cx="362" cy="390" rx="35" ry="25" fill="#ffbd5c" class="outline"/>
+    <path d="M260 392 h28" stroke="#b95f22" stroke-width="4" stroke-linecap="round"/>
+    <path d="M348 392 h28" stroke="#b95f22" stroke-width="4" stroke-linecap="round"/>
+
+    <circle cx="318" cy="198" r="82" fill="url(#fur)" class="outline"/>
+    <path d="M258 145 L237 78 L302 122 Z" fill="#f5a23b" class="outline"/>
+    <path d="M378 145 L399 78 L334 122 Z" fill="#f5a23b" class="outline"/>
+    <path d="M264 127 L253 95 L286 119 Z" fill="#ff8fad" stroke="#6b371c" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M372 127 L383 95 L350 119 Z" fill="#ff8fad" stroke="#6b371c" stroke-width="4" stroke-linejoin="round"/>
+
+    <path d="M283 165 C275 157 264 154 253 157" fill="none" stroke="#b95f22" stroke-width="7" stroke-linecap="round"/>
+    <path d="M353 165 C361 157 372 154 383 157" fill="none" stroke="#b95f22" stroke-width="7" stroke-linecap="round"/>
+    <path d="M318 118 C306 133 301 149 303 166" fill="none" stroke="#b95f22" stroke-width="6" stroke-linecap="round"/>
+    <path d="M318 118 C330 133 335 149 333 166" fill="none" stroke="#b95f22" stroke-width="6" stroke-linecap="round"/>
+
+    <ellipse cx="287" cy="197" rx="12" ry="18" fill="#402011"/>
+    <ellipse cx="349" cy="197" rx="12" ry="18" fill="#402011"/>
+    <circle cx="291" cy="190" r="4" fill="#fff"/>
+    <circle cx="353" cy="190" r="4" fill="#fff"/>
+
+    <path d="M318 213 L306 227 L330 227 Z" fill="#ff758e" stroke="#6b371c" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M318 227 C313 239 300 240 294 232" fill="none" stroke="#5a2b17" stroke-width="4" stroke-linecap="round"/>
+    <path d="M318 227 C323 239 336 240 342 232" fill="none" stroke="#5a2b17" stroke-width="4" stroke-linecap="round"/>
+
+    <path d="M277 222 C241 211 217 211 193 219" class="whisker"/>
+    <path d="M278 234 C244 235 219 243 199 256" class="whisker"/>
+    <path d="M359 222 C395 211 419 211 443 219" class="whisker"/>
+    <path d="M358 234 C392 235 417 243 437 256" class="whisker"/>
+  </g>
+</svg>

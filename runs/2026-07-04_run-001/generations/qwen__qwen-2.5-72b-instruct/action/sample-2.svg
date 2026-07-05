@@ -1,0 +1,16 @@
+<svg width="500" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bicycle -->
+  <rect x="100" y="150" width="150" height="50" rx="15" ry="15" fill="#D3D3D3"/>
+  <rect x="125" y="125" width="100" height="25" rx="10" ry="10" fill="#D3D3D3"/>
+  <circle cx="175" cy="225" r="20" fill="#000"/>
+  <circle cx="100" cy="225" r="20" fill="#000"/>
+  <line x1="125" y1="150" x2="125" y2="205" stroke="#000" stroke-width="4"/>
+  <line x1="225" y1="150" x2="225" y2="205" stroke="#000" stroke-width="4"/>
+  <!-- Cat -->
+  <path d="M150 100 q-20 -50 40 0 q20 50 0 -25 t-40 0 t-40 0 t40 0 t40 25 q0 30 -30 50 t-30 20" fill="#FFD700"/>
+  <circle cx="145" cy="90" r="10" fill="#000"/>
+  <circle cx="155" cy="90" r="10" fill="#000"/>
+  <path d="M135 110 q-10 0 0 10 t10 0" fill="#000"/>
+  <path d="M110 125 l-20 -10 l-10 20 l20 10 z" fill="#FFD700"/>
+  <path d="M170 125 l20 -10 l10 20 l-20 10 z" fill="#FFD700"/>
+</svg>

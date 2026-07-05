@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <style>
+    #tail {
+      transform-origin: top center;
+      animation: sway 2s infinite ease-in-out;
+    }
+    @keyframes sway {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(20deg); }
+    }
+  </style>
+  <circle cx="50" cy="50" r="40" fill="#F7D2C4" />
+  <circle cx="50" cy="30" r="10" fill="#30261E" />
+  <circle cx="50" cy="70" r="20" fill="#F7D2C4" />
+  <circle cx="45" cy="60" r="5" fill="#30261E" />
+  <circle cx="55" cy="60" r="5" fill="#30261E" />
+  <path id="tail" d="M50 80, C55 90, 45 90, 50 100" stroke="#F7D2C4" stroke-width="10" />
+</svg>

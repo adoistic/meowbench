@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <g transform="translate(100,100)">
+    <circle cx="0" cy="-50" r="50" fill="#FFD7BE"/>
+    <ellipse cx="0" cy="0" rx="40" ry="20" fill="#FFD7BE"/>
+    <path d="M 0 -70 C -15 -60, 15 -60, 0 -50 Z" fill="#FFD7BE">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="20" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 0 -50 L 30 -60" stroke="#000" stroke-width="5" stroke-linecap="round">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="20" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 30 -60 L 50 -80" stroke="#000" stroke-width="5" stroke-linecap="round">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="20" dur="3s" repeatCount="indefinite" begin="0.5s"/>
+    </path>
+    <path d="M 50 -80 L 70 -100" stroke="#000" stroke-width="5" stroke-linecap="round">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="20" dur="4s" repeatCount="indefinite" begin="1s"/>
+    </path>
+  </g>
+</svg>

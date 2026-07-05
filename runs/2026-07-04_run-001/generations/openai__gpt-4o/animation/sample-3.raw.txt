@@ -1,0 +1,27 @@
+```svg
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes sway {
+      0%, 100% { transform: rotate(0deg); transform-origin: 160px 140px; }
+      50% { transform: rotate(20deg); transform-origin: 160px 140px; }
+    }
+    .tail { animation: sway 1s infinite; }
+  </style>
+  <!-- Cat Body -->
+  <ellipse cx="100" cy="140" rx="50" ry="40" fill="#D3D3D3"/>
+  <!-- Cat Head -->
+  <circle cx="100" cy="80" r="30" fill="#D3D3D3"/>
+  <!-- Cat Ears -->
+  <polygon points="80,60 90,30 100,60" fill="#D3D3D3"/>
+  <polygon points="120,60 110,30 100,60" fill="#D3D3D3"/>
+  <!-- Cat Eyes -->
+  <circle cx="90" cy="75" r="5" fill="#000"/>
+  <circle cx="110" cy="75" r="5" fill="#000"/>
+  <!-- Cat Nose -->
+  <polygon points="95,85 105,85 100,95" fill="#000"/>
+  <!-- Cat Mouth -->
+  <path d="M95,95 Q100,105 105,95" stroke="#000" fill="none"/>
+  <!-- Cat Tail -->
+  <path class="tail" d="M160,140 Q180,130 160,120" stroke="#D3D3D3" stroke-width="6" fill="none"/>
+</svg>
+```

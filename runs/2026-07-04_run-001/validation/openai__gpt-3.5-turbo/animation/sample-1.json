@@ -1,0 +1,16 @@
+{
+  "valid": false,
+  "reasons": [
+    "render-failed"
+  ],
+  "stats": {
+    "bytes": 683,
+    "elements": 8,
+    "paths": 2,
+    "colors": [
+      "black",
+      "gray",
+      "transparent"
+    ]
+  }
+}

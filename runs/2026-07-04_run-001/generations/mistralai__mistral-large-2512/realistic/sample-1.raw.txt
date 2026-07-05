@@ -1,0 +1,71 @@
+```xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="500" height="400">
+  <defs>
+    <linearGradient id="furGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5d5b0" />
+      <stop offset="50%" stop-color="#e0b888" />
+      <stop offset="100%" stop-color="#c89d66" />
+    </linearGradient>
+    <filter id="furTexture" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="3" result="noise"/>
+      <feDiffuseLighting in="noise" lighting-color="#e0b888" surfaceScale="2" result="diffLight">
+        <feDistantLight azimuth="45" elevation="60"/>
+      </feDiffuseLighting>
+      <feComposite in="SourceGraphic" in2="diffLight" operator="arithmetic" k1="0" k2="1" k3="0.3" k4="0"/>
+    </filter>
+    <radialGradient id="eyeGradient" cx="50%" cy="50%" r="50%" fx="30%" fy="30%">
+      <stop offset="0%" stop-color="#00ff88"/>
+      <stop offset="100%" stop-color="#008844"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Body -->
+  <path d="M250,200 C200,200 150,250 150,300 C150,350 200,370 250,370 C300,370 350,350 350,300 C350,250 300,200 250,200 Z" fill="url(#furGradient)" filter="url(#furTexture)" stroke="#b88d50" stroke-width="1"/>
+
+  <!-- Head -->
+  <circle cx="250" cy="150" r="50" fill="url(#furGradient)" filter="url(#furTexture)" stroke="#b88d50" stroke-width="1"/>
+
+  <!-- Ears -->
+  <path d="M220,120 L200,80 L240,100 Z" fill="url(#furGradient)" filter="url(#furTexture)" stroke="#b88d50" stroke-width="1"/>
+  <path d="M280,120 L300,80 L260,100 Z" fill="url(#furGradient)" filter="url(#furTexture)" stroke="#b88d50" stroke-width="1"/>
+  <path d="M225,115 L205,85 L235,105 Z" fill="#e0b888" stroke="#b88d50" stroke-width="0.5"/>
+  <path d="M275,115 L295,85 L265,105 Z" fill="#e0b888" stroke="#b88d50" stroke-width="0.5"/>
+
+  <!-- Eyes -->
+  <ellipse cx="235" cy="145" rx="8" ry="12" fill="url(#eyeGradient)" stroke="#000" stroke-width="0.5"/>
+  <ellipse cx="265" cy="145" rx="8" ry="12" fill="url(#eyeGradient)" stroke="#000" stroke-width="0.5"/>
+  <circle cx="238" cy="142" r="2" fill="#000"/>
+  <circle cx="268" cy="142" r="2" fill="#000"/>
+
+  <!-- Nose -->
+  <path d="M250,155 L245,165 L255,165 Z" fill="#ff6b6b" stroke="#000" stroke-width="0.5"/>
+
+  <!-- Mouth -->
+  <path d="M250,165 Q250,175 240,175" stroke="#000" stroke-width="0.5" fill="none"/>
+  <path d="M250,165 Q250,175 260,175" stroke="#000" stroke-width="0.5" fill="none"/>
+
+  <!-- Whiskers -->
+  <line x1="220" y1="160" x2="180" y2="155" stroke="#000" stroke-width="0.5"/>
+  <line x1="220" y1="165" x2="180" y2="165" stroke="#000" stroke-width="0.5"/>
+  <line x1="220" y1="170" x2="180" y2="175" stroke="#000" stroke-width="0.5"/>
+  <line x1="280" y1="160" x2="320" y2="155" stroke="#000" stroke-width="0.5"/>
+  <line x1="280" y1="165" x2="320" y2="165" stroke="#000" stroke-width="0.5"/>
+  <line x1="280" y1="170" x2="320" y2="175" stroke="#000" stroke-width="0.5"/>
+
+  <!-- Front legs -->
+  <path d="M200,300 C180,300 170,330 180,350 C190,370 210,360 220,350 C230,340 220,320 200,300 Z" fill="url(#furGradient)" filter="url(#furTexture)" stroke="#b88d50" stroke-width="1"/>
+  <path d="M300,300 C320,300 330,330 320,350 C310,370 290,360 280,350 C270,340 280,320 300,300 Z" fill="url(#furGradient)" filter="url(#furTexture)" stroke="#b88d50" stroke-width="1"/>
+
+  <!-- Back legs -->
+  <path d="M150,300 C130,300 120,330 130,350 C140,370 160,360 170,350 C180,340 170,320 150,300 Z" fill="url(#furGradient)" filter="url(#furTexture)" stroke="#b88d50" stroke-width="1"/>
+  <path d="M350,300 C370,300 380,330 370,350 C360,370 340,360 330,350 C320,340 330,320 350,300 Z" fill="url(#furGradient)" filter="url(#furTexture)" stroke="#b88d50" stroke-width="1"/>
+
+  <!-- Tail -->
+  <path d="M350,300 C380,300 400,250 400,220 C400,190 380,170 360,180 C340,190 350,220 350,250 C350,280 350,300 350,300 Z" fill="url(#furGradient)" filter="url(#furTexture)" stroke="#b88d50" stroke-width="1"/>
+
+  <!-- Fur details -->
+  <path d="M200,220 C210,210 220,215 230,220 C240,225 250,220 260,215 C270,210 280,220 290,225" stroke="#b88d50" stroke-width="0.5" fill="none"/>
+  <path d="M180,250 C190,240 200,245 210,250 C220,255 230,250 240,245 C250,240 260,250 270,255" stroke="#b88d50" stroke-width="0.5" fill="none"/>
+  <path d="M220,280 C230,270 240,275 250,280 C260,285 270,280 280,275" stroke="#b88d50" stroke-width="0.5" fill="none"/>
+</svg>
+```

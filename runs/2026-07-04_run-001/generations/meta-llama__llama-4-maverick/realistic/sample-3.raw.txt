@@ -1,0 +1,34 @@
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <!-- Body -->
+  <ellipse cx="200" cy="150" rx="80" ry="60" fill="#964B00" stroke="#786C3B" stroke-width="2" />
+  
+  <!-- Head -->
+  <circle cx="200" cy="80" r="40" fill="#964B00" stroke="#786C3B" stroke-width="2" />
+  
+  <!-- Ears -->
+  <path d="M 180,60 L 160,40 L 170,60 Z" fill="#964B00" stroke="#786C3B" stroke-width="2" />
+  <path d="M 220,60 L 240,40 L 230,60 Z" fill="#964B00" stroke="#786C3B" stroke-width="2" />
+  
+  <!-- Eyes -->
+  <circle cx="185" cy="70" r="8" fill="#FFFFFF" stroke="#000000" stroke-width="1" />
+  <circle cx="215" cy="70" r="8" fill="#FFFFFF" stroke="#000000" stroke-width="1" />
+  <circle cx="188" cy="73" r="3" fill="#000000" />
+  <circle cx="218" cy="73" r="3" fill="#000000" />
+  
+  <!-- Whiskers -->
+  <line x1="190" y1="85" x2="160" y2="90" stroke="#FFFFFF" stroke-width="1" />
+  <line x1="210" y1="85" x2="240" y2="90" stroke="#FFFFFF" stroke-width="1" />
+  <line x1="190" y1="80" x2="165" y2="80" stroke="#FFFFFF" stroke-width="1" />
+  <line x1="210" y1="80" x2="235" y2="80" stroke="#FFFFFF" stroke-width="1" />
+  
+  <!-- Fur shading -->
+  <path d="M 150,120 L 180,150 L 200,140 L 220,150 L 250,120" fill="none" stroke="#786C3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M 180,180 L 200,200 L 220,180" fill="none" stroke="#786C3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M 160,100 L 140,120 L 170,130" fill="none" stroke="#786C3B" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M 240,100 L 260,120 L 230,130" fill="none" stroke="#786C3B" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Tail -->
+  <path d="M 200,220 L 250,250 L 230,270 L 200,240 Z" fill="#964B00" stroke="#786C3B" stroke-width="2" />
+</svg>
+```

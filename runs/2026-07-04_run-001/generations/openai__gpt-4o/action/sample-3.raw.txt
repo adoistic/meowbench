@@ -1,0 +1,30 @@
+```xml
+<svg width="200px" height="200px" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cat's Head -->
+  <circle cx="100" cy="60" r="20" fill="orange" />
+  <!-- Cat's Ears -->
+  <polygon points="85,45 80,70 90,60" fill="orange" />
+  <polygon points="115,45 120,70 110,60" fill="orange" />
+  <!-- Cat's Eyes -->
+  <circle cx="95" cy="58" r="2" fill="black" />
+  <circle cx="105" cy="58" r="2" fill="black" />
+  <!-- Cat's Mouth -->
+  <path d="M95,68 Q100,75 105,68" stroke="black" stroke-width="1" fill="none" />
+  <!-- Bicycle Frame -->
+  <line x1="60" y1="160" x2="90" y2="130" stroke="blue" stroke-width="2" />
+  <line x1="90" y1="130" x2="120" y2="130" stroke="blue" stroke-width="2" />
+  <line x1="60" y1="160" x2="80" y2="110" stroke="blue" stroke-width="2" />
+  <line x1="80" y1="110" x2="130" y2="110" stroke="blue" stroke-width="2" />
+  <line x1="130" y1="110" x2="120" y2="130" stroke="blue" stroke-width="2" />
+  <!-- Bicycle Wheels -->
+  <circle cx="60" cy="160" r="20" stroke="black" stroke-width="2" fill="none" />
+  <circle cx="120" cy="160" r="20" stroke="black" stroke-width="2" fill="none" />
+  <!-- Cat's Body -->
+  <ellipse cx="100" cy="100" rx="15" ry="30" fill="orange" />
+  <!-- Cat's Legs -->
+  <line x1="110" y1="120" x2="100" y2="140" stroke="orange" stroke-width="4" />
+  <line x1="90" y1="120" x2="80" y2="140" stroke="orange" stroke-width="4" />
+  <!-- Cat's Tail -->
+  <path d="M115,115 Q125,90 135,110" stroke="orange" stroke-width="4" fill="none" />
+</svg>
+```

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <!-- Background -->
+  <circle cx="250" cy="250" r="220" fill="#fff9c4" />
+  
+  <!-- Shadow -->
+  <ellipse cx="230" cy="470" rx="140" ry="15" fill="#e6d6b3" />
+
+  <!-- TAIL (Continuous Swaying Animation) -->
+  <g>
+    <!-- Swinging rotation around the base of the tail -->
+    <animateTransform attributeName="transform" type="rotate" values="-18 140 320; 18 140 320; -18 140 320" dur="2s" repeatCount="indefinite" />
+    <!-- Elegant swooping tail path -->
+    <path d="M 140 320 C 60 260, 60 160, 140 110 C 190 80, 260 100, 250 170" fill="none" stroke="#363636" stroke-width="24" stroke-linecap="round" />
+  </g>
+
+  <!-- BODY -->
+  <g>
+    <!-- Main torso -->
+    <path d="M 190 220 C 270 220, 300 320, 290 410 C 280 440, 240 450, 200 450 C 160 450, 140 400, 140 320 C 140 270, 170 240, 190 220 Z" fill="#363636" />
+    
+    <!-- Rear Leg & Paw -->
+    <g transform="rotate(15 190 435)">
+      <rect x="170" y="410" width="40" height="50" rx="20" fill="#363636" />
+      <!-- Toe Beans -->
+      <ellipse cx="190" cy="455" rx="10" ry="7" fill="#f48fb1" />
+      <ellipse cx="175" cy="450" rx="5" ry="7" fill="#f48fb1" transform="rotate(-30 175 450)" />
+      <ellipse cx="190" cy="445" rx="5" ry="7" fill="#f48fb1" />
+      <ellipse cx="205" cy="450" rx="5" ry="7" fill="#f48fb1" transform="rotate(30 205 450)" />
+    </g>
+
+    <!-- Front Leg & Paw -->
+    <g transform="rotate(-10 280 410)">
+      <rect x="265" y="380" width="30" height="60" rx="15" fill="#363636" />
+      <!-- Toe Beans -->
+      <ellipse cx="280" cy="435" rx="8" ry="6" fill="#f48fb1" />
+      <ellipse cx="270" cy="425" rx="4" ry="6" fill="#f48fb1" transform="rotate(-30 270 425)" />
+      <ellipse cx="280" cy="420" rx="4" ry="6" fill="#f48fb1" />
+      <ellipse cx="290" cy="425" rx="4" ry="6" fill="#f48fb1" transform="rotate(30 290 425)" />
+    </g>
+  </g>
+
+  <!-- HEAD -->
+  <g>
+    <!-- Ear (Back) -->
+    <path d="M 115,140 L 90,60 L 150,120 Z" fill="#363636" />
+    <!-- Inner Ear -->
+    <path d="M 115,135 L 98,78 L 140,122 Z" fill="#f48fb1" />
+
+    <!-- Main Head Shape -->
+    <circle cx="150" cy="180" r="60" fill="#363636" />
+
+    <!-- Face Details -->
+    <!-- Nose -->
+    <polygon points="200,185 210,185 205,195" fill="#f48fb1" />
+    <!-- Nose Highlight -->
+    <ellipse cx="203" cy="186" rx="1.5" ry="2" fill="#ffccbc" />
+    <!-- Mouth -->
+    <path d="M 195,200 Q 200,210 205,200 Q 210,210 215,200" fill="none" stroke="#ffccbc" stroke-width="2" stroke-linecap="round" />
+    <!-- Whiskers -->
+    <line x1="165" y1="175" x2="225" y2="165" stroke="#aaa" stroke-width="2" stroke-linecap="round" />
+    <line x1="165" y1="185" x2="225" y2="185" stroke="#aaa" stroke-width="2" stroke-linecap="round" />
+    <line x1="165" y1="195" x2="225" y2="205" stroke="#aaa" stroke-width="2" stroke-linecap="round" />
+
+    <!-- Eye -->
+    <!-- Eye Background -->
+    <ellipse cx="130" cy="170" rx="15" ry="22" fill="#fff" />
+    <!-- Pupil -->
+    <ellipse cx="130" cy="170" rx="8" ry="14" fill="#111" />
+    <!-- Eye Highlight -->
+    <circle cx="128" cy="164" r="4" fill="#fff" />
+
+    <!-- Eyelid (Blinking Animation) -->
+    <g transform="translate(130, 148)">
+      <g>
+        <animateTransform attributeName="transform" type="scale" values="1 1; 1 1; 1 0.1; 1 1; 1 1" dur="4s" repeatCount="indefinite" />
+        <rect x="-20" y="0" width="40" height="44" fill="#363636" rx="5" />
+      </g>
+    </g>
+  </g>
+</svg>

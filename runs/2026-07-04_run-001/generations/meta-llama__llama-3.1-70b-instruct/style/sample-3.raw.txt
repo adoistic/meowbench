@@ -1,0 +1,28 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <clipPath id="fold">
+      <polygon points="150,0 300,150 150,300 0,150" />
+    </clipPath>
+    <clipPath id="ear">
+      <polygon points="0,0 150,75 0,150" />
+    </clipPath>
+  </defs>
+  <g clip-path="url(#fold)">
+    <rect x="0" y="0" width="300" height="300" rx="10" fill="#F49080" />
+    <g transform="translate(110,110) scale(1.5)">
+      <circle cx="0" cy="0" r="40" fill="#F7F7F7" />
+      <circle cx="0" cy="0" r="20" fill="#787878" />
+    </g>
+    <g transform="translate(190,110) scale(1.5)">
+      <circle cx="0" cy="0" r="40" fill="#F7F7F7" />
+      <circle cx="0" cy="0" r="20" fill="#787878" />
+    </g>
+  </g>
+  <g clip-path="url(#ear)">
+    <polygon points="110,0 150,75 90,150" fill="#F49080" />
+    <polygon points="220,0 260,75 200,150" fill="#F49080" />
+  </g>
+  <polygon points="150,150 220,200 110,200 150,150" fill="#F7F7F7" />
+  <polygon points="150,250 220,300 110,300 150,250" fill="#F7F7F7" />
+  <polygon points="120,200 150,250 180,200 120,200" fill="#787878" />
+</svg>

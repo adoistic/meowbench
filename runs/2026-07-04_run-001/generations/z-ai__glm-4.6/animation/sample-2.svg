@@ -1,0 +1,80 @@
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" width="300" height="300">
+  <style>
+    @keyframes tailSway {
+      0%, 100% { transform: rotate(-15deg); }
+      50% { transform: rotate(15deg); }
+    }
+    .tail-group {
+      transform-origin: 180px 210px;
+      animation: tailSway 2s ease-in-out infinite;
+    }
+    .whiskers {
+      animation: whiskerTwitch 3s ease-in-out infinite;
+    }
+    @keyframes whiskerTwitch {
+      0%, 100% { opacity: 0.8; }
+      50% { opacity: 1; }
+    }
+  </style>
+  
+  <!-- Cat body -->
+  <ellipse cx="150" cy="200" rx="60" ry="45" fill="#8B7355" stroke="#5C4A3A" stroke-width="2"/>
+  
+  <!-- Cat head -->
+  <circle cx="150" cy="130" r="40" fill="#8B7355" stroke="#5C4A3A" stroke-width="2"/>
+  
+  <!-- Ears -->
+  <path d="M 120 120 L 110 95 L 130 110 Z" fill="#8B7355" stroke="#5C4A3A" stroke-width="2"/>
+  <path d="M 180 120 L 190 95 L 170 110 Z" fill="#8B7355" stroke="#5C4A3A" stroke-width="2"/>
+  <path d="M 120 110 L 115 100 L 125 105 Z" fill="#FFB6C1"/>
+  <path d="M 180 110 L 185 100 L 175 105 Z" fill="#FFB6C1"/>
+  
+  <!-- Eyes -->
+  <ellipse cx="135" cy="125" rx="8" ry="12" fill="#2E2E2E"/>
+  <ellipse cx="165" cy="125" rx="8" ry="12" fill="#2E2E2E"/>
+  <ellipse cx="137" cy="123" rx="3" ry="4" fill="white"/>
+  <ellipse cx="167" cy="123" rx="3" ry="4" fill="white"/>
+  
+  <!-- Nose -->
+  <path d="M 150 135 L 145 140 L 150 141 L 155 140 Z" fill="#FF69B4"/>
+  
+  <!-- Mouth -->
+  <path d="M 150 141 Q 140 145 135 140" fill="none" stroke="#5C4A3A" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M 150 141 Q 160 145 165 140" fill="none" stroke="#5C4A3A" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- Whiskers -->
+  <g class="whiskers">
+    <line x1="150" y1="138" x2="120" y2="135" stroke="#5C4A3A" stroke-width="1" stroke-linecap="round"/>
+    <line x1="150" y1="140" x2="120" y2="143" stroke="#5C4A3A" stroke-width="1" stroke-linecap="round"/>
+    <line x1="150" y1="138" x2="180" y2="135" stroke="#5C4A3A" stroke-width="1" stroke-linecap="round"/>
+    <line x1="150" y1="140" x2="180" y2="143" stroke="#5C4A3A" stroke-width="1" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Front legs -->
+  <ellipse cx="125" cy="230" rx="15" ry="25" fill="#8B7355" stroke="#5C4A3A" stroke-width="2"/>
+  <ellipse cx="175" cy="230" rx="15" ry="25" fill="#8B7355" stroke="#5C4A3A" stroke-width="2"/>
+  
+  <!-- Paws -->
+  <ellipse cx="125" cy="250" rx="18" ry="12" fill="#8B7355" stroke="#5C4A3A" stroke-width="2"/>
+  <ellipse cx="175" cy="250" rx="18" ry="12" fill="#8B7355" stroke="#5C4A3A" stroke-width="2"/>
+  
+  <!-- Animated tail -->
+  <g class="tail-group">
+    <path d="M 180 210 Q 210 200 220 170 Q 225 150 215 130" 
+          fill="none" 
+          stroke="#8B7355" 
+          stroke-width="20" 
+          stroke-linecap="round"/>
+    <path d="M 180 210 Q 210 200 220 170 Q 225 150 215 130" 
+          fill="none" 
+          stroke="#5C4A3A" 
+          stroke-width="2" 
+          stroke-linecap="round"/>
+  </g>
+  
+  <!-- Stripes on body -->
+  <path d="M 120 190 Q 125 185 130 190" fill="none" stroke="#5C4A3A" stroke-width="2" opacity="0.5"/>
+  <path d="M 170 190 Q 175 185 180 190" fill="none" stroke="#5C4A3A" stroke-width="2" opacity="0.5"/>
+  <path d="M 125 200 Q 130 195 135 200" fill="none" stroke="#5C4A3A" stroke-width="2" opacity="0.5"/>
+  <path d="M 165 200 Q 170 195 175 200" fill="none" stroke="#5C4A3A" stroke-width="2" opacity="0.5"/>
+</svg>

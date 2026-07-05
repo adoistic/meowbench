@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+  <!-- body -->
+  <circle cx="25" cy="36" r="13" fill="#FFD700" />
+  <!-- head -->
+  <circle cx="25" cy="15" r="11" fill="#FFD700" />
+  <!-- eyes -->
+  <circle cx="21" cy="13" r="2" fill="#000000" />
+  <circle cx="29" cy="13" r="2" fill="#000000" />
+  <!-- ears -->
+  <polygon points="18,13 16,4 20,11" fill="#FFD700" />
+  <polygon points="32,13 34,4 30,11" fill="#FFD700" />
+  <!-- tail -->
+  <path d="M 33 36 Q 43 36 38 49" stroke="#FFD700" stroke-width="3" fill="transparent" />
+</svg>

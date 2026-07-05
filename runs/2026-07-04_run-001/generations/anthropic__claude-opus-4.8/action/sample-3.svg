@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#e8f4f8"/>
+  
+  <!-- Ground -->
+  <line x1="0" y1="260" x2="400" y2="260" stroke="#8d9" stroke-width="4"/>
+  
+  <!-- Bicycle -->
+  <!-- Back wheel -->
+  <circle cx="110" cy="230" r="40" fill="none" stroke="#333" stroke-width="5"/>
+  <circle cx="110" cy="230" r="4" fill="#333"/>
+  <g stroke="#999" stroke-width="1.5">
+    <line x1="110" y1="230" x2="110" y2="190"/>
+    <line x1="110" y1="230" x2="110" y2="270"/>
+    <line x1="110" y1="230" x2="150" y2="230"/>
+    <line x1="110" y1="230" x2="70" y2="230"/>
+    <line x1="110" y1="230" x2="138" y2="202"/>
+    <line x1="110" y1="230" x2="82" y2="258"/>
+    <line x1="110" y1="230" x2="138" y2="258"/>
+    <line x1="110" y1="230" x2="82" y2="202"/>
+  </g>
+  
+  <!-- Front wheel -->
+  <circle cx="290" cy="230" r="40" fill="none" stroke="#333" stroke-width="5"/>
+  <circle cx="290" cy="230" r="4" fill="#333"/>
+  <g stroke="#999" stroke-width="1.5">
+    <line x1="290" y1="230" x2="290" y2="190"/>
+    <line x1="290" y1="230" x2="290" y2="270"/>
+    <line x1="290" y1="230" x2="330" y2="230"/>
+    <line x1="290" y1="230" x2="250" y2="230"/>
+    <line x1="290" y1="230" x2="318" y2="202"/>
+    <line x1="290" y1="230" x2="262" y2="258"/>
+    <line x1="290" y1="230" x2="318" y2="258"/>
+    <line x1="290" y1="230" x2="262" y2="202"/>
+  </g>
+  
+  <!-- Frame -->
+  <g stroke="#c0392b" stroke-width="6" fill="none" stroke-linecap="round">
+    <line x1="110" y1="230" x2="200" y2="230"/>
+    <line x1="200" y1="230" x2="160" y2="170"/>
+    <line x1="110" y1="230" x2="160" y2="170"/>
+    <line x1="200" y1="230" x2="290" y2="230"/>
+    <line x1="160" y1="170" x2="245" y2="175"/>
+    <line x1="290" y1="230" x2="245" y2="175"/>
+  </g>
+  
+  <!-- Pedals -->
+  <circle cx="200" cy="230" r="8" fill="#333"/>
+  <line x1="200" y1="230" x2="215" y2="248" stroke="#333" stroke-width="4"/>
+  <rect x="212" y="246" width="16" height="6" fill="#555"/>
+  
+  <!-- Seat -->
+  <rect x="150" y="162" width="24" height="8" rx="4" fill="#333"/>
+  
+  <!-- Handlebar -->
+  <line x1="245" y1="175" x2="245" y2="150" stroke="#333" stroke-width="4"/>
+  <line x1="230" y1="148" x2="258" y2="148" stroke="#333" stroke-width="5" stroke-linecap="round"/>
+  
+  <!-- Cat -->
+  <!-- Body -->
+  <ellipse cx="175" cy="145" rx="38" ry="28" fill="#f5a623"/>
+  <!-- Tail -->
+  <path d="M138 145 Q100 135 105 110 Q108 100 118 105" fill="none" stroke="#f5a623" stroke-width="9" stroke-linecap="round"/>
+  
+  <!-- Front leg to pedal -->
+  <path d="M195 155 Q210 190 215 245" fill="none" stroke="#f5a623" stroke-width="9" stroke-linecap="round"/>
+  <!-- Back leg -->
+  <path d="M160 160 Q155 190 175 220" fill="none" stroke="#e59614" stroke-width="9" stroke-linecap="round"/>
+  
+  <!-- Arm to handlebar -->
+  <path d="M200 130 Q225 130 244 148" fill="none" stroke="#f5a623" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Head -->
+  <circle cx="205" cy="105" r="26" fill="#f5a623"/>
+  <!-- Ears -->
+  <polygon points="188,88 182,68 200,80" fill="#f5a623"/>
+  <polygon points="222,88 228,68 210,80" fill="#f5a623"/>
+  <polygon points="189,85 186,73 197,80" fill="#ffcbb0"/>
+  <polygon points="221,85 224,73 213,80" fill="#ffcbb0"/>
+  
+  <!-- Face -->
+  <circle cx="197" cy="103" r="3.5" fill="#333"/>
+  <circle cx="215" cy="103" r="3.5" fill="#333"/>
+  <polygon points="203,110 209,110 206,115" fill="#e07a5f"/>
+  <!-- Whiskers -->
+  <g stroke="#666" stroke-width="1">
+    <line x1="206" y1="113" x2="180" y2="110"/>
+    <line x1="206" y1="115" x2="180" y2="118"/>
+    <line x1="206" y1="113" x2="232" y2="110"/>
+    <line x1="206" y1="115" x2="232" y2="118"/>
+  </g>
+  <!-- Mouth -->
+  <path d="M206 115 Q201 120 197 116" fill="none" stroke="#333" stroke-width="1.2"/>
+  <path d="M206 115 Q211 120 215 116" fill="none" stroke="#333" stroke-width="1.2"/>
+</svg>

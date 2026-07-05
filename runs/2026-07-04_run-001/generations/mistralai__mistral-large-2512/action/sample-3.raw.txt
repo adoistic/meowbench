@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#87CEEB"/>
+  <circle cx="320" cy="50" r="30" fill="#FFD700"/>
+  <path d="M300,50 Q320,20 340,50" stroke="#FFD700" stroke-width="3" fill="none"/>
+  <path d="M20,250 Q100,200 200,250 Q300,300 380,250 L380,300 L20,300 Z" fill="#32CD32"/>
+
+  <!-- Bicycle -->
+  <circle cx="150" cy="200" r="30" fill="none" stroke="#333" stroke-width="4"/>
+  <circle cx="250" cy="200" r="30" fill="none" stroke="#333" stroke-width="4"/>
+  <path d="M150,200 L200,150 L250,200 L150,200 M200,150 L200,100 M180,120 L220,120 M200,100 L180,80" stroke="#333" stroke-width="4" fill="none"/>
+  <path d="M200,150 L230,180" stroke="#333" stroke-width="4" fill="none"/>
+  <circle cx="140" cy="200" r="5" fill="#333"/>
+  <circle cx="260" cy="200" r="5" fill="#333"/>
+
+  <!-- Cat -->
+  <ellipse cx="200" cy="160" rx="25" ry="20" fill="#FFA500"/>
+  <circle cx="190" cy="155" r="8" fill="#FFF"/>
+  <circle cx="210" cy="155" r="8" fill="#FFF"/>
+  <circle cx="190" cy="155" r="4" fill="#000"/>
+  <circle cx="210" cy="155" r="4" fill="#000"/>
+  <path d="M195,165 Q200,170 205,165" stroke="#000" stroke-width="2" fill="none"/>
+  <path d="M180,160 L170,155 L175,165 Z" fill="#FFA500"/>
+  <path d="M220,160 L230,155 L225,165 Z" fill="#FFA500"/>
+  <path d="M200,180 L200,195" stroke="#FFA500" stroke-width="8"/>
+  <path d="M190,190 L180,195 L190,200 Z" fill="#FFA500"/>
+  <path d="M210,190 L220,195 L210,200 Z" fill="#FFA500"/>
+  <path d="M200,195 L200,210 L185,215 Z" fill="#FFA500"/>
+  <path d="M200,195 L200,210 L215,215 Z" fill="#FFA500"/>
+</svg>
