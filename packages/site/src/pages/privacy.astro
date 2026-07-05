@@ -1,0 +1,26 @@
+---
+import Base from '../layouts/Base.astro'
+---
+<Base title="Privacy" current="/privacy/" description="What meowbench collects (very little), why, and how to say no.">
+  <h1 style="margin-top: 1.5rem;">THE FINE PRINT</h1>
+  <p class="pixel dim" style="margin-top: 0.2rem;">what this arcade knows about you, which is not much.</p>
+
+  <div class="panel" style="margin-top: 1.5rem; max-width: 46rem;">
+    <h2 style="margin-top: 0;">Visitor counting</h2>
+    <p>If — and only if — you press <span class="pixel" style="color: var(--cyan);">SURE, COUNT ME</span> on the cookie banner, we load Google Analytics to count page views: which pages get visited, roughly where from (country level), and on what kind of device. That's the lot.</p>
+    <p>Until you say yes, nothing loads. No cookies, no pings, no "legitimate interest" sleight of hand. Decline and the site works exactly the same; we just don't know you were here.</p>
+    <p>Changed your mind either way? Hit <a href="/privacy/" id="cookie-settings-inline">cookies</a> in the footer and the banner comes back. Withdrawing consent takes effect immediately.</p>
+
+    <h2>What we never do</h2>
+    <p>No ads, no ad signals (they're hard-disabled in the analytics config), no selling data, no fingerprinting, no cross-site anything, no accounts, no emails. The judges score cats, not people.</p>
+
+    <h2>Arena votes</h2>
+    <p>When you vote in the arena, the vote worker stores the matchup, the result, and a salted hash of your IP address — used only to rate-limit voting (10 votes a minute) so nobody stuffs the ballot for their favorite model. The hash can't be reversed into your IP, and raw IPs are never stored.</p>
+
+    <h2>Where things run</h2>
+    <p>The site and vote worker run on Cloudflare. Analytics, if you opt in, is Google Analytics 4 with the shortest retention Google offers. Legal basis for analytics: your consent (GDPR art. 6(1)(a)). For vote rate-limiting: legitimate interest (art. 6(1)(f)) — keeping the leaderboard honest.</p>
+
+    <h2>Questions</h2>
+    <p>This is an open-source project by <a href="https://github.com/adoistic">Adnan</a>. Ask anything or file a complaint at the <a href="https://github.com/adoistic/meowbench/issues">GitHub repo</a>, and it'll be read by a human, not a department.</p>
+  </div>
+</Base>

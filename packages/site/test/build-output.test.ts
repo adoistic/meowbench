@@ -8,7 +8,10 @@ const SITE = fileURLToPath(new URL('..', import.meta.url))
 let html = ''
 
 beforeAll(() => {
-  execSync('pnpm build', { cwd: SITE, stdio: 'inherit' })
+  // PUBLIC_GA_ID mirrors a configured production build. Without it the whole
+  // consent module tree-shakes to zero bytes (correct when unconfigured), so
+  // the analytics assertions below would have nothing to find.
+  execSync('pnpm build', { cwd: SITE, stdio: 'inherit', env: { ...process.env, PUBLIC_GA_ID: 'G-TESTBUILD1' } })
   html = readFileSync(join(SITE, 'dist', 'index.html'), 'utf8')
 }, 240_000)
 
@@ -116,6 +119,26 @@ test('footer credits Adnan and the star nudge is bundled', () => {
     .join('')
   expect(js).toContain('star-nudge')
   expect(js).toContain('meow-star-done')
+})
+
+test('consent-first analytics: banner code, privacy page, footer controls', () => {
+  // the consent machinery ships (inert without PUBLIC_GA_ID at build time)
+  const js = readdirSync(join(SITE, 'dist', '_astro'))
+    .filter((f) => f.endsWith('.js'))
+    .map((f) => readFileSync(join(SITE, 'dist', '_astro', f), 'utf8'))
+    .join('')
+  expect(js).toContain('meow-consent')
+  expect(js).toContain('INSERT COOKIE?')
+  expect(js).toContain('googletagmanager.com/gtag/js')
+
+  const privacy = readFileSync(join(SITE, 'dist', 'privacy', 'index.html'), 'utf8')
+  expect(privacy).toContain('Google Analytics')
+  expect(privacy).toContain('consent (GDPR art. 6(1)(a))')
+  expect(privacy).toContain('salted hash')
+
+  expect(html).toContain('id="cookie-settings"') // footer: change your mind anywhere
+  const sitemap = readFileSync(join(SITE, 'dist', 'sitemap.xml'), 'utf8')
+  expect(sitemap).toContain('/privacy/')
 })
 
 test('paw cursors and the neko ship on every page', () => {

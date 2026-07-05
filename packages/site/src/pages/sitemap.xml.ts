@@ -15,6 +15,7 @@ export const GET: APIRoute = ({ site }) => {
     '/arena/',
     '/shame/',
     '/methodology/',
+    '/privacy/',
     ...run.entries.map((e) => `/models/${modelDir(e.slug)}/`),
   ]
 

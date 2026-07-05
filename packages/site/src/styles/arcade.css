@@ -347,6 +347,40 @@ summary:focus-visible {
   #meow-cat { display: none; }
 }
 
+/* ---- cookie banner: consent first, cute second ---- */
+.cookie-banner {
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+  z-index: 997; /* above the star nudge; they never show together anyway */
+  max-width: 23rem;
+  background: var(--panel);
+  border: 2px solid var(--cyan);
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+  box-shadow: 0 0 14px rgba(77, 201, 255, 0.25), 0 18px 40px rgba(0, 0, 0, 0.55);
+  transform: translateY(130%);
+  opacity: 0;
+  transition: transform 0.25s ease-out, opacity 0.25s ease-out;
+}
+.cookie-banner.in { transform: translateY(0); opacity: 1; }
+.cookie-banner .cb-title { font-family: var(--font-pixel); color: var(--cyan); font-size: 0.85rem; margin: 0; }
+.cookie-banner .cb-text { font-family: var(--font-pixel); color: var(--ink-dim); font-size: 0.68rem; line-height: 1.7; margin: 0.45rem 0 0; }
+.cookie-banner .cb-text a { color: var(--mint); }
+.cookie-banner .cb-actions { display: flex; gap: 0.8rem; margin: 0.8rem 0 0; flex-wrap: wrap; }
+.cookie-banner .cb-actions .btn { font-size: 0.62rem; padding: 0.5rem 0.8rem; }
+@media (max-width: 720px) {
+  .cookie-banner {
+    left: 0.75rem;
+    right: 0.75rem;
+    bottom: calc(92px + env(safe-area-inset-bottom));
+    max-width: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cookie-banner { transition: none; }
+}
+
 /* ---- star nudge: the neko asks nicely, once in a while ---- */
 .star-nudge {
   position: fixed;

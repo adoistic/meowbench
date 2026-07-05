@@ -115,5 +115,6 @@ document.addEventListener('pointerdown', (e) => {
   if (!el.closest('a, button, summary, .pill, .model-row, select, input, .cat-card')) return
   const n = num(K_COUNT, 0) + 1
   localStorage.setItem(K_COUNT, String(n))
+  if (document.getElementById('cookie-banner')) return // consent question first; never stack toasts
   if (n >= num(K_NEXT, 20) && !document.getElementById('star-nudge')) show()
 })
