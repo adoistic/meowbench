@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="eyeGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000"/>
+      <stop offset="70%" stop-color="#333"/>
+      <stop offset="100%" stop-color="#666"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Body base -->
+  <ellipse cx="100" cy="130" rx="40" ry="30" fill="#8B4513"/>
+  
+  <!-- Body shading -->
+  <path d="M70,125 Q100,110 130,125 Q125,140 100,145 Q75,140 70,125" fill="#654321"/>
+  <path d="M85,135 Q100,130 115,135 Q110,142 100,145 Q90,142 85,135" fill="#A0522D"/>
+  
+  <!-- Head -->
+  <circle cx="100" cy="80" r="25" fill="#8B4513"/>
+  
+  <!-- Head shading -->
+  <circle cx="95" cy="75" r="15" fill="#654321" opacity="0.4"/>
+  <circle cx="105" cy="85" r="10" fill="#A0522D" opacity="0.5"/>
+  
+  <!-- Ears -->
+  <path d="M85,60 L80,40 L95,55 Z" fill="#8B4513"/>
+  <path d="M115,60 L120,40 L105,55 Z" fill="#8B4513"/>
+  <path d="M83,58 L80,42 L92,54 Z" fill="#A0522D"/>
+  <path d="M117,58 L120,42 L108,54 Z" fill="#A0522D"/>
+  
+  <!-- Inner ears -->
+  <path d="M85,55 L83,48 L90,53 Z" fill="#D2B48C"/>
+  <path d="M115,55 L117,48 L110,53 Z" fill="#D2B48C"/>
+  
+  <!-- Eyes -->
+  <ellipse cx="90" cy="75" rx="6" ry="8" fill="white"/>
+  <ellipse cx="110" cy="75" rx="6" ry="8" fill="white"/>
+  <ellipse cx="90" cy="75" rx="3" ry="5" fill="url(#eyeGradient)"/>
+  <ellipse cx="110" cy="75" rx="3" ry="5" fill="url(#eyeGradient)"/>
+  <circle cx="89" cy="73" r="1" fill="white"/>
+  <circle cx="109" cy="73" r="1" fill="white"/>
+  
+  <!-- Nose -->
+  <path d="M98,85 Q100,88 102,85 Q100,87 98,85" fill="#D2B48C"/>
+  
+  <!-- Mouth -->
+  <path d="M100,88 Q95,92 92,90" stroke="#654321" stroke-width="1" fill="none"/>
+  <path d="M100,88 Q105,92 108,90" stroke="#654321" stroke-width="1" fill="none"/>
+  
+  <!-- Front legs -->
+  <ellipse cx="80" cy="150" rx="8" ry="20" fill="#8B4513"/>
+  <ellipse cx="120" cy="150" rx="8" ry="20" fill="#8B4513"/>
+  
+  <!-- Front leg shading -->
+  <ellipse cx="78" cy="150" rx="4" ry="15" fill="#654321"/>
+  <ellipse cx="122" cy="150" rx="4" ry="15" fill="#654321"/>
+  
+  <!-- Back legs (partially hidden) -->
+  <path d="M70,155 Q65,170 75,175 Q80,165 70,155" fill="#8B4513"/>
+  <path d="M130,155 Q135,170 125,175 Q120,165 130,155" fill="#8B4513"/>
+  
+  <!-- Back leg shading -->
+  <path d="M72,160 Q68,170 74,173 Q76,165 72,160" fill="#654321"/>
+  <path d="M128,160 Q132,170 126,173 Q124,165 128,160" fill="#654321"/>
+  
+  <!-- Tail -->
+  <path d="M140,130 Q170,110 180,140 Q170,150 150,145 Q145,135 140,130" fill="#8B4513"/>
+  
+  <!-- Tail shading -->
+  <path d="M145,132 Q165,118 175,138 Q165,145 150,142 Q147,135 145,132" fill="#654321"/>
+  <path d="M150,135 Q160,125 168,135 Q160,140 152,138 Q151,136 150,135" fill="#A0522D"/>
+  
+  <!-- Whiskers -->
+  <line x1="95" y1="82" x2="75" y2="80" stroke="#D2B48C" stroke-width="0.8"/>
+  <line x1="95" y1="85" x2="75" y2="85" stroke="#D2B48C" stroke-width="0.8"/>
+  <line x1="95" y1="88" x2="75" y2="90" stroke="#D2B48C" stroke-width="0.8"/>
+  <line x1="105" y1="82" x2="125" y2="80" stroke="#D2B48C" stroke-width="0.8"/>
+  <line x1="105" y1="85" x2="125" y2="85" stroke="#D2B48C" stroke-width="0.8"/>
+  <line x1="105" y1="88" x2="125" y2="90" stroke="#D2B48C" stroke-width="0.8"/>
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Body base -->
+  <ellipse cx="100" cy="130" rx="35" ry="30" fill="#8B5A2B"/>
+  
+  <!-- Body shading -->
+  <path d="M65,120 Q100,100 135,120 Q120,140 100,150 Q80,140 65,120" fill="#6B4226" opacity="0.4"/>
+  
+  <!-- Legs -->
+  <rect x="80" y="155" width="8" height="20" rx="4" fill="#8B5A2B"/>
+  <rect x="112" y="155" width="8" height="20" rx="4" fill="#8B5A2B"/>
+  
+  <!-- Tail -->
+  <path d="M135,130 Q160,100 155,80 Q150,90 140,110 Q138,120 135,130" fill="#8B5A2B"/>
+  <path d="M138,125 Q155,100 152,85 Q148,95 140,115 Q139,122 138,125" fill="#6B4226" opacity="0.4"/>
+  
+  <!-- Head -->
+  <circle cx="100" cy="85" r="20" fill="#8B5A2B"/>
+  
+  <!-- Ears -->
+  <path d="M90,70 L85,55 L95,65 Z" fill="#8B5A2B"/>
+  <path d="M110,70 L115,55 L105,65 Z" fill="#8B5A2B"/>
+  <path d="M88,68 L86,60 L92,66 Z" fill="#D2B48C"/>
+  <path d="M112,68 L114,60 L108,66 Z" fill="#D2B48C"/>
+  
+  <!-- Face shading -->
+  <circle cx="100" cy="85" r="15" fill="#6B4226" opacity="0.3"/>
+  
+  <!-- Eyes -->
+  <ellipse cx="92" cy="82" rx="3" ry="4" fill="#000"/>
+  <ellipse cx="108" cy="82" rx="3" ry="4" fill="#000"/>
+  <ellipse cx="92" cy="81" rx="1.5" ry="2" fill="#fff"/>
+  <ellipse cx="108" cy="81" rx="1.5" ry="2" fill="#fff"/>
+  
+  <!-- Nose -->
+  <path d="M100,88 L97,92 L103,92 Z" fill="#D2B48C"/>
+  
+  <!-- Mouth -->
+  <path d="M100,92 Q98,95 97,94" stroke="#5C4033" stroke-width="1" fill="none"/>
+  <path d="M100,92 Q102,95 103,94" stroke="#5C4033" stroke-width="1" fill="none"/>
+  
+  <!-- Front legs detail -->
+  <path d="M80,155 Q84,165 80,170" stroke="#6B4226" stroke-width="1" fill="none"/>
+  <path d="M120,155 Q116,165 120,170" stroke="#6B4226" stroke-width="1" fill="none"/>
+  
+  <!-- Fur texture on body -->
+  <path d="M70,130 Q75,125 80,130" stroke="#6B4226" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M120,130 Q125,125 130,130" stroke="#6B4226" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M90,145 Q100,140 110,145" stroke="#6B4226" stroke-width="1" fill="none" opacity="0.4"/>
+  
+  <!-- Whiskers -->
+  <line x1="95" y1="88" x2="75" y2="86" stroke="#D2B48C" stroke-width="0.5"/>
+  <line x1="95" y1="90" x2="75" y2="92" stroke="#D2B48C" stroke-width="0.5"/>
+  <line x1="105" y1="88" x2="125" y2="86" stroke="#D2B48C" stroke-width="0.5"/>
+  <line x1="105" y1="90" x2="125" y2="92" stroke="#D2B48C" stroke-width="0.5"/>
+</svg>

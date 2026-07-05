@@ -1,0 +1,208 @@
+```svg
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bodyGrad" cx="35%" cy="25%" r="75%">
+      <stop offset="0%" stop-color="#d4d4d4"/>
+      <stop offset="55%" stop-color="#aeaeae"/>
+      <stop offset="100%" stop-color="#7c7c7c"/>
+    </radialGradient>
+    <radialGradient id="headGrad" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#d8d8d8"/>
+      <stop offset="60%" stop-color="#b3b3b3"/>
+      <stop offset="100%" stop-color="#868686"/>
+    </radialGradient>
+    <linearGradient id="tailGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c4c4c4"/>
+      <stop offset="100%" stop-color="#7f7f7f"/>
+    </linearGradient>
+    <linearGradient id="earGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9a9a9a"/>
+      <stop offset="100%" stop-color="#6b6b6b"/>
+    </linearGradient>
+
+    <path id="bodyShape" d="M130,362
+      C118,300 126,238 152,208
+      C168,188 184,182 200,182
+      C216,182 232,188 248,208
+      C274,238 282,300 270,362
+      Z"/>
+    <circle id="headShape" cx="200" cy="140" r="64"/>
+    <path id="tailShape" d="M256,332
+      C302,340 334,298 336,250
+      C338,208 318,176 288,188
+      C300,198 308,214 308,236
+      C308,266 296,296 268,318
+      C264,322 260,326 256,332 Z"/>
+
+    <clipPath id="bodyClip"><use href="#bodyShape"/></clipPath>
+    <clipPath id="headClip"><use href="#headShape"/></clipPath>
+    <clipPath id="tailClip"><use href="#tailShape"/></clipPath>
+  </defs>
+
+  <!-- background -->
+  <rect width="400" height="400" fill="#f4efe6"/>
+
+  <!-- ground shadow -->
+  <ellipse cx="205" cy="368" rx="150" ry="18" fill="#000" opacity="0.15"/>
+
+  <!-- TAIL -->
+  <use href="#tailShape" fill="url(#tailGrad)" stroke="#5c5c5c" stroke-width="1"/>
+  <g clip-path="url(#tailClip)">
+    <path d="M270,200 C285,220 290,245 288,270" stroke="#5a5a5a" stroke-width="6" fill="none" opacity="0.35"/>
+    <path d="M290,210 C305,235 310,260 300,290" stroke="#5a5a5a" stroke-width="6" fill="none" opacity="0.3"/>
+    <path d="M300,230 C312,250 315,275 300,300" stroke="#4d4d4d" stroke-width="5" fill="none" opacity="0.3"/>
+    <g stroke="#8a8a8a" stroke-width="1.2" fill="none" opacity="0.5" stroke-linecap="round">
+      <path d="M270,205 q5,10 2,20"/>
+      <path d="M282,215 q6,10 2,22"/>
+      <path d="M292,230 q7,12 1,24"/>
+      <path d="M300,250 q6,12 -2,24"/>
+      <path d="M304,270 q4,12 -6,24"/>
+      <path d="M298,292 q2,10 -10,20"/>
+    </g>
+  </g>
+  <path d="M256,332 C302,340 334,298 336,250 C338,208 318,176 288,188" fill="none" stroke="#5c5c5c" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- BODY -->
+  <use href="#bodyShape" fill="url(#bodyGrad)" stroke="#5c5c5c" stroke-width="1.5"/>
+  <g clip-path="url(#bodyClip)">
+    <!-- belly lighter patch -->
+    <ellipse cx="200" cy="300" rx="45" ry="60" fill="#e6e2da" opacity="0.55"/>
+    <!-- stripes -->
+    <path d="M150,220 C165,235 180,240 200,238" stroke="#6f6f6f" stroke-width="5" fill="none" opacity="0.4"/>
+    <path d="M145,250 C165,265 185,268 205,264" stroke="#6f6f6f" stroke-width="5" fill="none" opacity="0.35"/>
+    <path d="M142,280 C165,296 190,298 212,292" stroke="#6f6f6f" stroke-width="5" fill="none" opacity="0.3"/>
+    <path d="M255,220 C240,235 225,240 205,238" stroke="#6f6f6f" stroke-width="5" fill="none" opacity="0.4"/>
+    <path d="M260,250 C240,265 220,268 200,264" stroke="#6f6f6f" stroke-width="5" fill="none" opacity="0.35"/>
+    <!-- fur strokes -->
+    <g stroke="#8f8f8f" stroke-width="1.2" fill="none" opacity="0.55" stroke-linecap="round">
+      <path d="M145,210 q4,10 0,20"/>
+      <path d="M155,205 q4,10 0,20"/>
+      <path d="M165,200 q4,10 0,20"/>
+      <path d="M175,196 q4,10 0,20"/>
+      <path d="M185,193 q4,10 0,20"/>
+      <path d="M195,192 q4,10 0,20"/>
+      <path d="M205,192 q4,10 0,20"/>
+      <path d="M215,193 q4,10 0,20"/>
+      <path d="M225,196 q4,10 0,20"/>
+      <path d="M235,200 q4,10 0,20"/>
+      <path d="M245,205 q4,10 0,20"/>
+      <path d="M255,210 q4,10 0,20"/>
+
+      <path d="M140,240 q5,12 0,24"/>
+      <path d="M155,235 q5,12 0,24"/>
+      <path d="M170,230 q5,12 0,24"/>
+      <path d="M185,228 q5,12 0,24"/>
+      <path d="M200,227 q5,12 0,24"/>
+      <path d="M215,228 q5,12 0,24"/>
+      <path d="M230,230 q5,12 0,24"/>
+      <path d="M245,235 q5,12 0,24"/>
+      <path d="M260,240 q5,12 0,24"/>
+
+      <path d="M138,275 q5,14 0,28"/>
+      <path d="M155,270 q5,14 0,28"/>
+      <path d="M172,266 q5,14 0,28"/>
+      <path d="M190,264 q5,14 0,28"/>
+      <path d="M208,264 q5,14 0,28"/>
+      <path d="M226,266 q5,14 0,28"/>
+      <path d="M244,270 q5,14 0,28"/>
+      <path d="M262,275 q5,14 0,28"/>
+
+      <path d="M145,315 q6,14 0,28"/>
+      <path d="M165,310 q6,14 0,28"/>
+      <path d="M185,306 q6,14 0,28"/>
+      <path d="M205,305 q6,14 0,28"/>
+      <path d="M225,306 q6,14 0,28"/>
+      <path d="M245,310 q6,14 0,28"/>
+      <path d="M262,315 q6,14 0,28"/>
+    </g>
+  </g>
+
+  <!-- FRONT PAWS -->
+  <g stroke="#5c5c5c" stroke-width="1.2">
+    <ellipse cx="178" cy="352" rx="20" ry="15" fill="#c8c8c8"/>
+    <ellipse cx="224" cy="352" rx="20" ry="15" fill="#bcbcbc"/>
+  </g>
+  <g stroke="#8f8f8f" stroke-width="1" opacity="0.6">
+    <path d="M170,346 q4,8 0,14"/>
+    <path d="M178,344 q4,8 0,14"/>
+    <path d="M186,346 q4,8 0,14"/>
+    <path d="M216,346 q4,8 0,14"/>
+    <path d="M224,344 q4,8 0,14"/>
+    <path d="M232,346 q4,8 0,14"/>
+  </g>
+  <path d="M172,362 q6,4 12,0" stroke="#6b6b6b" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M218,362 q6,4 12,0" stroke="#6b6b6b" stroke-width="1" fill="none" opacity="0.5"/>
+
+  <!-- EARS -->
+  <path d="M150,112 L166,48 L188,116 Z" fill="url(#earGrad)" stroke="#4d4d4d" stroke-width="1.5"/>
+  <path d="M212,116 L234,48 L250,112 Z" fill="url(#earGrad)" stroke="#4d4d4d" stroke-width="1.5"/>
+  <path d="M158,105 L167,65 L182,108 Z" fill="#e7b7b7" opacity="0.75"/>
+  <path d="M218,108 L233,65 L242,105 Z" fill="#e7b7b7" opacity="0.75"/>
+  <g stroke="#7a7a7a" stroke-width="0.8" opacity="0.5">
+    <path d="M155,100 q6,4 6,12" fill="none"/>
+    <path d="M165,90 q6,4 6,14" fill="none"/>
+    <path d="M175,80 q6,4 6,16" fill="none"/>
+    <path d="M225,80 q-6,4 -6,16" fill="none"/>
+    <path d="M235,90 q-6,4 -6,14" fill="none"/>
+    <path d="M242,100 q-6,4 -6,12" fill="none"/>
+  </g>
+
+  <!-- HEAD -->
+  <use href="#headShape" fill="url(#headGrad)" stroke="#5c5c5c" stroke-width="1.5"/>
+  <g clip-path="url(#headClip)">
+    <!-- head stripes -->
+    <path d="M170,90 C180,100 190,102 200,100" stroke="#6f6f6f" stroke-width="4" fill="none" opacity="0.4"/>
+    <path d="M230,90 C220,100 210,102 200,100" stroke="#6f6f6f" stroke-width="4" fill="none" opacity="0.4"/>
+    <path d="M160,110 C175,118 190,120 200,118" stroke="#6f6f6f" stroke-width="4" fill="none" opacity="0.3"/>
+    <path d="M240,110 C225,118 210,120 200,118" stroke="#6f6f6f" stroke-width="4" fill="none" opacity="0.3"/>
+    <!-- cheek lighter patches -->
+    <ellipse cx="175" cy="150" rx="20" ry="16" fill="#e6e2da" opacity="0.4"/>
+    <ellipse cx="225" cy="150" rx="20" ry="16" fill="#e6e2da" opacity="0.4"/>
+    <!-- fur strokes on head -->
+    <g stroke="#8f8f8f" stroke-width="1" fill="none" opacity="0.5" stroke-linecap="round">
+      <path d="M150,100 q4,8 0,16"/>
+      <path d="M160,90 q4,8 0,16"/>
+      <path d="M172,84 q4,8 0,16"/>
+      <path d="M186,80 q4,8 0,16"/>
+      <path d="M200,78 q4,8 0,16"/>
+      <path d="M214,80 q4,8 0,16"/>
+      <path d="M228,84 q4,8 0,16"/>
+      <path d="M240,90 q4,8 0,16"/>
+      <path d="M250,100 q4,8 0,16"/>
+
+      <path d="M150,150 q6,10 0,20"/>
+      <path d="M165,160 q6,10 0,20"/>
+      <path d="M235,160 q-6,10 0,20"/>
+      <path d="M250,150 q-6,10 0,20"/>
+    </g>
+  </g>
+
+  <!-- EYES -->
+  <g>
+    <ellipse cx="180" cy="140" rx="12" ry="16" fill="#a8cf3b" stroke="#4d4d4d" stroke-width="1"/>
+    <ellipse cx="220" cy="140" rx="12" ry="16" fill="#a8cf3b" stroke="#4d4d4d" stroke-width="1"/>
+    <rect x="177.5" y="130" width="5" height="20" rx="2.5" fill="#111"/>
+    <rect x="217.5" y="130" width="5" height="20" rx="2.5" fill="#111"/>
+    <circle cx="176" cy="132" r="2.2" fill="#fff" opacity="0.9"/>
+    <circle cx="216" cy="132" r="2.2" fill="#fff" opacity="0.9"/>
+    <path d="M164,128 Q180,116 196,128" stroke="#5c5c5c" stroke-width="1.2" fill="none" opacity="0.6"/>
+    <path d="M204,128 Q220,116 236,128" stroke="#5c5c5c" stroke-width="1.2" fill="none" opacity="0.6"/>
+  </g>
+
+  <!-- NOSE & MOUTH -->
+  <path d="M194,156 L206,156 L200,165 Z" fill="#e79aa0" stroke="#a05a60" stroke-width="0.8"/>
+  <path d="M200,165 L200,172" stroke="#5c5c5c" stroke-width="1.2"/>
+  <path d="M200,172 Q188,182 176,176" stroke="#5c5c5c" stroke-width="1.2" fill="none"/>
+  <path d="M200,172 Q212,182 224,176" stroke="#5c5c5c" stroke-width="1.2" fill="none"/>
+
+  <!-- WHISKERS -->
+  <g stroke="#eaeaea" stroke-width="1" opacity="0.85">
+    <path d="M150,158 L100,150"/>
+    <path d="M150,166 L98,166"/>
+    <path d="M150,174 L100,182"/>
+    <path d="M250,158 L300,150"/>
+    <path d="M250,166 L302,166"/>
+    <path d="M250,174 L300,182"/>
+  </g>
+</svg>
+```

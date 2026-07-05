@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <!-- Sky / Background -->
+  <rect width="500" height="500" fill="#F3E8E0" />
+  
+  <!-- Sun Backdrop -->
+  <circle cx="360" cy="190" r="50" fill="#F6C453" />
+  
+  <!-- Terracotta Arch -->
+  <path d="M 100 420 L 100 250 A 150 150 0 0 1 400 250 L 400 420 Z" fill="#E2A69A" />
+  
+  <!-- Floor Background -->
+  <rect x="0" y="420" width="500" height="80" fill="#D5C5B9" />
+  
+  <!-- Floor Separator Line -->
+  <line x1="0" y1="420" x2="500" y2="420" stroke="#C48E83" stroke-width="2" />
+  
+  <!-- Geometric Detail Base (Left corner) -->
+  <path d="M 60 420 A 45 45 0 0 1 150 420 Z" fill="#C48E83" />
+  
+  <!-- Floor Drop Shadows -->
+  <ellipse cx="250" cy="420" rx="140" ry="12" fill="#C4B4A5" />
+  <ellipse cx="400" cy="420" rx="55" ry="8" fill="#C4B4A5" />
+
+  <!-- Cat Tail -->
+  <path d="M 350 405 C 450 405, 450 270, 390 270 C 350 270, 335 300, 345 320" fill="none" stroke="#333644" stroke-width="24" stroke-linecap="round" />
+  
+  <!-- Cat Body -->
+  <path d="M 130 420 C 140 300, 190 210, 250 210 C 310 210, 360 300, 370 420 Z" fill="#333644" />
+  
+  <!-- Cat Outer Ears -->
+  <path d="M 195 145 L 150 55 L 240 135 Z" fill="#333644" stroke="#333644" stroke-width="2" stroke-linejoin="round" />
+  <path d="M 305 145 L 350 55 L 260 135 Z" fill="#333644" stroke="#333644" stroke-width="2" stroke-linejoin="round" />
+  
+  <!-- Cat Inner Ears -->
+  <path d="M 198 140 L 165 75 L 225 132 Z" fill="#E09F9C" />
+  <path d="M 302 140 L 335 75 L 275 132 Z" fill="#E09F9C" />
+  
+  <!-- Cat Head -->
+  <circle cx="250" cy="195" r="75" fill="#333644" />
+  
+  <!-- Collar -->
+  <path d="M 190 240 Q 250 280 310 240 L 305 250 Q 250 290 195 250 Z" fill="#6099A0" />
+  
+  <!-- Collar Bell -->
+  <circle cx="250" cy="265" r="12" fill="#F6C453" />
+  <circle cx="250" cy="268" r="2.5" fill="#C29738" />
+  <line x1="250" y1="268" x2="250" y2="276" stroke="#C29738" stroke-width="2" stroke-linecap="round" />
+  
+  <!-- Whiskers -->
+  <g stroke="#F3E8E0" stroke-width="2" stroke-linecap="round" opacity="0.6">
+    <!-- Left Whiskers -->
+    <line x1="200" y1="215" x2="125" y2="205" />
+    <line x1="200" y1="225" x2="120" y2="225" />
+    <line x1="200" y1="235" x2="125" y2="245" />
+    <!-- Right Whiskers -->
+    <line x1="300" y1="215" x2="375" y2="205" />
+    <line x1="300" y1="225" x2="380" y2="225" />
+    <line x1="300" y1="235" x2="375" y2="245" />
+  </g>
+  
+  <!-- Cheek Blush -->
+  <ellipse cx="205" cy="225" rx="10" ry="6" fill="#E09F9C" opacity="0.4" />
+  <ellipse cx="295" cy="225" rx="10" ry="6" fill="#E09F9C" opacity="0.4" />
+
+  <!-- Eyes -->
+  <ellipse cx="215" cy="205" rx="14" ry="14" fill="#F6C453" />
+  <ellipse cx="285" cy="205" rx="14" ry="14" fill="#F6C453" />
+  
+  <!-- Pupils -->
+  <ellipse cx="215" cy="205" rx="3" ry="11" fill="#333644" />
+  <ellipse cx="285" cy="205" rx="3" ry="11" fill="#333644" />
+  
+  <!-- Nose -->
+  <polygon points="243,218 257,218 250,226" fill="#E09F9C" />
+  
+  <!-- Mouth -->
+  <path d="M 250 226 L 250 232 Q 247 236 243 234 M 250 232 Q 253 236 257 234" fill="none" stroke="#E09F9C" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Boho Sparkles / Accents -->
+  <g fill="#F6C453">
+    <path d="M 80 150 Q 90 150 90 140 Q 90 150 100 150 Q 90 150 90 160 Q 90 150 80 150 Z" />
+    <path d="M 420 100 Q 430 100 430 90 Q 430 100 440 100 Q 430 100 430 110 Q 430 100 420 100 Z" />
+    <path d="M 380 340 Q 385 340 385 335 Q 385 340 390 340 Q 385 340 385 345 Q 385 340 380 340 Z" />
+    <path d="M 120 360 Q 125 360 125 355 Q 125 360 130 360 Q 125 360 125 365 Q 125 360 120 360 Z" />
+  </g>
+</svg>

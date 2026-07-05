@@ -1,0 +1,29 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 7737,
+    "elements": 83,
+    "paths": 0,
+    "colors": [
+      "#2a1810",
+      "#5d4030",
+      "#8b4540",
+      "#8b6f47",
+      "#a08055",
+      "#b8935f",
+      "#b8946a",
+      "#c9a875",
+      "#d97868",
+      "#e8a890",
+      "#fcf5e7",
+      "url(#bodyshade)",
+      "url(#earshade)",
+      "url(#eyegrad)",
+      "url(#headshade)",
+      "url(#paperbg)",
+      "url(#paperpattern)",
+      "url(#tailshade)"
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <circle cx="200" cy="200" r="190" fill="#FDCB6E" />
+  
+  <circle cx="80" cy="100" r="4" fill="#FFFFFF" opacity="0.7" />
+  <circle cx="320" cy="80" r="6" fill="#FFFFFF" opacity="0.7" />
+  <circle cx="100" cy="280" r="3" fill="#FFFFFF" opacity="0.5" />
+  <path d="M 330 260 L 333 268 L 341 271 L 333 274 L 330 282 L 327 274 L 319 271 L 327 268 Z" fill="#FFFFFF" opacity="0.6" />
+  <path d="M 70 180 L 72 185 L 77 187 L 72 189 L 70 194 L 68 189 L 63 187 L 68 185 Z" fill="#FFFFFF" opacity="0.6" />
+
+  <ellipse cx="200" cy="345" rx="110" ry="12" fill="#E1B12C" />
+
+  <path d="M 260 320 C 360 320, 380 190, 310 150" fill="none" stroke="#2D3436" stroke-width="24" stroke-linecap="round" />
+  
+  <path d="M 110 340 C 110 220, 290 220, 290 340 Z" fill="#2D3436" />
+
+  <polygon points="135,140 110,50 180,110" fill="#2D3436" />
+  <polygon points="265,140 290,50 220,110" fill="#2D3436" />
+  
+  <polygon points="140,125 122,70 170,110" fill="#FAB1A0" />
+  <polygon points="260,125 278,70 230,110" fill="#FAB1A0" />
+
+  <circle cx="200" cy="170" r="85" fill="#2D3436" />
+
+  <path d="M 130 235 Q 200 265 270 235" fill="none" stroke="#FF7675" stroke-width="14" stroke-linecap="round" />
+  
+  <circle cx="200" cy="258" r="12" fill="#FFFFFF" />
+  <line x1="200" y1="258" x2="200" y2="270" stroke="#2D3436" stroke-width="2" stroke-linecap="round" />
+  <circle cx="200" cy="262" r="2.5" fill="#2D3436" />
+  <path d="M 192 255 Q 200 250 208 255" fill="none" stroke="#2D3436" stroke-width="2" stroke-linecap="round" />
+
+  <circle cx="160" cy="175" r="14" fill="#00CEC9" />
+  <ellipse cx="160" cy="175" rx="4" ry="10" fill="#2D3436" />
+  
+  <circle cx="240" cy="175" r="14" fill="#00CEC9" />
+  <ellipse cx="240" cy="175" rx="4" ry="10" fill="#2D3436" />
+
+  <polygon points="192,205 208,205 200,215" fill="#FAB1A0" />
+  
+  <path d="M 200 215 L 200 225 M 200 225 Q 190 232 182 225 M 200 225 Q 210 232 218 225" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+
+  <line x1="145" y1="200" x2="90" y2="190" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+  <line x1="145" y1="210" x2="90" y2="210" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+  <line x1="145" y1="220" x2="90" y2="230" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+
+  <line x1="255" y1="200" x2="310" y2="190" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+  <line x1="255" y1="210" x2="310" y2="210" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+  <line x1="255" y1="220" x2="310" y2="230" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+</svg>

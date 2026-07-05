@@ -1,0 +1,231 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+    <defs>
+        <linearGradient id="frameGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#00cec9" />
+            <stop offset="100%" stop-color="#0984e3" />
+        </linearGradient>
+        <linearGradient id="catGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#f39c12" />
+            <stop offset="100%" stop-color="#e67e22" />
+        </linearGradient>
+    </defs>
+
+    <!-- Background Shadow -->
+    <ellipse cx="400" cy="520" rx="260" ry="20" fill="rgba(0,0,0,0.15)" />
+
+    <!-- Background Motion Lines -->
+    <g stroke="#b2bec3" stroke-width="4" stroke-linecap="round" fill="none">
+        <line x1="180" y1="340" x2="140" y2="340" />
+        <line x1="190" y1="380" x2="130" y2="380" />
+        <line x1="200" y1="420" x2="150" y2="420" />
+    </g>
+
+    <!-- Background Leg (Cat) -->
+    <g id="cat-background-leg">
+        <path d="M 360 270 Q 380 320 352 440" fill="none" stroke="#e67e22" stroke-width="25" stroke-linecap="round" />
+        <ellipse cx="352" cy="440" rx="12" ry="15" fill="#e67e22" />
+        <circle cx="380" cy="340" r="14" fill="#e67e22" />
+    </g>
+
+    <!-- Cat Tail -->
+    <g id="cat-tail">
+        <path d="M 320 260 C 200 300 150 200 200 140 C 220 120 230 140 210 150 C 180 180 220 240 300 230" fill="none" stroke="url(#catGrad)" stroke-width="24" stroke-linecap="round" />
+        <!-- Tail Stripes -->
+        <path d="M 250 230 L 270 245" stroke="#d35400" stroke-width="6" stroke-linecap="round" />
+        <path d="M 220 200 L 240 215" stroke="#d35400" stroke-width="6" stroke-linecap="round" />
+        <path d="M 200 170 L 215 180" stroke="#d35400" stroke-width="6" stroke-linecap="round" />
+    </g>
+
+    <!-- Rear Wheel -->
+    <g id="rear-wheel">
+        <circle cx="250" cy="440" r="80" fill="none" stroke="#2d3436" stroke-width="18" />
+        <circle cx="250" cy="440" r="80" fill="none" stroke="#636e72" stroke-width="18" stroke-dasharray="8 8" />
+        <circle cx="250" cy="440" r="75" fill="none" stroke="#dfe6e9" stroke-width="4" />
+        <circle cx="250" cy="440" r="8" fill="#636e72" />
+        <!-- Spokes -->
+        <line x1="250" y1="360" x2="250" y2="520" stroke="#b2bec3" stroke-width="2" />
+        <line x1="170" y1="440" x2="330" y2="440" stroke="#b2bec3" stroke-width="2" />
+        <line x1="193" y1="383" x2="307" y2="497" stroke="#b2bec3" stroke-width="2" />
+        <line x1="307" y1="383" x2="193" y2="497" stroke="#b2bec3" stroke-width="2" />
+    </g>
+
+    <!-- Front Wheel -->
+    <g id="front-wheel">
+        <circle cx="580" cy="440" r="80" fill="none" stroke="#2d3436" stroke-width="18" />
+        <circle cx="580" cy="440" r="80" fill="none" stroke="#636e72" stroke-width="18" stroke-dasharray="8 8" />
+        <circle cx="580" cy="440" r="75" fill="none" stroke="#dfe6e9" stroke-width="4" />
+        <circle cx="580" cy="440" r="8" fill="#636e72" />
+        <!-- Spokes -->
+        <line x1="580" y1="360" x2="580" y2="520" stroke="#b2bec3" stroke-width="2" />
+        <line x1="500" y1="440" x2="660" y2="440" stroke="#b2bec3" stroke-width="2" />
+        <line x1="523" y1="383" x2="637" y2="497" stroke="#b2bec3" stroke-width="2" />
+        <line x1="637" y1="383" x2="523" y2="497" stroke="#b2bec3" stroke-width="2" />
+    </g>
+
+    <!-- Chain & Background Crank -->
+    <g id="chain-and-bg-crank">
+        <!-- Chain -->
+        <line x1="395" y1="455" x2="260" y2="430" stroke="#636e72" stroke-width="4" />
+        <line x1="395" y1="485" x2="260" y2="450" stroke="#636e72" stroke-width="4" />
+        <!-- Background Crank Arm -->
+        <line x1="380" y1="470" x2="360" y2="440" stroke="#b2bec3" stroke-width="10" stroke-linecap="round" />
+        <!-- Background Pedal -->
+        <line x1="340" y1="440" x2="365" y2="440" stroke="#2d3436" stroke-width="10" stroke-linecap="round" />
+    </g>
+
+    <!-- Bicycle Frame -->
+    <g id="bike-frame">
+        <!-- Main Frame Structure -->
+        <g stroke="url(#frameGrad)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none">
+            <!-- Rear Triangle -->
+            <polygon points="250,440 380,470 330,300" />
+            <line x1="250" y1="440" x2="330" y2="300" />
+            <!-- Front Diamond -->
+            <polygon points="330,300 550,290 540,360 380,470" />
+            <line x1="330" y1="300" x2="550" y2="290" />
+            <line x1="380" y1="470" x2="540" y2="360" />
+            <!-- Fork & Stem -->
+            <line x1="550" y1="290" x2="580" y2="440" />
+            <line x1="550" y1="290" x2="570" y2="260" />
+        </g>
+        <!-- Frame Highlights -->
+        <g stroke="#55efc4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.6">
+            <line x1="252" y1="440" x2="330" y2="302" />
+            <line x1="332" y1="300" x2="548" y2="290" />
+            <line x1="382" y1="470" x2="538" y2="362" />
+        </g>
+    </g>
+
+    <!-- Saddle & Seatpost -->
+    <g id="saddle">
+        <line x1="330" y1="300" x2="320" y2="275" stroke="url(#frameGrad)" stroke-width="12" stroke-linecap="round" />
+        <path d="M 290 275 Q 320 265 350 275 Q 350 285 320 285 Q 290 285 290 275" fill="#2d3436" />
+    </g>
+
+    <!-- Cat Body -->
+    <g id="cat-body">
+        <!-- Body Ellipse -->
+        <ellipse cx="380" cy="240" rx="90" ry="40" fill="url(#catGrad)" transform="rotate(-20 380 240)" />
+        <!-- White Belly -->
+        <ellipse cx="390" cy="255" rx="60" ry="25" fill="#ffffff" transform="rotate(-15 390 255)" />
+        <!-- Body Stripes -->
+        <g stroke="#d35400" stroke-width="5" stroke-linecap="round" fill="none">
+            <path d="M 340 210 Q 350 220 340 230" />
+            <path d="M 370 200 Q 380 215 370 225" />
+            <path d="M 400 200 Q 410 220 400 240" />
+        </g>
+        <!-- Neck Connection -->
+        <path d="M 440 210 L 480 160 L 520 180 L 460 230 Z" fill="url(#catGrad)" />
+    </g>
+
+    <!-- Cat Head & Face -->
+    <g id="cat-head">
+        <!-- Ears -->
+        <polygon points="470,125 460,70 500,120" fill="url(#catGrad)" />
+        <polygon points="530,120 540,70 520,120" fill="url(#catGrad)" />
+        <!-- Inner Ears -->
+        <polygon points="475,115 465,85 495,115" fill="#f8c291" />
+        <polygon points="525,115 535,85 525,115" fill="#f8c291" />
+        
+        <!-- Head Base -->
+        <circle cx="500" cy="160" r="38" fill="url(#catGrad)" />
+        
+        <!-- Forehead Stripes -->
+        <g stroke="#d35400" stroke-width="4" stroke-linecap="round">
+            <path d="M 490 135 L 510 135" />
+            <path d="M 492 145 L 508 145" />
+        </g>
+        
+        <!-- Cheeks -->
+        <ellipse cx="475" cy="170" rx="10" ry="6" fill="#f8c291" opacity="0.6" />
+        <ellipse cx="525" cy="170" rx="10" ry="6" fill="#f8c291" opacity="0.6" />
+        
+        <!-- Eyes -->
+        <ellipse cx="485" cy="155" rx="8" ry="10" fill="#f1c40f" />
+        <ellipse cx="515" cy="155" rx="8" ry="10" fill="#f1c40f" />
+        <!-- Pupils -->
+        <ellipse cx="485" cy="155" rx="3" ry="8" fill="#2d3436" />
+        <ellipse cx="515" cy="155" rx="3" ry="8" fill="#2d3436" />
+        <!-- Eye Highlights -->
+        <circle cx="483" cy="152" r="2" fill="#ffffff" />
+        <circle cx="513" cy="152" r="2" fill="#ffffff" />
+        <!-- Eyelids -->
+        <path d="M 477 155 Q 485 150 493 155" stroke="#2d3436" stroke-width="2" fill="none" />
+        <path d="M 507 155 Q 515 150 523 155" stroke="#2d3436" stroke-width="2" fill="none" />
+        
+        <!-- Nose -->
+        <polygon points="500,170 495,175 505,175" fill="#d35400" />
+        
+        <!-- Mouth -->
+        <path d="M 495 175 Q 500 180 500 178" stroke="#2d3436" stroke-width="2" fill="none" />
+        <path d="M 505 175 Q 500 180 500 178" stroke="#2d3436" stroke-width="2" fill="none" />
+        
+        <!-- Whiskers -->
+        <g stroke="#2d3436" stroke-width="2" stroke-linecap="round">
+            <line x1="460" y1="165" x2="475" y2="170" />
+            <line x1="460" y1="175" x2="475" y2="175" />
+            <line x1="525" y1="170" x2="540" y2="165" />
+            <line x1="525" y1="175" x2="540" y2="175" />
+        </g>
+        
+        <!-- Collar -->
+        <path d="M 465 185 Q 500 195 535 185" stroke="#e74c3c" stroke-width="8" fill="none" stroke-linecap="round" />
+        <circle cx="500" cy="195" r="8" fill="#f1c40f" />
+        <circle cx="500" cy="195" r="4" fill="#d35400" />
+    </g>
+
+    <!-- Foreground Leg -->
+    <g id="cat-foreground-leg">
+        <path d="M 340 260 Q 380 330 405 500" fill="none" stroke="url(#catGrad)" stroke-width="30" stroke-linecap="round" />
+        <ellipse cx="405" cy="500" rx="15" ry="12" fill="url(#catGrad)" />
+        <circle cx="390" cy="360" r="16" fill="url(#catGrad)" />
+    </g>
+
+    <!-- Chainring & Foreground Crank -->
+    <g id="chainring-and-fg-crank">
+        <circle cx="380" cy="470" r="24" fill="none" stroke="#636e72" stroke-width="6" />
+        <circle cx="380" cy="470" r="30" fill="none" stroke="#b2bec3" stroke-width="2" />
+        <!-- Foreground Crank Arm -->
+        <line x1="380" y1="470" x2="400" y2="500" stroke="#636e72" stroke-width="10" stroke-linecap="round" />
+        <!-- Pedal -->
+        <line x1="400" y1="500" x2="420" y2="500" stroke="#2d3436" stroke-width="12" stroke-linecap="round" />
+        <line x1="400" y1="500" x2="420" y2="500" stroke="#f1c40f" stroke-width="6" stroke-linecap="round" />
+        <!-- Crank Bolts -->
+        <circle cx="380" cy="470" r="6" fill="#b2bec3" />
+        <circle cx="400" cy="500" r="5" fill="#b2bec3" />
+        <circle cx="360" cy="440" r="5" fill="#b2bec3" />
+    </g>
+
+    <!-- Background Front Arm -->
+    <g id="cat-background-front-arm">
+        <path d="M 430 220 Q 470 240 535 215" fill="none" stroke="#e67e22" stroke-width="22" stroke-linecap="round" />
+    </g>
+
+    <!-- Handlebars & Grip -->
+    <g id="handlebars">
+        <!-- Stem -->
+        <line x1="550" y1="290" x2="570" y2="260" stroke="url(#frameGrad)" stroke-width="12" stroke-linecap="round" />
+        <!-- Handlebar Curve -->
+        <path d="M 570 260 Q 590 240 580 220 Q 570 200 550 210" stroke="#2d3436" stroke-width="10" fill="none" stroke-linecap="round" />
+        <!-- Grip -->
+        <path d="M 580 220 Q 570 200 550 210" stroke="#d35400" stroke-width="14" fill="none" stroke-linecap="round" />
+    </g>
+
+    <!-- Foreground Front Arm & Paw -->
+    <g id="cat-foreground-front-arm">
+        <path d="M 440 230 Q 490 250 550 210" fill="none" stroke="url(#catGrad)" stroke-width="28" stroke-linecap="round" />
+        <!-- Paw on Handlebar -->
+        <ellipse cx="550" cy="210" rx="14" ry="18" fill="url(#catGrad)" transform="rotate(-45 550 210)" />
+        <!-- Paw Details -->
+        <circle cx="546" cy="215" r="3" fill="#d35400" />
+        <circle cx="550" cy="218" r="3" fill="#d35400" />
+        <circle cx="554" cy="215" r="3" fill="#d35400" />
+    </g>
+
+    <!-- Foreground Motion Lines -->
+    <g stroke="#b2bec3" stroke-width="4" stroke-linecap="round" fill="none">
+        <line x1="640" y1="340" x2="700" y2="340" />
+        <line x1="650" y1="380" x2="690" y2="380" />
+        <line x1="630" y1="260" x2="670" y2="260" />
+    </g>
+</svg>

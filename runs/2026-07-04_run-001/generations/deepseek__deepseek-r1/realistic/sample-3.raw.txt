@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="furGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d3c6b0" />
+      <stop offset="100%" stop-color="#b8a897" />
+    </linearGradient>
+    <linearGradient id="shadowGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a0907f" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#8a7c6d" stop-opacity="0.5" />
+    </linearGradient>
+    <filter id="furTexture" x="0" y="0">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </defs>
+
+  <!-- Body base -->
+  <path d="M150 180 Q180 140 250 140 Q300 150 320 180 Q330 220 280 250 Q230 270 180 250 Q150 230 150 180Z" fill="url(#furGradient)" filter="url(#furTexture)" />
+
+  <!-- Body shading -->
+  <path d="M180 190 Q210 170 270 170 Q290 190 280 220 Q260 240 200 240 Q170 230 180 190Z" fill="url(#shadowGradient)" opacity="0.7" />
+
+  <!-- Head -->
+  <ellipse cx="200" cy="120" rx="50" ry="40" fill="url(#furGradient)" filter="url(#furTexture)" />
+
+  <!-- Ears -->
+  <path d="M160 80 L170 60 L190 75 Z" fill="#a0907f" />
+  <path d="M240 80 L230 60 L210 75 Z" fill="#a0907f" />
+  <path d="M165 75 L175 65 L185 75 Z" fill="#e0d7c8" />
+  <path d="M235 75 L225 65 L215 75 Z" fill="#e0d7c8" />
+
+  <!-- Front legs -->
+  <path d="M150 180 L140 250 L160 250 L170 200 Z" fill="url(#furGradient)" filter="url(#furTexture)" />
+  <path d="M250 180 L260 250 L240 250 L230 200 Z" fill="url(#furGradient)" filter="url(#furTexture)" />
+
+  <!-- Hind leg -->
+  <path d="M280 250 L300 230 L310 250 L300 280 L270 270 Z" fill="url(#furGradient)" filter="url(#furTexture)" />
+
+  <!-- Tail -->
+  <path d="M280 250 Q320 230 340 210 Q360 230 350 250 Q330 270 300 270 Z" fill="url(#furGradient)" filter="url(#furTexture)" />
+
+  <!-- Facial features -->
+  <ellipse cx="180" cy="110" rx="8" ry="10" fill="#222" />
+  <ellipse cx="220" cy="110" rx="8" ry="10" fill="#222" />
+  <ellipse cx="180" cy="110" rx="3" ry="4" fill="#fff" />
+  <ellipse cx="220" cy="110" rx="3" ry="4" fill="#fff" />
+  <path d="M190 140 Q200 150 210 140" stroke="#444" stroke-width="2" fill="none" />
+  <path d="M185 130 L175 125 M185 135 L170 130" stroke="#444" stroke-width="1.5" />
+  <path d="M215 130 L225 125 M215 135 L230 130" stroke="#444" stroke-width="1.5" />
+
+  <!-- Fur texture details -->
+  <path d="M140 170 Q145 165 150 170 M155 165 Q160 160 165 165" stroke="#a0907f" stroke-width="0.8" fill="none" />
+  <path d="M280 160 Q285 155 290 160 M295 155 Q300 150 305 155" stroke="#a0907f" stroke-width="0.8" fill="none" />
+  <path d="M180 90 Q185 85 190 90 M195 85 Q200 80 205 85" stroke="#a0907f" stroke-width="0.8" fill="none" />
+</svg>

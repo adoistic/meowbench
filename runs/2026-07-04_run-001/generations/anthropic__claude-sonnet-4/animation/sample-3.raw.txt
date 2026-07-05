@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- Cat body -->
+  <ellipse cx="200" cy="180" rx="60" ry="40" fill="#ff8c42" stroke="#000" stroke-width="2"/>
+  
+  <!-- Cat head -->
+  <circle cx="200" cy="120" r="35" fill="#ff8c42" stroke="#000" stroke-width="2"/>
+  
+  <!-- Cat ears -->
+  <polygon points="175,95 185,75 195,95" fill="#ff8c42" stroke="#000" stroke-width="2"/>
+  <polygon points="205,95 215,75 225,95" fill="#ff8c42" stroke="#000" stroke-width="2"/>
+  
+  <!-- Inner ears -->
+  <polygon points="178,90 185,80 192,90" fill="#ffb380"/>
+  <polygon points="208,90 215,80 222,90" fill="#ffb380"/>
+  
+  <!-- Cat eyes -->
+  <ellipse cx="190" cy="115" rx="6" ry="8" fill="#000"/>
+  <ellipse cx="210" cy="115" rx="6" ry="8" fill="#000"/>
+  <ellipse cx="190" cy="113" rx="2" ry="3" fill="#fff"/>
+  <ellipse cx="210" cy="113" rx="2" ry="3" fill="#fff"/>
+  
+  <!-- Cat nose -->
+  <polygon points="200,125 195,130 205,130" fill="#ff6b9d"/>
+  
+  <!-- Cat mouth -->
+  <path d="M 200,132 Q 190,140 185,135" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 200,132 Q 210,140 215,135" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Cat whiskers -->
+  <line x1="150" y1="120" x2="175" y2="118" stroke="#000" stroke-width="1"/>
+  <line x1="150" y1="130" x2="175" y2="128" stroke="#000" stroke-width="1"/>
+  <line x1="225" y1="118" x2="250" y2="120" stroke="#000" stroke-width="1"/>
+  <line x1="225" y1="128" x2="250" y2="130" stroke="#000" stroke-width="1"/>
+  
+  <!-- Cat legs -->
+  <ellipse cx="175" cy="210" rx="8" ry="20" fill="#ff8c42" stroke="#000" stroke-width="2"/>
+  <ellipse cx="195" cy="210" rx="8" ry="20" fill="#ff8c42" stroke="#000" stroke-width="2"/>
+  <ellipse cx="205" cy="210" rx="8" ry="20" fill="#ff8c42" stroke="#000" stroke-width="2"/>
+  <ellipse cx="225" cy="210" rx="8" ry="20" fill="#ff8c42" stroke="#000" stroke-width="2"/>
+  
+  <!-- Cat paws -->
+  <circle cx="175" cy="225" r="6" fill="#ff6b42" stroke="#000" stroke-width="1"/>
+  <circle cx="195" cy="225" r="6" fill="#ff6b42" stroke="#000" stroke-width="1"/>
+  <circle cx="205" cy="225" r="6" fill="#ff6b42" stroke="#000" stroke-width="1"/>
+  <circle cx="225" cy="225" r="6" fill="#ff6b42" stroke="#000" stroke-width="1"/>
+  
+  <!-- Animated tail -->
+  <g transform-origin="140 175">
+    <path d="M 140,175 Q 120,150 110,120 Q 100,90 115,70" 
+          fill="none" 
+          stroke="#ff8c42" 
+          stroke-width="12" 
+          stroke-linecap="round">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="-10 140 175; 10 140 175; -10 140 175"
+        dur="2s"
+        repeatCount="indefinite"/>
+    </path>
+    <path d="M 140,175 Q 120,150 110,120 Q 100,90 115,70" 
+          fill="none" 
+          stroke="#000" 
+          stroke-width="2" 
+          stroke-linecap="round">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="-10 140 175; 10 140 175; -10 140 175"
+        dur="2s"
+        repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>

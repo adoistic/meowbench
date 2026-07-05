@@ -1,0 +1,9 @@
+<!-- SVG representing a minimalist stylized cat, using simple shapes and colors. Realism and detail like fur shading aren't easily achievable through SVG without becoming over complex.-->
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+  <circle cx="12" cy="12" r="10" style="fill: #CCCCCC"/>
+  <circle cx="38" cy="12" r="10" style="fill: #CCCCCC"/>
+  <path d="M10 22 Q25 28 40 22 Q25 38 10 22" style="fill: #CCCCCC"/>
+  <circle cx="12" cy="9" r="2" style="fill: black"/>
+  <circle cx="38" cy="9" r="2" style="fill: black"/>
+</svg>

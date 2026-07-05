@@ -1,0 +1,9 @@
+{
+  "modelSlug": "meta-llama/llama-3.1-70b-instruct",
+  "promptId": "action",
+  "sample": 3,
+  "status": "ok",
+  "temperature": 1,
+  "rawPath": "generations/meta-llama__llama-3.1-70b-instruct/action/sample-3.raw.txt",
+  "svgPath": "generations/meta-llama__llama-3.1-70b-instruct/action/sample-3.svg"
+}

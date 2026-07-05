@@ -1,0 +1,34 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 10293,
+    "elements": 129,
+    "paths": 16,
+    "colors": [
+      "#111",
+      "#222",
+      "#333",
+      "#444",
+      "#555",
+      "#666",
+      "#888",
+      "#aaa",
+      "#b8860b",
+      "#cc7000",
+      "#ccc",
+      "#d3d3d3",
+      "#d4a373",
+      "#d96d00",
+      "#e63946",
+      "#fdf6e3",
+      "#ff69b4",
+      "#ff8c00",
+      "#ffb6c1",
+      "#ffd700",
+      "#fff",
+      "url(#framegradient)",
+      "url(#groundgradient)"
+    ]
+  }
+}

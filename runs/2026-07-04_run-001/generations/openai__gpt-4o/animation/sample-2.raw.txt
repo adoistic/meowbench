@@ -1,0 +1,35 @@
+```svg
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <!-- Body of the Cat -->
+    <ellipse cx="100" cy="120" rx="60" ry="80" fill="#f4a460" />
+    <!-- Head of the Cat -->
+    <circle cx="100" cy="60" r="40" fill="#f4a460" />
+    <!-- Ears -->
+    <path d="M70 20 L90 50 L50 50 Z" fill="#f4a460" />
+    <path d="M130 20 L110 50 L150 50 Z" fill="#f4a460" />
+    <!-- Eyes -->
+    <circle cx="85" cy="55" r="5" fill="#000" />
+    <circle cx="115" cy="55" r="5" fill="#000" />
+    <!-- Nose -->
+    <ellipse cx="100" cy="75" rx="5" ry="3" fill="#000" />
+    <!-- Mouth -->
+    <path d="M90 85 Q100 95 110 85" stroke="#000" stroke-width="2" fill="none" />
+    <!-- Tail -->
+    <path id="tail" d="M160 130 Q180 110 160 90" stroke="#f4a460" stroke-width="10" fill="none" />
+    
+    <!-- Animation -->
+    <animateTransform 
+      xlink:href="#tail"
+      attributeName="transform" 
+      type="rotate" 
+      from="0 160 130" 
+      to="20 160 130" 
+      dur="1s" 
+      begin="0s" 
+      repeatCount="indefinite" 
+      fill="freeze" 
+      alternate="true" />
+  </g>
+</svg>
+```

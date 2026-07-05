@@ -1,0 +1,9 @@
+{
+  "modelSlug": "minimax/minimax-m3",
+  "promptId": "animation",
+  "sample": 1,
+  "status": "ok",
+  "temperature": 1,
+  "rawPath": "generations/minimax__minimax-m3/animation/sample-1.raw.txt",
+  "svgPath": "generations/minimax__minimax-m3/animation/sample-1.svg"
+}

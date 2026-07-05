@@ -1,0 +1,9 @@
+{
+  "modelSlug": "deepseek/deepseek-v4-pro",
+  "promptId": "minimal",
+  "sample": 3,
+  "status": "ok",
+  "temperature": 1,
+  "rawPath": "generations/deepseek__deepseek-v4-pro/minimal/sample-3.raw.txt",
+  "svgPath": "generations/deepseek__deepseek-v4-pro/minimal/sample-3.svg"
+}

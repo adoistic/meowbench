@@ -1,0 +1,17 @@
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <path d="M 78,70 C 100,75 100,40 80,35" stroke="#4A4A4A" stroke-width="10" stroke-linecap="round" fill="none"/>
+  <ellipse cx="50" cy="70" rx="28" ry="25" fill="#4A4A4A"/>
+  <ellipse cx="38" cy="92" rx="10" ry="4.5" fill="#4A4A4A"/>
+  <ellipse cx="62" cy="92" rx="10" ry="4.5" fill="#4A4A4A"/>
+  <circle cx="50" cy="42" r="20" fill="#4A4A4A"/>
+  <path d="M 33,32 Q 30,15 45,28 Z M 67,32 Q 70,15 55,28 Z" fill="#4A4A4A"/>
+  <circle cx="43" cy="42" r="4.5" fill="#F9E076"/>
+  <circle cx="57" cy="42" r="4.5" fill="#F9E076"/>
+  <ellipse cx="43" cy="42" rx="1.5" ry="3.5" fill="#000000"/>
+  <ellipse cx="57" cy="42" rx="1.5" ry="3.5" fill="#000000"/>
+  <polygon points="50,48 48,51 52,51" fill="#F5B6CD"/>
+  <path d="M 40,49 L 25,47 M 40,52 L 23,52 M 40,55 L 25,57 M 60,49 L 75,47 M 60,52 L 77,52 M 60,55 L 75,57" stroke="#FFFFFF" stroke-width="0.75" stroke-linecap="round"/>
+</svg>
+```

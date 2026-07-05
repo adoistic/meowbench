@@ -1,0 +1,30 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="600" height="400" fill="#87CEEB" rx="20"/>
+  
+  <!-- Road -->
+  <rect x="50" y="250" width="500" height="50" fill="#666" rx="10"/>
+  <rect x="50" y="260" width="500" height="10" fill="#999"/>
+  <rect x="50" y="270" width="500" height="10" fill="#666"/>
+  <rect x="50" y="280" width="500" height="10" fill="#999"/>
+  
+  <!-- Bicycle -->
+  <g transform="translate(200, 200)">
+    <circle cx="0" cy="0" r="30" fill="#333"/>
+    <circle cx="50" cy="0" r="30" fill="#333"/>
+    <rect x="-20" y="-10" width="40" height="20" fill="#333"/>
+    <rect x="30" y="-10" width="40" height="20" fill="#333"/>
+    <path d="M 25 10 C 25 30, 75 30, 75 10" stroke="#333" stroke-width="5" fill="none"/>
+    <path d="M 25 10 C 25 -30, 75 -30, 75 10" stroke="#333" stroke-width="5" fill="none"/>
+  </g>
+  
+  <!-- Cat -->
+  <g transform="translate(220, 140)">
+    <circle cx="0" cy="0" r="20" fill="#F7DC6F"/>
+    <path d="M -10 0 C -20 -20, 0 -20, 0 -30" stroke="#F7DC6F" stroke-width="10" fill="none"/>
+    <path d="M 10 0 C 20 -20, 0 -20, 0 -30" stroke="#F7DC6F" stroke-width="10" fill="none"/>
+    <circle cx="-10" cy="-20" r="5" fill="#000"/>
+    <circle cx="10" cy="-20" r="5" fill="#000"/>
+    <path d="M -5 -10 C -10 -15, 0 -15, 5 -10" stroke="#F7DC6F" stroke-width="5" fill="none"/>
+  </g>
+</svg>

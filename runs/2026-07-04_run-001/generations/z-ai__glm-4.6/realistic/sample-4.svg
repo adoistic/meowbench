@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="bodyGrad" cx="50%" cy="40%">
+      <stop offset="0%" style="stop-color:#8B7355"/>
+      <stop offset="60%" style="stop-color:#6B5D4F"/>
+      <stop offset="100%" style="stop-color:#4A4035"/>
+    </radialGradient>
+    <radialGradient id="bellyGrad" cx="50%" cy="30%">
+      <stop offset="0%" style="stop-color:#D4C5B0"/>
+      <stop offset="70%" style="stop-color:#C4B5A0"/>
+      <stop offset="100%" style="stop-color:#A49580"/>
+    </radialGradient>
+    <linearGradient id="tailGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7B6F5F"/>
+      <stop offset="50%" style="stop-color:#6B5D4F"/>
+      <stop offset="100%" style="stop-color:#5B4D3F"/>
+    </linearGradient>
+    <filter id="fur">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="furl"/>
+      <feColorMatrix in="furl" result="furdark" type="matrix" values="0 0 0 0 0.2 0 0 0 0 0.1 0 0 0 0 0 0 0 0 1 0"/>
+      <feBlend in="SourceGraphic" in2="furdark" mode="multiply"/>
+    </filter>
+  </defs>
+  
+  <!-- Shadow base -->
+  <ellipse cx="200" cy="380" rx="80" ry="25" fill="#00000020"/>
+  
+  <!-- Tail -->
+  <path d="M 280 320Q 320 310, 340 280 Q 355 255, 350 230 Q 345 210, 330 195" 
+        fill="none" stroke="url(#tailGrad)" stroke-width="35" stroke-linecap="round" filter="url(#fur)"/>
+  
+  <!-- Body -->
+  <ellipse cx="200" cy="300" rx="70" ry="80" fill="url(#bodyGrad)" filter="url(#fur)"/>
+  
+  <!-- Chest/Belly -->
+  <ellipse cx="180" cy="310" rx="45" ry="60" fill="url(#bellyGrad)" filter="url(#fur)"/>
+  
+  <!-- Head -->
+  <ellipse cx="150" cy="220" rx="55" ry="50" fill="url(#bodyGrad)" filter="url(#fur)"/>
+  
+  <!-- Ears -->
+  <path d="M 110 195 L 105 165 L 125 180 Z" fill="url(#bodyGrad)" filter="url(#fur)"/>
+  <path d="M 125 185 L 122 165 L 138 175 Z" fill="#D4C5B0" opacity="0.7"/>
+  <path d="M 185 180 L 185 155 L 200 175 Z" fill="url(#bodyGrad)" filter="url(#fur)"/>
+  <path d="M 188 175 L 188 160 L 195 170 Z" fill="#D4C5B0" opacity="0.7"/>
+  
+  <!-- Muzzle -->
+  <ellipse cx="125" cy="235" rx="20" ry="18" fill="#B4A590" filter="url(#fur)"/>
+  
+  <!-- Nose -->
+  <path d="M 120 235 Q 125 230, 130 235 Q 125 238, 120 235" fill="#4A3A2A"/>
+  
+  <!-- Eyes -->
+  <ellipse cx="125" cy="215" rx="8" ry="10" fill="#4A3A2A"/>
+  <ellipse cx="160" cy="215" rx="8" ry="10" fill="#4A3A2A"/>
+  <ellipse cx="127" cy="213" rx="3" ry="4" fill="#FFFFFF" opacity="0.8"/>
+  <ellipse cx="162" cy="213" rx="3" ry="4" fill="#FFFFFF" opacity="0.8"/>
+  
+  <!-- Whiskers -->
+  <line x1="85" y1="225" x2="50" y2="220" stroke="#4A4035" stroke-width="1.5" opacity="0.6"/>
+  <line x1="85" y1="235" x2="50" y2="235" stroke="#4A4035" stroke-width="1.5" opacity="0.6"/>
+  <line x1="85" y1="245" x2="50" y2="250" stroke="#4A4035" stroke-width="1.5" opacity="0.6"/>
+  <line x1="165" y1="225" x2="200" y2="220" stroke="#4A4035" stroke-width="1.5" opacity="0.6"/>
+  <line x1="165" y1="235" x2="200" y2="235" stroke="#4A4035" stroke-width="1.5" opacity="0.6"/>
+  <line x1="165" y1="245" x2="200" y2="250" stroke="#4A4035" stroke-width="1.5" opacity="0.6"/>
+  
+  <!-- Front legs -->
+  <ellipse cx="160" cy="350" rx="18" ry="35" fill="url(#bodyGrad)" filter="url(#fur)"/>
+  <ellipse cx="180" cy="350" rx="18" ry="35" fill="url(#bodyGrad)" filter="url(#fur)"/>
+  
+  <!-- Paws -->
+  <ellipse cx="160" cy="370" rx="20" ry="15" fill="#5B4D3F"/>
+  <ellipse cx="180" cy="370" rx="20" ry="15" fill="#5B4D3F"/>
+  
+  <!-- Fur texture overlay on body -->
+  <path d="M 150 270Q 170 265, 190 270 Q 210 275, 230 285" 
+        fill="none" stroke="#6B5D4F" stroke-width="8" opacity="0.3" stroke-linecap="round"/>
+  <path d="M 145 290Q 165 285, 185 290" 
+        fill="none" stroke="#6B5D4F" stroke-width="6" opacity="0.25" stroke-linecap="round"/>
+  <path d="M 155 310Q 175 305, 195 310" 
+        fill="none" stroke="#6B5D4F" stroke-width="6" opacity="0.25" stroke-linecap="round"/>
+  
+  <!-- Additional shadow for depth -->
+  <ellipse cx="200" cy="345" rx="50" ry="15" fill="#00000015"/>
+</svg>

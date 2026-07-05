@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="A cheerful cat riding a bicycle">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#bfefff"/>
+      <stop offset="100%" stop-color="#f5fbff"/>
+    </linearGradient>
+    <linearGradient id="grass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8ee082"/>
+      <stop offset="100%" stop-color="#55bd5c"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#27463a" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="660" cy="92" r="42" fill="#ffd76a"/>
+  <g fill="#ffffff" opacity="0.85">
+    <ellipse cx="145" cy="105" rx="55" ry="22"/>
+    <ellipse cx="185" cy="103" rx="42" ry="18"/>
+    <ellipse cx="106" cy="110" rx="35" ry="16"/>
+    <ellipse cx="550" cy="145" rx="62" ry="23"/>
+    <ellipse cx="594" cy="145" rx="42" ry="18"/>
+    <ellipse cx="510" cy="150" rx="35" ry="15"/>
+  </g>
+
+  <path d="M0 455 C115 430 198 456 300 438 C412 418 511 441 625 426 C700 416 750 425 800 410 L800 600 L0 600 Z" fill="url(#grass)"/>
+  <path d="M0 494 C150 470 270 492 405 476 C555 459 675 477 800 456 L800 600 L0 600 Z" fill="#3ea94f" opacity="0.35"/>
+
+  <g filter="url(#shadow)">
+    <ellipse cx="250" cy="470" rx="95" ry="18" fill="#1a4b3d" opacity="0.18"/>
+    <ellipse cx="552" cy="470" rx="95" ry="18" fill="#1a4b3d" opacity="0.18"/>
+
+    <!-- Bicycle wheels -->
+    <g stroke="#283747" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="250" cy="415" r="86" fill="none" stroke-width="9"/>
+      <circle cx="552" cy="415" r="86" fill="none" stroke-width="9"/>
+      <circle cx="250" cy="415" r="9" fill="#283747" stroke="none"/>
+      <circle cx="552" cy="415" r="9" fill="#283747" stroke="none"/>
+      <g stroke-width="2.2" opacity="0.65">
+        <line x1="250" y1="415" x2="250" y2="329"/>
+        <line x1="250" y1="415" x2="250" y2="501"/>
+        <line x1="250" y1="415" x2="164" y2="415"/>
+        <line x1="250" y1="415" x2="336" y2="415"/>
+        <line x1="250" y1="415" x2="189" y2="354"/>
+        <line x1="250" y1="415" x2="311" y2="354"/>
+        <line x1="250" y1="415" x2="189" y2="476"/>
+        <line x1="250" y1="415" x2="311" y2="476"/>
+        <line x1="552" y1="415" x2="552" y2="329"/>
+        <line x1="552" y1="415" x2="552" y2="501"/>
+        <line x1="552" y1="415" x2="466" y2="415"/>
+        <line x1="552" y1="415" x2="638" y2="415"/>
+        <line x1="552" y1="415" x2="491" y2="354"/>
+        <line x1="552" y1="415" x2="613" y2="354"/>
+        <line x1="552" y1="415" x2="491" y2="476"/>
+        <line x1="552" y1="415" x2="613" y2="476"/>
+      </g>
+    </g>
+
+    <!-- Bicycle frame -->
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M250 415 L352 306 L444 415 Z" stroke="#e84a5f" stroke-width="14"/>
+      <path d="M352 306 L552 415 L444 415 L352 306" stroke="#e84a5f" stroke-width="14"/>
+      <path d="M444 415 L491 314" stroke="#e84a5f" stroke-width="14"/>
+      <path d="M552 415 L512 285" stroke="#e84a5f" stroke-width="14"/>
+      <path d="M512 285 C535 277 560 278 582 290" stroke="#283747" stroke-width="10"/>
+      <path d="M352 306 L337 269" stroke="#283747" stroke-width="10"/>
+      <path d="M312 266 L365 266" stroke="#283747" stroke-width="12"/>
+      <circle cx="444" cy="415" r="20" fill="#ffd166" stroke="#283747" stroke-width="7"/>
+      <line x1="444" y1="415" x2="484" y2="442" stroke="#283747" stroke-width="8"/>
+      <line x1="444" y1="415" x2="404" y2="388" stroke="#283747" stroke-width="8"/>
+      <circle cx="486" cy="443" r="8" fill="#283747"/>
+      <circle cx="402" cy="387" r="8" fill="#283747"/>
+    </g>
+
+    <!-- Cat tail behind body -->
+    <path d="M303 272 C239 232 202 282 217 325 C229 359 277 348 271 318 C267 296 239 300 245 322" fill="none" stroke="#f4a259" stroke-width="28" stroke-linecap="round"/>
+    <path d="M303 272 C239 232 202 282 217 325 C229 359 277 348 271 318 C267 296 239 300 245 322" fill="none" stroke="#c7773c" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Cat body -->
+    <ellipse cx="382" cy="284" rx="78" ry="95" transform="rotate(-9 382 284)" fill="#f4a259" stroke="#8d5524" stroke-width="5"/>
+    <ellipse cx="395" cy="306" rx="43" ry="54" transform="rotate(-9 395 306)" fill="#ffd39a" opacity="0.95"/>
+
+    <!-- Hind leg to pedal -->
+    <path d="M371 356 C388 386 416 400 444 415" fill="none" stroke="#f4a259" stroke-width="24" stroke-linecap="round"/>
+    <path d="M444 415 C457 425 469 434 486 443" fill="none" stroke="#f4a259" stroke-width="18" stroke-linecap="round"/>
+    <ellipse cx="492" cy="446" rx="20" ry="12" transform="rotate(25 492 446)" fill="#fff3d6" stroke="#8d5524" stroke-width="4"/>
+
+    <!-- Front leg to handlebar -->
+    <path d="M426 256 C462 262 489 276 512 285" fill="none" stroke="#f4a259" stroke-width="21" stroke-linecap="round"/>
+    <ellipse cx="516" cy="285" rx="18" ry="12" transform="rotate(15 516 285)" fill="#fff3d6" stroke="#8d5524" stroke-width="4"/>
+
+    <!-- Other legs -->
+    <path d="M337 343 C321 368 309 391 302 417" fill="none" stroke="#df8d45" stroke-width="20" stroke-linecap="round"/>
+    <ellipse cx="300" cy="423" rx="18" ry="11" transform="rotate(100 300 423)" fill="#fff3d6" stroke="#8d5524" stroke-width="4"/>
+    <path d="M344 252 C329 284 323 309 315 337" fill="none" stroke="#df8d45" stroke-width="20" stroke-linecap="round"/>
+    <ellipse cx="314" cy="341" rx="17" ry="11" transform="rotate(100 314 341)" fill="#fff3d6" stroke="#8d5524" stroke-width="4"/>
+
+    <!-- Cat head -->
+    <g>
+      <path d="M314 178 L300 111 L354 147 Z" fill="#f4a259" stroke="#8d5524" stroke-width="5" stroke-linejoin="round"/>
+      <path d="M432 169 L467 110 L482 181 Z" fill="#f4a259" stroke="#8d5524" stroke-width="5" stroke-linejoin="round"/>
+      <path d="M318 151 L309 126 L335 149 Z" fill="#ffb0a6"/>
+      <path d="M450 160 L462 134 L468 169 Z" fill="#ffb0a6"/>
+      <ellipse cx="391" cy="188" rx="91" ry="73" transform="rotate(7 391 188)" fill="#f4a259" stroke="#8d5524" stroke-width="5"/>
+      <ellipse cx="386" cy="209" rx="49" ry="35" fill="#fff3d6"/>
+      <circle cx="354" cy="183" r="10" fill="#1f2933"/>
+      <circle cx="426" cy="188" r="10" fill="#1f2933"/>
+      <circle cx="358" cy="179" r="3.5" fill="#ffffff"/>
+      <circle cx="430" cy="184" r="3.5" fill="#ffffff"/>
+      <path d="M391 198 L379 211 L402 213 Z" fill="#e85d75"/>
+      <path d="M391 212 C386 224 372 226 364 217" fill="none" stroke="#6b3e26" stroke-width="4" stroke-linecap="round"/>
+      <path d="M391 212 C396 225 411 228 421 219" fill="none" stroke="#6b3e26" stroke-width="4" stroke-linecap="round"/>
+      <g stroke="#6b3e26" stroke-width="3" stroke-linecap="round">
+        <line x1="347" y1="209" x2="302" y2="194"/>
+        <line x1="348" y1="219" x2="300" y2="219"/>
+        <line x1="350" y1="229" x2="307" y2="242"/>
+        <line x1="431" y1="214" x2="477" y2="202"/>
+        <line x1="430" y1="224" x2="479" y2="226"/>
+        <line x1="427" y1="233" x2="469" y2="250"/>
+      </g>
+      <path d="M346 144 C363 132 388 129 407 137" fill="none" stroke="#8d5524" stroke-width="4" stroke-linecap="round"/>
+      <path d="M337 165 C351 157 369 156 382 162" fill="none" stroke="#c7773c" stroke-width="5" stroke-linecap="round"/>
+      <path d="M411 165 C427 159 443 162 455 172" fill="none" stroke="#c7773c" stroke-width="5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Cat stripes on body -->
+    <g fill="none" stroke="#c7773c" stroke-width="6" stroke-linecap="round" opacity="0.8">
+      <path d="M339 235 C358 246 381 248 402 240"/>
+      <path d="M321 277 C340 287 359 291 378 286"/>
+      <path d="M432 266 C416 277 405 291 402 309"/>
+      <path d="M430 331 C409 343 386 349 361 344"/>
+    </g>
+
+    <!-- Scarf -->
+    <path d="M322 236 C365 257 419 258 456 236" fill="none" stroke="#3a86ff" stroke-width="16" stroke-linecap="round"/>
+    <path d="M443 242 C462 262 487 268 514 259" fill="none" stroke="#3a86ff" stroke-width="14" stroke-linecap="round"/>
+    <path d="M463 251 L493 285 L451 277 Z" fill="#3a86ff" stroke="#1d5ec7" stroke-width="3" stroke-linejoin="round"/>
+
+    <!-- Motion accents -->
+    <g fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.85">
+      <path d="M105 352 H174"/>
+      <path d="M87 388 H144"/>
+      <path d="M632 332 H704"/>
+      <path d="M656 369 H735"/>
+    </g>
+  </g>
+
+  <g fill="#2f8f46" opacity="0.75">
+    <path d="M94 512 C92 495 105 482 117 501 C113 487 126 475 137 494 C141 479 158 479 154 506 Z"/>
+    <path d="M681 515 C679 498 692 485 704 504 C700 490 713 478 724 497 C728 482 745 482 741 509 Z"/>
+    <path d="M33 535 C31 522 41 511 51 526 C49 515 60 506 69 522 C73 510 86 510 83 532 Z"/>
+  </g>
+</svg>

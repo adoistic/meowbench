@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400">
+  <!-- Definitions for gradients and shadows -->
+  <defs>
+    <linearGradient id="frameGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e53935;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b71c1c;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" />
+      <feOffset dx="2" dy="2" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Ground Shadow -->
+  <ellipse cx="250" cy="360" rx="180" ry="15" fill="#000" opacity="0.15" />
+
+  <!-- Bicycle -->
+  <g transform="translate(0, 20)">
+    <!-- Far Wheel (Rear) -->
+    <g transform="translate(150, 300)">
+      <circle r="45" fill="none" stroke="#333" stroke-width="8" />
+      <circle r="40" fill="none" stroke="#ddd" stroke-width="2" />
+      <!-- Spokes -->
+      <g stroke="#bbb" stroke-width="1">
+        <line x1="0" y1="-40" x2="0" y2="40" />
+        <line x1="-40" y1="0" x2="40" y2="0" />
+        <line x1="-28" y1="-28" x2="28" y2="28" />
+        <line x1="-28" y1="28" x2="28" y2="-28" />
+      </g>
+    </g>
+
+    <!-- Far Wheel (Front) -->
+    <g transform="translate(350, 300)">
+      <circle r="45" fill="none" stroke="#333" stroke-width="8" />
+      <circle r="40" fill="none" stroke="#ddd" stroke-width="2" />
+      <g stroke="#bbb" stroke-width="1">
+        <line x1="0" y1="-40" x2="0" y2="40" />
+        <line x1="-40" y1="0" x2="40" y2="0" />
+        <line x1="-28" y1="-28" x2="28" y2="28" />
+        <line x1="-28" y1="28" x2="28" y2="-28" />
+      </g>
+    </g>
+
+    <!-- Frame -->
+    <path d="M150 300 L230 300 L200 190 L150 300" fill="none" stroke="url(#frameGradient)" stroke-width="8" stroke-linejoin="round" stroke-linecap="round" />
+    <path d="M230 300 L320 180 L200 190 L230 300" fill="none" stroke="url(#frameGradient)" stroke-width="8" stroke-linejoin="round" stroke-linecap="round" />
+    <!-- Fork -->
+    <line x1="320" y1="180" x2="350" y2="300" stroke="#e53935" stroke-width="6" stroke-linecap="round" />
+    
+    <!-- Seat Post & Seat -->
+    <line x1="200" y1="190" x2="200" y2="170" stroke="#999" stroke-width="6" stroke-linecap="round" />
+    <ellipse cx="200" cy="170" rx="20" ry="8" fill="#333" />
+
+    <!-- Handlebars -->
+    <path d="M320 180 L320 150 L290 150" fill="none" stroke="#999" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="290" cy="150" r="5" fill="#333" />
+
+    <!-- Chain & Gears -->
+    <circle cx="230" cy="300" r="12" fill="#666" />
+    <circle cx="150" cy="300" r="8" fill="#666" />
+    <line x1="150" y1="300" x2="230" y2="300" stroke="#666" stroke-width="2" />
+    <!-- Crank/Pedal Far side -->
+    <line x1="230" y1="300" x2="250" y2="320" stroke="#999" stroke-width="4" stroke-linecap="round" />
+    <rect x="245" y="315" width="10" height="4" fill="#333" transform="rotate(30 250 320)" />
+  </g>
+
+  <!-- The Cat -->
+  <g transform="translate(0, 20)">
+    <!-- Tail -->
+    <path d="M160 220 Q130 200 140 170 Q150 150 180 180" fill="none" stroke="#f57f17" stroke-width="8" stroke-linecap="round" />
+
+    <!-- Far Leg (Darker) -->
+    <path d="M210 210 Q230 250 240 310" fill="none" stroke="#e65100" stroke-width="10" stroke-linecap="round" />
+    <circle cx="240" cy="310" r="8" fill="#e65100" />
+
+    <!-- Body -->
+    <ellipse cx="210" cy="200" rx="35" ry="50" fill="#ff9800" transform="rotate(-10 210 200)" />
+    <ellipse cx="215" cy="205" rx="20" ry="35" fill="#fff3e0" transform="rotate(-10 215 205)" /> <!-- Belly -->
+
+    <!-- Head -->
+    <g transform="translate(245, 150) rotate(-10)">
+      <!-- Ears -->
+      <path d="M-20 -15 L-25 -40 L-5 -25 Z" fill="#ff9800" />
+      <path d="M-23 -30 L-25 -38 L-15 -30 Z" fill="#pink" opacity="0.5" /> <!-- Inner ear -->
+      <path d="M15 -15 L25 -40 L5 -25 Z" fill="#ff9800" />
+      
+      <!-- Head Shape -->
+      <circle cx="0" cy="0" r="30" fill="#ff9800" />
+      <ellipse cx="0" cy="5" rx="22" ry="18" fill="#fff3e0" /> <!-- Muzzle area -->
+
+      <!-- Face Features -->
+      <circle cx="-10" cy="-5" r="4" fill="#fff" />
+      <circle cx="-10" cy="-5" r="1.5" fill="#000" /> <!-- Left Eye -->
+      <circle cx="10" cy="-5" r="4" fill="#fff" />
+      <circle cx="10" cy="-5" r="1.5" fill="#000" /> <!-- Right Eye -->
+      <polygon points="-2,5 2,5 0,9" fill="#000" /> <!-- Nose -->
+      <path d="M-5 12 Q0 15 5 12" fill="none" stroke="#000" stroke-width="1" /> <!-- Mouth -->
+      
+      <!-- Whiskers -->
+      <g stroke="#333" stroke-width="0.5" opacity="0.6">
+        <line x1="-15" y1="8" x2="-35" y2="5" />
+        <line x1="-15" y1="10" x2="-35" y2="12" />
+        <line x1="15" y1="8" x2="35" y2="5" />
+        <line x1="15" y1="10" x2="35" y2="12" />
+      </g>
+    </g>
+
+    <!-- Near Leg -->
+    <path d="M220 210 Q240 260 250 320" fill="none" stroke="#ff9800" stroke-width="10" stroke-linecap="round" />
+    <circle cx="250" cy="320" r="8" fill="#ff9800" />
+
+    <!-- Near Arm/Paw on Handlebar -->
+    <path d="M235 190 Q260 160 290 150" fill="none" stroke="#ff9800" stroke-width="9" stroke-linecap="round" />
+    <circle cx="290" cy="150" r="8" fill="#ff9800" />
+    
+    <!-- Stripes on back -->
+    <path d="M185 170 L200 175 M182 180 L200 185 M180 190 L200 195" stroke="#e65100" stroke-width="2" stroke-linecap="round" opacity="0.6" />
+  </g>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150">
+  <style>
+    @keyframes sway {
+      0%, 100% { transform: rotate(-10deg); }
+      50% { transform: rotate(10deg); }
+    }
+  </style>
+  
+  <!-- Cat body -->
+  <ellipse cx="100" cy="100" rx="50" ry="30" fill="gray"/>
+  
+  <!-- Cat head -->
+  <circle cx="140" cy="80" r="25" fill="gray"/>
+  
+  <!-- Ears -->
+  <polygon points="120,60 130,50 140,60" fill="gray"/>
+  <polygon points="140,60 150,50 160,60" fill="gray"/>
+  
+  <!-- Eyes -->
+  <circle cx="130" cy="75" r="3" fill="black"/>
+  <circle cx="150" cy="75" r="3" fill="black"/>
+  
+  <!-- Nose -->
+  <polygon points="140,80 135,85 145,85" fill="pink"/>
+  
+  <!-- Whiskers -->
+  <line x1="135" y1="85" x2="115" y2="80" stroke="black" stroke-width="1"/>
+  <line x1="135" y1="85" x2="115" y2="90" stroke="black" stroke-width="1"/>
+  <line x1="145" y1="85" x2="165" y2="80" stroke="black" stroke-width="1"/>
+  <line x1="145" y1="85" x2="165" y2="90" stroke="black" stroke-width="1"/>
+  
+  <!-- Tail -->
+  <path d="M50,100 Q30,70 20,90" stroke="gray" stroke-width="8" fill="none" transform-origin="50 100" style="animation: sway 2s infinite ease-in-out"/>
+  
+  <!-- Legs -->
+  <rect x="80" y="120" width="10" height="20" fill="gray"/>
+  <rect x="110" y="120" width="10" height="20" fill="gray"/>
+</svg>

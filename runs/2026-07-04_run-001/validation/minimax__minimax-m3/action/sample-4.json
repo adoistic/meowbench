@@ -1,0 +1,35 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 8959,
+    "elements": 130,
+    "paths": 24,
+    "colors": [
+      "#000",
+      "#2c3e50",
+      "#2d5016",
+      "#2d5a2d",
+      "#34495e",
+      "#5d4037",
+      "#7f8c8d",
+      "#8b4513",
+      "#95a5a6",
+      "#d49524",
+      "#e1a933",
+      "#e74c3c",
+      "#f1c40f",
+      "#f5cb5c",
+      "#f7d774",
+      "#ff6b9d",
+      "#ff9eb5",
+      "#ffeaa7",
+      "#fff",
+      "#ffffff",
+      "url(#catbody)",
+      "url(#frame)",
+      "url(#ground)",
+      "url(#sky)"
+    ]
+  }
+}

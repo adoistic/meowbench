@@ -1,0 +1,130 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fde68a"/>
+      <stop offset="1" stop-color="#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="fur" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbbf24"/>
+      <stop offset="1" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="furDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#b45309"/>
+    </linearGradient>
+    <radialGradient id="cheek" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fda4af" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#fda4af" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <circle cx="80" cy="60" r="35" fill="#fef3c7" opacity="0.7"/>
+  <circle cx="330" cy="80" r="25" fill="#fef3c7" opacity="0.7"/>
+  <circle cx="350" cy="180" r="20" fill="#fef3c7" opacity="0.5"/>
+
+  <!-- Floor shadow -->
+  <ellipse cx="200" cy="355" rx="120" ry="12" fill="#78350f" opacity="0.25"/>
+
+  <!-- TAIL (animated, pivot at base) -->
+  <g transform="translate(265, 285)">
+    <g>
+      <path d="M 0 0 C 20 -40, 70 -60, 75 -120 C 76 -135, 70 -145, 60 -148"
+            stroke="url(#fur)" stroke-width="22" stroke-linecap="round" fill="none"/>
+      <!-- Tail stripes -->
+      <g stroke="#92400e" stroke-width="3" fill="none" opacity="0.5" stroke-linecap="round">
+        <path d="M 12 -25 Q 18 -32 24 -28"/>
+        <path d="M 35 -55 Q 42 -60 48 -55"/>
+        <path d="M 60 -85 Q 68 -90 72 -82"/>
+        <path d="M 72 -115 Q 78 -120 76 -128"/>
+      </g>
+      <animateTransform attributeName="transform" type="rotate"
+                        values="-18;18;-18" dur="2.2s"
+                        calcMode="spline" keySplines="0.42 0 0.58 1; 0.42 0 0.58 1"
+                        keyTimes="0;0.5;1"
+                        repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- BODY (sitting pose) -->
+  <ellipse cx="200" cy="295" rx="85" ry="65" fill="url(#fur)"/>
+
+  <!-- Body stripes -->
+  <g stroke="#92400e" stroke-width="3" fill="none" opacity="0.4" stroke-linecap="round">
+    <path d="M 145 270 Q 160 268 175 272"/>
+    <path d="M 175 290 Q 195 287 215 292"/>
+    <path d="M 200 320 Q 220 318 240 322"/>
+  </g>
+
+  <!-- BACK HAUNCH (right side) -->
+  <ellipse cx="265" cy="320" rx="45" ry="50" fill="url(#furDark)"/>
+
+  <!-- BACK HAUNCH (left side) -->
+  <ellipse cx="135" cy="320" rx="45" ry="50" fill="url(#furDark)"/>
+
+  <!-- FRONT LEGS -->
+  <ellipse cx="170" cy="345" rx="22" ry="28" fill="url(#furDark)"/>
+  <ellipse cx="220" cy="345" rx="22" ry="28" fill="url(#furDark)"/>
+  <!-- Paws -->
+  <ellipse cx="170" cy="355" rx="22" ry="12" fill="#fde68a"/>
+  <ellipse cx="220" cy="355" rx="22" ry="12" fill="#fde68a"/>
+  <!-- Toe lines -->
+  <path d="M 162 350 L 162 358 M 170 348 L 170 360 M 178 350 L 178 358" stroke="#92400e" stroke-width="1.2" fill="none"/>
+  <path d="M 212 350 L 212 358 M 220 348 L 220 360 M 228 350 L 228 358" stroke="#92400e" stroke-width="1.2" fill="none"/>
+
+  <!-- HEAD -->
+  <ellipse cx="195" cy="195" rx="72" ry="65" fill="url(#fur)"/>
+
+  <!-- Ears (outer) -->
+  <path d="M 138 165 L 125 105 L 178 145 Z" fill="url(#fur)"/>
+  <path d="M 252 165 L 265 105 L 212 145 Z" fill="url(#fur)"/>
+  <!-- Ears (inner) -->
+  <path d="M 145 158 L 138 120 L 168 148 Z" fill="#fda4af"/>
+  <path d="M 245 158 L 252 120 L 222 148 Z" fill="#fda4af"/>
+
+  <!-- Face stripes -->
+  <g stroke="#92400e" stroke-width="3" fill="none" opacity="0.45" stroke-linecap="round">
+    <path d="M 145 160 Q 155 152 168 158"/>
+    <path d="M 220 158 Q 235 152 245 160"/>
+    <path d="M 130 195 Q 138 188 148 195"/>
+    <path d="M 242 195 Q 252 188 260 195"/>
+  </g>
+
+  <!-- Cheeks -->
+  <circle cx="150" cy="225" r="18" fill="url(#cheek)"/>
+  <circle cx="240" cy="225" r="18" fill="url(#cheek)"/>
+
+  <!-- Eyes -->
+  <ellipse cx="170" cy="200" rx="11" ry="14" fill="#1f2937"/>
+  <ellipse cx="220" cy="200" rx="11" ry="14" fill="#1f2937"/>
+  <!-- Eye highlights -->
+  <ellipse cx="173" cy="194" rx="4" ry="5" fill="#fef3c7"/>
+  <ellipse cx="223" cy="194" rx="4" ry="5" fill="#fef3c7"/>
+  <ellipse cx="168" cy="205" rx="2" ry="2" fill="#fef3c7"/>
+  <ellipse cx="218" cy="205" rx="2" ry="2" fill="#fef3c7"/>
+
+  <!-- Nose -->
+  <path d="M 188 225 L 195 232 L 202 225 Q 200 222 195 222 Q 190 222 188 225 Z" fill="#ec4899"/>
+  <path d="M 195 232 L 195 235" stroke="#ec4899" stroke-width="1.5"/>
+
+  <!-- Mouth -->
+  <path d="M 195 235 Q 188 244 180 240" stroke="#1f2937" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <path d="M 195 235 Q 202 244 210 240" stroke="#1f2937" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+
+  <!-- Whiskers -->
+  <g stroke="#1f2937" stroke-width="0.9" stroke-linecap="round" opacity="0.85">
+    <path d="M 120 220 Q 145 222 165 225"/>
+    <path d="M 118 232 Q 145 232 165 232"/>
+    <path d="M 122 242 Q 145 240 162 237"/>
+    <path d="M 280 220 Q 255 222 235 225"/>
+    <path d="M 282 232 Q 255 232 235 232"/>
+    <path d="M 278 242 Q 255 240 238 237"/>
+  </g>
+
+  <!-- Collar -->
+  <path d="M 145 255 Q 195 268 245 255" stroke="#dc2626" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <circle cx="195" cy="262" r="6" fill="#fbbf24" stroke="#92400e" stroke-width="1"/>
+  <circle cx="195" cy="262" r="2" fill="#92400e"/>
+</svg>

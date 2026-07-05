@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="paperLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBF7EE"/>
+      <stop offset="100%" stop-color="#EFE6D3"/>
+    </linearGradient>
+    <linearGradient id="paperMid" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8DCC4"/>
+      <stop offset="100%" stop-color="#D6C5A4"/>
+    </linearGradient>
+    <linearGradient id="paperDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C9B591"/>
+      <stop offset="100%" stop-color="#A89674"/>
+    </linearGradient>
+    <linearGradient id="paperAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F4A672"/>
+      <stop offset="100%" stop-color="#D87842"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="#F5F0E6"/>
+  <!-- Subtle texture circles -->
+  <circle cx="60" cy="80" r="2" fill="#E0D5C0" opacity="0.4"/>
+  <circle cx="340" cy="120" r="1.5" fill="#E0D5C0" opacity="0.4"/>
+  <circle cx="80" cy="320" r="2" fill="#E0D5C0" opacity="0.4"/>
+  <circle cx="320" cy="300" r="1.5" fill="#E0D5C0" opacity="0.4"/>
+
+  <!-- Ground shadow -->
+  <ellipse cx="200" cy="368" rx="115" ry="8" fill="#000" opacity="0.12"/>
+
+  <!-- TAIL (behind body) - geometric folded segments -->
+  <g stroke="#8A7A5C" stroke-width="1.2" stroke-linejoin="miter">
+    <polygon points="265,320 295,285 320,305 295,340" fill="url(#paperMid)"/>
+    <polygon points="295,285 325,255 345,275 320,305" fill="url(#paperLight)"/>
+    <polygon points="325,255 345,225 360,245 345,275" fill="url(#paperDark)"/>
+    <polygon points="345,225 350,200 365,215 360,245" fill="url(#paperMid)"/>
+    <!-- Tail tip -->
+    <polygon points="350,200 358,188 365,215" fill="url(#paperLight)"/>
+  </g>
+
+  <!-- BODY - main geometric shape with fold planes -->
+  <g stroke="#8A7A5C" stroke-width="1.5" stroke-linejoin="miter">
+    <!-- Base trapezoid -->
+    <polygon points="115,360 135,210 265,210 285,360" fill="url(#paperLight)"/>
+    <!-- Center fold plane (darker) -->
+    <polygon points="200,200 200,360 285,360 265,210" fill="url(#paperMid)"/>
+    <!-- Left fold plane (lightest) -->
+    <polygon points="200,200 135,210 115,360 200,360" fill="url(#paperLight)"/>
+    <!-- Top chest fold (darker triangle) -->
+    <polygon points="135,210 200,200 265,210 200,225" fill="url(#paperDark)"/>
+  </g>
+
+  <!-- FRONT LEGS / PAWS - geometric -->
+  <g stroke="#8A7A5C" stroke-width="1.3" stroke-linejoin="miter">
+    <!-- Left paw -->
+    <polygon points="138,360 142,320 178,320 182,360" fill="url(#paperLight)"/>
+    <polygon points="142,320 178,320 160,335" fill="url(#paperMid)"/>
+    <!-- Right paw -->
+    <polygon points="218,360 222,320 258,320 262,360" fill="url(#paperMid)"/>
+    <polygon points="222,320 258,320 240,335" fill="url(#paperDark)"/>
+  </g>
+
+  <!-- COLLAR / ACCENT -->
+  <g>
+    <polygon points="155,200 245,200 240,212 160,212" fill="url(#paperAccent)" stroke="#8A4A1F" stroke-width="1"/>
+    <!-- Bow -->
+    <polygon points="200,210 180,225 200,225" fill="url(#paperAccent)" stroke="#8A4A1F" stroke-width="1"/>
+    <polygon points="200,210 220,225 200,225" fill="#C86830" stroke="#8A4A1F" stroke-width="1"/>
+    <circle cx="200" cy="218" r="3" fill="#8A4A1F"/>
+  </g>
+
+  <!-- HEAD - triangular origami shape -->
+  <g stroke="#8A7A5C" stroke-width="1.5" stroke-linejoin="miter">
+    <!-- Main head triangle -->
+    <polygon points="200,50 130,195 270,195" fill="url(#paperLight)"/>
+    <!-- Center vertical fold -->
+    <polygon points="200,50 200,195 270,195" fill="url(#paperMid)"/>
+    <!-- Forehead fold (small darker triangle) -->
+    <polygon points="200,50 175,100 225,100" fill="url(#paperDark)"/>
+  </g>
+
+  <!-- EARS - sharp triangular folds -->
+  <g stroke="#8A7A5C" stroke-width="1.5" stroke-linejoin="miter">
+    <!-- Left ear -->
+    <polygon points="140,90 125,35 175,75" fill="url(#paperLight)"/>
+    <polygon points="140,90 125,35 155,60" fill="url(#paperMid)"/>
+    <!-- Inner left ear -->
+    <polygon points="145,80 138,50 160,68" fill="#E8A088"/>
+    <!-- Right ear -->
+    <polygon points="260,90 275,35 225,75" fill="url(#paperMid)"/>
+    <polygon points="260,90 275,35 245,60" fill="url(#paperDark)"/>
+    <!-- Inner right ear -->
+    <polygon points="255,80 262,50 240,68" fill="#C87862"/>
+  </g>
+
+  <!-- FACE DETAILS -->
+  <g>
+    <!-- Left eye - geometric diamond -->
+    <polygon points="160,125 175,120 180,135 168,140" fill="#1A1A2E" stroke="#8A7A5C" stroke-width="0.8"/>
+    <polygon points="165,128 172,126 174,133 168,135" fill="#FBF7EE"/>
+    <!-- Right eye - geometric diamond -->
+    <polygon points="240,125 225,120 220,135 232,140" fill="#1A1A2E" stroke="#8A7A5C" stroke-width="0.8"/>
+    <polygon points="235,128 228,126 226,133 232,135" fill="#FBF7EE"/>
+    
+    <!-- Nose - small triangle -->
+    <polygon points="195,155 205,155 200,165" fill="url(#paperAccent)" stroke="#8A4A1F" stroke-width="1"/>
+    
+    <!-- Mouth - geometric V -->
+    <line x1="200" y1="165" x2="200" y2="175" stroke="#5C4A2E" stroke-width="1.5" stroke-linecap="round"/>
+    <polyline points="200,175 188,180 195,175" fill="none" stroke="#5C4A2E" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="200,175 212,180 205,175" fill="none" stroke="#5C4A2E" stroke-width="1.5" stroke-linejoin="round"/>
+    
+    <!-- Whiskers - thin lines -->
+    <line x1="135" y1="160" x2="170" y2="162" stroke="#5C4A2E" stroke-width="0.8"/>
+    <line x1="140" y1="170" x2="172" y2="170" stroke="#5C4A2E" stroke-width="0.8"/>
+    <line x1="265" y1="160" x2="230" y2="162" stroke="#5C4A2E" stroke-width="0.8"/>
+    <line x1="260" y1="170" x2="228" y2="170" stroke="#5C4A2E" stroke-width="0.8"/>
+  </g>
+
+  <!-- FOLD ACCENT LINES (subtle paper creases) -->
+  <g stroke="#8A7A5C" stroke-width="0.6" opacity="0.5" fill="none">
+    <line x1="200" y1="50" x2="200" y2="360"/>
+    <line x1="130" y1="195" x2="200" y2="50"/>
+    <line x1="270" y1="195" x2="200" y2="50"/>
+    <line x1="135" y1="210" x2="265" y2="210"/>
+    <line x1="200" y1="225" x2="200" y2="360"/>
+  </g>
+
+  <!-- Decorative small fold marks -->
+  <g fill="#8A7A5C" opacity="0.4">
+    <circle cx="200" cy="100" r="1"/>
+    <circle cx="200" cy="280" r="1"/>
+    <circle cx="200" cy="340" r="1"/>
+  </g>
+</svg>

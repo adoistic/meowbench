@@ -1,0 +1,1224 @@
+{
+  "suiteVersion": 1,
+  "runId": "2026-07-04_run-001",
+  "entries": [
+    {
+      "slug": "openai/gpt-5.5",
+      "name": "GPT-5.5",
+      "era": "current",
+      "origin": "US",
+      "license": "closed",
+      "meowscore": 88.3,
+      "perPrompt": {
+        "minimal": {
+          "median": 8.5,
+          "best": 9,
+          "samples": 4
+        },
+        "realistic": {
+          "median": 8,
+          "best": 8.3,
+          "samples": 4
+        },
+        "action": {
+          "median": 9.2,
+          "best": 9.3,
+          "samples": 4
+        },
+        "style": {
+          "median": 9.2,
+          "best": 9.3,
+          "samples": 4
+        },
+        "constraint": {
+          "median": 8.8,
+          "best": 9,
+          "samples": 4
+        },
+        "animation": {
+          "median": 9.3,
+          "best": 9.5,
+          "samples": 4
+        }
+      },
+      "refusalRate": 0,
+      "avgElements": 70
+    },
+    {
+      "slug": "anthropic/claude-fable-5",
+      "name": "Claude Fable 5",
+      "era": "current",
+      "origin": "US",
+      "license": "closed",
+      "meowscore": 87.7,
+      "perPrompt": {
+        "minimal": {
+          "median": 8.4,
+          "best": 8.5,
+          "samples": 4
+        },
+        "realistic": {
+          "median": 8.3,
+          "best": 8.5,
+          "samples": 4
+        },
+        "action": {
+          "median": 9,
+          "best": 9,
+          "samples": 4
+        },
+        "style": {
+          "median": 9,
+          "best": 9,
+          "samples": 4
+        },
+        "constraint": {
+          "median": 9,
+          "best": 9,
+          "samples": 4
+        },
+        "animation": {
+          "median": 8.9,
+          "best": 9,
+          "samples": 4
+        }
+      },
+      "refusalRate": 0,
+      "avgElements": 61
+    },
+    {
+      "slug": "google/gemini-3.1-pro-preview",
+      "name": "Gemini 3.1 Pro",
+      "era": "current",
+      "origin": "US",
+      "license": "closed",
+      "meowscore": 87.7,
+      "perPrompt": {
+        "minimal": {
+          "median": 8.2,
+          "best": 8.5,
+          "samples": 4
+        },
+        "realistic": {
+          "median": 8.5,
+          "best": 8.5,
+          "samples": 4
+        },
+        "action": {
+          "median": 9,
+          "best": 9,
+          "samples": 4
+        },
+        "style": {
+          "median": 9,
+          "best": 9.3,
+          "samples": 4
+        },
+        "constraint": {
+          "median": 9,
+          "best": 9,
+          "samples": 4
+        },
+        "animation": {
+          "median": 8.9,
+          "best": 9,
+          "samples": 4
+        }
+      },
+      "refusalRate": 0,
+      "avgElements": 92
+    },
+    {
+      "slug": "anthropic/claude-opus-4.8",
+      "name": "Claude Opus 4.8",
+      "era": "current",
+      "origin": "US",
+      "license": "closed",
+      "meowscore": 86.8,
+      "perPrompt": {
+        "minimal": {
+          "median": 8.9,
+          "best": 9,
+          "samples": 4
+        },
+        "realistic": {
+          "median": 7.8,
+          "best": 8.3,
+          "samples": 4
+        },
+        "action": {
+          "median": 8.5,
+          "best": 8.8,
+          "samples": 4
+        },
+        "style": {
+          "median": 9,
+          "best": 9,
+          "samples": 4
+        },
+        "constraint": {
+          "median": 9,
+          "best": 9,
+          "samples": 4
+        },
+        "animation": {
+          "median": 8.9,
+          "best": 9,
+          "samples": 4
+        }
+      },
+      "refusalRate": 0,
+      "avgElements": 34
+    },
+    {
+      "slug": "qwen/qwen3.7-max",
+      "name": "Qwen3.7 Max",
+      "era": "current",
+      "origin": "CN",
+      "license": "closed",
+      "meowscore": 86.5,
+      "perPrompt": {
+        "minimal": {
+          "median": 8.3,
+          "best": 8.5,
+          "samples": 4
+        },
+        "realistic": {
+          "median": 7.8,
+          "best": 8.5,
+          "samples": 4
+        },
+        "action": {
+          "median": 8.9,
+          "best": 9,
+          "samples": 4
+        },
+        "style": {
+          "median": 9,
+          "best": 9,
+          "samples": 4
+        },
+        "constraint": {
+          "median": 8.9,
+          "best": 9,
+          "samples": 4
+        },
+        "animation": {
+          "median": 9,
+          "best": 9.3,
+          "samples": 4
+        }
+      },
+      "refusalRate": 0,
+      "avgElements": 70
+    },
+    {
+      "slug": "anthropic/claude-sonnet-5",
+      "name": "Claude Sonnet 5",
+      "era": "current",
+      "origin": "US",
+      "license": "closed",
+      "meowscore": 86,
+      "perPrompt": {
+        "minimal": {
+          "median": 8.3,
+          "best": 8.8,
+          "samples": 4
+        },
+        "realistic": {
+          "median": 7.9,
+          "best": 8.3,
+          "samples": 4
+        },
+        "action": {
+          "median": 8.7,
+          "best": 9,
+          "samples": 4
+        },
+        "style": {
+          "median": 8.9,
+          "best": 9,
+          "samples": 4
+        },
+        "constraint": {
+          "median": 8.8,
+          "best": 9,
+          "samples": 4
+        },
+        "animation": {
+          "median": 9,
+          "best": 9,
+          "samples": 4
+        }
+      },
+      "refusalRate": 0,
+      "avgElements": 48
+    },
+    {
+      "slug": "z-ai/glm-5.2",
+      "name": "GLM-5.2",
+      "era": "current",
+      "origin": "CN",
+      "license": "open",
+      "meowscore": 85.3,
+      "perPrompt": {
+        "minimal": {
+          "median": 8.2,
+          "best": 8.5,
+          "samples": 4
+        },
+        "realistic": {
+          "median": 8,
+          "best": 8.3,
+          "samples": 4
+        },
+        "action": {
+          "median": 8.9,
+          "best": 9.3,
+          "samples": 4
+        },
+        "style": {
+          "median": 9.2,
+          "best": 9.3,
+          "samples": 4
+        },
+        "constraint": {
+          "median": 7.9,
+          "best": 9,
+          "samples": 4
+        },
+        "animation": {
+          "median": 9,
+          "best": 9.3,
+          "samples": 4
+        }
+      },
+      "refusalRate": 0,
+      "avgElements": 81
+    },
+    {
+      "slug": "deepseek/deepseek-v4-pro",
+      "name": "DeepSeek V4 Pro",
+      "era": "current",
+      "origin": "CN",
+      "license": "open",
+      "meowscore": 85.2,
+      "perPrompt": {
+        "minimal": {
+          "median": 8.2,
+          "best": 8.3,
+          "samples": 4
+        },
+        "realistic": {
+          "median": 7.8,
+          "best": 8.5,
+          "samples": 4
+        },
+        "action": {
+          "median": 8.9,
+          "best": 9,
+          "samples": 4
+        },
+        "style": {
+          "median": 8.8,
+          "best": 9,
+          "samples": 4
+        },
+        "constraint": {
+          "median": 8.8,
+          "best": 9,
+          "samples": 4
+        },
+        "animation": {
+          "median": 8.6,
+          "best": 8.8,
+          "samples": 4
+        }
+      },
+      "refusalRate": 0,
+      "avgElements": 68
+    },
+    {
+      "slug": "minimax/minimax-m2",
+      "name": "MiniMax M2",
+      "era": "previous",
+      "origin": "CN",
+      "license": "open",
+      "meowscore": 83.7,
+      "perPrompt": {
+        "minimal": {
+          "median": 8.3,
+          "best": 8.8,
+          "samples": 4
+        },
+        "realistic": {
+          "median": 7.2,
+          "best": 7.8,
+          "samples": 4
+        },
+        "action": {
+          "median": 8.7,
+          "best": 9,
+          "samples": 4
+        },
+        "style": {
+          "median": 8.2,
+          "best": 8.3,
+          "samples": 4
+        },
+        "constraint": {
+          "median": 8.8,
+          "best": 9,
+          "samples": 4
+        },
+        "animation": {
+          "median": 9,
+          "best": 9,
+          "samples": 4
+        }
+      },
+      "refusalRate": 0,
+      "avgElements": 30
+    },
+    {
+      "slug": "anthropic/claude-sonnet-4",
+      "name": "Claude Sonnet 4",
+      "era": "previous",
+      "origin": "US",
+      "license": "closed",
+      "meowscore": 81.7,
+      "perPrompt": {
+        "minimal": {
+          "median": 9,
+          "best": 9,
+          "samples": 4
+        },
+        "realistic": {
+          "median": 6.7,
+          "best": 7,
+          "samples": 4
+        },
+        "action": {
+          "median": 7.9,
+          "best": 8,
+          "samples": 4
+        },
+        "style": {
+          "median": 8,
+          "best": 8.3,
+          "samples": 4
+        },
+        "constraint": {
+          "median": 8.7,
+          "best": 8.8,
+          "samples": 4
+        },
+        "animation": {
+          "median": 8.7,
+          "best": 8.8,
+          "samples": 4
+        }
+      },
+      "refusalRate": 0,
+      "avgElements": 29
+    },
+    {
+      "slug": "z-ai/glm-4.6",
+      "name": "GLM-4.6",
+      "era": "previous",
+      "origin": "CN",
+      "license": "open",
+      "meowscore": 81.7,
+      "perPrompt": {
+        "minimal": {
+          "median": 8.4,
+          "best": 9,
+          "samples": 4
+        },
+        "realistic": {
+          "median": 6.6,
+          "best": 7,
+          "samples": 4
+        },
+        "action": {
+          "median": 7.8,
+          "best": 8.3,
+          "samples": 4
+        },
+        "style": {
+          "median": 8.9,
+          "best": 9,
+          "samples": 4
+        },
+        "constraint": {
+          "median": 8.4,
+          "best": 8.5,
+          "samples": 4
+        },
+        "animation": {
+          "median": 8.9,
+          "best": 9,
+          "samples": 4
+        }
+      },
+      "refusalRate": 0,
+      "avgElements": 32
+    },
+    {
+      "slug": "moonshotai/kimi-k2.6",
+      "name": "Kimi K2.6",
+      "era": "current",
+      "origin": "CN",
+      "license": "open",
+      "meowscore": 81.7,
+      "perPrompt": {
+        "minimal": {
+          "median": 7.2,
+          "best": 8.3,
+          "samples": 4
+        },
+        "realistic": {
+          "median": 6.6,
+          "best": 7.8,
+          "samples": 4
+        },
+        "action": {
+          "median": 8.7,
+          "best": 8.8,
+          "samples": 4
+        },
+        "style": {
+          "median": 8.7,
+          "best": 8.8,
+          "samples": 4
+        },
+        "constraint": {
+          "median": 9,
+          "best": 9,
+          "samples": 4
+        },
+        "animation": {
+          "median": 8.8,
+          "best": 9,
+          "samples": 4
+        }
+      },
+      "refusalRate": 0,
+      "avgElements": 96
+    },
+    {
+      "slug": "moonshotai/kimi-k2",
+      "name": "Kimi K2",
+      "era": "previous",
+      "origin": "CN",
+      "license": "open",
+      "meowscore": 81.5,
+      "perPrompt": {
+        "minimal": {
+          "median": 7.3,
+          "best": 8.3,
+          "samples": 4
+        },
+        "realistic": {
+          "median": 7.4,
+          "best": 7.5,
+          "samples": 4
+        },
+        "action": {
+          "median": 8.8,
+          "best": 8.8,
+          "samples": 4
+        },
+        "style": {
+          "median": 9,
+          "best": 9,
+          "samples": 4
+        },
+        "constraint": {
+          "median": 8.1,
+          "best": 8.3,
+          "samples": 4
+        },
+        "animation": {
+          "median": 8.3,
+          "best": 8.8,
+          "samples": 4
+        }
+      },
+      "refusalRate": 0,
+      "avgElements": 52
+    },
+    {
+      "slug": "anthropic/claude-opus-4",
+      "name": "Claude Opus 4",
+      "era": "previous",
+      "origin": "US",
+      "license": "closed",
+      "meowscore": 81.2,
+      "perPrompt": {
+        "minimal": {
+          "median": 8.6,
+          "best": 8.8,
+          "samples": 4
+        },
+        "realistic": {
+          "median": 6.8,
+          "best": 6.8,
+          "samples": 4
+        },
+        "action": {
+          "median": 8.1,
+          "best": 8.5,
+          "samples": 4
+        },
+        "style": {
+          "median": 8.3,
+          "best": 9,
+          "samples": 4
+        },
+        "constraint": {
+          "median": 8.4,
+          "best": 8.8,
+          "samples": 4
+        },
+        "animation": {
+          "median": 8.5,
+          "best": 8.8,
+          "samples": 4
+        }
+      },
+      "refusalRate": 0,
+      "avgElements": 27
+    },
+    {
+      "slug": "minimax/minimax-m3",
+      "name": "MiniMax M3",
+      "era": "current",
+      "origin": "CN",
+      "license": "open",
+      "meowscore": 79.2,
+      "perPrompt": {
+        "minimal": {
+          "median": 8.3,
+          "best": 8.5,
+          "samples": 4
+        },
+        "realistic": {
+          "median": 7.8,
+          "best": 8,
+          "samples": 4
+        },
+        "action": {
+          "median": 4.4,
+          "best": 8.8,
+          "samples": 4
+        },
+        "style": {
+          "median": 8.9,
+          "best": 9,
+          "samples": 4
+        },
+        "constraint": {
+          "median": 8.9,
+          "best": 9,
+          "samples": 4
+        },
+        "animation": {
+          "median": 9.2,
+          "best": 9.3,
+          "samples": 4
+        }
+      },
+      "refusalRate": 0,
+      "avgElements": 77
+    },
+    {
+      "slug": "google/gemini-2.5-pro",
+      "name": "Gemini 2.5 Pro",
+      "era": "previous",
+      "origin": "US",
+      "license": "closed",
+      "meowscore": 78.5,
+      "perPrompt": {
+        "minimal": {
+          "median": 7.9,
+          "best": 8.3,
+          "samples": 4
+        },
+        "realistic": {
+          "median": 6.7,
+          "best": 7.3,
+          "samples": 4
+        },
+        "action": {
+          "median": 8,
+          "best": 8,
+          "samples": 4
+        },
+        "style": {
+          "median": 7.8,
+          "best": 8.3,
+          "samples": 4
+        },
+        "constraint": {
+          "median": 9,
+          "best": 9,
+          "samples": 4
+        },
+        "animation": {
+          "median": 7.7,
+          "best": 8,
+          "samples": 4
+        }
+      },
+      "refusalRate": 0,
+      "avgElements": 28
+    },
+    {
+      "slug": "openai/gpt-5",
+      "name": "GPT-5",
+      "era": "previous",
+      "origin": "US",
+      "license": "closed",
+      "meowscore": 77.2,
+      "perPrompt": {
+        "minimal": {
+          "median": 8.3,
+          "best": 9,
+          "samples": 4
+        },
+        "realistic": {
+          "median": 7.8,
+          "best": 8.3,
+          "samples": 4
+        },
+        "action": {
+          "median": 4.4,
+          "best": 9,
+          "samples": 4
+        },
+        "style": {
+          "median": 8.2,
+          "best": 9,
+          "samples": 4
+        },
+        "constraint": {
+          "median": 8.7,
+          "best": 9,
+          "samples": 4
+        },
+        "animation": {
+          "median": 8.9,
+          "best": 9,
+          "samples": 4
+        }
+      },
+      "refusalRate": 0,
+      "avgElements": 57
+    },
+    {
+      "slug": "deepseek/deepseek-r1",
+      "name": "DeepSeek R1",
+      "era": "previous",
+      "origin": "CN",
+      "license": "open",
+      "meowscore": 73.5,
+      "perPrompt": {
+        "minimal": {
+          "median": 8.2,
+          "best": 9,
+          "samples": 4
+        },
+        "realistic": {
+          "median": 5.3,
+          "best": 5.8,
+          "samples": 4
+        },
+        "action": {
+          "median": 6.8,
+          "best": 8,
+          "samples": 4
+        },
+        "style": {
+          "median": 7.7,
+          "best": 8,
+          "samples": 4
+        },
+        "constraint": {
+          "median": 8.5,
+          "best": 8.8,
+          "samples": 4
+        },
+        "animation": {
+          "median": 7.6,
+          "best": 8.5,
+          "samples": 4
+        }
+      },
+      "refusalRate": 0,
+      "avgElements": 21
+    },
+    {
+      "slug": "qwen/qwen3-max",
+      "name": "Qwen3 Max",
+      "era": "previous",
+      "origin": "CN",
+      "license": "closed",
+      "meowscore": 73.5,
+      "perPrompt": {
+        "minimal": {
+          "median": 7.9,
+          "best": 8,
+          "samples": 4
+        },
+        "realistic": {
+          "median": 6.1,
+          "best": 6.5,
+          "samples": 4
+        },
+        "action": {
+          "median": 6.7,
+          "best": 7.5,
+          "samples": 4
+        },
+        "style": {
+          "median": 7.7,
+          "best": 8,
+          "samples": 4
+        },
+        "constraint": {
+          "median": 8.3,
+          "best": 8.5,
+          "samples": 4
+        },
+        "animation": {
+          "median": 7.4,
+          "best": 8,
+          "samples": 4
+        }
+      },
+      "refusalRate": 0,
+      "avgElements": 19
+    },
+    {
+      "slug": "mistralai/mistral-large-2512",
+      "name": "Mistral Large (2512)",
+      "era": "previous",
+      "origin": "FR",
+      "license": "open",
+      "meowscore": 66.2,
+      "perPrompt": {
+        "minimal": {
+          "median": 5.8,
+          "best": 6.8,
+          "samples": 4
+        },
+        "realistic": {
+          "median": 6.4,
+          "best": 6.8,
+          "samples": 4
+        },
+        "action": {
+          "median": 4.9,
+          "best": 6.5,
+          "samples": 4
+        },
+        "style": {
+          "median": 8.4,
+          "best": 8.5,
+          "samples": 4
+        },
+        "constraint": {
+          "median": 6.9,
+          "best": 7.3,
+          "samples": 4
+        },
+        "animation": {
+          "median": 7.3,
+          "best": 8.3,
+          "samples": 4
+        }
+      },
+      "refusalRate": 0,
+      "avgElements": 25
+    },
+    {
+      "slug": "deepseek/deepseek-chat-v3-0324",
+      "name": "DeepSeek V3",
+      "era": "legacy",
+      "origin": "CN",
+      "license": "open",
+      "meowscore": 65.5,
+      "perPrompt": {
+        "minimal": {
+          "median": 6.2,
+          "best": 7.5,
+          "samples": 4
+        },
+        "realistic": {
+          "median": 5.3,
+          "best": 6.5,
+          "samples": 4
+        },
+        "action": {
+          "median": 5.7,
+          "best": 5.8,
+          "samples": 4
+        },
+        "style": {
+          "median": 7,
+          "best": 7.3,
+          "samples": 4
+        },
+        "constraint": {
+          "median": 6.9,
+          "best": 7.8,
+          "samples": 4
+        },
+        "animation": {
+          "median": 8.2,
+          "best": 8.3,
+          "samples": 4
+        }
+      },
+      "refusalRate": 0,
+      "avgElements": 16
+    },
+    {
+      "slug": "mistralai/mistral-large-2407",
+      "name": "Mistral Large (2407)",
+      "era": "legacy",
+      "origin": "FR",
+      "license": "open",
+      "meowscore": 62.2,
+      "perPrompt": {
+        "minimal": {
+          "median": 4,
+          "best": 4.8,
+          "samples": 4
+        },
+        "realistic": {
+          "median": 5.9,
+          "best": 6.3,
+          "samples": 4
+        },
+        "action": {
+          "median": 6,
+          "best": 6.3,
+          "samples": 4
+        },
+        "style": {
+          "median": 8.3,
+          "best": 9,
+          "samples": 4
+        },
+        "constraint": {
+          "median": 7.4,
+          "best": 7.8,
+          "samples": 4
+        },
+        "animation": {
+          "median": 5.7,
+          "best": 8,
+          "samples": 4
+        }
+      },
+      "refusalRate": 0,
+      "avgElements": 24
+    },
+    {
+      "slug": "openai/gpt-4o",
+      "name": "GPT-4o",
+      "era": "legacy",
+      "origin": "US",
+      "license": "closed",
+      "meowscore": 59.5,
+      "perPrompt": {
+        "minimal": {
+          "median": 6.2,
+          "best": 7.5,
+          "samples": 4
+        },
+        "realistic": {
+          "median": 4.6,
+          "best": 5.8,
+          "samples": 4
+        },
+        "action": {
+          "median": 5.4,
+          "best": 6.5,
+          "samples": 4
+        },
+        "style": {
+          "median": 5,
+          "best": 5.8,
+          "samples": 4
+        },
+        "constraint": {
+          "median": 7.7,
+          "best": 8.3,
+          "samples": 4
+        },
+        "animation": {
+          "median": 6.8,
+          "best": 7.5,
+          "samples": 4
+        }
+      },
+      "refusalRate": 0,
+      "avgElements": 14
+    },
+    {
+      "slug": "qwen/qwen-2.5-72b-instruct",
+      "name": "Qwen2.5 72B",
+      "era": "legacy",
+      "origin": "CN",
+      "license": "open",
+      "meowscore": 45.8,
+      "perPrompt": {
+        "minimal": {
+          "median": 4.9,
+          "best": 6,
+          "samples": 4
+        },
+        "realistic": {
+          "median": 2.7,
+          "best": 3,
+          "samples": 4
+        },
+        "action": {
+          "median": 3.3,
+          "best": 3.5,
+          "samples": 4
+        },
+        "style": {
+          "median": 6.1,
+          "best": 6.8,
+          "samples": 4
+        },
+        "constraint": {
+          "median": 6.2,
+          "best": 7,
+          "samples": 4
+        },
+        "animation": {
+          "median": 4.3,
+          "best": 6,
+          "samples": 4
+        }
+      },
+      "refusalRate": 0,
+      "avgElements": 11
+    },
+    {
+      "slug": "openai/gpt-3.5-turbo",
+      "name": "GPT-3.5 Turbo",
+      "era": "legacy",
+      "origin": "US",
+      "license": "closed",
+      "meowscore": 45.7,
+      "perPrompt": {
+        "minimal": {
+          "median": 6.4,
+          "best": 7.8,
+          "samples": 4
+        },
+        "realistic": {
+          "median": 2.8,
+          "best": 4,
+          "samples": 4
+        },
+        "action": {
+          "median": 4.1,
+          "best": 4.5,
+          "samples": 4
+        },
+        "style": {
+          "median": 6.1,
+          "best": 8,
+          "samples": 4
+        },
+        "constraint": {
+          "median": 5.2,
+          "best": 6.8,
+          "samples": 4
+        },
+        "animation": {
+          "median": 2.8,
+          "best": 3.8,
+          "samples": 4
+        }
+      },
+      "refusalRate": 0,
+      "avgElements": 9
+    },
+    {
+      "slug": "openai/gpt-4",
+      "name": "GPT-4 (original)",
+      "era": "legacy",
+      "origin": "US",
+      "license": "closed",
+      "meowscore": 45.7,
+      "perPrompt": {
+        "minimal": {
+          "median": 6,
+          "best": 7.5,
+          "samples": 4
+        },
+        "realistic": {
+          "median": 2.3,
+          "best": 2.5,
+          "samples": 4
+        },
+        "action": {
+          "median": 4.2,
+          "best": 4.8,
+          "samples": 4
+        },
+        "style": {
+          "median": 4.5,
+          "best": 6.5,
+          "samples": 4
+        },
+        "constraint": {
+          "median": 6.1,
+          "best": 7.3,
+          "samples": 4
+        },
+        "animation": {
+          "median": 4.3,
+          "best": 6,
+          "samples": 4
+        }
+      },
+      "refusalRate": 0,
+      "avgElements": 10
+    },
+    {
+      "slug": "meta-llama/llama-4-maverick",
+      "name": "Llama 4 Maverick",
+      "era": "previous",
+      "origin": "US",
+      "license": "open",
+      "meowscore": 43.8,
+      "perPrompt": {
+        "minimal": {
+          "median": 4.2,
+          "best": 4.5,
+          "samples": 4
+        },
+        "realistic": {
+          "median": 4,
+          "best": 4.5,
+          "samples": 4
+        },
+        "action": {
+          "median": 4.6,
+          "best": 6.3,
+          "samples": 4
+        },
+        "style": {
+          "median": 3.4,
+          "best": 5.3,
+          "samples": 4
+        },
+        "constraint": {
+          "median": 5.4,
+          "best": 5.8,
+          "samples": 4
+        },
+        "animation": {
+          "median": 4.7,
+          "best": 5,
+          "samples": 4
+        }
+      },
+      "refusalRate": 0,
+      "avgElements": 12
+    },
+    {
+      "slug": "anthropic/claude-3-haiku",
+      "name": "Claude 3 Haiku",
+      "era": "legacy",
+      "origin": "US",
+      "license": "closed",
+      "meowscore": 39.8,
+      "perPrompt": {
+        "minimal": {
+          "median": 4.2,
+          "best": 5.8,
+          "samples": 4
+        },
+        "realistic": {
+          "median": 2.9,
+          "best": 3.5,
+          "samples": 4
+        },
+        "action": {
+          "median": 3.2,
+          "best": 4.3,
+          "samples": 4
+        },
+        "style": {
+          "median": 4.4,
+          "best": 5.3,
+          "samples": 4
+        },
+        "constraint": {
+          "median": 5.4,
+          "best": 6.3,
+          "samples": 4
+        },
+        "animation": {
+          "median": 3.8,
+          "best": 4.5,
+          "samples": 4
+        }
+      },
+      "refusalRate": 0,
+      "avgElements": 13
+    },
+    {
+      "slug": "meta-llama/llama-3.1-70b-instruct",
+      "name": "Llama 3.1 70B",
+      "era": "legacy",
+      "origin": "US",
+      "license": "open",
+      "meowscore": 37.3,
+      "perPrompt": {
+        "minimal": {
+          "median": 2.7,
+          "best": 6.5,
+          "samples": 4
+        },
+        "realistic": {
+          "median": 3.9,
+          "best": 5.3,
+          "samples": 4
+        },
+        "action": {
+          "median": 3.1,
+          "best": 4.3,
+          "samples": 4
+        },
+        "style": {
+          "median": 4.8,
+          "best": 6,
+          "samples": 4
+        },
+        "constraint": {
+          "median": 2.5,
+          "best": 7.5,
+          "samples": 4
+        },
+        "animation": {
+          "median": 5.4,
+          "best": 6,
+          "samples": 4
+        }
+      },
+      "refusalRate": 0,
+      "avgElements": 14
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 import { existsSync, readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
+import { mapPool } from '../pool.js'
 import { median } from '../stats.js'
 import type { ChatClient, ContentPart } from '../openrouter.js'
 import { ensureDirFor, samplePaths } from '../run-store.js'
@@ -74,48 +75,47 @@ export interface JudgeOpts {
   suite: PromptSuite
   judgeSlugs: string[] // exactly 3 at launch
   client: ChatClient
+  /** Max samples judged in parallel. Default 1 (sequential). */
+  concurrency?: number
   log?: (line: string) => void
 }
 
 /** Judge every valid sample with each judge; writes judgments/<model>/<prompt>/sample-N.json. Idempotent. */
 export async function runJudge(opts: JudgeOpts): Promise<number> {
-  const { runDir, records, validations, suite, judgeSlugs, client, log = () => {} } = opts
-  let judged = 0
-  for (const r of records) {
-    if (!validations[sampleKey(r)]?.valid || !r.svgPath) continue
+  const { runDir, records, validations, suite, judgeSlugs, client, concurrency = 1, log = () => {} } = opts
+  const toJudge = records.filter((r) => validations[sampleKey(r)]?.valid && r.svgPath)
+
+  const outcomes = await mapPool(toJudge, concurrency, async (r): Promise<number> => {
     const paths = samplePaths(r.modelSlug, r.promptId, r.sample)
     const judgmentAbs = join(runDir, paths.judgment)
     // Idempotency is keyed on file existence: changing judgeSlugs after a partial run requires deleting judgments/ to re-judge with the new panel.
-    if (existsSync(judgmentAbs)) {
-      judged++
-      continue
-    }
+    if (existsSync(judgmentAbs)) return 1
     const prompt = suite.prompts.find((p) => p.id === r.promptId)
     if (!prompt) throw new Error(`unknown prompt id ${r.promptId}`)
     const pngAbs = join(runDir, paths.png)
     if (!existsSync(pngAbs)) {
       // defensive: valid flag without a PNG means render didn't run in this pass
       log(`skipping judge for ${sampleKey(r)}: png missing (run render first)`)
-      continue
+      return 0
     }
     const png = readFileSync(pngAbs)
-    const svg = readFileSync(join(runDir, r.svgPath), 'utf8')
+    const svg = readFileSync(join(runDir, r.svgPath!), 'utf8')
 
     const judgments: Judgment[] = []
     for (const judgeSlug of judgeSlugs) {
-      const reply = await client.chat({
+      const reply = (await client.chat({
         model: judgeSlug,
         messages: [{ role: 'user', content: judgeUserContent(prompt.user, png, svg) }],
         temperature: 0,
-        maxTokens: 300,
-      })
+      })).content
       const scores = parseJudgeReply(reply)
       if (scores) judgments.push({ judgeSlug, scores })
       else log(`judge ${judgeSlug} gave unparseable reply for ${sampleKey(r)}`)
     }
-    if (judgments.length === 0) continue // compile treats missing judgment as score 0
+    if (judgments.length === 0) return 0 // compile treats missing judgment as score 0
     writeFileSync(ensureDirFor(runDir, paths.judgment), JSON.stringify(judgments, null, 2))
-    judged++
-  }
-  return judged
+    log(`judged ${sampleKey(r)}`)
+    return 1
+  })
+  return outcomes.reduce((a, b) => a + b, 0)
 }

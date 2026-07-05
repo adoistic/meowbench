@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" role="img" aria-label="Origami-style cat with geometric folds">
+  <defs>
+    <linearGradient id="paperBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff8ed"/>
+      <stop offset="1" stop-color="#efe2d4"/>
+    </linearGradient>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"/>
+      <feOffset dx="0" dy="10" result="offset"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.22"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .edge{stroke:#8b5b39;stroke-width:2.2;stroke-linejoin:round;stroke-linecap:round;stroke-opacity:.33}
+      .fold{fill:none;stroke:#6b432a;stroke-width:2;stroke-linecap:round;stroke-opacity:.26}
+      .crease{fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:round;stroke-opacity:.45}
+      .face{stroke:#3f2a1d;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+    </style>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#paperBg)"/>
+  <ellipse cx="403" cy="707" rx="216" ry="35" fill="#6b4a34" opacity=".16"/>
+
+  <g filter="url(#softShadow)">
+    <g class="edge">
+      <polygon points="505,515 610,464 641,522 538,598" fill="#d98a49"/>
+      <polygon points="610,464 690,399 721,454 641,522" fill="#e29a5c"/>
+      <polygon points="690,399 718,300 762,330 721,454" fill="#c97537"/>
+      <polygon points="718,300 669,246 714,222 770,315 762,330" fill="#eaa569"/>
+      <polygon points="641,522 721,454 699,536 565,638 538,598" fill="#bd6832"/>
+      <polyline points="505,515 610,464 690,399 718,300 669,246" fill="none" stroke="#6b432a" stroke-opacity=".23"/>
+      <polyline points="538,598 641,522 721,454 762,330" fill="none" stroke="#ffffff" stroke-opacity=".36"/>
+    </g>
+
+    <g class="edge">
+      <polygon points="309,351 491,351 560,592 468,704 332,704 240,592" fill="#d98a49"/>
+      <polygon points="309,351 400,421 240,592" fill="#efa867"/>
+      <polygon points="491,351 400,421 560,592" fill="#c97537"/>
+      <polygon points="240,592 400,421 332,704" fill="#dd8e4d"/>
+      <polygon points="560,592 400,421 468,704" fill="#b9612e"/>
+      <polygon points="332,704 400,421 468,704" fill="#e49a5b"/>
+      <polygon points="309,351 400,421 491,351 438,326 362,326" fill="#f1b173"/>
+      <polygon points="268,575 332,704 255,682 219,612" fill="#c46b34"/>
+      <polygon points="532,575 468,704 545,682 581,612" fill="#a9562b"/>
+      <polygon points="332,704 400,662 468,704" fill="#f0aa6a"/>
+    </g>
+
+    <g>
+      <path class="fold" d="M309 351L400 421L491 351"/>
+      <path class="fold" d="M400 421L332 704"/>
+      <path class="fold" d="M400 421L468 704"/>
+      <path class="fold" d="M240 592L560 592"/>
+      <path class="crease" d="M362 326L400 421L438 326"/>
+      <path class="crease" d="M268 575L332 704"/>
+      <path class="crease" d="M532 575L468 704"/>
+    </g>
+
+    <g class="edge">
+      <polygon points="280,215 318,78 361,205" fill="#d77e3e"/>
+      <polygon points="318,78 400,196 361,205" fill="#f2aa68"/>
+      <polygon points="318,78 337,184 303,196" fill="#b85d2d"/>
+      <polygon points="520,215 482,78 439,205" fill="#c87238"/>
+      <polygon points="482,78 400,196 439,205" fill="#e99b5b"/>
+      <polygon points="482,78 463,184 497,196" fill="#a9562b"/>
+
+      <polygon points="280,215 361,205 400,196 439,205 520,215 489,315 400,371 311,315" fill="#e99453"/>
+      <polygon points="280,215 361,205 342,304 311,315" fill="#f3ad6e"/>
+      <polygon points="361,205 400,196 400,371 342,304" fill="#d7803f"/>
+      <polygon points="439,205 520,215 489,315 458,304" fill="#c06a32"/>
+      <polygon points="400,196 439,205 458,304 400,371" fill="#efa464"/>
+      <polygon points="342,304 400,371 311,315" fill="#c87238"/>
+      <polygon points="458,304 489,315 400,371" fill="#a9562b"/>
+      <polygon points="342,304 400,276 458,304 400,371" fill="#eda261"/>
+      <polygon points="361,205 400,276 400,196" fill="#f7ba7e"/>
+      <polygon points="439,205 400,196 400,276" fill="#d98547"/>
+    </g>
+
+    <g>
+      <path class="fold" d="M318 78L361 205L400 196L439 205L482 78"/>
+      <path class="fold" d="M280 215L342 304L400 371L458 304L520 215"/>
+      <path class="fold" d="M361 205L400 276L439 205"/>
+      <path class="fold" d="M400 196L400 371"/>
+      <path class="crease" d="M303 196L318 78"/>
+      <path class="crease" d="M497 196L482 78"/>
+      <path class="crease" d="M311 315L400 276L489 315"/>
+    </g>
+
+    <g>
+      <polygon points="348,257 374,248 366,273" fill="#2f2118" opacity=".92"/>
+      <polygon points="452,257 426,248 434,273" fill="#2f2118" opacity=".92"/>
+      <polygon points="389,305 411,305 400,320" fill="#5b2d28"/>
+      <path d="M400 320L386 335" class="face" fill="none" stroke-width="3.5" opacity=".78"/>
+      <path d="M400 320L414 335" class="face" fill="none" stroke-width="3.5" opacity=".78"/>
+      <path d="M346 306L290 292" class="face" fill="none" stroke-width="3" opacity=".58"/>
+      <path d="M346 319L288 324" class="face" fill="none" stroke-width="3" opacity=".48"/>
+      <path d="M454 306L510 292" class="face" fill="none" stroke-width="3" opacity=".58"/>
+      <path d="M454 319L512 324" class="face" fill="none" stroke-width="3" opacity=".48"/>
+    </g>
+  </g>
+
+  <g opacity=".18">
+    <path d="M156 154L227 130L211 201Z" fill="#ffffff"/>
+    <path d="M628 142L681 105L696 174Z" fill="#ffffff"/>
+    <path d="M124 558L184 526L196 604Z" fill="#ffffff"/>
+  </g>
+</svg>

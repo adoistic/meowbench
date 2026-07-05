@@ -1,0 +1,71 @@
+
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes tail-sway {
+      0% { transform: rotate(-15deg); }
+      50% { transform: rotate(15deg); }
+      100% { transform: rotate(-15deg); }
+    }
+    
+    .tail {
+      transform-origin: 180px 200px;
+      animation: tail-sway 2s ease-in-out infinite;
+    }
+    
+    @keyframes blink {
+      0%, 90%, 100% { opacity: 1; }
+      95% { opacity: 0; }
+    }
+    
+    .eye {
+      animation: blink 4s infinite;
+    }
+  </style>
+  
+  <!-- Cat body -->
+  <ellipse cx="150" cy="200" rx="60" ry="45" fill="#4a4a4a"/>
+  
+  <!-- Cat head -->
+  <circle cx="150" cy="150" r="40" fill="#4a4a4a"/>
+  
+  <!-- Ears -->
+  <path d="M 120 130 L 110 105 L 130 120 Z" fill="#4a4a4a"/>
+  <path d="M 180 130 L 190 105 L 170 120 Z" fill="#4a4a4a"/>
+  
+  <!-- Eye whites -->
+  <circle cx="135" cy="145" r="8" fill="white"/>
+  <circle cx="165" cy="145" r="8" fill="white"/>
+  
+  <!-- Pupils (blinking) -->
+  <circle class="eye" cx="135" cy="145" r="5" fill="#2c2c2c"/>
+  <circle class="eye" cx="165" cy="145" r="5" fill="#2c2c2c"/>
+  
+  <!-- Nose -->
+  <path d="M 150 155 L 145 160 L 155 160 Z" fill="#d4a574"/>
+  
+  <!-- Mouth -->
+  <path d="M 150 160 Q 140 165 135 160" fill="none" stroke="#2c2c2c" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 150 160 Q 160 165 165 160" fill="none" stroke="#2c2c2c" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Whiskers -->
+  <line x1="100" y1="150" x2="80" y2="145" stroke="#2c2c2c" stroke-width="1.5"/>
+  <line x1="100" y1="160" x2="80" y2="160" stroke="#2c2c2c" stroke-width="1.5"/>
+  <line x1="200" y1="150" x2="220" y2="145" stroke="#2c2c2c" stroke-width="1.5"/>
+  <line x1="200" y1="160" x2="220" y2="160" stroke="#2c2c2c" stroke-width="1.5"/>
+  
+  <!-- Paws -->
+  <ellipse cx="120" cy="235" rx="15" ry="20" fill="#4a4a4a"/>
+  <ellipse cx="180" cy="235" rx="15" ry="20" fill="#4a4a4a"/>
+  
+  <!-- Animated tail -->
+  <g class="tail">
+    <path d="M 180 200 Q 220 210 240 180 Q 260 160 250 140" 
+          fill="none" 
+          stroke="#4a4a4a" 
+          stroke-width="25" 
+          stroke-linecap="round"/>
+  </g>
+  
+  <!-- Tail tip -->
+  <circle class="tail" cx="245" cy="135" r="12" fill="#4a4a4a"/>
+</svg>

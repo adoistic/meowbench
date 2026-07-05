@@ -1,0 +1,253 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <!-- Base fur gradients -->
+    <radialGradient id="furBase" cx="35%" cy="65%" r="70%">
+      <stop offset="0%" stop-color="#e8dfcd"/>
+      <stop offset="35%" stop-color="#cbb99c"/>
+      <stop offset="65%" stop-color="#a38862"/>
+      <stop offset="85%" stop-color="#7b6245"/>
+      <stop offset="100%" stop-color="#5a4733"/>
+    </radialGradient>
+
+    <!-- Gentle belly/chest highlight -->
+    <radialGradient id="bellyLight" cx="38%" cy="68%" r="36%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Back shadow gradient -->
+    <radialGradient id="backShadow" cx="72%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#000000" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Inner ear -->
+    <radialGradient id="earInnerGrad" cx="50%" cy="20%" r="90%">
+      <stop offset="0%" stop-color="#f6c2c6"/>
+      <stop offset="50%" stop-color="#e59aa2"/>
+      <stop offset="100%" stop-color="#b47a7d"/>
+    </radialGradient>
+
+    <!-- Eye iris -->
+    <radialGradient id="eyeIrisL" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d7f18e"/>
+      <stop offset="50%" stop-color="#9bc44b"/>
+      <stop offset="90%" stop-color="#3a5c22"/>
+      <stop offset="100%" stop-color="#27401a"/>
+    </radialGradient>
+    <radialGradient id="eyeIrisR" href="#eyeIrisL"/>
+
+    <!-- Eye highlight -->
+    <radialGradient id="eyeShine" cx="30%" cy="30%" r="40%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Nose gradient -->
+    <linearGradient id="noseGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f2a6ab"/>
+      <stop offset="100%" stop-color="#c97c82"/>
+    </linearGradient>
+
+    <!-- Subtle fur texture filter: anisotropic noise mixed light/dark -->
+    <filter id="furTexture" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+      <!-- Fine, elongated noise (vertical bias) -->
+      <feTurbulence type="fractalNoise" baseFrequency="0.35 1.8" numOctaves="3" seed="8" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0" result="grayNoise"/>
+      <!-- Slight directional stretch to hint fur flow -->
+      <feGaussianBlur in="grayNoise" stdDeviation="0.2 0.9" edgeMode="duplicate" result="stretched"/>
+      <!-- Dark component -->
+      <feComponentTransfer in="stretched" result="darkNoise">
+        <feFuncR type="table" tableValues="0.7 0.82 0.9 0.95 1"/>
+        <feFuncG type="table" tableValues="0.7 0.82 0.9 0.95 1"/>
+        <feFuncB type="table" tableValues="0.7 0.82 0.9 0.95 1"/>
+      </feComponentTransfer>
+      <feBlend in="SourceGraphic" in2="darkNoise" mode="multiply" result="pass1"/>
+      <!-- Light component (invert then compress and screen) -->
+      <feColorMatrix in="stretched" type="matrix" values="
+        -1 0 0 0 1
+         0 -1 0 0 1
+         0  0 -1 0 1
+         0  0  0 1 0" result="invNoise"/>
+      <feComponentTransfer in="invNoise" result="lightNoise">
+        <feFuncR type="table" tableValues="0.88 0.92 0.96 1"/>
+        <feFuncG type="table" tableValues="0.88 0.92 0.96 1"/>
+        <feFuncB type="table" tableValues="0.88 0.92 0.96 1"/>
+      </feComponentTransfer>
+      <feBlend in="pass1" in2="lightNoise" mode="screen" result="pass2"/>
+      <!-- Slight micro-contrast to accentuate strands -->
+      <feColorMatrix in="pass2" type="matrix" values="
+        1.08 0    0    0 0
+        0    1.08 0    0 0
+        0    0    1.08 0 0
+        0    0    0    1 0" result="textured"/>
+      <!-- Gentle smoothing to avoid harsh speckle -->
+      <feGaussianBlur in="textured" stdDeviation="0.25" result="final"/>
+      <feBlend in="final" in2="SourceGraphic" mode="normal"/>
+    </filter>
+
+    <!-- Soft ground shadow -->
+    <filter id="shadowBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+
+    <!-- Clip defining the cat silhouette -->
+    <clipPath id="catClip" clipPathUnits="userSpaceOnUse">
+      <!-- Body -->
+      <ellipse cx="400" cy="360" rx="150" ry="200"/>
+      <!-- Head -->
+      <circle cx="470" cy="220" r="85"/>
+      <!-- Ears -->
+      <path d="M410 150 L455 105 L475 175 Z"/>
+      <path d="M500 100 L540 150 L485 175 Z"/>
+      <!-- Tail wrapping around front -->
+      <path d="M540 435
+               C600 475, 600 525, 550 545
+               C480 570, 390 560, 345 530
+               C320 514, 320 495, 340 485
+               C368 470, 420 465, 470 480
+               C520 495, 545 480, 540 435 Z"/>
+      <!-- Front paws -->
+      <ellipse cx="380" cy="540" rx="40" ry="22"/>
+      <ellipse cx="430" cy="542" rx="36" ry="20"/>
+    </clipPath>
+
+    <!-- Gentle rim light on back -->
+    <linearGradient id="rimLight" x1="100%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="30%" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Subtle stripe tint -->
+    <linearGradient id="stripeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3a2c20" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#3a2c20" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ground -->
+  <ellipse cx="400" cy="565" rx="210" ry="30" fill="#000" opacity="0.25" filter="url(#shadowBlur)"/>
+
+  <!-- Cat base with fur shading and texture -->
+  <g clip-path="url(#catClip)">
+    <!-- Base fur -->
+    <rect x="0" y="0" width="800" height="600" fill="url(#furBase)" filter="url(#furTexture)"/>
+
+    <!-- Belly highlight -->
+    <ellipse cx="370" cy="455" rx="110" ry="120" fill="url(#bellyLight)"/>
+
+    <!-- Back shadow -->
+    <ellipse cx="515" cy="260" rx="160" ry="180" fill="url(#backShadow)"/>
+
+    <!-- Rim light -->
+    <rect x="520" y="60" width="200" height="520" fill="url(#rimLight)"/>
+
+    <!-- Soft chest transition -->
+    <ellipse cx="390" cy="420" rx="90" ry="100" fill="#ffffff" opacity="0.12"/>
+
+    <!-- Tail darker underside -->
+    <path d="M540 435
+             C600 475, 600 525, 550 545
+             C480 570, 390 560, 345 530
+             C320 514, 320 495, 340 485
+             C368 470, 420 465, 470 480
+             C520 495, 545 480, 540 435 Z"
+          fill="#3a2c20" opacity="0.18"/>
+
+    <!-- Subtle body stripes -->
+    <path d="M500 320 C460 300, 400 300, 350 330" stroke="url(#stripeGrad)" stroke-width="14" fill="none" opacity="0.3"/>
+    <path d="M505 350 C460 335, 400 340, 345 370" stroke="url(#stripeGrad)" stroke-width="12" fill="none" opacity="0.28"/>
+    <path d="M510 380 C460 365, 400 380, 350 410" stroke="url(#stripeGrad)" stroke-width="10" fill="none" opacity="0.26"/>
+    <path d="M515 410 C465 395, 400 420, 355 450" stroke="url(#stripeGrad)" stroke-width="8" fill="none" opacity="0.24"/>
+
+    <!-- Forehead stripes -->
+    <path d="M450 205 C460 195, 480 195, 490 205" stroke="#3a2c20" stroke-width="6" stroke-linecap="round" opacity="0.22" fill="none"/>
+    <path d="M448 220 C465 208, 480 208, 494 220" stroke="#3a2c20" stroke-width="5" stroke-linecap="round" opacity="0.2" fill="none"/>
+  </g>
+
+  <!-- Inner ear details -->
+  <path d="M415 150 L455 110 L472 170 Z" fill="url(#earInnerGrad)" opacity="0.8"/>
+  <path d="M502 110 L535 150 L488 170 Z" fill="url(#earInnerGrad)" opacity="0.8"/>
+  <!-- Ear rim tufts -->
+  <path d="M448 118 C444 122, 440 129, 441 135" stroke="#e8dfcd" stroke-width="2" stroke-linecap="round" opacity="0.6" fill="none"/>
+  <path d="M520 116 C523 121, 528 128, 529 135" stroke="#e8dfcd" stroke-width="2" stroke-linecap="round" opacity="0.6" fill="none"/>
+
+  <!-- Face -->
+  <!-- Eyes -->
+  <g>
+    <!-- Left eye socket shadow -->
+    <ellipse cx="440" cy="230" rx="34" ry="22" fill="#000" opacity="0.18"/>
+    <!-- Right eye socket shadow -->
+    <ellipse cx="505" cy="230" rx="34" ry="22" fill="#000" opacity="0.18"/>
+
+    <!-- Eye whites (slightly warm) -->
+    <path d="M410 230
+             C420 215, 460 215, 470 230
+             C460 245, 420 245, 410 230 Z" fill="#f7f3ea" opacity="0.9"/>
+    <path d="M475 230
+             C485 215, 525 215, 535 230
+             C525 245, 485 245, 475 230 Z" fill="#f7f3ea" opacity="0.9"/>
+
+    <!-- Irises -->
+    <ellipse cx="440" cy="230" rx="18" ry="16" fill="url(#eyeIrisL)"/>
+    <ellipse cx="505" cy="230" rx="18" ry="16" fill="url(#eyeIrisR)"/>
+
+    <!-- Pupils -->
+    <ellipse cx="440" cy="230" rx="6" ry="14" fill="#0b0b0b"/>
+    <ellipse cx="505" cy="230" rx="6" ry="14" fill="#0b0b0b"/>
+
+    <!-- Eye highlights -->
+    <circle cx="434" cy="222" r="5" fill="url(#eyeShine)"/>
+    <circle cx="499" cy="222" r="5" fill="url(#eyeShine)"/>
+    <circle cx="438" cy="238" r="2" fill="#ffffff" opacity="0.7"/>
+    <circle cx="503" cy="238" r="2" fill="#ffffff" opacity="0.7"/>
+  </g>
+
+  <!-- Nose and mouth -->
+  <path d="M469 260
+           C462 266, 451 266, 444 260
+           C450 252, 463 252, 469 260 Z" fill="url(#noseGrad)" stroke="#8e5b5f" stroke-width="1" opacity="0.95"/>
+  <path d="M457 262 L457 270" stroke="#6d4a4d" stroke-width="2" stroke-linecap="round"/>
+  <path d="M457 270
+           C452 275, 445 277, 438 274" stroke="#6d4a4d" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <path d="M457 270
+           C462 275, 469 277, 476 274" stroke="#6d4a4d" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+  <!-- Whiskers -->
+  <g stroke="#e9e6df" stroke-width="2" stroke-linecap="round" opacity="0.85">
+    <path d="M438 268 C400 262, 360 262, 330 258"/>
+    <path d="M438 273 C400 270, 360 274, 325 274"/>
+    <path d="M438 278 C400 284, 360 292, 325 298"/>
+  </g>
+  <g stroke="#e9e6df" stroke-width="2" stroke-linecap="round" opacity="0.85">
+    <path d="M476 268 C515 262, 555 262, 585 258"/>
+    <path d="M476 273 C515 270, 555 274, 590 274"/>
+    <path d="M476 278 C515 284, 555 292, 590 298"/>
+  </g>
+
+  <!-- Subtle cheek and muzzle shading -->
+  <ellipse cx="430" cy="255" rx="28" ry="18" fill="#000" opacity="0.08"/>
+  <ellipse cx="485" cy="255" rx="28" ry="18" fill="#000" opacity="0.08"/>
+  <ellipse cx="457" cy="268" rx="22" ry="12" fill="#ffffff" opacity="0.25"/>
+
+  <!-- Chest fur strokes -->
+  <g stroke="#efe9db" stroke-width="2" stroke-linecap="round" opacity="0.55">
+    <path d="M380 430 C385 450, 395 470, 410 485"/>
+    <path d="M395 425 C402 448, 413 470, 430 488"/>
+    <path d="M410 420 C420 445, 433 467, 450 485"/>
+  </g>
+
+  <!-- Paw definition lines -->
+  <g stroke="#4d3d2d" stroke-width="2" opacity="0.25">
+    <path d="M360 540 C372 545, 388 546, 400 542"/>
+    <path d="M408 542 C420 546, 434 548, 446 545"/>
+  </g>
+
+  <!-- Subtle outline accents (shadowed side) -->
+  <path d="M560 175 C582 220, 590 270, 580 320" stroke="#1a1410" stroke-opacity="0.25" stroke-width="4" fill="none"/>
+  <path d="M540 430 C560 468, 545 512, 500 532" stroke="#1a1410" stroke-opacity="0.22" stroke-width="4" fill="none"/>
+
+</svg>

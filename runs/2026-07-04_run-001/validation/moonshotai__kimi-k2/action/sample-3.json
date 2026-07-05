@@ -1,0 +1,26 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 6664,
+    "elements": 84,
+    "paths": 13,
+    "colors": [
+      "#228b22",
+      "#333",
+      "#666",
+      "#999",
+      "#cc6600",
+      "#ff69b4",
+      "#ff6b35",
+      "#ff8c00",
+      "#ffa500",
+      "#ffb347",
+      "#ffd700",
+      "black",
+      "url(#grassgrad)",
+      "url(#skygrad)",
+      "white"
+    ]
+  }
+}

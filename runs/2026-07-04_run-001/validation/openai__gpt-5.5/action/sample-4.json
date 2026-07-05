@@ -1,0 +1,31 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 8253,
+    "elements": 116,
+    "paths": 38,
+    "colors": [
+      "#178ecb",
+      "#22384b",
+      "#244056",
+      "#263746",
+      "#3da84d",
+      "#65cf61",
+      "#8b4b21",
+      "#90a8ba",
+      "#ef6b77",
+      "#f59a38",
+      "#f9fcff",
+      "#ffb45d",
+      "#ffbf86",
+      "#ffc070",
+      "#ffd45c",
+      "#fff7a8",
+      "#ffffff",
+      "url(#grass)",
+      "url(#sky)",
+      "url(#wheelshade)"
+    ]
+  }
+}

@@ -104,3 +104,26 @@ test('render failure demotes a validated sample to invalid', async () => {
   const onDisk = JSON.parse(readFileSync(join(runDir, samplePaths(rec.modelSlug, rec.promptId, rec.sample).validation), 'utf8'))
   expect(onDisk.valid).toBe(false)
 })
+
+test('concurrency runs every task, bounds in-flight, and preserves record order', async () => {
+  const runDir = mkdtempSync(join(tmpdir(), 'meow-'))
+  let inFlight = 0
+  let peak = 0
+  const tracking = {
+    chat: async (req: ChatRequest) => {
+      inFlight++
+      peak = Math.max(peak, inFlight)
+      await new Promise((r) => setTimeout(r, 5))
+      inFlight--
+      return new CannedClient().chat(req)
+    },
+  }
+  // 2 models x 1 prompt x 6 samples = 12 tasks, concurrency 4
+  const records = await runGenerate({ runDir, models: MODELS, suite: SUITE, samples: 6, client: tracking, concurrency: 4 })
+  expect(records).toHaveLength(12)
+  expect(peak).toBeGreaterThan(1) // genuinely parallel
+  expect(peak).toBeLessThanOrEqual(4) // but bounded
+  // input order preserved: first 6 records are model[0], next 6 are model[1]
+  expect(records.slice(0, 6).every((r) => r.modelSlug === MODELS[0].slug)).toBe(true)
+  expect(records.slice(6).every((r) => r.modelSlug === MODELS[1].slug)).toBe(true)
+})

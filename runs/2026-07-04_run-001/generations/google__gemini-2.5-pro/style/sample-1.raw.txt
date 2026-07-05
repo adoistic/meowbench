@@ -1,0 +1,22 @@
+<svg width="100%" height="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <!-- Main Body/Head Base -->
+    <polygon points="50,15 20,45 20,95 80,95 80,45" fill="#E9974C"/>
+    <!-- Tail -->
+    <polygon points="80,70 95,85 80,95" fill="#D3722A"/>
+    <polygon points="80,70 90,60 95,85" fill="#F7C892"/>
+    <!-- Body Folds -->
+    <polygon points="55,60 80,45 80,95 65,95" fill="#D3722A"/>
+    <polygon points="20,95 35,95 35,75" fill="#D3722A"/>
+    <polygon points="50,60 35,95 65,95" fill="#FBE5C8"/>
+    <!-- Head Folds -->
+    <polygon points="50,15 20,45 35,40" fill="#D3722A"/>
+    <polygon points="50,15 80,45 50,60" fill="#F7C892"/>
+    <!-- Muzzle -->
+    <polygon points="38,55 50,60 62,55 50,50" fill="#FBE5C8"/>
+    <!-- Facial Features -->
+    <polygon points="38,45 42,45 40,49" fill="#333333"/>
+    <polygon points="58,45 62,45 60,49" fill="#333333"/>
+    <polygon points="47,53 53,53 50,57" fill="#333333"/>
+  </g>
+</svg>

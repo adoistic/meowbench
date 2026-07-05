@@ -1,0 +1,7 @@
+```xml
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <path fill="#212121" d="M 20 95 C 0 95, 0 65, 25 40 L 35 10 L 50 30 L 65 10 L 75 40 C 100 65, 100 95, 80 95 Z"/>
+  <circle fill="#fff" cx="38" cy="50" r="5"/>
+  <circle fill="#fff" cx="62" cy="50" r="5"/>
+</svg>
+```

@@ -1,0 +1,18 @@
+```svg
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <style>
+    .ears, .face, .eyes, .nose, .whiskers { fill: #333; }
+    .inner-ears { fill: #666; }
+  </style>
+  <circle class="face" cx="100" cy="100" r="50"/>
+  <polygon class="ears" points="60,50 70,20 80,50"/>
+  <polygon class="ears" points="140,50 130,20 120,50"/>
+  <polygon class="inner-ears" points="65,50 70,30 75,50"/>
+  <polygon class="inner-ears" points="135,50 130,30 125,50"/>
+  <circle class="eyes" cx="85" cy="90" r="5"/>
+  <circle class="eyes" cx="115" cy="90" r="5"/>
+  <polygon class="nose" points="100,100 95,110 105,110"/>
+  <path class="whiskers" d="M50,100 Q75,110 50,120" stroke="#333" stroke-width="2" fill="none"/>
+  <path class="whiskers" d="M150,100 Q125,110 150,120" stroke="#333" stroke-width="2" fill="none"/>
+</svg>
+```

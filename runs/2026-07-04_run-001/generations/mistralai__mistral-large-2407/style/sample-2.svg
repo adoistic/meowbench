@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="foldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f9d5e5"/>
+      <stop offset="100%" stop-color="#eeac99"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.3)"/>
+    </filter>
+  </defs>
+
+  <!-- Head -->
+  <polygon points="100,40 140,60 140,100 100,120 60,100 60,60" fill="url(#foldGradient)" stroke="#333" stroke-width="1" filter="url(#shadow)"/>
+
+  <!-- Ears -->
+  <polygon points="100,40 120,20 140,60" fill="url(#foldGradient)" stroke="#333" stroke-width="1"/>
+  <polygon points="100,40 80,20 60,60" fill="url(#foldGradient)" stroke="#333" stroke-width="1"/>
+
+  <!-- Inner ears -->
+  <polygon points="100,45 115,30 125,50" fill="#f4a6a6" stroke="#333" stroke-width="0.5"/>
+  <polygon points="100,45 85,30 75,50" fill="#f4a6a6" stroke="#333" stroke-width="0.5"/>
+
+  <!-- Body -->
+  <polygon points="60,100 100,120 140,100 140,160 100,180 60,160" fill="url(#foldGradient)" stroke="#333" stroke-width="1"/>
+
+  <!-- Legs -->
+  <polygon points="70,160 80,180 65,180" fill="url(#foldGradient)" stroke="#333" stroke-width="1"/>
+  <polygon points="90,160 100,180 85,180" fill="url(#foldGradient)" stroke="#333" stroke-width="1"/>
+  <polygon points="110,160 120,180 105,180" fill="url(#foldGradient)" stroke="#333" stroke-width="1"/>
+  <polygon points="130,160 140,180 125,180" fill="url(#foldGradient)" stroke="#333" stroke-width="1"/>
+
+  <!-- Tail -->
+  <path d="M140,100 Q160,80 160,120 Q160,160 140,140" fill="none" stroke="url(#foldGradient)" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Eyes -->
+  <circle cx="85" cy="80" r="8" fill="#333"/>
+  <circle cx="115" cy="80" r="8" fill="#333"/>
+  <circle cx="87" cy="78" r="3" fill="#fff"/>
+  <circle cx="117" cy="78" r="3" fill="#fff"/>
+
+  <!-- Nose -->
+  <polygon points="100,90 105,95 95,95" fill="#333"/>
+
+  <!-- Mouth -->
+  <path d="M100,95 Q100,100 95,102" fill="none" stroke="#333" stroke-width="1"/>
+  <path d="M100,95 Q100,100 105,102" fill="none" stroke="#333" stroke-width="1"/>
+
+  <!-- Fold lines -->
+  <line x1="100" y1="40" x2="100" y2="120" stroke="#333" stroke-width="0.5" stroke-dasharray="2,2"/>
+  <line x1="60" y1="60" x2="140" y2="60" stroke="#333" stroke-width="0.5" stroke-dasharray="2,2"/>
+  <line x1="60" y1="100" x2="140" y2="100" stroke="#333" stroke-width="0.5" stroke-dasharray="2,2"/>
+  <line x1="100" y1="120" x2="100" y2="180" stroke="#333" stroke-width="0.5" stroke-dasharray="2,2"/>
+</svg>

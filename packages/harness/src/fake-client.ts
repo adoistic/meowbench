@@ -1,4 +1,4 @@
-import type { ChatClient, ChatRequest } from './openrouter.js'
+import type { ChatClient, ChatRequest, ChatResult } from './openrouter.js'
 
 const FAKE_CAT = (color: string) =>
   `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 85">` +
@@ -8,14 +8,14 @@ const FAKE_CAT = (color: string) =>
 
 /** Deterministic offline client for tests and --dry-run. */
 export class CannedClient implements ChatClient {
-  async chat(req: ChatRequest): Promise<string> {
+  async chat(req: ChatRequest): Promise<ChatResult> {
     const text = JSON.stringify(req.messages)
     if (text.includes('You are judging')) {
-      return '{"cat_likeness": 7, "aesthetic": 6, "technique": 8, "prompt_fidelity": 7}'
+      return { content: '{"cat_likeness": 7, "aesthetic": 6, "technique": 8, "prompt_fidelity": 7}', finishReason: 'stop' }
     }
     // vary output per model so the dry-run leaderboard is not a tie
     const color = req.model.includes('gpt') ? 'orange' : 'gray'
-    if (req.model.includes('refuser')) return 'I cannot draw cats.'
-    return `Here you go!\n\`\`\`svg\n${FAKE_CAT(color)}\n\`\`\``
+    if (req.model.includes('refuser')) return { content: 'I cannot draw cats.', finishReason: 'stop' }
+    return { content: `Here you go!\n\`\`\`svg\n${FAKE_CAT(color)}\n\`\`\``, finishReason: 'stop' }
   }
 }

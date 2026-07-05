@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#fff7e6"/>
+      <stop offset="100%" stop-color="#ffe9c7"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg)"/>
+
+  <!-- Ground shadow -->
+  <ellipse cx="200" cy="330" rx="110" ry="14" fill="#d8c3a0" opacity="0.5"/>
+
+  <!-- TAIL (animated, drawn first so it goes behind body nicely at base) -->
+  <g transform="translate(255,255)">
+    <path d="M0,0 C40,-10 70,-40 60,-90 C55,-115 30,-130 10,-125" 
+          fill="none" stroke="#e8975c" stroke-width="18" stroke-linecap="round">
+      <animateTransform attributeName="transform"
+        type="rotate"
+        values="0 0 0; 18 0 0; -12 0 0; 0 0 0"
+        dur="2.4s"
+        repeatCount="indefinite"
+        keyTimes="0;0.35;0.7;1"
+        calcMode="spline"
+        keySplines="0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1"/>
+    </path>
+    <path d="M0,0 C40,-10 70,-40 60,-90 C55,-115 30,-130 10,-125" 
+          fill="none" stroke="#f2b07d" stroke-width="10" stroke-linecap="round">
+      <animateTransform attributeName="transform"
+        type="rotate"
+        values="0 0 0; 18 0 0; -12 0 0; 0 0 0"
+        dur="2.4s"
+        repeatCount="indefinite"
+        keyTimes="0;0.35;0.7;1"
+        calcMode="spline"
+        keySplines="0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1"/>
+    </path>
+  </g>
+
+  <!-- BODY -->
+  <ellipse cx="190" cy="270" rx="95" ry="65" fill="#f2a35c"/>
+  <ellipse cx="190" cy="270" rx="95" ry="65" fill="none" stroke="#d67f3a" stroke-width="3"/>
+
+  <!-- Belly patch -->
+  <ellipse cx="190" cy="290" rx="55" ry="35" fill="#fdeccb"/>
+
+  <!-- Front legs -->
+  <rect x="150" y="310" width="20" height="45" rx="10" fill="#f2a35c" stroke="#d67f3a" stroke-width="2"/>
+  <rect x="205" y="310" width="20" height="45" rx="10" fill="#f2a35c" stroke="#d67f3a" stroke-width="2"/>
+  <ellipse cx="160" cy="357" rx="14" ry="8" fill="#fdeccb"/>
+  <ellipse cx="215" cy="357" rx="14" ry="8" fill="#fdeccb"/>
+
+  <!-- HEAD -->
+  <g transform="translate(150,150)">
+    <!-- Ears -->
+    <path d="M-40,-30 L-55,-75 L-10,-45 Z" fill="#f2a35c" stroke="#d67f3a" stroke-width="3"/>
+    <path d="M40,-30 L55,-75 L10,-45 Z" fill="#f2a35c" stroke="#d67f3a" stroke-width="3"/>
+    <path d="M-38,-38 L-48,-65 L-20,-45 Z" fill="#fbc9a0"/>
+    <path d="M38,-38 L48,-65 L20,-45 Z" fill="#fbc9a0"/>
+
+    <!-- Head shape -->
+    <circle cx="0" cy="0" r="65" fill="#f2a35c" stroke="#d67f3a" stroke-width="3"/>
+
+    <!-- Cheek fluff -->
+    <ellipse cx="-45" cy="15" rx="18" ry="14" fill="#fdeccb"/>
+    <ellipse cx="45" cy="15" rx="18" ry="14" fill="#fdeccb"/>
+
+    <!-- Stripes -->
+    <path d="M-15,-55 L-10,-35" stroke="#d67f3a" stroke-width="4" stroke-linecap="round"/>
+    <path d="M15,-55 L10,-35" stroke="#d67f3a" stroke-width="4" stroke-linecap="round"/>
+    <path d="M0,-60 L0,-38" stroke="#d67f3a" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Eyes -->
+    <ellipse cx="-25" cy="-5" rx="9" ry="12" fill="#2b2b2b"/>
+    <ellipse cx="25" cy="-5" rx="9" ry="12" fill="#2b2b2b"/>
+    <circle cx="-27" cy="-9" r="2.5" fill="#fff"/>
+    <circle cx="23" cy="-9" r="2.5" fill="#fff"/>
+
+    <!-- Nose -->
+    <path d="M-6,15 L6,15 L0,23 Z" fill="#d67f3a"/>
+
+    <!-- Mouth -->
+    <path d="M0,23 Q-10,32 -20,25" fill="none" stroke="#7a4a2a" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M0,23 Q10,32 20,25" fill="none" stroke="#7a4a2a" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Whiskers -->
+    <g stroke="#7a4a2a" stroke-width="1.5" stroke-linecap="round">
+      <path d="M-30,18 L-65,10"/>
+      <path d="M-30,25 L-65,25"/>
+      <path d="M-30,32 L-65,40"/>
+      <path d="M30,18 L65,10"/>
+      <path d="M30,25 L65,25"/>
+      <path d="M30,32 L65,40"/>
+    </g>
+  </g>
+</svg>

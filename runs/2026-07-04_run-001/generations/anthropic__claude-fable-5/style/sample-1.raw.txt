@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <!-- background -->
+  <rect width="800" height="800" fill="#faf3e7"/>
+  <polygon points="0,0 220,0 0,180" fill="#f6e9d6"/>
+  <polygon points="800,0 800,240 590,0" fill="#f3e4cd"/>
+  <polygon points="0,800 0,620 200,800" fill="#f3e4cd"/>
+  <polygon points="800,800 560,800 800,600" fill="#f6e9d6"/>
+
+  <!-- shadow -->
+  <ellipse cx="400" cy="672" rx="225" ry="24" fill="#e6d9c3"/>
+
+  <g stroke="#8f3a1a" stroke-width="1.5" stroke-linejoin="round" stroke-opacity="0.45">
+
+    <!-- tail (behind body) -->
+    <polygon points="500,600 560,650 600,590 545,555" fill="#c85a2d"/>
+    <polygon points="600,590 545,555 590,480 645,510" fill="#e0703a"/>
+    <polygon points="645,510 590,480 615,420 665,440" fill="#f4915e"/>
+    <polygon points="615,420 665,440 650,375" fill="#c85a2d"/>
+
+    <!-- body -->
+    <polygon points="400,390 320,475 400,565" fill="#e0703a"/>
+    <polygon points="400,390 480,475 400,565" fill="#f4915e"/>
+
+    <!-- left haunch -->
+    <polygon points="320,475 240,590 400,565" fill="#c85a2d"/>
+    <polygon points="240,590 270,660 400,565" fill="#a8441f"/>
+    <polygon points="270,660 390,660 400,565" fill="#c85a2d"/>
+
+    <!-- right haunch -->
+    <polygon points="480,475 560,590 400,565" fill="#f4915e"/>
+    <polygon points="560,590 530,660 400,565" fill="#e0703a"/>
+    <polygon points="530,660 410,660 400,565" fill="#ffb385"/>
+
+    <!-- chest cream fold -->
+    <polygon points="400,440 362,520 400,595 438,520" fill="#ffd9b8"/>
+
+    <!-- front legs -->
+    <polygon points="368,548 398,562 398,660 355,660" fill="#ffb385"/>
+    <polygon points="432,548 402,562 402,660 445,660" fill="#ffd9b8"/>
+    <polygon points="355,660 398,660 398,640 355,644" fill="#f4915e"/>
+    <polygon points="445,660 402,660 402,640 445,644" fill="#ffb385"/>
+
+    <!-- ears -->
+    <polygon points="322,105 302,238 392,203" fill="#e0703a"/>
+    <polygon points="326,140 316,222 372,202" fill="#a8441f"/>
+    <polygon points="478,105 498,238 408,203" fill="#f4915e"/>
+    <polygon points="474,140 484,222 428,202" fill="#c85a2d"/>
+
+    <!-- head facets -->
+    <polygon points="400,180 340,250 460,250" fill="#f4915e"/>
+    <polygon points="400,180 300,280 340,250" fill="#c85a2d"/>
+    <polygon points="400,180 500,280 460,250" fill="#ffb385"/>
+    <polygon points="300,280 340,250 400,320" fill="#e0703a"/>
+    <polygon points="500,280 460,250 400,320" fill="#f4915e"/>
+    <polygon points="340,250 460,250 400,320" fill="#ffcf9f"/>
+    <polygon points="300,280 400,320 400,400" fill="#f4915e"/>
+    <polygon points="500,280 400,320 400,400" fill="#ffb385"/>
+
+    <!-- muzzle fold -->
+    <polygon points="400,330 358,352 400,398 442,352" fill="#ffd9b8"/>
+  </g>
+
+  <!-- face details -->
+  <polygon points="332,272 372,260 362,288" fill="#2f2a26"/>
+  <polygon points="468,272 428,260 438,288" fill="#2f2a26"/>
+  <polygon points="400,320 384,340 400,356 416,340" fill="#b34430"/>
+  <path d="M400,356 L388,370 M400,356 L412,370" stroke="#8f3a1a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- whiskers -->
+  <g stroke="#8f3a1a" stroke-width="2" stroke-opacity="0.55" stroke-linecap="round">
+    <line x1="358" y1="336" x2="296" y2="326"/>
+    <line x1="358" y1="348" x2="298" y2="356"/>
+    <line x1="442" y1="336" x2="504" y2="326"/>
+    <line x1="442" y1="348" x2="502" y2="356"/>
+  </g>
+
+  <!-- subtle crease highlights -->
+  <g stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.35" fill="none">
+    <line x1="400" y1="180" x2="400" y2="320"/>
+    <line x1="400" y1="390" x2="400" y2="565"/>
+    <line x1="320" y1="475" x2="400" y2="565"/>
+    <line x1="480" y1="475" x2="400" y2="565"/>
+  </g>
+</svg>

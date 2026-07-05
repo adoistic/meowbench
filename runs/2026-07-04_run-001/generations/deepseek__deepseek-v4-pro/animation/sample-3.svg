@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="400" height="400">
+    <defs>
+        <style>
+            /* Tail Swaying Animation */
+            @keyframes sway {
+                0% { transform: rotate(-20deg); }
+                50% { transform: rotate(20deg); }
+                100% { transform: rotate(-20deg); }
+            }
+            /* Eye Blinking Animation */
+            @keyframes blink {
+                0%, 96%, 100% { transform: scaleY(1); }
+                98% { transform: scaleY(0.1); }
+            }
+            
+            /* Apply Animations */
+            .tail-group {
+                transform-origin: 125px 110px;
+                animation: sway 2s ease-in-out infinite;
+            }
+            .left-eye {
+                transform-origin: 85px 55px;
+                animation: blink 4s ease-in-out infinite;
+            }
+            .right-eye {
+                transform-origin: 115px 55px;
+                animation: blink 4s ease-in-out infinite;
+            }
+
+            /* Base Styles */
+            .body-color { fill: #f4a261; }
+            .belly-color { fill: #e9c46a; }
+            .ear-inner-color { fill: #e76f51; }
+            .pattern-color { stroke: #264653; }
+            .line-color { stroke: #264653; }
+        </style>
+
+        <!-- Clip Paths for Stripes -->
+        <clipPath id="bodyClip">
+            <ellipse class="body-color" cx="100" cy="110" rx="45" ry="55" />
+        </clipPath>
+        <clipPath id="headClip">
+            <circle class="body-color" cx="100" cy="55" r="35" />
+        </clipPath>
+    </defs>
+
+    <!-- Background -->
+    <rect width="200" height="200" fill="#fcf6f0" />
+
+    <!-- Floor Shadow -->
+    <ellipse cx="100" cy="180" rx="50" ry="8" fill="rgba(0,0,0,0.08)" />
+
+    <!-- TAIL GROUP -->
+    <g class="tail-group">
+        <!-- Main Tail -->
+        <path d="M 125 110 Q 170 90, 150 45 T 120 35" fill="none" class="body-color" stroke-width="14" stroke-linecap="round"/>
+        <!-- Tail Stripes (Tabby cat pattern) -->
+        <path d="M 125 110 Q 170 90, 150 45 T 120 35" fill="none" class="pattern-color" stroke-width="14" stroke-linecap="round" stroke-dasharray="6 18" stroke-dashoffset="10"/>
+        <!-- Tail Tip (White) -->
+        <path d="M 152 45 Q 135 42, 120 35" fill="none" stroke="white" stroke-width="14" stroke-linecap="round"/>
+    </g>
+
+    <!-- BODY -->
+    <ellipse class="body-color" cx="100" cy="110" rx="45" ry="55" />
+
+    <!-- BODY STRIPES -->
+    <g clip-path="url(#bodyClip)">
+        <path d="M 55 110 L 60 90 M 70 110 L 75 75 M 85 120 L 90 65 M 100 120 L 100 60 M 115 120 L 110 65 M 130 110 L 125 75 M 145 110 L 140 90" class="pattern-color" stroke-width="4" stroke-linecap="round"/>
+    </g>
+
+    <!-- BELLY -->
+    <ellipse class="belly-color" cx="100" cy="115" rx="25" ry="35" />
+
+    <!-- FRONT PAWS -->
+    <!-- Left Paw -->
+    <ellipse class="body-color" cx="75" cy="150" rx="12" ry="10" />
+    <path d="M 70 155 L 70 158 M 75 155 L 75 158 M 80 155 L 80 158" class="line-color" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Right Paw -->
+    <ellipse class="body-color" cx="125" cy="150" rx="12" ry="10" />
+    <path d="M 120 155 L 120 158 M 125 155 L 125 158 M 130 155 L 130 158" class="line-color" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- HEAD -->
+    <circle class="body-color" cx="100" cy="55" r="35" />
+
+    <!-- HEAD STRIPES -->
+    <g clip-path="url(#headClip)">
+        <path d="M 85 30 L 90 45 M 100 25 L 100 50 M 115 30 L 110 45 M 100 35 L 100 50" class="pattern-color" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <!-- EARS (Left) -->
+    <polygon points="70,35 55,0 90,25" class="body-color" class="pattern-color" stroke-width="2" stroke-linejoin="round"/>
+    <polygon points="72,31 62,10 86,27" class="ear-inner-color" />
+    
+    <!-- EARS (Right) -->
+    <polygon points="130,35 145,0 110,25" class="body-color" class="pattern-color" stroke-width="2" stroke-linejoin="round"/>
+    <polygon points="128,31 138,10 114,27" class="ear-inner-color" />
+
+    <!-- BLUSHING CHEEKS -->
+    <ellipse cx="75" cy="65" rx="6" ry="4" fill="#ef476f" opacity="0.4" />
+    <ellipse cx="125" cy="65" rx="6" ry="4" fill="#ef476f" opacity="0.4" />
+
+    <!-- EYES -->
+    <g class="left-eye">
+        <ellipse cx="85" cy="55" rx="5" ry="8" fill="#264653" />
+        <circle cx="83" cy="52" r="2.5" fill="white" />
+    </g>
+    <g class="right-eye">
+        <ellipse cx="115" cy="55" rx="5" ry="8" fill="#264653" />
+        <circle cx="113" cy="52" r="2.5" fill="white" />
+    </g>
+
+    <!-- NOSE & MOUTH -->
+    <polygon points="100,65 95,70 105,70" class="ear-inner-color" />
+    <path d="M 95 75 Q 100 80 105 75" fill="none" class="line-color" stroke-width="2" stroke-linecap="round"/>
+    <line x1="100" y1="70" x2="100" y2="75" class="line-color" stroke-width="2" />
+
+    <!-- WHISKERS (Left) -->
+    <line x1="70" y1="60" x2="35" y2="55" class="line-color" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="70" y1="65" x2="35" y2="65" class="line-color" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="70" y1="70" x2="40" y2="75" class="line-color" stroke-width="1.5" stroke-linecap="round"/>
+    
+    <!-- WHISKERS (Right) -->
+    <line x1="130" y1="60" x2="165" y2="55" class="line-color" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="130" y1="65" x2="165" y2="65" class="line-color" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="130" y1="70" x2="160" y2="75" class="line-color" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- COLLAR & BELL -->
+    <path d="M 70 80 Q 100 90, 130 80" fill="none" class="ear-inner-color" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="100" cy="86" r="7" fill="#ffd166" />
+    <circle cx="100" cy="88" r="2" fill="#264653" />
+    <circle cx="98" cy="85" r="1.5" fill="white" />
+</svg>

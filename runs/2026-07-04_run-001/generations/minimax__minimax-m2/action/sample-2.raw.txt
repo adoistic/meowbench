@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- Background / Ground -->
+  <rect width="400" height="300" fill="#eef7fa"/>
+  <line x1="20" y1="270" x2="380" y2="270" stroke="#78909c" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Bicycle Wheels -->
+  <g stroke="#37474f" stroke-width="8" fill="none">
+    <!-- Back Wheel -->
+    <circle cx="100" cy="230" r="40" />
+    <circle cx="100" cy="230" r="35" stroke="#cfd8dc" stroke-width="2" stroke-dasharray="5,5"/>
+    <!-- Front Wheel -->
+    <circle cx="300" cy="230" r="40" />
+    <circle cx="300" cy="230" r="35" stroke="#cfd8dc" stroke-width="2" stroke-dasharray="5,5"/>
+  </g>
+
+  <!-- Bicycle Frame -->
+  <g stroke="#e91e63" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Rear Triangle -->
+    <path d="M100 230 L190 230 L170 150 Z" />
+    <!-- Front Triangle / Fork -->
+    <path d="M190 230 L250 110 L170 150" />
+    <!-- Fork -->
+    <line x1="250" y1="110" x2="300" y2="230" />
+  </g>
+
+  <!-- Pedals and Chainring -->
+  <circle cx="190" cy="230" r="12" fill="#546e7a" />
+  <line x1="190" y1="230" x2="210" y2="250" stroke="#546e7a" stroke-width="4" stroke-linecap="round"/> <!-- Pedal Arm -->
+  <circle cx="210" cy="250" r="5" fill="#333"/> <!-- Pedal -->
+
+  <!-- Seat -->
+  <path d="M160 150 L185 150" stroke="#333" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Handlebars -->
+  <path d="M250 110 L250 90 L270 85" stroke="#333" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- The Cat -->
+  <g id="cat">
+    <!-- Tail -->
+    <path d="M150 160 Q 120 160 120 130 T 140 110" stroke="#ff9800" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+    <!-- Body -->
+    <ellipse cx="175" cy="140" rx="22" ry="30" fill="#ff9800" transform="rotate(-10 175 140)"/>
+
+    <!-- Back Leg (Pedaling) -->
+    <path d="M165 155 Q 180 180 210 250" stroke="#ff9800" stroke-width="8" fill="none" stroke-linecap="round"/>
+
+    <!-- Front Leg (Holding handle) -->
+    <path d="M180 130 Q 220 120 265 90" stroke="#ff9800" stroke-width="8" fill="none" stroke-linecap="round"/>
+
+    <!-- Head -->
+    <g transform="translate(175, 105)">
+      <!-- Ears -->
+      <path d="M-15 -10 L-20 -30 L-5 -15 Z" fill="#ff9800"/>
+      <path d="M15 -10 L20 -30 L5 -15 Z" fill="#ff9800"/>
+      <!-- Head Shape -->
+      <circle cx="0" cy="0" r="22" fill="#ff9800"/>
+      <!-- Face -->
+      <circle cx="-7" cy="-2" r="2.5" fill="white"/>
+      <circle cx="-7" cy="-2" r="1" fill="black"/>
+      <circle cx="7" cy="-2" r="2.5" fill="white"/>
+      <circle cx="7" cy="-2" r="1" fill="black"/>
+      <path d="M-2 4 L2 4 L0 7 Z" fill="pink"/>
+      <!-- Whiskers -->
+      <line x1="-10" y1="6" x2="-25" y2="4" stroke="#e65100" stroke-width="1"/>
+      <line x1="-10" y1="8" x2="-25" y2="9" stroke="#e65100" stroke-width="1"/>
+      <line x1="10" y1="6" x2="25" y2="4" stroke="#e65100" stroke-width="1"/>
+      <line x1="10" y1="8" x2="25" y2="9" stroke="#e65100" stroke-width="1"/>
+    </g>
+  </g>
+  
+  <!-- Motion Lines -->
+  <g stroke="#4fc3f7" stroke-width="2" stroke-linecap="round" opacity="0.7">
+    <line x1="40" y1="200" x2="20" y2="200" />
+    <line x1="50" y1="220" x2="10" y2="220" />
+    <line x1="350" y1="210" x2="330" y2="210" />
+  </g>
+</svg>

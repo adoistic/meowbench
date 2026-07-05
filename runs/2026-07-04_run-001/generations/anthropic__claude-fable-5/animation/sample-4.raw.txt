@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <style>
+      .fur { fill: #f4a460; }
+      .furdark { fill: #e08f4f; }
+    </style>
+  </defs>
+
+  <!-- background -->
+  <rect width="400" height="400" fill="#e8f4f8"/>
+  <ellipse cx="200" cy="330" rx="140" ry="20" fill="#c9dde5"/>
+
+  <!-- tail (animated) -->
+  <g transform="translate(285,290)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate"
+        values="0; 28; 0; -18; 0" keyTimes="0;0.25;0.5;0.75;1"
+        dur="3s" repeatCount="indefinite" calcMode="spline"
+        keySplines="0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1"/>
+      <path d="M0,0 C60,-10 80,-60 60,-110 C55,-122 40,-120 42,-105 C56,-65 40,-25 -5,-18 Z"
+            class="fur" stroke="#c97b3d" stroke-width="3" stroke-linejoin="round"/>
+      <circle cx="50" cy="-112" r="10" fill="#fff" opacity="0.55"/>
+    </g>
+  </g>
+
+  <!-- body -->
+  <ellipse cx="215" cy="285" rx="85" ry="55" class="fur" stroke="#c97b3d" stroke-width="3"/>
+  <!-- belly -->
+  <ellipse cx="200" cy="300" rx="45" ry="30" fill="#ffe4c4"/>
+
+  <!-- front paws -->
+  <ellipse cx="160" cy="332" rx="18" ry="10" fill="#ffe4c4" stroke="#c97b3d" stroke-width="2.5"/>
+  <ellipse cx="205" cy="335" rx="18" ry="10" fill="#ffe4c4" stroke="#c97b3d" stroke-width="2.5"/>
+
+  <!-- head -->
+  <g>
+    <!-- ears -->
+    <path d="M95,140 L88,90 L135,115 Z" class="fur" stroke="#c97b3d" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M195,140 L202,90 L155,115 Z" class="fur" stroke="#c97b3d" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M100,132 L96,103 L124,118 Z" fill="#f7c2cf"/>
+    <path d="M190,132 L194,103 L166,118 Z" fill="#f7c2cf"/>
+
+    <!-- face -->
+    <circle cx="145" cy="175" r="62" class="fur" stroke="#c97b3d" stroke-width="3"/>
+
+    <!-- stripes -->
+    <path d="M132,116 q13,-8 26,0 l-4,14 q-9,-5 -18,0 Z" class="furdark"/>
+
+    <!-- eyes -->
+    <g>
+      <ellipse cx="122" cy="168" rx="8" ry="10" fill="#3a2a1a"/>
+      <ellipse cx="168" cy="168" rx="8" ry="10" fill="#3a2a1a"/>
+      <circle cx="125" cy="164" r="3" fill="#fff"/>
+      <circle cx="171" cy="164" r="3" fill="#fff"/>
+      <!-- blink -->
+      <rect x="108" y="150" width="76" height="0" class="fur">
+        <animate attributeName="height" values="0;0;22;0;0" keyTimes="0;0.44;0.48;0.52;1" dur="5s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="158;158;158;158;158" dur="5s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- nose & mouth -->
+    <path d="M139,190 L151,190 L145,198 Z" fill="#e77a8f"/>
+    <path d="M145,198 q0,8 -10,10 M145,198 q0,8 10,10" fill="none" stroke="#8a5a30" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- whiskers -->
+    <g stroke="#8a5a30" stroke-width="2" stroke-linecap="round">
+      <line x1="98" y1="188" x2="62" y2="182"/>
+      <line x1="98" y1="198" x2="64" y2="202"/>
+      <line x1="192" y1="188" x2="228" y2="182"/>
+      <line x1="192" y1="198" x2="226" y2="202"/>
+    </g>
+
+    <!-- cheeks -->
+    <ellipse cx="108" cy="192" rx="9" ry="5" fill="#f7c2cf" opacity="0.7"/>
+    <ellipse cx="182" cy="192" rx="9" ry="5" fill="#f7c2cf" opacity="0.7"/>
+  </g>
+
+  <!-- body stripes -->
+  <path d="M255,245 q12,15 10,32 l-14,-3 q2,-15 -6,-25 Z" class="furdark"/>
+  <path d="M275,265 q8,12 6,26 l-13,-3 q2,-12 -4,-20 Z" class="furdark"/>
+</svg>

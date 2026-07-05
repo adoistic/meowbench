@@ -1,0 +1,21 @@
+{
+  "valid": false,
+  "reasons": [
+    "forbidden-tag:script"
+  ],
+  "stats": {
+    "bytes": 7420,
+    "elements": 72,
+    "paths": 12,
+    "colors": [
+      "#202020",
+      "#a2a938",
+      "#e8e8d8",
+      "#ff6b81",
+      "#ff8696",
+      "#ffe4c4",
+      "#fffaf0",
+      "#ffffff"
+    ]
+  }
+}

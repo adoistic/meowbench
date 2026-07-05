@@ -1,0 +1,312 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 420">
+  <defs>
+    <!-- Body fur gradients -->
+    <linearGradient id="bodyGrad" x1="70%" y1="10%" x2="25%" y2="90%">
+      <stop offset="0%" stop-color="#8f735e"/>
+      <stop offset="40%" stop-color="#a4876e"/>
+      <stop offset="75%" stop-color="#c7b096"/>
+      <stop offset="100%" stop-color="#e2d0bd"/>
+    </linearGradient>
+    <radialGradient id="bellyLight" cx="35%" cy="72%" r="55%">
+      <stop offset="0%" stop-color="#f1e5d8" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#e7d5c3" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="transparent" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="headGrad" x1="70%" y1="0%" x2="20%" y2="80%">
+      <stop offset="0%" stop-color="#8c6f59"/>
+      <stop offset="60%" stop-color="#b89f89"/>
+      <stop offset="100%" stop-color="#d6c4b0"/>
+    </linearGradient>
+    <linearGradient id="tailGrad" x1="10%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#7d6655"/>
+      <stop offset="60%" stop-color="#a88f7a"/>
+      <stop offset="100%" stop-color="#cdb7a3"/>
+    </linearGradient>
+    <linearGradient id="earIn" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f0b7b7"/>
+      <stop offset="100%" stop-color="#c98e8e"/>
+    </linearGradient>
+    <radialGradient id="iris" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d7f5ad"/>
+      <stop offset="60%" stop-color="#87b86b"/>
+      <stop offset="100%" stop-color="#3f6a35"/>
+    </radialGradient>
+    <linearGradient id="noseGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e6a3a3"/>
+      <stop offset="100%" stop-color="#b26b6b"/>
+    </linearGradient>
+    <radialGradient id="shadowGrad" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#000" stop-opacity="0.28"/>
+      <stop offset="90%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Fur texture filter: subtle fine noise multiplied into colors -->
+    <filter id="furTexture" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.2" numOctaves="3" seed="9" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="
+        1 0 0 0 0
+        0 1 0 0 0
+        0 0 1 0 0
+        0 0 0 0.9 0" result="noisergb"/>
+      <feComponentTransfer in="noisergb" result="noised">
+        <feFuncR type="table" tableValues="0.45 0.55"/>
+        <feFuncG type="table" tableValues="0.45 0.55"/>
+        <feFuncB type="table" tableValues="0.45 0.55"/>
+        <feFuncA type="table" tableValues="0 0.4"/>
+      </feComponentTransfer>
+      <feBlend in="SourceGraphic" in2="noised" mode="multiply" result="mul"/>
+      <feGaussianBlur in="mul" stdDeviation="0.15" result="soft"/>
+      <feComposite in="soft" in2="SourceAlpha" operator="over"/>
+    </filter>
+
+    <!-- Slight directional fur streaks (subtle) -->
+    <filter id="furStreaks" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04 0.9" numOctaves="2" seed="3" result="turb"/>
+      <feColorMatrix in="turb" type="matrix" values="
+        0 0 0 0 0.5
+        0 0 0 0 0.5
+        0 0 0 0 0.5
+        0 0 0 1 -0.4" result="alphaNoise"/>
+      <feGaussianBlur in="alphaNoise" stdDeviation="0.35" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="arithmetic" k1="0" k2="0.92" k3="0.08" k4="0"/>
+    </filter>
+
+    <!-- Soft shading blur -->
+    <filter id="soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="1.5"/>
+    </filter>
+
+    <!-- Clip paths for texture overlays -->
+    <clipPath id="clipBody">
+      <path d="M170 130
+               C230 120 282 170 262 240
+               C257 258 250 273 234 288
+               C209 311 167 315 143 303
+               C117 290 108 266 118 236
+               C126 213 149 176 170 160 Z"/>
+    </clipPath>
+    <clipPath id="clipHead">
+      <path d="M108 86
+               C103 112 115 145 147 150
+               C168 153 190 141 195 119
+               C198 108 197 95 191 84
+               C184 71 171 63 157 62
+               C138 61 117 71 108 86 Z"/>
+    </clipPath>
+    <clipPath id="clipTail">
+      <path d="M255 238
+               C292 258 275 301 225 320
+               C195 331 161 326 151 311
+               C147 305 149 297 159 295
+               C174 292 189 302 212 298
+               C242 293 268 266 255 238 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Ground shadow -->
+  <ellipse cx="200" cy="340" rx="120" ry="28" fill="url(#shadowGrad)"/>
+
+  <!-- Body -->
+  <g filter="url(#furTexture)">
+    <path id="body" d="M170 130
+                       C230 120 282 170 262 240
+                       C257 258 250 273 234 288
+                       C209 311 167 315 143 303
+                       C117 290 108 266 118 236
+                       C126 213 149 176 170 160 Z"
+          fill="url(#bodyGrad)"/>
+    <!-- Belly light -->
+    <path d="M170 160
+             C165 183 154 203 142 221
+             C133 235 130 252 141 268
+             C154 286 196 290 219 276
+             C237 265 247 245 251 232
+             C244 244 233 251 220 258
+             C204 266 182 268 165 261
+             C147 252 138 238 143 226
+             C150 210 163 185 170 160 Z"
+          fill="url(#bellyLight)" opacity="0.9"/>
+    <!-- Back shadow -->
+    <path d="M210 126
+             C246 133 270 166 259 209
+             C255 226 246 241 238 249
+             C246 225 240 199 227 180
+             C217 167 202 156 185 150
+             C199 142 209 135 210 126 Z"
+          fill="#5a473b" opacity="0.18" filter="url(#soft)"/>
+  </g>
+
+  <!-- Tail -->
+  <g filter="url(#furTexture)">
+    <path d="M255 238
+             C292 258 275 301 225 320
+             C195 331 161 326 151 311
+             C147 305 149 297 159 295
+             C174 292 189 302 212 298
+             C242 293 268 266 255 238 Z"
+          fill="url(#tailGrad)"/>
+    <!-- Tail underside shadow -->
+    <path d="M220 314
+             C240 309 257 293 261 277
+             C251 294 232 306 208 311
+             C182 316 162 313 152 306
+             C158 316 176 321 198 319 Z"
+          fill="#4d3f34" opacity="0.22" filter="url(#soft)"/>
+  </g>
+
+  <!-- Head -->
+  <g filter="url(#furTexture)">
+    <path d="M108 86
+             C103 112 115 145 147 150
+             C168 153 190 141 195 119
+             C198 108 197 95 191 84
+             C184 71 171 63 157 62
+             C138 61 117 71 108 86 Z"
+          fill="url(#headGrad)"/>
+    <!-- Ears -->
+    <path d="M120 68 L106 93 L136 92 Z" fill="#775e4d"/>
+    <path d="M120 68 L110 91 L132 89 Z" fill="url(#earIn)" opacity="0.8"/>
+    <path d="M181 64 L198 96 L165 92 Z" fill="#775e4d"/>
+    <path d="M181 64 L194 93 L169 90 Z" fill="url(#earIn)" opacity="0.8"/>
+
+    <!-- Eye sockets subtle shade -->
+    <ellipse cx="138" cy="110" rx="16" ry="12" fill="#3b332b" opacity="0.15"/>
+    <ellipse cx="170" cy="110" rx="16" ry="12" fill="#3b332b" opacity="0.15"/>
+
+    <!-- Eyes -->
+    <g>
+      <ellipse cx="138" cy="110" rx="12" ry="9" fill="url(#iris)"/>
+      <ellipse cx="170" cy="110" rx="12" ry="9" fill="url(#iris)"/>
+      <ellipse cx="138" cy="110" rx="4" ry="9" fill="#0b0b0b"/>
+      <ellipse cx="170" cy="110" rx="4" ry="9" fill="#0b0b0b"/>
+      <circle cx="142" cy="106" r="2" fill="#fff" opacity="0.9"/>
+      <circle cx="173" cy="106" r="2" fill="#fff" opacity="0.9"/>
+    </g>
+
+    <!-- Nose and muzzle -->
+    <path d="M150 126
+             C152 129 156 130 160 129
+             C165 128 166 126 167 124
+             C165 125 162 125 160 125
+             C156 125 152 124 150 123 Z"
+          fill="#f4e8da" opacity="0.9"/>
+    <path d="M158 122
+             C160 121 163 121 165 122
+             C165 125 162 129 160 129
+             C158 129 155 125 155 122
+             C156 121 157 121 158 122 Z"
+          fill="url(#noseGrad)"/>
+    <path d="M160 129 L160 135" stroke="#2a2420" stroke-width="1" stroke-linecap="round"/>
+    <path d="M160 135 C156 137 151 138 146 136" stroke="#2a2420" stroke-width="1" fill="none" stroke-linecap="round"/>
+    <path d="M160 135 C164 137 169 138 174 136" stroke="#2a2420" stroke-width="1" fill="none" stroke-linecap="round"/>
+
+    <!-- Cheek highlights -->
+    <ellipse cx="142" cy="130" rx="10" ry="6" fill="#fff" opacity="0.18"/>
+    <ellipse cx="178" cy="128" rx="10" ry="6" fill="#fff" opacity="0.12"/>
+
+    <!-- Chin shadow -->
+    <path d="M144 140
+             C153 145 168 145 177 140
+             C170 148 151 149 144 140 Z"
+          fill="#2b2220" opacity="0.12"/>
+  </g>
+
+  <!-- Chest ruff -->
+  <g filter="url(#furTexture)">
+    <path d="M140 170
+             C130 175 118 197 121 215
+             C123 230 136 245 153 250
+             C170 255 193 250 205 238
+             C215 228 222 212 219 198
+             C216 185 206 175 193 170
+             C177 164 155 163 140 170 Z"
+          fill="#eee4d6" opacity="0.85"/>
+    <!-- Ruff shadow layers -->
+    <path d="M147 178 C140 184 138 196 143 206 C147 214 157 219 168 219 C179 219 190 214 196 206 C202 197 200 185 193 178 Z"
+          fill="#5a4b41" opacity="0.1"/>
+  </g>
+
+  <!-- Forepaws -->
+  <g filter="url(#furTexture)">
+    <path d="M132 276
+             C120 300 128 318 147 320
+             C166 322 179 314 177 295
+             C176 286 172 280 172 275
+             C164 282 151 285 140 283
+             C136 282 133 279 132 276 Z"
+          fill="#d7c3ae"/>
+    <path d="M175 272
+             C168 282 167 296 175 307
+             C181 315 197 318 210 312
+             C225 305 227 289 217 279
+             C209 271 197 269 187 271
+             C181 272 178 273 175 272 Z"
+          fill="#cdb9a5"/>
+    <!-- Toes -->
+    <path d="M140 308 C144 312 151 313 157 311" stroke="#6b5b4e" stroke-width="1" opacity="0.6"/>
+    <path d="M182 308 C187 311 197 311 205 308" stroke="#6b5b4e" stroke-width="1" opacity="0.6"/>
+  </g>
+
+  <!-- Subtle tabby stripes on body -->
+  <g opacity="0.28" filter="url(#furStreaks)" clip-path="url(#clipBody)">
+    <path d="M210 150 C225 160 234 176 237 190" stroke="#4a3d34" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.5"/>
+    <path d="M195 158 C210 168 220 184 222 199" stroke="#4a3d34" stroke-width="3.5" stroke-linecap="round" fill="none" opacity="0.45"/>
+    <path d="M180 166 C195 176 204 191 206 205" stroke="#4a3d34" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.42"/>
+    <path d="M168 176 C182 186 191 198 193 211" stroke="#4a3d34" stroke-width="2.6" stroke-linecap="round" fill="none" opacity="0.4"/>
+    <path d="M160 188 C174 198 183 207 186 219" stroke="#4a3d34" stroke-width="2.2" stroke-linecap="round" fill="none" opacity="0.38"/>
+  </g>
+
+  <!-- Tail stripes -->
+  <g opacity="0.35" clip-path="url(#clipTail)" filter="url(#furStreaks)">
+    <path d="M252 244 C266 252 263 272 248 286" stroke="#3f342c" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M238 252 C254 260 248 280 228 293" stroke="#3f342c" stroke-width="3.2" stroke-linecap="round" fill="none" opacity="0.7"/>
+    <path d="M220 262 C236 270 230 289 210 299" stroke="#3f342c" stroke-width="2.6" stroke-linecap="round" fill="none" opacity="0.7"/>
+  </g>
+
+  <!-- Face stripes -->
+  <g opacity="0.35" clip-path="url(#clipHead)" filter="url(#furStreaks)">
+    <path d="M128 98 C134 102 138 108 139 114" stroke="#3e342c" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+    <path d="M178 98 C172 102 168 108 167 114" stroke="#3e342c" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+    <path d="M120 112 C132 118 140 127 142 134" stroke="#3e342c" stroke-width="1.8" stroke-linecap="round" fill="none" opacity="0.7"/>
+    <path d="M186 112 C174 118 166 127 164 134" stroke="#3e342c" stroke-width="1.8" stroke-linecap="round" fill="none" opacity="0.7"/>
+  </g>
+
+  <!-- Whiskers -->
+  <g opacity="0.9">
+    <g stroke="#f9f4ef" stroke-width="1.2" stroke-linecap="round">
+      <path d="M150 136 C120 132 95 130 70 133"/>
+      <path d="M149 140 C120 144 95 148 70 152"/>
+      <path d="M149 144 C120 154 94 164 72 175"/>
+    </g>
+    <g stroke="#f9f4ef" stroke-width="1.2" stroke-linecap="round">
+      <path d="M171 136 C201 132 226 130 251 133"/>
+      <path d="M172 140 C201 144 226 148 251 152"/>
+      <path d="M172 144 C201 154 227 164 249 175"/>
+    </g>
+  </g>
+
+  <!-- Outline accents for realism -->
+  <g>
+    <path d="M170 130
+             C230 120 282 170 262 240
+             C257 258 250 273 234 288
+             C209 311 167 315 143 303
+             C117 290 108 266 118 236
+             C126 213 149 176 170 160 Z"
+          fill="none" stroke="#463a31" stroke-opacity="0.45" stroke-width="1.2"/>
+    <path d="M108 86
+             C103 112 115 145 147 150
+             C168 153 190 141 195 119
+             C198 108 197 95 191 84
+             C184 71 171 63 157 62
+             C138 61 117 71 108 86 Z"
+          fill="none" stroke="#463a31" stroke-opacity="0.45" stroke-width="1.1"/>
+    <path d="M255 238
+             C292 258 275 301 225 320
+             C195 331 161 326 151 311
+             C147 305 149 297 159 295
+             C174 292 189 302 212 298
+             C242 293 268 266 255 238 Z"
+          fill="none" stroke="#463a31" stroke-opacity="0.45" stroke-width="1.1"/>
+  </g>
+</svg>

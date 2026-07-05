@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#1A223A" />
+      <stop offset="60%" stop-color="#0C101A" />
+      <stop offset="100%" stop-color="#04060A" />
+    </radialGradient>
+    <filter id="shadow-main" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="25" stdDeviation="30" flood-color="#020305" flood-opacity="0.85" />
+    </filter>
+    <filter id="shadow-tail" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="-5" dy="15" stdDeviation="15" flood-color="#020305" flood-opacity="0.95" />
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#bgGrad)" />
+
+  <g id="bg-geometry" opacity="0.3">
+    <circle cx="400" cy="480" r="380" fill="none" stroke="#FFCC66" stroke-width="1.5" stroke-opacity="0.2" />
+    <circle cx="400" cy="480" r="365" fill="none" stroke="#FFCC66" stroke-width="0.5" stroke-opacity="0.1" />
+    <circle cx="400" cy="480" r="280" fill="none" stroke="#FF9900" stroke-width="1" stroke-opacity="0.15" />
+    <polygon points="400,100 780,480 400,860 20,480" fill="none" stroke="#FF8800" stroke-width="1.5" stroke-opacity="0.25" />
+    <polygon points="400,200 680,480 400,760 120,480" fill="none" stroke="#E65C00" stroke-width="0.75" stroke-opacity="0.2" />
+  </g>
+
+  <g id="magical-sparks">
+    <polygon points="200,300 215,285 205,310" fill="#FFDD80" opacity="0.6" />
+    <polygon points="120,600 130,590 120,605" fill="#FFAA33" opacity="0.8" />
+    <polygon points="650,250 660,240 665,260 655,270" fill="#F26A00" opacity="0.5" />
+    <polygon points="700,750 710,740 705,755" fill="#CC4400" opacity="0.7" />
+    <polygon points="300,100 310,80 320,110" fill="#FFF0B3" opacity="0.9" />
+    <polygon points="500,850 515,835 505,860" fill="#802200" opacity="0.6" />
+    <polygon points="100,200 110,195 105,210" fill="#FFCC66" opacity="0.4" />
+  </g>
+
+  <g id="cat_body" filter="url(#shadow-main)">
+    <polygon points="250,120 280,280 330,240" fill="#FF9900" />
+    <polygon points="250,120 230,320 280,280" fill="#FFCC66" />
+    <polygon points="250,120 330,240 400,200" fill="#FFDD80" />
+    
+    <polygon points="550,120 470,240 520,280" fill="#5E1500" />
+    <polygon points="550,120 570,320 520,280" fill="#E65C00" />
+    <polygon points="550,120 400,200 470,240" fill="#FF8800" />
+
+    <polygon points="400,200 330,240 400,280" fill="#FFB347" />
+    <polygon points="400,200 400,280 470,240" fill="#F26A00" />
+
+    <polygon points="330,240 230,320 280,320" fill="#FFAA33" />
+    <polygon points="330,240 280,320 330,310" fill="#FFCC66" />
+    <polygon points="330,240 330,310 360,340" fill="#FFB347" />
+    <polygon points="330,240 360,340 400,280" fill="#FFAA33" />
+
+    <polygon points="470,240 520,320 570,320" fill="#A63300" />
+    <polygon points="470,240 470,310 520,320" fill="#E65C00" />
+    <polygon points="470,240 440,340 470,310" fill="#CC4400" />
+    <polygon points="470,240 400,280 440,340" fill="#F26A00" />
+
+    <polygon points="400,280 360,340 400,430" fill="#FFAA33" />
+    <polygon points="400,280 400,430 440,340" fill="#E65C00" />
+
+    <polygon points="280,320 180,400 310,350" fill="#FF9900" />
+    <polygon points="310,350 180,400 340,450" fill="#FFAA33" />
+    <polygon points="310,350 340,450 360,340" fill="#FFB347" />
+    <polygon points="360,340 340,450 400,430" fill="#FFCC66" />
+    <polygon points="180,400 260,480 340,450" fill="#F26A00" />
+    <polygon points="230,320 180,400 280,320" fill="#FF8800" />
+
+    <polygon points="520,320 490,350 620,400" fill="#802200" />
+    <polygon points="490,350 460,450 620,400" fill="#A63300" />
+    <polygon points="490,350 440,340 460,450" fill="#E65C00" />
+    <polygon points="440,340 400,430 460,450" fill="#F26A00" />
+    <polygon points="620,400 460,450 540,480" fill="#5E1500" />
+    <polygon points="570,320 520,320 620,400" fill="#3D0B00" />
+
+    <polygon points="340,450 400,500 400,430" fill="#FFB347" />
+    <polygon points="460,450 400,430 400,500" fill="#CC4400" />
+    <polygon points="340,450 260,480 400,500" fill="#FF8800" />
+    <polygon points="460,450 400,500 540,480" fill="#802200" />
+
+    <polygon points="180,400 260,480 140,500" fill="#E65C00" />
+    <polygon points="260,480 300,550 140,500" fill="#FF9900" />
+    <polygon points="300,550 240,640 140,500" fill="#FFB347" />
+    <polygon points="300,550 400,620 240,640" fill="#FFCC66" />
+    <polygon points="400,620 400,780 240,640" fill="#FFB347" />
+
+    <polygon points="400,500 260,480 300,550" fill="#CC4400" />
+    <polygon points="400,500 400,620 300,550" fill="#FF8800" />
+
+    <polygon points="620,400 540,480 660,500" fill="#230500" />
+    <polygon points="540,480 500,550 660,500" fill="#5E1500" />
+    <polygon points="500,550 560,640 660,500" fill="#A63300" />
+    <polygon points="500,550 400,620 560,640" fill="#CC4400" />
+    <polygon points="400,620 400,780 560,640" fill="#802200" />
+
+    <polygon points="400,500 540,480 500,550" fill="#3D0B00" />
+    <polygon points="400,500 500,550 400,620" fill="#A63300" />
+
+    <polygon points="400,780 240,640 340,720" fill="#FF9900" />
+    <polygon points="240,640 220,940 340,720" fill="#FFAA33" />
+    <polygon points="340,720 220,940 360,940" fill="#FFB347" />
+    <polygon points="340,720 360,940 400,880" fill="#FF8800" />
+    <polygon points="400,780 340,720 400,880" fill="#F26A00" />
+
+    <polygon points="400,780 560,640 460,720" fill="#802200" />
+    <polygon points="560,640 580,940 460,720" fill="#A63300" />
+    <polygon points="460,720 580,940 440,940" fill="#CC4400" />
+    <polygon points="460,720 440,940 400,880" fill="#5E1500" />
+    <polygon points="400,780 460,720 400,880" fill="#3D0B00" />
+    
+    <polygon points="360,940 440,940 400,880" fill="#802200" />
+
+    <polygon points="140,500 240,640 100,700" fill="#F26A00" />
+    <polygon points="100,700 240,640 220,940" fill="#FF8800" />
+    <polygon points="100,700 220,940 120,840" fill="#E65C00" />
+    <polygon points="120,840 220,940 180,940" fill="#CC4400" />
+
+    <polygon points="660,500 560,640 700,700" fill="#3D0B00" />
+    <polygon points="700,700 560,640 580,940" fill="#5E1500" />
+    <polygon points="700,700 580,940 680,840" fill="#230500" />
+    <polygon points="680,840 580,940 620,940" fill="#110200" />
+
+    <!-- Left Eye Hex -->
+    <polygon points="280,320 330,310 325,330" fill="#00FFFF" />
+    <polygon points="330,310 360,340 325,330" fill="#A0FFFF" />
+    <polygon points="360,340 310,350 325,330" fill="#00B3B3" />
+    <polygon points="310,350 280,320 325,330" fill="#008080" />
+
+    <!-- Right Eye Hex -->
+    <polygon points="520,320 470,310 475,330" fill="#00B3B3" />
+    <polygon points="470,310 440,340 475,330" fill="#008080" />
+    <polygon points="440,340 490,350 475,330" fill="#004D4D" />
+    <polygon points="490,350 520,320 475,330" fill="#006666" />
+
+    <!-- Nose Pad -->
+    <polygon points="400,430 380,410 400,410" fill="#110200" />
+    <polygon points="400,430 400,410 420,410" fill="#000000" />
+    <polygon points="385,414 390,411 390,416" fill="#FF8800" opacity="0.8" />
+  </g>
+
+  <g id="tail" filter="url(#shadow-tail)">
+    <polygon points="680,840 720,800 770,880" fill="#110200" />
+    <polygon points="680,840 720,870 770,880" fill="#230500" />
+
+    <polygon points="720,870 770,880 680,960" fill="#230500" />
+    <polygon points="720,870 650,930 680,960" fill="#3D0B00" />
+
+    <polygon points="650,930 680,960 560,990" fill="#5E1500" />
+    <polygon points="650,930 550,950 560,990" fill="#A63300" />
+
+    <polygon points="550,950 560,990 400,990" fill="#CC4400" />
+    <polygon points="550,950 400,950 400,990" fill="#F26A00" />
+
+    <polygon points="400,950 400,990 230,970" fill="#FF8800" />
+    <polygon points="400,950 250,930 230,970" fill="#FFAA33" />
+
+    <polygon points="250,930 230,970 120,900" fill="#FFB347" />
+    <polygon points="250,930 150,890 120,900" fill="#FFCC66" />
+
+    <polygon points="150,890 120,900 150,840" fill="#FF9900" />
+    <polygon points="150,890 180,850 150,840" fill="#FFAA33" />
+  </g>
+
+  <g id="whiskers" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.85">
+    <g stroke="#FFDD80" stroke-width="2.5">
+      <polyline points="260,440 120,420 80,430" />
+      <polyline points="280,455 110,460 60,480" />
+      <polyline points="270,470 130,490 90,520" />
+    </g>
+    <g stroke="#CC4400" stroke-width="2.5">
+      <polyline points="540,440 680,420 720,430" />
+      <polyline points="520,455 690,460 740,480" />
+      <polyline points="530,470 670,490 710,520" />
+    </g>
+  </g>
+
+</svg>

@@ -1,0 +1,13 @@
+```svg
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="100,10 40,180 100,140 160,180" fill="#8A2BE2" />
+  <polygon points="100,10 70,100 100,140 130,100" fill="#9370DB" />
+  <polygon points="100,140 70,100 40,180" fill="#7B68EE" />
+  <polygon points="100,140 130,100 160,180" fill="#6A5ACD" />
+  <polygon points="70,100 55,125 100,140" fill="#4B0082" />
+  <polygon points="130,100 145,125 100,140" fill="#483D8B" />
+  <polygon points="55,125 70,100 85,90" fill="#3A2F8F" />
+  <polygon points="145,125 130,100 115,90" fill="#5D3FD3" />
+  <polygon points="70,100 85,90 115,90 130,100" fill="#9370DB" />
+</svg>
+```

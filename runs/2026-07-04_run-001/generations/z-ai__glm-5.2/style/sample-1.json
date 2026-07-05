@@ -1,0 +1,9 @@
+{
+  "modelSlug": "z-ai/glm-5.2",
+  "promptId": "style",
+  "sample": 1,
+  "status": "ok",
+  "temperature": 1,
+  "rawPath": "generations/z-ai__glm-5.2/style/sample-1.raw.txt",
+  "svgPath": "generations/z-ai__glm-5.2/style/sample-1.svg"
+}

@@ -1,0 +1,206 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="600" height="500">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#87CEEB"/>
+      <stop offset="100%" stop-color="#FFE4B5"/>
+    </linearGradient>
+    <linearGradient id="frame" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E63946"/>
+      <stop offset="100%" stop-color="#A4161A"/>
+    </linearGradient>
+    <radialGradient id="cat" cx="0.5" cy="0.5" r="0.6">
+      <stop offset="0%" stop-color="#FFB347"/>
+      <stop offset="100%" stop-color="#E07B00"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky background -->
+  <rect width="600" height="500" fill="url(#sky)"/>
+
+  <!-- Sun -->
+  <circle cx="520" cy="80" r="40" fill="#FFD93D" opacity="0.9"/>
+  <circle cx="520" cy="80" r="50" fill="#FFD93D" opacity="0.3"/>
+
+  <!-- Clouds -->
+  <g fill="white" opacity="0.85">
+    <ellipse cx="100" cy="90" rx="40" ry="15"/>
+    <ellipse cx="130" cy="85" rx="35" ry="18"/>
+    <ellipse cx="80" cy="95" rx="25" ry="12"/>
+    <ellipse cx="380" cy="60" rx="45" ry="14"/>
+    <ellipse cx="410" cy="55" rx="30" ry="15"/>
+  </g>
+
+  <!-- Ground -->
+  <rect y="430" width="600" height="70" fill="#8B7355"/>
+  <rect y="430" width="600" height="10" fill="#6B8E23"/>
+
+  <!-- Motion lines -->
+  <g stroke="#555" stroke-width="2" stroke-linecap="round" opacity="0.5">
+    <line x1="40" y1="280" x2="80" y2="280"/>
+    <line x1="30" y1="310" x2="75" y2="310"/>
+    <line x1="50" y1="340" x2="90" y2="340"/>
+    <line x1="35" y1="370" x2="70" y2="370"/>
+  </g>
+
+  <!-- Bicycle shadow -->
+  <ellipse cx="300" cy="445" rx="200" ry="10" fill="#000" opacity="0.2"/>
+
+  <!-- Rear Wheel -->
+  <g>
+    <circle cx="160" cy="380" r="65" fill="none" stroke="#333" stroke-width="6"/>
+    <circle cx="160" cy="380" r="8" fill="#666"/>
+    <circle cx="160" cy="380" r="4" fill="#333"/>
+    <!-- Spokes -->
+    <g stroke="#888" stroke-width="1.5">
+      <line x1="160" y1="315" x2="160" y2="445"/>
+      <line x1="95" y1="380" x2="225" y2="380"/>
+      <line x1="114" y1="334" x2="206" y2="426"/>
+      <line x1="206" y1="334" x2="114" y2="426"/>
+    </g>
+  </g>
+
+  <!-- Front Wheel -->
+  <g>
+    <circle cx="440" cy="380" r="65" fill="none" stroke="#333" stroke-width="6"/>
+    <circle cx="440" cy="380" r="8" fill="#666"/>
+    <circle cx="440" cy="380" r="4" fill="#333"/>
+    <!-- Spokes -->
+    <g stroke="#888" stroke-width="1.5">
+      <line x1="440" y1="315" x2="440" y2="445"/>
+      <line x1="375" y1="380" x2="505" y2="380"/>
+      <line x1="394" y1="334" x2="486" y2="426"/>
+      <line x1="486" y1="334" x2="394" y2="426"/>
+    </g>
+  </g>
+
+  <!-- Bicycle Frame -->
+  <g stroke="url(#frame)" stroke-width="10" stroke-linecap="round" fill="none">
+    <!-- Down tube -->
+    <line x1="160" y1="380" x2="300" y2="270"/>
+    <!-- Seat tube -->
+    <line x1="300" y1="270" x2="300" y2="380"/>
+    <!-- Top tube -->
+    <line x1="300" y1="270" x2="420" y2="250"/>
+    <!-- Chain stay -->
+    <line x1="160" y1="380" x2="300" y2="380"/>
+    <!-- Seat stay -->
+    <line x1="300" y1="270" x2="160" y2="380"/>
+    <!-- Head tube / fork -->
+    <line x1="420" y1="250" x2="440" y2="380"/>
+  </g>
+
+  <!-- Pedal crank -->
+  <circle cx="300" cy="380" r="15" fill="#444"/>
+  <circle cx="300" cy="380" r="6" fill="#222"/>
+  <line x1="300" y1="380" x2="320" y2="395" stroke="#444" stroke-width="6" stroke-linecap="round"/>
+  <rect x="312" y="392" width="20" height="6" fill="#222" rx="2"/>
+
+  <!-- Seat post and seat -->
+  <line x1="300" y1="270" x2="290" y2="230" stroke="#444" stroke-width="6"/>
+  <ellipse cx="285" cy="225" rx="22" ry="8" fill="#222"/>
+
+  <!-- Handlebar stem -->
+  <line x1="420" y1="250" x2="425" y2="210" stroke="#444" stroke-width="6"/>
+  <!-- Handlebars -->
+  <path d="M 400 210 Q 425 200 450 210" stroke="#222" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <circle cx="398" cy="210" r="6" fill="#222"/>
+  <circle cx="452" cy="210" r="6" fill="#222"/>
+
+  <!-- Cat tail (behind body) -->
+  <path d="M 240 250 Q 180 230 170 200 Q 165 180 185 175" stroke="#E07B00" stroke-width="14" fill="none" stroke-linecap="round"/>
+  <path d="M 240 250 Q 180 230 170 200 Q 165 180 185 175" stroke="#FFB347" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <!-- Tail stripes -->
+  <g stroke="#B85900" stroke-width="2" stroke-linecap="round" fill="none">
+    <path d="M 215 240 Q 220 235 218 232"/>
+    <path d="M 195 222 Q 200 218 198 215"/>
+    <path d="M 178 198 Q 184 195 182 192"/>
+  </g>
+
+  <!-- Cat body -->
+  <ellipse cx="270" cy="220" rx="60" ry="55" fill="url(#cat)"/>
+  <!-- Body stripes -->
+  <g stroke="#B85900" stroke-width="2.5" fill="none" stroke-linecap="round">
+    <path d="M 225 200 Q 230 195 235 200"/>
+    <path d="M 240 215 Q 245 210 250 215"/>
+    <path d="M 285 195 Q 290 190 295 195"/>
+    <path d="M 300 215 Q 305 210 310 215"/>
+    <path d="M 230 240 Q 235 235 240 240"/>
+    <path d="M 290 240 Q 295 235 300 240"/>
+  </g>
+
+  <!-- Cat chest/belly highlight -->
+  <ellipse cx="265" cy="240" rx="30" ry="25" fill="#FFD9A0" opacity="0.6"/>
+
+  <!-- Back leg -->
+  <ellipse cx="260" cy="260" rx="18" ry="12" fill="#E07B00"/>
+  <ellipse cx="270" cy="265" rx="10" ry="6" fill="#FFD9A0"/>
+
+  <!-- Front leg reaching to handlebar -->
+  <path d="M 305 200 Q 340 195 360 200 Q 380 205 395 205" stroke="#E07B00" stroke-width="14" fill="none" stroke-linecap="round"/>
+  <ellipse cx="395" cy="205" rx="9" ry="7" fill="#FFB347" transform="rotate(-10 395 205)"/>
+
+  <!-- Second front leg -->
+  <path d="M 315 215 Q 345 215 370 218" stroke="#E07B00" stroke-width="12" fill="none" stroke-linecap="round"/>
+
+  <!-- Cat head -->
+  <circle cx="350" cy="175" r="42" fill="url(#cat)"/>
+
+  <!-- Cat ears -->
+  <path d="M 320 145 L 325 115 L 345 140 Z" fill="#E07B00"/>
+  <path d="M 320 145 L 325 115 L 345 140 Z" fill="#FFB99A"/>
+  <path d="M 358 140 L 378 115 L 380 145 Z" fill="#E07B00"/>
+  <path d="M 358 140 L 378 115 L 380 145 Z" fill="#FFB99A"/>
+
+  <!-- Head stripes -->
+  <g stroke="#B85900" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M 335 140 L 340 150"/>
+    <path d="M 345 135 L 348 148"/>
+    <path d="M 365 135 L 368 148"/>
+    <path d="M 372 140 L 370 150"/>
+  </g>
+
+  <!-- Cat face -->
+  <!-- Eyes -->
+  <ellipse cx="338" cy="170" rx="6" ry="9" fill="#2D5016"/>
+  <ellipse cx="362" cy="170" rx="6" ry="9" fill="#2D5016"/>
+  <ellipse cx="338" cy="170" rx="2" ry="6" fill="#000"/>
+  <ellipse cx="362" cy="170" rx="2" ry="6" fill="#000"/>
+  <circle cx="339" cy="167" r="1.5" fill="#fff"/>
+  <circle cx="363" cy="167" r="1.5" fill="#fff"/>
+
+  <!-- Nose -->
+  <path d="M 348 185 L 352 185 L 350 189 Z" fill="#FF6B9D"/>
+
+  <!-- Mouth -->
+  <path d="M 350 189 Q 346 195 342 192" stroke="#333" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M 350 189 Q 354 195 358 192" stroke="#333" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Whiskers -->
+  <g stroke="#333" stroke-width="1" stroke-linecap="round">
+    <line x1="320" y1="185" x2="295" y2="180"/>
+    <line x1="320" y1="190" x2="295" y2="190"/>
+    <line x1="322" y1="195" x2="298" y2="200"/>
+    <line x1="380" y1="185" x2="405" y2="180"/>
+    <line x1="380" y1="190" x2="405" y2="190"/>
+    <line x1="378" y1="195" x2="402" y2="200"/>
+  </g>
+
+  <!-- Cheek blush -->
+  <circle cx="328" cy="183" r="4" fill="#FF9999" opacity="0.5"/>
+  <circle cx="372" cy="183" r="4" fill="#FF9999" opacity="0.5"/>
+
+  <!-- Tiny helmet on cat (safety first!) -->
+  <path d="M 312 145 Q 350 110 388 145" fill="#3498DB" stroke="#1B5E8C" stroke-width="2"/>
+  <path d="M 312 145 Q 350 110 388 145 L 388 152 L 312 152 Z" fill="#1B5E8C"/>
+  <ellipse cx="350" cy="118" rx="8" ry="5" fill="#FFD93D"/>
+  <rect x="306" y="148" width="88" height="6" fill="#222" rx="2"/>
+
+  <!-- Grass tufts -->
+  <g stroke="#6B8E23" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M 50 430 L 48 420 M 52 430 L 55 420 M 54 430 L 58 422"/>
+    <path d="M 250 430 L 248 420 M 252 430 L 255 420 M 254 430 L 258 422"/>
+    <path d="M 380 430 L 378 420 M 382 430 L 385 420 M 384 430 L 388 422"/>
+    <path d="M 540 430 L 538 420 M 542 430 L 545 420 M 544 430 L 548 422"/>
+  </g>
+</svg>

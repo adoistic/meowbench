@@ -1,0 +1,9 @@
+{
+  "modelSlug": "openai/gpt-4",
+  "promptId": "style",
+  "sample": 1,
+  "status": "ok",
+  "temperature": 1,
+  "rawPath": "generations/openai__gpt-4/style/sample-1.raw.txt",
+  "svgPath": "generations/openai__gpt-4/style/sample-1.svg"
+}

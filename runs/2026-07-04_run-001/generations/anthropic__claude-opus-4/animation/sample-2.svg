@@ -1,0 +1,59 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes swayTail {
+        0%, 100% { transform: rotate(-20deg); }
+        50% { transform: rotate(20deg); }
+      }
+      .tail {
+        transform-origin: 200px 280px;
+        animation: swayTail 2s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+  
+  <!-- Body -->
+  <ellipse cx="200" cy="280" rx="80" ry="60" fill="#333" stroke="#000" stroke-width="2"/>
+  
+  <!-- Head -->
+  <circle cx="200" cy="180" r="50" fill="#333" stroke="#000" stroke-width="2"/>
+  
+  <!-- Ears -->
+  <path d="M 165 165 L 155 135 L 180 155 Z" fill="#333" stroke="#000" stroke-width="2"/>
+  <path d="M 235 165 L 245 135 L 220 155 Z" fill="#333" stroke="#000" stroke-width="2"/>
+  <path d="M 165 155 L 160 145 L 175 155 Z" fill="#FFB6C1"/>
+  <path d="M 235 155 L 240 145 L 225 155 Z" fill="#FFB6C1"/>
+  
+  <!-- Eyes -->
+  <ellipse cx="185" cy="175" rx="8" ry="12" fill="#90EE90"/>
+  <ellipse cx="215" cy="175" rx="8" ry="12" fill="#90EE90"/>
+  <ellipse cx="185" cy="178" rx="4" ry="8" fill="#000"/>
+  <ellipse cx="215" cy="178" rx="4" ry="8" fill="#000"/>
+  
+  <!-- Nose -->
+  <path d="M 200 190 L 195 195 L 200 198 L 205 195 Z" fill="#FFB6C1"/>
+  
+  <!-- Mouth -->
+  <path d="M 200 198 Q 190 205 180 198" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 200 198 Q 210 205 220 198" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Whiskers -->
+  <line x1="140" y1="180" x2="110" y2="175" stroke="#000" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="140" y1="190" x2="110" y2="190" stroke="#000" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="260" y1="180" x2="290" y2="175" stroke="#000" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="260" y1="190" x2="290" y2="190" stroke="#000" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- Legs -->
+  <ellipse cx="160" cy="320" rx="15" ry="25" fill="#333" stroke="#000" stroke-width="2"/>
+  <ellipse cx="240" cy="320" rx="15" ry="25" fill="#333" stroke="#000" stroke-width="2"/>
+  <circle cx="160" cy="340" r="12" fill="#333" stroke="#000" stroke-width="2"/>
+  <circle cx="240" cy="340" r="12" fill="#333" stroke="#000" stroke-width="2"/>
+  
+  <!-- Tail (animated) -->
+  <g class="tail">
+    <path d="M 200 280 Q 140 260 120 200 Q 110 170 130 160" 
+          fill="none" stroke="#333" stroke-width="25" stroke-linecap="round"/>
+    <path d="M 200 280 Q 140 260 120 200 Q 110 170 130 160" 
+          fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

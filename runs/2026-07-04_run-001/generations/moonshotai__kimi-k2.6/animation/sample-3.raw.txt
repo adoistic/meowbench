@@ -1,0 +1,207 @@
+ <svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Warm Gray -->
+    <linearGradient id="warmGray" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6a5acd" />
+      <stop offset="100%" stop-color="#473c8b" />
+    </linearGradient>
+    <!-- Blue Purple -->
+    <linearGradient id="bluePurple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8184ff" />
+      <stop offset="100%" stop-color="#6c5ce7" />
+    </linearGradient>
+    <!-- Light Lavender -->
+    <linearGradient id="lightLavender" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ffe0ff" />
+      <stop offset="100%" stop-color="#ffb6ff" />
+    </linearGradient>
+    <!-- Basket Weave -->
+    <pattern id="weave" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="none"/>
+      <line x1="0" y1="15" x2="20" y2="15" stroke="rgba(0,0,0,0.1)" stroke-width="2"/>
+      <line x1="15" y1="0" x2="15" y2="20" stroke="rgba(0,0,0,0.1)" stroke-width="2"/>
+    </pattern>
+  </defs>
+
+  <!-- Background Gradient -->
+  <rect width="100%" height="100%" fill="#e3def5" />
+  
+  <!-- Counterchange Background Shapes -->
+  <path d="M -100,100 C 200,400 400,100 700,0 L 700,700 L -100,700 Z" fill="#ccc8eb" />
+  <ellipse cx="500" cy="550" rx="400" ry="100" fill="#bdb8e8" opacity="0.5" />
+  
+  <!-- Magic Sparkles -->
+  <g fill="white" opacity="0.8">
+    <circle cx="80" cy="100" r="2" />
+    <circle cx="120" cy="80" r="3" />
+    <circle cx="450" cy="50" r="3" />
+    <circle cx="500" cy="100" r="2" />
+    <circle cx="100" cy="500" r="3" />
+    <circle cx="550" cy="450" r="2" />
+    
+    <polygon points="300,40 310,75 345,85 310,95 300,130 290,95 255,85 290,75" opacity="0.5" />
+    <polygon points="50,300 55,315 70,320 55,325 50,340 45,325 30,320 45,315" opacity="0.6" />
+    <polygon points="550,250 555,265 570,270 555,275 550,290 545,275 530,270 545,265" opacity="0.5" />
+  </g>
+
+  <!-- Swaying Tail -->
+  <g>
+    <path d="M 180,100 C 100,-50 -80,50 -50,200 C -20,300 100,250 150,100" fill="#473c8b" stroke="#312861" stroke-width="4" stroke-linecap="round">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite" keyTimes="0;0.5;1" values="
+        M 180,100 C 100,-50 -80,50 -50,200 C -20,300 100,250 150,100;
+        M 180,100 C 100,-50 -120,150 -90,300 C -60,400 80,250 150,100;
+        M 180,100 C 100,-50 -80,50 -50,200 C -20,300 100,250 150,100"/>
+    </path>
+  </g>
+
+  <!-- Floor shadow for the cat -->
+  <ellipse cx="300" cy="490" rx="130" ry="15" fill="rgba(36, 22, 64, 0.2)" />
+
+  <!-- Back Legs -->
+  <g fill="#6c5ce7">
+    <!-- Back Toe Beans -->
+    <ellipse cx="235" cy="460" rx="12" ry="15" fill="#ffb6ff" />
+    <circle cx="265" cy="460" r="5" fill="#ffb6ff" />
+    <circle cx="275" cy="450" r="4" fill="#ffb6ff" />
+    <circle cx="285" cy="455" r="4" fill="#ffb6ff" />
+    
+    <!-- Back Left Leg -->
+    <path d="M 180,340 Q 220,360 280,340 Q 310,330 310,400 Q 310,450 210,460 Q 180,390 180,340 Z" fill="#6c5ce7" stroke="#473c8b" stroke-width="4" />
+    
+    <!-- Back Right Leg -->
+    <path d="M 320,340 Q 360,360 420,340 Q 450,330 450,400 Q 450,450 350,460 Q 320,390 320,340 Z" fill="#6c5ce7" stroke="#473c8b" stroke-width="4" />
+  </g>
+
+  <!-- Front Legs -->
+  <g fill="#a29bfe" stroke="#6c5ce7" stroke-width="4">
+    <!-- Front Toe Beans -->
+    <ellipse cx="240" cy="465" rx="12" ry="15" fill="#ffb6ff" />
+    <circle cx="270" cy="465" r="5" fill="#ffb6ff" />
+    <circle cx="280" cy="470" r="4" fill="#ffb6ff" />
+    <circle cx="290" cy="462" r="4" fill="#ffb6ff" />
+
+    <!-- Front Left Leg (Paws slightly splayed) -->
+    <path d="M 230,330 Q 225,380 230,420 Q 230,460 280,460 Q 290,460 290,420 Q 295,380 290,330" />
+    
+    <!-- Front Right Leg -->
+    <path d="M 310,330 Q 305,380 310,420 Q 320,460 270,460 Q 260,460 260,420 Q 265,380 270,330" />
+  </g>
+
+  <!-- Body -->
+  <g fill="url(#lightLavender)" stroke="#ffb6ff" stroke-width="4">
+    <path d="M 185,300 Q 170,360 235,360 Q 300,360 385,360 Q 450,360 435,300 Q 425,170 310,170 Q 195,170 185,300 Z" />
+  </g>
+
+  <!-- Cheeks -->
+  <ellipse cx="240" cy="260" rx="25" ry="18" fill="#ffb6ff" opacity="0.6" />
+  <ellipse cx="360" cy="260" rx="25" ry="18" fill="#ffb6ff" opacity="0.6" />
+
+  <!-- Collar -->
+  <rect x="200" y="160" width="200" height="20" rx="10" fill="#ffe0ff" stroke="#ffb6ff" stroke-width="3" />
+
+  <!-- Huge Bell -->
+  <circle cx="300" cy="210" r="35" fill="#FFD700" stroke="#DAA520" stroke-width="3" />
+  <ellipse cx="300" cy="240" rx="28" ry="12" fill="#DAA520" opacity="0.4" />
+  <circle cx="300" cy="225" r="5" fill="#333" />
+  <path d="M 270,195 Q 300,175 330,195 Q 300,210 270,195 Z" fill="#e6c200" />
+  
+  <!-- Sparkles on the bell -->
+  <g fill="white" opacity="0.9">
+    <circle cx="285" cy="200" r="4" />
+    <circle cx="315" cy="215" r="2" />
+    <polygon points="300,180 306,195 321,210 306,215 300,230 294,215 279,210 294,195" opacity="0.6" />
+  </g>
+
+  <!-- Head Base -->
+  <g fill="#e0d7ff" stroke="#a29bfe" stroke-width="4">
+    <!-- Head -->
+    <ellipse cx="300" cy="220" rx="100" ry="80" />
+    
+    <!-- Left Ear -->
+    <path d="M 230,140 Q 170,150 190,230 L 230,160 Z" />
+    <path d="M 230,160 Q 210,160 210,190 Z" fill="#ffb6ff" opacity="0.5" stroke="none" />
+    
+    <!-- Right Ear -->
+    <path d="M 370,140 Q 430,150 410,230 L 370,160 Z" />
+    <path d="M 370,160 Q 390,160 390,190 Z" fill="#ffb6ff" opacity="0.5" stroke="none" />
+  </g>
+
+  <!-- Eyes -->
+  <g fill="#241640">
+    <!-- Left Eye -->
+    <ellipse cx="260" cy="220" rx="20" ry="26" />
+    <!-- Left Sparkle -->
+    <circle cx="265" cy="215" r="7" fill="white" />
+    <circle cx="252" cy="225" r="3" fill="white" />
+    
+    <!-- Right Eye -->
+    <ellipse cx="340" cy="220" rx="20" ry="26" />
+    <!-- Right Sparkle -->
+    <circle cx="345" cy="215" r="7" fill="white" />
+    <circle cx="332" cy="225" r="3" fill="white" />
+  </g>
+
+  <!-- Cute Open Mouth -->
+  <path d="M 290,260 Q 300,255 310,260 Q 290,275 270,260 Z" fill="#ffb6ff" stroke="#ff8fab" stroke-width="3" />
+  <path d="M 310,260 Q 300,275 290,275 Q 310,280 330,260 Z" fill="#ffb6ff" stroke="#ff8fab" stroke-width="3" />
+  
+  <!-- Tiny Nose -->
+  <path d="M 295,250 L 305,250 L 300,258 Z" fill="#ff69b4" />
+  
+  <!-- Whiskers -->
+  <g fill="none" stroke="#a29bfe" stroke-width="2.5" stroke-linecap="round">
+    <path d="M 230,250 L 150,240" />
+    <path d="M 230,260 L 140,270" />
+    <path d="M 230,270 L 150,300" />
+    
+    <path d="M 370,250 L 450,240" />
+    <path d="M 370,260 L 460,270" />
+    <path d="M 370,270 L 450,300" />
+  </g>
+
+  <!-- Foreground Wicker Basket -->
+  <g fill="#ccb597" stroke="#a8987e" stroke-width="5" stroke-linejoin="round">
+    <!-- Outer Body -->
+    <path d="M 450,380 C 450,500 150,500 150,380 L 150,460 C 150,550 450,550 450,460 Z" />
+    <!-- Outer Opening -->
+    <ellipse cx="300" cy="380" rx="150" ry="40" fill="none" />
+    
+    <!-- Front Brim -->
+    <path d="M 160,380 C 160,430 440,430 440,380 C 440,445 160,445 160,380 Z" fill="#ffffff" opacity="0.3" />
+
+    <g stroke="#a8987e" stroke-width="3" stroke-linecap="round">
+      <!-- Horizontal Ropes -->
+      <path d="M 150,420 Q 300,440 450,420" />
+      <path d="M 150,440 Q 300,460 450,440" />
+      <path d="M 150,460 Q 300,480 450,460" />
+      <path d="M 150,480 Q 300,500 450,480" />
+      <path d="M 155,390 Q 300,405 445,390" />
+      <!-- Vertical Ropes -->
+      <path d="M 230,407 L 220,440" />
+      <path d="M 260,410 L 255,445" />
+      <path d="M 300,410 L 300,450" />
+      <path d="M 340,410 L 345,445" />
+      <path d="M 370,407 L 380,440" />
+    </g>
+  </g>
+  
+  <!-- Basket Pattern Overlay -->
+  <path d="M 450,380 C 450,500 150,500 150,380 L 150,460 C 150,550 450,550 450,460 Z" fill="url(#weave)" opacity="0.6" />
+
+  <!-- Basket Handle -->
+  <path d="M 140,390 C 120,200 480,200 460,390" fill="none" stroke="#a8987e" stroke-width="12" stroke-linecap="round" />
+  <path d="M 140,390 C 120,200 480,200 460,390" fill="none" stroke="#e6d2b5" stroke-width="5" opacity="0.5" />
+
+  <!-- Cat's Paws holding onto the Rim -->
+  <g>
+    <!-- Left Paws -->
+    <circle cx="230" cy="370" r="15" fill="#a29bfe" stroke="#6c5ce7" stroke-width="3" />
+    <circle cx="250" cy="365" r="15" fill="#a29bfe" stroke="#6c5ce7" stroke-width="3" />
+    <circle cx="170" cy="380" r="15" fill="#a29bfe" stroke="#6c5ce7" stroke-width="3" />
+    
+    <!-- Right Paws -->
+    <circle cx="370" cy="365" r="15" fill="#a29bfe" stroke="#6c5ce7" stroke-width="3" />
+    <circle cx="430" cy="380" r="15" fill="#a29bfe" stroke="#6c5ce7" stroke-width="3" />
+    <circle cx="350" cy="370" r="15" fill="#a29bfe" stroke="#6c5ce7" stroke-width="3" />
+  </g>
+</svg>

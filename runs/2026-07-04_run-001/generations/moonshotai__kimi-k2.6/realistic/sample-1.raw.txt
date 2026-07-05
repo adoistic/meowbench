@@ -1,0 +1,294 @@
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+    <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#11151C" />
+            <stop offset="100%" stop-color="#2A3038" />
+        </linearGradient>
+
+        <linearGradient id="bodyBase" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0%" stop-color="#181510" />
+            <stop offset="60%" stop-color="#4A3723" />
+            <stop offset="100%" stop-color="#6B4E32" />
+        </linearGradient>
+
+        <linearGradient id="legShadow" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0%" stop-color="#120E0A" />
+            <stop offset="100%" stop-color="#251C12" />
+        </linearGradient>
+
+        <radialGradient id="eyeGrad" cx="0.5" cy="0.5" r="0.5">
+            <stop offset="60%" stop-color="#252719" />
+            <stop offset="80%" stop-color="#141611" />
+            <stop offset="100%" stop-color="#050605" />
+        </radialGradient>
+        
+        <radialGradient id="cornea_grad" cx="0.5" cy="0.5" r="0.5">
+            <stop offset="70%" stop-color="white" stop-opacity="0.7"/>
+            <stop offset="90%" stop-color="#F0F0E6" stop-opacity="0.4"/>
+            <stop offset="100%" stop-color="#3A3326" stop-opacity="0.6"/>
+        </radialGradient>
+
+        <radialGradient id="noseGrad" cx="0.4" cy="0.4" r="0.5">
+            <stop offset="0%" stop-color="#D98484" />
+            <stop offset="50%" stop-color="#9A4D4D" />
+            <stop offset="100%" stop-color="#5C2525" />
+        </radialGradient>
+
+        <radialGradient id="whiskerGrad" cx="0.5" cy="0.5" r="0.5">
+            <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.8" />
+            <stop offset="100%" stop-color="#2A2015" stop-opacity="0" />
+        </radialGradient>
+
+        <clipPath id="bodyClip">
+            <path d="M 410 280 C 440 270, 470 290, 480 320 C 500 400, 530 500, 490 580 C 460 620, 380 650, 300 640 C 220 630, 160 580, 160 480 C 160 380, 280 310, 410 280 Z" />
+        </clipPath>
+
+        <clipPath id="headClip">
+            <path d="M 280 180 C 240 150, 250 80, 330 80 C 390 80, 450 110, 480 180 C 510 250, 480 310, 410 330 C 340 350, 290 310, 260 250 C 240 210, 250 200, 280 180 Z" />
+        </clipPath>
+
+        <clipPath id="tailClip">
+            <path d="M 480 580 C 550 600, 620 550, 630 480 C 640 410, 550 350, 480 380 L 460 420 L 490 450 Z" />
+        </clipPath>
+
+        <clipPath id="leftLegClip">
+            <path d="M 380 480 C 440 480, 480 520, 480 580 C 480 650, 440 680, 380 680 C 320 680, 280 640, 280 580 C 280 520, 320 480, 380 480 Z" />
+        </clipPath>
+
+        <clipPath id="rightLegClip">
+            <path d="M 160 480 C 220 480, 260 520, 260 580 C 260 650, 220 680, 160 680 C 100 680, 60 640, 60 580 C 60 520, 100 480, 160 480 Z" />
+        </clipPath>
+
+        <g id="fur-strokes" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M 3 20 Q 7 10 15 3" class="tip"/>
+            <path d="M 2 25 Q 6 15 12 5" class="tip"/>
+            <path d="M 0 30 Q 4 20 8 8" class="tip"/>
+            <path d="M 1 35 Q 5 25 6 12" class="tip"/>
+            <path d="M 0 30 Q 0 20 2 10" class="out"/>
+            <path d="M 0 35 Q 1 25 1 15" class="out"/>
+            <path d="M -2 30 Q -4 20 -3 10" class="out"/>
+            <path d="M -1 35 Q -2 25 -1 15" class="out"/>
+            <path d="M 1 32 Q 3 22 4 12" class="mid"/>
+            <path d="M -1 33 Q -3 23 -2 13" class="mid"/>
+            <path d="M 0 28 Q -2 18 -1 8" class="mid"/>
+            <path d="M 2 25 Q 4 15 2 5" class="mid"/>
+        </g>
+
+        <g id="fluff" fill="none" stroke-width="0.925" stroke-opacity="0.65">
+            <!-- Dark (Undercoat) -->
+            <use href="#fur-strokes" transform="rotate(-15) scale(1.05)" class="fill5" />
+            <use href="#fur-strokes" transform="rotate(25) scale(1.15)" class="fill6" />
+            <use href="#fur-strokes" transform="rotate(55) scale(1.25)" class="fill7" />
+            
+            <!-- Core (Midtinge) -->
+            <use href="#fur-strokes" transform="rotate(-45) scale(1.1)" class="fill3" />
+            <use href="#fur-strokes" transform="rotate(8) scale(0.95)" class="fill4" />
+            
+            <!-- Guardhair (Highlight) -->
+            <use href="#fur-strokes" transform="rotate(35) scale(0.7)" class="fill1" />
+            <use href="#fur-strokes" transform="rotate(-20) scale(0.85)" class="fill2" />
+        </g>
+
+        <style>
+            svg {
+                background: url(#bgGrad);
+            }
+            .fill1 { stroke: hsla(40, 100%, 95%, 0.75); }
+            .fill2 { stroke: hsla(38, 80%, 90%, 0.45); }
+            .fill3 { stroke: hsla(32, 60%, 68%, 0.55); }
+            .fill4 { stroke: hsla(27, 55%, 48%, 0.7); }
+            .fill5 { stroke: hsla(22, 60%, 30%, 0.8); }
+            .fill6 { stroke: hsla(18, 45%, 18%, 0.85); }
+            .fill7 { stroke: hsla(15, 30%, 8%, 0.88); }
+            .tip   { stroke-width: 0.8px; stroke-dasharray: 10,20; }
+            .out   { stroke-width: 1.4px; stroke-dasharray: 18,30; }
+            .mid   { stroke-width: 2.2px; stroke-dasharray: 22,12; }
+        </style>
+    </defs>
+
+    <!-- BODY background -->
+    <path id="bodyBg" d="M 410 280 C 440 270, 470 290, 480 320 C 500 400, 530 500, 490 580 C 460 620, 380 650, 300 640 C 220 630, 160 580, 160 480 C 160 380, 280 310, 410 280 Z" 
+          fill="url(#bodyBase)" />
+
+    <!-- BODY FUR -->
+    <g clip-path="url(#bodyClip)">
+        <g transform="translate(330, 380)"><use href="#fluff" transform="rotate(30)"/></g>
+        <g transform="translate(370, 340)"><use href="#fluff" transform="rotate(15)"/></g>
+        <g transform="translate(280, 410)"><use href="#fluff" transform="rotate(45)"/></g>
+        <g transform="translate(240, 460)"><use href="#fluff" transform="rotate(60)"/></g>
+        <g transform="translate(340, 530)"><use href="#fluff" transform="rotate(90)"/></g>
+        <g transform="translate(220, 570)"><use href="#fluff" transform="rotate(110)"/></g>
+        <g transform="translate(380, 560)"><use href="#fluff" transform="rotate(120)"/></g>
+        <g transform="translate(300, 620)"><use href="#fluff" transform="rotate(130)"/></g>
+        <g transform="translate(420, 490)"><use href="#fluff" transform="rotate(75)"/></g>
+        <g transform="translate(450, 400)"><use href="#fluff" transform="rotate(45)"/></g>
+    </g>
+
+    <!-- LEFT LEG base -->
+    <path id="leftLeg" d="M 370 470 C 430 470, 480 510, 480 580 C 480 660, 440 690, 370 690 C 310 690, 280 650, 280 580 C 280 510, 310 470, 370 470 Z" 
+          fill="url(#legShadow)" />
+
+    <!-- LEFT LEG FUR -->
+    <g clip-path="url(#leftLegClip)">
+        <g transform="translate(300, 560) scale(0.75)"><use href="#fluff" transform="rotate(-15)"/></g>
+        <g transform="translate(440, 580) scale(0.75)"><use href="#fluff" transform="rotate(185)"/></g>
+        <g transform="translate(410, 640) scale(0.8)"><use href="#fluff" transform="rotate(120)"/></g>
+        <g transform="translate(350, 660) scale(0.85)"><use href="#fluff" transform="rotate(90)"/></g>
+        <g transform="translate(380, 500) scale(0.7)"><use href="#fluff" transform="rotate(15)"/></g>
+        <g transform="translate(320, 520) scale(0.7)"><use href="#fluff" transform="rotate(-45)"/></g>
+    </g>
+
+    <!-- RIGHT LEG base -->
+    <path id="rightLeg" d="M 160 480 C 220 480, 260 520, 260 580 C 260 660, 220 690, 160 690 C 100 690, 60 650, 60 580 C 60 520, 100 480, 160 480 Z" 
+          fill="url(#legShadow)" />
+
+    <!-- RIGHT LEG FUR -->
+    <g clip-path="url(#rightLegClip)">
+        <g transform="translate(80, 560) scale(0.75)"><use href="#fluff" transform="rotate(-25)"/></g>
+        <g transform="translate(220, 580) scale(0.75)"><use href="#fluff" transform="rotate(180)"/></g>
+        <g transform="translate(180, 640) scale(0.8)"><use href="#fluff" transform="rotate(130)"/></g>
+        <g transform="translate(150, 670) scale(0.85)"><use href="#fluff" transform="rotate(90)"/></g>
+        <g transform="translate(140, 510) scale(0.7)"><use href="#fluff" transform="rotate(15)"/></g>
+        <g transform="translate(80, 530) scale(0.7)"><use href="#fluff" transform="rotate(-45)"/></g>
+    </g>
+
+    <!-- TAIL base -->
+    <path id="tail" d="M 480 580 C 550 600, 630 550, 640 480 C 650 410, 550 350, 480 380 L 460 420 L 490 450 Z" 
+          fill="url(#bodyBase)" />
+
+    <!-- TAIL FUR -->
+    <g clip-path="url(#tailClip)">
+        <g transform="translate(520, 550) scale(1.05)"><use href="#fluff" transform="rotate(20)"/></g>
+        <g transform="translate(580, 490) scale(1.15)"><use href="#fluff" transform="rotate(30)"/></g>
+        <g transform="translate(590, 430) scale(0.85)"><use href="#fluff" transform="rotate(45)"/></g>
+        <g transform="translate(540, 380) scale(0.9)"><use href="#fluff" transform="rotate(60)"/></g>
+        <g transform="translate(490, 400) scale(1.1)"><use href="#fluff" transform="rotate(-5)"/></g>
+        <g transform="translate(510, 510) scale(1.05)"><use href="#fluff" transform="rotate(15)"/></g>
+    </g>
+
+    <!-- HEAD base -->
+    <path id="head" d="M 280 180 C 240 150, 250 80, 330 80 C 390 80, 450 110, 480 180 C 510 250, 480 310, 410 330 C 340 350, 290 310, 260 250 C 240 210, 250 200, 280 180 Z" 
+          fill="url(#bodyBase)" />
+
+    <!-- EARS -->
+    <g id="ears">
+        <polyline points="290,160 280,70 360,160" fill="url(#bodyBase)" />
+        <polyline points="460,170 480,90 410,190" fill="url(#bodyBase)" />
+        <!-- Ear inner detail -->
+        <path d="M 295 150 L 290 90 L 340 150 Z" fill="#4A2E20" opacity="0.65"/>
+        <path d="M 445 165 L 460 105 L 425 175 Z" fill="#4A2E20" opacity="0.65"/>
+        <!-- Ear fur -->
+        <g transform="translate(310, 90) scale(0.8)"><use href="#fluff" transform="rotate(45)"/></g>
+        <g transform="translate(340, 135) scale(0.7)"><use href="#fluff" transform="rotate(170)"/></g>
+        <g transform="translate(450, 110) scale(0.8)"><use href="#fluff" transform="rotate(120)"/></g>
+        <g transform="translate(410, 175) scale(0.7)"><use href="#fluff" transform="rotate(-70)"/></g>
+    </g>
+
+    <!-- HEAD FUR -->
+    <g clip-path="url(#headClip)">
+        <g transform="translate(470, 200) scale(1.1)"><use href="#fluff" transform="rotate(25)"/></g>
+        <g transform="translate(420, 240) scale(1)"><use href="#fluff" transform="rotate(15)"/></g>
+        <g transform="translate(440, 290) scale(0.9)"><use href="#fluff" transform="rotate(0)"/></g>
+        <g transform="translate(280, 200) scale(1)"><use href="#fluff" transform="rotate(175)"/></g>
+        <g transform="translate(300, 240) scale(0.85)"><use href="#fluff" transform="rotate(180)"/></g>
+        <g transform="translate(330, 300) scale(0.8)"><use href="#fluff" transform="rotate(160)"/></g>
+        <g transform="translate(380, 320) scale(0.9)"><use href="#fluff" transform="rotate(90)"/></g>
+        <g transform="translate(340, 150) scale(0.95)"><use href="#fluff" transform="rotate(150)"/></g>
+        <g transform="translate(440, 150) scale(0.9)"><use href="#fluff" transform="rotate(45)"/></g>
+        <g transform="translate(360, 110) scale(0.75)"><use href="#fluff" transform="rotate(90)"/></g>
+        <g transform="translate(420, 120) scale(0.75)"><use href="#fluff" transform="rotate(60)"/></g>
+        <g transform="translate(300, 120) scale(0.75)"><use href="#fluff" transform="rotate(120)"/></g>
+    </g>
+
+    <!-- FACE DETAILS -->
+    <!-- Muzzle / Light Face patch -->
+    <path d="M 300 240 C 330 220, 380 220, 410 240 C 440 260, 450 280, 440 300 A 30 40 0 0 1 410 340 A 30 40 0 0 1 370 360 C 340 360, 310 340, 300 300 C 290 280, 280 260, 300 240 Z" 
+          fill="url(#whiskerGrad)" />
+          
+    <g clip-path="url(#headClip)">
+        <path d="M 380 240
+                 C 390 245, 395 250, 395 260
+                 C 395 270, 390 275, 380 278
+                 L 380 240 Z" fill="#FFF0D4" opacity="0.75"/>
+    </g>
+
+    <!-- Eyes -->
+    <g id="eyes">
+        <g id="leftEye">
+            <circle cx="310" cy="220" r="14" fill="url(#eyeGrad)" />
+            <path d="M 296 210 Q 310 205 324 210" stroke="#090A08" stroke-width="2.5" fill="none" />
+            <path d="M 296 210 Q 310 200 324 210 Q 300 215 296 210 Z" fill="#050605" />
+            <ellipse cx="307" cy="216" rx="4" ry="6" fill="#FFFFFF" opacity="0.85" />
+            <circle cx="315" cy="222" r="2.5" fill="#FFFFFF" opacity="0.7" />
+        </g>
+        <g id="rightEye" transform="translate(70, 12)">
+            <circle cx="310" cy="220" r="14" fill="url(#eyeGrad)" />
+            <path d="M 296 210 Q 310 205 324 210" stroke="#090A08" stroke-width="2.5" fill="none" />
+            <path d="M 296 210 Q 310 200 324 210 Q 300 215 296 210 Z" fill="#050605" />
+            <ellipse cx="307" cy="216" rx="4" ry="6" fill="#FFFFFF" opacity="0.85" />
+            <circle cx="315" cy="222" r="2.5" fill="#FFFFFF" opacity="0.7" />
+        </g>
+    </g>
+
+    <!-- Nose -->
+    <path id="nose" d="M 340 270 Q 355 295 370 270 A 15 15 0 0 0 340 270 Z" fill="url(#noseGrad)" />
+    <ellipse cx="345" cy="274" rx="3" ry="1.5" fill="#FFFFFF" opacity="0.6" />
+
+    <!-- Mouth -->
+    <path d="M 355 295 Q 345 310 330 305" fill="none" stroke="#241C17" stroke-width="2" stroke-linecap="round" />
+    <path d="M 355 295 Q 365 310 380 305" fill="none" stroke="#241C17" stroke-width="2" stroke-linecap="round" />
+
+    <!-- Whiskers -->
+    <g id="whiskers" opacity="0.75">
+        <!-- Left -->
+        <path d="M 340 285 C 300 280, 250 290, 220 320" fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-linecap="round"/>
+        <path d="M 345 290 C 280 300, 240 330, 210 350" fill="none" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="round"/>
+        <path d="M 345 295 C 290 315, 260 340, 230 370" fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-linecap="round"/>
+        
+        <!-- Right -->
+        <path d="M 370 285 C 410 280, 460 290, 490 320" fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-linecap="round"/>
+        <path d="M 365 290 C 430 300, 470 330, 500 350" fill="none" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="round"/>
+        <path d="M 365 295 C 420 315, 450 340, 480 370" fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-linecap="round"/>
+    </g>
+
+    <!-- Soft Bokeh & Lens Flares -->
+    <g id="bokeh">
+        <circle cx="290" cy="160" r="25" fill="#FFF8E7" filter="url(#blur15)" opacity="0.35" />
+        <circle cx="290" cy="160" r="10" fill="#FFFFFF" filter="url(#blur5)" opacity="0.8" />
+        <circle cx="380" cy="230" r="2" fill="#FFFFFF" opacity="0.7" />
+        <circle cx="385" cy="235" r="4" fill="#FFFFFF" opacity="0.5" filter="url(#blur2)" />
+        <circle cx="395" cy="225" r="1.5" fill="#FFFFFF" opacity="0.8" />
+        <circle cx="460" cy="290" r="4" fill="#966B4D" filter="url(#blur8)" opacity="0.25" />
+        <circle cx="500" cy="250" r="12" fill="#4A3723" filter="url(#blur12)" opacity="0.3" />
+        <circle cx="420" cy="350" r="8" fill="#14100C" filter="url(#blur8)" opacity="0.35" />
+        <circle cx="140" cy="600" r="45" fill="#332518" filter="url(#blur20)" opacity="0.45" />
+        <circle cx="520" cy="610" r="20" fill="#4A3723" filter="url(#blur10)" opacity="0.3" />
+        <circle cx="230" cy="680" r="15" fill="#1C150F" filter="url(#blur8)" opacity="0.4" />
+        <circle cx="380" cy="690" r="25" fill="#1C150F" filter="url(#blur12)" opacity="0.35" />
+    </g>
+
+    <!-- Filters -->
+    <defs>
+        <filter id="blur2" x="-100%" y="-100%" width="300%" height="300%">
+            <feGaussianBlur stdDeviation="2" />
+        </filter>
+        <filter id="blur5" x="-100%" y="-100%" width="300%" height="300%">
+            <feGaussianBlur stdDeviation="5" />
+        </filter>
+        <filter id="blur8" x="-100%" y="-100%" width="300%" height="300%">
+            <feGaussianBlur stdDeviation="8" />
+        </filter>
+        <filter id="blur10" x="-100%" y="-100%" width="300%" height="300%">
+            <feGaussianBlur stdDeviation="10" />
+        </filter>
+        <filter id="blur12" x="-100%" y="-100%" width="300%" height="300%">
+            <feGaussianBlur stdDeviation="12" />
+        </filter>
+        <filter id="blur15" x="-100%" y="-100%" width="300%" height="300%">
+            <feGaussianBlur stdDeviation="15" />
+        </filter>
+        <filter id="blur20" x="-100%" y="-100%" width="300%" height="300%">
+            <feGaussianBlur stdDeviation="20" />
+        </filter>
+    </defs>
+</svg>

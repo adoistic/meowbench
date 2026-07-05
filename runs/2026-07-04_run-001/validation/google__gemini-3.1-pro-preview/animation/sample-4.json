@@ -1,0 +1,19 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 3620,
+    "elements": 39,
+    "paths": 2,
+    "colors": [
+      "#08080a",
+      "#0f0f13",
+      "#1d1d2b",
+      "#f5dca3",
+      "#ffebd6",
+      "#ffffff",
+      "url(#moonglow)",
+      "url(#skygrad)"
+    ]
+  }
+}

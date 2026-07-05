@@ -1,0 +1,16 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 1123,
+    "elements": 17,
+    "paths": 6,
+    "colors": [
+      "#333",
+      "#e9e5e6",
+      "black",
+      "url(#furgrad)",
+      "white"
+    ]
+  }
+}

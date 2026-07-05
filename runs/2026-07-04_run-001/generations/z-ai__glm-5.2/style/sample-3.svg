@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 420" text-rendering="geometricPrecision">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="65%">
+      <stop offset="0%" stop-color="#FBF3E0"/>
+      <stop offset="100%" stop-color="#E8D9BD"/>
+    </radialGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <style>
+      .fold { stroke:#5E4626; stroke-width:0.9; stroke-linejoin:miter; stroke-linecap:butt; opacity:0.55; }
+      .crease { stroke:#6B4F2E; stroke-width:0.7; opacity:0.45; fill:none; }
+      .whisk { stroke:#6B4F2E; stroke-width:1.1; stroke-linecap:round; opacity:0.7; fill:none; }
+      .dark { fill:#2B1F12; }
+    </style>
+  </defs>
+
+  <rect width="400" height="420" fill="url(#bg)"/>
+
+  <!-- soft cast shadow -->
+  <ellipse cx="200" cy="390" rx="130" ry="14" fill="#5E4626" opacity="0.18" filter="url(#soft)"/>
+
+  <g id="cat">
+    <!-- LEFT EAR -->
+    <polygon class="fold" points="90,160 130,75 135,115" fill="#9C7B43"/>
+    <polygon class="fold" points="130,75 170,150 135,115" fill="#F2DCB0"/>
+    <!-- inner ear shadow flap -->
+    <polygon class="fold" points="130,75 135,115 150,118 145,90" fill="#B89866" opacity="0.55"/>
+
+    <!-- RIGHT EAR -->
+    <polygon class="fold" points="310,160 270,75 265,115" fill="#BE9A5E"/>
+    <polygon class="fold" points="270,75 230,150 265,115" fill="#E5C98C"/>
+    <polygon class="fold" points="270,75 265,115 250,118 255,90" fill="#A88550" opacity="0.55"/>
+
+    <!-- FOREHEAD -->
+    <polygon class="fold" points="170,150 230,150 200,175" fill="#F2DCB0"/>
+    <polygon class="fold" points="90,160 170,150 165,210" fill="#D4B27A"/>
+    <polygon class="fold" points="310,160 230,150 235,210" fill="#BE9A5E"/>
+    <polygon class="fold" points="170,150 200,175 165,210" fill="#E5C98C"/>
+    <polygon class="fold" points="230,150 200,175 235,210" fill="#D4B27A"/>
+
+    <!-- BROW / BRIDGE -->
+    <polygon class="fold" points="165,210 235,210 200,250" fill="#E5C98C"/>
+    <polygon class="fold" points="165,210 200,210 200,250" fill="#D4B27A" opacity="0.0"/>
+    <line class="crease" x1="200" y1="175" x2="200" y2="250"/>
+
+    <!-- UPPER CHEEKS -->
+    <polygon class="fold" points="90,160 165,210 75,265" fill="#BE9A5E"/>
+    <polygon class="fold" points="310,160 235,210 325,265" fill="#9C7B43"/>
+    <polygon class="fold" points="165,210 75,265 155,250" fill="#D4B27A"/>
+    <polygon class="fold" points="235,210 325,265 245,250" fill="#BE9A5E"/>
+
+    <!-- MUZZLE UPPER -->
+    <polygon class="fold" points="165,210 200,250 155,250" fill="#E5C98C"/>
+    <polygon class="fold" points="235,210 200,250 245,250" fill="#D4B27A"/>
+
+    <!-- LOWER CHEEKS -->
+    <polygon class="fold" points="75,265 155,250 130,318" fill="#D4B27A"/>
+    <polygon class="fold" points="325,265 245,250 270,318" fill="#BE9A5E"/>
+    <polygon class="fold" points="155,250 200,250 180,292" fill="#E5C98C"/>
+    <polygon class="fold" points="245,250 200,250 220,292" fill="#D4B27A"/>
+
+    <!-- JAW -->
+    <polygon class="fold" points="130,318 180,292 175,338" fill="#BE9A5E"/>
+    <polygon class="fold" points="270,318 220,292 225,338" fill="#9C7B43"/>
+    <polygon class="fold" points="180,292 220,292 200,302" fill="#E5C98C"/>
+    <polygon class="fold" points="175,338 180,292 200,302" fill="#D4B27A"/>
+    <polygon class="fold" points="225,338 220,292 200,302" fill="#BE9A5E"/>
+    <polygon class="fold" points="175,338 200,302 200,355" fill="#BE9A5E"/>
+    <polygon class="fold" points="225,338 200,302 200,355" fill="#9C7B43"/>
+
+    <!-- center symmetry crease -->
+    <line class="crease" x1="200" y1="250" x2="200" y2="355"/>
+    <line class="crease" x1="200" y1="175" x2="200" y2="150"/>
+    <line class="crease" x1="135" y1="115" x2="170" y2="150"/>
+    <line class="crease" x1="265" y1="115" x2="230" y2="150"/>
+
+    <!-- EYES (folded slit triangles) -->
+    <polygon class="dark" points="148,232 190,236 168,247"/>
+    <polygon class="dark" points="252,232 210,236 232,247"/>
+    <!-- eye fold crease hint -->
+    <line class="crease" x1="148" y1="232" x2="168" y2="247"/>
+    <line class="crease" x1="252" y1="232" x2="232" y2="247"/>
+
+    <!-- NOSE -->
+    <polygon class="dark" points="200,250 186,270 214,270"/>
+    <line class="crease" x1="200" y1="250" x2="200" y2="270"/>
+
+    <!-- MOUTH creases -->
+    <path class="crease" d="M200,270 L200,285 M200,285 L188,298 M200,285 L212,298"/>
+
+    <!-- WHISKERS -->
+    <g class="whisk">
+      <path d="M150,278 L70,268"/>
+      <path d="M152,288 L68,290"/>
+      <path d="M154,298 L74,312"/>
+      <path d="M250,278 L330,268"/>
+      <path d="M248,288 L332,290"/>
+      <path d="M246,298 L326,312"/>
+    </g>
+
+    <!-- subtle paper sheen on lit facets -->
+    <polygon points="130,75 170,150 135,115" fill="#FFFFFF" opacity="0.10"/>
+    <polygon points="170,150 230,150 200,175" fill="#FFFFFF" opacity="0.10"/>
+  </g>
+</svg>

@@ -1,0 +1,189 @@
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <radialGradient id="skyGrad" cx="50%" cy="0%" r="100%">
+      <stop offset="0%" stop-color="#DAF0FF"/>
+      <stop offset="100%" stop-color="#ADD8E6"/>
+    </radialGradient>
+    <radialGradient id="sunGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF59D"/>
+      <stop offset="100%" stop-color="#FBC02D"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#skyGrad)"/>
+
+  <rect x="0" y="500" width="800" height="100" fill="#81C784"/>
+  <path d="M 0,500 C 200,480 400,510 800,500 L 800,600 L 0,600 Z" fill="#66BB6A"/>
+
+  <circle cx="100" cy="80" r="40" fill="url(#sunGrad)"/>
+  
+  <!-- Clouds -->
+  <path d="M 120,160 C 120,130 160,125 170,145 C 190,125 230,130 220,165 C 240,165 240,200 210,200 L 130,200 C 100,200 100,170 120,160 Z" fill="#FFFFFF"/>
+  <path d="M 520,100 C 520,70 560,65 570,85 C 590,65 630,70 620,105 C 640,105 640,140 610,140 L 530,140 C 500,140 500,110 520,100 Z" fill="#FFFFFF"/>
+  <path d="M 680,60 C 680,35 710,30 715,45 C 730,30 760,35 755,60 C 770,60 770,85 750,85 L 685,85 C 665,85 665,65 680,60 Z" fill="#FFFFFF"/>
+
+  <!-- Bicycle Wheels -->
+  <circle cx="260" cy="450" r="110" fill="#37474F"/>
+  <circle cx="260" cy="450" r="98" fill="#EEEEEE"/>
+  <circle cx="260" cy="450" r="90" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="4"/>
+  <circle cx="260" cy="450" r="12" fill="#263238"/>
+
+  <circle cx="580" cy="450" r="110" fill="#37474F"/>
+  <circle cx="580" cy="450" r="98" fill="#EEEEEE"/>
+  <circle cx="580" cy="450" r="90" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="4"/>
+  <circle cx="580" cy="450" r="12" fill="#263238"/>
+
+  <!-- Wireframe spokes -->
+  <path d="M 260,450 L 260,360 M 260,450 L 334,390 M 260,450 L 334,510 M 260,450 L 260,540 M 260,450 L 186,510 M 260,450 L 186,390" stroke="#E0E0E0" stroke-width="2"/>
+  <!-- Fast Spin Blur Overlay -->
+  <polygon points="235,450 270,450 260,365" fill="#FAFAFA" opacity="0.8"/>
+  <polygon points="270,450 235,450 260,535" fill="#FAFAFA" opacity="0.8"/>
+
+  <path d="M 580,450 L 580,360 M 580,450 L 654,390 M 580,450 L 654,510 M 580,450 L 580,540 M 580,450 L 506,510 M 580,450 L 506,390" stroke="#E0E0E0" stroke-width="2"/>
+  <polygon points="555,450 590,450 580,365" fill="#FAFAFA" opacity="0.8"/>
+  <polygon points="590,450 555,450 580,535" fill="#FAFAFA" opacity="0.8"/>
+
+  <!-- Bicycle Chain -->
+  <path d="M 392,358 A 58,58 0 1,1 262,449 T 392,358" fill="none" stroke="#9E9E9E" stroke-width="6" stroke-dasharray="8,6"/>
+  <path d="M 369,400 A 30,30 0 0,1 329,410" fill="none" stroke="#9E9E9E" stroke-width="4" stroke-dasharray="5,4"/>
+  <path d="M 369,400 A 30,30 0 0,0 329,410" fill="none" stroke="#9E9E9E" stroke-width="4" stroke-dasharray="5,4"/>
+
+  <!-- Bicycle Frame, Seat, Chainstay -->
+  <path d="M 260,450 L 420,450 L 500,230 L 240,300 Z" fill="#C62828"/>
+  <path d="M 260,450 L 500,450 L 560,400 L 270,400 Z" fill="#B71C1C"/>
+  <path d="M 500,230 L 500,450 L 580,450" fill="none" stroke="#C62828" stroke-width="14" stroke-linejoin="round"/>
+  <path d="M 500,450 L 420,450 L 460,370" fill="none" stroke="#C62828" stroke-width="14" stroke-linejoin="round"/>
+  <path d="M 500,230 L 430,310 L 240,300 A 10,10 0 0 0 230,316 L 420,320 A 10,10 0 0 0 430,310 L 500,230 Z" fill="#E53935"/>
+  <circle cx="420" cy="450" r="28" fill="#E53935"/>
+
+  <path d="M 500,230 L 560,140" fill="none" stroke="#C62828" stroke-width="14" stroke-linecap="round"/>
+  <path d="M 560,450 L 580,450" fill="none" stroke="#C62828" stroke-width="14"/>
+  <path d="M 500,450 C 560,450 580,480 580,450" fill="none" stroke="#9E9E9E" stroke-width="14" stroke-linecap="round"/>
+
+  <!-- Seat -->
+  <path d="M 240,300 L 220,260 C 210,245 230,235 240,250 Z" fill="#212121"/>
+  <path d="M 215,265 Q 190,270 180,255 Q 205,240 220,260 Z" fill="#212121"/>
+  <path d="M 210,250 Q 190,255 220,260 Z" fill="#424242"/>
+
+  <!-- Seat Cover for tail cutout -->
+  <path d="M 220,290 L 220,310 L 250,310 L 250,285 Q 235,280 220,290 Z" fill="#FF8F00"/>
+
+  <!-- Front Pedal -->
+  <line x1="420" y1="450" x2="380" y2="380" stroke="#607D8B" stroke-width="8" stroke-linecap="round"/>
+  <line x1="380" y1="380" x2="380" y2="380" stroke="#37474F" stroke-width="12"/>
+  <ellipse cx="380" cy="380" rx="26" ry="6" fill="#37474F"/>
+  <ellipse cx="380" cy="382" rx="24" ry="4" fill="#212121"/>
+
+  <!-- Handlebars -->
+  <path d="M 560,140 L 620,110 A 25,25 0 0 1 650,130" fill="none" stroke="#757575" stroke-width="12" stroke-linecap="round"/>
+  <path d="M 620,110 A 25,25 0 0 1 650,130" fill="none" stroke="#212121" stroke-width="14"/>
+  <path d="M 648,135 L 655,120 A 5,5 0 0 1 665,135 Z" fill="#E53935"/>
+  <path d="M 560,140 L 620,110 L 625,120 L 560,150 Z" fill="#9E9E9E"/>
+
+  <!-- Clothes & Gear -->
+  <!-- Right Leg Sleeve -->
+  <path d="M 410,315 C 460,315 430,370 460,370" fill="none" stroke="#FFC107" stroke-width="28" stroke-linecap="round"/>
+  <path d="M 453,343 L 473,343 L 467,333 L 447,333 Z" fill="#1A237E"/>
+
+  <!-- Speed Trails -->
+  <path d="M 750,430 L 800,430 M 780,450 L 800,450" stroke="#757575" stroke-width="8" stroke-linecap="round"/>
+  <path d="M 150,430 L 240,430 M 140,450 L 190,450" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Cat -->
+  <path d="M 230,280 C 180,280 140,380 230,385 L 400,380 C 430,380 440,330 410,315 C 440,230 260,200 230,280 Z" fill="#FF8F00"/>
+  <path d="M 160,380 C 140,380 130,440 170,460 C 185,450 195,430 200,390 Z" fill="#FFA726"/>
+  
+  <!-- Left Leg (Back) -->
+  <path d="M 340,380 C 350,440 260,440 400,450" fill="none" stroke="#FF8F00" stroke-width="26" stroke-linecap="round"/>
+  <!-- Left Sock -->
+  <path d="M 390,437 L 410,463" fill="none" stroke="#FFFFFF" stroke-width="28" stroke-linecap="round"/>
+  <path d="M 382,439 L 392,439 L 388,453 L 378,453 Z" fill="#1A237E"/>
+  <path d="M 400,451 L 410,451 L 408,463 L 398,463 Z" fill="#1A237E"/>
+  <!-- Left Shoe -->
+  <path d="M 390,445 Q 365,440 360,455 Q 370,465 400,460 Z" fill="#FF1744"/>
+  <path d="M 390,445 Q 365,440 360,455" fill="none" stroke="#F44336" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- Tail -->
+  <path d="M 160,360 C 150,420 80,360 100,320 C 110,400 160,420 170,390 Z" fill="#FFA726" stroke="#E65100" stroke-width="4" stroke-linejoin="round"/>
+  <!-- Tail Tip from behind -->
+  <path d="M 180,410 C 180,410 160,440 190,440 C 220,440 200,410 190,410 Z" fill="#FFD54F"/>
+
+  <!-- Cat Head Base & Ears -->
+  <rect x="335" y="215" width="100" height="100" rx="45" fill="#FF8F00"/>
+  <path d="M 355,260 L 335,190 A 30,30 0 0 1 385,210 Z" fill="#FF8F00" stroke="#E65100" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M 345,240 L 335,190 A 30,30 0 0 1 350,205 Z" fill="#FFAB91"/>
+  <path d="M 425,260 L 445,190 A 30,30 0 0 0 395,210 Z" fill="#FF8F00" stroke="#E65100" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M 435,240 L 445,190 A 30,30 0 0 0 430,205 Z" fill="#FFAB91"/>
+
+  <!-- Scarf -->
+  <path d="M 380,305 C 370,340 460,320 430,290 C 420,270 390,290 380,305 Z" fill="#FF1744"/>
+  <path d="M 380,305 C 370,340 460,320 430,290" stroke="#F44336" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M 340,310 Q 380,330 420,290" stroke="#FFFFFF" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <path d="M 340,310 Q 380,330 420,290" stroke="#1A237E" stroke-width="3" fill="none" stroke-dasharray="20 10"/>
+
+  <!-- Sunglasses -->
+  <path d="M 360,245 C 360,272 392,265 392,245 L 360,245 Z" fill="#212121"/>
+  <path d="M 392,235 L 392,265" stroke="#212121" stroke-width="6"/>
+  <path d="M 392,245 C 392,272 425,265 425,245 L 392,245 Z" fill="#212121"/>
+  <!-- Star reflection on glasses -->
+  <path d="M 372,248 L 373,251 L 376,252 L 373,253 L 372,256 L 371,253 L 368,252 L 371,251 Z" fill="#FFFFFF"/>
+  <path d="M 405,248 L 406,251 L 409,252 L 406,253 L 405,256 L 404,253 L 401,252 L 404,251 Z" fill="#FFFFFF"/>
+  <!-- Eyebrow frown -->
+  <path d="M 360,228 Q 376,235 386,228" stroke="#212121" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M 400,228 Q 410,235 426,228" stroke="#212121" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- Arms, Paws, Steering -->
+  <path d="M 360,315 C 370,380 460,380 560,130" fill="none" stroke="#FFA726" stroke-width="22" stroke-linecap="round"/>
+  
+  <!-- Left Sleeve -->
+  <path d="M 370,315 C 380,370 460,370 560,130" fill="none" stroke="#FFC107" stroke-width="28" stroke-linecap="round"/>
+  <path d="M 382,335 L 402,335 L 396,325 L 376,325 Z" fill="#1A237E" transform="rotate(10 380 330)"/>
+
+  <!-- Left Paw -->
+  <ellipse cx="556" cy="125" rx="16" ry="24" fill="#FFA726" transform="rotate(-20 556 125)"/>
+  <ellipse cx="566" cy="124" rx="14" ry="22" fill="#FFA726" transform="rotate(-20 566 124)"/>
+  <rect x="548" y="140" width="16" height="10" fill="#E65100" transform="rotate(70 548 140)"/>
+  <rect x="558" y="138" width="16" height="10" fill="#E65100" transform="rotate(75 558 138)"/>
+  <rect x="515" y="125" width="30" height="10" fill="#FFFFFF" transform="rotate(-20 515 125)"/>
+
+  <!-- Right Front Arm -->
+  <path d="M 410,310 C 440,380 500,360 610,140" fill="none" stroke="#FF8F00" stroke-width="22" stroke-linecap="round"/>
+  <path d="M 410,310 C 440,380 500,360 610,140" fill="none" stroke="#FFC107" stroke-width="28" stroke-linecap="round"/>
+  <path d="M 426,335 L 446,335 L 440,325 L 420,325 Z" fill="#1A237E" transform="rotate(-15 430 330)"/>
+  
+  <!-- Right Paw over Handlebar -->
+  <ellipse cx="606" cy="136" rx="16" ry="24" fill="#FF8F00" transform="rotate(-20 606 136)"/>
+  <ellipse cx="616" cy="135" rx="14" ry="22" fill="#FF8F00" transform="rotate(-20 616 135)"/>
+  <rect x="598" y="151" width="16" height="10" fill="#E65100" transform="rotate(70 598 151)"/>
+  <rect x="608" y="149" width="16" height="10" fill="#E65100" transform="rotate(75 608 149)"/>
+  <path d="M 570,130 Q 600,120 620,140 Q 600,150 570,140 Z" fill="#FFFFFF" transform="rotate(5 595 135)"/>
+  
+  <!-- Handlebar Grip (from right arm) -->
+  <rect x="590" y="90" width="16" height="30" rx="8" fill="#37474F" transform="rotate(-20 598 105)"/>
+  <rect x="610" y="85" width="16" height="30" rx="8" fill="#37474F" transform="rotate(-20 618 100)"/>
+  <rect x="594" y="90" width="12" height="26" rx="5" fill="#263238" transform="rotate(-20 600 103)"/>
+
+  <!-- Cat Whiskers & Cheeks -->
+  <!-- Abstracted whiskers due to 3/4 turn -->
+  <path d="M 358,272 L 335,275 M 358,280 L 335,282" stroke="#E65100" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 428,272 L 445,270 M 428,280 L 445,280" stroke="#E65100" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Flowing Scarf Ribbon (foremost) -->
+  <path d="M 410,280 C 470,270 470,340 410,330" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round"/>
+  <path d="M 410,280 C 470,270 470,340 410,330" fill="none" stroke="#1A237E" stroke-width="4" stroke-dasharray="24 12"/>
+
+  <!-- Front Pedal ahead of the Right Foot -->
+  <!-- Rear Crank Arm -->
+  <path d="M 420,450 L 460,520" stroke="#607D8B" stroke-width="8" stroke-linecap="round"/>
+  <!-- Rear Pedal -->
+  <line x1="440" y1="485" x2="480" y2="485" stroke="#37474F" stroke-width="12"/>
+  <ellipse cx="440" cy="485" rx="6" ry="24" fill="#212121" transform="rotate(15 440 485)"/>
+  <ellipse cx="440" cy="487" rx="4" ry="22" fill="#37474F" transform="rotate(15 440 487)"/>
+  <ellipse cx="480" cy="485" rx="6" ry="24" fill="#212121" transform="rotate(-15 480 485)"/>
+  <ellipse cx="480" cy="487" rx="4" ry="22" fill="#37474F" transform="rotate(-15 480 487)"/>
+  
+  <!-- Right Shoe catching pedal -->
+  <path d="M 445,450 Q 465,460 490,460 Q 490,480 450,470 Z" fill="#FF1744"/>
+  <path d="M 453,455 Q 470,465 485,465 Q 485,475 455,465" fill="#F44336"/>
+  <rect x="460" y="452" width="16" height="8" rx="3" fill="#FFFFFF" transform="rotate(10 460 452)"/>
+</svg>

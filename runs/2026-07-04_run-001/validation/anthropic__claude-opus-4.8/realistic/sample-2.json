@@ -1,0 +1,27 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 4728,
+    "elements": 70,
+    "paths": 31,
+    "colors": [
+      "#00000022",
+      "#1a1a10",
+      "#3a2e22",
+      "#4b3c2e",
+      "#4c3d2f",
+      "#5a4838",
+      "#6a5644",
+      "#b7a290",
+      "#c47b7b",
+      "#e8ded0",
+      "#ffffff",
+      "url(#bodygrad)",
+      "url(#earin)",
+      "url(#eyegrad)",
+      "url(#headgrad)",
+      "url(#tailgrad)"
+    ]
+  }
+}

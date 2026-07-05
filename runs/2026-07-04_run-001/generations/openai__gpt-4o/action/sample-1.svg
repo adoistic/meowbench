@@ -1,0 +1,25 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bicycle Frame -->
+  <line x1="60" y1="140" x2="140" y2="140" stroke="black" stroke-width="2"/>
+  <line x1="60" y1="140" x2="100" y2="80" stroke="black" stroke-width="2"/>
+  <line x1="140" y1="140" x2="120" y2="100" stroke="black" stroke-width="2"/>
+  <line x1="100" y1="80" x2="120" y2="100" stroke="black" stroke-width="2"/>
+  <line x1="100" y1="80" x2="90" y2="40" stroke="black" stroke-width="2"/>
+  
+  <!-- Bicycle Wheels -->
+  <circle cx="60" cy="140" r="20" fill="none" stroke="black" stroke-width="2"/>
+  <circle cx="140" cy="140" r="20" fill="none" stroke="black" stroke-width="2"/>
+  
+  <!-- Handlebars -->
+  <line x1="90" y1="40" x2="70" y2="50" stroke="black" stroke-width="2"/>
+  <line x1="70" y1="50" x2="80" y2="60" stroke="black" stroke-width="2"/>
+  
+  <!-- Cat -->
+  <circle cx="100" cy="60" r="10" fill="gray" stroke="black" stroke-width="1"/>
+  <circle cx="94" cy="58" r="1.5" fill="black"/>
+  <circle cx="106" cy="58" r="1.5" fill="black"/>
+  <polyline points="96,66 100,69 104,66" fill="none" stroke="black" stroke-width="1"/>
+  <polygon points="92,52 95,50 90,45" fill="gray" stroke="black" stroke-width="1"/>
+  <polygon points="108,52 105,50 110,45" fill="gray" stroke="black" stroke-width="1"/>
+  <path d="M98,70 C98,75 102,75 102,70" fill="gray" stroke="black" stroke-width="1"/>
+</svg>

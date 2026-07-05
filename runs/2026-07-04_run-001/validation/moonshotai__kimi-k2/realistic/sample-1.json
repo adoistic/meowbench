@@ -1,0 +1,31 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 8825,
+    "elements": 105,
+    "paths": 34,
+    "colors": [
+      "#000",
+      "#2d4a52",
+      "#3d5a5a",
+      "#6b5440",
+      "#8b6f4e",
+      "#9b7855",
+      "#a6845a",
+      "#c47a6b",
+      "#c4a57f",
+      "#d49080",
+      "#d4c4b0",
+      "#e8d5c4",
+      "#fff",
+      "url(#earinner)",
+      "url(#eyegradient)",
+      "url(#furbase)",
+      "url(#furdark)",
+      "url(#furlight)",
+      "url(#furshadow)",
+      "url(#nosegradient)"
+    ]
+  }
+}

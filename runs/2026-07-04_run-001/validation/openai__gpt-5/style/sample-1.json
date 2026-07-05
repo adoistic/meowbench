@@ -1,0 +1,22 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 2643,
+    "elements": 28,
+    "paths": 8,
+    "colors": [
+      "#000000",
+      "#c5b7a2",
+      "#d1c3ad",
+      "#d7cab5",
+      "#d9ccb6",
+      "#dacdb8",
+      "#e2d6c2",
+      "#ede3d1",
+      "#efe5d3",
+      "#f3ead9",
+      "#f7efdf"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "modelSlug": "anthropic/claude-fable-5",
+  "promptId": "action",
+  "sample": 2,
+  "status": "ok",
+  "temperature": 1,
+  "rawPath": "generations/anthropic__claude-fable-5/action/sample-2.raw.txt",
+  "svgPath": "generations/anthropic__claude-fable-5/action/sample-2.svg"
+}

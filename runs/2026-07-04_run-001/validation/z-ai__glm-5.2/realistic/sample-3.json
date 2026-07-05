@@ -1,0 +1,35 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 14301,
+    "elements": 228,
+    "paths": 151,
+    "colors": [
+      "#000",
+      "#1a1408",
+      "#2a2014",
+      "#2f2a20",
+      "#3a2820",
+      "#3a3328",
+      "#5a2828",
+      "#5a3a3a",
+      "#5a4f3f",
+      "#6f6451",
+      "#7a3a3a",
+      "#8a7c64",
+      "#b8a98c",
+      "#d8c9a8",
+      "#efe2c4",
+      "#f3ecd8",
+      "#ffffff",
+      "url(#bg)",
+      "url(#bodyshade)",
+      "url(#cheek)",
+      "url(#earin)",
+      "url(#eyeiris)",
+      "url(#furbase)",
+      "url(#nose)"
+    ]
+  }
+}

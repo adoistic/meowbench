@@ -1,0 +1,103 @@
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 450" width="400" height="450">
+  <style>
+    @keyframes tailSway {
+      0%   { transform: rotate(-20deg); }
+      50%  { transform: rotate(20deg); }
+      100% { transform: rotate(-20deg); }
+    }
+    .tail {
+      transform-origin: 295px 295px;
+      animation: tailSway 1.8s ease-in-out infinite;
+    }
+    @keyframes blink {
+      0%, 90%, 100% { transform: scaleY(1); }
+      95% { transform: scaleY(0.1); }
+    }
+    .eye-left {
+      transform-origin: 173px 178px;
+      animation: blink 4s ease-in-out infinite;
+    }
+    .eye-right {
+      transform-origin: 223px 178px;
+      animation: blink 4s ease-in-out infinite;
+    }
+  </style>
+
+  <!-- Tail -->
+  <g class="tail">
+    <path d="M295,295 C340,270 355,220 330,170 C320,150 310,140 320,120"
+          fill="none" stroke="#555" stroke-width="12" stroke-linecap="round"/>
+    <path d="M295,295 C340,270 355,220 330,170 C320,150 310,140 320,120"
+          fill="none" stroke="#777" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Back legs -->
+  <ellipse cx="160" cy="365" rx="32" ry="18" fill="#666"/>
+  <ellipse cx="240" cy="365" rx="32" ry="18" fill="#666"/>
+
+  <!-- Body -->
+  <ellipse cx="200" cy="300" rx="80" ry="75" fill="#777"/>
+  <ellipse cx="200" cy="310" rx="72" ry="60" fill="#888"/>
+
+  <!-- Front legs -->
+  <rect x="155" y="330" width="22" height="55" rx="11" fill="#777"/>
+  <rect x="223" y="330" width="22" height="55" rx="11" fill="#777"/>
+  <!-- Paws -->
+  <ellipse cx="166" cy="385" rx="14" ry="8" fill="#999"/>
+  <ellipse cx="234" cy="385" rx="14" ry="8" fill="#999"/>
+
+  <!-- Chest/belly -->
+  <ellipse cx="200" cy="320" rx="45" ry="45" fill="#999"/>
+
+  <!-- Head -->
+  <ellipse cx="198" cy="195" rx="62" ry="56" fill="#777"/>
+
+  <!-- Inner ears -->
+  <polygon points="150,155 137,100 170,140" fill="#777"/>
+  <polygon points="248,155 261,100 228,140" fill="#777"/>
+  <polygon points="152,150 142,112 168,142" fill="#c9909a"/>
+  <polygon points="246,150 256,112 230,142" fill="#c9909a"/>
+
+  <!-- Outer ears -->
+  <polygon points="150,158 132,95 175,138" fill="#777" stroke="#666" stroke-width="1"/>
+  <polygon points="248,158 266,95 223,138" fill="#777" stroke="#666" stroke-width="1"/>
+  <polygon points="153,152 140,110 172,140" fill="#d4a0a8"/>
+  <polygon points="245,152 258,110 226,140" fill="#d4a0a8"/>
+
+  <!-- Face details -->
+  <!-- Eyes -->
+  <g class="eye-left">
+    <ellipse cx="173" cy="178" rx="13" ry="15" fill="white"/>
+    <ellipse cx="176" cy="178" rx="8" ry="12" fill="#4a6"/>
+    <ellipse cx="178" cy="176" rx="5" ry="8" fill="#222"/>
+    <ellipse cx="180" cy="173" rx="3" ry="3" fill="white" opacity="0.8"/>
+  </g>
+  <g class="eye-right">
+    <ellipse cx="223" cy="178" rx="13" ry="15" fill="white"/>
+    <ellipse cx="220" cy="178" rx="8" ry="12" fill="#4a6"/>
+    <ellipse cx="218" cy="176" rx="5" ry="8" fill="#222"/>
+    <ellipse cx="216" cy="173" rx="3" ry="3" fill="white" opacity="0.8"/>
+  </g>
+
+  <!-- Nose -->
+  <path d="M193,198 L198,205 L203,198 Z" fill="#e8909a"/>
+
+  <!-- Mouth -->
+  <path d="M198,205 Q192,215 184,212" fill="none" stroke="#555" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M198,205 Q204,215 212,212" fill="none" stroke="#555" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Whiskers -->
+  <line x1="130" y1="192" x2="168" y2="198" stroke="#555" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="128" y1="203" x2="167" y2="204" stroke="#555" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="132" y1="214" x2="168" y2="210" stroke="#555" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="268" y1="192" x2="230" y2="198" stroke="#555" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="270" y1="203" x2="231" y2="204" stroke="#555" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="266" y1="214" x2="230" y2="210" stroke="#555" stroke-width="1.2" stroke-linecap="round"/>
+
+  <!-- Stripes on forehead -->
+  <path d="M188,155 Q198,145 208,155" fill="none" stroke="#666" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M185,148 Q198,136 211,148" fill="none" stroke="#666" stroke-width="2" stroke-linecap="round"/>
+  <path d="M192,162 Q198,154 204,162" fill="none" stroke="#666" stroke-width="2" stroke-linecap="round"/>
+</svg>
+```

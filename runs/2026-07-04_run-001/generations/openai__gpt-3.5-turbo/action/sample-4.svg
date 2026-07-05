@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Body -->
+  <circle cx="50" cy="40" r="20" fill="#FFD700"/>
+  <!-- Head -->
+  <circle cx="50" cy="25" r="10" fill="#FFD700"/>
+  <!-- Ears -->
+  <circle cx="42" cy="20" r="3" fill="#FFD700"/>
+  <circle cx="58" cy="20" r="3" fill="#FFD700"/>
+  <!-- Eyes -->
+  <circle cx="46" cy="23" r="1" fill="black"/>
+  <circle cx="54" cy="23" r="1" fill="black"/>
+  <!-- Nose -->
+  <polygon points="50,25 49,28 51,28" fill="pink"/>
+  <!-- Mouth -->
+  <path d="M 49,28 Q 50,29 51,28" stroke="black" fill="transparent"/>
+  <!-- Legs -->
+  <rect x="45" y="40" width="3" height="10" fill="#A0522D"/>
+  <rect x="52" y="40" width="3" height="10" fill="#A0522D"/>
+  <!-- Wheel -->
+  <circle cx="45" cy="50" r="5" fill="black"/>
+  <circle cx="55" cy="50" r="5" fill="black"/>
+  <!-- Handlebar -->
+  <line x1="47" y1="25" x2="47" y2="35" stroke="black" stroke-width="1"/>
+  <line x1="53" y1="25" x2="53" y2="35" stroke="black" stroke-width="1"/>
+  <line x1="47" y1="25" x2="45" y2="30" stroke="black" stroke-width="1"/>
+</svg>

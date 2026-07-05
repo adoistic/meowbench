@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Body -->
+  <ellipse cx="100" cy="130" rx="50" ry="40" fill="#ffa500" stroke="black"/>
+  
+  <!-- Head -->
+  <circle cx="100" cy="80" r="40" fill="#ffa500" stroke="black"/>
+  
+  <!-- Ears -->
+  <polygon points="70,45 85,20 100,45" fill="#ffa500" stroke="black"/>
+  <polygon points="100,45 115,20 130,45" fill="#ffa500" stroke="black"/>
+  
+  <!-- Eyes -->
+  <circle cx="80" cy="70" r="8" fill="white" stroke="black"/>
+  <circle cx="120" cy="70" r="8" fill="white" stroke="black"/>
+  
+  <!-- Pupils -->
+  <circle cx="82" cy="70" r="3" fill="black"/>
+  <circle cx="122" cy="70" r="3" fill="black"/>
+  
+  <!-- Nose -->
+  <polygon points="100,90 95,100 105,100" fill="pink" stroke="black"/>
+  
+  <!-- Mouth -->
+  <path d="M95 110 Q100 120 105 110" stroke="black" fill="none"/>
+  
+  <!-- Whiskers (grouped) -->
+  <path d="M90 95 L70 90 M90 100 L70 100 M90 105 L70 110 M110 95 L130 90 M110 100 L130 100 M110 105 L130 110" stroke="black"/>
+  
+  <!-- Tail -->
+  <path d="M150 130 C170 100 180 120 160 150" stroke="black" fill="none"/>
+</svg>

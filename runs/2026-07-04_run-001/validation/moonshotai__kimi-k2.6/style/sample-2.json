@@ -1,0 +1,32 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 7555,
+    "elements": 113,
+    "paths": 31,
+    "colors": [
+      "#ccc5b3",
+      "url(#bg-grad)",
+      "url(#lg-body-back)",
+      "url(#lg-body-front)",
+      "url(#lg-el)",
+      "url(#lg-er)",
+      "url(#lg-fl)",
+      "url(#lg-fr)",
+      "url(#lg-ll-center)",
+      "url(#lg-ll-left)",
+      "url(#lg-ll-paw)",
+      "url(#lg-ll-right)",
+      "url(#lg-lr-left)",
+      "url(#lg-lr-paw)",
+      "url(#lg-lr-right)",
+      "url(#lg-mu)",
+      "url(#lg-neck-back)",
+      "url(#lg-neck-front)",
+      "url(#lg-nose)",
+      "url(#lg-tail)",
+      "url(#lg-wh)"
+    ]
+  }
+}

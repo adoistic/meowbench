@@ -1,0 +1,13 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <rect x="10" y="10" width="80" height="80" rx="10" fill="#f2f2f2" />
+  <path d="M 30 40 L 50 60 L 70 40 Z" fill="#ccc" />
+  <path d="M 50 60 L 60 80 L 40 80 L 50 60 Z" fill="#ccc" />
+  <path d="M 40 40 L 40 30 L 60 30 L 60 40 Z" fill="#ccc" />
+  <path d="M 40 50 L 60 70 L 40 70 L 40 50 Z" fill="#ccc" />
+  <circle cx="50" cy="90" r="10" fill="#000" />
+  <circle cx="50" cy="90" r="5" fill="#fff" />
+  <path d="M 45 80 L 55 80" stroke="#000" stroke-width="2" />
+  <path d="M 42 85 L 58 85" stroke="#000" stroke-width="2" />
+  <path d="M 50 70 L 50 60" stroke="#000" stroke-width="2" />
+  <polygon points="45,60 55,60 50,50" fill="#000" />
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <linearGradient id="furGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d3d3d3"/>
+      <stop offset="50%" stop-color="#b0b0b0"/>
+      <stop offset="100%" stop-color="#8a8a8a"/>
+    </linearGradient>
+    <filter id="furTexture" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="3"/>
+      <feDisplacementMap in="SourceGraphic" scale="2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <radialGradient id="eyeGradient" cx="50%" cy="50%" r="50%" fx="30%" fy="30%">
+      <stop offset="0%" stop-color="#000"/>
+      <stop offset="100%" stop-color="#444"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Body with fur shading -->
+  <g filter="url(#furTexture)">
+    <path fill="url(#furGradient)" stroke="#7a7a7a" stroke-width="1" d="M120,180 Q140,160 170,160 Q200,160 220,180 Q240,200 230,230 Q220,260 180,270 Q140,280 110,250 Q100,230 100,210 Q100,190 120,180 Z"/>
+    
+    <!-- Head -->
+    <path fill="url(#furGradient)" stroke="#7a7a7a" stroke-width="1" d="M150,120 Q130,100 110,110 Q90,120 90,140 Q90,160 110,170 Q130,180 150,170 Q170,160 170,140 Q170,120 150,120 Z"/>
+    
+    <!-- Ears -->
+    <path fill="#a0a0a0" stroke="#7a7a7a" stroke-width="1" d="M130,90 L120,70 L140,85 Z"/>
+    <path fill="#a0a0a0" stroke="#7a7a7a" stroke-width="1" d="M170,90 L180,70 L160,85 Z"/>
+    
+    <!-- Front legs -->
+    <path fill="url(#furGradient)" stroke="#7a7a7a" stroke-width="1" d="M120,200 L110,250 L130,250 L140,220 Z"/>
+    <path fill="url(#furGradient)" stroke="#7a7a7a" stroke-width="1" d="M180,200 L190,250 L170,250 L160,220 Z"/>
+    
+    <!-- Tail -->
+    <path fill="url(#furGradient)" stroke="#7a7a7a" stroke-width="1" d="M100,250 Q70,270 60,240 Q50,210 70,200 Q90,220 100,240 Z"/>
+  </g>
+  
+  <!-- Facial features -->
+  <circle cx="130" cy="140" r="8" fill="url(#eyeGradient)"/>
+  <circle cx="170" cy="140" r="8" fill="url(#eyeGradient)"/>
+  <path fill="#ff6b6b" d="M150,155 L145,160 L155,160 Z"/>
+  <path stroke="#444" stroke-width="1.5" d="M150,160 Q150,165 150,170"/>
+  
+  <!-- Whiskers -->
+  <g stroke="#666" stroke-width="0.8">
+    <path d="M145,155 L120,150"/>
+    <path d="M145,158 L120,160"/>
+    <path d="M155,155 L180,150"/>
+    <path d="M155,158 L180,160"/>
+  </g>
+</svg>

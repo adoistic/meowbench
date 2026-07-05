@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400">
+  <defs>
+    <radialGradient id="gradBody" cx="50%" cy="50%" r="60%" fx="60%" fy="40%">
+      <stop offset="0%" style="stop-color:#D2B48C; stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B5E34; stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="gradHead" cx="50%" cy="50%" r="70%" fx="50%" fy="40%">
+      <stop offset="0%" style="stop-color:#E6CFA9; stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8C6239; stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="gradMuzzle" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#F5DEB3; stop-opacity:1" />
+      <stop offset="80%" style="stop-color:#EFE0C7; stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="gradEye" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:#C3D66A;" />
+      <stop offset="100%" style="stop-color:#6B8E23;" />
+    </radialGradient>
+    <radialGradient id="shadow">
+      <stop offset="40%" stop-color="#212121" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#212121" stop-opacity="0" />
+    </radialGradient>
+    <filter id="furFilter">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.5" />
+    </filter>
+  </defs>
+
+  <!-- Shadow -->
+  <ellipse cx="160" cy="380" rx="120" ry="15" fill="url(#shadow)" />
+
+  <!-- Body Group -->
+  <g id="cat" filter="url(#furFilter)">
+    <!-- Tail -->
+    <path d="M 230,375 C 270,360 290,320 280,280 C 275,320 250,345 230,355 Z" fill="#8C6239" />
+    <!-- Back Leg -->
+    <path d="M 190,260 C 240,260 260,320 250,380 H 160 C 150,350 140,290 190,260 Z" fill="url(#gradBody)" />
+    <!-- Main Body -->
+    <path d="M 120,380 C 40,370 70,200 130,170 C 180,180 210,240 230,280 C 245,340 210,380 120,380 Z" fill="url(#gradBody)" />
+    <!-- Front Paws -->
+    <path d="M 125,380 C 120,350 135,330 150,330 C 165,330 170,350 165,380 Z" fill="#b08b62" />
+    <path d="M 160,380 C 155,350 170,335 185,335 C 200,335 200,350 195,380 Z" fill="#a8835c" />
+    <!-- Head -->
+    <path d="M 100,210 C 60,180 80,90 140,80 C 200,90 220,180 180,210 C 165,225 115,225 100,210 Z" fill="url(#gradHead)" />
+    <!-- Ears -->
+    <path d="M 100,105 C 90,80 115,70 125,85 Z" fill="#E6CFA9" />
+    <path d="M 180,105 C 190,80 165,70 155,85 Z" fill="#E6CFA9" />
+    <path d="M 108,103 C 105,90 118,85 122,95 Z" fill="#D9A999" />
+    <path d="M 172,103 C 175,90 162,85 158,95 Z" fill="#D9A999" />
+    <!-- Muzzle -->
+    <path d="M 115,195 a 30,25 0 0 1 70,0 a 40,20 0 0 0 -70,0" fill="url(#gradMuzzle)" />
+    <!-- Stripes -->
+    <g fill="#795548" opacity="0.5">
+      <!-- Head Stripes -->
+      <path d="M 130,110 Q 140,125 150,110 Q 140,115 130,110 Z" />
+      <path d="M 120,130 C 110,140 120,150 130,145" stroke="#795548" stroke-width="3" fill="none" stroke-linecap="round" />
+      <path d="M 160,130 C 170,140 160,150 150,145" stroke="#795548" stroke-width="3" fill="none" stroke-linecap="round" />
+      <!-- Body Stripes -->
+      <path d="M 100,250 C 120,240 130,260 110,280" stroke="#795548" stroke-width="8" fill="none" stroke-linecap="round" />
+      <path d="M 90,300 C 110,290 120,310 100,330" stroke="#795548" stroke-width="9" fill="none" stroke-linecap="round" />
+      <!-- Tail Stripes -->
+      <path d="M 275,290 C 285,295 280,305 270,305" stroke="#795548" stroke-width="6" fill="none" stroke-linecap="round" />
+      <path d="M 260,320 C 270,325 265,335 255,335" stroke="#795548" stroke-width="7" fill="none" stroke-linecap="round" />
+    </g>
+    <!-- Facial Features -->
+    <g id="face">
+      <!-- Eyes -->
+      <path d="M 115,160 C 125,150 145,150 150,160 C 145,170 125,170 115,160 Z" fill="url(#gradEye)" stroke="#4E443A" stroke-width="0.5" />
+      <path d="M 160,160 C 165,150 185,150 195,160 C 185,170 165,170 160,160 Z" fill="url(#gradEye)" stroke="#4E443A" stroke-width="0.5" />
+      <!-- Pupils -->
+      <ellipse cx="132" cy="160" rx="3" ry="6" fill="#1C1C1C" />
+      <ellipse cx="178" cy="160" rx="3" ry="6" fill="#1C1C1C" />
+      <!-- Eye Highlights -->
+      <circle cx="134" cy="157" r="1.5" fill="#FFFFFF" opacity="0.9" />
+      <circle cx="180" cy="157" r="1.5" fill="#FFFFFF" opacity="0.9" />
+      <!-- Nose and Mouth -->
+      <path d="M 148,180 l 7,0 l -3.5,5 Z" fill="#C47A69" />
+      <path d="M 151.5,185 v 8 M 140,190 Q 151.5,198 163,190" stroke="#4a3c31" stroke-width="1" fill="none" stroke-linecap="round" />
+    </g>
+  </g>
+  
+  <!-- Whiskers and Fur detail - not filtered to stay sharp -->
+  <g id="details" stroke-linecap="round">
+    <!-- Whiskers -->
+    <g stroke="#FFFFFF" fill="none" stroke-width="0.6" opacity="0.8">
+      <path d="M 105,180 q -30,0 -50,-5" />
+      <path d="M 105,185 q -35,2 -55,5" />
+      <path d="M 105,190 q -30,5 -50,15" />
+      <path d="M 195,180 q 30,0 50,-5" />
+      <path d="M 195,185 q 35,2 55,5" />
+      <path d="M 195,190 q 30,5 50,15" />
+    </g>
+    <!-- Fur Highlights -->
+    <g stroke="#F5DEB3" fill="none" stroke-width="0.8" opacity="0.7">
+      <path d="M 100,210 c -5,-5 -6,-10 -3,-15" />
+      <path d="M 105,215 c -7,-3 -9,-8 -5,-14" />
+      <path d="M 190,210 c 5,-5 6,-10 3,-15" />
+      <path d="M 185,215 c 7,-3 9,-8 5,-14" />
+      <path d="M 80,250 c 0,10 5,15 10,15" />
+      <path d="M 85,260 c 0,8 4,13 8,13" />
+    </g>
+  </g>
+</svg>

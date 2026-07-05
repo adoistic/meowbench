@@ -1,0 +1,16 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 2572,
+    "elements": 28,
+    "paths": 8,
+    "colors": [
+      "#000",
+      "#5d4037",
+      "#ff9999",
+      "#fff",
+      "url(#furgradient)"
+    ]
+  }
+}

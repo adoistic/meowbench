@@ -1,0 +1,11 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <path d="M50 20 L40 10 L35 25 Q30 30 35 35 L30 40 L25 45 L20 50 L15 55 L20 60 Q25 65 30 60 L35 65 L40 60 L45 65 L50 60 L55 65 L60 60 L65 65 L70 60 Q75 65 70 55 L65 50 L75 45 L70 40 L65 35 Q70 30 65 25 L60 10 L50 20 Z" fill="orange"/>
+  <path d="M35 35 Q40 40 45 35 Q50 40 55 35 Q50 30 45 35" fill="white"/>
+  <path d="M38 32 L40 35 L38 38 Z M52 32 L50 35 L52 38 Z" fill="black"/>
+  <circle cx="42" cy="35" r="1" fill="black"/>
+  <circle cx="54" cy="35" r="1" fill="black"/>
+  <path d="M50 40 Q45 45 40 45 Q35 40 40 50 Q50 55 60 50 Q65 40 60 45 Q55 45 50 40" fill="white"/>
+  <path d="M30 70 L30 80 Q35 85 40 80 L40 70 Z M60 70 L60 80 Q55 85 50 80 L50 70 Z" fill="orange"/>
+  <path d="M25 85 L30 80 L35 85 Z M65 85 L60 80 L55 85 Z" fill="orange"/>
+  <path d="M50 50 L50 70" stroke="orange" stroke-width="2" stroke-linecap="round"/>
+</svg>

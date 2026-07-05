@@ -1,0 +1,32 @@
+```xml
+<svg width="200" height="240" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(0, 5)">
+    <!-- Base Color Palette:
+         Darkest: #C55A11
+         Dark-Mid: #ED7D31
+         Light-Mid: #F4B183
+         Lightest: #FCE5CD
+         Details: #4A3838
+    -->
+
+    <!-- Tail -->
+    <polygon points="76,80 71,105 88,100" fill="#ED7D31"/>
+    <polygon points="76,80 88,100 91,85" fill="#F4B183"/>
+
+    <!-- Body -->
+    <polygon points="29,105 50,55 45,105" fill="#ED7D31"/>
+    <polygon points="71,105 50,55 55,105" fill="#C55A11"/>
+
+    <!-- Head -->
+    <polygon points="50,10 25,40 48,35" fill="#ED7D31"/>
+    <polygon points="50,10 75,40 52,35" fill="#C55A11"/>
+    <polygon points="50,10 48,35 52,35" fill="#FCE5CD"/>
+    <polygon points="50,50 48,35 52,35" fill="#F4B183"/>
+
+    <!-- Facial Features -->
+    <circle cx="43" cy="33" r="2" fill="#4A3838"/>
+    <circle cx="57" cy="33" r="2" fill="#4A3838"/>
+    <polygon points="50,43 48,41 52,41" fill="#4A3838"/>
+  </g>
+</svg>
+```

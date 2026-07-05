@@ -1,0 +1,52 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bicycle -->
+  <!-- Back wheel -->
+  <circle cx="100" cy="220" r="40" fill="none" stroke="black" stroke-width="3"/>
+  <circle cx="100" cy="220" r="3" fill="black"/>
+  <!-- Front wheel -->
+  <circle cx="250" cy="220" r="40" fill="none" stroke="black" stroke-width="3"/>
+  <circle cx="250" cy="220" r="3" fill="black"/>
+  <!-- Frame -->
+  <line x1="100" y1="220" x2="150" y2="160" stroke="black" stroke-width="3"/>
+  <line x1="150" y1="160" x2="200" y2="160" stroke="black" stroke-width="3"/>
+  <line x1="200" y1="160" x2="250" y2="220" stroke="black" stroke-width="3"/>
+  <line x1="150" y1="160" x2="150" y2="140" stroke="black" stroke-width="3"/>
+  <line x1="200" y1="160" x2="200" y2="120" stroke="black" stroke-width="3"/>
+  <!-- Seat -->
+  <ellipse cx="150" cy="135" rx="15" ry="5" fill="brown"/>
+  <!-- Handlebars -->
+  <line x1="200" y1="120" x2="190" y2="115" stroke="black" stroke-width="3"/>
+  <line x1="200" y1="120" x2="210" y2="115" stroke="black" stroke-width="3"/>
+  <!-- Pedals -->
+  <circle cx="150" cy="190" r="5" fill="black"/>
+  <line x1="145" y1="190" x2="155" y2="190" stroke="black" stroke-width="2"/>
+  
+  <!-- Cat -->
+  <!-- Body -->
+  <ellipse cx="150" cy="110" rx="35" ry="25" fill="orange"/>
+  <!-- Head -->
+  <circle cx="180" cy="100" r="20" fill="orange"/>
+  <!-- Ears -->
+  <path d="M165 90 L160 80 L170 85 Z" fill="orange"/>
+  <path d="M195 90 L200 80 L190 85 Z" fill="orange"/>
+  <!-- Eyes -->
+  <circle cx="175" cy="100" r="3" fill="black"/>
+  <circle cx="185" cy="100" r="3" fill="black"/>
+  <!-- Nose -->
+  <path d="M180 105 L178 108 L182 108 Z" fill="pink"/>
+  <!-- Mouth -->
+  <path d="M180 108 Q175 110 170 108" fill="none" stroke="black" stroke-width="1"/>
+  <path d="M180 108 Q185 110 190 108" fill="none" stroke="black" stroke-width="1"/>
+  <!-- Front legs on handlebars -->
+  <ellipse cx="195" cy="115" rx="4" ry="15" fill="orange" transform="rotate(-30 195 115)"/>
+  <ellipse cx="205" cy="115" rx="4" ry="15" fill="orange" transform="rotate(30 205 115)"/>
+  <!-- Back legs on pedals -->
+  <ellipse cx="145" cy="175" rx="5" ry="20" fill="orange" transform="rotate(-10 145 175)"/>
+  <ellipse cx="155" cy="175" rx="5" ry="20" fill="orange" transform="rotate(10 155 175)"/>
+  <!-- Tail -->
+  <path d="M115 110 Q100 90 110 70" fill="none" stroke="orange" stroke-width="10" stroke-linecap="round"/>
+  <!-- Stripes -->
+  <line x1="130" y1="100" x2="135" y2="120" stroke="darkgray" stroke-width="3"/>
+  <line x1="140" y1="95" x2="145" y2="115" stroke="darkgray" stroke-width="3"/>
+  <line x1="150" y1="90" x2="155" y2="110" stroke="darkgray" stroke-width="3"/>
+</svg>

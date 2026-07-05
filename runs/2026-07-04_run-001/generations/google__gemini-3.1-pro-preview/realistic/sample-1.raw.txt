@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="100%" height="100%">
+  <defs>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="25" />
+    </filter>
+    
+    <filter id="furryEdge" x="-30%" y="-30%" width="160%" height="160%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.15 0.08" numOctaves="4" result="noise1"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise1" scale="18" xChannelSelector="R" yChannelSelector="G" result="fur"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.08 0.15" numOctaves="3" result="noise2"/>
+      <feDisplacementMap in="fur" in2="noise2" scale="10" xChannelSelector="B" yChannelSelector="A"/>
+    </filter>
+
+    <radialGradient id="bodyGrad" cx="35%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#FFB966"/>
+      <stop offset="40%" stop-color="#D9751E"/>
+      <stop offset="85%" stop-color="#80340A"/>
+      <stop offset="100%" stop-color="#3D1501"/>
+    </radialGradient>
+
+    <radialGradient id="haunchGrad" cx="70%" cy="80%" r="60%">
+      <stop offset="0%" stop-color="#D9751E"/>
+      <stop offset="60%" stop-color="#943D0C"/>
+      <stop offset="100%" stop-color="#3D1501"/>
+    </radialGradient>
+
+    <linearGradient id="legDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#A64B12"/>
+      <stop offset="70%" stop-color="#6B2904"/>
+      <stop offset="100%" stop-color="#2E1101"/>
+    </linearGradient>
+
+    <linearGradient id="legLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E88C30"/>
+      <stop offset="70%" stop-color="#A64B12"/>
+      <stop offset="100%" stop-color="#4F1D02"/>
+    </linearGradient>
+
+    <linearGradient id="tailGrad" x1="100%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#3D1501"/>
+      <stop offset="50%" stop-color="#C26315"/>
+      <stop offset="100%" stop-color="#FFB966"/>
+    </linearGradient>
+
+    <radialGradient id="chestGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#FFE4C2"/>
+      <stop offset="100%" stop-color="#C27B38"/>
+    </radialGradient>
+
+    <radialGradient id="eyeGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F2E661"/>
+      <stop offset="35%" stop-color="#A5C722"/>
+      <stop offset="75%" stop-color="#55800F"/>
+      <stop offset="100%" stop-color="#182E03"/>
+    </radialGradient>
+
+    <linearGradient id="earInner" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E8A7A7"/>
+      <stop offset="60%" stop-color="#A65858"/>
+      <stop offset="100%" stop-color="#3D1919"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="1000" fill="#202A33"/>
+
+  <ellipse cx="500" cy="880" rx="380" ry="50" fill="#0D0907" filter="url(#dropShadow)" opacity="0.85"/>
+  <ellipse cx="440" cy="880" rx="150" ry="35" fill="#050302" filter="url(#dropShadow)"/>
+
+  <g filter="url(#furryEdge)">
+    <path d="M 400 300 C 620 280, 800 450, 780 650 C 760 850, 680 880, 580 860 L 300 860 C 230 860, 200 650, 280 480 Z" fill="url(#bodyGrad)"/>
+    
+    <path d="M 520 860 C 520 750, 580 650, 680 600 C 760 560, 810 650, 770 750 C 720 880, 630 880, 520 860 Z" fill="url(#haunchGrad)"/>
+
+    <path d="M 330 480 L 260 830 C 250 870, 310 880, 330 850 L 370 480 Z" fill="url(#legDark)"/>
+
+    <path d="M 440 450 L 360 840 C 340 880, 420 890, 440 850 L 490 450 Z" fill="url(#legLight)"/>
+
+    <g stroke="#4F1A02" fill="none" opacity="0.55" stroke-linecap="round">
+      <path stroke-width="15" d="M 640 380 Q 700 460, 670 540"/>
+      <path stroke-width="12" d="M 690 420 Q 750 500, 710 580"/>
+      <path stroke-width="14" d="M 740 490 Q 790 560, 750 630"/>
+      
+      <path stroke-width="16" d="M 710 650 Q 820 680, 760 760"/>
+    </g>
+    <g stroke="#260C00" fill="none" opacity="0.45" stroke-linecap="round" stroke-width="8">
+      <path d="M 640 380 Q 700 460, 670 540"/>
+      <path d="M 690 420 Q 750 500, 710 580"/>
+      <path d="M 740 490 Q 790 560, 750 630"/>
+      <path d="M 710 650 Q 820 680, 760 760"/>
+    </g>
+
+    <path d="M 230 350 C 350 320, 490 350, 500 500 C 510 620, 440 700, 370 760 C 290 730, 220 630, 190 500 C 170 380, 180 340, 230 350 Z" fill="url(#chestGrad)"/>
+
+    <g fill="none" stroke-linecap="round">
+      <path stroke="#FFFAF5" stroke-width="7" d="M 250 400 Q 230 450, 210 490 M 280 410 Q 270 470, 250 510 M 320 400 Q 320 480, 290 530 L 285 545 M 370 410 Q 380 480, 350 520 M 420 430 Q 450 490, 420 540"/>
+      <path stroke="#FFEBD6" stroke-width="5" d="M 230 430 Q 210 470, 220 510 M 270 440 Q 250 500, 270 540 M 350 450 Q 370 510, 340 560 M 400 470 Q 420 530, 390 580"/>
+      <path stroke="#E6A665" stroke-width="6" d="M 450 480 Q 480 540, 450 600 M 410 520 Q 440 580, 400 640 M 470 450 Q 500 500, 480 560"/>
+    </g>
+
+    <path d="M 680 730 C 800 850, 680 940, 520 910 C 360 880, 210 930, 150 860 C 100 800, 110 760, 180 770 C 280 785, 410 835, 520 840 C 620 845, 650 780, 680 730 Z" fill="url(#tailGrad)"/>
+    
+    <g stroke="#3D1501" fill="none" stroke-linecap="round" stroke-width="16" opacity="0.6">
+      <path d="M 600 780 Q 640 820, 660 760"/>
+      <path d="M 520 810 Q 550 860, 580 820"/>
+      <path d="M 430 820 Q 460 880, 500 840"/>
+      <path d="M 340 825 Q 360 890, 410 850"/>
+      <path d="M 260 810 Q 280 880, 320 855"/>
+      <path d="M 180 790 Q 200 860, 240 840"/>
+    </g>
+
+    <g stroke="#FFE3B8" fill="none" stroke-linecap="round" stroke-width="8" opacity="0.8">
+      <path d="M 670 730 Q 720 800, 670 860 M 550 780 Q 600 820, 550 890 M 450 815 Q 500 860, 450 905 M 350 830 Q 400 880, 330 910"/>
+    </g>
+
+    <path d="M 270 170 L 220 50 C 210 30, 240 30, 260 50 L 320 135 Z" fill="#A84C11"/>
+    <path d="M 265 155 L 230 65 L 295 130 Z" fill="url(#earInner)"/>
+    <path d="M 430 170 L 480 50 C 490 30, 460 30, 440 50 L 380 135 Z" fill="#A84C11"/>
+    <path d="M 435 155 L 470 65 L 405 130 Z" fill="url(#earInner)"/>
+
+    <path d="M 350 140 C 430 140, 465 175, 475 235 C 485 285, 495 330, 455 365 C 415 400, 375 390, 350 390 C 325 390, 285 400, 245 365 C 205 330, 215 285, 225 235 C 235 175, 270 140, 350 140 Z" fill="#E37C22"/>
+
+    <path d="M 310 280 C 360 300, 390 300, 415 320 C 410 370, 360 380, 350 380 C 340 380, 290 370, 285 320 C 310 300, 340 300, 310 280 Z" fill="#FFF4E6"/>
+
+    <g stroke="#FFF0DF" fill="none" stroke-linecap="round" stroke-width="4">
+      <path d="M 255 145 Q 240 100, 220 80 M 270 150 Q 255 105, 235 85 Q 220 70, 200 65"/>
+      <path d="M 445 145 Q 460 100, 480 80 M 430 150 Q 445 105, 465 85 Q 480 70, 500 65"/>
+    </g>
+
+    <g stroke="#3D1400" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke-width="7" d="M 330 155 L 340 195 L 350 165 L 360 195 L 370 155"/>
+      <path stroke-width="5" d="M 310 165 L 320 205 M 390 165 L 380 205"/>
+      <path stroke-width="4" d="M 290 175 L 305 210 M 410 175 L 395 210"/>
+      
+      <path stroke-width="6" d="M 270 235 Q 220 220, 200 235"/>
+      <path stroke-width="5" d="M 265 255 Q 210 245, 195 260"/>
+      <path stroke-width="4" d="M 270 270 Q 230 270, 215 285"/>
+
+      <path stroke-width="6" d="M 430 235 Q 480 220, 500 235"/>
+      <path stroke-width="5" d="M 435 255 Q 490 245, 505 260"/>
+      <path stroke-width="4" d="M 430 270 Q 470 270, 485 285"/>
+
+      <path stroke-width="8" d="M 350 200 L 350 270" stroke="#E37C22"/>
+    </g>
+  </g>
+
+  <g id="sharpDetails">
+    <ellipse cx="318" cy="315" rx="32" ry="22" fill="#FFFBF5"/>
+    <ellipse cx="382" cy="315" rx="32" ry="22" fill="#FFFBF5"/>
+
+    <path d="M 320 250 Q 290 220, 260 230 Q 285 265, 320 250 Z" fill="url(#eyeGrad)" stroke="#120803" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M 380 250 Q 410 220, 440 230 Q 415 265, 380 250 Z" fill="url(#eyeGrad)" stroke="#120803" stroke-width="5" stroke-linejoin="round"/>
+
+    <path d="M 320 250 Q 290 220, 260 230 Q 285 240, 320 250 Z" fill="rgba(0,0,0,0.5)"/>
+    <path d="M 380 250 Q 410 220, 440 230 Q 415 240, 380 250 Z" fill="rgba(0,0,0,0.5)"/>
+
+    <path d="M 320 250 L 328 258" stroke="#120803" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 380 250 L 372 258" stroke="#120803" stroke-width="4" stroke-linecap="round"/>
+
+    <ellipse cx="295" cy="240" rx="6" ry="16" fill="#0A0502" transform="rotate(-15 295 240)"/>
+    <ellipse cx="405" cy="240" rx="6" ry="16" fill="#0A0502" transform="rotate(15 405 240)"/>
+
+    <ellipse cx="290" cy="232" rx="3" ry="6" fill="#FFFFFF" transform="rotate(-25 290 232)"/>
+    <circle cx="298" cy="248" r="1.5" fill="#FFFFFF"/>
+    <ellipse cx="400" cy="232" rx="3" ry="6" fill="#FFFFFF" transform="rotate(25 400 232)"/>
+    <circle cx="408" cy="248" r="1.5" fill="#FFFFFF"/>
+
+    <path d="M 335 295 C 342 290, 358 290, 365 295 C 370 300, 360 310, 350 315 C 340 310, 330 300, 335 295 Z" fill="#D96A6A" stroke="#4A1919" stroke-width="1.5"/>
+    <line x1="340" y1="295" x2="360" y2="295" stroke="#F5A2A2" stroke-width="2.5" stroke-linecap="round"/>
+
+    <path d="M 350 315 L 350 335" stroke="#1F0D05" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 350 335 C 335 350, 315 340, 305 330" stroke="#1F0D05" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 350 335 C 365 350, 385 340, 395 330" stroke="#1F0D05" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <g fill="#1F0D05" opacity="0.6">
+      <circle cx="310" cy="305" r="1.5"/>
+      <circle cx="300" cy="312" r="1.5"/>
+      <circle cx="315" cy="315" r="1.5"/>
+      <circle cx="290" cy="320" r="1.5"/>
+      <circle cx="325" cy="322" r="1.5"/>
+      <circle cx="305" cy="325" r="1.5"/>
+      
+      <circle cx="390" cy="305" r="1.5"/>
+      <circle cx="400" cy="312" r="1.5"/>
+      <circle cx="385" cy="315" r="1.5"/>
+      <circle cx="410" cy="320" r="1.5"/>
+      <circle cx="375" cy="322" r="1.5"/>
+      <circle cx="395" cy="325" r="1.5"/>
+    </g>
+
+    <g stroke="#FFFFFF" fill="none" stroke-linecap="round" opacity="0.85">
+      <path d="M 305 305 Q 120 280, 50 330" stroke-width="3"/>
+      <path d="M 295 315 Q 120 320, 40 380" stroke-width="2.5"/>
+      <path d="M 315 320 Q 150 370, 70 440" stroke-width="2"/>
+      <path d="M 285 315 Q 180 260, 110 240" stroke-width="2"/>
+      <path d="M 310 330 Q 200 410, 140 480" stroke-width="1.5"/>
+
+      <path d="M 395 305 Q 580 280, 650 330" stroke-width="3"/>
+      <path d="M 405 315 Q 580 320, 660 380" stroke-width="2.5"/>
+      <path d="M 385 320 Q 550 370, 630 440" stroke-width="2"/>
+      <path d="M 415 315 Q 520 260, 590 240" stroke-width="2"/>
+      <path d="M 390 330 Q 500 410, 560 480" stroke-width="1.5"/>
+
+      <path d="M 290 200 Q 250 90, 180 80" stroke-width="2"/>
+      <path d="M 310 190 Q 280 70, 220 60" stroke-width="1.5"/>
+      
+      <path d="M 410 200 Q 450 90, 520 80" stroke-width="2"/>
+      <path d="M 390 190 Q 420 70, 480 60" stroke-width="1.5"/>
+    </g>
+
+    <g stroke="#1F0D05" stroke-width="2" fill="none" stroke-linecap="round">
+      <path d="M 285 860 Q 295 845, 305 840"/>
+      <path d="M 315 865 Q 320 850, 325 842"/>
+      
+      <path d="M 385 865 Q 395 850, 405 845"/>
+      <path d="M 425 870 Q 430 855, 435 847"/>
+    </g>
+  </g>
+</svg>

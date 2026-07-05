@@ -1,0 +1,25 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 8698,
+    "elements": 124,
+    "paths": 69,
+    "colors": [
+      "#3e3023",
+      "#a63128",
+      "#d4680c",
+      "#d8473d",
+      "#f28a1a",
+      "#ffffff",
+      "url(#face-l)",
+      "url(#face-r)",
+      "url(#or-cre-d)",
+      "url(#or-cre-l)",
+      "url(#or-surf)",
+      "url(#sky)",
+      "url(#wh-cre)",
+      "url(#wh-surf)"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 2475,
+    "elements": 27,
+    "paths": 11,
+    "colors": [
+      "black",
+      "url(#fur-shading)"
+    ]
+  }
+}

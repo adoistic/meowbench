@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150">
+  <style>
+    @keyframes sway {
+      0%, 100% { transform: rotate(-10deg); }
+      50% { transform: rotate(10deg); }
+    }
+  </style>
+  
+  <!-- Cat body -->
+  <circle cx="100" cy="90" r="40" fill="#9B7653"/>
+  
+  <!-- Cat head -->
+  <circle cx="100" cy="50" r="30" fill="#9B7653"/>
+  
+  <!-- Ears -->
+  <polygon points="80,25 70,10 90,20" fill="#9B7653"/>
+  <polygon points="120,25 130,10 110,20" fill="#9B7653"/>
+  
+  <!-- Eyes -->
+  <circle cx="90" cy="45" r="5" fill="white"/>
+  <circle cx="110" cy="45" r="5" fill="white"/>
+  <circle cx="90" cy="45" r="2" fill="black"/>
+  <circle cx="110" cy="45" r="2" fill="black"/>
+  
+  <!-- Nose and mouth -->
+  <polygon points="100,55 95,60 105,60" fill="pink"/>
+  <path d="M100 60 Q100 65 95 68" stroke="black" fill="none"/>
+  <path d="M100 60 Q100 65 105 68" stroke="black" fill="none"/>
+  
+  <!-- Whiskers -->
+  <line x1="85" y1="55" x2="65" y2="55" stroke="black"/>
+  <line x1="85" y1="58" x2="65" y2="63" stroke="black"/>
+  <line x1="85" y1="62" x2="65" y2="67" stroke="black"/>
+  <line x1="115" y1="55" x2="135" y2="55" stroke="black"/>
+  <line x1="115" y1="58" x2="135" y2="63" stroke="black"/>
+  <line x1="115" y1="62" x2="135" y2="67" stroke="black"/>
+  
+  <!-- Tail -->
+  <path d="M140 90 Q160 70 140 50" fill="none" stroke="#9B7653" stroke-width="8" transform-origin="140 90" style="animation: sway 2s infinite ease-in-out;"/>
+  
+  <!-- Legs -->
+  <rect x="80" y="120" width="10" height="20" fill="#9B7653"/>
+  <rect x="110" y="120" width="10" height="20" fill="#9B7653"/>
+</svg>

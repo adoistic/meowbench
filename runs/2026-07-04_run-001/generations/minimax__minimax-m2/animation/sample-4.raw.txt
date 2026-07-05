@@ -1,0 +1,68 @@
+<svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    /* Base styles for the cat */
+    .cat-shape {
+      fill: #4a4a4a;
+      stroke: #4a4a4a;
+    }
+
+    /* Tail specific styles */
+    .tail {
+      fill: none;
+      stroke: #4a4a4a;
+      stroke-width: 10;
+      stroke-linecap: round;
+      /* Sets the pivot point to the base of the tail */
+      transform-origin: 130px 130px;
+      animation: sway 1s ease-in-out infinite alternate;
+    }
+
+    /* Face details */
+    .eye {
+      fill: #aaddff;
+    }
+    .pupil {
+      fill: #000;
+    }
+    .nose {
+      fill: pink;
+    }
+
+    /* Animation Keyframes */
+    @keyframes sway {
+      from {
+        transform: rotate(-15deg);
+      }
+      to {
+        transform: rotate(15deg);
+      }
+    }
+  </style>
+
+  <!-- Tail: Drawn first so it appears behind the body -->
+  <path d="M130,130 Q165,130 165,80" class="tail" />
+
+  <!-- Body -->
+  <ellipse cx="100" cy="135" rx="45" ry="30" class="cat-shape" stroke="none" />
+
+  <!-- Paws -->
+  <ellipse cx="70" cy="160" rx="9" ry="6" class="cat-shape" stroke="none" />
+  <ellipse cx="130" cy="160" rx="9" ry="6" class="cat-shape" stroke="none" />
+
+  <!-- Head -->
+  <circle cx="65" cy="110" r="30" class="cat-shape" stroke="none" />
+
+  <!-- Ears -->
+  <path d="M40,90 L35,60 L60,80 Z" class="cat-shape" stroke="none" />
+  <path d="M90,90 L95,60 L70,80 Z" class="cat-shape" stroke="none" />
+
+  <!-- Face Features -->
+  <!-- Eyes -->
+  <circle cx="53" cy="105" r="4" class="eye" />
+  <circle cx="77" cy="105" r="4" class="eye" />
+  <!-- Pupils -->
+  <ellipse cx="53" cy="105" rx="1.5" ry="3.5" class="pupil" />
+  <ellipse cx="77" cy="105" rx="1.5" ry="3.5" class="pupil" />
+  <!-- Nose -->
+  <polygon points="60,112 70,112 65,118" class="nose" />
+</svg>

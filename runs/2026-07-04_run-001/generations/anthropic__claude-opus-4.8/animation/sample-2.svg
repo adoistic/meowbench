@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#eaf4ff"/>
+
+  <!-- Tail (animated) -->
+  <g transform="translate(120,270)">
+    <path d="M0,0 Q-50,-10 -60,-60 Q-65,-90 -40,-100" fill="none" stroke="#6b4f3a" stroke-width="16" stroke-linecap="round">
+      <animate attributeName="d"
+        dur="2s" repeatCount="indefinite"
+        values="M0,0 Q-50,-10 -60,-60 Q-65,-90 -40,-100;
+                M0,0 Q-55,-20 -75,-55 Q-95,-80 -85,-115;
+                M0,0 Q-50,-10 -60,-60 Q-65,-90 -40,-100"/>
+    </path>
+  </g>
+
+  <!-- Body -->
+  <ellipse cx="200" cy="290" rx="90" ry="65" fill="#8a6a4f"/>
+
+  <!-- Head -->
+  <circle cx="255" cy="200" r="62" fill="#9a7a5c"/>
+
+  <!-- Ears -->
+  <polygon points="210,155 205,105 250,140" fill="#9a7a5c"/>
+  <polygon points="300,155 315,108 262,140" fill="#9a7a5c"/>
+  <polygon points="216,150 213,120 240,142" fill="#e8b9c9"/>
+  <polygon points="298,150 308,122 268,142" fill="#e8b9c9"/>
+
+  <!-- Eyes -->
+  <ellipse cx="235" cy="195" rx="12" ry="16" fill="#fff"/>
+  <ellipse cx="278" cy="195" rx="12" ry="16" fill="#fff"/>
+  <circle cx="236" cy="197" r="7" fill="#2b2b2b">
+    <animate attributeName="ry" dur="4s" repeatCount="indefinite"
+      values="7;7;1;7;7" keyTimes="0;0.45;0.5;0.55;1"/>
+  </circle>
+  <circle cx="277" cy="197" r="7" fill="#2b2b2b">
+    <animate attributeName="ry" dur="4s" repeatCount="indefinite"
+      values="7;7;1;7;7" keyTimes="0;0.45;0.5;0.55;1"/>
+  </circle>
+
+  <!-- Nose -->
+  <polygon points="255,215 248,222 262,222" fill="#e8899e"/>
+
+  <!-- Mouth -->
+  <path d="M255,222 Q248,235 240,228 M255,222 Q262,235 270,228" fill="none" stroke="#5a4030" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Whiskers -->
+  <g stroke="#5a4030" stroke-width="2" stroke-linecap="round">
+    <line x1="235" y1="218" x2="185" y2="210"/>
+    <line x1="235" y1="224" x2="185" y2="228"/>
+    <line x1="277" y1="218" x2="325" y2="210"/>
+    <line x1="277" y1="224" x2="325" y2="228"/>
+  </g>
+
+  <!-- Front paws -->
+  <ellipse cx="175" cy="345" rx="22" ry="15" fill="#9a7a5c"/>
+  <ellipse cx="230" cy="345" rx="22" ry="15" fill="#9a7a5c"/>
+</svg>

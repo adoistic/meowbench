@@ -1,0 +1,32 @@
+```svg
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .tail {
+      transform-origin: top right;
+      animation: sway 1s infinite alternate ease-in-out;
+    }
+    @keyframes sway {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(20deg);
+      }
+    }
+  </style>
+  <!-- Cat Body -->
+  <circle cx="100" cy="140" r="40" fill="#D8BFD8" />
+  <!-- Cat Head -->
+  <circle cx="100" cy="70" r="30" fill="#D8BFD8" />
+  <!-- Cat Ears -->
+  <polygon points="80,50 95,20 110,50" fill="#D8BFD8" />
+  <polygon points="120,50 135,20 150,50" fill="#D8BFD8" />
+  <!-- Cat Eyes -->
+  <circle cx="90" cy="70" r="4" fill="#000" />
+  <circle cx="110" cy="70" r="4" fill="#000" />
+  <!-- Cat Nose -->
+  <ellipse cx="100" cy="85" rx="4" ry="2" fill="#000" />
+  <!-- Cat Tail -->
+  <rect x="130" y="130" width="60" height="10" rx="5" ry="5" fill="#D8BFD8" class="tail" />
+</svg>
+```

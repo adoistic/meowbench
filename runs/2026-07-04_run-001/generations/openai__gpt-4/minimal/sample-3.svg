@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-50 -50 100 100">
+    <!-- Body -->
+    <ellipse fill="#000000" rx="30" ry="40"/>
+
+    <!-- Eyes -->
+    <circle fill="#FFFFFF" cx="-10" cy="-10" r="4"/>
+    <circle fill="#FFFFFF" cx="10" cy="-10" r="4"/>
+
+    <!-- Nose -->
+    <circle fill="#FF0000" cx="0" cy="0" r="2"/>
+
+    <!-- Mouth -->
+    <path fill="none" stroke="#FF0000" d="M -10 5 Q 0 10 10 5"/>
+
+    <!-- Ears -->
+    <polygon fill="#000000" points="-35,-30 -25,-10 -20,-30"/>
+    <polygon fill="#000000" points="35,-30 25,-10 20,-30"/>
+
+    <!-- Tail -->
+    <path fill="none" stroke="#000000" d="M 30 30 Q 40 0 30 -20"/>
+</svg>

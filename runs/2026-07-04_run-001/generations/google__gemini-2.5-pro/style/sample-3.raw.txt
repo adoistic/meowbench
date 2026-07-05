@@ -1,0 +1,26 @@
+```xml
+<svg width="100%" height="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <!-- Origami Cat by an SVG artist -->
+    <g stroke-linejoin="round">
+        <!-- Right Ear -->
+        <polygon points="50,10 68,32 58,35" fill="#a9a9a9"/>
+        <!-- Left Ear -->
+        <polygon points="50,10 32,32 42,35" fill="#8b8b8b"/>
+        <!-- Head - Right Side -->
+        <polygon points="50,10 68,32 50,55" fill="#d3d3d3"/>
+        <!-- Head - Left Side -->
+        <polygon points="50,10 32,32 50,55" fill="#f5f5f5"/>
+        <!-- Body - Right Side -->
+        <polygon points="58,35 78,90 50,95" fill="#808080"/>
+        <!-- Body - Left Side -->
+        <polygon points="42,35 22,90 50,95" fill="#a9a9a9"/>
+        <!-- Chest -->
+        <polygon points="50,55 42,35 58,35" fill="#e0e0e0"/>
+        <!-- Tail -->
+        <polygon points="22,90 20,70 10,75" fill="#d3d3d3"/>
+        <!-- Front Paws/Body connection -->
+        <polygon points="50,95 22,90 42,35" fill="#c0c0c0"/>
+        <polygon points="50,95 78,90 58,35" fill="#696969"/>
+    </g>
+</svg>
+```

@@ -1,0 +1,21 @@
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="fur-gradient" cx="50%" cy="50%" r="50%" fx="30%" fy="30%">
+      <stop offset="0%" stop-color="#cda274" />
+      <stop offset="100%" stop-color="#705030" />
+    </radialGradient>
+  </defs>
+  <g transform="translate(50, 50)">
+    <path d="M 20,380 C 20,380 110,420 220,420 C 330,420 380,380 380,380 C 380,380 390,270 390,170 C 390,70 350,10 220,10 C 90,10 20,70 20,170 C 20,270 20,380 20,380 Z" fill="url(#fur-gradient)" />
+    <path d="M 20,380 C 20,380 110,420 220,420 C 330,420 380,380 380,380" stroke="#544030" stroke-width="10" fill="none" />
+    <path d="M 110,420 C 110,420 130,450 220,450 C 310,450 380,420 380,420" stroke="#544030" stroke-width="10" fill="none" />
+    <path d="M 220,10 C 90,10 20,70 20,170 C 20,270 20,380 20,380" stroke="#544030" stroke-width="10" fill="none" />
+    <path d="M 220,10 C 350,10 390,70 390,170 C 390,270 390,380 390,380" stroke="#544030" stroke-width="10" fill="none" />
+    <path d="M 50,280 C 50,280 80,340 220,340 C 360,340 390,280 390,280" stroke="#544030" stroke-width="10" fill="none" />
+    <path d="M 50,280 C 50,280 80,200 220,200 C 360,200 390,280 390,280" stroke="#544030" stroke-width="10" fill="none" />
+    <path d="M 220,200 C 220,200 260,160 260,230 C 260,300 220,340 220,340" stroke="#544030" stroke-width="10" fill="none" />
+    <path d="M 220,200 C 220,200 180,160 180,230 C 180,300 220,340 220,340" stroke="#544030" stroke-width="10" fill="none" />
+    <path d="M 180,230 C 180,230 200,200 220,200 C 240,200 260,230 260,230" stroke="#544030" stroke-width="10" fill="none" />
+    <path d="M 180,230 C 180,230 190,270 220,270 C 250,270 260,230 260,230" stroke="#544030" stroke-width="10" fill="none" />
+  </g>
+</svg>

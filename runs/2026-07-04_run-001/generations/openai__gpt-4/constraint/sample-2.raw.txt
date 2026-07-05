@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <circle cx="200" cy="180" r="100" fill="#ffffff"/> <!--head-->
+  <circle cx="160" cy="150" r="25" fill="#000000"/> <!--left eye-->
+  <circle cx="240" cy="150" r="25" fill="#000000"/> <!--right eye--> 
+  <path d="M200,230 Q240,290 200,350" fill="transparent" stroke="#000000" stroke-width="5"/> <!--nose-->
+  <path d="M100,100 Q210,120 200,180" fill="#ffffff" stroke="#000000" stroke-width="5"/> <!--left ear-->
+  <path d="M300,100 Q190,120 200,180" fill="#ffffff" stroke="#000000" stroke-width="5"/> <!--right ear-->
+  <path d="M135,220 Q180,270 220,220" fill="#ffffff" stroke="#000000" stroke-width="5"/> <!--mouth-->
+  <circle cx="200" cy="340" r="50" fill="#ffffff"/> <!--body-->
+  <path d="M240,340 Q310,420 200,420" fill="#ffffff" stroke="#000000" stroke-width="5"/> <!--tail-->
+  <circle cx="160" cy="340" r="5" fill="#000000"/> <!--left paw-->
+  <circle cx="240" cy="340" r="5" fill="#000000"/> <!--right paw-->
+</svg>

@@ -1,0 +1,26 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 5102,
+    "elements": 71,
+    "paths": 30,
+    "colors": [
+      "#000",
+      "#333",
+      "#444",
+      "#505050",
+      "#696969",
+      "#808080",
+      "#a9a9a9",
+      "#d3d3d3",
+      "#ddd",
+      "#ffb6c1",
+      "#fff",
+      "url(#chestlight)",
+      "url(#eyegradient)",
+      "url(#furbase)",
+      "url(#nosegradient)"
+    ]
+  }
+}

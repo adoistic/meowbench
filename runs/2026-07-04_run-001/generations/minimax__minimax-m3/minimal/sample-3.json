@@ -1,0 +1,9 @@
+{
+  "modelSlug": "minimax/minimax-m3",
+  "promptId": "minimal",
+  "sample": 3,
+  "status": "ok",
+  "temperature": 1,
+  "rawPath": "generations/minimax__minimax-m3/minimal/sample-3.raw.txt",
+  "svgPath": "generations/minimax__minimax-m3/minimal/sample-3.svg"
+}

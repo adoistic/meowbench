@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <defs>
+    <!-- Fur Body Gradient -->
+    <radialGradient id="bodyGrad" cx="40%" cy="30%" r="70%" fx="30%" fy="30%">
+      <stop offset="0%" stop-color="#8a8a8a" />
+      <stop offset="60%" stop-color="#555555" />
+      <stop offset="100%" stop-color="#2e2e2e" />
+    </radialGradient>
+
+    <!-- Tail Gradient -->
+    <linearGradient id="tailGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#333333" />
+      <stop offset="50%" stop-color="#666666" />
+      <stop offset="100%" stop-color="#2e2e2e" />
+    </linearGradient>
+
+    <!-- Eye Gradient -->
+    <radialGradient id="eyeGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="40%" stop-color="#aaddaa" />
+      <stop offset="80%" stop-color="#558855" />
+      <stop offset="100%" stop-color="#223322" />
+    </radialGradient>
+
+    <!-- Soft Shadow Filter -->
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+    </filter>
+  </defs>
+
+  <!-- Floor Shadow -->
+  <ellipse cx="250" cy="440" rx="120" ry="20" fill="#000000" opacity="0.3" filter="url(#blur)" />
+
+  <!-- Tail (Behind body) -->
+  <path d="M 300 380 Q 400 380 400 280 Q 400 200 340 220 Q 300 240 310 280" 
+        fill="none" stroke="url(#tailGrad)" stroke-width="35" stroke-linecap="round" />
+  
+  <!-- Tail Stripes (Texture) -->
+  <path d="M 360 280 Q 370 270 380 275" fill="none" stroke="#222" stroke-width="3" opacity="0.5" />
+  <path d="M 350 310 Q 360 300 370 305" fill="none" stroke="#222" stroke-width="3" opacity="0.5" />
+
+  <!-- Main Body -->
+  <path d="M 180 420 
+           C 140 420, 140 280, 190 250 
+           C 220 230, 280 230, 310 250 
+           C 360 280, 360 420, 320 420 
+           Z" 
+        fill="url(#bodyGrad)" />
+
+  <!-- Body Highlight (Fur sheen) -->
+  <path d="M 200 260 Q 220 240 250 240 Q 280 240 290 260" 
+        fill="none" stroke="#aaaaaa" stroke-width="4" opacity="0.4" stroke-linecap="round" />
+
+  <!-- Front Paws -->
+  <ellipse cx="210" cy="420" rx="25" ry="15" fill="#444" />
+  <ellipse cx="290" cy="420" rx="25" ry="15" fill="#444" />
+  <!-- Paw Highlights -->
+  <ellipse cx="205" cy="415" rx="10" ry="5" fill="#777" opacity="0.5" />
+  <ellipse cx="285" cy="415" rx="10" ry="5" fill="#777" opacity="0.5" />
+
+  <!-- Chest Fur (The 'Mane') -->
+  <path d="M 220 260 
+           Q 200 320 210 360 
+           Q 250 390 290 360 
+           Q 300 320 280 260" 
+        fill="#666666" />
+  <!-- Chest Fur Texture -->
+  <path d="M 230 280 L 220 300 M 240 290 L 235 310 M 260 290 L 265 310 M 270 280 L 280 300" 
+        stroke="#444" stroke-width="2" opacity="0.3" />
+
+  <!-- Head Group -->
+  <g transform="translate(250, 200)">
+    
+    <!-- Ears -->
+    <!-- Left Ear -->
+    <path d="M -50 -40 L -70 -100 L -20 -70 Z" fill="#555" />
+    <path d="M -55 -45 L -65 -85 L -30 -65 Z" fill="#333" /> <!-- Inner -->
+    
+    <!-- Right Ear -->
+    <path d="M 50 -40 L 70 -100 L 20 -70 Z" fill="#555" />
+    <path d="M 55 -45 L 65 -85 L 30 -65 Z" fill="#333" /> <!-- Inner -->
+
+    <!-- Head Base -->
+    <ellipse cx="0" cy="10" rx="75" ry="60" fill="#666" />
+    
+    <!-- Face Shadow/Volume -->
+    <ellipse cx="0" cy="15" rx="65" ry="50" fill="#555" />
+
+    <!-- Cheek Fluff -->
+    <path d="M -60 10 Q -80 30 -60 50" fill="none" stroke="#777" stroke-width="3" />
+    <path d="M 60 10 Q 80 30 60 50" fill="none" stroke="#777" stroke-width="3" />
+
+    <!-- Eyes -->
+    <g transform="translate(0, 5)">
+        <!-- Left Eye -->
+        <ellipse cx="-30" cy="0" rx="12" ry="18" fill="url(#eyeGrad)" stroke="#222" stroke-width="1"/>
+        <ellipse cx="-30" cy="0" rx="3" ry="14" fill="#000" /> <!-- Pupil -->
+        <circle cx="-25" cy="-8" r="3" fill="#fff" opacity="0.9" /> <!-- Highlight -->
+        
+        <!-- Right Eye -->
+        <ellipse cx="30" cy="0" rx="12" ry="18" fill="url(#eyeGrad)" stroke="#222" stroke-width="1"/>
+        <ellipse cx="30" cy="0" rx="3" ry="14" fill="#000" /> <!-- Pupil -->
+        <circle cx="35" cy="-8" r="3" fill="#fff" opacity="0.9" /> <!-- Highlight -->
+    </g>
+
+    <!-- Nose -->
+    <path d="M -8 30 L 8 30 L 0 40 Z" fill="#ffaaaa" />
+
+    <!-- Mouth -->
+    <path d="M 0 40 Q -10 50 -20 45 M 0 40 Q 10 50 20 45" fill="none" stroke="#222" stroke-width="1.5" />
+
+    <!-- Whiskers -->
+    <g stroke="#ddd" stroke-width="0.5" fill="none" opacity="0.6">
+      <path d="M -15 35 L -60 25" />
+      <path d="M -15 38 L -65 38" />
+      <path d="M -15 41 L -60 50" />
+      
+      <path d="M 15 35 L 60 25" />
+      <path d="M 15 38 L 65 38" />
+      <path d="M 15 41 L 60 50" />
+    </g>
+    
+    <!-- Forehead Fur Markings -->
+    <path d="M 0 -40 L -5 -20 L 0 -10 L 5 -20 Z" fill="#444" opacity="0.5"/>
+    <path d="M -20 -35 L -15 -20" stroke="#444" stroke-width="2" opacity="0.3"/>
+    <path d="M 20 -35 L 15 -20" stroke="#444" stroke-width="2" opacity="0.3"/>
+
+  </g>
+</svg>

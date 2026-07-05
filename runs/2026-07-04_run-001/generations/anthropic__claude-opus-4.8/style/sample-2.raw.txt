@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <rect width="400" height="400" fill="#f5f0e8"/>
+
+  <!-- Body -->
+  <polygon points="150,250 260,240 300,340 130,360" fill="#e8955a"/>
+  <polygon points="150,250 260,240 205,300" fill="#d97c3f"/>
+  <polygon points="130,360 205,300 300,340" fill="#c96b30"/>
+
+  <!-- Tail -->
+  <polygon points="300,340 340,250 360,270 320,350" fill="#e8955a"/>
+  <polygon points="300,340 340,250 320,300" fill="#d97c3f"/>
+
+  <!-- Chest -->
+  <polygon points="205,300 130,360 190,360" fill="#f2b784"/>
+
+  <!-- Head base -->
+  <polygon points="120,120 220,110 240,210 110,220" fill="#e8955a"/>
+  <polygon points="120,120 220,110 175,165" fill="#f2b784"/>
+  <polygon points="110,220 175,165 240,210" fill="#d97c3f"/>
+
+  <!-- Left ear -->
+  <polygon points="120,120 115,55 170,105" fill="#e8955a"/>
+  <polygon points="120,120 170,105 150,120" fill="#d97c3f"/>
+  <polygon points="130,110 128,75 158,105" fill="#f2b784"/>
+
+  <!-- Right ear -->
+  <polygon points="220,110 250,50 195,100" fill="#e8955a"/>
+  <polygon points="220,110 195,100 210,118" fill="#d97c3f"/>
+  <polygon points="215,105 227,72 200,100" fill="#f2b784"/>
+
+  <!-- Face lower fold -->
+  <polygon points="130,180 240,180 175,240 110,200" fill="#f2b784"/>
+  <polygon points="130,180 175,240 175,180" fill="#e8955a"/>
+
+  <!-- Eyes -->
+  <polygon points="140,155 165,150 155,170" fill="#3a2a1a"/>
+  <polygon points="185,150 210,155 195,170" fill="#3a2a1a"/>
+
+  <!-- Nose -->
+  <polygon points="167,190 183,190 175,202" fill="#c94f4f"/>
+
+  <!-- Whisker lines -->
+  <line x1="175" y1="200" x2="120" y2="195" stroke="#8a5a30" stroke-width="1.5"/>
+  <line x1="175" y1="205" x2="122" y2="215" stroke="#8a5a30" stroke-width="1.5"/>
+  <line x1="175" y1="200" x2="230" y2="195" stroke="#8a5a30" stroke-width="1.5"/>
+  <line x1="175" y1="205" x2="228" y2="215" stroke="#8a5a30" stroke-width="1.5"/>
+
+  <!-- Fold outlines -->
+  <g fill="none" stroke="#b3612e" stroke-width="1" opacity="0.5">
+    <polygon points="120,120 220,110 240,210 110,220"/>
+    <line x1="175" y1="165" x2="120" y2="120"/>
+    <line x1="175" y1="165" x2="220" y2="110"/>
+    <line x1="175" y1="165" x2="110" y2="220"/>
+    <line x1="175" y1="165" x2="240" y2="210"/>
+    <polygon points="150,250 260,240 300,340 130,360"/>
+    <line x1="205" y1="300" x2="150" y2="250"/>
+    <line x1="205" y1="300" x2="260" y2="240"/>
+    <line x1="205" y1="300" x2="130" y2="360"/>
+  </g>
+</svg>

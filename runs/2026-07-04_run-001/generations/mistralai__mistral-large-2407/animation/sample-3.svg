@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <style>
+    @keyframes sway {
+      0%, 100% { transform: rotate(-10deg); }
+      50% { transform: rotate(10deg); }
+    }
+    .tail {
+      transform-origin: 30% 50%;
+      animation: sway 2s ease-in-out infinite;
+    }
+  </style>
+  <g>
+    <path d="M100,80 Q120,60 140,70 Q160,80 150,100 Q155,120 140,130 Q125,140 110,130 Q95,120 100,100 Z" fill="#5a4a42"/>
+    <circle cx="100" cy="90" r="25" fill="#5a4a42"/>
+    <circle cx="90" cy="85" r="5" fill="white"/>
+    <circle cx="110" cy="85" r="5" fill="white"/>
+    <circle cx="88" cy="83" r="2" fill="black"/>
+    <circle cx="108" cy="83" r="2" fill="black"/>
+    <path d="M95,95 Q100,105 105,95" stroke="black" stroke-width="1" fill="none"/>
+    <path d="M70,80 L60,70 L65,80 Z" fill="#5a4a42"/>
+    <path d="M130,80 L140,70 L135,80 Z" fill="#5a4a42"/>
+    <path class="tail" d="M70,110 Q50,130 40,150 Q30,170 50,180 Q70,190 80,170 Q90,150 75,130 Q60,110 70,110 Z" fill="#5a4a42"/>
+  </g>
+</svg>

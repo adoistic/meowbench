@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400">
+  <!-- Background / Ground -->
+  <line x1="20" y1="350" x2="480" y2="350" stroke="#666" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Wheels -->
+  <g id="wheel" stroke="#333" stroke-width="8">
+    <!-- Rear Wheel -->
+    <circle cx="150" cy="300" r="45" fill="none"/>
+    <g stroke="#ccc" stroke-width="2">
+       <line x1="150" y1="255" x2="150" y2="345"/>
+       <line x1="105" y1="300" x2="195" y2="300"/>
+       <line x1="118" y1="268" x2="182" y2="332"/>
+       <line x1="118" y1="332" x2="182" y2="268"/>
+    </g>
+    <!-- Front Wheel -->
+    <circle cx="350" cy="300" r="45" fill="none"/>
+    <g stroke="#ccc" stroke-width="2">
+       <line x1="350" y1="255" x2="350" y2="345"/>
+       <line x1="305" y1="300" x2="395" y2="300"/>
+       <line x1="318" y1="268" x2="382" y2="332"/>
+       <line x1="318" y1="332" x2="382" y2="268"/>
+    </g>
+  </g>
+
+  <!-- Bike Frame -->
+  <g stroke="#E53935" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Rear Triangle -->
+    <path d="M150 300 L230 300 L205 190 L150 300"/>
+    <!-- Main Triangle -->
+    <path d="M230 300 L320 170 L205 190"/>
+    <!-- Fork -->
+    <path d="M320 170 L350 300"/>
+  </g>
+
+  <!-- Seat Post & Saddle -->
+  <line x1="205" y1="190" x2="195" y2="175" stroke="#555" stroke-width="6"/>
+  <path d="M185 175 L215 175" stroke="#333" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Handlebars & Stem -->
+  <line x1="320" y1="170" x2="315" y2="150" stroke="#555" stroke-width="6" stroke-linecap="round"/>
+  <path d="M315 150 Q310 130 290 140" fill="none" stroke="#555" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Pedals -->
+  <g>
+      <circle cx="230" cy="300" r="10" fill="#777"/>
+      <line x1="230" y1="300" x2="215" y2="330" stroke="#555" stroke-width="4" stroke-linecap="round"/>
+      <rect x="210" y="325" width="10" height="8" fill="#333" rx="1"/>
+  </g>
+
+  <!-- The Cat -->
+  <g id="cat">
+    <!-- Tail -->
+    <path d="M190 210 Q150 230 140 190" stroke="#FF9800" stroke-width="6" fill="none" stroke-linecap="round"/>
+    
+    <!-- Far Hind Leg (on far side of bike) -->
+    <path d="M200 200 Q210 260 215 330" stroke="#E65100" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+    <!-- Body -->
+    <ellipse cx="200" cy="190" rx="35" ry="40" fill="#FF9800"/>
+    
+    <!-- Near Hind Leg (on pedal) -->
+    <path d="M200 200 Q230 250 215 330" stroke="#FF9800" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+    <!-- Front Arm -->
+    <path d="M220 180 Q270 180 305 155" stroke="#FF9800" stroke-width="7" fill="none" stroke-linecap="round"/>
+
+    <!-- Head -->
+    <circle cx="230" cy="160" r="25" fill="#FF9800"/>
+    
+    <!-- Ears -->
+    <path d="M215 145 L210 125 L230 140 Z" fill="#FF9800"/>
+    <path d="M245 145 L250 125 L230 140 Z" fill="#FF9800"/>
+
+    <!-- Face -->
+    <circle cx="222" cy="158" r="3" fill="black"/>
+    <circle cx="238" cy="158" r="3" fill="black"/>
+    <path d="M226 165 L224 168 L228 168 Z" fill="pink"/>
+    <!-- Whiskers -->
+    <path d="M215 165 L195 162 M215 168 L195 170" stroke="black" stroke-width="1"/>
+    <path d="M245 165 L265 162 M245 168 L265 170" stroke="black" stroke-width="1"/>
+  </g>
+
+  <!-- Speed Lines -->
+  <g stroke="#888" stroke-width="2">
+      <line x1="80" y1="280" x2="40" y2="280"/>
+      <line x1="90" y1="320" x2="50" y2="320"/>
+  </g>
+
+</svg>

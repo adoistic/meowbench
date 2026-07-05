@@ -1,0 +1,27 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 9563,
+    "elements": 86,
+    "paths": 29,
+    "colors": [
+      "#4c3f3e",
+      "#4c3f3e08",
+      "#6fae92",
+      "#a2c5ff",
+      "#cde9dd",
+      "#d8e6ff",
+      "#e2f2e8ea",
+      "#f2c94c",
+      "#fb8a8a",
+      "#ffb268",
+      "#ffd166",
+      "#ffdb6b",
+      "#fff3e4",
+      "#ffffff",
+      "#ffffff33",
+      "url(#gfirefly)"
+    ]
+  }
+}

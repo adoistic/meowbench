@@ -1,0 +1,87 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bicycle wheels -->
+  <circle cx="100" cy="210" r="35" fill="none" stroke="#2c3e50" stroke-width="3"/>
+  <circle cx="100" cy="210" r="30" fill="none" stroke="#34495e" stroke-width="1"/>
+  <circle cx="260" cy="210" r="35" fill="none" stroke="#2c3e50" stroke-width="3"/>
+  <circle cx="260" cy="210" r="30" fill="none" stroke="#34495e" stroke-width="1"/>
+  
+  <!-- Spokes -->
+  <g stroke="#7f8c8d" stroke-width="1" opacity="0.5">
+    <line x1="100" y1="175" x2="100" y2="245"/>
+    <line x1="65" y1="210" x2="135" y2="210"/>
+    <line x1="75" y1="185" x2="125" y2="235"/>
+    <line x1="125" y1="185" x2="75" y2="235"/>
+    
+    <line x1="260" y1="175" x2="260" y2="245"/>
+    <line x1="225" y1="210" x2="295" y2="210"/>
+    <line x1="235" y1="185" x2="285" y2="235"/>
+    <line x1="285" y1="185" x2="235" y2="235"/>
+  </g>
+  
+  <!-- Bicycle frame -->
+  <path d="M100 210 L180 130 L180 140 L260 210 L180 210 L180 140" 
+        fill="none" stroke="#e74c3c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Seat -->
+  <ellipse cx="180" cy="130" rx="25" ry="8" fill="#8e44ad"/>
+  <rect x="175" y="130" width="10" height="15" fill="#34495e"/>
+  
+  <!-- Handlebars -->
+  <line x1="260" y1="210" x2="240" y2="140" stroke="#e74c3c" stroke-width="4"/>
+  <path d="M225 135 Q220 130 225 125" fill="none" stroke="#34495e" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="225" cy="130" r="3" fill="#2c3e50"/>
+  
+  <!-- Pedals -->
+  <ellipse cx="180" cy="210" rx="15" ry="5" fill="#95a5a6" transform="rotate(-30 180 210)"/>
+  
+  <!-- Cat body -->
+  <ellipse cx="200" cy="120" rx="35" ry="40" fill="#ff8c42"/>
+  
+  <!-- Cat head -->
+  <circle cx="170" cy="95" r="25" fill="#ff8c42"/>
+  
+  <!-- Cat ears -->
+  <path d="M150 85 L145 70 L155 78 Z" fill="#ff8c42"/>
+  <path d="M190 85 L195 70 L185 78 Z" fill="#ff8c42"/>
+  <path d="M152 75 L147 73 L152 70 Z" fill="#ffbf80"/>
+  <path d="M188 75 L193 73 L188 70 Z" fill="#ffbf80"/>
+  
+  <!-- Cat face details -->
+  <circle cx="160" cy="92" r="4" fill="#2c3e50"/>
+  <circle cx="180" cy="92" r="4" fill="#2c3e50"/>
+  <ellipse cx="175" cy="105" rx="3" ry="2" fill="#e67e22"/>
+  
+  <!-- Stripes -->
+  <path d="M185 95 Q190 100 192 95" fill="none" stroke="#d35400" stroke-width="2" stroke-linecap="round"/>
+  <path d="M190 98 Q195 103 197 98" fill="none" stroke="#d35400" stroke-width="2" stroke-linecap="round"/>
+  <path d="M195 101 Q200 106 202 101" fill="none" stroke="#d35400" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- cat arms on handlebars -->
+  <ellipse cx="235" cy="135" rx="8" ry="20" fill="#ff8c42" transform="rotate(-20 235 135)"/>
+  <ellipse cx="215" cy="140" rx="8" ry="20" fill="#ff8c42" transform="rotate(20 215 140)"/>
+  
+  <!-- Cat paws -->
+  <circle cx="232" cy="125" r="6" fill="#ffbf80"/>
+  <circle cx="218" cy="125" r="6" fill="#ffbf80"/>
+  
+  <!-- Cat tail -->
+  <path d="M220 115 Q250 100 240 80 Q235 70 230 75" 
+        fill="none" stroke="#ff8c42" stroke-width="15" stroke-linecap="round"/>
+  
+  <!-- Cat whiskers -->
+  <line x1="145" y1="95" x2="135" y2="92" stroke="#2c3e50" stroke-width="1" opacity="0.6"/>
+  <line x1="145" y1="100" x2="135" y2="100" stroke="#2c3e50" stroke-width="1" opacity="0.6"/>
+  <line x1="195" y1="95" x2="205" y2="92" stroke="#2c3e50" stroke-width="1" opacity="0.6"/>
+  <line x1="195" y1="100" x2="205" y2="100" stroke="#2c3e50" stroke-width="1" opacity="0.6"/>
+  
+  <!-- Cat legs positioned near pedals -->
+  <ellipse cx="165" cy="140" rx="8" ry="18" fill="#ff8c42" transform="rotate(10 165 140)"/>
+  <ellipse cx="195" cy="145" rx="8" ry="18" fill="#ff8c42" transform="rotate(-10 195 145)"/>
+  
+  <!-- Cat paws on pedals -->
+  <ellipse cx="175" cy="155" rx="8" ry="5" fill="#ffbf80" transform="rotate(-30 175 155)"/>
+  <ellipse cx="185" cy="158" rx="8" ry="5" fill="#ffbf80" transform="rotate(30 185 158)"/>
+  
+  <!-- Happy cat mouth -->
+  <path d="M165 107 Q170 110 175 107" fill="none" stroke="#2c3e50" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

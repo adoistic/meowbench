@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#e8f4f8"/>
+  <line x1="0" y1="250" x2="400" y2="250" stroke="#8b9dab" stroke-width="3"/>
+
+  <!-- Bicycle -->
+  <g stroke="#333" stroke-width="4" fill="none">
+    <!-- Rear wheel -->
+    <circle cx="110" cy="220" r="40"/>
+    <!-- Front wheel -->
+    <circle cx="290" cy="220" r="40"/>
+    <!-- Frame -->
+    <line x1="110" y1="220" x2="180" y2="220"/>
+    <line x1="180" y1="220" x2="200" y2="160"/>
+    <line x1="110" y1="220" x2="200" y2="160"/>
+    <line x1="200" y1="160" x2="290" y2="220"/>
+    <line x1="180" y1="220" x2="260" y2="150"/>
+    <line x1="260" y1="150" x2="290" y2="220"/>
+    <!-- Handlebar -->
+    <line x1="260" y1="150" x2="275" y2="140"/>
+    <!-- Seat post -->
+    <line x1="200" y1="160" x2="195" y2="140"/>
+  </g>
+  <!-- Seat -->
+  <rect x="178" y="132" width="35" height="8" rx="4" fill="#333"/>
+  <!-- Pedals -->
+  <circle cx="180" cy="220" r="6" fill="#333"/>
+  <line x1="180" y1="220" x2="180" y2="240" stroke="#333" stroke-width="4"/>
+  <rect x="170" y="240" width="20" height="6" rx="2" fill="#333"/>
+
+  <!-- Cat -->
+  <g>
+    <!-- Tail -->
+    <path d="M150 120 Q120 100 135 75 Q145 60 130 55" stroke="#f4a460" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <!-- Body -->
+    <ellipse cx="190" cy="120" rx="45" ry="30" fill="#f4a460"/>
+    <!-- Back leg to pedal -->
+    <path d="M185 140 Q180 175 180 215" stroke="#f4a460" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <!-- Front leg to handlebar -->
+    <path d="M225 130 Q250 135 270 142" stroke="#f4a460" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <!-- Paw on handlebar -->
+    <circle cx="272" cy="143" r="7" fill="#f4a460"/>
+    <!-- Head -->
+    <circle cx="240" cy="95" r="30" fill="#f4a460"/>
+    <!-- Ears -->
+    <polygon points="218,75 210,50 235,68" fill="#f4a460"/>
+    <polygon points="262,75 272,50 245,68" fill="#f4a460"/>
+    <polygon points="220,72 216,58 230,68" fill="#e08850"/>
+    <polygon points="260,72 266,58 250,68" fill="#e08850"/>
+    <!-- Eyes -->
+    <circle cx="230" cy="92" r="5" fill="#2b2b2b"/>
+    <circle cx="252" cy="92" r="5" fill="#2b2b2b"/>
+    <circle cx="231.5" cy="90" r="1.5" fill="#fff"/>
+    <circle cx="253.5" cy="90" r="1.5" fill="#fff"/>
+    <!-- Nose -->
+    <polygon points="241,100 236,104 246,104" fill="#d5687a"/>
+    <!-- Mouth -->
+    <path d="M241 104 Q236 110 231 106 M241 104 Q246 110 251 106" stroke="#2b2b2b" stroke-width="1.5" fill="none"/>
+    <!-- Whiskers -->
+    <g stroke="#666" stroke-width="1">
+      <line x1="248" y1="102" x2="275" y2="98"/>
+      <line x1="248" y1="106" x2="275" y2="108"/>
+      <line x1="234" y1="102" x2="207" y2="98"/>
+      <line x1="234" y1="106" x2="207" y2="108"/>
+    </g>
+  </g>
+</svg>

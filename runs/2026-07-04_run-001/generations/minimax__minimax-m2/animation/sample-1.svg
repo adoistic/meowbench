@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <style>
+      /* Animation for the tail */
+      .tail-group {
+        transform-origin: 135px 145px;
+        animation: sway 2s ease-in-out infinite;
+      }
+
+      @keyframes sway {
+        0% { transform: rotate(-15deg); }
+        50% { transform: rotate(10deg); }
+        100% { transform: rotate(-15deg); }
+      }
+
+      /* Subtle breathing animation for the body */
+      .body {
+        animation: breathe 3s ease-in-out infinite;
+        transform-origin: 100px 150px;
+      }
+
+      @keyframes breathe {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.02); }
+      }
+    </style>
+  </defs>
+
+  <!-- Tail (Behind Body) -->
+  <g class="tail-group">
+    <path d="M135,145 Q165,145 165,105" stroke="#4a4a4a" stroke-width="12" fill="none" stroke-linecap="round" />
+  </g>
+
+  <!-- Back Legs -->
+  <ellipse cx="75" cy="165" rx="10" ry="8" fill="#4a4a4a" />
+  <ellipse cx="125" cy="165" rx="10" ry="8" fill="#4a4a4a" />
+
+  <!-- Body -->
+  <ellipse class="body" cx="100" cy="150" rx="40" ry="25" fill="#4a4a4a" />
+
+  <!-- Front Paws -->
+  <circle cx="85" cy="175" r="7" fill="#4a4a4a" />
+  <circle cx="115" cy="175" r="7" fill="#4a4a4a" />
+
+  <!-- Head -->
+  <circle cx="100" cy="110" r="30" fill="#4a4a4a" />
+
+  <!-- Ears -->
+  <path d="M78,95 L70,65 L95,85 Z" fill="#4a4a4a" />
+  <path d="M122,95 L130,65 L105,85 Z" fill="#4a4a4a" />
+  <!-- Inner Ears -->
+  <path d="M80,90 L75,70 L90,85 Z" fill="#d1d1d1" />
+  <path d="M120,90 L125,70 L110,85 Z" fill="#d1d1d1" />
+
+  <!-- Face -->
+  <!-- Eyes -->
+  <circle cx="90" cy="105" r="5" fill="#ffeb3b" />
+  <circle cx="110" cy="105" r="5" fill="#ffeb3b" />
+  <circle cx="90" cy="105" r="2" fill="#000" />
+  <circle cx="110" cy="105" r="2" fill="#000" />
+
+  <!-- Nose -->
+  <path d="M96,115 L104,115 L100,120 Z" fill="#ff8a80" />
+
+  <!-- Mouth -->
+  <path d="M100,120 Q90,128 85,122" stroke="#d1d1d1" stroke-width="1.5" fill="none" />
+  <path d="M100,120 Q110,128 115,122" stroke="#d1d1d1" stroke-width="1.5" fill="none" />
+
+  <!-- Whiskers -->
+  <g stroke="#ccc" stroke-width="0.5">
+    <line x1="80" y1="118" x2="60" y2="115" />
+    <line x1="80" y1="120" x2="60" y2="122" />
+    <line x1="120" y1="118" x2="140" y2="115" />
+    <line x1="120" y1="120" x2="140" y2="122" />
+  </g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Head -->
+  <polygon points="20,30 50,10 80,30 50,50" fill="pink"/>
+  <!-- Ears -->
+  <polygon points="20,30 30,20 40,30" fill="pink"/>
+  <polygon points="80,30 70,20 60,30" fill="pink"/>
+  <!-- Eyes -->
+  <circle cx="40" cy="25" r="2" fill="black"/>
+  <circle cx="60" cy="25" r="2" fill="black"/>
+  <!-- Nose -->
+  <polygon points="50,30 48,35 52,35" fill="black"/>
+  <!-- Body -->
+  <polygon points="50,50 70,80 50,90 30,80" fill="pink"/>
+</svg>

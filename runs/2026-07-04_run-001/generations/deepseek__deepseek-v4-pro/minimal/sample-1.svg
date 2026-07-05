@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#f8f9fa" />
+  <circle cx="100" cy="130" r="85" fill="#fdf0d5" />
+
+  <!-- Cat Group -->
+  <g id="cat">
+    <!-- Tail -->
+    <path d="M 150 180 Q 190 150 190 100" fill="none" stroke="#2c3e50" stroke-width="18" stroke-linecap="round" />
+
+    <!-- Body -->
+    <path d="M 50 130 C 50 210, 70 230, 100 230 C 130 230, 150 210, 150 130 Z" fill="#2c3e50" />
+
+    <!-- Ears (Drawn behind the head to seamlessly blend) -->
+    <polygon points="50,80 70,15 100,70" fill="#2c3e50" /> <!-- Left Ear -->
+    <polygon points="150,80 130,15 100,70" fill="#2c3e50" /> <!-- Right Ear -->
+
+    <!-- Inner Ears -->
+    <polygon points="60,70 72,30 90,65" fill="#ffa69e" /> <!-- Left Inner Ear -->
+    <polygon points="140,70 128,30 110,65" fill="#ffa69e" /> <!-- Right Inner Ear -->
+
+    <!-- Head -->
+    <circle cx="100" cy="110" r="50" fill="#2c3e50" />
+
+    <!-- Cheeks (Blush) -->
+    <circle cx="65" cy="115" r="10" fill="#ffa69e" opacity="0.3" />
+    <circle cx="135" cy="115" r="10" fill="#ffa69e" opacity="0.3" />
+
+    <!-- Collar -->
+    <path d="M 75 145 Q 100 155 125 145" fill="none" stroke="#e74c3c" stroke-width="6" stroke-linecap="round" />
+    <circle cx="100" cy="155" r="6" fill="#f1c40f" /> <!-- Bell -->
+
+    <!-- Eyes -->
+    <circle cx="80" cy="105" r="12" fill="#f1c40f" /> <!-- Left Eye -->
+    <circle cx="120" cy="105" r="12" fill="#f1c40f" /> <!-- Right Eye -->
+
+    <!-- Pupils -->
+    <circle cx="80" cy="105" r="6" fill="#111" /> <!-- Left Pupil -->
+    <circle cx="120" cy="105" r="6" fill="#111" /> <!-- Right Pupil -->
+
+    <!-- Eye Shine -->
+    <circle cx="77" cy="102" r="2.5" fill="#fff" /> <!-- Left Shine -->
+    <circle cx="117" cy="102" r="2.5" fill="#fff" /> <!-- Right Shine -->
+
+    <!-- Nose -->
+    <polygon points="100,118 95,128 105,128" fill="#ffa69e" />
+
+    <!-- Mouth -->
+    <path d="M 100 128 L 100 133 M 90 128 Q 100 138 100 133 M 110 128 Q 100 138 100 133" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Whiskers -->
+    <!-- Left Whiskers -->
+    <path d="M 30 95 L 70 105 M 30 110 L 70 110" fill="none" stroke="#bdc3c7" stroke-width="3" stroke-linecap="round" />
+    <!-- Right Whiskers -->
+    <path d="M 170 95 L 130 105 M 170 110 L 130 110" fill="none" stroke="#bdc3c7" stroke-width="3" stroke-linecap="round" />
+  </g>
+</svg>

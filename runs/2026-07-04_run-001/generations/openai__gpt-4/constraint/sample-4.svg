@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="black">
+  <circle cx="100" cy="100" r="50"/>
+  <circle cx="80" cy="80" r="10"/>
+  <circle cx="120" cy="80" r="10"/>
+  <path d="M60 120 Q90 160 110 120" fill="black"/>
+  <path d="M140 120 Q110 160 90 120" fill="black"/>
+  <path d="M55 75 Q80 50 105 75" fill="black"/>
+  <path d="M145 75 Q120 50 95 75" fill="black"/>
+  <path d="M80 140 Q100 170 120 140" fill="black"/>
+  <line x1="70" y1="70" x2="90" y2="90" stroke="black"/>
+  <line x1="130" y1="70" x2="110" y2="90" stroke="black"/>
+  <path d="M35 35 Q100 -20 165 35" fill="black"/>
+  <path d="M35 165 Q100 220 165 165" fill="black"/>
+</svg>

@@ -1,0 +1,36 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 11703,
+    "elements": 124,
+    "paths": 41,
+    "colors": [
+      "#000",
+      "#00bfff",
+      "#111",
+      "#228b22",
+      "#2e8b57",
+      "#32cd32",
+      "#333",
+      "#444",
+      "#555",
+      "#bbb",
+      "#ccc",
+      "#d2691e",
+      "#daa520",
+      "#eee",
+      "#ff69b4",
+      "#ff8c00",
+      "#ffa500",
+      "#ffb6c1",
+      "#ffd700",
+      "#fff",
+      "#ffffff",
+      "rgba(0,0,0,0.6)",
+      "url(#glassesgrad)",
+      "url(#roadline)",
+      "url(#skygradient)"
+    ]
+  }
+}

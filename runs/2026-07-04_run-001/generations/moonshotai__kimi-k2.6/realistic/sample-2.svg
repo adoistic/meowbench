@@ -1,0 +1,304 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <!-- Filters for realistic falloff and fur texture -->
+    <filter id="blur8" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="8"/></filter>
+    <filter id="blur12" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="12"/></filter>
+    <filter id="blur25" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="25"/></filter>
+    
+    <!-- Gradients for realistic 3D fur volumes -->
+    <linearGradient id="body-grad" x1="50%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#151515"/>
+      <stop offset="25%" stop-color="#2a2a2a"/>
+      <stop offset="60%" stop-color="#4a4a4a"/>
+      <stop offset="90%" stop-color="#777777"/>
+      <stop offset="100%" stop-color="#999999"/>
+    </linearGradient>
+
+    <linearGradient id="limb-grad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#2b2b2b"/>
+      <stop offset="40%" stop-color="#404040"/>
+      <stop offset="100%" stop-color="#151515"/>
+    </linearGradient>
+
+    <linearGradient id="ear-tone" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#ff9a9a"/>
+      <stop offset="20%" stop-color="#e86d6d"/>
+      <stop offset="100%" stop-color="#994444"/>
+    </linearGradient>
+
+    <linearGradient id="eye-grad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#333333"/>
+      <stop offset="100%" stop-color="#111111"/>
+    </linearGradient>
+
+    <radialGradient id="nose-grad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffb8b8"/>
+      <stop offset="80%" stop-color="#d66e6e"/>
+      <stop offset="100%" stop-color="#994040"/>
+    </radialGradient>
+
+    <!-- Overlay gradients to sculpt cheek volume -->
+    <radialGradient id="cheek-glow" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    
+    <radialGradient id="cheek-shade" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="forehead-shade" cx="50%" cy="0%" r="80%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#000000" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="throat-glow" cx="50%" cy="100%" r="80%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="belly-grad" cx="60%" cy="0%" r="80%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Clip Paths for limiting glows -->
+    <clipPath id="head-clip">
+      <path d="M 580 260 Q 648 192 716 210 Q 738 240 730 296 Q 760 370 740 442 Q 714 490 660 490 Q 606 490 580 442 Q 560 370 580 260 Z"/>
+    </clipPath>
+    <clipPath id="body-clip">
+      <path d="M 340 440 C 340 440, 560 440, 630 440 C 690 440, 730 430, 700 530 C 670 630, 460 680, 340 680 C 210 680, 140 600, 160 510 C 180 420, 340 440, 340 440 Z"/>
+    </clipPath>
+    <clipPath id="earL-clip">
+      <path d="M 460 332 L 400 80 Q 260 100 150 160 Q 250 220 375 330 Z"/>
+    </clipPath>
+    <clipPath id="earR-clip">
+      <path d="M 495 292 L 600 60 Q 720 120 815 175 Q 710 230 570 305 Z"/>
+    </clipPath>
+
+  </defs>
+
+  <!-- Base Background -->
+  <rect width="800" height="800" fill="#d4cfc5"/>
+  
+  <!-- Wall Background -->
+  <rect width="800" height="450" fill="#ede8df"/>
+  
+  <!-- Floor line and shadow -->
+  <rect y="450" width="800" height="350" fill="#e6e1d6"/>
+  <path d="M 0 450 L 800 450" stroke="#bfb8ad" stroke-width="2"/>
+
+  <!-- Cat Shadow on the floor and wall -->
+  <ellipse cx="420" cy="710" rx="270" ry="55" fill="#000000" opacity="0.25" filter="url(#blur25)"/>
+  <ellipse cx="700" cy="490" rx="150" ry="200" fill="#000000" opacity="0.1" transform="rotate(15, 700, 490)" filter="url(#blur25)"/>
+
+  <!-- Cushion -->
+  <path d="M 110 690 C 110 640, 330 640, 410 670 C 560 740, 680 660, 720 690 C 780 710, 770 790, 720 790 L 110 790 C 60 790, 60 740, 110 690 Z" fill="#c29e78"/>
+  <path d="M 110 690 C 110 640, 330 640, 410 670 C 560 740, 680 660, 720 690 C 780 710, 770 790, 720 790 L 110 790 C 60 790, 60 740, 110 690 Z" fill="#8c6b4a" opacity="0.4"/>
+  <path d="M 410 670 C 560 740, 680 660, 720 690 C 770 710, 770 790, 720 790" fill="#6b4e33"/>
+
+  <!-- ==================== BODY LAYER ==================== -->
+  
+  <!-- Tail -->
+  <g>
+    <!-- Main tail dark underbelly -->
+    <path d="M 180 530 C 20 590, -40 430, 70 340 C 130 290, 210 310, 240 360 C 250 440, 300 480, 340 480" fill="none" stroke="#141010" stroke-width="64" stroke-linecap="round"/>
+    <!-- Mid-tone -->
+    <path d="M 180 530 C 20 590, -40 430, 70 340 C 130 290, 210 310, 240 360" fill="none" stroke="#292525" stroke-width="50" stroke-linecap="round" filter="url(#blur8)"/>
+    <!-- Top Highlight -->
+    <path d="M 180 530 C 20 590, -40 430, 70 340" fill="none" stroke="#505050" stroke-width="28" stroke-linecap="round" filter="url(#blur12)"/>
+    <!-- Tip highlight -->
+    <path d="M 180 530 C 100 560, 50 540, 30 500" fill="none" stroke="#8a8a8a" stroke-width="12" stroke-linecap="round" filter="url(#blur8)"/>
+  </g>
+
+  <!-- Main Body Base -->
+  <path id="body-base" d="M 340 440 C 420 440, 560 440, 630 440 C 690 440, 730 440, 700 530 C 670 630, 500 690, 340 690 C 210 690, 130 620, 160 530 C 190 440, 240 440, 340 440 Z" fill="url(#body-grad)"/>
+
+  <!-- Left Hind Leg (Thigh) -->
+  <g>
+    <path d="M 340 455 C 300 470, 270 490, 250 520 C 230 550, 230 590, 250 620 C 270 650, 310 670, 360 670 C 400 670, 430 650, 430 610 C 430 570, 390 540, 340 520 Z" fill="#171717"/>
+    <path d="M 330 480 C 280 510, 260 570, 290 610 C 320 640, 370 650, 400 640 C 430 630, 440 590, 420 560 C 390 520, 360 500, 330 480 Z" fill="url(#body-grad)"/>
+    <!-- Thigh Highlight -->
+    <ellipse cx="300" cy="550" rx="40" ry="60" fill="#777777" opacity="0.6" transform="rotate(-30, 300, 550)" filter="url(#blur12)"/>
+    <!-- Thigh Under-shadow -->
+    <path d="M 260 460 C 300 510, 340 550, 340 690" fill="none" stroke="#000000" stroke-width="24" filter="url(#blur12)" opacity="0.6"/>
+    
+    <!-- Left Back Paw -->
+    <g transform="translate(250, 650)">
+      <ellipse cx="0" cy="0" rx="45" ry="22" fill="#151515" transform="rotate(-15)"/>
+      <ellipse cx="0" cy="0" rx="40" ry="17" fill="#333333" transform="rotate(-15)"/>
+      <!-- Toes -->
+      <circle cx="-25" cy="2" r="9" fill="#454545" transform="rotate(-15, -25, 2)"/>
+      <circle cx="-5" cy="6" r="9" fill="#454545" transform="rotate(-15, -5, 6)"/>
+      <circle cx="20" cy="3" r="9" fill="#505050" transform="rotate(-15, 20, 3)"/>
+    </g>
+  </g>
+
+  <!-- Body Sculpting -->
+  <g clip-path="url(#body-clip)">
+    <!-- Deep ridge/line down center -->
+    <path d="M 620 430 C 630 540, 350 700, 180 580" fill="none" stroke="#000000" stroke-width="40" filter="url(#blur25)" opacity="0.9"/>
+    <!-- Core body highlight (left side of cat) -->
+    <ellipse cx="480" cy="530" rx="80" ry="140" fill="#ffffff" opacity="0.4" transform="rotate(15, 480, 530)" filter="url(#blur25)"/>
+    <!-- Belly soft muff -->
+    <path d="M 620 430 C 630 540, 350 700, 180 580" fill="none" stroke="url(#throat-glow)" stroke-width="90" filter="url(#blur25)"/>
+    <!-- Inner glow for chest volume -->
+    <ellipse cx="540" cy="560" rx="130" ry="110" fill="#ffffff" opacity="0.25" filter="url(#blur25)"/>
+  </g>
+
+  <!-- Right Front Leg -->
+  <g>
+    <ellipse cx="655" cy="620" rx="68" ry="150" fill="#1d1d1d" transform="rotate(12, 655, 620)"/>
+    <ellipse cx="655" cy="620" rx="55" ry="135" fill="url(#limb-grad)" transform="rotate(12, 655, 620)"/>
+    <!-- Outer Highlight -->
+    <ellipse cx="670" cy="580" rx="25" ry="90" fill="#999999" opacity="0.6" transform="rotate(22, 670, 580)" filter="url(#blur12)"/>
+    
+    <!-- Right Front Paw -->
+    <g transform="translate(680, 710) rotate(12)">
+      <ellipse cx="0" cy="0" rx="45" ry="27" fill="#151515"/>
+      <ellipse cx="0" cy="0" rx="38" ry="20" fill="#333333"/>
+      <!-- Toes -->
+      <circle cx="-20" cy="-5" r="9" fill="#454545"/>
+      <circle cx="5" cy="-7" r="9" fill="#505050"/>
+      <circle cx="25" cy="-2" r="8" fill="#666666"/>
+    </g>
+  </g>
+
+  <!-- Left Front Paw -->
+  <g>
+    <ellipse cx="580" cy="660" rx="55" ry="28" fill="#151515"/>
+    <ellipse cx="580" cy="660" rx="45" ry="22" fill="#333333"/>
+    <!-- Toes -->
+    <circle cx="550" cy="660" r="7" fill="#444444"/>
+    <circle cx="570" cy="665" r="7" fill="#555555"/>
+    <circle cx="590" cy="665" r="6" fill="#666666"/>
+    <circle cx="605" cy="660" r="6" fill="#777777"/>
+  </g>
+
+  <!-- ==================== HEAD LAYER ==================== -->
+
+  <!-- Back Ears -->
+  <g>
+    <!-- Left Ear Background -->
+    <path d="M 460 332 L 400 80 Q 260 100 150 160 Q 250 220 375 330 Z" fill="#171010"/>
+    <!-- Left Ear Inner Base -->
+    <path d="M 430 300 L 395 115 Q 300 140 210 170 Q 280 210 380 315 Z" fill="url(#ear-tone)"/>
+    <!-- Left Ear Highlight (fur edge) -->
+    <path d="M 150 160 Q 210 145 260 117 L 240 150 Q 190 200 150 160 Z" fill="#886060" opacity="0.5"/>
+
+    <!-- Right Ear Background -->
+    <path d="M 495 292 L 600 60 Q 720 120 815 175 Q 710 230 570 305 Z" fill="#171010"/>
+    <!-- Right Ear Inner Base -->
+    <path d="M 520 275 L 610 95 Q 690 150 770 180 Q 690 230 595 290 Z" fill="url(#ear-tone)"/>
+    <!-- Right Ear Highlight -->
+    <path d="M 815 175 Q 780 130 730 110 L 750 130 Q 780 160 815 175 Z" fill="#886060" opacity="0.5"/>
+  </g>
+
+  <!-- Head Base Silhouette -->
+  <path id="head-base" d="M 580 260 Q 648 192 716 210 Q 738 240 730 296 Q 760 370 740 442 Q 714 490 660 490 Q 606 490 580 442 Q 560 370 580 260 Z" fill="url(#body-grad)"/>
+
+  <!-- Cheek Fluff -->
+  <g>
+    <!-- Right Fluff -->
+    <path d="M 735 415 L 778 390 C 790 390 800 405 782 402 Z" fill="#2a2a2a"/>
+    <path d="M 728 430 L 765 398 C 775 395 785 408 770 413 Z" fill="#2a2a2a"/>
+    <path d="M 720 445 L 755 415 C 765 413 770 425 755 425 Z" fill="#333333"/>
+    <path d="M 705 460 L 740 430 L 725 440 Z" fill="#3a3a3a"/>
+    <path d="M 715 450 L 760 425 L 745 435 Z" fill="#2a2a2a"/>
+
+    <!-- Left Fluff -->
+    <path d="M 570 410 L 528 385 C 518 385 508 400 526 397 Z" fill="#1f1f1f"/>
+    <path d="M 575 425 L 538 395 C 530 392 520 405 535 410 Z" fill="#252525"/>
+    <path d="M 585 440 L 550 410 C 540 408 535 420 550 420 Z" fill="#333333"/>
+    <path d="M 595 458 L 560 428 L 575 438 Z" fill="#404040"/>
+  </g>
+
+  <!-- Head Sculpting / Shading & Highlighting -->
+  <g clip-path="url(#head-clip)">
+    <!-- Deep Brow Shadow (creating a brow ridge) -->
+    <path d="M 570 270 Q 650 230 730 285 Q 740 310 730 360 Q 650 300 570 335 Z" fill="url(#forehead-shade)"/>
+    
+    <!-- Core Forehead Highlight -->
+    <ellipse cx="635" cy="235" rx="30" ry="45" fill="#ffffff" opacity="0.35" transform="rotate(-15, 635, 235)" filter="url(#blur12)"/>
+    <ellipse cx="645" cy="245" rx="20" ry="30" fill="#ffffff" opacity="0.2" filter="url(#blur8)"/>
+
+    <!-- Left Cheek Volume (Lit) -->
+    <path d="M 570 330 C 590 400 610 480 700 470 C 680 490 610 490 580 450 C 560 390 550 350 570 330 Z" fill="url(#cheek-glow)"/>
+    
+    <!-- Right Cheek Volume (Shadowed) -->
+    <path d="M 720 400 C 700 450 650 490 650 490 C 680 490 740 450 750 400 C 750 350 740 320 720 400 Z" fill="url(#cheek-shade)"/>
+
+    <!-- Jawline/Neck shadow connecting head to body -->
+    <path d="M 600 480 C 620 460 650 430 660 420 C 650 460 630 490 590 490 Z" fill="#111111" opacity="0.8"/>
+    <!-- Shadow under chin -->
+    <path d="M 610 460 C 650 470 680 450 690 430 C 660 460 630 480 590 470 Z" fill="#000000" opacity="0.6"/>
+  </g>
+
+  <!-- ==================== FACE DETAILS ==================== -->
+
+  <!-- Eyes -->
+  <g id="eyes">
+    <!-- Left Eye (Viewer Left) - Orange -->
+    <g transform="translate(597, 375) rotate(8)">
+      <ellipse cx="0" cy="0" rx="22" ry="16" fill="url(#eye-grad)"/>
+      <ellipse cx="0" cy="0" rx="18" ry="12" fill="#c47443"/>
+      <ellipse cx="0" cy="3" rx="14" ry="8" fill="#fcba55"/>
+      <ellipse cx="-6" cy="-4" rx="6" ry="4" fill="#ffffff" opacity="0.9"/>
+      <ellipse cx="5" cy="2" rx="2" ry="2" fill="#ffffff"/>
+      <path d="M -15 -5 Q -5 1 15 -2" fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round"/>
+      <path d="M -14 6 Q -5 3 14 7" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Right Eye (Viewer Right) - Yellow/Green -->
+    <g transform="translate(680, 365) rotate(-8)">
+      <ellipse cx="0" cy="0" rx="23" ry="17" fill="url(#eye-grad)"/>
+      <ellipse cx="0" cy="0" rx="19" ry="13" fill="#7a9a45"/>
+      <ellipse cx="0" cy="3" rx="15" ry="9" fill="#c9d46a"/>
+      <ellipse cx="-5" cy="-4" rx="6" ry="4" fill="#ffffff" opacity="0.9"/>
+      <ellipse cx="6" cy="2" rx="2.5" ry="2.5" fill="#ffffff"/>
+      <path d="M -16 -6 Q -6 0 16 -3" fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round"/>
+      <path d="M -15 7 Q -6 4 15 8" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Nose -->
+  <g transform="translate(632, 426) rotate(-10)">
+    <path d="M 0 -9 L -12 6 C -4 14, 4 14, 12 6 Z" fill="url(#nose-grad)" stroke="#664444" stroke-width="1.5"/>
+    <!-- Nose shine -->
+    <ellipse cx="-3" cy="-4" rx="3" ry="6" fill="#ffffff" opacity="0.9" transform="rotate(25)"/>
+  </g>
+
+  <!-- Mouth and Whiskers -->
+  <g id="muzzle">
+    <!-- Lingual fur (soft下巴 hair) -->
+    <path d="M 632 430 L 627 435 C 630 443, 638 442, 646 435 Z" fill="#eaddcf" opacity="0.8" filter="url(#blur8)"/>
+
+    <!-- Mouth Line (Following the rotation of the zygomaticus muscle) -->
+    <path d="M 615 443 C 620 448, 625 440, 637 443 C 642 444, 651 439, 654 439" fill="none" stroke="#111111" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Whiskers (Carotene/Swirls needed to look organic) -->
+    <g stroke="#cccccc" stroke-width="2.5" fill="none" opacity="0.9" stroke-linecap="round">
+      <path d="M 595 440 Q 510 435 430 430"/>
+      <path d="M 600 450 Q 520 450 440 460" opacity="0.7"/>
+      <path d="M 600 460 Q 530 480 450 490" opacity="0.5"/>
+      <path d="M 665 430 Q 730 415 780 395"/>
+      <path d="M 665 440 Q 740 435 800 425" opacity="0.7"/>
+      <path d="M 665 450 Q 740 465 810 470" opacity="0.6"/>
+      <path d="M 660 460 Q 710 490 760 520" opacity="0.5"/>
+    </g>
+
+    <!-- Whiskers Base Stipple -->
+    <g fill="#4a4a4a">
+      <circle cx="600" cy="440" r="1.5"/>
+      <circle cx="595" cy="442" r="1"/>
+      <circle cx="605" cy="444" r="1.5"/>
+      <circle cx="602" cy="447" r="1"/>
+      <circle cx="655" cy="435" r="1.5"/>
+      <circle cx="660" cy="430" r="1.5"/>
+      <circle cx="650" cy="442" r="1"/>
+    </g>
+  </g>
+
+</svg>

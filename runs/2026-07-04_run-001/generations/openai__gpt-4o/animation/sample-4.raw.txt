@@ -1,0 +1,31 @@
+```svg
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cat body -->
+  <ellipse cx="100" cy="120" rx="60" ry="40" fill="#d4a373" />
+  
+  <!-- Cat head -->
+  <circle cx="100" cy="60" r="30" fill="#d4a373" />
+  
+  <!-- Cat ears -->
+  <polygon points="80,40 70,75 90,60" fill="#d4a373" />
+  <polygon points="120,40 110,75 130,60" fill="#d4a373" />
+  
+  <!-- Cat eyes -->
+  <circle cx="90" cy="55" r="5" fill="#fff" />
+  <circle cx="110" cy="55" r="5" fill="#fff" />
+  <circle cx="90" cy="55" r="2" fill="#000" />
+  <circle cx="110" cy="55" r="2" fill="#000" />
+  
+  <!-- Cat nose -->
+  <ellipse cx="100" cy="70" rx="5" ry="3" fill="#000" />
+  
+  <!-- Cat mouth -->
+  <path d="M95 75 Q100 80, 105 75" stroke="#000" stroke-width="2" fill="none" />
+  
+  <!-- Cat tail with animation -->
+  <path id="tail" d="M150 130 Q180 130, 190 100" fill="none" stroke="#d4a373" stroke-width="8" />
+  <animateTransform attributeName="transform" attributeType="XML" type="rotate"
+    from="0 150 130" to="20 150 130" dur="0.5s" repeatCount="indefinite" 
+    begin="0s" fill="freeze" />
+</svg>
+```

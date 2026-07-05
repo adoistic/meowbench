@@ -1,0 +1,22 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 6020,
+    "elements": 66,
+    "paths": 29,
+    "colors": [
+      "#000000",
+      "#333",
+      "#8f4a1d",
+      "#b85c30",
+      "#e68a4f",
+      "#ff9999",
+      "#ffffff",
+      "url(#earinnergrad)",
+      "url(#eyegrad)",
+      "url(#furbodygrad)",
+      "url(#furheadgrad)"
+    ]
+  }
+}

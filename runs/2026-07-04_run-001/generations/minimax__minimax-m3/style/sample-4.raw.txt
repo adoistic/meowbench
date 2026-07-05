@@ -1,0 +1,102 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff4e0"/>
+      <stop offset="1" stop-color="#f5e3c0"/>
+    </linearGradient>
+    <linearGradient id="paper2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f8d8a8"/>
+      <stop offset="1" stop-color="#e8b878"/>
+    </linearGradient>
+    <linearGradient id="paper3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff8e8"/>
+      <stop offset="1" stop-color="#f0d8a8"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="400" fill="#faf3e3"/>
+  
+  <!-- Ground shadow -->
+  <ellipse cx="200" cy="345" rx="100" ry="10" fill="#000" opacity="0.08"/>
+  
+  <!-- Tail (folded triangular segments) -->
+  <polygon points="280,300 320,240 310,260" fill="url(#paper2)" stroke="#8b6a3f" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="280,300 310,260 305,290" fill="#e8b878" stroke="#8b6a3f" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="305,290 310,260 335,250" fill="url(#paper)" stroke="#8b6a3f" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="335,250 310,260 340,220" fill="#f5d8a0" stroke="#8b6a3f" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="335,250 340,220 360,235" fill="url(#paper3)" stroke="#8b6a3f" stroke-width="0.8" stroke-linejoin="round"/>
+  
+  <!-- Body main facets -->
+  <polygon points="140,340 130,230 200,210 270,260 280,335 200,345" fill="url(#paper)" stroke="#8b6a3f" stroke-width="1" stroke-linejoin="round"/>
+  <polygon points="130,230 200,210 175,255" fill="#f8e0b8" stroke="#8b6a3f" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="200,210 270,260 175,255" fill="url(#paper3)" stroke="#8b6a3f" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="175,255 270,260 220,310" fill="#f5d8a0" stroke="#8b6a3f" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="175,255 220,310 140,320" fill="#f8d8a8" stroke="#8b6a3f" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="140,320 220,310 200,345" fill="url(#paper2)" stroke="#8b6a3f" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="220,310 280,335 200,345" fill="#e8b878" stroke="#8b6a3f" stroke-width="0.8" stroke-linejoin="round"/>
+  
+  <!-- Front leg/paw facets -->
+  <polygon points="155,340 145,295 175,290 180,340" fill="url(#paper2)" stroke="#8b6a3f" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="145,295 175,290 160,310" fill="#f5d8a0" stroke="#8b6a3f" stroke-width="0.6" stroke-linejoin="round"/>
+  
+  <!-- Back leg/paw facets -->
+  <polygon points="240,340 235,300 260,300 265,340" fill="url(#paper2)" stroke="#8b6a3f" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="235,300 260,300 248,315" fill="#f5d8a0" stroke="#8b6a3f" stroke-width="0.6" stroke-linejoin="round"/>
+  
+  <!-- Head main shape -->
+  <polygon points="90,170 200,90 270,140 280,210 200,250 110,225" fill="url(#paper)" stroke="#8b6a3f" stroke-width="1.2" stroke-linejoin="round"/>
+  
+  <!-- Left ear -->
+  <polygon points="90,170 110,75 160,120 130,150" fill="url(#paper2)" stroke="#8b6a3f" stroke-width="1" stroke-linejoin="round"/>
+  <polygon points="110,75 160,120 130,95" fill="#e8b878" stroke="#8b6a3f" stroke-width="0.7" stroke-linejoin="round"/>
+  <polygon points="90,170 130,150 130,95" fill="#f5d8a0" stroke="#8b6a3f" stroke-width="0.7" stroke-linejoin="round"/>
+  
+  <!-- Right ear -->
+  <polygon points="270,140 290,80 240,90 230,135" fill="url(#paper2)" stroke="#8b6a3f" stroke-width="1" stroke-linejoin="round"/>
+  <polygon points="290,80 240,90 265,110" fill="#e8b878" stroke="#8b6a3f" stroke-width="0.7" stroke-linejoin="round"/>
+  <polygon points="270,140 230,135 265,110" fill="#f5d8a0" stroke="#8b6a3f" stroke-width="0.7" stroke-linejoin="round"/>
+  
+  <!-- Head facet lines -->
+  <polygon points="130,150 200,90 200,165" fill="url(#paper3)" stroke="#8b6a3f" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="200,90 270,140 230,135" fill="#f8d8a8" stroke="#8b6a3f" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="200,90 230,135 200,165" fill="url(#paper)" stroke="#8b6a3f" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="130,150 200,165 110,225" fill="#f5d8a0" stroke="#8b6a3f" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="200,165 230,135 280,210 200,250" fill="url(#paper3)" stroke="#8b6a3f" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="200,165 200,250 110,225" fill="url(#paper2)" stroke="#8b6a3f" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="200,250 280,210 270,140" fill="#e8b878" stroke="#8b6a3f" stroke-width="0.8" stroke-linejoin="round"/>
+  
+  <!-- Eyes (folded triangular) -->
+  <polygon points="150,180 175,170 168,195" fill="#3d2817" stroke="#8b6a3f" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="240,180 215,170 222,195" fill="#3d2817" stroke="#8b6a3f" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="158,178 168,175 163,185" fill="#fff4e0" opacity="0.9"/>
+  <polygon points="248,178 238,175 243,185" fill="#fff4e0" opacity="0.9"/>
+  
+  <!-- Nose (small triangle) -->
+  <polygon points="195,210 205,210 200,220" fill="#c97a5b" stroke="#8b6a3f" stroke-width="0.6" stroke-linejoin="round"/>
+  
+  <!-- Mouth fold -->
+  <polyline points="200,220 200,228 188,233" stroke="#8b6a3f" stroke-width="1" fill="none" stroke-linecap="round"/>
+  <polyline points="200,228 212,233" stroke="#8b6a3f" stroke-width="1" fill="none" stroke-linecap="round"/>
+  
+  <!-- Whisker fold creases -->
+  <line x1="130" y1="200" x2="170" y2="210" stroke="#8b6a3f" stroke-width="0.5" opacity="0.6"/>
+  <line x1="125" y1="215" x2="170" y2="220" stroke="#8b6a3f" stroke-width="0.5" opacity="0.6"/>
+  <line x1="270" y1="200" x2="230" y2="210" stroke="#8b6a3f" stroke-width="0.5" opacity="0.6"/>
+  <line x1="275" y1="215" x2="230" y2="220" stroke="#8b6a3f" stroke-width="0.5" opacity="0.6"/>
+  
+  <!-- Whisker lines -->
+  <line x1="100" y1="205" x2="145" y2="212" stroke="#5a3a20" stroke-width="0.8" stroke-linecap="round"/>
+  <line x1="95" y1="220" x2="145" y2="222" stroke="#5a3a20" stroke-width="0.8" stroke-linecap="round"/>
+  <line x1="300" y1="205" x2="255" y2="212" stroke="#5a3a20" stroke-width="0.8" stroke-linecap="round"/>
+  <line x1="305" y1="220" x2="255" y2="222" stroke="#5a3a20" stroke-width="0.8" stroke-linecap="round"/>
+  
+  <!-- Additional fold crease details on body -->
+  <line x1="160" y1="260" x2="200" y2="255" stroke="#8b6a3f" stroke-width="0.4" opacity="0.5"/>
+  <line x1="200" y1="255" x2="250" y2="270" stroke="#8b6a3f" stroke-width="0.4" opacity="0.5"/>
+  <line x1="180" y1="295" x2="220" y2="290" stroke="#8b6a3f" stroke-width="0.4" opacity="0.5"/>
+  
+  <!-- Chest fold accent -->
+  <polygon points="170,230 200,225 195,260 165,265" fill="#f5d8a0" stroke="#8b6a3f" stroke-width="0.6" stroke-linejoin="round" opacity="0.7"/>
+</svg>

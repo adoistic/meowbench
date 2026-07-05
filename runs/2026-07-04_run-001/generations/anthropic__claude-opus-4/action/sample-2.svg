@@ -1,0 +1,50 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bicycle wheels -->
+  <circle cx="120" cy="220" r="40" fill="none" stroke="black" stroke-width="3"/>
+  <circle cx="280" cy="220" r="40" fill="none" stroke="black" stroke-width="3"/>
+  <!-- Wheel spokes -->
+  <line x1="120" y1="180" x2="120" y2="260" stroke="black" stroke-width="1"/>
+  <line x1="80" y1="220" x2="160" y2="220" stroke="black" stroke-width="1"/>
+  <line x1="280" y1="180" x2="280" y2="260" stroke="black" stroke-width="1"/>
+  <line x1="240" y1="220" x2="320" y2="220" stroke="black" stroke-width="1"/>
+  <!-- Bicycle frame -->
+  <line x1="120" y1="220" x2="200" y2="140" stroke="black" stroke-width="3"/>
+  <line x1="200" y1="140" x2="280" y2="220" stroke="black" stroke-width="3"/>
+  <line x1="200" y1="140" x2="200" y2="100" stroke="black" stroke-width="3"/>
+  <line x1="120" y1="220" x2="180" y2="180" stroke="black" stroke-width="3"/>
+  <!-- Pedals -->
+  <circle cx="200" cy="180" r="15" fill="none" stroke="black" stroke-width="2"/>
+  <line x1="190" y1="175" x2="210" y2="185" stroke="black" stroke-width="2"/>
+  <!-- Handlebars -->
+  <line x1="200" y1="100" x2="180" y2="90" stroke="black" stroke-width="3"/>
+  <line x1="200" y1="100" x2="220" y2="90" stroke="black" stroke-width="3"/>
+  <!-- Cat body -->
+  <ellipse cx="200" cy="120" rx="50" ry="35" fill="orange" stroke="black" stroke-width="2"/>
+  <!-- Cat head -->
+  <circle cx="240" cy="100" r="25" fill="orange" stroke="black" stroke-width="2"/>
+  <!-- Cat ears -->
+  <path d="M225 85 L220 70 L235 75 Z" fill="orange" stroke="black" stroke-width="2"/>
+  <path d="M255 85 L260 70 L245 75 Z" fill="orange" stroke="black" stroke-width="2"/>
+  <!-- Cat eyes -->
+  <circle cx="235" cy="95" r="3" fill="black"/>
+  <circle cx="250" cy="95" r="3" fill="black"/>
+  <!-- Cat nose -->
+  <path d="M242 102 L238 105 L246 105 Z" fill="pink"/>
+  <!-- Cat mouth -->
+  <path d="M242 105 Q235 110 230 105" fill="none" stroke="black" stroke-width="1"/>
+  <path d="M242 105 Q249 110 254 105" fill="none" stroke="black" stroke-width="1"/>
+  <!-- Cat whiskers -->
+  <line x1="220" y1="98" x2="205" y2="95" stroke="black" stroke-width="1"/>
+  <line x1="220" y1="102" x2="205" y2="102" stroke="black" stroke-width="1"/>
+  <line x1="265" y1="98" x2="280" y2="95" stroke="black" stroke-width="1"/>
+  <line x1="265" y1="102" x2="280" y2="102" stroke="black" stroke-width="1"/>
+  <!-- Cat paws on handlebars -->
+  <ellipse cx="185" cy="90" rx="8" ry="12" fill="orange" stroke="black" stroke-width="2"/>
+  <ellipse cx="215" cy="90" rx="8" ry="12" fill="orange" stroke="black" stroke-width="2"/>
+  <!-- Cat back legs on pedals -->
+  <ellipse cx="195" cy="155" rx="10" ry="15" fill="orange" stroke="black" stroke-width="2"/>
+  <ellipse cx="205" cy="155" rx="10" ry="15" fill="orange" stroke="black" stroke-width="2"/>
+  <!-- Cat tail -->
+  <path d="M150 120 Q120 90 140 60" fill="none" stroke="orange" stroke-width="12"/>
+  <path d="M150 120 Q120 90 140 60" fill="none" stroke="black" stroke-width="2"/>
+</svg>

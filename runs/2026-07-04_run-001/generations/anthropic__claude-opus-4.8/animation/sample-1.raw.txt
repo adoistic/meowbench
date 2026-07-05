@@ -1,0 +1,52 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Ground shadow -->
+  <ellipse cx="200" cy="255" rx="90" ry="15" fill="#000" opacity="0.1"/>
+
+  <!-- Tail (animated) -->
+  <g transform="translate(120,210)">
+    <path d="M0,0 Q-40,-10 -55,-45 Q-60,-70 -40,-85" 
+          stroke="#f4a94a" stroke-width="14" fill="none" stroke-linecap="round">
+      <animate attributeName="d"
+        dur="2s" repeatCount="indefinite"
+        values="M0,0 Q-40,-10 -55,-45 Q-60,-70 -40,-85;
+                M0,0 Q-45,0 -70,-30 Q-90,-50 -85,-80;
+                M0,0 Q-40,-10 -55,-45 Q-60,-70 -40,-85"
+        keyTimes="0;0.5;1"/>
+    </path>
+  </g>
+
+  <!-- Body -->
+  <ellipse cx="200" cy="200" rx="80" ry="50" fill="#f4a94a"/>
+
+  <!-- Front legs -->
+  <rect x="170" y="230" width="16" height="30" rx="8" fill="#f4a94a"/>
+  <rect x="215" y="230" width="16" height="30" rx="8" fill="#f4a94a"/>
+
+  <!-- Head -->
+  <circle cx="255" cy="150" r="45" fill="#f4a94a"/>
+
+  <!-- Ears -->
+  <polygon points="220,120 215,80 250,110" fill="#f4a94a"/>
+  <polygon points="290,120 295,80 260,110" fill="#f4a94a"/>
+  <polygon points="225,115 223,92 243,110" fill="#f7c98a"/>
+  <polygon points="285,115 287,92 267,110" fill="#f7c98a"/>
+
+  <!-- Eyes -->
+  <ellipse cx="240" cy="145" rx="7" ry="10" fill="#333"/>
+  <ellipse cx="272" cy="145" rx="7" ry="10" fill="#333"/>
+  <circle cx="242" cy="141" r="2" fill="#fff"/>
+  <circle cx="274" cy="141" r="2" fill="#fff"/>
+
+  <!-- Nose -->
+  <polygon points="256,160 250,166 262,166" fill="#e07a7a"/>
+
+  <!-- Mouth -->
+  <path d="M256,166 Q250,175 244,170" stroke="#333" stroke-width="2" fill="none"/>
+  <path d="M256,166 Q262,175 268,170" stroke="#333" stroke-width="2" fill="none"/>
+
+  <!-- Whiskers -->
+  <line x1="230" y1="160" x2="200" y2="155" stroke="#333" stroke-width="1.5"/>
+  <line x1="230" y1="165" x2="200" y2="167" stroke="#333" stroke-width="1.5"/>
+  <line x1="282" y1="160" x2="312" y2="155" stroke="#333" stroke-width="1.5"/>
+  <line x1="282" y1="165" x2="312" y2="167" stroke="#333" stroke-width="1.5"/>
+</svg>

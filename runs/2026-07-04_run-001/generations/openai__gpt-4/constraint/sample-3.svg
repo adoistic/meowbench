@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" fill="none" stroke="black">
+ <ellipse cx="25" cy="35" rx="15" ry="15"/> <!-- body -->
+ <ellipse cx="25" cy="20" rx="10" ry="10"/> <!-- head -->
+ <path d="M15,20 Q25,10 35,20"/> <!-- ears -->
+ <circle cx="20" cy="18" r="2"/> <!-- left eye -->
+ <circle cx="30" cy="18" r="2"/> <!-- right eye -->
+ <path d="M25,23 Q27,26 29,23"/> <!-- mouth -->
+ <line x1="25" y1="30" x2="25" y2="40"/> <!-- tail -->
+</svg>

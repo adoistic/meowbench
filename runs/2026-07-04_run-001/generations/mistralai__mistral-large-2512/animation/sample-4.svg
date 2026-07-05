@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <style>
+    @keyframes sway {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(10deg); }
+      50% { transform: rotate(0deg); }
+      75% { transform: rotate(-10deg); }
+    }
+    .tail {
+      transform-origin: 50% 100%;
+      animation: sway 2s infinite ease-in-out;
+    }
+  </style>
+  <g>
+    <!-- Body -->
+    <ellipse cx="100" cy="130" rx="30" ry="40" fill="#5a4a42"/>
+    <!-- Head -->
+    <circle cx="100" cy="80" r="25" fill="#5a4a42"/>
+    <!-- Ears -->
+    <path d="M85,65 L95,45 L105,65 Z" fill="#5a4a42"/>
+    <path d="M95,60 L105,40 L115,60 Z" fill="#5a4a42"/>
+    <!-- Eyes -->
+    <circle cx="92" cy="75" r="3" fill="#fff"/>
+    <circle cx="108" cy="75" r="3" fill="#fff"/>
+    <circle cx="92" cy="75" r="1.5" fill="#000"/>
+    <circle cx="108" cy="75" r="1.5" fill="#000"/>
+    <!-- Nose -->
+    <path d="M100,80 L98,85 L102,85 Z" fill="#ff6b6b"/>
+    <!-- Whiskers -->
+    <line x1="85" y1="82" x2="70" y2="80" stroke="#000" stroke-width="0.5"/>
+    <line x1="85" y1="85" x2="70" y2="85" stroke="#000" stroke-width="0.5"/>
+    <line x1="85" y1="88" x2="70" y2="90" stroke="#000" stroke-width="0.5"/>
+    <line x1="115" y1="82" x2="130" y2="80" stroke="#000" stroke-width="0.5"/>
+    <line x1="115" y1="85" x2="130" y2="85" stroke="#000" stroke-width="0.5"/>
+    <line x1="115" y1="88" x2="130" y2="90" stroke="#000" stroke-width="0.5"/>
+    <!-- Legs -->
+    <rect x="80" y="150" width="8" height="20" fill="#5a4a42"/>
+    <rect x="112" y="150" width="8" height="20" fill="#5a4a42"/>
+    <!-- Tail -->
+    <path class="tail" d="M70,130 Q50,150 60,170 Q70,190 80,170" fill="none" stroke="#5a4a42" stroke-width="8" stroke-linecap="round"/>
+  </g>
+</svg>

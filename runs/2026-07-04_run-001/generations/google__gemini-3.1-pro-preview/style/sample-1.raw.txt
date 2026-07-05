@@ -1,0 +1,138 @@
+```xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#2A2A38"/>
+      <stop offset="100%" stop-color="#101016"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="800" fill="url(#bgGlow)"/>
+  
+  <!-- Floor base shadow -->
+  <polygon points="120,760 680,760 620,785 400,795 180,785" fill="#0A0A0F" stroke="#0A0A0F" stroke-width="1" stroke-linejoin="round"/>
+  
+  <!-- Geometric Origami Cat -->
+  <g stroke-width="1" stroke-linejoin="round">
+    <!-- Tail (Background Layer) -->
+    <polygon points="640,620 680,740 720,640" fill="#FFA726" stroke="#FFA726"/>
+    <polygon points="680,740 760,680 720,640" fill="#F57C00" stroke="#F57C00"/>
+    <polygon points="720,640 760,680 700,520" fill="#FFB74D" stroke="#FFB74D"/>
+    <polygon points="760,680 740,560 700,520" fill="#FF9800" stroke="#FF9800"/>
+    <polygon points="700,520 740,560 680,400" fill="#FFCC80" stroke="#FFCC80"/>
+    <polygon points="740,560 720,440 680,400" fill="#FF9800" stroke="#FF9800"/>
+    <polygon points="680,400 720,440 660,300" fill="#FFE0B2" stroke="#FFE0B2"/>
+
+    <!-- Back Leg Left -->
+    <polygon points="160,620 220,680 200,700" fill="#FFB74D" stroke="#FFB74D"/>
+    <polygon points="160,620 200,700 140,760" fill="#FF9800" stroke="#FF9800"/>
+    <polygon points="220,680 240,760 200,700" fill="#F57C00" stroke="#F57C00"/>
+    <polygon points="200,700 140,760 240,760" fill="#FFA726" stroke="#FFA726"/>
+    <polygon points="220,680 240,760 280,760" fill="#3E2723" stroke="#3E2723"/>
+
+    <!-- Back Leg Right -->
+    <polygon points="640,620 580,680 600,700" fill="#F57C00" stroke="#F57C00"/>
+    <polygon points="640,620 600,700 660,760" fill="#E65100" stroke="#E65100"/>
+    <polygon points="580,680 560,760 600,700" fill="#BF360C" stroke="#BF360C"/>
+    <polygon points="600,700 660,760 560,760" fill="#F57C00" stroke="#F57C00"/>
+    <polygon points="580,680 560,760 520,760" fill="#3E2723" stroke="#3E2723"/>
+
+    <!-- Lower Body / Belly -->
+    <polygon points="400,680 360,760 400,760" fill="#BF360C" stroke="#BF360C"/>
+    <polygon points="400,680 440,760 400,760" fill="#BF360C" stroke="#BF360C"/>
+
+    <!-- Front Leg Left -->
+    <polygon points="160,480 260,520 160,620" fill="#FFA726" stroke="#FFA726"/>
+    <polygon points="260,520 160,620 220,680" fill="#FFA726" stroke="#FFA726"/>
+    <polygon points="260,520 400,540 400,680" fill="#FFB74D" stroke="#FFB74D"/>
+    <polygon points="260,520 400,680 320,700" fill="#FFA726" stroke="#FFA726"/>
+    <polygon points="260,520 320,700 220,680" fill="#FF9800" stroke="#FF9800"/>
+    <polygon points="320,700 360,760 400,680" fill="#E65100" stroke="#E65100"/>
+    <polygon points="320,700 220,680 280,760" fill="#FFA726" stroke="#FFA726"/>
+    <polygon points="320,700 280,760 360,760" fill="#FFB74D" stroke="#FFB74D"/>
+
+    <!-- Front Leg Right -->
+    <polygon points="640,480 540,520 640,620" fill="#E65100" stroke="#E65100"/>
+    <polygon points="540,520 640,620 580,680" fill="#E65100" stroke="#E65100"/>
+    <polygon points="540,520 400,540 400,680" fill="#F57C00" stroke="#F57C00"/>
+    <polygon points="540,520 400,680 480,700" fill="#F57C00" stroke="#F57C00"/>
+    <polygon points="540,520 480,700 580,680" fill="#E65100" stroke="#E65100"/>
+    <polygon points="480,700 440,760 400,680" fill="#BF360C" stroke="#BF360C"/>
+    <polygon points="480,700 580,680 520,760" fill="#F57C00" stroke="#F57C00"/>
+    <polygon points="480,700 520,760 440,760" fill="#FF9800" stroke="#FF9800"/>
+
+    <!-- Neck & Lower Chest Left -->
+    <polygon points="400,440 320,420 400,540" fill="#F57C00" stroke="#F57C00"/>
+    <polygon points="320,420 260,520 400,540" fill="#FFA726" stroke="#FFA726"/>
+    <polygon points="320,420 240,420 260,520" fill="#FF9800" stroke="#FF9800"/>
+    <polygon points="180,340 240,420 160,480" fill="#FFCC80" stroke="#FFCC80"/>
+    <polygon points="240,420 260,520 160,480" fill="#FF9800" stroke="#FF9800"/>
+
+    <!-- Neck & Lower Chest Right -->
+    <polygon points="400,440 480,420 400,540" fill="#E65100" stroke="#E65100"/>
+    <polygon points="480,420 540,520 400,540" fill="#F57C00" stroke="#F57C00"/>
+    <polygon points="480,420 560,420 540,520" fill="#E65100" stroke="#E65100"/>
+    <polygon points="620,340 560,420 640,480" fill="#F57C00" stroke="#F57C00"/>
+    <polygon points="560,420 540,520 640,480" fill="#E65100" stroke="#E65100"/>
+
+    <!-- Head Base / Jaw Left -->
+    <polygon points="260,300 180,340 320,340" fill="#FFCC80" stroke="#FFCC80"/>
+    <polygon points="180,340 240,420 320,340" fill="#FFA726" stroke="#FFA726"/>
+    <polygon points="200,260 260,300 180,340" fill="#FF9800" stroke="#FF9800"/>
+    <polygon points="400,360 320,340 320,420" fill="#F57C00" stroke="#F57C00"/>
+    <polygon points="400,360 320,420 400,400" fill="#E65100" stroke="#E65100"/>
+    <polygon points="400,400 320,420 400,440" fill="#BF360C" stroke="#BF360C"/>
+    <polygon points="320,340 240,420 320,420" fill="#FF9800" stroke="#FF9800"/>
+
+    <!-- Head Base / Jaw Right -->
+    <polygon points="540,300 620,340 480,340" fill="#FF9800" stroke="#FF9800"/>
+    <polygon points="620,340 560,420 480,340" fill="#F57C00" stroke="#F57C00"/>
+    <polygon points="600,260 540,300 620,340" fill="#E65100" stroke="#E65100"/>
+    <polygon points="400,360 480,340 480,420" fill="#E65100" stroke="#E65100"/>
+    <polygon points="400,360 480,420 400,400" fill="#BF360C" stroke="#BF360C"/>
+    <polygon points="400,400 480,420 400,440" fill="#BF360C" stroke="#BF360C"/>
+    <polygon points="480,340 560,420 480,420" fill="#F57C00" stroke="#F57C00"/>
+
+    <!-- Ears Left -->
+    <polygon points="240,100 200,260 280,240" fill="#BF360C" stroke="#BF360C"/>
+    <polygon points="240,100 280,240 340,200" fill="#FFCC80" stroke="#FFCC80"/>
+
+    <!-- Ears Right -->
+    <polygon points="560,100 600,260 520,240" fill="#FFB74D" stroke="#FFB74D"/>
+    <polygon points="560,100 520,240 460,200" fill="#F57C00" stroke="#F57C00"/>
+
+    <!-- Head Top/Forehead Left -->
+    <polygon points="400,160 340,200 400,240" fill="#FFB74D" stroke="#FFB74D"/>
+    <polygon points="340,200 280,240 340,300" fill="#FFB74D" stroke="#FFB74D"/>
+    <polygon points="400,240 340,200 340,300" fill="#FFA726" stroke="#FFA726"/>
+    <polygon points="280,240 200,260 260,300" fill="#FFA726" stroke="#FFA726"/>
+    <polygon points="280,240 340,300 260,300" fill="#FFCC80" stroke="#FFCC80"/>
+    <polygon points="400,240 340,300 400,300" fill="#FFB74D" stroke="#FFB74D"/>
+    <polygon points="400,300 340,300 320,340" fill="#FFA726" stroke="#FFA726"/>
+    <polygon points="400,300 320,340 400,360" fill="#FFA726" stroke="#FFA726"/>
+
+    <!-- Head Top/Forehead Right -->
+    <polygon points="400,160 460,200 400,240" fill="#FF9800" stroke="#FF9800"/>
+    <polygon points="460,200 520,240 460,300" fill="#F57C00" stroke="#F57C00"/>
+    <polygon points="400,240 460,200 460,300" fill="#FF9800" stroke="#FF9800"/>
+    <polygon points="520,240 600,260 540,300" fill="#E65100" stroke="#E65100"/>
+    <polygon points="520,240 460,300 540,300" fill="#F57C00" stroke="#F57C00"/>
+    <polygon points="400,240 460,300 400,300" fill="#FF9800" stroke="#FF9800"/>
+    <polygon points="400,300 460,300 480,340" fill="#F57C00" stroke="#F57C00"/>
+    <polygon points="400,300 480,340 400,360" fill="#FF9800" stroke="#FF9800"/>
+
+    <!-- Eye Recesses -->
+    <polygon points="340,300 260,300 320,340" fill="#3E2723" stroke="#3E2723"/>
+    <polygon points="460,300 540,300 480,340" fill="#3E2723" stroke="#3E2723"/>
+
+    <!-- Glowing Cyber Eyes -->
+    <polygon points="320,310 280,315 315,325" fill="#00E5FF" stroke="#00E5FF"/>
+    <polygon points="480,310 520,315 485,325" fill="#00B8D4" stroke="#00B8D4"/>
+
+    <!-- Nose Top Flap -->
+    <polygon points="400,360 380,340 420,340" fill="#231512" stroke="#231512"/>
+    
+  </g>
+</svg>
+```

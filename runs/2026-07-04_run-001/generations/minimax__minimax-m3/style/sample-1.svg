@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <defs>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef3e7"/>
+      <stop offset="100%" stop-color="#f5d4b0"/>
+    </linearGradient>
+    <linearGradient id="headGrad" x1="0%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#fffaf0"/>
+      <stop offset="100%" stop-color="#f0c8a0"/>
+    </linearGradient>
+    <linearGradient id="earInner" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffb3ba"/>
+      <stop offset="100%" stop-color="#ff8fa3"/>
+    </linearGradient>
+    <linearGradient id="tailGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fef3e7"/>
+      <stop offset="100%" stop-color="#e8b890"/>
+    </linearGradient>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#e8f4f8"/>
+      <stop offset="100%" stop-color="#b8d8e3"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="600" fill="url(#bgGrad)"/>
+  
+  <!-- Decorative origami folds in background -->
+  <g opacity="0.15" stroke="#5a8a9a" stroke-width="1" fill="none">
+    <line x1="0" y1="100" x2="600" y2="100"/>
+    <line x1="0" y1="500" x2="600" y2="500"/>
+    <line x1="100" y1="0" x2="100" y2="600"/>
+    <line x1="500" y1="0" x2="500" y2="600"/>
+  </g>
+  
+  <!-- Shadow under cat -->
+  <ellipse cx="300" cy="520" rx="150" ry="15" fill="#000" opacity="0.15"/>
+  
+  <!-- Tail (folded segments) -->
+  <g>
+    <polygon points="420,400 470,380 480,340 460,310 440,330 445,370 430,400" 
+             fill="url(#tailGrad)" stroke="#a06850" stroke-width="1.5"/>
+    <line x1="460" y1="310" x2="470" y2="380" stroke="#a06850" stroke-width="1" opacity="0.5"/>
+    <line x1="440" y1="330" x2="445" y2="370" stroke="#a06850" stroke-width="1" opacity="0.5"/>
+  </g>
+  
+  <!-- Body (geometric diamond/trapezoid) -->
+  <g>
+    <polygon points="200,500 250,280 350,280 400,500" 
+             fill="url(#bodyGrad)" stroke="#a06850" stroke-width="2"/>
+    <!-- Body fold lines -->
+    <line x1="225" y1="390" x2="375" y2="390" stroke="#a06850" stroke-width="1" opacity="0.4"/>
+    <line x1="250" y1="280" x2="270" y2="500" stroke="#a06850" stroke-width="1" opacity="0.4"/>
+    <line x1="350" y1="280" x2="330" y2="500" stroke="#a06850" stroke-width="1" opacity="0.4"/>
+    <line x1="300" y1="280" x2="300" y2="500" stroke="#a06850" stroke-width="1.5" opacity="0.5"/>
+  </g>
+  
+  <!-- Front legs/paws -->
+  <g>
+    <polygon points="240,470 220,500 260,500 270,470" 
+             fill="url(#bodyGrad)" stroke="#a06850" stroke-width="1.5"/>
+    <polygon points="330,470 340,500 380,500 360,470" 
+             fill="url(#bodyGrad)" stroke="#a06850" stroke-width="1.5"/>
+    <line x1="240" y1="485" x2="260" y2="485" stroke="#a06850" stroke-width="0.8" opacity="0.6"/>
+    <line x1="340" y1="485" x2="360" y2="485" stroke="#a06850" stroke-width="0.8" opacity="0.6"/>
+  </g>
+  
+  <!-- Chest fold detail -->
+  <polygon points="270,300 330,300 310,360 290,360" 
+           fill="#fff5e0" stroke="#a06850" stroke-width="1" opacity="0.8"/>
+  <line x1="300" y1="300" x2="300" y2="360" stroke="#a06850" stroke-width="0.8" opacity="0.5"/>
+  
+  <!-- Head (geometric shape) -->
+  <g>
+    <polygon points="200,200 300,140 400,200 380,300 300,320 220,300" 
+             fill="url(#headGrad)" stroke="#a06850" stroke-width="2"/>
+    <!-- Head fold lines -->
+    <line x1="300" y1="140" x2="300" y2="320" stroke="#a06850" stroke-width="1.2" opacity="0.5"/>
+    <line x1="200" y1="200" x2="380" y2="200" stroke="#a06850" stroke-width="1" opacity="0.4"/>
+    <line x1="220" y1="300" x2="300" y2="220" stroke="#a06850" stroke-width="0.8" opacity="0.4"/>
+    <line x1="380" y1="300" x2="300" y2="220" stroke="#a06850" stroke-width="0.8" opacity="0.4"/>
+  </g>
+  
+  <!-- Left Ear -->
+  <g>
+    <polygon points="210,200 195,90 270,160" 
+             fill="url(#headGrad)" stroke="#a06850" stroke-width="2"/>
+    <polygon points="220,180 215,130 255,155" 
+             fill="url(#earInner)" stroke="#a06850" stroke-width="1"/>
+    <line x1="195" y1="90" x2="240" y2="140" stroke="#a06850" stroke-width="0.8" opacity="0.5"/>
+  </g>
+  
+  <!-- Right Ear -->
+  <g>
+    <polygon points="390,200 405,90 330,160" 
+             fill="url(#headGrad)" stroke="#a06850" stroke-width="2"/>
+    <polygon points="380,180 385,130 345,155" 
+             fill="url(#earInner)" stroke="#a06850" stroke-width="1"/>
+    <line x1="405" y1="90" x2="360" y2="140" stroke="#a06850" stroke-width="0.8" opacity="0.5"/>
+  </g>
+  
+  <!-- Eyes (geometric/angular) -->
+  <g>
+    <polygon points="245,215 270,205 268,235 247,230" 
+             fill="#2c3e50" stroke="#1a2530" stroke-width="1.5"/>
+    <polygon points="332,230 350,235 348,205 330,215" 
+             fill="#2c3e50" stroke="#1a2530" stroke-width="1.5"/>
+    <!-- Eye highlights -->
+    <polygon points="255,212 262,210 261,218 256,217" fill="#fff"/>
+    <polygon points="338,212 345,210 344,218 339,217" fill="#fff"/>
+  </g>
+  
+  <!-- Nose (small triangle) -->
+  <polygon points="295,260 305,260 300,270" 
+           fill="#ff8fa3" stroke="#a06850" stroke-width="1"/>
+  
+  <!-- Mouth (folded creases) -->
+  <g stroke="#a06850" stroke-width="1.5" fill="none" stroke-linecap="round">
+    <path d="M 300,270 L 300,280"/>
+    <path d="M 300,280 L 285,290"/>
+    <path d="M 300,280 L 315,290"/>
+  </g>
+  
+  <!-- Whiskers (sharp lines) -->
+  <g stroke="#5a4030" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.7">
+    <line x1="220" y1="265" x2="160" y2="255"/>
+    <line x1="220" y1="275" x2="160" y2="275"/>
+    <line x1="220" y1="285" x2="160" y2="295"/>
+    <line x1="380" y1="265" x2="440" y2="255"/>
+    <line x1="380" y1="275" x2="440" y2="275"/>
+    <line x1="380" y1="285" x2="440" y2="295"/>
+  </g>
+  
+  <!-- Origami sparkle/star accents -->
+  <g fill="#fff" opacity="0.8">
+    <polygon points="100,150 105,160 115,160 107,167 110,177 100,170 90,177 93,167 85,160 95,160"/>
+    <polygon points="510,180 514,188 522,188 516,193 518,201 510,196 502,201 504,193 498,188 506,188"/>
+    <polygon points="80,400 83,406 89,406 84,410 86,416 80,412 74,416 76,410 71,406 77,406"/>
+    <polygon points="530,450 533,456 539,456 534,460 536,466 530,462 524,466 526,460 521,456 527,456"/>
+  </g>
+  
+  <!-- Small folded paper accent in corner -->
+  <g transform="translate(450,500)">
+    <polygon points="0,0 30,0 25,20 5,20" fill="#ffb3ba" stroke="#a06850" stroke-width="1" opacity="0.6"/>
+    <line x1="15" y1="0" x2="15" y2="20" stroke="#a06850" stroke-width="0.5" opacity="0.5"/>
+  </g>
+</svg>

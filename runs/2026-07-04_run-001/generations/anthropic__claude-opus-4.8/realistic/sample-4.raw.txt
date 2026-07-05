@@ -1,0 +1,109 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bodyGrad" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#9c7a5b"/>
+      <stop offset="60%" stop-color="#7a5c40"/>
+      <stop offset="100%" stop-color="#5a4229"/>
+    </radialGradient>
+    <radialGradient id="headGrad" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#a5825f"/>
+      <stop offset="70%" stop-color="#7d5e42"/>
+      <stop offset="100%" stop-color="#5e4429"/>
+    </radialGradient>
+    <linearGradient id="tailGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7a5c40"/>
+      <stop offset="100%" stop-color="#4f3a22"/>
+    </linearGradient>
+    <radialGradient id="eyeGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c9e86b"/>
+      <stop offset="70%" stop-color="#8faa2c"/>
+      <stop offset="100%" stop-color="#5c6d18"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Shadow -->
+  <ellipse cx="200" cy="378" rx="110" ry="18" fill="#000" opacity="0.18"/>
+
+  <!-- Tail -->
+  <path d="M280 320 Q360 300 350 240 Q345 200 315 210 Q335 250 300 285 Q285 300 270 310 Z" fill="url(#tailGrad)"/>
+  <path d="M280 320 Q360 300 350 240" fill="none" stroke="#3a2b18" stroke-width="2" opacity="0.4"/>
+
+  <!-- Body -->
+  <path d="M200 180 
+           C140 180 120 260 130 320 
+           C135 360 265 360 270 320 
+           C280 260 260 180 200 180 Z" fill="url(#bodyGrad)"/>
+
+  <!-- Body fur strokes -->
+  <g stroke="#4a3620" stroke-width="1.2" opacity="0.35" fill="none">
+    <path d="M160 220 q10 20 5 40"/>
+    <path d="M180 230 q8 25 3 45"/>
+    <path d="M200 235 q6 25 2 50"/>
+    <path d="M220 230 q-8 25 -3 45"/>
+    <path d="M240 220 q-10 20 -5 40"/>
+    <path d="M150 290 q12 15 6 30"/>
+    <path d="M250 290 q-12 15 -6 30"/>
+  </g>
+
+  <!-- Front legs -->
+  <path d="M165 320 q-8 30 0 50 l18 0 q4 -30 -2 -50 Z" fill="url(#bodyGrad)"/>
+  <path d="M235 320 q8 30 0 50 l-18 0 q-4 -30 2 -50 Z" fill="url(#bodyGrad)"/>
+  <!-- Paws -->
+  <ellipse cx="175" cy="368" rx="16" ry="9" fill="#6b4f36"/>
+  <ellipse cx="225" cy="368" rx="16" ry="9" fill="#6b4f36"/>
+  <g stroke="#4a3620" stroke-width="1" opacity="0.5">
+    <line x1="175" y1="360" x2="175" y2="372"/>
+    <line x1="169" y1="361" x2="169" y2="371"/>
+    <line x1="181" y1="361" x2="181" y2="371"/>
+    <line x1="225" y1="360" x2="225" y2="372"/>
+    <line x1="219" y1="361" x2="219" y2="371"/>
+    <line x1="231" y1="361" x2="231" y2="371"/>
+  </g>
+
+  <!-- Chest lighter fur -->
+  <path d="M200 200 Q175 240 185 300 Q200 320 215 300 Q225 240 200 200 Z" fill="#c8a97f" opacity="0.5"/>
+
+  <!-- Head -->
+  <!-- Ears -->
+  <path d="M150 120 L135 60 L185 105 Z" fill="url(#headGrad)"/>
+  <path d="M250 120 L265 60 L215 105 Z" fill="url(#headGrad)"/>
+  <path d="M152 110 L143 75 L172 102 Z" fill="#c98f7a" opacity="0.7"/>
+  <path d="M248 110 L257 75 L228 102 Z" fill="#c98f7a" opacity="0.7"/>
+
+  <!-- Face -->
+  <ellipse cx="200" cy="150" rx="62" ry="58" fill="url(#headGrad)"/>
+
+  <!-- Face fur strokes -->
+  <g stroke="#4a3620" stroke-width="1" opacity="0.3" fill="none">
+    <path d="M150 130 q-6 12 -3 22"/>
+    <path d="M250 130 q6 12 3 22"/>
+    <path d="M160 175 q-5 10 -2 18"/>
+    <path d="M240 175 q5 10 2 18"/>
+  </g>
+
+  <!-- Cheeks light -->
+  <ellipse cx="165" cy="170" rx="22" ry="18" fill="#c8a97f" opacity="0.4"/>
+  <ellipse cx="235" cy="170" rx="22" ry="18" fill="#c8a97f" opacity="0.4"/>
+
+  <!-- Eyes -->
+  <ellipse cx="176" cy="145" rx="15" ry="17" fill="url(#eyeGrad)"/>
+  <ellipse cx="224" cy="145" rx="15" ry="17" fill="url(#eyeGrad)"/>
+  <ellipse cx="176" cy="145" rx="5" ry="15" fill="#1a1a10"/>
+  <ellipse cx="224" cy="145" rx="5" ry="15" fill="#1a1a10"/>
+  <circle cx="173" cy="139" r="3" fill="#fff" opacity="0.8"/>
+  <circle cx="221" cy="139" r="3" fill="#fff" opacity="0.8"/>
+
+  <!-- Nose -->
+  <path d="M193 168 L207 168 L200 178 Z" fill="#c97a6b"/>
+  <!-- Mouth -->
+  <path d="M200 178 Q192 188 182 184" fill="none" stroke="#3a2b18" stroke-width="2"/>
+  <path d="M200 178 Q208 188 218 184" fill="none" stroke="#3a2b18" stroke-width="2"/>
+
+  <!-- Whiskers -->
+  <g stroke="#e8ddc8" stroke-width="1.2" opacity="0.8">
+    <path d="M180 172 Q140 168 110 175" fill="none"/>
+    <path d="M180 178 Q140 180 108 190" fill="none"/>
+    <path d="M220 172 Q260 168 290 175" fill="none"/>
+    <path d="M220 178 Q260 180 292 190" fill="none"/>
+  </g>
+</svg>

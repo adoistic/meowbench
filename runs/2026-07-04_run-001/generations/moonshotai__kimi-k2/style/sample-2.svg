@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8d5b7"/>
+      <stop offset="50%" stop-color="#d4c4a8"/>
+      <stop offset="100%" stop-color="#b8a888"/>
+    </linearGradient>
+    <linearGradient id="earGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5e6d3"/>
+      <stop offset="100%" stop-color="#d4c4a8"/>
+    </linearGradient>
+    <linearGradient id="darkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b7355"/>
+      <stop offset="100%" stop-color="#6b5344"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Shadow -->
+  <ellipse cx="200" cy="360" rx="120" ry="25" fill="#a09080" opacity="0.4"/>
+  
+  <!-- Tail -->
+  <polygon points="280,280 340,220 360,260 320,300 300,320" fill="url(#darkGrad)"/>
+  <polygon points="280,280 340,220 320,260 300,300" fill="#9a8a70"/>
+  
+  <!-- Back legs -->
+  <polygon points="120,320 160,320 150,360 110,350" fill="url(#darkGrad)"/>
+  <polygon points="160,320 200,320 190,360 150,360" fill="#a09080"/>
+  
+  <!-- Body -->
+  <polygon points="140,180 260,180 280,320 120,320" fill="url(#bodyGrad)"/>
+  <polygon points="140,180 200,250 120,320" fill="#c4b498" opacity="0.6"/>
+  <polygon points="200,250 260,180 280,320 200,320" fill="#a89880" opacity="0.4"/>
+  
+  <!-- Front legs -->
+  <polygon points="140,280 170,280 165,340 135,330" fill="url(#bodyGrad)"/>
+  <polygon points="170,280 200,280 195,340 165,340" fill="#b8a888"/>
+  <polygon points="200,280 230,280 225,340 195,340" fill="url(#bodyGrad)"/>
+  <polygon points="230,280 260,280 255,330 225,340" fill="#b8a888"/>
+  
+  <!-- Chest fold -->
+  <polygon points="160,180 200,250 240,180" fill="#f0e0c8" opacity="0.5"/>
+  
+  <!-- Head -->
+  <polygon points="120,120 280,120 260,180 140,180" fill="url(#bodyGrad)"/>
+  
+  <!-- Left ear -->
+  <polygon points="120,120 90,60 150,90" fill="url(#earGrad)"/>
+  <polygon points="120,120 90,60 110,100" fill="#c4b498"/>
+  
+  <!-- Right ear -->
+  <polygon points="280,120 310,60 250,90" fill="url(#earGrad)"/>
+  <polygon points="280,120 310,60 290,100" fill="#c4b498"/>
+  
+  <!-- Face details -->
+  <!-- Left eye -->
+  <polygon points="155,140 165,130 175,140 165,150" fill="#4a4035"/>
+  <polygon points="158,138 165,145 168,138" fill="#fff"/>
+  
+  <!-- Right eye -->
+  <polygon points="225,140 235,130 245,140 235,150" fill="#4a4035"/>
+  <polygon points="228,138 235,145 238,138" fill="#fff"/>
+  
+  <!-- Nose -->
+  <polygon points="195,155 205,155 200,165" fill="#d4a080"/>
+  
+  <!-- Mouth fold -->
+  <polygon points="185,165 200,175 215,165 200,165" fill="#c4a080"/>
+  
+  <!-- Whiskers -->
+  <line x1="150" y1="160" x2="120" y2="155" stroke="#8b7355" stroke-width="1"/>
+  <line x1="150" y1="165" x2="115" y2="165" stroke="#8b7355" stroke-width="1"/>
+  <line x1="150" y1="170" x2="120" y2="175" stroke="#8b7355" stroke-width="1"/>
+  <line x1="250" y1="160" x2="280" y2="155" stroke="#8b7355" stroke-width="1"/>
+  <line x1="250" y1="165" x2="285" y2="165" stroke="#8b7355" stroke-width="1"/>
+  <line x1="250" y1="170" x2="280" y2="175" stroke="#8b7355" stroke-width="1"/>
+  
+  <!-- Fold lines -->
+  <line x1="140" y1="180" x2="120" y2="320" stroke="#a09080" stroke-width="0.5" opacity="0.6"/>
+  <line x1="260" y1="180" x2="280" y2="320" stroke="#a09080" stroke-width="0.5" opacity="0.6"/>
+  <line x1="200" y1="250" x2="200" y2="320" stroke="#a09080" stroke-width="0.5" opacity="0.6"/>
+  
+  <!-- Highlight on head -->
+  <polygon points="140,130 200,140 260,130 240,120 160,120" fill="#f5e6d3" opacity="0.4"/>
+</svg>

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <style>
+      .crease { stroke: #6e3b1f; stroke-width: 2; stroke-linecap: round; stroke-dasharray: 6 5; opacity: 0.4; fill: none; }
+    </style>
+  </defs>
+
+  <!-- ground shadow -->
+  <ellipse cx="330" cy="545" rx="160" ry="18" fill="black" opacity="0.16" filter="url(#blur)"/>
+
+  <g id="origami-cat">
+
+    <!-- tail segments (folded ribbon) -->
+    <polygon points="430,360 445,372 535,312 520,300" fill="#f6b783"/>
+    <polygon points="445,372 460,384 550,324 535,312" fill="#e07b3f"/>
+    <polygon points="520,300 535,312 620,372 605,360" fill="#f6b783"/>
+    <polygon points="535,312 550,324 635,384 620,372" fill="#e07b3f"/>
+    <!-- tail tip -->
+    <polygon points="620,372 635,384 570,460" fill="#c55a22"/>
+    <polygon points="605,360 620,372 555,448" fill="#f3a261"/>
+
+    <!-- back body plane -->
+    <polygon points="220,390 350,310 430,360 380,520 240,520" fill="#e07b3f"/>
+
+    <!-- neck/shoulder plane -->
+    <polygon points="320,280 350,310 300,360 280,320" fill="#f6b783"/>
+
+    <!-- chest/front plane -->
+    <polygon points="350,310 430,360 340,420" fill="#f3a261"/>
+
+    <!-- belly/underside plane -->
+    <polygon points="340,420 380,520 240,520 300,360" fill="#f7c091"/>
+
+    <!-- head: ears -->
+    <!-- left ear outer -->
+    <polygon points="350,190 368,224 338,230" fill="#c55a22"/>
+    <!-- left ear inner fold -->
+    <polygon points="356,200 362,223 345,226" fill="#e07b3f"/>
+
+    <!-- right ear outer -->
+    <polygon points="420,200 403,232 437,238" fill="#c55a22"/>
+    <!-- right ear inner fold -->
+    <polygon points="414,204 408,229 431,234" fill="#e07b3f"/>
+
+    <!-- head top plane -->
+    <polygon points="350,190 420,200 380,270 320,280" fill="#f3a261"/>
+
+    <!-- face side plane -->
+    <polygon points="380,270 470,265 430,300 350,310" fill="#f6b783"/>
+
+    <!-- cheek plane -->
+    <polygon points="350,310 430,300 430,360" fill="#e07b3f"/>
+
+    <!-- snout underside -->
+    <polygon points="430,300 470,265 468,292" fill="#ffd2ab"/>
+
+    <!-- creases: tail folds -->
+    <line x1="445" y1="372" x2="535" y2="312" class="crease"/>
+    <line x1="535" y1="312" x2="620" y2="372" class="crease"/>
+
+    <!-- creases: body and neck -->
+    <line x1="330" y1="330" x2="260" y2="520" class="crease"/>
+    <line x1="350" y1="370" x2="300" y2="430" class="crease"/>
+    <line x1="320" y1="280" x2="300" y2="360" class="crease"/>
+
+    <!-- creases: head and face -->
+    <line x1="430" y1="300" x2="470" y2="265" class="crease"/>
+    <line x1="360" y1="226" x2="346" y2="226" class="crease"/>
+    <line x1="410" y1="228" x2="432" y2="234" class="crease"/>
+    <line x1="380" y1="270" x2="350" y2="310" class="crease"/>
+
+  </g>
+</svg>

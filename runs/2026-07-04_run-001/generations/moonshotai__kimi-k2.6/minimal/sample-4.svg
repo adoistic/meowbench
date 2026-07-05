@@ -1,0 +1,77 @@
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="body-clip">
+      <rect x="0" y="0" width="500" height="500" />
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="500" fill="#F4F1EA"/>
+  <circle cx="250" cy="250" r="190" fill="#EAE6D9"/>
+
+  <!-- Tail -->
+  <path d="M 320,330 Q 440,290 410,180 Q 380,120 310,180" fill="none" stroke="#2A2838" stroke-width="24" stroke-linecap="round"/>
+
+  <!-- Cat Body Base -->
+  <ellipse cx="250" cy="460" rx="160" ry="210" fill="#2A2838" clip-path="url(#body-clip)"/>
+
+  <!-- White Chest Patch -->
+  <path d="M 200,250 C 200,250 220,380 250,390 C 280,380 300,250 300,250 Z" fill="#FFFFFF"/>
+  <path d="M 175,260 C 175,260 195,370 215,390 C 220,370 210,260 210,260 Z" fill="#FFFFFF"/>
+  <path d="M 325,260 C 325,260 305,370 285,390 C 280,370 290,260 290,260 Z" fill="#FFFFFF"/>
+
+  <!-- Shadow under head for depth -->
+  <ellipse cx="250" cy="250" rx="120" ry="15" fill="#000000" opacity="0.15"/>
+
+  <!-- Cat Head Outline (Base) -->
+  <ellipse cx="250" cy="160" rx="125" ry="105" fill="#2A2838"/>
+
+  <!-- Ear Left -->
+  <path d="M 145,140 L 130,40 L 220,90 Z" fill="#2A2838"/>
+  <!-- Ear Left Inner -->
+  <path d="M 145,135 L 135,70 L 200,95 Z" fill="#FFB5B5"/>
+  <path d="M 145,135 L 135,70 L 200,95 Z" fill="#FF5376" opacity="0.4"/>
+
+  <!-- Ear Right -->
+  <path d="M 355,140 L 370,40 L 280,90 Z" fill="#2A2838"/>
+  <!-- Ear Right Inner -->
+  <path d="M 355,135 L 365,70 L 300,95 Z" fill="#FFB5B5"/>
+  <path d="M 355,135 L 365,70 L 300,95 Z" fill="#FF5376" opacity="0.4"/>
+
+  <!-- Forehead/Muzzle Light Overlay -->
+  <ellipse cx="250" cy="155" rx="110" ry="90" fill="#FFFFFF" opacity="0.07"/>
+
+  <!-- Eyes -->
+  <circle cx="170" cy="150" r="14" fill="#FFFFFF"/>
+  <circle cx="170" cy="150" r="6" fill="#000000"/>
+
+  <circle cx="330" cy="150" r="14" fill="#FFFFFF"/>
+  <circle cx="330" cy="150" r="6" fill="#000000"/>
+
+  <!-- Nose -->
+  <polygon points="242,210 258,210 250,220" fill="#FF5376"/>
+
+  <!-- Mouth -->
+  <path d="M 250,220 C 250,220 240,240 225,235" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 250,220 C 250,220 260,240 275,235" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Whiskers Left -->
+  <path d="M 160,215 L 80,205" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 160,225 L 80,230" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 160,235 L 95,255" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Whiskers Right -->
+  <path d="M 340,215 L 420,205" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 340,225 L 420,230" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 340,235 L 405,255" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Paws (Clipped) -->
+  <ellipse cx="220" cy="460" rx="40" ry="20" fill="#FFFFFF"/>
+  <ellipse cx="280" cy="460" rx="40" ry="20" fill="#FFFFFF"/>
+
+  <!-- Cute collar -->
+  <rect x="170" y="250" width="160" height="14" rx="7" fill="#FF5376"/>
+  <!-- Collar Tag -->
+  <circle cx="250" cy="273" r="10" fill="#FFD700"/>
+  <circle cx="250" cy="273" r="4" fill="#F4F1EA"/>
+</svg>

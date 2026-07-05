@@ -1,0 +1,12 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="100" cy="100" r="50" fill="gray" />
+  <polygon points="60,70 80,30 100,70" fill="gray" />
+  <polygon points="140,70 120,30 100,70" fill="gray" />
+  <circle cx="80" cy="90" r="8" fill="white" />
+  <circle cx="120" cy="90" r="8" fill="white" />
+  <circle cx="80" cy="90" r="4" fill="black" />
+  <circle cx="120" cy="90" r="4" fill="black" />
+  <path d="M100,105 Q95,120 90,105" stroke="black" stroke-width="2" fill="none" />
+  <path d="M90,115 C95,120 105,120 110,115" stroke="black" stroke-width="2" fill="none" />
+  <path d="M85,130 C100,140 115,130 100,135Z" fill="pink" />
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <rect width="400" height="400" fill="#f4f0e8"/>
+  
+  <!-- Body -->
+  <polygon points="200,220 130,360 290,360" fill="#e8955a"/>
+  <polygon points="200,220 130,360 200,360" fill="#d97e3f"/>
+  <polygon points="200,220 290,360 240,290" fill="#f0a869"/>
+  
+  <!-- Chest fold -->
+  <polygon points="200,220 200,360 240,290" fill="#c96f35"/>
+
+  <!-- Head base -->
+  <polygon points="200,110 130,210 200,250 270,210" fill="#f0a869"/>
+  <polygon points="200,110 130,210 200,250" fill="#e8955a"/>
+  <polygon points="200,110 270,210 200,250" fill="#d97e3f"/>
+
+  <!-- Left ear -->
+  <polygon points="130,210 120,110 190,150" fill="#e8955a"/>
+  <polygon points="130,210 190,150 165,175" fill="#d97e3f"/>
+  <polygon points="135,150 120,110 175,140" fill="#f6c69a"/>
+
+  <!-- Right ear -->
+  <polygon points="270,210 280,110 210,150" fill="#d97e3f"/>
+  <polygon points="270,210 210,150 235,175" fill="#c96f35"/>
+  <polygon points="265,150 280,110 225,140" fill="#f6c69a"/>
+
+  <!-- Face lower fold -->
+  <polygon points="200,250 155,205 245,205" fill="#f6c69a"/>
+  <polygon points="200,250 200,205 245,205" fill="#f0b986"/>
+
+  <!-- Eyes -->
+  <polygon points="165,195 185,185 178,205" fill="#2e2e2e"/>
+  <polygon points="235,195 215,185 222,205" fill="#2e2e2e"/>
+
+  <!-- Nose -->
+  <polygon points="200,210 190,222 210,222" fill="#c94f4f"/>
+
+  <!-- Whisker folds -->
+  <line x1="200" y1="222" x2="150" y2="230" stroke="#a55c2c" stroke-width="1.5"/>
+  <line x1="200" y1="222" x2="250" y2="230" stroke="#a55c2c" stroke-width="1.5"/>
+  <line x1="200" y1="226" x2="155" y2="245" stroke="#a55c2c" stroke-width="1.5"/>
+  <line x1="200" y1="226" x2="245" y2="245" stroke="#a55c2c" stroke-width="1.5"/>
+
+  <!-- Tail -->
+  <polygon points="290,360 340,300 350,340 305,360" fill="#e8955a"/>
+  <polygon points="340,300 350,340 348,320" fill="#d97e3f"/>
+
+  <!-- Fold lines -->
+  <line x1="200" y1="110" x2="200" y2="250" stroke="#b9662f" stroke-width="1" opacity="0.5"/>
+  <line x1="200" y1="220" x2="240" y2="290" stroke="#b9662f" stroke-width="1" opacity="0.5"/>
+</svg>

@@ -1,0 +1,9 @@
+{
+  "modelSlug": "mistralai/mistral-large-2407",
+  "promptId": "animation",
+  "sample": 2,
+  "status": "ok",
+  "temperature": 1,
+  "rawPath": "generations/mistralai__mistral-large-2407/animation/sample-2.raw.txt",
+  "svgPath": "generations/mistralai__mistral-large-2407/animation/sample-2.svg"
+}

@@ -1,0 +1,25 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 3394,
+    "elements": 40,
+    "paths": 9,
+    "colors": [
+      "#1a1a1a",
+      "#666",
+      "#7a7a7a",
+      "#8b8b8b",
+      "#c2c2c2",
+      "#c7c7c7",
+      "#cfcfcf",
+      "#e3918f",
+      "#e6e6e6",
+      "#ffffff",
+      "rgba(0,0,0,0.08)",
+      "rgba(255,255,255,0.35)",
+      "url(#fur)",
+      "url(#headshade)"
+    ]
+  }
+}

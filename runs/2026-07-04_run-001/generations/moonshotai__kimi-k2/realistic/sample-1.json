@@ -1,0 +1,9 @@
+{
+  "modelSlug": "moonshotai/kimi-k2",
+  "promptId": "realistic",
+  "sample": 1,
+  "status": "ok",
+  "temperature": 1,
+  "rawPath": "generations/moonshotai__kimi-k2/realistic/sample-1.raw.txt",
+  "svgPath": "generations/moonshotai__kimi-k2/realistic/sample-1.svg"
+}

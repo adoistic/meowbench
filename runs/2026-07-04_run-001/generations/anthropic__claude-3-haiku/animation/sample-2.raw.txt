@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(100 100)">
+    <g id="cat">
+      <path d="M90 110c0 55-45 100-100 100S-110 165-110 110s45-100 100-100 100 45 100 100z" fill="#ffcc99"/>
+      <path d="M-20 100l50-50c10-10 30-10 40 0l50 50" fill="none" stroke="#663300" stroke-width="10" stroke-linecap="round">
+        <animate attributeName="d" dur="2s" repeatCount="indefinite" values="M-20 100l50-50c10-10 30-10 40 0l50 50;
+                      M-30 100l60-50c10-10 20-10 30 0l50 50;
+                      M-10 100l40-50c10-10 40-10 50 0l50 50" />
+      </path>
+      <path d="M-50 10c0 30-20 50-50 50s-50-20-50-50 20-50 50-50 50 20 50 50z" fill="#663300"/>
+      <path d="M50 10c0 30 20 50 50 50s50-20 50-50-20-50-50-50-50 20-50 50z" fill="#663300"/>
+    </g>
+  </g>
+</svg>

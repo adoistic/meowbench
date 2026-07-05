@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Minimal flat-design cat</title>
+  <desc id="desc">A simple, flat illustration of a cat with a round head, pointy ears, oval body, and a curled tail.</desc>
+
+  <!-- Tail (behind) -->
+  <path d="M182 150 C216 140, 218 96, 188 88 C162 82, 156 112, 172 124" fill="none" stroke="#C9A175" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Body -->
+  <ellipse cx="128" cy="172" rx="62" ry="68" fill="#C9A175"/>
+  <!-- Belly patch -->
+  <ellipse cx="128" cy="186" rx="34" ry="44" fill="#E8D2B5"/>
+
+  <!-- Ears (behind head) -->
+  <polygon points="96,74 108,26 120,74" fill="#C9A175"/>
+  <polygon points="136,74 148,26 160,74" fill="#C9A175"/>
+  <!-- Inner ears -->
+  <polygon points="102,74 108,42 114,74" fill="#EAB0B0"/>
+  <polygon points="142,74 148,42 154,74" fill="#EAB0B0"/>
+
+  <!-- Head -->
+  <circle cx="128" cy="92" r="44" fill="#C9A175"/>
+
+  <!-- Eyes -->
+  <ellipse cx="112" cy="94" rx="4" ry="7" fill="#2D2D2D"/>
+  <ellipse cx="144" cy="94" rx="4" ry="7" fill="#2D2D2D"/>
+
+  <!-- Nose -->
+  <polygon points="128,108 122,114 134,114" fill="#7B4B3A"/>
+
+  <!-- Mouth -->
+  <line x1="128" y1="114" x2="128" y2="116" stroke="#2D2D2D" stroke-width="2" stroke-linecap="round"/>
+  <path d="M124 116 q 4 6 0 12" fill="none" stroke="#2D2D2D" stroke-width="2" stroke-linecap="round"/>
+  <path d="M132 116 q -4 6 0 12" fill="none" stroke="#2D2D2D" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Whiskers -->
+  <line x1="104" y1="106" x2="74" y2="102" stroke="#2D2D2D" stroke-width="2" stroke-linecap="round"/>
+  <line x1="104" y1="112" x2="74" y2="112" stroke="#2D2D2D" stroke-width="2" stroke-linecap="round"/>
+  <line x1="104" y1="118" x2="74" y2="122" stroke="#2D2D2D" stroke-width="2" stroke-linecap="round"/>
+
+  <line x1="152" y1="106" x2="182" y2="102" stroke="#2D2D2D" stroke-width="2" stroke-linecap="round"/>
+  <line x1="152" y1="112" x2="182" y2="112" stroke="#2D2D2D" stroke-width="2" stroke-linecap="round"/>
+  <line x1="152" y1="118" x2="182" y2="122" stroke="#2D2D2D" stroke-width="2" stroke-linecap="round"/>
+</svg>

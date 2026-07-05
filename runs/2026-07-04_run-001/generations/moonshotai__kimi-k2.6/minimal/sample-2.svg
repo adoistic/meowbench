@@ -1,0 +1,234 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Gradients for the firefly particles -->
+    <radialGradient id="gFirefly" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="40%" stop-color="#fef08a" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#fef08a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <style>
+    .body-fill { fill: #FFB268; }
+    .belly-fill { fill: #FFF3E4; }
+    .dark-fill { fill: #4C3F3E; }
+    .pink-fill { fill: #FB8A8A; }
+    .white-fill { fill: #FFFFFF; }
+    .pupil-fill { fill: #020202; }
+    
+    .cat-tail-blur {
+      transform-origin: 150px 220px;
+      stroke: #FFB268;
+      stroke-width: 28;
+      stroke-linecap: round;
+      fill: none;
+      animation: tailWag 6s ease-in-out infinite;
+    }
+
+    .cat-head {
+      animation: headBob 6s ease-in-out infinite;
+      transform-origin: 150px 220px;
+    }
+
+    .ear-anim-l { transform-origin: 120px 155px; animation: earTwitch 9s ease-in-out infinite; }
+    .ear-anim-r { transform-origin: 240px 145px; animation: earTwitch 9s ease-in-out infinite reverse; }
+
+    .pupil { transform-origin: 0 0; animation: lookAround 10s ease-in-out infinite; }
+    .id-line { animation: closeEyes 4s ease-in-out infinite; }
+
+    .firefly {
+      animation: drift 8s linear infinite;
+      opacity: 0;
+    }
+    .firefly:nth-child(2) { animation-delay: 2s; }
+    .firefly:nth-child(3) { animation-delay: 1s; }
+
+    @keyframes tailWag {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(12deg); }
+      75% { transform: rotate(-6deg); }
+    }
+
+    @keyframes headBob {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-2px); }
+    }
+
+    @keyframes earTwitch {
+      0%, 100% { transform: rotate(0deg); }
+      92% { transform: rotate(0deg); }
+      95% { transform: rotate(-12deg); }
+      97% { transform: rotate(4deg); }
+    }
+
+    @keyframes lookAround {
+      0%, 100% { transform: translate(0px, 0px); }
+      15% { transform: translate(0px, 0px); }
+      25% { transform: translate(4px, 2px); }
+      35% { transform: translate(-2px, -1px); }
+      50% { transform: translate(-4px, 1px); }
+      70% { transform: translate(0px, 0px); }
+    }
+
+    @keyframes closeEyes {
+      0%, 90%, 100% { transform: scaleY(1); transform-origin: center; }
+      95% { transform: scaleY(0.1); transform-origin: center; }
+    }
+
+    @keyframes drift {
+      0% { transform: translate(0, 40px) scale(0); opacity: 0; }
+      20% { opacity: 1; transform: translate(-15px, -15px) scale(1); }
+      50% { transform: translate(15px, -45px) scale(0.8); opacity: 0.8; }
+      80% { opacity: 0.2; transform: translate(-5px, -70px) scale(0.4); }
+      100% { transform: translate(0, -100px) scale(0); opacity: 0; }
+    }
+  </style>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="#FFF3E4"/>
+  <circle cx="200" cy="200" r="160" fill="#E2F2E8EA" stroke="#CDE9DD" stroke-width="24"/>
+  
+  <!-- Decorative flowers -->
+  <g transform="translate(278,165)">
+    <circle r="6" fill="#D8E6FF"/>
+    <circle cx="-7" cy="-3" r="6" fill="#D8E6FF"/>
+    <circle cx="-4" cy="7" r="6" fill="#D8E6FF"/>
+    <circle cx="5" cy="6" r="6" fill="#D8E6FF"/>
+    <circle cx="7" cy="-4" r="6" fill="#D8E6FF"/>
+    <circle r="4" fill="#FFB268"/>
+  </g>
+
+  <g transform="translate(320,220)">
+    <path d="M -15 -8 Q -25 0 -15 8 Z" fill="#FB8A8A"/>
+    <path d="M 15 -8 Q 25 0 15 8 Z" fill="#FB8A8A"/>
+    <path d="M -8 -15 Q 0 -25 8 -15 Z" fill="#FB8A8A"/>
+    <path d="M -8 15 Q 0 25 8 15 Z" fill="#FB8A8A"/>
+    <circle r="5" fill="#FFD166"/>
+    <path d="M 0 5 L 0 25" stroke="#6FAE92" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(90,130)">
+    <path d="M -14 -8 Q -22 0 -14 8 Z" fill="#A2C5FF"/>
+    <path d="M 14 -8 Q 22 0 14 8 Z" fill="#A2C5FF"/>
+    <path d="M -8 -14 Q 0 -22 8 -14 Z" fill="#A2C5FF"/>
+    <path d="M -8 14 Q 0 22 8 14 Z" fill="#A2C5FF"/>
+    <circle r="4" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Floor shadow -->
+  <ellipse cx="150" cy="320" rx="58" ry="10" fill="#4C3F3E08"/>
+  
+  <!-- Elongated Cat Body -->
+  <g id="cat-group" transform="translate(60, 60)">
+    
+    <!-- Tail using the defined tail-wag class for CSS animation -->
+    <path d="M 110 170 Q 40 170 10 80" class="cat-tail-blur"/>
+    <path d="M 110 170 Q 40 170 10 80" stroke="#FFFFFF33" stroke-width="4" stroke-linecap="round" fill="none" style="transform-origin: 150px 220px; animation: tailWag 6s ease-in-out infinite;"/>
+    
+    <!-- Fluffy Belly Height: body drop -->
+    <ellipse cx="115" cy="178" rx="50" ry="70" class="belly-fill"/>
+    <!-- Body Main -->
+    <ellipse cx="115" cy="165" rx="52" ry="68" class="body-fill"/>
+    
+    <!-- Front Paws -->
+    <circle cx="92" cy="228" r="12" class="belly-fill"/>
+    <circle cx="92" cy="228" r="12" stroke="#FFB268" stroke-width="4" fill="none" stroke-dasharray="60"/>
+    
+    <circle cx="138" cy="228" r="12" class="belly-fill"/>
+    <circle cx="138" cy="228" r="12" stroke="#FFB268" stroke-width="4" fill="none" stroke-dasharray="20 100"/>
+    
+    <!-- Extruded Collar Band -->
+    <path d="M 89 185 A 26 26 0 0 0 141 185" stroke="#FFDB6B" stroke-width="9" stroke-linecap="round" fill="none" transform="translate(0, -1)"/>
+    <path d="M 88 183 A 27 27 0 0 0 142 183" stroke="#F2C94C" stroke-width="9" stroke-linecap="round" fill="none"/>
+    
+    <!-- Collar Tag -->
+    <circle cx="115" cy="212" r="7" fill="#FFDB6B"/>
+    <circle cx="115" cy="212" r="4.5" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+    
+    <!-- Whiskers (back) -->
+    <g fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round">
+      <path d="M 252 165 Q 283 164 302 157" />
+      <path d="M 252 178 Q 281 182 299 191" />
+      
+      <path d="M 156 165 Q 125 164 106 157" />
+      <path d="M 156 178 Q 127 182 109 191" />
+    </g>
+
+    <!-- Head Group to animate -->
+    <g class="cat-head">
+      <!-- Fluffy Head Fur shape -->
+      <path d="M 130 90 C 80 90 65 130 65 160 C 65 195 90 208 115 208 L 146 208 C 180 208 200 185 200 160 C 200 130 180 90 130 90 Z" class="body-fill"/>
+      
+      <!-- Ears with unique classes -->
+      <g class="ear-anim-l">
+        <path d="M 86 105 C 82 72 95 55 125 65 C 122 80 125 95 125 105 Z" class="body-fill"/>
+        <path d="M 91 102 C 88 78 98 65 116 72 C 114 82 117 92 117 102 Z" class="pink-fill"/>
+      </g>
+
+      <g class="ear-anim-r">
+        <path d="M 164 95 C 168 62 155 45 125 55 C 128 70 125 85 125 95 Z" class="body-fill"/>
+        <path d="M 159 92 C 162 68 152 55 134 62 C 136 72 133 82 133 92 Z" class="pink-fill"/>
+      </g>
+      
+      <!-- Closed Lower Eyelid Lines (hidden unless blinking) -->
+      <path d="M 90 155 Q 98 161 106 155" stroke="#FFB268" stroke-width="3" fill="none" stroke-linecap="round" class="id-line"/>
+      <path d="M 144 155 Q 152 161 160 155" stroke="#FFB268" stroke-width="3" fill="none" stroke-linecap="round" class="id-line"/>
+
+      <!-- The Beautiful Eyes -->
+      <g class="id-line">
+        <!-- Left Sclera/Iris -->
+        <ellipse cx="98" cy="155" rx="8" ry="9" class="white-fill"/>
+        <!-- Right Sclera/Iris -->
+        <ellipse cx="152" cy="155" rx="8" ry="9" class="white-fill"/>
+        
+        <!-- Pupils to track mouse -->
+        <g class="pupil">
+          <circle cx="98" cy="155" r="5" class="pupil-fill"/>
+          <circle cx="152" cy="155" r="5" class="pupil-fill"/>
+        </g>
+        
+        <!-- Shield (cutout) replaces clip-path approach -->
+        <path d="M 82 155 A 16 9 0 0 1 114 155 Z" fill="#FFB268"/>
+        <path d="M 136 155 A 16 9 0 0 1 168 155 Z" fill="#FFB268"/>
+
+        <!-- Top eyelid highlight -->
+        <ellipse cx="98" cy="153" rx="3" ry="1.5" fill="#FFFFFF" opacity="0.4"/>
+        <ellipse cx="152" cy="153" rx="3" ry="1.5" fill="#FFFFFF" opacity="0.4"/>
+        
+        <!-- Eye Sparkles -->
+        <ellipse cx="100" cy="152" rx="1.5" ry="2.5" fill="#FFFFFF"/>
+        <ellipse cx="154" cy="152" rx="1.5" ry="2.5" fill="#FFFFFF"/>
+      </g>
+
+      <!-- Small nose -->
+      <path d="M 121 174 L 125 179 L 129 174 Z" class="pink-fill" stroke-linejoin="round" stroke-width="4" stroke="#FB8A8A"/>
+      
+      <!-- Squiggly mouth -->
+      <path d="M 125 179 Q 125 184 120 183 Q 115 186 117 181" stroke="#4C3F3E" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 125 179 Q 125 184 130 183 Q 135 186 133 181" stroke="#4C3F3E" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+      <!-- Elegant Cheek Tricolor -->
+      <circle cx="78" cy="178" r="5.5" fill="#FB8A8A"/>
+      <circle cx="87" cy="176" r="7.5" fill="#FFDB6B"/>
+      <circle cx="96" cy="178" r="4" fill="#CDE9DD"/>
+      
+      <circle cx="172" cy="178" r="5.5" fill="#FB8A8A"/>
+      <circle cx="163" cy="176" r="7.5" fill="#FFDB6B"/>
+      <circle cx="154" cy="178" r="4" fill="#CDE9DD"/>
+    </g>
+
+    <!-- Inner soft glow for the cat -->
+    <ellipse cx="115" cy="175" rx="36" ry="28" fill="#FFFFFF" opacity="0.15" style="mix-blend-mode: overlay;"/>
+
+    <!-- Firefly / Sparkle Loop -->
+    <g class="firefly" transform="translate(180, 180)">
+      <circle cx="0" cy="0" r="4" fill="url(#gFirefly)"/>
+    </g>
+    <g class="firefly" transform="translate(30, 220)">
+      <circle cx="0" cy="0" r="5" fill="url(#gFirefly)"/>
+    </g>
+    <g class="firefly" transform="translate(60, 80)">
+      <circle cx="0" cy="0" r="3" fill="url(#gFirefly)"/>
+    </g>
+  </g>
+</svg>

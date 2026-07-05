@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Animated cat with a continuously swaying tail">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#fff8dd"/>
+      <stop offset="100%" stop-color="#ffd7b8"/>
+    </radialGradient>
+    <linearGradient id="fur" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f7a64a"/>
+      <stop offset="100%" stop-color="#dd7928"/>
+    </linearGradient>
+    <linearGradient id="belly" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffe1b3"/>
+      <stop offset="100%" stop-color="#ffc37b"/>
+    </linearGradient>
+    <style>
+      .outline {
+        stroke: #5b321d;
+        stroke-width: 8;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .thin {
+        stroke: #5b321d;
+        stroke-width: 5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .tail {
+        transform-origin: 326px 321px;
+        transform-box: view-box;
+        animation: tailSway 2.1s ease-in-out infinite;
+      }
+      @keyframes tailSway {
+        0%, 100% { transform: rotate(-13deg); }
+        50% { transform: rotate(16deg); }
+      }
+    </style>
+  </defs>
+
+  <rect width="512" height="512" fill="url(#bg)"/>
+  <ellipse cx="256" cy="444" rx="150" ry="30" fill="#d9854a" opacity="0.25"/>
+
+  <g class="tail">
+    <path d="M326 321 C404 315 438 235 393 193 C357 160 309 187 321 225 C329 252 364 256 377 232" fill="none" stroke="#5b321d" stroke-width="50" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M326 321 C404 315 438 235 393 193 C357 160 309 187 321 225 C329 252 364 256 377 232" fill="none" stroke="url(#fur)" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M393 193 C377 180 355 180 339 194" fill="none" stroke="#c96a25" stroke-width="10" stroke-linecap="round"/>
+    <path d="M333 245 C348 255 368 253 377 232" fill="none" stroke="#c96a25" stroke-width="10" stroke-linecap="round"/>
+  </g>
+
+  <g>
+    <path d="M166 278 C166 220 206 184 256 184 C306 184 346 220 346 278 L346 364 C346 408 308 432 256 432 C204 432 166 408 166 364 Z" fill="url(#fur)" class="outline"/>
+    <ellipse cx="256" cy="335" rx="58" ry="76" fill="url(#belly)" stroke="#5b321d" stroke-width="5"/>
+    <path d="M209 246 C198 234 187 223 176 214" fill="none" class="thin"/>
+    <path d="M303 246 C314 234 325 223 336 214" fill="none" class="thin"/>
+    <path d="M218 419 C208 438 184 442 169 426" fill="none" class="outline"/>
+    <path d="M294 419 C304 438 328 442 343 426" fill="none" class="outline"/>
+  </g>
+
+  <g>
+    <path d="M167 185 L183 105 L233 156 Z" fill="url(#fur)" class="outline"/>
+    <path d="M345 185 L329 105 L279 156 Z" fill="url(#fur)" class="outline"/>
+    <path d="M185 169 L193 131 L218 157 Z" fill="#ffc18a"/>
+    <path d="M327 169 L319 131 L294 157 Z" fill="#ffc18a"/>
+    <circle cx="256" cy="205" r="86" fill="url(#fur)" class="outline"/>
+    <path d="M206 154 C221 136 237 130 256 130 C275 130 291 136 306 154" fill="none" stroke="#c96a25" stroke-width="7" stroke-linecap="round"/>
+    <path d="M238 134 L232 159" class="thin"/>
+    <path d="M256 130 L256 158" class="thin"/>
+    <path d="M274 134 L280 159" class="thin"/>
+    <ellipse cx="224" cy="202" rx="13" ry="18" fill="#fff7cf" class="thin"/>
+    <ellipse cx="288" cy="202" rx="13" ry="18" fill="#fff7cf" class="thin"/>
+    <ellipse cx="226" cy="204" rx="5" ry="12" fill="#25150e"/>
+    <ellipse cx="286" cy="204" rx="5" ry="12" fill="#25150e"/>
+    <circle cx="230" cy="197" r="3" fill="#ffffff"/>
+    <circle cx="290" cy="197" r="3" fill="#ffffff"/>
+    <path d="M256 222 L244 236 L268 236 Z" fill="#7a3f2a" stroke="#5b321d" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M256 236 C252 247 240 250 232 243" fill="none" class="thin"/>
+    <path d="M256 236 C260 247 272 250 280 243" fill="none" class="thin"/>
+    <path d="M214 230 C187 221 164 222 140 231" fill="none" class="thin"/>
+    <path d="M214 245 C187 244 164 252 145 267" fill="none" class="thin"/>
+    <path d="M298 230 C325 221 348 222 372 231" fill="none" class="thin"/>
+    <path d="M298 245 C325 244 348 252 367 267" fill="none" class="thin"/>
+    <circle cx="206" cy="232" r="4" fill="#9b4c28"/>
+    <circle cx="306" cy="232" r="4" fill="#9b4c28"/>
+  </g>
+</svg>

@@ -1,0 +1,100 @@
+<svg width="450" height="350" viewBox="0 0 450 350" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bike-frame { stroke: #D32F2F; stroke-width: 9; }
+      .bike-detail { stroke: #424242; fill: #616161; }
+      .tire { stroke: #212121; stroke-width: 10; fill: none; }
+      .spoke { stroke: #BDBDBD; stroke-width: 2; }
+      .cat-body { fill: #FF9800; stroke: #E65100; stroke-width: 5; }
+      .cat-face { stroke: #BF360C; stroke-width: 1.5; fill: none; }
+      .cat-paw { fill: #FF9800; stroke: #E65100; stroke-width: 5; }
+    </style>
+  </defs>
+
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <!-- ===== BICYCLE ===== -->
+    <g id="bicycle">
+      <!-- Rear Wheel -->
+      <g id="rear-wheel">
+        <circle class="tire" cx="100" cy="240" r="55"/>
+        <g class="spoke">
+          <line x1="100" y1="185" x2="100" y2="295"/>
+          <line x1="155" y1="240" x2="45" y2="240"/>
+          <line x1="138.9" y1="201.1" x2="61.1" y2="278.9"/>
+          <line x1="138.9" y1="278.9" x2="61.1" y2="201.1"/>
+        </g>
+        <circle class="bike-detail" cx="100" cy="240" r="7"/>
+      </g>
+      <!-- Front Wheel -->
+      <g id="front-wheel">
+        <circle class="tire" cx="330" cy="240" r="55"/>
+        <g class="spoke" transform="rotate(15, 330, 240)">
+          <line x1="330" y1="185" x2="330" y2="295"/>
+          <line x1="385" y1="240" x2="275" y2="240"/>
+          <line x1="368.9" y1="201.1" x2="291.1" y2="278.9"/>
+          <line x1="368.9" y1="278.9" x2="291.1" y2="201.1"/>
+        </g>
+        <circle class="bike-detail" cx="330" cy="240" r="7"/>
+      </g>
+      <!-- Crankset & Pedals -->
+      <g id="crankset" class="bike-detail" transform="translate(205 240)">
+        <circle r="15" fill="#BDBDBD"/>
+        <g transform="rotate(45)">
+          <line y2="40" stroke-width="6"/>
+          <rect x="-15" y="38" width="30" height="9" rx="4" fill="#212121"/>
+        </g>
+        <g transform="rotate(225)">
+          <line y2="40" stroke-width="6"/>
+          <rect x="-15" y="38" width="30" height="9" rx="4" fill="#212121"/>
+        </g>
+      </g>
+      <!-- Frame -->
+      <g id="frame" class="bike-frame" fill="none">
+        <path d="M 100 240 L 205 240 L 190 150 Z" />
+        <path d="M 190 150 L 300 150 L 205 240" />
+        <line x1="300" y1="150" x2="330" y2="240" />
+      </g>
+      <!-- Seat -->
+      <path id="seat" class="bike-detail" fill="#5D4037" d="M 170 130 h 40 l -5 20 h -30 Z"/>
+    </g>
+
+    <!-- ===== CAT ===== -->
+    <g id="cat">
+      <!-- Tail -->
+      <path class="cat-body" fill="none" d="M 130 180 q 20 -70 -40 -90" stroke-width="14"/>
+      <!-- Body & Legs -->
+      <g class="cat-body">
+        <path d="M 190 145
+                 c 10 -40, 60 -50, 85 0
+                 c 25 50, -5 120, -40 130
+                 l -60 -20
+                 c -30 -30, -5 -90, 15 -110 Z" />
+        <path d="M 230 250 c 0 15 -10 35 -5 45" fill="none" stroke-width="18"/>
+      </g>
+      <!-- Arm -->
+      <path class="cat-body" d="M 255 160 c 25 -25 50 -25 75 -15" fill="none" stroke-width="18"/>
+      <!-- Head -->
+      <g id="head" transform="translate(275 110)">
+        <path class="cat-body" d="M -15,-32 l -15,-20 l 15,5 z" />
+        <path class="cat-body" d="M 15,-32 l 15,-20 l -15,5 z" />
+        <circle class="cat-body" r="35"/>
+        <g class="cat-face">
+          <circle cx="-13" cy="-10" r="4" fill="#212121" stroke="none"/>
+          <circle cx="13" cy="-10" r="4" fill="#212121" stroke="none"/>
+          <polygon points="0,0 5,5 -5,5" fill="#F8BBD0"/>
+          <path d="M -25,2 q 15,10, 25,2 M -25,8 q 15,10, 25,2" />
+          <path d="M 25,2 q -15,10, -25,2 M 25,8 q -15,10, -25,2" />
+        </g>
+      </g>
+    </g>
+    
+    <!-- ===== FOREGROUND ELEMENTS ===== -->
+    <g id="foreground">
+      <!-- Handlebar -->
+      <path id="handlebar" class="bike-frame" fill="none" d="M 300 150 q 25 -30 55 -20" />
+      <rect id="handlebar-grip" class="bike-detail" fill="#5D4037" x="350" y="125" width="22" height="12" rx="5" />
+      <!-- Paw -->
+      <circle class="cat-paw" cx="355" cy="140" r="14"/>
+    </g>
+  </g>
+</svg>

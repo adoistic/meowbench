@@ -1,0 +1,17 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <path d="M185,260 C230,260 260,200 240,150" stroke="#4A4A4A" stroke-width="18" stroke-linecap="round" fill="none">
+    <animateTransform 
+      attributeName="transform" 
+      type="rotate" 
+      values="-10 185 260; 10 185 260" 
+      dur="2s" 
+      repeatCount="indefinite" 
+      autoreverse="true"
+      calcMode="spline"
+      keyTimes="0;1"
+      keySplines="0.42 0 0.58 1"/>
+  </path>
+  <path d="M185,280 C220,275 220,200 190,170 C200,110 175,70 150,70 C125,70 100,110 110,170 C80,200 80,275 115,280 Z" fill="#4A4A4A"/>
+  <path d="M131,105 L141,85 L149,105 Z" fill="#F2D7D5"/>
+  <path d="M169,105 L159,85 L151,105 Z" fill="#F2D7D5"/>
+</svg>

@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" text-rendering="geometricPrecision">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="70%">
+      <stop offset="0%" stop-color="#f7f1e6"/>
+      <stop offset="100%" stop-color="#e6dcc6"/>
+    </radialGradient>
+    <linearGradient id="paperLight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f6efe0"/>
+      <stop offset="100%" stop-color="#e9dec6"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#bg)"/>
+
+  <!-- soft ground shadow -->
+  <ellipse cx="300" cy="555" rx="180" ry="20" fill="#7a6a4a" opacity="0.18" filter="url(#soft)"/>
+
+  <!-- ============ TAIL (behind body) ============ -->
+  <g id="tail">
+    <polygon points="430,540 470,500 500,490 470,470" fill="#d8c8a8"/>
+    <polygon points="470,500 500,490 525,425 495,415" fill="#c9b894"/>
+    <polygon points="495,415 525,425 510,360 480,370" fill="#b9a67f"/>
+    <polygon points="480,370 510,360 470,340 455,365" fill="#a8916d"/>
+    <polygon points="430,540 470,470 455,365 440,420 440,500" fill="#e3d4b4"/>
+  </g>
+
+  <!-- ============ BODY ============ -->
+  <g id="body">
+    <!-- left shoulder -->
+    <polygon points="230,325 300,380 190,430 170,400" fill="url(#paperLight)"/>
+    <!-- right shoulder -->
+    <polygon points="370,325 300,380 410,430 430,400" fill="#e7dcc2"/>
+    <!-- top center -->
+    <polygon points="230,325 370,325 300,380" fill="#f4ecdc"/>
+    <!-- chest -->
+    <polygon points="300,380 190,430 300,470" fill="#ede2c9"/>
+    <polygon points="300,380 410,430 300,470" fill="#d8c8a6"/>
+    <!-- left flank -->
+    <polygon points="190,430 170,400 175,540 230,540" fill="#e3d4b2"/>
+    <polygon points="190,430 300,470 230,540 175,540" fill="#cdbb95"/>
+    <!-- right flank -->
+    <polygon points="410,430 430,400 425,540 370,540" fill="#cdbb95"/>
+    <polygon points="410,430 300,470 370,540 425,540" fill="#bca67e"/>
+    <!-- center lower -->
+    <polygon points="230,540 300,540 300,470" fill="#d4c29c"/>
+    <polygon points="300,540 370,540 300,470" fill="#c2ad83"/>
+
+    <!-- paws -->
+    <polygon points="205,555 270,555 237,592" fill="#f0e6cf"/>
+    <polygon points="205,555 237,592 215,592" fill="#d8c8a6"/>
+    <polygon points="330,555 395,555 363,592" fill="#e3d4b2"/>
+    <polygon points="363,555 395,555 385,592" fill="#bca67e"/>
+  </g>
+
+  <!-- ============ HEAD ============ -->
+  <g id="head">
+    <!-- ears -->
+    <polygon points="175,215 205,95 240,215" fill="#ece1c8"/>
+    <polygon points="175,215 205,95 210,170" fill="#d8c8a4"/>
+    <polygon points="195,200 205,135 222,200" fill="#cf9b86"/>
+    <polygon points="195,200 222,200 210,170" fill="#b87f6a"/>
+
+    <polygon points="360,215 395,95 425,215" fill="#e0d2b4"/>
+    <polygon points="395,95 425,215 415,170" fill="#cab98c"/>
+    <polygon points="378,200 395,135 405,200" fill="#cf9b86"/>
+    <polygon points="378,200 405,200 415,170" fill="#b07a64"/>
+
+    <!-- crown & face facets -->
+    <polygon points="240,215 300,160 360,215" fill="#f6efe0"/>
+    <polygon points="240,215 300,160 300,215" fill="#ede2c9"/>
+    <polygon points="300,160 360,215 300,215" fill="#e3d4b4"/>
+    <polygon points="175,215 240,215 240,265 200,255" fill="#e8dcc0"/>
+    <polygon points="240,215 240,265 300,270 300,215" fill="#f1e7d2"/>
+    <polygon points="300,215 300,270 360,265 360,215" fill="#dcccaa"/>
+    <polygon points="360,215 360,265 400,255 425,215" fill="#cab98c"/>
+    <polygon points="175,215 200,255 180,295" fill="#d6c5a0"/>
+    <polygon points="200,255 240,265 220,300 180,295" fill="#cdbb93"/>
+    <polygon points="240,265 300,270 300,320 220,300" fill="#e0d0ac"/>
+    <polygon points="300,270 360,265 380,300 300,320" fill="#c9b68a"/>
+    <polygon points="360,265 400,255 420,295 380,300" fill="#b8a47c"/>
+    <polygon points="400,255 425,215 420,295" fill="#a8916d"/>
+    <polygon points="180,295 220,300 300,335" fill="#d2bf97"/>
+    <polygon points="220,300 300,320 300,335" fill="#e5d5b0"/>
+    <polygon points="300,320 380,300 300,335" fill="#c0aa80"/>
+    <polygon points="380,300 420,295 300,335" fill="#a88f68"/>
+
+    <!-- eyes (origami slits) -->
+    <polygon points="248,238 272,238 260,252" fill="#3a342a"/>
+    <polygon points="328,238 352,238 340,252" fill="#3a342a"/>
+    <polygon points="248,238 272,238 264,244" fill="#5a4f3e"/>
+
+    <!-- nose -->
+    <polygon points="289,278 311,278 300,292" fill="#8a5a4e"/>
+    <polygon points="289,278 300,278 300,292" fill="#a36e60"/>
+
+    <!-- mouth creases -->
+    <path d="M300,292 L288,306 M300,292 L312,306" stroke="#8a6a52" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.8"/>
+    <!-- whisker creases -->
+    <path d="M232,288 L175,278 M232,294 L172,296 M368,288 L425,278 M368,294 L428,296" stroke="#9a8762" stroke-width="0.8" opacity="0.55" fill="none"/>
+  </g>
+
+  <!-- ============ FOLD LINES ============ -->
+  <g id="creases" fill="none" stroke="#a8926d" stroke-width="1" stroke-linejoin="round" opacity="0.55">
+    <!-- head -->
+    <path d="M240,215 L300,160 L360,215 M300,160 L300,320 M240,215 L240,265 L300,270 L360,265 M175,215 L200,255 L180,295 L300,335 L420,295 L400,255 L425,215 M220,300 L300,320 L380,300"/>
+    <!-- ears -->
+    <path d="M175,215 L205,95 L240,215 M360,215 L395,95 L425,215 M195,200 L222,200 M378,200 L405,200"/>
+    <!-- body -->
+    <path d="M230,325 L300,380 L370,325 M190,430 L300,470 L410,430 M170,400 L175,540 M430,400 L425,540 M230,540 L300,470 L370,540 M300,470 L300,540"/>
+    <!-- tail -->
+    <path d="M430,540 L470,500 L500,490 L525,425 L510,360 L455,365 M440,500 L455,365 M470,470 L440,420"/>
+    <!-- paws -->
+    <path d="M205,555 L237,592 L270,555 M330,555 L363,592 L395,555"/>
+  </g>
+
+  <!-- subtle top highlight on crown -->
+  <polygon points="240,215 300,160 360,215" fill="none" stroke="#fffaef" stroke-width="1.2" opacity="0.7"/>
+</svg>

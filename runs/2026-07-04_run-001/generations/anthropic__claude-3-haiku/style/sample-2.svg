@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <g fill-rule="evenodd" fill="none" stroke="#000" stroke-width="4">
+    <path d="M150 150L178.6 65.7 221.4 65.7 150 150z" fill="#ffc">
+      <animate attributeName="d" dur="5s" repeatCount="indefinite" values="M150 150L178.6 65.7 221.4 65.7 150 150z;M150 150L197.4 94.3 202.6 94.3 150 150z;M150 150L178.6 134.3 221.4 134.3 150 150z;M150 150L178.6 65.7 221.4 65.7 150 150z" />
+    </path>
+    <path d="M150 150L108.6 134.3 121.4 134.3 150 150z" fill="#ffc">
+      <animate attributeName="d" dur="5s" repeatCount="indefinite" values="M150 150L108.6 134.3 121.4 134.3 150 150z;M150 150L92.6 105.7 107.4 105.7 150 150z;M150 150L108.6 65.7 121.4 65.7 150 150z;M150 150L108.6 134.3 121.4 134.3 150 150z" />
+    </path>
+    <path d="M150 150L121.4 65.7 178.6 65.7 150 150z" fill="#ffc">
+      <animate attributeName="d" dur="5s" repeatCount="indefinite" values="M150 150L121.4 65.7 178.6 65.7 150 150z;M150 150L135.7 94.3 164.3 94.3 150 150z;M150 150L121.4 134.3 178.6 134.3 150 150z;M150 150L121.4 65.7 178.6 65.7 150 150z" />
+    </path>
+    <circle cx="150" cy="150" r="30" fill="#ffc" />
+  </g>
+</svg>

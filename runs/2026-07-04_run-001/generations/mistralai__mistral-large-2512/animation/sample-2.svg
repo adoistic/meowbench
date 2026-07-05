@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <style>
+    @keyframes sway {
+      0%, 100% { transform: rotate(-10deg); }
+      50% { transform: rotate(10deg); }
+    }
+    .tail {
+      transform-origin: 20px 50px;
+      animation: sway 2s ease-in-out infinite;
+    }
+  </style>
+  <g>
+    <!-- Body -->
+    <ellipse cx="100" cy="120" rx="30" ry="40" fill="#8B4513"/>
+    <!-- Head -->
+    <circle cx="100" cy="70" r="25" fill="#8B4513"/>
+    <!-- Ears -->
+    <polygon points="85,50 95,30 105,50" fill="#8B4513"/>
+    <polygon points="95,50 105,30 115,50" fill="#8B4513"/>
+    <!-- Eyes -->
+    <circle cx="90" cy="65" r="3" fill="black"/>
+    <circle cx="110" cy="65" r="3" fill="black"/>
+    <!-- Nose -->
+    <polygon points="100,70 95,75 105,75" fill="pink"/>
+    <!-- Whiskers -->
+    <line x1="85" y1="75" x2="60" y2="70" stroke="black" stroke-width="1"/>
+    <line x1="85" y1="75" x2="60" y2="80" stroke="black" stroke-width="1"/>
+    <line x1="115" y1="75" x2="140" y2="70" stroke="black" stroke-width="1"/>
+    <line x1="115" y1="75" x2="140" y2="80" stroke="black" stroke-width="1"/>
+    <!-- Legs -->
+    <rect x="75" y="150" width="10" height="30" fill="#8B4513"/>
+    <rect x="115" y="150" width="10" height="30" fill="#8B4513"/>
+    <rect x="85" y="150" width="10" height="20" fill="#8B4513"/>
+    <rect x="105" y="150" width="10" height="20" fill="#8B4513"/>
+    <!-- Tail -->
+    <path class="tail" d="M70,120 Q50,100 40,140 Q30,160 50,150" fill="none" stroke="#8B4513" stroke-width="8" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+```xml
+<svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <path d="M75,95 C95,90 100,60 85,45" stroke="#333" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <path d="M25,95 C15,60 85,60 75,95 Z" fill="#333"/>
+  <path d="M25,35 L20,10 L45,25 Z" fill="#333"/>
+  <path d="M75,35 L80,10 L55,25 Z" fill="#333"/>
+  <circle cx="50" cy="45" r="30" fill="#333"/>
+  <circle cx="40" cy="45" r="7" fill="#FFD700"/>
+  <circle cx="60" cy="45" r="7" fill="#FFD700"/>
+  <ellipse cx="40" cy="45" rx="1.5" ry="6" fill="black"/>
+  <ellipse cx="60" cy="45" rx="1.5" ry="6" fill="black"/>
+  <path d="M48,55 L52,55 L50,58 Z" fill="#FFB6C1"/>
+  <path d="M30,55 L15,50 M30,58 L15,58 M30,61 L15,66" stroke-width="1" stroke="white" stroke-linecap="round"/>
+  <path d="M70,55 L85,50 M70,58 L85,58 M70,61 L85,66" stroke-width="1" stroke="white" stroke-linecap="round"/>
+</svg>
+```

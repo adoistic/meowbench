@@ -1,0 +1,9 @@
+{
+  "modelSlug": "moonshotai/kimi-k2.6",
+  "promptId": "constraint",
+  "sample": 2,
+  "status": "ok",
+  "temperature": 1,
+  "rawPath": "generations/moonshotai__kimi-k2.6/constraint/sample-2.raw.txt",
+  "svgPath": "generations/moonshotai__kimi-k2.6/constraint/sample-2.svg"
+}

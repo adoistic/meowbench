@@ -1,0 +1,13 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 1115,
+    "elements": 13,
+    "paths": 2,
+    "colors": [
+      "black",
+      "url(#grad1)"
+    ]
+  }
+}

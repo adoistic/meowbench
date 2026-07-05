@@ -1,0 +1,28 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bicycle -->
+  <g id="bicycle" transform="translate(150, 150)">
+    <circle cx="0" cy="0" r="20" fill="#666" stroke="#333" stroke-width="2"/>
+    <circle cx="80" cy="0" r="20" fill="#666" stroke="#333" stroke-width="2"/>
+    <rect x="-10" y="-5" width="100" height="10" fill="#999" stroke="#333" stroke-width="2" rx="2"/>
+    <line x1="0" y1="20" x2="0" y2="40" stroke="#333" stroke-width="4"/>
+    <line x1="80" y1="20" x2="80" y2="40" stroke="#333" stroke-width="4"/>
+    <line x1="-20" y1="30" x2="100" y2="30" stroke="#333" stroke-width="2"/>
+  </g>
+
+  <!-- Cat -->
+  <g id="cat" transform="translate(170, 80)">
+    <ellipse cx="0" cy="0" rx="20" ry="15" fill="#ccc" stroke="#333" stroke-width="2"/>
+    <circle cx="-8" cy="-8" r="4" fill="#000"/>
+    <circle cx="8" cy="-8" r="4" fill="#000"/>
+    <path d="M 0 5 Q 0 10, 5 10 L 10 15 Q 5 10, 0 5" fill="#ccc" stroke="#333" stroke-width="2"/>
+    <line x1="-10" y1="0" x2="-15" y2="5" stroke="#333" stroke-width="2"/>
+    <line x1="10" y1="0" x2="15" y2="5" stroke="#333" stroke-width="2"/>
+  </g>
+
+  <!-- Handlebars -->
+  <line x1="170" y1="150" x2="130" y2="100" stroke="#333" stroke-width="4"/>
+
+  <!-- Rider's hands -->
+  <circle cx="130" cy="100" r="5" fill="#ccc" stroke="#333" stroke-width="2"/>
+  <circle cx="210" cy="170" r="5" fill="#ccc" stroke="#333" stroke-width="2"/>
+</svg>

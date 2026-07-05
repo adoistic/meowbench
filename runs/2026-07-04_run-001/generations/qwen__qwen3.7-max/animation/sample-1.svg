@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <style>
+    .bg { fill: #fdf6e3; }
+    .fur { fill: #f0a868; }
+    .fur-dark { fill: #d98a47; }
+    .belly { fill: #fff2d9; }
+    .eye { fill: #2a2a2a; }
+    .shine { fill: #ffffff; }
+    .nose { fill: #e86b8a; }
+    .mouth { fill: none; stroke: #6b3a1a; stroke-width: 1.5; stroke-linecap: round; }
+    .whisker { stroke: #4a2a12; stroke-width: 1; stroke-linecap: round; }
+    .stripe { fill: #c47233; }
+    .tail-line { stroke: #f0a868; stroke-width: 14; stroke-linecap: round; fill: none; }
+    .tail-tip { fill: #c47233; }
+
+    #tail {
+      transform-origin: 130px 200px;
+      transform-box: fill-box;
+      animation: sway 2.2s ease-in-out infinite;
+    }
+    #tail2 {
+      transform-origin: 130px 200px;
+      animation: sway 2.2s ease-in-out infinite;
+    }
+    @keyframes sway {
+      0%   { transform: rotate(-18deg) skewX(0deg); }
+      25%  { transform: rotate(-8deg)  skewX(-4deg); }
+      50%  { transform: rotate(14deg)  skewX(6deg); }
+      75%  { transform: rotate(4deg)   skewX(-2deg); }
+      100% { transform: rotate(-18deg) skewX(0deg); }
+    }
+    .blink {
+      transform-origin: center;
+      transform-box: fill-box;
+      animation: blink 4s infinite;
+    }
+    @keyframes blink {
+      0%, 92%, 100% { transform: scaleY(1); }
+      95%, 97%      { transform: scaleY(0.1); }
+    }
+  </style>
+
+  <!-- Background -->
+  <rect class="bg" width="400" height="300"/>
+  <ellipse cx="200" cy="270" rx="150" ry="10" fill="#e9dcc0" opacity="0.7"/>
+
+  <!-- Tail (animated) -->
+  <g id="tail">
+    <path class="tail-line" d="M 132 202 Q 90 175 82 135 Q 78 100 100 78"/>
+    <circle class="tail-tip" cx="100" cy="78" r="10"/>
+    <circle class="fur" cx="100" cy="78" r="7"/>
+  </g>
+
+  <!-- Back legs -->
+  <ellipse class="fur-dark" cx="150" cy="245" rx="18" ry="22"/>
+  <ellipse class="fur" cx="155" cy="240" rx="17" ry="20"/>
+  <ellipse class="belly" cx="155" cy="250" rx="10" ry="10"/>
+
+  <!-- Body -->
+  <ellipse class="fur" cx="205" cy="205" rx="75" ry="52"/>
+  <!-- Belly -->
+  <ellipse class="belly" cx="210" cy="220" rx="40" ry="28"/>
+  <!-- Stripes on body -->
+  <path class="stripe" d="M 160 175 Q 175 170 185 180 L 180 188 Q 170 182 162 185 Z" opacity="0.6"/>
+  <path class="stripe" d="M 200 168 Q 215 162 225 172 L 220 180 Q 210 174 202 178 Z" opacity="0.6"/>
+
+  <!-- Front legs -->
+  <rect class="fur" x="225" y="215" width="18" height="45" rx="8"/>
+  <rect class="fur" x="250" y="215" width="18" height="45" rx="8"/>
+  <ellipse class="belly" cx="234" cy="258" rx="9" ry="5"/>
+  <ellipse class="belly" cx="259" cy="258" rx="9" ry="5"/>
+
+  <!-- Neck shadow -->
+  <ellipse class="fur-dark" cx="245" cy="180" rx="28" ry="20" opacity="0.7"/>
+
+  <!-- Head -->
+  <circle class="fur" cx="258" cy="158" r="42"/>
+
+  <!-- Ears -->
+  <polygon class="fur" points="225,130 218,85 248,118"/>
+  <polygon class="fur" points="288,125 300,82 270,112"/>
+  <polygon points="228,126 225,100 244,118" fill="#ffb3c3"/>
+  <polygon points="286,122 296,100 274,115" fill="#ffb3c3"/>
+
+  <!-- Head stripes -->
+  <path class="stripe" d="M 232 135 Q 258 128 285 135 L 282 145 Q 258 140 235 145 Z" opacity="0.55"/>
+
+  <!-- Face -->
+  <ellipse class="belly" cx="258" cy="170" rx="22" ry="16"/>
+
+  <!-- Eyes -->
+  <g class="blink">
+    <ellipse class="eye" cx="242" cy="155" rx="5" ry="7"/>
+    <circle class="shine" cx="244" cy="152" r="1.8"/>
+  </g>
+  <g class="blink">
+    <ellipse class="eye" cx="274" cy="155" rx="5" ry="7"/>
+    <circle class="shine" cx="276" cy="152" r="1.8"/>
+  </g>
+
+  <!-- Nose -->
+  <polygon class="nose" points="258,168 253,175 263,175"/>
+  <!-- Mouth -->
+  <path class="mouth" d="M 258 175 Q 258 182 252 184"/>
+  <path class="mouth" d="M 258 175 Q 258 182 264 184"/>
+
+  <!-- Whiskers -->
+  <line class="whisker" x1="240" y1="178" x2="215" y2="172"/>
+  <line class="whisker" x1="240" y1="182" x2="215" y2="186"/>
+  <line class="whisker" x1="276" y1="178" x2="301" y2="172"/>
+  <line class="whisker" x1="276" y1="182" x2="301" y2="186"/>
+</svg>

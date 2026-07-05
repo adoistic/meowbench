@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Head -->
+  <circle cx="100" cy="110" r="50" fill="#333"/>
+  <!-- Left Ear -->
+  <path d="M60,80 L40,25 L90,60 Z" fill="#333"/>
+  <!-- Right Ear -->
+  <path d="M140,80 L160,25 L110,60 Z" fill="#333"/>
+  <!-- Left Eye -->
+  <ellipse cx="80" cy="105" rx="10" ry="14" fill="#F5D76E"/>
+  <!-- Right Eye -->
+  <ellipse cx="120" cy="105" rx="10" ry="14" fill="#F5D76E"/>
+  <!-- Left Pupil -->
+  <ellipse cx="80" cy="105" rx="3" ry="9" fill="#222"/>
+  <!-- Right Pupil -->
+  <ellipse cx="120" cy="105" rx="3" ry="9" fill="#222"/>
+  <!-- Nose -->
+  <path d="M94,128 L106,128 L100,136 Z" fill="#FF8DA1"/>
+  <!-- Mouth and Whiskers -->
+  <path d="M100,136 Q90,145 80,136 M100,136 Q110,145 120,136 M65,130 L35,125 M65,135 L35,135 M65,140 L35,145 M135,130 L165,125 M135,135 L165,135 M135,140 L165,145" stroke="#FFF" fill="none" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

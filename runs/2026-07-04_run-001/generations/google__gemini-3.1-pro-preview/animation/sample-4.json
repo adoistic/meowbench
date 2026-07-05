@@ -1,0 +1,9 @@
+{
+  "modelSlug": "google/gemini-3.1-pro-preview",
+  "promptId": "animation",
+  "sample": 4,
+  "status": "ok",
+  "temperature": 1,
+  "rawPath": "generations/google__gemini-3.1-pro-preview/animation/sample-4.raw.txt",
+  "svgPath": "generations/google__gemini-3.1-pro-preview/animation/sample-4.svg"
+}

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bellyGrad" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#f7e2c7"/>
+      <stop offset="100%" stop-color="#f0d4b3"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Ground shadow -->
+  <ellipse cx="200" cy="345" rx="115" ry="20" fill="#000" fill-opacity="0.08"/>
+
+  <!-- Tail (behind body) -->
+  <g id="tail" transform="rotate(0 280 250)">
+    <!-- main tail -->
+    <path d="M280 250
+             C348 226 344 170 330 148
+             S306 112 320 100"
+          fill="none"
+          stroke="#e3b780"
+          stroke-width="22"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+    <!-- darker tail tip -->
+    <circle cx="320" cy="100" r="11" fill="#c7966b"/>
+    <animateTransform attributeName="transform"
+                      type="rotate"
+                      values="22 280 250; -18 280 250; 22 280 250"
+                      keyTimes="0; 0.5; 1"
+                      calcMode="spline"
+                      keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"
+                      dur="4s"
+                      repeatCount="indefinite"/>
+  </g>
+
+  <!-- Body -->
+  <ellipse cx="200" cy="245" rx="85" ry="115" fill="#f0c893" stroke="#c08a61" stroke-width="2"/>
+
+  <!-- Belly patch -->
+  <ellipse cx="200" cy="265" rx="46" ry="66" fill="url(#bellyGrad)" opacity="0.95"/>
+
+  <!-- Back paw (left, partially behind) -->
+  <ellipse cx="150" cy="330" rx="26" ry="14" fill="#f0c893" stroke="#c08a61" stroke-width="2" opacity="0.95"/>
+
+  <!-- Front paws -->
+  <g>
+    <ellipse cx="172" cy="332" rx="22" ry="12" fill="#f0c893" stroke="#c08a61" stroke-width="2"/>
+    <ellipse cx="228" cy="332" rx="22" ry="12" fill="#f0c893" stroke="#c08a61" stroke-width="2"/>
+  </g>
+
+  <!-- Head and features -->
+  <g>
+    <!-- Ears (behind head) -->
+    <polygon points="165,108 188,58 208,108" fill="#e2b27a" stroke="#c08a61" stroke-width="2"/>
+    <polygon points="235,108 212,58 192,108" fill="#e2b27a" stroke="#c08a61" stroke-width="2"/>
+    <!-- Inner ears -->
+    <polygon points="177,106 189,76 200,106" fill="#f2b7bd" opacity="0.9"/>
+    <polygon points="223,106 211,76 200,106" fill="#f2b7bd" opacity="0.9"/>
+    <!-- Head -->
+    <circle cx="200" cy="130" r="52" fill="#f0c893" stroke="#c08a61" stroke-width="2"/>
+    <!-- Eyes -->
+    <g>
+      <circle cx="184" cy="125" r="7.2" fill="#222"/>
+      <circle cx="216" cy="125" r="7.2" fill="#222"/>
+      <circle cx="182.5" cy="123.5" r="2" fill="#fff" opacity="0.9"/>
+      <circle cx="214.5" cy="123.5" r="2" fill="#fff" opacity="0.9"/>
+    </g>
+    <!-- Nose -->
+    <polygon points="195,149 205,149 200,155" fill="#e78f96"/>
+    <!-- Mouth -->
+    <path d="M200 156 q -6 7 -14 0 M200 156 q 6 7 14 0" fill="none" stroke="#8a5a3a" stroke-width="2" stroke-linecap="round"/>
+    <!-- Whiskers -->
+    <g stroke="#8a5a3a" stroke-width="2" stroke-linecap="round" opacity="0.9">
+      <line x1="172" y1="150" x2="138" y2="146"/>
+      <line x1="172" y1="156" x2="136" y2="156"/>
+      <line x1="172" y1="162" x2="138" y2="166"/>
+
+      <line x1="228" y1="150" x2="262" y2="146"/>
+      <line x1="228" y1="156" x2="264" y2="156"/>
+      <line x1="228" y1="162" x2="262" y2="166"/>
+    </g>
+  </g>
+
+  <!-- Chest fluff -->
+  <path d="M176 188
+           q 6 10 12 0
+           q 6 10 12 0
+           q 6 10 12 0"
+        fill="none" stroke="#e9d3b8" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Subtle stripes on tail base blending into body (overlay to smooth junction) -->
+  <path d="M279 247 q 10 -6 20 0" fill="none" stroke="#d6ab84" stroke-width="8" stroke-linecap="round" opacity="0.45"/>
+</svg>

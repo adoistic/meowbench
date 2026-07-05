@@ -1,0 +1,33 @@
+{
+  "valid": false,
+  "reasons": [
+    "css-url"
+  ],
+  "stats": {
+    "bytes": 8605,
+    "elements": 123,
+    "paths": 30,
+    "colors": [
+      "#2e2e2e",
+      "#2f2f2f",
+      "#555",
+      "#8a5a34",
+      "#8a8a8a",
+      "#9a9a9a",
+      "#b9b9b9",
+      "#bfbfbf",
+      "#d47a5a",
+      "#d9792c",
+      "#d9d9d9",
+      "#e08a40",
+      "#f6a55d",
+      "#f6b3c4",
+      "#fff59d",
+      "#ffffff",
+      "url(#groundgrad)",
+      "url(#hubgrad)",
+      "url(#skygrad)",
+      "url(#tiregrad)"
+    ]
+  }
+}

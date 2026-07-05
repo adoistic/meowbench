@@ -1,0 +1,20 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 3126,
+    "elements": 40,
+    "paths": 5,
+    "colors": [
+      "#000000",
+      "#263238",
+      "#37474f",
+      "#546e7a",
+      "#ff8a80",
+      "#ffffff",
+      "url(#paperback)",
+      "url(#paperfront)",
+      "url(#papermid)"
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" width="300" height="400">
+  <defs>
+    <radialGradient id="bodyGradient" cx="0.3" cy="0.3" r="0.8">
+      <stop offset="0%" stop-color="#f0f0f0"/>
+      <stop offset="50%" stop-color="#d0d0d0"/>
+      <stop offset="100%" stop-color="#a0a0a0"/>
+    </radialGradient>
+    <radialGradient id="headGradient" cx="0.2" cy="0.2" r="0.9">
+      <stop offset="0%" stop-color="#f5f5f5"/>
+      <stop offset="60%" stop-color="#d5d5d5"/>
+      <stop offset="100%" stop-color="#a5a5a5"/>
+    </radialGradient>
+    <linearGradient id="earGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e0e0e0"/>
+      <stop offset="100%" stop-color="#909090"/>
+    </linearGradient>
+    <radialGradient id="tailGradient" cx="0.3" cy="0.3" r="0.8">
+      <stop offset="0%" stop-color="#e5e5e5"/>
+      <stop offset="70%" stop-color="#c0c0c0"/>
+      <stop offset="100%" stop-color="#959595"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Body -->
+  <ellipse cx="150" cy="280" rx="80" ry="65" fill="url(#bodyGradient)"/>
+  
+  <!-- Chest -->
+  <ellipse cx="150" cy="220" rx="55" ry="45" fill="url(#bodyGradient)"/>
+  
+  <!-- Head -->
+  <ellipse cx="150" cy="160" rx="45" ry="40" fill="url(#headGradient)"/>
+  
+  <!-- Ears -->
+  <path d="M 115 135 Q 110 120 125 125 Q 130 130 125 145 Z" fill="url(#earGradient)"/>
+  <path d="M 185 135 Q 190 120 175 125 Q 170 130 175 145 Z" fill="url(#earGradient)"/>
+  
+  <!-- Inner ears -->
+  <path d="M 120 135 Q 118 128 125 130 Q 127 133 125 138 Z" fill="#ff9999"/>
+  <path d="M 180 135 Q 182 128 175 130 Q 173 133 175 138 Z" fill="#ff9999"/>
+  
+  <!-- Front legs -->
+  <ellipse cx="120" cy="320" rx="15" ry="35" fill="url(#bodyGradient)"/>
+  <ellipse cx="180" cy="320" rx="15" ry="35" fill="url(#bodyGradient)"/>
+  
+  <!-- Paws -->
+  <ellipse cx="120" cy="350" rx="18" ry="12" fill="#c0c0c0"/>
+  <ellipse cx="180" cy="350" rx="18" ry="12" fill="#c0c0c0"/>
+  
+  <!-- Tail -->
+  <path d="M 90 260 Q 50 240 40 200 Q 35 180 45 160 Q 55 150 65 160 Q 70 180 80 200 Q 90 240 100 260 Z" fill="url(#tailGradient)"/>
+  
+  <!-- Tail stripes -->
+  <path d="M 52 185 Q 58 180 64 185" stroke="#808080" stroke-width="2" fill="none"/>
+  <path d="M 48 200 Q 56 195 65 200" stroke="#808080" stroke-width="2" fill="none"/>
+  <path d="M 55 215 Q 65 210 75 215" stroke="#808080" stroke-width="2" fill="none"/>
+  
+  <!-- Eyes -->
+  <ellipse cx="135" cy="155" rx="8" ry="12" fill="#90EE90"/>
+  <ellipse cx="165" cy="155" rx="8" ry="12" fill="#90EE90"/>
+  
+  <!-- Pupils -->
+  <ellipse cx="135" cy="157" rx="3" ry="8" fill="#000"/>
+  <ellipse cx="165" cy="157" rx="3" ry="8" fill="#000"/>
+  
+  <!-- Eye highlights -->
+  <ellipse cx="136" cy="152" rx="1.5" ry="2" fill="#fff"/>
+  <ellipse cx="166" cy="152" rx="1.5" ry="2" fill="#fff"/>
+  
+  <!-- Nose -->
+  <path d="M 150 170 L 145 175 Q 150 178 155 175 Z" fill="#ff69b4"/>
+  
+  <!-- Mouth -->
+  <path d="M 150 178 Q 140 185 135 190" stroke="#666" stroke-width="1.5" fill="none"/>
+  <path d="M 150 178 Q 160 185 165 190" stroke="#666" stroke-width="1.5" fill="none"/>
+  
+  <!-- Whiskers -->
+  <line x1="90" y1="165" x2="125" y2="170" stroke="#333" stroke-width="1"/>
+  <line x1="90" y1="175" x2="125" y2="175" stroke="#333" stroke-width="1"/>
+  <line x1="175" y1="170" x2="210" y2="165" stroke="#333" stroke-width="1"/>
+  <line x1="175" y1="175" x2="210" y2="175" stroke="#333" stroke-width="1"/>
+  
+  <!-- Fur texture strokes -->
+  <path d="M 110 200 Q 115 195 120 200" stroke="#999" stroke-width="0.5" fill="none" opacity="0.6"/>
+  <path d="M 180 200 Q 175 195 170 200" stroke="#999" stroke-width="0.5" fill="none" opacity="0.6"/>
+  <path d="M 130 250 Q 135 245 140 250" stroke="#999" stroke-width="0.5" fill="none" opacity="0.6"/>
+  <path d="M 170 250 Q 165 245 160 250" stroke="#999" stroke-width="0.5" fill="none" opacity="0.6"/>
+  <path d="M 110 280 Q 120 275 130 280" stroke="#999" stroke-width="0.5" fill="none" opacity="0.6"/>
+  <path d="M 190 280 Q 180 275 170 280" stroke="#999" stroke-width="0.5" fill="none" opacity="0.6"/>
+</svg>

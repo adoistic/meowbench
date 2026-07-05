@@ -1,0 +1,25 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 4060,
+    "elements": 51,
+    "paths": 17,
+    "colors": [
+      "#000",
+      "#333",
+      "#666",
+      "#808080",
+      "#90ee90",
+      "#999",
+      "#c0c0c0",
+      "#ff69b4",
+      "#ff9999",
+      "#fff",
+      "url(#bodygradient)",
+      "url(#eargradient)",
+      "url(#headgradient)",
+      "url(#tailgradient)"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="#87CEEB"/>
+  <circle cx="170" cy="30" r="20" fill="#FFD700"/>
+  <path d="M160,20 Q170,10 180,20" stroke="#FFD700" stroke-width="3" fill="none"/>
+  <path d="M150,40 Q170,30 190,40" stroke="#FFD700" stroke-width="3" fill="none"/>
+  <ellipse cx="100" cy="120" rx="40" ry="25" fill="#FFA500" stroke="#000" stroke-width="2"/>
+  <circle cx="85" cy="110" r="8" fill="#FFF"/>
+  <circle cx="85" cy="110" r="4" fill="#000"/>
+  <circle cx="115" cy="110" r="8" fill="#FFF"/>
+  <circle cx="115" cy="110" r="4" fill="#000"/>
+  <path d="M90,125 Q100,135 110,125" stroke="#000" stroke-width="2" fill="none"/>
+  <path d="M70,115 L80,105 L90,115" fill="#FFA500" stroke="#000" stroke-width="2"/>
+  <path d="M130,115 L120,105 L110,115" fill="#FFA500" stroke="#000" stroke-width="2"/>
+  <path d="M75,130 L65,140 L75,150 L85,140 Z" fill="#FFA500" stroke="#000" stroke-width="2"/>
+  <path d="M125,130 L135,140 L125,150 L115,140 Z" fill="#FFA500" stroke="#000" stroke-width="2"/>
+  <ellipse cx="60" cy="150" rx="15" ry="10" fill="#FFA500" stroke="#000" stroke-width="2"/>
+  <ellipse cx="140" cy="150" rx="15" ry="10" fill="#FFA500" stroke="#000" stroke-width="2"/>
+  <path d="M60,160 L60,180" stroke="#000" stroke-width="3"/>
+  <path d="M140,160 L140,180" stroke="#000" stroke-width="3"/>
+  <circle cx="60" cy="180" r="12" fill="#333"/>
+  <circle cx="140" cy="180" r="12" fill="#333"/>
+  <path d="M45,170 L75,170 L90,150 L110,150 L125,170 L155,170" stroke="#000" stroke-width="3" fill="none"/>
+  <path d="M100,120 L100,150" stroke="#000" stroke-width="3" fill="none"/>
+  <path d="M100,150 L85,170" stroke="#000" stroke-width="3" fill="none"/>
+  <path d="M100,150 L115,170" stroke="#000" stroke-width="3" fill="none"/>
+  <rect x="80" y="165" width="40" height="5" fill="#333"/>
+  <circle cx="90" cy="170" r="3" fill="#FFF"/>
+</svg>

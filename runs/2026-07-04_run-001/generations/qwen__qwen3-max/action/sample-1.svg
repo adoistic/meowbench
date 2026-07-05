@@ -1,0 +1,41 @@
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bicycle wheels -->
+  <circle cx="70" cy="150" r="30" stroke="black" stroke-width="4" fill="none"/>
+  <circle cx="230" cy="150" r="30" stroke="black" stroke-width="4" fill="none"/>
+  <!-- Bicycle frame -->
+  <line x1="70" y1="150" x2="120" y2="100" stroke="black" stroke-width="4"/>
+  <line x1="230" y1="150" x2="180" y2="100" stroke="black" stroke-width="4"/>
+  <line x1="120" y1="100" x2="180" y2="100" stroke="black" stroke-width="4"/>
+  <!-- Handlebars -->
+  <line x1="120" y1="100" x2="110" y2="70" stroke="black" stroke-width="4"/>
+  <line x1="110" y1="70" x2="130" y2="70" stroke="black" stroke-width="4"/>
+  <!-- Seat -->
+  <ellipse cx="180" cy="100" rx="10" ry="5" fill="black"/>
+  <!-- Pedals -->
+  <circle cx="150" cy="150" r="5" fill="black"/>
+  <line x1="150" y1="150" x2="160" y2="160" stroke="black" stroke-width="3"/>
+  <line x1="150" y1="150" x2="140" y2="140" stroke="black" stroke-width="3"/>
+  
+  <!-- Cat body -->
+  <ellipse cx="170" cy="85" rx="20" ry="12" fill="orange"/>
+  <!-- Cat head -->
+  <circle cx="195" cy="75" r="15" fill="orange"/>
+  <!-- Cat ears -->
+  <polygon points="185,60 190,70 180,70" fill="orange"/>
+  <polygon points="205,60 200,70 210,70" fill="orange"/>
+  <!-- Cat eyes -->
+  <circle cx="190" cy="72" r="3" fill="black"/>
+  <circle cx="200" cy="72" r="3" fill="black"/>
+  <!-- Cat nose -->
+  <path d="M195,78 Q197,80 195,82 Q193,80 195,78" fill="pink"/>
+  <!-- Cat mouth -->
+  <path d="M195,82 Q193,84 195,85 Q197,84 195,82" fill="none" stroke="black" stroke-width="1"/>
+  <!-- Cat front legs -->
+  <line x1="160" y1="85" x2="155" y2="100" stroke="orange" stroke-width="6"/>
+  <line x1="168" y1="85" x2="163" y2="100" stroke="orange" stroke-width="6"/>
+  <!-- Cat back legs -->
+  <line x1="180" y1="85" x2="185" y2="100" stroke="orange" stroke-width="6"/>
+  <line x1="188" y1="85" x2="193" y2="100" stroke="orange" stroke-width="6"/>
+  <!-- Cat tail -->
+  <path d="M150,85 Q140,75 145,65" stroke="orange" stroke-width="6" fill="none"/>
+</svg>

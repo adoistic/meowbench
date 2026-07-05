@@ -1,0 +1,43 @@
+<svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="furGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color: #d5c1ac; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #a9826a; stop-opacity: 1" />
+    </radialGradient>
+    <filter id="furTexture" x="0" y="0">
+      <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="2" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" />
+    </filter>
+  </defs>
+  
+  <!-- Body -->
+  <ellipse cx="100" cy="190" rx="80" ry="100" fill="url(#furGradient)" filter="url(#furTexture)" />
+  
+  <!-- Head -->
+  <ellipse cx="100" cy="90" rx="60" ry="70" fill="url(#furGradient)" filter="url(#furTexture)" />
+  
+  <!-- Ears -->
+  <path d="M60 50 Q50 20 70 30 Q65 45 60 50 Z" fill="#a9826a" />
+  <path d="M140 50 Q150 20 130 30 Q135 45 140 50 Z" fill="#a9826a" />
+  
+  <!-- Eyes -->
+  <ellipse cx="80" cy="90" rx="10" ry="15" fill="#fff" />
+  <ellipse cx="120" cy="90" rx="10" ry="15" fill="#fff" />
+  <circle cx="80" cy="90" r="5" fill="#000" />
+  <circle cx="120" cy="90" r="5" fill="#000" />
+  
+  <!-- Nose -->
+  <path d="M100 110 Q95 115 100 120 Q105 115 100 110 Z" fill="#ffcccb" />
+  
+  <!-- Mouth -->
+  <path d="M95 120 Q100 127 105 120" stroke="#a9826a" stroke-width="2" fill="none" />
+  
+  <!-- Whiskers -->
+  <path d="M60 112 Q40 110 60 108" stroke="#a9826a" stroke-width="1" />
+  <path d="M140 112 Q160 110 140 108" stroke="#a9826a" stroke-width="1" />
+  <path d="M60 117 Q40 115 60 113" stroke="#a9826a" stroke-width="1" />
+  <path d="M140 117 Q160 115 140 113" stroke="#a9826a" stroke-width="1" />
+  
+  <!-- Tail -->
+  <path d="M170 190 Q210 250 150 260" fill="url(#furGradient)" filter="url(#furTexture)" />
+</svg>

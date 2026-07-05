@@ -1,0 +1,11 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  
+  <circle cx="100" cy="100" r="50" fill="yellow"/>
+  <ellipse cx="80" cy="90" rx="10" ry="20" fill="black" />
+  <ellipse cx="120" cy="90" rx="10" ry="20" fill="black" />
+  <path d="M90,110 Q100,130 110,110" stroke="black" fill="transparent"/>
+  <rect x="95" y="120" width="10" height="5" fill="black"/>
+  
+  <animateTransform attributeName="transform" attributeType="XML" type="rotate" 
+                    from="0 100 100" to="360 100 100" dur="1s" repeatCount="indefinite" />
+</svg>

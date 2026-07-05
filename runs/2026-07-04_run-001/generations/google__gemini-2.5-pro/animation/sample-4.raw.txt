@@ -1,0 +1,63 @@
+```xml
+<svg viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .cat-shape { fill: #333; }
+    .cat-tail {
+      fill: none;
+      stroke: #333;
+      stroke-width: 16;
+      stroke-linecap: round;
+    }
+    .face-feature {
+      stroke: #fff;
+      stroke-width: 2;
+      stroke-linecap: round;
+      fill: none;
+    }
+    .nose { fill: #ff9999; }
+  </style>
+
+  <g transform="translate(0, 25)">
+    <!-- Animated Tail -->
+    <path class="cat-tail" d="M 180 140 C 230 160, 240 90, 200 60">
+      <animateTransform 
+        attributeName="transform"
+        type="rotate"
+        values="-10 180 140; 15 180 140; -10 180 140"
+        dur="2.5s"
+        repeatCount="indefinite"
+        calcMode="spline"
+        keyTimes="0; 0.5; 1"
+        keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+    </path>
+
+    <!-- Body Group -->
+    <g class="cat-shape">
+      <!-- Main body and paws -->
+      <path d="M 125 70 C 185 70, 190 180, 125 180 C 60 180, 65 70, 125 70 Z"/>
+      <ellipse cx="100" cy="170" rx="20" ry="10"/>
+      <ellipse cx="150" cy="170" rx="20" ry="10"/>
+      
+      <!-- Head -->
+      <circle cx="125" cy="85" r="45"/>
+      
+      <!-- Ears -->
+      <path d="M 95 55 L 75 25 L 110 50 Z"/>
+      <path d="M 155 55 L 175 25 L 140 50 Z"/>
+    </g>
+
+    <!-- Face Group -->
+    <g>
+      <!-- Eyes -->
+      <circle cx="112" cy="85" r="5" fill="#fff"/>
+      <circle cx="138" cy="85" r="5" fill="#fff"/>
+      <circle cx="113" cy="87" r="2.5" fill="#333"/>
+      <circle cx="139" cy="87" r="2.5" fill="#333"/>
+      
+      <!-- Nose and Mouth -->
+      <path d="M 122 98 l 6 0 l -3 4 z" class="nose"/>
+      <path d="M 118 105 q 7 6 14 0" class="face-feature"/>
+    </g>
+  </g>
+</svg>
+```

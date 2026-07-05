@@ -1,0 +1,25 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 3676,
+    "elements": 38,
+    "paths": 4,
+    "colors": [
+      "#000",
+      "#222",
+      "#8a5a3a",
+      "#c08a61",
+      "#c7966b",
+      "#d6ab84",
+      "#e2b27a",
+      "#e3b780",
+      "#e78f96",
+      "#e9d3b8",
+      "#f0c893",
+      "#f2b7bd",
+      "#fff",
+      "url(#bellygrad)"
+    ]
+  }
+}

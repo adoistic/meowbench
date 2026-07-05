@@ -1,0 +1,23 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cat drawing by an expert SVG artist -->
+  <g fill="#2c3e50" stroke="#2c3e50">
+    <!-- The tail with animation. Drawn first to be in the background. -->
+    <path d="M 140,170 C 180,170 190,110 170,70" stroke-width="12" stroke-linecap="round" fill="none">
+      <animateTransform
+        attributeName="transform"
+        attributeType="XML"
+        type="rotate"
+        from="-10 140 170"
+        to="25 140 170"
+        dur="3s"
+        repeatCount="indefinite"
+        values="-10 140 170; 25 140 170; -10 140 170"
+        keyTimes="0; 0.5; 1"
+        calcMode="spline"
+        keySplines="0.42 0 0.58 1; 0.42 0 0.58 1" />
+    </path>
+
+    <!-- The cat's body and head, drawn as a single shape over the tail's base -->
+    <path d="M 145,180 C 70,190, 70,110, 100,90 C 100,70, 110,60, 120,65 L 130,55 L 135,70 C 150,70, 160,85, 150,105 C 165,130, 165,180, 145,180 Z" stroke-width="4" stroke-linejoin="round" />
+  </g>
+</svg>

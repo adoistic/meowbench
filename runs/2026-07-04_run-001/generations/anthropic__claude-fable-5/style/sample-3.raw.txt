@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fdf6ec"/>
+      <stop offset="1" stop-color="#f3e3cf"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="800" height="800" fill="url(#bg)"/>
+
+  <!-- ground shadow -->
+  <polygon points="220,700 580,700 640,730 160,730" fill="#e0cdb2" opacity="0.7"/>
+
+  <!-- ===== TAIL ===== -->
+  <polygon points="520,680 610,660 585,600" fill="#e85d04"/>
+  <polygon points="610,660 585,600 650,560" fill="#f2711c"/>
+  <polygon points="585,600 650,560 615,510" fill="#d94f04"/>
+  <polygon points="650,560 615,510 665,470" fill="#f7931e"/>
+  <polygon points="615,510 665,470 640,445" fill="#c44503"/>
+
+  <!-- ===== BODY ===== -->
+  <!-- haunches -->
+  <polygon points="300,540 235,660 320,680" fill="#d94f04"/>
+  <polygon points="500,540 565,660 480,680" fill="#e85d04"/>
+  <!-- flanks -->
+  <polygon points="340,420 300,540 400,560" fill="#f2711c"/>
+  <polygon points="460,420 500,540 400,560" fill="#e85d04"/>
+  <polygon points="300,540 400,560 320,680" fill="#f7931e"/>
+  <polygon points="500,540 400,560 480,680" fill="#f2711c"/>
+  <!-- chest -->
+  <polygon points="340,420 460,420 400,560" fill="#ffb85c"/>
+  <polygon points="400,560 320,680 480,680" fill="#ffcf8a"/>
+  <!-- front paws -->
+  <polygon points="345,620 375,680 315,680" fill="#c44503"/>
+  <polygon points="455,620 485,680 425,680" fill="#d94f04"/>
+  <!-- base fold line -->
+  <polygon points="235,660 320,680 300,700 250,695" fill="#b23e03"/>
+  <polygon points="565,660 480,680 500,700 550,695" fill="#c44503"/>
+
+  <!-- ===== EARS ===== -->
+  <polygon points="298,118 258,242 362,232" fill="#e85d04"/>
+  <polygon points="298,118 362,232 340,235" fill="#c44503"/>
+  <polygon points="304,150 280,232 344,226" fill="#8f3202"/>
+  <polygon points="502,118 542,242 438,232" fill="#f2711c"/>
+  <polygon points="502,118 438,232 460,235" fill="#d94f04"/>
+  <polygon points="496,150 520,232 456,226" fill="#8f3202"/>
+
+  <!-- ===== HEAD ===== -->
+  <!-- forehead -->
+  <polygon points="300,228 400,208 400,302" fill="#f7931e"/>
+  <polygon points="500,228 400,208 400,302" fill="#f2711c"/>
+  <!-- temples -->
+  <polygon points="300,228 400,302 278,302" fill="#e85d04"/>
+  <polygon points="500,228 400,302 522,302" fill="#d94f04"/>
+  <!-- cheeks -->
+  <polygon points="278,302 400,302 338,388" fill="#f2711c"/>
+  <polygon points="522,302 400,302 462,388" fill="#e85d04"/>
+  <!-- muzzle -->
+  <polygon points="338,388 400,302 462,388" fill="#ffb85c"/>
+  <!-- chin -->
+  <polygon points="338,388 462,388 400,432" fill="#f7931e"/>
+  <!-- neck join -->
+  <polygon points="338,388 400,432 340,420" fill="#d94f04"/>
+  <polygon points="462,388 400,432 460,420" fill="#c44503"/>
+
+  <!-- ===== FACE DETAILS ===== -->
+  <!-- eyes -->
+  <polygon points="322,308 358,300 344,330" fill="#2b1a0e"/>
+  <polygon points="478,308 442,300 456,330" fill="#2b1a0e"/>
+  <!-- nose -->
+  <polygon points="385,340 415,340 400,360" fill="#8f3202"/>
+  <!-- mouth fold -->
+  <polyline points="400,360 400,384 376,398" fill="none" stroke="#c44503" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="400,384 424,398" fill="none" stroke="#c44503" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- whiskers -->
+  <g stroke="#8f3202" stroke-width="3" stroke-linecap="round" opacity="0.75">
+    <line x1="345" y1="352" x2="272" y2="340"/>
+    <line x1="347" y1="366" x2="278" y2="372"/>
+    <line x1="455" y1="352" x2="528" y2="340"/>
+    <line x1="453" y1="366" x2="522" y2="372"/>
+  </g>
+
+  <!-- crease highlights -->
+  <g stroke="#ffffff" stroke-width="2" opacity="0.28">
+    <line x1="400" y1="208" x2="400" y2="302"/>
+    <line x1="400" y1="302" x2="338" y2="388"/>
+    <line x1="400" y1="302" x2="462" y2="388"/>
+    <line x1="400" y1="432" x2="400" y2="560"/>
+    <line x1="400" y1="560" x2="320" y2="680"/>
+    <line x1="400" y1="560" x2="480" y2="680"/>
+    <line x1="300" y1="540" x2="400" y2="560"/>
+    <line x1="500" y1="540" x2="400" y2="560"/>
+  </g>
+</svg>

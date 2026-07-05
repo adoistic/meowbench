@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <style>
+    @keyframes sway {
+      0%, 100% { transform: rotate(-10deg); }
+      50% { transform: rotate(10deg); }
+    }
+    .tail {
+      transform-origin: 100px 130px;
+      animation: sway 2s ease-in-out infinite;
+    }
+  </style>
+  <path d="M100,50 C80,30 60,40 60,60 C60,80 70,90 80,90 L100,80 L120,90 C130,90 140,80 140,60 C140,40 120,30 100,50 Z" fill="#4a4a4a"/>
+  <path d="M80,90 C75,100 70,120 80,130 C90,140 100,140 110,130 C120,120 125,100 120,90" fill="#4a4a4a" class="tail"/>
+  <circle cx="90" cy="60" r="8" fill="#4a4a4a"/>
+  <circle cx="110" cy="60" r="8" fill="#4a4a4a"/>
+  <circle cx="90" cy="60" r="4" fill="white"/>
+  <circle cx="110" cy="60" r="4" fill="white"/>
+  <circle cx="92" cy="60" r="2" fill="black"/>
+  <circle cx="112" cy="60" r="2" fill="black"/>
+  <path d="M100,70 L100,80" stroke="#4a4a4a" stroke-width="2" stroke-linecap="round"/>
+  <path d="M95,75 L105,75" stroke="#4a4a4a" stroke-width="2" stroke-linecap="round"/>
+  <path d="M85,90 L80,100" stroke="#4a4a4a" stroke-width="3" stroke-linecap="round"/>
+  <path d="M115,90 L120,100" stroke="#4a4a4a" stroke-width="3" stroke-linecap="round"/>
+  <path d="M70,110 L65,120" stroke="#4a4a4a" stroke-width="3" stroke-linecap="round"/>
+  <path d="M130,110 L135,120" stroke="#4a4a4a" stroke-width="3" stroke-linecap="round"/>
+</svg>

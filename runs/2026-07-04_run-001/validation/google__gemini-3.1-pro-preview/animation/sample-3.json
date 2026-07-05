@@ -1,0 +1,27 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 6752,
+    "elements": 65,
+    "paths": 28,
+    "colors": [
+      "#141129",
+      "#1d192e",
+      "#25213d",
+      "#2a243d",
+      "#3d3754",
+      "#a7aab8",
+      "#d3d6e5",
+      "#de8510",
+      "#e6e8f2",
+      "#f4f5fb",
+      "#f9a8b6",
+      "#ff9f1c",
+      "#ffbf69",
+      "#ffd166",
+      "#fff",
+      "url(#skygrad)"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 1772,
+    "elements": 17,
+    "paths": 11,
+    "colors": [
+      "#544030",
+      "url(#fur-gradient)"
+    ]
+  }
+}

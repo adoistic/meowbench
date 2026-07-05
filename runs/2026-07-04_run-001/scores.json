@@ -1,0 +1,8945 @@
+[
+  {
+    "modelSlug": "openai/gpt-3.5-turbo",
+    "promptId": "minimal",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 1,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 1
+    },
+    "score": 4
+  },
+  {
+    "modelSlug": "openai/gpt-3.5-turbo",
+    "promptId": "minimal",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 7.8
+  },
+  {
+    "modelSlug": "openai/gpt-3.5-turbo",
+    "promptId": "minimal",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 7.8
+  },
+  {
+    "modelSlug": "openai/gpt-3.5-turbo",
+    "promptId": "minimal",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 6,
+      "technique": 7,
+      "prompt_fidelity": 4
+    },
+    "score": 5
+  },
+  {
+    "modelSlug": "openai/gpt-3.5-turbo",
+    "promptId": "realistic",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 1,
+      "aesthetic": 2,
+      "technique": 2,
+      "prompt_fidelity": 1
+    },
+    "score": 1.5
+  },
+  {
+    "modelSlug": "openai/gpt-3.5-turbo",
+    "promptId": "realistic",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 2,
+      "technique": 4,
+      "prompt_fidelity": 1
+    },
+    "score": 2.3
+  },
+  {
+    "modelSlug": "openai/gpt-3.5-turbo",
+    "promptId": "realistic",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 5,
+      "technique": 4,
+      "prompt_fidelity": 1
+    },
+    "score": 3.3
+  },
+  {
+    "modelSlug": "openai/gpt-3.5-turbo",
+    "promptId": "realistic",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 5,
+      "aesthetic": 3,
+      "technique": 6,
+      "prompt_fidelity": 2
+    },
+    "score": 4
+  },
+  {
+    "modelSlug": "openai/gpt-3.5-turbo",
+    "promptId": "action",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 4,
+      "technique": 5,
+      "prompt_fidelity": 2
+    },
+    "score": 4.5
+  },
+  {
+    "modelSlug": "openai/gpt-3.5-turbo",
+    "promptId": "action",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 6,
+      "aesthetic": 3,
+      "technique": 4,
+      "prompt_fidelity": 2
+    },
+    "score": 3.8
+  },
+  {
+    "modelSlug": "openai/gpt-3.5-turbo",
+    "promptId": "action",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 4,
+      "aesthetic": 3,
+      "technique": 4,
+      "prompt_fidelity": 2
+    },
+    "score": 3.3
+  },
+  {
+    "modelSlug": "openai/gpt-3.5-turbo",
+    "promptId": "action",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 6,
+      "aesthetic": 4,
+      "technique": 5,
+      "prompt_fidelity": 2
+    },
+    "score": 4.3
+  },
+  {
+    "modelSlug": "openai/gpt-3.5-turbo",
+    "promptId": "style",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 5,
+      "technique": 6,
+      "prompt_fidelity": 4
+    },
+    "score": 4.5
+  },
+  {
+    "modelSlug": "openai/gpt-3.5-turbo",
+    "promptId": "style",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 6,
+      "aesthetic": 7,
+      "technique": 7,
+      "prompt_fidelity": 7
+    },
+    "score": 6.8
+  },
+  {
+    "modelSlug": "openai/gpt-3.5-turbo",
+    "promptId": "style",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 4,
+      "aesthetic": 6,
+      "technique": 6,
+      "prompt_fidelity": 5
+    },
+    "score": 5.3
+  },
+  {
+    "modelSlug": "openai/gpt-3.5-turbo",
+    "promptId": "style",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "openai/gpt-3.5-turbo",
+    "promptId": "constraint",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 8
+    },
+    "score": 6.3
+  },
+  {
+    "modelSlug": "openai/gpt-3.5-turbo",
+    "promptId": "constraint",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 4,
+      "aesthetic": 5,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 6.8
+  },
+  {
+    "modelSlug": "openai/gpt-3.5-turbo",
+    "promptId": "constraint",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 1,
+      "aesthetic": 6,
+      "technique": 7,
+      "prompt_fidelity": 2
+    },
+    "score": 4
+  },
+  {
+    "modelSlug": "openai/gpt-3.5-turbo",
+    "promptId": "constraint",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 1,
+      "aesthetic": 3,
+      "technique": 5,
+      "prompt_fidelity": 4
+    },
+    "score": 3.3
+  },
+  {
+    "modelSlug": "openai/gpt-3.5-turbo",
+    "promptId": "animation",
+    "sample": 1,
+    "valid": false,
+    "axisMedians": null,
+    "score": 0
+  },
+  {
+    "modelSlug": "openai/gpt-3.5-turbo",
+    "promptId": "animation",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 4,
+      "technique": 5,
+      "prompt_fidelity": 3
+    },
+    "score": 3.8
+  },
+  {
+    "modelSlug": "openai/gpt-3.5-turbo",
+    "promptId": "animation",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 3,
+      "technique": 6,
+      "prompt_fidelity": 2
+    },
+    "score": 3.5
+  },
+  {
+    "modelSlug": "openai/gpt-3.5-turbo",
+    "promptId": "animation",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 1,
+      "aesthetic": 3,
+      "technique": 3,
+      "prompt_fidelity": 1
+    },
+    "score": 2
+  },
+  {
+    "modelSlug": "openai/gpt-4",
+    "promptId": "minimal",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 3,
+      "technique": 4,
+      "prompt_fidelity": 3
+    },
+    "score": 3
+  },
+  {
+    "modelSlug": "openai/gpt-4",
+    "promptId": "minimal",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 4,
+      "aesthetic": 5,
+      "technique": 6,
+      "prompt_fidelity": 5
+    },
+    "score": 5
+  },
+  {
+    "modelSlug": "openai/gpt-4",
+    "promptId": "minimal",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 7,
+      "prompt_fidelity": 8
+    },
+    "score": 7
+  },
+  {
+    "modelSlug": "openai/gpt-4",
+    "promptId": "minimal",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 7.5
+  },
+  {
+    "modelSlug": "openai/gpt-4",
+    "promptId": "realistic",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 2,
+      "technique": 3,
+      "prompt_fidelity": 1
+    },
+    "score": 2.3
+  },
+  {
+    "modelSlug": "openai/gpt-4",
+    "promptId": "realistic",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 3,
+      "technique": 4,
+      "prompt_fidelity": 1
+    },
+    "score": 2.5
+  },
+  {
+    "modelSlug": "openai/gpt-4",
+    "promptId": "realistic",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 2,
+      "technique": 4,
+      "prompt_fidelity": 1
+    },
+    "score": 2.3
+  },
+  {
+    "modelSlug": "openai/gpt-4",
+    "promptId": "realistic",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 2,
+      "technique": 2,
+      "prompt_fidelity": 1
+    },
+    "score": 1.8
+  },
+  {
+    "modelSlug": "openai/gpt-4",
+    "promptId": "action",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 4,
+      "aesthetic": 4,
+      "technique": 5,
+      "prompt_fidelity": 6
+    },
+    "score": 4.8
+  },
+  {
+    "modelSlug": "openai/gpt-4",
+    "promptId": "action",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 3,
+      "technique": 5,
+      "prompt_fidelity": 4
+    },
+    "score": 3.5
+  },
+  {
+    "modelSlug": "openai/gpt-4",
+    "promptId": "action",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 3,
+      "technique": 5,
+      "prompt_fidelity": 5
+    },
+    "score": 4
+  },
+  {
+    "modelSlug": "openai/gpt-4",
+    "promptId": "action",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 4,
+      "aesthetic": 3,
+      "technique": 5,
+      "prompt_fidelity": 5
+    },
+    "score": 4.3
+  },
+  {
+    "modelSlug": "openai/gpt-4",
+    "promptId": "style",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 6,
+      "technique": 5,
+      "prompt_fidelity": 3
+    },
+    "score": 4
+  },
+  {
+    "modelSlug": "openai/gpt-4",
+    "promptId": "style",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 4,
+      "technique": 7,
+      "prompt_fidelity": 6
+    },
+    "score": 5
+  },
+  {
+    "modelSlug": "openai/gpt-4",
+    "promptId": "style",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 1,
+      "aesthetic": 6,
+      "technique": 5,
+      "prompt_fidelity": 2
+    },
+    "score": 3.5
+  },
+  {
+    "modelSlug": "openai/gpt-4",
+    "promptId": "style",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 5,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 7
+    },
+    "score": 6.5
+  },
+  {
+    "modelSlug": "openai/gpt-4",
+    "promptId": "constraint",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 5,
+      "technique": 7,
+      "prompt_fidelity": 10
+    },
+    "score": 7.3
+  },
+  {
+    "modelSlug": "openai/gpt-4",
+    "promptId": "constraint",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 4,
+      "technique": 5,
+      "prompt_fidelity": 9
+    },
+    "score": 5.3
+  },
+  {
+    "modelSlug": "openai/gpt-4",
+    "promptId": "constraint",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 4,
+      "aesthetic": 4,
+      "technique": 7,
+      "prompt_fidelity": 10
+    },
+    "score": 6.3
+  },
+  {
+    "modelSlug": "openai/gpt-4",
+    "promptId": "constraint",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 4,
+      "technique": 6,
+      "prompt_fidelity": 10
+    },
+    "score": 5.8
+  },
+  {
+    "modelSlug": "openai/gpt-4",
+    "promptId": "animation",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 4,
+      "technique": 3,
+      "prompt_fidelity": 2
+    },
+    "score": 3
+  },
+  {
+    "modelSlug": "openai/gpt-4",
+    "promptId": "animation",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 4,
+      "technique": 7,
+      "prompt_fidelity": 3
+    },
+    "score": 4
+  },
+  {
+    "modelSlug": "openai/gpt-4",
+    "promptId": "animation",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 4,
+      "technique": 6,
+      "prompt_fidelity": 5
+    },
+    "score": 4.5
+  },
+  {
+    "modelSlug": "openai/gpt-4",
+    "promptId": "animation",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 4,
+      "aesthetic": 5,
+      "technique": 7,
+      "prompt_fidelity": 8
+    },
+    "score": 6
+  },
+  {
+    "modelSlug": "openai/gpt-4o",
+    "promptId": "minimal",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 5,
+      "aesthetic": 6,
+      "technique": 6,
+      "prompt_fidelity": 8
+    },
+    "score": 6.3
+  },
+  {
+    "modelSlug": "openai/gpt-4o",
+    "promptId": "minimal",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 6,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 8
+    },
+    "score": 7.5
+  },
+  {
+    "modelSlug": "openai/gpt-4o",
+    "promptId": "minimal",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 5,
+      "aesthetic": 7,
+      "technique": 6,
+      "prompt_fidelity": 6
+    },
+    "score": 6
+  },
+  {
+    "modelSlug": "openai/gpt-4o",
+    "promptId": "minimal",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 6,
+      "technique": 6,
+      "prompt_fidelity": 4
+    },
+    "score": 4.8
+  },
+  {
+    "modelSlug": "openai/gpt-4o",
+    "promptId": "realistic",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 5,
+      "aesthetic": 4,
+      "technique": 6,
+      "prompt_fidelity": 2
+    },
+    "score": 4.3
+  },
+  {
+    "modelSlug": "openai/gpt-4o",
+    "promptId": "realistic",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 7,
+      "prompt_fidelity": 3
+    },
+    "score": 5.8
+  },
+  {
+    "modelSlug": "openai/gpt-4o",
+    "promptId": "realistic",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 4,
+      "aesthetic": 6,
+      "technique": 7,
+      "prompt_fidelity": 2
+    },
+    "score": 4.8
+  },
+  {
+    "modelSlug": "openai/gpt-4o",
+    "promptId": "realistic",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 4,
+      "technique": 6,
+      "prompt_fidelity": 3
+    },
+    "score": 4
+  },
+  {
+    "modelSlug": "openai/gpt-4o",
+    "promptId": "action",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 6,
+      "aesthetic": 3,
+      "technique": 5,
+      "prompt_fidelity": 7
+    },
+    "score": 5.3
+  },
+  {
+    "modelSlug": "openai/gpt-4o",
+    "promptId": "action",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 5,
+      "aesthetic": 5,
+      "technique": 6,
+      "prompt_fidelity": 6
+    },
+    "score": 5.5
+  },
+  {
+    "modelSlug": "openai/gpt-4o",
+    "promptId": "action",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 6,
+      "aesthetic": 3,
+      "technique": 5,
+      "prompt_fidelity": 7
+    },
+    "score": 5.3
+  },
+  {
+    "modelSlug": "openai/gpt-4o",
+    "promptId": "action",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 6,
+      "prompt_fidelity": 7
+    },
+    "score": 6.5
+  },
+  {
+    "modelSlug": "openai/gpt-4o",
+    "promptId": "style",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 4,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 5
+    },
+    "score": 5.8
+  },
+  {
+    "modelSlug": "openai/gpt-4o",
+    "promptId": "style",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 4
+    },
+    "score": 5
+  },
+  {
+    "modelSlug": "openai/gpt-4o",
+    "promptId": "style",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 6,
+      "technique": 7,
+      "prompt_fidelity": 4
+    },
+    "score": 4.8
+  },
+  {
+    "modelSlug": "openai/gpt-4o",
+    "promptId": "style",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 4
+    },
+    "score": 5
+  },
+  {
+    "modelSlug": "openai/gpt-4o",
+    "promptId": "constraint",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 7,
+      "prompt_fidelity": 10
+    },
+    "score": 7.5
+  },
+  {
+    "modelSlug": "openai/gpt-4o",
+    "promptId": "constraint",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 7,
+      "prompt_fidelity": 10
+    },
+    "score": 7.5
+  },
+  {
+    "modelSlug": "openai/gpt-4o",
+    "promptId": "constraint",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 7.8
+  },
+  {
+    "modelSlug": "openai/gpt-4o",
+    "promptId": "constraint",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "openai/gpt-4o",
+    "promptId": "animation",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 7.5
+  },
+  {
+    "modelSlug": "openai/gpt-4o",
+    "promptId": "animation",
+    "sample": 2,
+    "valid": false,
+    "axisMedians": null,
+    "score": 0
+  },
+  {
+    "modelSlug": "openai/gpt-4o",
+    "promptId": "animation",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 5,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 7
+  },
+  {
+    "modelSlug": "openai/gpt-4o",
+    "promptId": "animation",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 5,
+      "prompt_fidelity": 8
+    },
+    "score": 6.5
+  },
+  {
+    "modelSlug": "anthropic/claude-3-haiku",
+    "promptId": "minimal",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 5,
+      "technique": 8,
+      "prompt_fidelity": 4
+    },
+    "score": 5
+  },
+  {
+    "modelSlug": "anthropic/claude-3-haiku",
+    "promptId": "minimal",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 4,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 5
+    },
+    "score": 5.8
+  },
+  {
+    "modelSlug": "anthropic/claude-3-haiku",
+    "promptId": "minimal",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 1,
+      "aesthetic": 3,
+      "technique": 2,
+      "prompt_fidelity": 1
+    },
+    "score": 1.8
+  },
+  {
+    "modelSlug": "anthropic/claude-3-haiku",
+    "promptId": "minimal",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 5,
+      "technique": 3,
+      "prompt_fidelity": 3
+    },
+    "score": 3.3
+  },
+  {
+    "modelSlug": "anthropic/claude-3-haiku",
+    "promptId": "realistic",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 3,
+      "technique": 5,
+      "prompt_fidelity": 1
+    },
+    "score": 2.8
+  },
+  {
+    "modelSlug": "anthropic/claude-3-haiku",
+    "promptId": "realistic",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 3,
+      "technique": 4,
+      "prompt_fidelity": 2
+    },
+    "score": 3
+  },
+  {
+    "modelSlug": "anthropic/claude-3-haiku",
+    "promptId": "realistic",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 1,
+      "aesthetic": 2,
+      "technique": 4,
+      "prompt_fidelity": 1
+    },
+    "score": 2
+  },
+  {
+    "modelSlug": "anthropic/claude-3-haiku",
+    "promptId": "realistic",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 1,
+      "aesthetic": 5,
+      "technique": 6,
+      "prompt_fidelity": 2
+    },
+    "score": 3.5
+  },
+  {
+    "modelSlug": "anthropic/claude-3-haiku",
+    "promptId": "action",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 5,
+      "technique": 6,
+      "prompt_fidelity": 3
+    },
+    "score": 4.3
+  },
+  {
+    "modelSlug": "anthropic/claude-3-haiku",
+    "promptId": "action",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 3,
+      "technique": 6,
+      "prompt_fidelity": 1
+    },
+    "score": 3
+  },
+  {
+    "modelSlug": "anthropic/claude-3-haiku",
+    "promptId": "action",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 4,
+      "technique": 6,
+      "prompt_fidelity": 1
+    },
+    "score": 3.3
+  },
+  {
+    "modelSlug": "anthropic/claude-3-haiku",
+    "promptId": "action",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 1,
+      "technique": 3,
+      "prompt_fidelity": 1
+    },
+    "score": 1.8
+  },
+  {
+    "modelSlug": "anthropic/claude-3-haiku",
+    "promptId": "style",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 4,
+      "technique": 5,
+      "prompt_fidelity": 2
+    },
+    "score": 3.5
+  },
+  {
+    "modelSlug": "anthropic/claude-3-haiku",
+    "promptId": "style",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 5,
+      "technique": 6,
+      "prompt_fidelity": 4
+    },
+    "score": 4.5
+  },
+  {
+    "modelSlug": "anthropic/claude-3-haiku",
+    "promptId": "style",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 5,
+      "technique": 6,
+      "prompt_fidelity": 3
+    },
+    "score": 4.3
+  },
+  {
+    "modelSlug": "anthropic/claude-3-haiku",
+    "promptId": "style",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 5,
+      "aesthetic": 6,
+      "technique": 7,
+      "prompt_fidelity": 3
+    },
+    "score": 5.3
+  },
+  {
+    "modelSlug": "anthropic/claude-3-haiku",
+    "promptId": "constraint",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 4,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 5.5
+  },
+  {
+    "modelSlug": "anthropic/claude-3-haiku",
+    "promptId": "constraint",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 5,
+      "technique": 7,
+      "prompt_fidelity": 10
+    },
+    "score": 6.3
+  },
+  {
+    "modelSlug": "anthropic/claude-3-haiku",
+    "promptId": "constraint",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 1,
+      "aesthetic": 6,
+      "technique": 7,
+      "prompt_fidelity": 3
+    },
+    "score": 4.3
+  },
+  {
+    "modelSlug": "anthropic/claude-3-haiku",
+    "promptId": "constraint",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 5
+    },
+    "score": 5.3
+  },
+  {
+    "modelSlug": "anthropic/claude-3-haiku",
+    "promptId": "animation",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 3,
+      "technique": 6,
+      "prompt_fidelity": 7
+    },
+    "score": 4.5
+  },
+  {
+    "modelSlug": "anthropic/claude-3-haiku",
+    "promptId": "animation",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 3,
+      "technique": 6,
+      "prompt_fidelity": 5
+    },
+    "score": 4
+  },
+  {
+    "modelSlug": "anthropic/claude-3-haiku",
+    "promptId": "animation",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 4,
+      "technique": 5,
+      "prompt_fidelity": 2
+    },
+    "score": 3.5
+  },
+  {
+    "modelSlug": "anthropic/claude-3-haiku",
+    "promptId": "animation",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 1,
+      "technique": 4,
+      "prompt_fidelity": 3
+    },
+    "score": 2.5
+  },
+  {
+    "modelSlug": "meta-llama/llama-3.1-70b-instruct",
+    "promptId": "minimal",
+    "sample": 1,
+    "valid": false,
+    "axisMedians": null,
+    "score": 0
+  },
+  {
+    "modelSlug": "meta-llama/llama-3.1-70b-instruct",
+    "promptId": "minimal",
+    "sample": 2,
+    "valid": false,
+    "axisMedians": null,
+    "score": 0
+  },
+  {
+    "modelSlug": "meta-llama/llama-3.1-70b-instruct",
+    "promptId": "minimal",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 6,
+      "aesthetic": 6,
+      "technique": 7,
+      "prompt_fidelity": 7
+    },
+    "score": 6.5
+  },
+  {
+    "modelSlug": "meta-llama/llama-3.1-70b-instruct",
+    "promptId": "minimal",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 4,
+      "aesthetic": 5,
+      "technique": 6,
+      "prompt_fidelity": 6
+    },
+    "score": 5.3
+  },
+  {
+    "modelSlug": "meta-llama/llama-3.1-70b-instruct",
+    "promptId": "realistic",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 4,
+      "aesthetic": 6,
+      "technique": 7,
+      "prompt_fidelity": 2
+    },
+    "score": 4.8
+  },
+  {
+    "modelSlug": "meta-llama/llama-3.1-70b-instruct",
+    "promptId": "realistic",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 3,
+      "technique": 4,
+      "prompt_fidelity": 2
+    },
+    "score": 2.8
+  },
+  {
+    "modelSlug": "meta-llama/llama-3.1-70b-instruct",
+    "promptId": "realistic",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 2,
+      "technique": 5,
+      "prompt_fidelity": 3
+    },
+    "score": 3
+  },
+  {
+    "modelSlug": "meta-llama/llama-3.1-70b-instruct",
+    "promptId": "realistic",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 6,
+      "aesthetic": 5,
+      "technique": 7,
+      "prompt_fidelity": 3
+    },
+    "score": 5.3
+  },
+  {
+    "modelSlug": "meta-llama/llama-3.1-70b-instruct",
+    "promptId": "action",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 5,
+      "aesthetic": 5,
+      "technique": 4,
+      "prompt_fidelity": 3
+    },
+    "score": 4.3
+  },
+  {
+    "modelSlug": "meta-llama/llama-3.1-70b-instruct",
+    "promptId": "action",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 3,
+      "technique": 4,
+      "prompt_fidelity": 2
+    },
+    "score": 2.8
+  },
+  {
+    "modelSlug": "meta-llama/llama-3.1-70b-instruct",
+    "promptId": "action",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 3,
+      "technique": 4,
+      "prompt_fidelity": 3
+    },
+    "score": 3.3
+  },
+  {
+    "modelSlug": "meta-llama/llama-3.1-70b-instruct",
+    "promptId": "action",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 2,
+      "technique": 4,
+      "prompt_fidelity": 3
+    },
+    "score": 2.8
+  },
+  {
+    "modelSlug": "meta-llama/llama-3.1-70b-instruct",
+    "promptId": "style",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 4,
+      "technique": 6,
+      "prompt_fidelity": 3
+    },
+    "score": 3.8
+  },
+  {
+    "modelSlug": "meta-llama/llama-3.1-70b-instruct",
+    "promptId": "style",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 6,
+      "aesthetic": 5,
+      "technique": 7,
+      "prompt_fidelity": 6
+    },
+    "score": 6
+  },
+  {
+    "modelSlug": "meta-llama/llama-3.1-70b-instruct",
+    "promptId": "style",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 5,
+      "aesthetic": 6,
+      "technique": 5,
+      "prompt_fidelity": 4
+    },
+    "score": 5
+  },
+  {
+    "modelSlug": "meta-llama/llama-3.1-70b-instruct",
+    "promptId": "style",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 6,
+      "aesthetic": 4,
+      "technique": 6,
+      "prompt_fidelity": 2
+    },
+    "score": 4.5
+  },
+  {
+    "modelSlug": "meta-llama/llama-3.1-70b-instruct",
+    "promptId": "constraint",
+    "sample": 1,
+    "valid": false,
+    "axisMedians": null,
+    "score": 0
+  },
+  {
+    "modelSlug": "meta-llama/llama-3.1-70b-instruct",
+    "promptId": "constraint",
+    "sample": 2,
+    "valid": false,
+    "axisMedians": null,
+    "score": 0
+  },
+  {
+    "modelSlug": "meta-llama/llama-3.1-70b-instruct",
+    "promptId": "constraint",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 4,
+      "technique": 6,
+      "prompt_fidelity": 8
+    },
+    "score": 5
+  },
+  {
+    "modelSlug": "meta-llama/llama-3.1-70b-instruct",
+    "promptId": "constraint",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 6,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 7.5
+  },
+  {
+    "modelSlug": "meta-llama/llama-3.1-70b-instruct",
+    "promptId": "animation",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 5,
+      "aesthetic": 4,
+      "technique": 6,
+      "prompt_fidelity": 8
+    },
+    "score": 5.8
+  },
+  {
+    "modelSlug": "meta-llama/llama-3.1-70b-instruct",
+    "promptId": "animation",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 5,
+      "aesthetic": 3,
+      "technique": 4,
+      "prompt_fidelity": 8
+    },
+    "score": 5
+  },
+  {
+    "modelSlug": "meta-llama/llama-3.1-70b-instruct",
+    "promptId": "animation",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 3,
+      "technique": 5,
+      "prompt_fidelity": 7
+    },
+    "score": 4.3
+  },
+  {
+    "modelSlug": "meta-llama/llama-3.1-70b-instruct",
+    "promptId": "animation",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 4,
+      "aesthetic": 6,
+      "technique": 6,
+      "prompt_fidelity": 8
+    },
+    "score": 6
+  },
+  {
+    "modelSlug": "qwen/qwen-2.5-72b-instruct",
+    "promptId": "minimal",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 5,
+      "aesthetic": 6,
+      "technique": 7,
+      "prompt_fidelity": 6
+    },
+    "score": 6
+  },
+  {
+    "modelSlug": "qwen/qwen-2.5-72b-instruct",
+    "promptId": "minimal",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 1,
+      "aesthetic": 3,
+      "technique": 5,
+      "prompt_fidelity": 2
+    },
+    "score": 2.8
+  },
+  {
+    "modelSlug": "qwen/qwen-2.5-72b-instruct",
+    "promptId": "minimal",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 4
+    },
+    "score": 5.3
+  },
+  {
+    "modelSlug": "qwen/qwen-2.5-72b-instruct",
+    "promptId": "minimal",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 5,
+      "technique": 6,
+      "prompt_fidelity": 4
+    },
+    "score": 4.5
+  },
+  {
+    "modelSlug": "qwen/qwen-2.5-72b-instruct",
+    "promptId": "realistic",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 3,
+      "technique": 5,
+      "prompt_fidelity": 1
+    },
+    "score": 3
+  },
+  {
+    "modelSlug": "qwen/qwen-2.5-72b-instruct",
+    "promptId": "realistic",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 3,
+      "technique": 6,
+      "prompt_fidelity": 1
+    },
+    "score": 3
+  },
+  {
+    "modelSlug": "qwen/qwen-2.5-72b-instruct",
+    "promptId": "realistic",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 1,
+      "aesthetic": 3,
+      "technique": 4,
+      "prompt_fidelity": 1
+    },
+    "score": 2.3
+  },
+  {
+    "modelSlug": "qwen/qwen-2.5-72b-instruct",
+    "promptId": "realistic",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 1,
+      "aesthetic": 2,
+      "technique": 3,
+      "prompt_fidelity": 2
+    },
+    "score": 2
+  },
+  {
+    "modelSlug": "qwen/qwen-2.5-72b-instruct",
+    "promptId": "action",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 5,
+      "aesthetic": 2,
+      "technique": 4,
+      "prompt_fidelity": 3
+    },
+    "score": 3.5
+  },
+  {
+    "modelSlug": "qwen/qwen-2.5-72b-instruct",
+    "promptId": "action",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 2,
+      "technique": 4,
+      "prompt_fidelity": 4
+    },
+    "score": 3.3
+  },
+  {
+    "modelSlug": "qwen/qwen-2.5-72b-instruct",
+    "promptId": "action",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 2,
+      "technique": 5,
+      "prompt_fidelity": 3
+    },
+    "score": 3.3
+  },
+  {
+    "modelSlug": "qwen/qwen-2.5-72b-instruct",
+    "promptId": "action",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 2,
+      "technique": 4,
+      "prompt_fidelity": 3
+    },
+    "score": 3
+  },
+  {
+    "modelSlug": "qwen/qwen-2.5-72b-instruct",
+    "promptId": "style",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 4,
+      "technique": 7,
+      "prompt_fidelity": 5
+    },
+    "score": 4.8
+  },
+  {
+    "modelSlug": "qwen/qwen-2.5-72b-instruct",
+    "promptId": "style",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 4,
+      "aesthetic": 6,
+      "technique": 7,
+      "prompt_fidelity": 4
+    },
+    "score": 5.3
+  },
+  {
+    "modelSlug": "qwen/qwen-2.5-72b-instruct",
+    "promptId": "style",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 5,
+      "technique": 7,
+      "prompt_fidelity": 8
+    },
+    "score": 6.8
+  },
+  {
+    "modelSlug": "qwen/qwen-2.5-72b-instruct",
+    "promptId": "style",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 5,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 8
+    },
+    "score": 6.8
+  },
+  {
+    "modelSlug": "qwen/qwen-2.5-72b-instruct",
+    "promptId": "constraint",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 5,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 5.8
+  },
+  {
+    "modelSlug": "qwen/qwen-2.5-72b-instruct",
+    "promptId": "constraint",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 3,
+      "technique": 5,
+      "prompt_fidelity": 10
+    },
+    "score": 5
+  },
+  {
+    "modelSlug": "qwen/qwen-2.5-72b-instruct",
+    "promptId": "constraint",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 6,
+      "aesthetic": 5,
+      "technique": 7,
+      "prompt_fidelity": 10
+    },
+    "score": 7
+  },
+  {
+    "modelSlug": "qwen/qwen-2.5-72b-instruct",
+    "promptId": "constraint",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 5,
+      "aesthetic": 4,
+      "technique": 7,
+      "prompt_fidelity": 10
+    },
+    "score": 6.5
+  },
+  {
+    "modelSlug": "qwen/qwen-2.5-72b-instruct",
+    "promptId": "animation",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 2,
+      "technique": 6,
+      "prompt_fidelity": 8
+    },
+    "score": 4.8
+  },
+  {
+    "modelSlug": "qwen/qwen-2.5-72b-instruct",
+    "promptId": "animation",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 6,
+      "aesthetic": 5,
+      "technique": 5,
+      "prompt_fidelity": 8
+    },
+    "score": 6
+  },
+  {
+    "modelSlug": "qwen/qwen-2.5-72b-instruct",
+    "promptId": "animation",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 3,
+      "technique": 7,
+      "prompt_fidelity": 3
+    },
+    "score": 3.8
+  },
+  {
+    "modelSlug": "qwen/qwen-2.5-72b-instruct",
+    "promptId": "animation",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 2,
+      "technique": 5,
+      "prompt_fidelity": 5
+    },
+    "score": 3.8
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2407",
+    "promptId": "minimal",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 5,
+      "technique": 6,
+      "prompt_fidelity": 3
+    },
+    "score": 4
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2407",
+    "promptId": "minimal",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 4,
+      "technique": 5,
+      "prompt_fidelity": 4
+    },
+    "score": 4
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2407",
+    "promptId": "minimal",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 4,
+      "aesthetic": 5,
+      "technique": 6,
+      "prompt_fidelity": 4
+    },
+    "score": 4.8
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2407",
+    "promptId": "minimal",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 4,
+      "technique": 5,
+      "prompt_fidelity": 4
+    },
+    "score": 4
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2407",
+    "promptId": "realistic",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 5,
+      "technique": 7,
+      "prompt_fidelity": 6
+    },
+    "score": 6.3
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2407",
+    "promptId": "realistic",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 4,
+      "technique": 5,
+      "prompt_fidelity": 4
+    },
+    "score": 5
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2407",
+    "promptId": "realistic",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 6,
+      "technique": 6,
+      "prompt_fidelity": 5
+    },
+    "score": 6.3
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2407",
+    "promptId": "realistic",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 4,
+      "technique": 6,
+      "prompt_fidelity": 5
+    },
+    "score": 5.5
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2407",
+    "promptId": "action",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 5,
+      "technique": 5,
+      "prompt_fidelity": 7
+    },
+    "score": 6
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2407",
+    "promptId": "action",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 6,
+      "aesthetic": 7,
+      "technique": 7,
+      "prompt_fidelity": 4
+    },
+    "score": 6
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2407",
+    "promptId": "action",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 6,
+      "prompt_fidelity": 6
+    },
+    "score": 6.3
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2407",
+    "promptId": "action",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 6,
+      "prompt_fidelity": 5
+    },
+    "score": 6
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2407",
+    "promptId": "style",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 7.8
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2407",
+    "promptId": "style",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 8
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2407",
+    "promptId": "style",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 9
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2407",
+    "promptId": "style",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2407",
+    "promptId": "constraint",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 7.8
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2407",
+    "promptId": "constraint",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 5,
+      "technique": 7,
+      "prompt_fidelity": 10
+    },
+    "score": 7.3
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2407",
+    "promptId": "constraint",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 7,
+      "prompt_fidelity": 10
+    },
+    "score": 7.5
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2407",
+    "promptId": "constraint",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 5,
+      "technique": 7,
+      "prompt_fidelity": 10
+    },
+    "score": 7.3
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2407",
+    "promptId": "animation",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 5,
+      "aesthetic": 4,
+      "technique": 7,
+      "prompt_fidelity": 8
+    },
+    "score": 6
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2407",
+    "promptId": "animation",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2407",
+    "promptId": "animation",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 4,
+      "aesthetic": 4,
+      "technique": 5,
+      "prompt_fidelity": 8
+    },
+    "score": 5.3
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2407",
+    "promptId": "animation",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 4,
+      "aesthetic": 3,
+      "technique": 6,
+      "prompt_fidelity": 8
+    },
+    "score": 5.3
+  },
+  {
+    "modelSlug": "deepseek/deepseek-chat-v3-0324",
+    "promptId": "minimal",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 5,
+      "technique": 7,
+      "prompt_fidelity": 5
+    },
+    "score": 5
+  },
+  {
+    "modelSlug": "deepseek/deepseek-chat-v3-0324",
+    "promptId": "minimal",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 6,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 7
+    },
+    "score": 7
+  },
+  {
+    "modelSlug": "deepseek/deepseek-chat-v3-0324",
+    "promptId": "minimal",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 4
+    },
+    "score": 5.3
+  },
+  {
+    "modelSlug": "deepseek/deepseek-chat-v3-0324",
+    "promptId": "minimal",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 8
+    },
+    "score": 7.5
+  },
+  {
+    "modelSlug": "deepseek/deepseek-chat-v3-0324",
+    "promptId": "realistic",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 4,
+      "technique": 5,
+      "prompt_fidelity": 4
+    },
+    "score": 5
+  },
+  {
+    "modelSlug": "deepseek/deepseek-chat-v3-0324",
+    "promptId": "realistic",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 5
+    },
+    "score": 6.5
+  },
+  {
+    "modelSlug": "deepseek/deepseek-chat-v3-0324",
+    "promptId": "realistic",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 4,
+      "technique": 6,
+      "prompt_fidelity": 1
+    },
+    "score": 3.3
+  },
+  {
+    "modelSlug": "deepseek/deepseek-chat-v3-0324",
+    "promptId": "realistic",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 5,
+      "technique": 7,
+      "prompt_fidelity": 3
+    },
+    "score": 5.5
+  },
+  {
+    "modelSlug": "deepseek/deepseek-chat-v3-0324",
+    "promptId": "action",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 5,
+      "aesthetic": 5,
+      "technique": 7,
+      "prompt_fidelity": 5
+    },
+    "score": 5.5
+  },
+  {
+    "modelSlug": "deepseek/deepseek-chat-v3-0324",
+    "promptId": "action",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 5,
+      "aesthetic": 7,
+      "technique": 6,
+      "prompt_fidelity": 5
+    },
+    "score": 5.8
+  },
+  {
+    "modelSlug": "deepseek/deepseek-chat-v3-0324",
+    "promptId": "action",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 5,
+      "technique": 6,
+      "prompt_fidelity": 4
+    },
+    "score": 4.5
+  },
+  {
+    "modelSlug": "deepseek/deepseek-chat-v3-0324",
+    "promptId": "action",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 6,
+      "aesthetic": 7,
+      "technique": 5,
+      "prompt_fidelity": 5
+    },
+    "score": 5.8
+  },
+  {
+    "modelSlug": "deepseek/deepseek-chat-v3-0324",
+    "promptId": "style",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 6,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 7
+    },
+    "score": 7
+  },
+  {
+    "modelSlug": "deepseek/deepseek-chat-v3-0324",
+    "promptId": "style",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 6
+    },
+    "score": 6.8
+  },
+  {
+    "modelSlug": "deepseek/deepseek-chat-v3-0324",
+    "promptId": "style",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 5,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 8
+    },
+    "score": 7.3
+  },
+  {
+    "modelSlug": "deepseek/deepseek-chat-v3-0324",
+    "promptId": "style",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 6,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 7
+    },
+    "score": 7
+  },
+  {
+    "modelSlug": "deepseek/deepseek-chat-v3-0324",
+    "promptId": "constraint",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 5,
+      "technique": 7,
+      "prompt_fidelity": 4
+    },
+    "score": 4.5
+  },
+  {
+    "modelSlug": "deepseek/deepseek-chat-v3-0324",
+    "promptId": "constraint",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 7.8
+  },
+  {
+    "modelSlug": "deepseek/deepseek-chat-v3-0324",
+    "promptId": "constraint",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 5,
+      "aesthetic": 4,
+      "technique": 7,
+      "prompt_fidelity": 10
+    },
+    "score": 6.5
+  },
+  {
+    "modelSlug": "deepseek/deepseek-chat-v3-0324",
+    "promptId": "constraint",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 5,
+      "technique": 7,
+      "prompt_fidelity": 10
+    },
+    "score": 7.3
+  },
+  {
+    "modelSlug": "deepseek/deepseek-chat-v3-0324",
+    "promptId": "animation",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 7,
+      "prompt_fidelity": 10
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "deepseek/deepseek-chat-v3-0324",
+    "promptId": "animation",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "deepseek/deepseek-chat-v3-0324",
+    "promptId": "animation",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 7.8
+  },
+  {
+    "modelSlug": "deepseek/deepseek-chat-v3-0324",
+    "promptId": "animation",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "openai/gpt-5",
+    "promptId": "minimal",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "openai/gpt-5",
+    "promptId": "minimal",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "openai/gpt-5",
+    "promptId": "minimal",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "openai/gpt-5",
+    "promptId": "minimal",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "openai/gpt-5",
+    "promptId": "realistic",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 7
+    },
+    "score": 7.5
+  },
+  {
+    "modelSlug": "openai/gpt-5",
+    "promptId": "realistic",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 7
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "openai/gpt-5",
+    "promptId": "realistic",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 4,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 3
+    },
+    "score": 5.3
+  },
+  {
+    "modelSlug": "openai/gpt-5",
+    "promptId": "realistic",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 7
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "openai/gpt-5",
+    "promptId": "action",
+    "sample": 1,
+    "valid": false,
+    "axisMedians": null,
+    "score": 0
+  },
+  {
+    "modelSlug": "openai/gpt-5",
+    "promptId": "action",
+    "sample": 2,
+    "valid": false,
+    "axisMedians": null,
+    "score": 0
+  },
+  {
+    "modelSlug": "openai/gpt-5",
+    "promptId": "action",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "openai/gpt-5",
+    "promptId": "action",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "openai/gpt-5",
+    "promptId": "style",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 9,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "openai/gpt-5",
+    "promptId": "style",
+    "sample": 2,
+    "valid": false,
+    "axisMedians": null,
+    "score": 0
+  },
+  {
+    "modelSlug": "openai/gpt-5",
+    "promptId": "style",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "openai/gpt-5",
+    "promptId": "style",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "openai/gpt-5",
+    "promptId": "constraint",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "openai/gpt-5",
+    "promptId": "constraint",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "openai/gpt-5",
+    "promptId": "constraint",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "openai/gpt-5",
+    "promptId": "constraint",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "openai/gpt-5",
+    "promptId": "animation",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "openai/gpt-5",
+    "promptId": "animation",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "openai/gpt-5",
+    "promptId": "animation",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "openai/gpt-5",
+    "promptId": "animation",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4",
+    "promptId": "minimal",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 9
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4",
+    "promptId": "minimal",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4",
+    "promptId": "minimal",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 9
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4",
+    "promptId": "minimal",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4",
+    "promptId": "realistic",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 7,
+      "prompt_fidelity": 5
+    },
+    "score": 6.8
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4",
+    "promptId": "realistic",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 7,
+      "prompt_fidelity": 5
+    },
+    "score": 6.8
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4",
+    "promptId": "realistic",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 7,
+      "prompt_fidelity": 5
+    },
+    "score": 6.8
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4",
+    "promptId": "realistic",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 6,
+      "prompt_fidelity": 5
+    },
+    "score": 6.5
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4",
+    "promptId": "action",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 10
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4",
+    "promptId": "action",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4",
+    "promptId": "action",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 6,
+      "prompt_fidelity": 9
+    },
+    "score": 7.5
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4",
+    "promptId": "action",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 7.8
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4",
+    "promptId": "style",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4",
+    "promptId": "style",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4",
+    "promptId": "style",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4",
+    "promptId": "style",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4",
+    "promptId": "constraint",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4",
+    "promptId": "constraint",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4",
+    "promptId": "constraint",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4",
+    "promptId": "constraint",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4",
+    "promptId": "animation",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4",
+    "promptId": "animation",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4",
+    "promptId": "animation",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4",
+    "promptId": "animation",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-4",
+    "promptId": "minimal",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-4",
+    "promptId": "minimal",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-4",
+    "promptId": "minimal",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-4",
+    "promptId": "minimal",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-4",
+    "promptId": "realistic",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 5
+    },
+    "score": 6.5
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-4",
+    "promptId": "realistic",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 7,
+      "prompt_fidelity": 4
+    },
+    "score": 6.5
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-4",
+    "promptId": "realistic",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 5
+    },
+    "score": 7
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-4",
+    "promptId": "realistic",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 5
+    },
+    "score": 6.8
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-4",
+    "promptId": "action",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-4",
+    "promptId": "action",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 7.8
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-4",
+    "promptId": "action",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-4",
+    "promptId": "action",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 6,
+      "prompt_fidelity": 9
+    },
+    "score": 7.5
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-4",
+    "promptId": "style",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 7.5
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-4",
+    "promptId": "style",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-4",
+    "promptId": "style",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-4",
+    "promptId": "style",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-4",
+    "promptId": "constraint",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-4",
+    "promptId": "constraint",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-4",
+    "promptId": "constraint",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-4",
+    "promptId": "constraint",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-4",
+    "promptId": "animation",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 7,
+      "prompt_fidelity": 10
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-4",
+    "promptId": "animation",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 10
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-4",
+    "promptId": "animation",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-4",
+    "promptId": "animation",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "google/gemini-2.5-pro",
+    "promptId": "minimal",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "google/gemini-2.5-pro",
+    "promptId": "minimal",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 6,
+      "prompt_fidelity": 9
+    },
+    "score": 7.5
+  },
+  {
+    "modelSlug": "google/gemini-2.5-pro",
+    "promptId": "minimal",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 5,
+      "aesthetic": 6,
+      "technique": 7,
+      "prompt_fidelity": 6
+    },
+    "score": 6
+  },
+  {
+    "modelSlug": "google/gemini-2.5-pro",
+    "promptId": "minimal",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "google/gemini-2.5-pro",
+    "promptId": "realistic",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 5
+    },
+    "score": 6.5
+  },
+  {
+    "modelSlug": "google/gemini-2.5-pro",
+    "promptId": "realistic",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 7,
+      "prompt_fidelity": 5
+    },
+    "score": 6.8
+  },
+  {
+    "modelSlug": "google/gemini-2.5-pro",
+    "promptId": "realistic",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 6
+    },
+    "score": 7.3
+  },
+  {
+    "modelSlug": "google/gemini-2.5-pro",
+    "promptId": "realistic",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 7,
+      "prompt_fidelity": 5
+    },
+    "score": 6.3
+  },
+  {
+    "modelSlug": "google/gemini-2.5-pro",
+    "promptId": "action",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "google/gemini-2.5-pro",
+    "promptId": "action",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "google/gemini-2.5-pro",
+    "promptId": "action",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "google/gemini-2.5-pro",
+    "promptId": "action",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 7.5
+  },
+  {
+    "modelSlug": "google/gemini-2.5-pro",
+    "promptId": "style",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 8
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "google/gemini-2.5-pro",
+    "promptId": "style",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "google/gemini-2.5-pro",
+    "promptId": "style",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 6,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 6
+    },
+    "score": 6.8
+  },
+  {
+    "modelSlug": "google/gemini-2.5-pro",
+    "promptId": "style",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 8
+    },
+    "score": 7.5
+  },
+  {
+    "modelSlug": "google/gemini-2.5-pro",
+    "promptId": "constraint",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "google/gemini-2.5-pro",
+    "promptId": "constraint",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "google/gemini-2.5-pro",
+    "promptId": "constraint",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "google/gemini-2.5-pro",
+    "promptId": "constraint",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "google/gemini-2.5-pro",
+    "promptId": "animation",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "google/gemini-2.5-pro",
+    "promptId": "animation",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 7.5
+  },
+  {
+    "modelSlug": "google/gemini-2.5-pro",
+    "promptId": "animation",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 6,
+      "aesthetic": 6,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 7
+  },
+  {
+    "modelSlug": "google/gemini-2.5-pro",
+    "promptId": "animation",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 7.8
+  },
+  {
+    "modelSlug": "deepseek/deepseek-r1",
+    "promptId": "minimal",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "deepseek/deepseek-r1",
+    "promptId": "minimal",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "deepseek/deepseek-r1",
+    "promptId": "minimal",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "deepseek/deepseek-r1",
+    "promptId": "minimal",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "deepseek/deepseek-r1",
+    "promptId": "realistic",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 5,
+      "technique": 6,
+      "prompt_fidelity": 4
+    },
+    "score": 5.5
+  },
+  {
+    "modelSlug": "deepseek/deepseek-r1",
+    "promptId": "realistic",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 5,
+      "aesthetic": 3,
+      "technique": 7,
+      "prompt_fidelity": 3
+    },
+    "score": 4.5
+  },
+  {
+    "modelSlug": "deepseek/deepseek-r1",
+    "promptId": "realistic",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 7,
+      "prompt_fidelity": 3
+    },
+    "score": 5.8
+  },
+  {
+    "modelSlug": "deepseek/deepseek-r1",
+    "promptId": "realistic",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 6,
+      "aesthetic": 4,
+      "technique": 6,
+      "prompt_fidelity": 4
+    },
+    "score": 5
+  },
+  {
+    "modelSlug": "deepseek/deepseek-r1",
+    "promptId": "action",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 6,
+      "prompt_fidelity": 8
+    },
+    "score": 6.8
+  },
+  {
+    "modelSlug": "deepseek/deepseek-r1",
+    "promptId": "action",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "deepseek/deepseek-r1",
+    "promptId": "action",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 5,
+      "aesthetic": 5,
+      "technique": 6,
+      "prompt_fidelity": 8
+    },
+    "score": 6
+  },
+  {
+    "modelSlug": "deepseek/deepseek-r1",
+    "promptId": "action",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 5,
+      "technique": 7,
+      "prompt_fidelity": 8
+    },
+    "score": 6.8
+  },
+  {
+    "modelSlug": "deepseek/deepseek-r1",
+    "promptId": "style",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "deepseek/deepseek-r1",
+    "promptId": "style",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 8
+    },
+    "score": 7.5
+  },
+  {
+    "modelSlug": "deepseek/deepseek-r1",
+    "promptId": "style",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 7.8
+  },
+  {
+    "modelSlug": "deepseek/deepseek-r1",
+    "promptId": "style",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 8
+    },
+    "score": 7.3
+  },
+  {
+    "modelSlug": "deepseek/deepseek-r1",
+    "promptId": "constraint",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 6,
+      "technique": 7,
+      "prompt_fidelity": 10
+    },
+    "score": 7.8
+  },
+  {
+    "modelSlug": "deepseek/deepseek-r1",
+    "promptId": "constraint",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "deepseek/deepseek-r1",
+    "promptId": "constraint",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "deepseek/deepseek-r1",
+    "promptId": "constraint",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "deepseek/deepseek-r1",
+    "promptId": "animation",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "deepseek/deepseek-r1",
+    "promptId": "animation",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 7.8
+  },
+  {
+    "modelSlug": "deepseek/deepseek-r1",
+    "promptId": "animation",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 6,
+      "technique": 6,
+      "prompt_fidelity": 9
+    },
+    "score": 7.3
+  },
+  {
+    "modelSlug": "deepseek/deepseek-r1",
+    "promptId": "animation",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 5,
+      "technique": 6,
+      "prompt_fidelity": 8
+    },
+    "score": 6.8
+  },
+  {
+    "modelSlug": "meta-llama/llama-4-maverick",
+    "promptId": "minimal",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 6,
+      "technique": 5,
+      "prompt_fidelity": 4
+    },
+    "score": 4.3
+  },
+  {
+    "modelSlug": "meta-llama/llama-4-maverick",
+    "promptId": "minimal",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 3,
+      "technique": 5,
+      "prompt_fidelity": 6
+    },
+    "score": 4
+  },
+  {
+    "modelSlug": "meta-llama/llama-4-maverick",
+    "promptId": "minimal",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 5,
+      "technique": 7,
+      "prompt_fidelity": 4
+    },
+    "score": 4.5
+  },
+  {
+    "modelSlug": "meta-llama/llama-4-maverick",
+    "promptId": "minimal",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 5,
+      "technique": 6,
+      "prompt_fidelity": 3
+    },
+    "score": 4
+  },
+  {
+    "modelSlug": "meta-llama/llama-4-maverick",
+    "promptId": "realistic",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 4,
+      "technique": 6,
+      "prompt_fidelity": 1
+    },
+    "score": 3.5
+  },
+  {
+    "modelSlug": "meta-llama/llama-4-maverick",
+    "promptId": "realistic",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 4,
+      "aesthetic": 3,
+      "technique": 4,
+      "prompt_fidelity": 1
+    },
+    "score": 3
+  },
+  {
+    "modelSlug": "meta-llama/llama-4-maverick",
+    "promptId": "realistic",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 4,
+      "technique": 5,
+      "prompt_fidelity": 2
+    },
+    "score": 4.5
+  },
+  {
+    "modelSlug": "meta-llama/llama-4-maverick",
+    "promptId": "realistic",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 6,
+      "aesthetic": 4,
+      "technique": 5,
+      "prompt_fidelity": 3
+    },
+    "score": 4.5
+  },
+  {
+    "modelSlug": "meta-llama/llama-4-maverick",
+    "promptId": "action",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 5,
+      "aesthetic": 3,
+      "technique": 5,
+      "prompt_fidelity": 3
+    },
+    "score": 4
+  },
+  {
+    "modelSlug": "meta-llama/llama-4-maverick",
+    "promptId": "action",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 4,
+      "aesthetic": 4,
+      "technique": 6,
+      "prompt_fidelity": 5
+    },
+    "score": 4.8
+  },
+  {
+    "modelSlug": "meta-llama/llama-4-maverick",
+    "promptId": "action",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 7,
+      "prompt_fidelity": 5
+    },
+    "score": 6.3
+  },
+  {
+    "modelSlug": "meta-llama/llama-4-maverick",
+    "promptId": "action",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 4,
+      "technique": 6,
+      "prompt_fidelity": 4
+    },
+    "score": 4.3
+  },
+  {
+    "modelSlug": "meta-llama/llama-4-maverick",
+    "promptId": "style",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 4,
+      "technique": 5,
+      "prompt_fidelity": 3
+    },
+    "score": 3.5
+  },
+  {
+    "modelSlug": "meta-llama/llama-4-maverick",
+    "promptId": "style",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 5,
+      "aesthetic": 5,
+      "technique": 7,
+      "prompt_fidelity": 4
+    },
+    "score": 5.3
+  },
+  {
+    "modelSlug": "meta-llama/llama-4-maverick",
+    "promptId": "style",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 1,
+      "aesthetic": 3,
+      "technique": 7,
+      "prompt_fidelity": 2
+    },
+    "score": 3.3
+  },
+  {
+    "modelSlug": "meta-llama/llama-4-maverick",
+    "promptId": "style",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 3,
+      "technique": 5,
+      "prompt_fidelity": 3
+    },
+    "score": 3.3
+  },
+  {
+    "modelSlug": "meta-llama/llama-4-maverick",
+    "promptId": "constraint",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 4,
+      "aesthetic": 3,
+      "technique": 6,
+      "prompt_fidelity": 8
+    },
+    "score": 5.3
+  },
+  {
+    "modelSlug": "meta-llama/llama-4-maverick",
+    "promptId": "constraint",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 4,
+      "technique": 8,
+      "prompt_fidelity": 8
+    },
+    "score": 5.5
+  },
+  {
+    "modelSlug": "meta-llama/llama-4-maverick",
+    "promptId": "constraint",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 4,
+      "technique": 6,
+      "prompt_fidelity": 10
+    },
+    "score": 5.8
+  },
+  {
+    "modelSlug": "meta-llama/llama-4-maverick",
+    "promptId": "constraint",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 4,
+      "technique": 7,
+      "prompt_fidelity": 8
+    },
+    "score": 5.3
+  },
+  {
+    "modelSlug": "meta-llama/llama-4-maverick",
+    "promptId": "animation",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 3,
+      "technique": 6,
+      "prompt_fidelity": 5
+    },
+    "score": 4.3
+  },
+  {
+    "modelSlug": "meta-llama/llama-4-maverick",
+    "promptId": "animation",
+    "sample": 2,
+    "valid": false,
+    "axisMedians": null,
+    "score": 0
+  },
+  {
+    "modelSlug": "meta-llama/llama-4-maverick",
+    "promptId": "animation",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 3,
+      "technique": 6,
+      "prompt_fidelity": 8
+    },
+    "score": 5
+  },
+  {
+    "modelSlug": "meta-llama/llama-4-maverick",
+    "promptId": "animation",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 4,
+      "aesthetic": 2,
+      "technique": 6,
+      "prompt_fidelity": 8
+    },
+    "score": 5
+  },
+  {
+    "modelSlug": "qwen/qwen3-max",
+    "promptId": "minimal",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "qwen/qwen3-max",
+    "promptId": "minimal",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "qwen/qwen3-max",
+    "promptId": "minimal",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 7,
+      "prompt_fidelity": 8
+    },
+    "score": 7
+  },
+  {
+    "modelSlug": "qwen/qwen3-max",
+    "promptId": "minimal",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 7.8
+  },
+  {
+    "modelSlug": "qwen/qwen3-max",
+    "promptId": "realistic",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 5,
+      "technique": 6,
+      "prompt_fidelity": 3
+    },
+    "score": 5.3
+  },
+  {
+    "modelSlug": "qwen/qwen3-max",
+    "promptId": "realistic",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 6,
+      "technique": 7,
+      "prompt_fidelity": 4
+    },
+    "score": 6.3
+  },
+  {
+    "modelSlug": "qwen/qwen3-max",
+    "promptId": "realistic",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 5
+    },
+    "score": 6.5
+  },
+  {
+    "modelSlug": "qwen/qwen3-max",
+    "promptId": "realistic",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 7,
+      "prompt_fidelity": 3
+    },
+    "score": 5.8
+  },
+  {
+    "modelSlug": "qwen/qwen3-max",
+    "promptId": "action",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 5,
+      "technique": 7,
+      "prompt_fidelity": 8
+    },
+    "score": 6.8
+  },
+  {
+    "modelSlug": "qwen/qwen3-max",
+    "promptId": "action",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 6,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 7.5
+  },
+  {
+    "modelSlug": "qwen/qwen3-max",
+    "promptId": "action",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 6,
+      "aesthetic": 5,
+      "technique": 7,
+      "prompt_fidelity": 8
+    },
+    "score": 6.5
+  },
+  {
+    "modelSlug": "qwen/qwen3-max",
+    "promptId": "action",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 4,
+      "technique": 6,
+      "prompt_fidelity": 9
+    },
+    "score": 6.5
+  },
+  {
+    "modelSlug": "qwen/qwen3-max",
+    "promptId": "style",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 7.5
+  },
+  {
+    "modelSlug": "qwen/qwen3-max",
+    "promptId": "style",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 7.8
+  },
+  {
+    "modelSlug": "qwen/qwen3-max",
+    "promptId": "style",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 8
+    },
+    "score": 7.3
+  },
+  {
+    "modelSlug": "qwen/qwen3-max",
+    "promptId": "style",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "qwen/qwen3-max",
+    "promptId": "constraint",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 7.8
+  },
+  {
+    "modelSlug": "qwen/qwen3-max",
+    "promptId": "constraint",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "qwen/qwen3-max",
+    "promptId": "constraint",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "qwen/qwen3-max",
+    "promptId": "constraint",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "qwen/qwen3-max",
+    "promptId": "animation",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 5,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 7.3
+  },
+  {
+    "modelSlug": "qwen/qwen3-max",
+    "promptId": "animation",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 7.5
+  },
+  {
+    "modelSlug": "qwen/qwen3-max",
+    "promptId": "animation",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "qwen/qwen3-max",
+    "promptId": "animation",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 4,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 6.8
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2",
+    "promptId": "minimal",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 7
+    },
+    "score": 7
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2",
+    "promptId": "minimal",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2",
+    "promptId": "minimal",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 6,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 8
+    },
+    "score": 7
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2",
+    "promptId": "minimal",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 7.5
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2",
+    "promptId": "realistic",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 6
+    },
+    "score": 7.5
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2",
+    "promptId": "realistic",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 7,
+      "prompt_fidelity": 5
+    },
+    "score": 6.8
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2",
+    "promptId": "realistic",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 6
+    },
+    "score": 7.3
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2",
+    "promptId": "realistic",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 6
+    },
+    "score": 7.5
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2",
+    "promptId": "action",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 10
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2",
+    "promptId": "action",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2",
+    "promptId": "action",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2",
+    "promptId": "action",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2",
+    "promptId": "style",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2",
+    "promptId": "style",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2",
+    "promptId": "style",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2",
+    "promptId": "style",
+    "sample": 4,
+    "valid": false,
+    "axisMedians": null,
+    "score": 0
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2",
+    "promptId": "constraint",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2",
+    "promptId": "constraint",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 6,
+      "technique": 7,
+      "prompt_fidelity": 10
+    },
+    "score": 7.8
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2",
+    "promptId": "constraint",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 8
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2",
+    "promptId": "constraint",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 6,
+      "aesthetic": 5,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 6.8
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2",
+    "promptId": "animation",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2",
+    "promptId": "animation",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 6,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 7.5
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2",
+    "promptId": "animation",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2",
+    "promptId": "animation",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "z-ai/glm-4.6",
+    "promptId": "minimal",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "z-ai/glm-4.6",
+    "promptId": "minimal",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "z-ai/glm-4.6",
+    "promptId": "minimal",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "z-ai/glm-4.6",
+    "promptId": "minimal",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 7.8
+  },
+  {
+    "modelSlug": "z-ai/glm-4.6",
+    "promptId": "realistic",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 7,
+      "prompt_fidelity": 5
+    },
+    "score": 6.8
+  },
+  {
+    "modelSlug": "z-ai/glm-4.6",
+    "promptId": "realistic",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 6,
+      "prompt_fidelity": 4
+    },
+    "score": 6.3
+  },
+  {
+    "modelSlug": "z-ai/glm-4.6",
+    "promptId": "realistic",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 7,
+      "prompt_fidelity": 6
+    },
+    "score": 7
+  },
+  {
+    "modelSlug": "z-ai/glm-4.6",
+    "promptId": "realistic",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 4,
+      "technique": 7,
+      "prompt_fidelity": 6
+    },
+    "score": 6
+  },
+  {
+    "modelSlug": "z-ai/glm-4.6",
+    "promptId": "action",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "z-ai/glm-4.6",
+    "promptId": "action",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "z-ai/glm-4.6",
+    "promptId": "action",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 6,
+      "prompt_fidelity": 9
+    },
+    "score": 7.5
+  },
+  {
+    "modelSlug": "z-ai/glm-4.6",
+    "promptId": "action",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 6,
+      "prompt_fidelity": 9
+    },
+    "score": 7.5
+  },
+  {
+    "modelSlug": "z-ai/glm-4.6",
+    "promptId": "style",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "z-ai/glm-4.6",
+    "promptId": "style",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "z-ai/glm-4.6",
+    "promptId": "style",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "z-ai/glm-4.6",
+    "promptId": "style",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "z-ai/glm-4.6",
+    "promptId": "constraint",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "z-ai/glm-4.6",
+    "promptId": "constraint",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "z-ai/glm-4.6",
+    "promptId": "constraint",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "z-ai/glm-4.6",
+    "promptId": "constraint",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "z-ai/glm-4.6",
+    "promptId": "animation",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "z-ai/glm-4.6",
+    "promptId": "animation",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "z-ai/glm-4.6",
+    "promptId": "animation",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "z-ai/glm-4.6",
+    "promptId": "animation",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "minimax/minimax-m2",
+    "promptId": "minimal",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "minimax/minimax-m2",
+    "promptId": "minimal",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 9
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "minimax/minimax-m2",
+    "promptId": "minimal",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "minimax/minimax-m2",
+    "promptId": "minimal",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "minimax/minimax-m2",
+    "promptId": "realistic",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 6,
+      "technique": 7,
+      "prompt_fidelity": 5
+    },
+    "score": 6.5
+  },
+  {
+    "modelSlug": "minimax/minimax-m2",
+    "promptId": "realistic",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 6
+    },
+    "score": 7.3
+  },
+  {
+    "modelSlug": "minimax/minimax-m2",
+    "promptId": "realistic",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 6
+    },
+    "score": 7.8
+  },
+  {
+    "modelSlug": "minimax/minimax-m2",
+    "promptId": "realistic",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 5
+    },
+    "score": 7
+  },
+  {
+    "modelSlug": "minimax/minimax-m2",
+    "promptId": "action",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "minimax/minimax-m2",
+    "promptId": "action",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "minimax/minimax-m2",
+    "promptId": "action",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 9
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "minimax/minimax-m2",
+    "promptId": "action",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "minimax/minimax-m2",
+    "promptId": "style",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 8
+    },
+    "score": 7.8
+  },
+  {
+    "modelSlug": "minimax/minimax-m2",
+    "promptId": "style",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "minimax/minimax-m2",
+    "promptId": "style",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "minimax/minimax-m2",
+    "promptId": "style",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "minimax/minimax-m2",
+    "promptId": "constraint",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "minimax/minimax-m2",
+    "promptId": "constraint",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "minimax/minimax-m2",
+    "promptId": "constraint",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "minimax/minimax-m2",
+    "promptId": "constraint",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "minimax/minimax-m2",
+    "promptId": "animation",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "minimax/minimax-m2",
+    "promptId": "animation",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "minimax/minimax-m2",
+    "promptId": "animation",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "minimax/minimax-m2",
+    "promptId": "animation",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2512",
+    "promptId": "minimal",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 6,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 7
+    },
+    "score": 6.8
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2512",
+    "promptId": "minimal",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 4,
+      "technique": 5,
+      "prompt_fidelity": 4
+    },
+    "score": 4
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2512",
+    "promptId": "minimal",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 6,
+      "prompt_fidelity": 8
+    },
+    "score": 6.8
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2512",
+    "promptId": "minimal",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 4,
+      "aesthetic": 5,
+      "technique": 5,
+      "prompt_fidelity": 5
+    },
+    "score": 4.8
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2512",
+    "promptId": "realistic",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 7,
+      "prompt_fidelity": 5
+    },
+    "score": 6.8
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2512",
+    "promptId": "realistic",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 7,
+      "prompt_fidelity": 4
+    },
+    "score": 6
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2512",
+    "promptId": "realistic",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 6,
+      "technique": 8,
+      "prompt_fidelity": 5
+    },
+    "score": 6.8
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2512",
+    "promptId": "realistic",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 5,
+      "technique": 8,
+      "prompt_fidelity": 4
+    },
+    "score": 6
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2512",
+    "promptId": "action",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 5,
+      "aesthetic": 5,
+      "technique": 6,
+      "prompt_fidelity": 5
+    },
+    "score": 5.3
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2512",
+    "promptId": "action",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 5,
+      "aesthetic": 4,
+      "technique": 5,
+      "prompt_fidelity": 4
+    },
+    "score": 4.5
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2512",
+    "promptId": "action",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 6,
+      "aesthetic": 7,
+      "technique": 6,
+      "prompt_fidelity": 7
+    },
+    "score": 6.5
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2512",
+    "promptId": "action",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 3,
+      "aesthetic": 5,
+      "technique": 4,
+      "prompt_fidelity": 3
+    },
+    "score": 3.8
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2512",
+    "promptId": "style",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2512",
+    "promptId": "style",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2512",
+    "promptId": "style",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 9
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2512",
+    "promptId": "style",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2512",
+    "promptId": "constraint",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 5,
+      "technique": 7,
+      "prompt_fidelity": 10
+    },
+    "score": 7.3
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2512",
+    "promptId": "constraint",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 2,
+      "aesthetic": 3,
+      "technique": 5,
+      "prompt_fidelity": 8
+    },
+    "score": 4.5
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2512",
+    "promptId": "constraint",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 5,
+      "technique": 7,
+      "prompt_fidelity": 10
+    },
+    "score": 7.3
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2512",
+    "promptId": "constraint",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 4,
+      "aesthetic": 5,
+      "technique": 7,
+      "prompt_fidelity": 10
+    },
+    "score": 6.5
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2512",
+    "promptId": "animation",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 6,
+      "aesthetic": 5,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 6.8
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2512",
+    "promptId": "animation",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 6,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 7.3
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2512",
+    "promptId": "animation",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 6,
+      "aesthetic": 5,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 7.3
+  },
+  {
+    "modelSlug": "mistralai/mistral-large-2512",
+    "promptId": "animation",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "anthropic/claude-fable-5",
+    "promptId": "minimal",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "anthropic/claude-fable-5",
+    "promptId": "minimal",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "anthropic/claude-fable-5",
+    "promptId": "minimal",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "anthropic/claude-fable-5",
+    "promptId": "minimal",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "anthropic/claude-fable-5",
+    "promptId": "realistic",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 7
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "anthropic/claude-fable-5",
+    "promptId": "realistic",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 7
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "anthropic/claude-fable-5",
+    "promptId": "realistic",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 7
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "anthropic/claude-fable-5",
+    "promptId": "realistic",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 8
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "anthropic/claude-fable-5",
+    "promptId": "action",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "anthropic/claude-fable-5",
+    "promptId": "action",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "anthropic/claude-fable-5",
+    "promptId": "action",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "anthropic/claude-fable-5",
+    "promptId": "action",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "anthropic/claude-fable-5",
+    "promptId": "style",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "anthropic/claude-fable-5",
+    "promptId": "style",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "anthropic/claude-fable-5",
+    "promptId": "style",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "anthropic/claude-fable-5",
+    "promptId": "style",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "anthropic/claude-fable-5",
+    "promptId": "constraint",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8.5,
+      "aesthetic": 7.5,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "anthropic/claude-fable-5",
+    "promptId": "constraint",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "anthropic/claude-fable-5",
+    "promptId": "constraint",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "anthropic/claude-fable-5",
+    "promptId": "constraint",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "anthropic/claude-fable-5",
+    "promptId": "animation",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "anthropic/claude-fable-5",
+    "promptId": "animation",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "anthropic/claude-fable-5",
+    "promptId": "animation",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "anthropic/claude-fable-5",
+    "promptId": "animation",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4.8",
+    "promptId": "minimal",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4.8",
+    "promptId": "minimal",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4.8",
+    "promptId": "minimal",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4.8",
+    "promptId": "minimal",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 9
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4.8",
+    "promptId": "realistic",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 7
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4.8",
+    "promptId": "realistic",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 6
+    },
+    "score": 7.3
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4.8",
+    "promptId": "realistic",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 6
+    },
+    "score": 7.5
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4.8",
+    "promptId": "realistic",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 7
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4.8",
+    "promptId": "action",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 10
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4.8",
+    "promptId": "action",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4.8",
+    "promptId": "action",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4.8",
+    "promptId": "action",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 10
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4.8",
+    "promptId": "style",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4.8",
+    "promptId": "style",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4.8",
+    "promptId": "style",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4.8",
+    "promptId": "style",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4.8",
+    "promptId": "constraint",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4.8",
+    "promptId": "constraint",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4.8",
+    "promptId": "constraint",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4.8",
+    "promptId": "constraint",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4.8",
+    "promptId": "animation",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4.8",
+    "promptId": "animation",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4.8",
+    "promptId": "animation",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "anthropic/claude-opus-4.8",
+    "promptId": "animation",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-5",
+    "promptId": "minimal",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-5",
+    "promptId": "minimal",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 9
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-5",
+    "promptId": "minimal",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-5",
+    "promptId": "minimal",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-5",
+    "promptId": "realistic",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 7
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-5",
+    "promptId": "realistic",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 6
+    },
+    "score": 7.8
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-5",
+    "promptId": "realistic",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 7
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-5",
+    "promptId": "realistic",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 6
+    },
+    "score": 7.5
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-5",
+    "promptId": "action",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-5",
+    "promptId": "action",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-5",
+    "promptId": "action",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-5",
+    "promptId": "action",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-5",
+    "promptId": "style",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 9
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-5",
+    "promptId": "style",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-5",
+    "promptId": "style",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-5",
+    "promptId": "style",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-5",
+    "promptId": "constraint",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-5",
+    "promptId": "constraint",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-5",
+    "promptId": "constraint",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-5",
+    "promptId": "constraint",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-5",
+    "promptId": "animation",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-5",
+    "promptId": "animation",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-5",
+    "promptId": "animation",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "anthropic/claude-sonnet-5",
+    "promptId": "animation",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "openai/gpt-5.5",
+    "promptId": "minimal",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "openai/gpt-5.5",
+    "promptId": "minimal",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "openai/gpt-5.5",
+    "promptId": "minimal",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "openai/gpt-5.5",
+    "promptId": "minimal",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "openai/gpt-5.5",
+    "promptId": "realistic",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 8
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "openai/gpt-5.5",
+    "promptId": "realistic",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 7
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "openai/gpt-5.5",
+    "promptId": "realistic",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 6
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "openai/gpt-5.5",
+    "promptId": "realistic",
+    "sample": 4,
+    "valid": false,
+    "axisMedians": null,
+    "score": 0
+  },
+  {
+    "modelSlug": "openai/gpt-5.5",
+    "promptId": "action",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 9
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "openai/gpt-5.5",
+    "promptId": "action",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "openai/gpt-5.5",
+    "promptId": "action",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 10,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 9.3
+  },
+  {
+    "modelSlug": "openai/gpt-5.5",
+    "promptId": "action",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9.3
+  },
+  {
+    "modelSlug": "openai/gpt-5.5",
+    "promptId": "style",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "openai/gpt-5.5",
+    "promptId": "style",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9.3
+  },
+  {
+    "modelSlug": "openai/gpt-5.5",
+    "promptId": "style",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "openai/gpt-5.5",
+    "promptId": "style",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9.3
+  },
+  {
+    "modelSlug": "openai/gpt-5.5",
+    "promptId": "constraint",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "openai/gpt-5.5",
+    "promptId": "constraint",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "openai/gpt-5.5",
+    "promptId": "constraint",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "openai/gpt-5.5",
+    "promptId": "constraint",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "openai/gpt-5.5",
+    "promptId": "animation",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9.3
+  },
+  {
+    "modelSlug": "openai/gpt-5.5",
+    "promptId": "animation",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9.3
+  },
+  {
+    "modelSlug": "openai/gpt-5.5",
+    "promptId": "animation",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 10,
+      "aesthetic": 9,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9.5
+  },
+  {
+    "modelSlug": "openai/gpt-5.5",
+    "promptId": "animation",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9.3
+  },
+  {
+    "modelSlug": "google/gemini-3.1-pro-preview",
+    "promptId": "minimal",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 7
+    },
+    "score": 7.8
+  },
+  {
+    "modelSlug": "google/gemini-3.1-pro-preview",
+    "promptId": "minimal",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "google/gemini-3.1-pro-preview",
+    "promptId": "minimal",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 8
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "google/gemini-3.1-pro-preview",
+    "promptId": "minimal",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 8
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "google/gemini-3.1-pro-preview",
+    "promptId": "realistic",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 8
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "google/gemini-3.1-pro-preview",
+    "promptId": "realistic",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 8
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "google/gemini-3.1-pro-preview",
+    "promptId": "realistic",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 8
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "google/gemini-3.1-pro-preview",
+    "promptId": "realistic",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 8
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "google/gemini-3.1-pro-preview",
+    "promptId": "action",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "google/gemini-3.1-pro-preview",
+    "promptId": "action",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "google/gemini-3.1-pro-preview",
+    "promptId": "action",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "google/gemini-3.1-pro-preview",
+    "promptId": "action",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "google/gemini-3.1-pro-preview",
+    "promptId": "style",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9.3
+  },
+  {
+    "modelSlug": "google/gemini-3.1-pro-preview",
+    "promptId": "style",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "google/gemini-3.1-pro-preview",
+    "promptId": "style",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "google/gemini-3.1-pro-preview",
+    "promptId": "style",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "google/gemini-3.1-pro-preview",
+    "promptId": "constraint",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "google/gemini-3.1-pro-preview",
+    "promptId": "constraint",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "google/gemini-3.1-pro-preview",
+    "promptId": "constraint",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "google/gemini-3.1-pro-preview",
+    "promptId": "constraint",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "google/gemini-3.1-pro-preview",
+    "promptId": "animation",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "google/gemini-3.1-pro-preview",
+    "promptId": "animation",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "google/gemini-3.1-pro-preview",
+    "promptId": "animation",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "google/gemini-3.1-pro-preview",
+    "promptId": "animation",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "deepseek/deepseek-v4-pro",
+    "promptId": "minimal",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 8
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "deepseek/deepseek-v4-pro",
+    "promptId": "minimal",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 8
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "deepseek/deepseek-v4-pro",
+    "promptId": "minimal",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "deepseek/deepseek-v4-pro",
+    "promptId": "minimal",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "deepseek/deepseek-v4-pro",
+    "promptId": "realistic",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 6
+    },
+    "score": 7.3
+  },
+  {
+    "modelSlug": "deepseek/deepseek-v4-pro",
+    "promptId": "realistic",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 8
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "deepseek/deepseek-v4-pro",
+    "promptId": "realistic",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 7
+    },
+    "score": 7.8
+  },
+  {
+    "modelSlug": "deepseek/deepseek-v4-pro",
+    "promptId": "realistic",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 6
+    },
+    "score": 7.8
+  },
+  {
+    "modelSlug": "deepseek/deepseek-v4-pro",
+    "promptId": "action",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "deepseek/deepseek-v4-pro",
+    "promptId": "action",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "deepseek/deepseek-v4-pro",
+    "promptId": "action",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "deepseek/deepseek-v4-pro",
+    "promptId": "action",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "deepseek/deepseek-v4-pro",
+    "promptId": "style",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "deepseek/deepseek-v4-pro",
+    "promptId": "style",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "deepseek/deepseek-v4-pro",
+    "promptId": "style",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "deepseek/deepseek-v4-pro",
+    "promptId": "style",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "deepseek/deepseek-v4-pro",
+    "promptId": "constraint",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "deepseek/deepseek-v4-pro",
+    "promptId": "constraint",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "deepseek/deepseek-v4-pro",
+    "promptId": "constraint",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "deepseek/deepseek-v4-pro",
+    "promptId": "constraint",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "deepseek/deepseek-v4-pro",
+    "promptId": "animation",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "deepseek/deepseek-v4-pro",
+    "promptId": "animation",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "deepseek/deepseek-v4-pro",
+    "promptId": "animation",
+    "sample": 3,
+    "valid": false,
+    "axisMedians": null,
+    "score": 0
+  },
+  {
+    "modelSlug": "deepseek/deepseek-v4-pro",
+    "promptId": "animation",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "qwen/qwen3.7-max",
+    "promptId": "minimal",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 8
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "qwen/qwen3.7-max",
+    "promptId": "minimal",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "qwen/qwen3.7-max",
+    "promptId": "minimal",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 8
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "qwen/qwen3.7-max",
+    "promptId": "minimal",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "qwen/qwen3.7-max",
+    "promptId": "realistic",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 7,
+      "aesthetic": 7,
+      "technique": 8,
+      "prompt_fidelity": 6
+    },
+    "score": 7
+  },
+  {
+    "modelSlug": "qwen/qwen3.7-max",
+    "promptId": "realistic",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 6
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "qwen/qwen3.7-max",
+    "promptId": "realistic",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 6
+    },
+    "score": 7.5
+  },
+  {
+    "modelSlug": "qwen/qwen3.7-max",
+    "promptId": "realistic",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 8
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "qwen/qwen3.7-max",
+    "promptId": "action",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "qwen/qwen3.7-max",
+    "promptId": "action",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "qwen/qwen3.7-max",
+    "promptId": "action",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "qwen/qwen3.7-max",
+    "promptId": "action",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 10
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "qwen/qwen3.7-max",
+    "promptId": "style",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "qwen/qwen3.7-max",
+    "promptId": "style",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "qwen/qwen3.7-max",
+    "promptId": "style",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "qwen/qwen3.7-max",
+    "promptId": "style",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 9
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "qwen/qwen3.7-max",
+    "promptId": "constraint",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 10
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "qwen/qwen3.7-max",
+    "promptId": "constraint",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "qwen/qwen3.7-max",
+    "promptId": "constraint",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "qwen/qwen3.7-max",
+    "promptId": "constraint",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "qwen/qwen3.7-max",
+    "promptId": "animation",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "qwen/qwen3.7-max",
+    "promptId": "animation",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9.3
+  },
+  {
+    "modelSlug": "qwen/qwen3.7-max",
+    "promptId": "animation",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "qwen/qwen3.7-max",
+    "promptId": "animation",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2.6",
+    "promptId": "minimal",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 7.8
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2.6",
+    "promptId": "minimal",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 8,
+      "technique": 6,
+      "prompt_fidelity": 4
+    },
+    "score": 6.5
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2.6",
+    "promptId": "minimal",
+    "sample": 3,
+    "valid": false,
+    "axisMedians": null,
+    "score": 0
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2.6",
+    "promptId": "minimal",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2.6",
+    "promptId": "realistic",
+    "sample": 1,
+    "valid": false,
+    "axisMedians": null,
+    "score": 0
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2.6",
+    "promptId": "realistic",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 6,
+      "technique": 7,
+      "prompt_fidelity": 4
+    },
+    "score": 6.3
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2.6",
+    "promptId": "realistic",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 7,
+      "prompt_fidelity": 5
+    },
+    "score": 6.8
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2.6",
+    "promptId": "realistic",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 6
+    },
+    "score": 7.8
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2.6",
+    "promptId": "action",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2.6",
+    "promptId": "action",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2.6",
+    "promptId": "action",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2.6",
+    "promptId": "action",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2.6",
+    "promptId": "style",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2.6",
+    "promptId": "style",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 6,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 9
+    },
+    "score": 7.8
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2.6",
+    "promptId": "style",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 9,
+      "technique": 9,
+      "prompt_fidelity": 9
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2.6",
+    "promptId": "style",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2.6",
+    "promptId": "constraint",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2.6",
+    "promptId": "constraint",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2.6",
+    "promptId": "constraint",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2.6",
+    "promptId": "constraint",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 5,
+      "prompt_fidelity": 8
+    },
+    "score": 7
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2.6",
+    "promptId": "animation",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2.6",
+    "promptId": "animation",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2.6",
+    "promptId": "animation",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "moonshotai/kimi-k2.6",
+    "promptId": "animation",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "z-ai/glm-5.2",
+    "promptId": "minimal",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 8,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 8
+    },
+    "score": 7.8
+  },
+  {
+    "modelSlug": "z-ai/glm-5.2",
+    "promptId": "minimal",
+    "sample": 2,
+    "valid": false,
+    "axisMedians": null,
+    "score": 0
+  },
+  {
+    "modelSlug": "z-ai/glm-5.2",
+    "promptId": "minimal",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "z-ai/glm-5.2",
+    "promptId": "minimal",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "z-ai/glm-5.2",
+    "promptId": "realistic",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 6
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "z-ai/glm-5.2",
+    "promptId": "realistic",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 7
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "z-ai/glm-5.2",
+    "promptId": "realistic",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 7
+    },
+    "score": 7.8
+  },
+  {
+    "modelSlug": "z-ai/glm-5.2",
+    "promptId": "realistic",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 7
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "z-ai/glm-5.2",
+    "promptId": "action",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9.3
+  },
+  {
+    "modelSlug": "z-ai/glm-5.2",
+    "promptId": "action",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "z-ai/glm-5.2",
+    "promptId": "action",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "z-ai/glm-5.2",
+    "promptId": "action",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "z-ai/glm-5.2",
+    "promptId": "style",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "z-ai/glm-5.2",
+    "promptId": "style",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9.3
+  },
+  {
+    "modelSlug": "z-ai/glm-5.2",
+    "promptId": "style",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "z-ai/glm-5.2",
+    "promptId": "style",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9.3
+  },
+  {
+    "modelSlug": "z-ai/glm-5.2",
+    "promptId": "constraint",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "z-ai/glm-5.2",
+    "promptId": "constraint",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 6
+    },
+    "score": 7.5
+  },
+  {
+    "modelSlug": "z-ai/glm-5.2",
+    "promptId": "constraint",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 6
+    },
+    "score": 7.5
+  },
+  {
+    "modelSlug": "z-ai/glm-5.2",
+    "promptId": "constraint",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "z-ai/glm-5.2",
+    "promptId": "animation",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "z-ai/glm-5.2",
+    "promptId": "animation",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9.3
+  },
+  {
+    "modelSlug": "z-ai/glm-5.2",
+    "promptId": "animation",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "z-ai/glm-5.2",
+    "promptId": "animation",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "minimax/minimax-m3",
+    "promptId": "minimal",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "minimax/minimax-m3",
+    "promptId": "minimal",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "minimax/minimax-m3",
+    "promptId": "minimal",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 7,
+      "prompt_fidelity": 9
+    },
+    "score": 8.3
+  },
+  {
+    "modelSlug": "minimax/minimax-m3",
+    "promptId": "minimal",
+    "sample": 4,
+    "valid": false,
+    "axisMedians": null,
+    "score": 0
+  },
+  {
+    "modelSlug": "minimax/minimax-m3",
+    "promptId": "realistic",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 6
+    },
+    "score": 7.8
+  },
+  {
+    "modelSlug": "minimax/minimax-m3",
+    "promptId": "realistic",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 7
+    },
+    "score": 8
+  },
+  {
+    "modelSlug": "minimax/minimax-m3",
+    "promptId": "realistic",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 6
+    },
+    "score": 7.8
+  },
+  {
+    "modelSlug": "minimax/minimax-m3",
+    "promptId": "realistic",
+    "sample": 4,
+    "valid": false,
+    "axisMedians": null,
+    "score": 0
+  },
+  {
+    "modelSlug": "minimax/minimax-m3",
+    "promptId": "action",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "minimax/minimax-m3",
+    "promptId": "action",
+    "sample": 2,
+    "valid": false,
+    "axisMedians": null,
+    "score": 0
+  },
+  {
+    "modelSlug": "minimax/minimax-m3",
+    "promptId": "action",
+    "sample": 3,
+    "valid": false,
+    "axisMedians": null,
+    "score": 0
+  },
+  {
+    "modelSlug": "minimax/minimax-m3",
+    "promptId": "action",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "minimax/minimax-m3",
+    "promptId": "style",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 9
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "minimax/minimax-m3",
+    "promptId": "style",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "minimax/minimax-m3",
+    "promptId": "style",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 9
+    },
+    "score": 8.5
+  },
+  {
+    "modelSlug": "minimax/minimax-m3",
+    "promptId": "style",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "minimax/minimax-m3",
+    "promptId": "constraint",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "minimax/minimax-m3",
+    "promptId": "constraint",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 7,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  },
+  {
+    "modelSlug": "minimax/minimax-m3",
+    "promptId": "constraint",
+    "sample": 3,
+    "valid": false,
+    "axisMedians": null,
+    "score": 0
+  },
+  {
+    "modelSlug": "minimax/minimax-m3",
+    "promptId": "constraint",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "minimax/minimax-m3",
+    "promptId": "animation",
+    "sample": 1,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9.3
+  },
+  {
+    "modelSlug": "minimax/minimax-m3",
+    "promptId": "animation",
+    "sample": 2,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 9,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9.3
+  },
+  {
+    "modelSlug": "minimax/minimax-m3",
+    "promptId": "animation",
+    "sample": 3,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 9,
+      "prompt_fidelity": 10
+    },
+    "score": 9
+  },
+  {
+    "modelSlug": "minimax/minimax-m3",
+    "promptId": "animation",
+    "sample": 4,
+    "valid": true,
+    "axisMedians": {
+      "cat_likeness": 9,
+      "aesthetic": 8,
+      "technique": 8,
+      "prompt_fidelity": 10
+    },
+    "score": 8.8
+  }
+]

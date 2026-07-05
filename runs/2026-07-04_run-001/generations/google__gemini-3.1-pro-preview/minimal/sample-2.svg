@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <rect width="100%" height="100%" fill="#FFD166" />
+  
+  <ellipse cx="270" cy="420" rx="190" ry="12" fill="#E2B144" />
+
+  <path d="M 380 406 C 490 406 470 210 380 210 C 360 210 350 220 345 240" fill="none" stroke="#2D3142" stroke-width="28" stroke-linecap="round" />
+
+  <path d="M 130 410 C 130 280 190 240 250 240 C 310 240 370 280 370 410 Z" fill="#2D3142" stroke="#2D3142" stroke-width="20" stroke-linejoin="round" />
+
+  <path d="M 125 90 L 165 180 L 215 150 Z" fill="#2D3142" stroke="#2D3142" stroke-width="12" stroke-linejoin="round" />
+  <path d="M 375 90 L 335 180 L 285 150 Z" fill="#2D3142" stroke="#2D3142" stroke-width="12" stroke-linejoin="round" />
+
+  <path d="M 135 105 L 165 170 L 205 150 Z" fill="#EF476F" stroke="#EF476F" stroke-width="8" stroke-linejoin="round" />
+  <path d="M 365 105 L 335 170 L 295 150 Z" fill="#EF476F" stroke="#EF476F" stroke-width="8" stroke-linejoin="round" />
+
+  <ellipse cx="250" cy="220" rx="95" ry="75" fill="#2D3142" />
+
+  <g stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.6">
+    <line x1="220" y1="230" x2="125" y2="215" />
+    <line x1="220" y1="245" x2="120" y2="245" />
+    <line x1="220" y1="260" x2="130" y2="275" />
+    <line x1="280" y1="230" x2="375" y2="215" />
+    <line x1="280" y1="245" x2="380" y2="245" />
+    <line x1="280" y1="260" x2="370" y2="275" />
+  </g>
+
+  <circle cx="200" cy="210" r="18" fill="#06D6A0" />
+  <circle cx="300" cy="210" r="18" fill="#06D6A0" />
+  <ellipse cx="200" cy="210" rx="4" ry="12" fill="#2D3142" />
+  <ellipse cx="300" cy="210" rx="4" ry="12" fill="#2D3142" />
+  <circle cx="194" cy="204" r="4.5" fill="#FFFFFF" opacity="0.9" />
+  <circle cx="294" cy="204" r="4.5" fill="#FFFFFF" opacity="0.9" />
+
+  <path d="M 185 410 C 185 330 210 270 250 270 C 290 270 315 330 315 410 Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="20" stroke-linejoin="round" />
+
+  <path d="M 195 410 C 195 385 225 385 225 410 Z" fill="#EAEAEF" stroke="#EAEAEF" stroke-width="20" stroke-linejoin="round" />
+  <path d="M 275 410 C 275 385 305 385 305 410 Z" fill="#EAEAEF" stroke="#EAEAEF" stroke-width="20" stroke-linejoin="round" />
+  
+  <g stroke="#C8C8D0" stroke-width="3" stroke-linecap="round">
+    <line x1="200" y1="400" x2="200" y2="415" />
+    <line x1="220" y1="400" x2="220" y2="415" />
+    <line x1="280" y1="400" x2="280" y2="415" />
+    <line x1="300" y1="400" x2="300" y2="415" />
+  </g>
+
+  <path d="M 250 286 L 215 272 L 215 300 Z" fill="#06D6A0" stroke="#06D6A0" stroke-width="6" stroke-linejoin="round" />
+  <path d="M 250 286 L 285 272 L 285 300 Z" fill="#06D6A0" stroke="#06D6A0" stroke-width="6" stroke-linejoin="round" />
+  <circle cx="250" cy="286" r="10" fill="#2D3142" />
+  <circle cx="250" cy="286" r="5" fill="#06D6A0" />
+
+  <ellipse cx="250" cy="250" rx="38" ry="26" fill="#FFFFFF" />
+
+  <polygon points="240,238 260,238 250,248" fill="#EF476F" stroke="#EF476F" stroke-width="4" stroke-linejoin="round" />
+
+  <path d="M 250 250 V 262 Q 240 270 234 264 M 250 262 Q 260 270 266 264" fill="none" stroke="#2D3142" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

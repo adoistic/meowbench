@@ -1,0 +1,386 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#3b3e45"/>
+      <stop offset="100%" stop-color="#141517"/>
+    </radialGradient>
+
+    <!-- Base Volume Gradients for Shading -->
+    <linearGradient id="gTorso" x1="0%" y1="10%" x2="100%" y2="90%">
+      <stop offset="0%" stop-color="#ffb165"/>
+      <stop offset="35%" stop-color="#c9711c"/>
+      <stop offset="100%" stop-color="#2d1000"/>
+    </linearGradient>
+
+    <radialGradient id="gHaunch" cx="60%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#df8029"/>
+      <stop offset="50%" stop-color="#9d4a0a"/>
+      <stop offset="100%" stop-color="#311200"/>
+    </radialGradient>
+
+    <linearGradient id="gFrontLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e28731"/>
+      <stop offset="40%" stop-color="#9a4d10"/>
+      <stop offset="100%" stop-color="#2a0f00"/>
+    </linearGradient>
+
+    <linearGradient id="gFrontRight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bd661a"/>
+      <stop offset="100%" stop-color="#311000"/>
+    </linearGradient>
+
+    <linearGradient id="gChest" x1="30%" y1="0%" x2="70%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#f2d2ab"/>
+      <stop offset="85%" stop-color="#a6713e"/>
+      <stop offset="100%" stop-color="#69411c"/>
+    </linearGradient>
+
+    <radialGradient id="gHead" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ffbf78"/>
+      <stop offset="45%" stop-color="#de7d23"/>
+      <stop offset="100%" stop-color="#4d1b00"/>
+    </radialGradient>
+
+    <linearGradient id="gTail" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#732f05"/>
+      <stop offset="30%" stop-color="#cf7723"/>
+      <stop offset="70%" stop-color="#964b0f"/>
+      <stop offset="100%" stop-color="#140600"/>
+    </linearGradient>
+
+    <!-- Eye Gradient -->
+    <radialGradient id="gEye" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#e9ff66"/>
+      <stop offset="60%" stop-color="#8bc724"/>
+      <stop offset="100%" stop-color="#cc6b08"/>
+    </radialGradient>
+
+    <!-- Filters for Fur Realism -->
+    <filter id="shadowGlow">
+      <feGaussianBlur stdDeviation="15"/>
+    </filter>
+
+    <filter id="furSoft">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+
+    <filter id="furEdge" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.4" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="5" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+
+    <!-- Master Paths For Clipping and Rendering -->
+    <path id="torsoPath" d="M 260 280 C 350 280, 390 400, 360 680 C 350 720, 240 720, 220 680 C 180 500, 200 350, 260 280 Z"/>
+    
+    <path id="haunchPath" d="M 330 450 C 440 420, 485 530, 460 650 C 440 730, 360 740, 340 740 C 360 700, 370 620, 330 550 Z"/>
+    
+    <path id="frontLeftPath" d="M 225 450 L 275 450 C 275 560, 285 680, 285 710 C 285 745, 230 745, 230 710 C 225 680, 225 560, 225 450 Z"/>
+    
+    <path id="frontRightPath" d="M 285 460 L 335 460 C 335 560, 345 680, 345 710 C 345 745, 290 745, 290 710 C 285 680, 285 560, 285 460 Z"/>
+
+    <path id="chestPath" d="M 230 270 Q 195 350 215 450 C 220 500, 310 530, 340 450 Q 365 380 370 270 C 330 300, 270 300, 230 270 Z"/>
+
+    <path id="headPath" d="M 300 165 C 320 165, 340 170, 350 180 C 375 200, 385 220, 385 240 C 385 260, 350 280, 320 290 C 310 295, 290 295, 280 290 C 250 280, 215 260, 215 240 C 215 220, 225 200, 250 180 C 260 170, 280 165, 300 165 Z"/>
+
+    <path id="tailPath" d="M 430 635 C 500 660, 530 720, 480 760 C 350 820, 150 780, 80 710 C 20 650, 40 550, 90 540 C 130 530, 130 580, 130 630 C 120 700, 180 730, 280 730 C 390 730, 430 680, 430 635 Z"/>
+
+    <!-- Clip Paths -->
+    <clipPath id="torsoClip"><use href="#torsoPath"/></clipPath>
+    <clipPath id="haunchClip"><use href="#haunchPath"/></clipPath>
+    <clipPath id="flClip"><use href="#frontLeftPath"/></clipPath>
+    <clipPath id="frClip"><use href="#frontRightPath"/></clipPath>
+    <clipPath id="chestClip"><use href="#chestPath"/></clipPath>
+    <clipPath id="headClip"><use href="#headPath"/></clipPath>
+    <clipPath id="tailClip"><use href="#tailPath"/></clipPath>
+
+    <!-- Detailed Tail Spine for Striping -->
+    <path id="tailSpine" d="M 430 640 C 530 730, 480 820, 310 760 C 180 710, 50 670, 110 590" fill="none"/>
+  </defs>
+
+  <!-- Background Layer -->
+  <rect x="0" y="0" width="100%" height="100%" fill="url(#bgGrad)"/>
+  <ellipse cx="300" cy="745" rx="260" ry="35" fill="#000000" filter="url(#shadowGlow)" opacity="0.8"/>
+  <ellipse cx="300" cy="745" rx="150" ry="15" fill="#000000" filter="url(#furSoft)" opacity="0.9"/>
+  <ellipse cx="140" cy="720" rx="90" ry="25" fill="#000000" filter="url(#shadowGlow)" opacity="0.7"/>
+
+  <!-- Master Fur Filter Group -->
+  <g filter="url(#furEdge)">
+
+    <!-- BACK TORSO -->
+    <use href="#torsoPath" fill="url(#gTorso)"/>
+    <g clip-path="url(#torsoClip)">
+      <g filter="url(#furSoft)" fill="none" stroke-linecap="round">
+        <path d="M 230 320 Q 250 330 280 320" stroke="#ffcb96" stroke-width="8" opacity="0.6"/>
+        <path d="M 330 320 Q 360 330 380 320" stroke="#f6ecc6" stroke-width="10" opacity="0.5"/>
+        <path d="M 360 380 Q 380 400 400 390" stroke="#1c0700" stroke-width="12"/>
+        <path d="M 350 430 Q 380 450 420 420" stroke="#1a0600" stroke-width="16"/>
+        <path d="M 330 480 Q 370 510 400 480" stroke="#210800" stroke-width="18"/>
+        <path d="M 320 540 Q 360 570 380 540" stroke="#1f0700" stroke-width="20"/>
+        <path d="M 320 600 Q 360 630 380 600" stroke="#170500" stroke-width="22"/>
+        <!-- Torso left interior shading -->
+        <path d="M 200 400 C 230 500 240 600 220 700" stroke="#170600" stroke-width="45" opacity="0.6"/>
+      </g>
+    </g>
+
+    <!-- HAUNCH (RIGHT BACK LEG) -->
+    <use href="#haunchPath" fill="url(#gHaunch)"/>
+    <g clip-path="url(#haunchClip)">
+      <g filter="url(#furSoft)" fill="none" stroke-linecap="round">
+        <path d="M 450 470 Q 420 500 370 480" stroke="#f5ddb5" stroke-width="6" opacity="0.4"/>
+        <path d="M 460 520 Q 410 550 340 520" stroke="#140400" stroke-width="14"/>
+        <path d="M 470 570 Q 400 600 340 570" stroke="#140400" stroke-width="16"/>
+        <path d="M 470 630 Q 410 660 340 640" stroke="#140400" stroke-width="18"/>
+        <path d="M 450 680 Q 410 710 340 690" stroke="#120300" stroke-width="14"/>
+        <!-- Volume shading overlap -->
+        <path d="M 470 450 Q 520 550 450 650" stroke="#000000" stroke-width="30" opacity="0.6"/>
+      </g>
+    </g>
+
+    <!-- FRONT RIGHT LEG -->
+    <use href="#frontRightPath" fill="url(#gFrontRight)"/>
+    <g clip-path="url(#frClip)">
+      <g filter="url(#furSoft)" fill="none" stroke-linecap="round">
+        <path d="M 280 500 L 360 520" stroke="#1c0700" stroke-width="10"/>
+        <path d="M 280 560 L 360 580" stroke="#170500" stroke-width="12"/>
+        <path d="M 280 620 L 360 640" stroke="#140400" stroke-width="12"/>
+        <path d="M 280 680 L 360 700" stroke="#0a0200" stroke-width="12"/>
+        <path d="M 330 460 L 330 740" stroke="#050100" stroke-width="25" opacity="0.6"/>
+        <!-- Cream highlight -->
+        <path d="M 295 460 L 295 730" stroke="#f6c28f" stroke-width="8" opacity="0.5"/>
+      </g>
+    </g>
+
+    <!-- FRONT LEFT LEG -->
+    <use href="#frontLeftPath" fill="url(#gFrontLeft)"/>
+    <g clip-path="url(#flClip)">
+      <g filter="url(#furSoft)" fill="none" stroke-linecap="round">
+        <path d="M 220 500 Q 255 515 290 500" stroke="#1c0700" stroke-width="9"/>
+        <path d="M 220 550 Q 255 565 290 550" stroke="#1a0600" stroke-width="10"/>
+        <path d="M 220 600 Q 255 615 290 600" stroke="#150400" stroke-width="10"/>
+        <path d="M 220 650 Q 255 665 290 650" stroke="#0c0200" stroke-width="10"/>
+        <!-- Leg shadow inner -->
+        <path d="M 275 450 L 275 740" stroke="#000000" stroke-width="20" opacity="0.5"/>
+        <!-- Left Rim Light -->
+        <path d="M 230 450 L 230 740" stroke="#ffd9b3" stroke-width="8" opacity="0.8"/>
+      </g>
+    </g>
+
+    <!-- CHEST FLUFF -->
+    <use href="#chestPath" fill="url(#gChest)"/>
+    <g clip-path="url(#chestClip)">
+      <g filter="url(#furSoft)" fill="none" stroke-linecap="round">
+        <!-- Cream/White volume layering -->
+        <path d="M 230 300 Q 235 340 220 380" stroke="#ffffff" stroke-width="10"/>
+        <path d="M 260 280 Q 265 370 250 420" stroke="#ffffff" stroke-width="14"/>
+        <path d="M 290 280 Q 300 380 285 410" stroke="#ffebcc" stroke-width="16"/>
+        <path d="M 320 290 Q 340 370 320 400" stroke="#f2cba0" stroke-width="12"/>
+        <path d="M 350 300 Q 370 340 350 380" stroke="#dbac7b" stroke-width="10"/>
+        
+        <!-- Depth separating strokes -->
+        <path d="M 240 320 Q 255 370 240 420" stroke="#7a4f22" stroke-width="6" opacity="0.6"/>
+        <path d="M 280 320 Q 290 380 270 450" stroke="#523211" stroke-width="8" opacity="0.6"/>
+        <path d="M 315 310 Q 325 360 305 430" stroke="#523211" stroke-width="7" opacity="0.6"/>
+      </g>
+    </g>
+
+    <!-- TAIL -->
+    <!-- The tail overlaps everything from bottom up -->
+    <use href="#tailPath" fill="url(#gTail)"/>
+    <g clip-path="url(#tailClip)">
+      <!-- Master Spine Stripes Hack -->
+      <use href="#tailSpine" stroke="#120300" stroke-width="80" stroke-dasharray="25 35" filter="url(#furSoft)" opacity="0.9"/>
+      <use href="#tailSpine" stroke="#ffce99" stroke-width="15" stroke-dasharray="0 60 10 0" filter="url(#furSoft)" opacity="0.6"/>
+      <!-- Internal shadow and highlights -->
+      <path d="M 420 630 C 500 660 520 730 450 760 C 350 800 150 770 100 700" fill="none" stroke="#000000" stroke-width="30" filter="url(#furSoft)" opacity="0.6"/>
+      <path d="M 380 650 C 470 690 490 730 430 750 C 330 780 160 760 120 700" fill="none" stroke="#ffdfaa" stroke-width="6" filter="url(#furSoft)" opacity="0.5"/>
+    </g>
+
+    <!-- HEAD BASE -->
+    <use href="#headPath" fill="url(#gHead)"/>
+    <g clip-path="url(#headClip)">
+      <g filter="url(#furSoft)" stroke-linecap="round">
+        <!-- Forehead Stripes (M Pattern) -->
+        <path d="M 265 170 Q 275 210 286 195 Q 293 215 300 195 Q 307 215 314 195 Q 325 210 335 170" fill="none" stroke="#2b0e00" stroke-width="6"/>
+        <path d="M 250 175 Q 260 215 270 200" fill="none" stroke="#3d1400" stroke-width="6"/>
+        <path d="M 350 175 Q 340 215 330 200" fill="none" stroke="#3d1400" stroke-width="6"/>
+
+        <!-- Crown base dark patches -->
+        <ellipse cx="250" cy="170" rx="30" ry="20" fill="#a14911" opacity="0.6"/>
+        <ellipse cx="350" cy="170" rx="30" ry="20" fill="#a14911" opacity="0.6"/>
+
+        <!-- Cheek Stripes Left -->
+        <path d="M 215 220 Q 235 225 245 225" fill="none" stroke="#260b00" stroke-width="5"/>
+        <path d="M 215 235 Q 240 240 250 235" fill="none" stroke="#1f0800" stroke-width="6"/>
+        <path d="M 215 250 Q 245 255 255 245" fill="none" stroke="#1a0600" stroke-width="6"/>
+
+        <!-- Cheek Stripes Right -->
+        <path d="M 385 220 Q 365 225 355 225" fill="none" stroke="#260b00" stroke-width="5"/>
+        <path d="M 385 235 Q 360 240 350 235" fill="none" stroke="#1f0800" stroke-width="6"/>
+        <path d="M 385 250 Q 355 255 345 245" fill="none" stroke="#1a0600" stroke-width="6"/>
+
+        <!-- Edge highlight / Rim Light Left -->
+        <path d="M 260 165 C 240 200 210 240 240 280" fill="none" stroke="#ffffff" stroke-width="8" opacity="0.7"/>
+        
+        <!-- Muzzle Base Highlights -->
+        <ellipse cx="275" cy="275" rx="30" ry="22" fill="#fffaf2"/>
+        <ellipse cx="325" cy="275" rx="30" ry="22" fill="#fcf1df"/>
+        <path d="M 300 295 Q 300 315 280 310" fill="none" stroke="#4a1500" stroke-width="12"/>
+        <path d="M 300 295 Q 300 315 320 310" fill="none" stroke="#4a1500" stroke-width="12"/>
+
+        <!-- Chin bright fluff -->
+        <ellipse cx="300" cy="300" rx="20" ry="12" fill="#ffffff"/>
+      </g>
+    </g>
+  </g> <!-- End of furEdge filter group -->
+
+  <!-- EARS (Back/Mid layers) -->
+  <g id="Ears">
+    <!-- Left Ear Back (Shadowed Base) -->
+    <path d="M 255 175 Q 260 150 220 70 Q 210 50 195 65 Q 200 130 220 205 Z" fill="#9e561a"/>
+    <!-- Left Ear Inner pink cavity -->
+    <path d="M 245 170 C 235 150 215 90 205 75 Q 210 110 225 180 Z" fill="#6c3631"/>
+    <!-- Left Ear Fluff -->
+    <path d="M 235 180 Q 215 130 230 110" fill="none" stroke="#ffeadd" stroke-width="3" stroke-linecap="round" filter="url(#furSoft)"/>
+    <path d="M 225 185 Q 205 135 210 100" fill="none" stroke="#ffebd4" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 245 175 Q 235 140 245 120" fill="none" stroke="#ffca9e" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Right Ear Back -->
+    <path d="M 345 175 Q 340 150 380 70 Q 390 50 405 65 Q 400 130 380 205 Z" fill="#b0611d"/>
+    <!-- Right Ear Inner cavity -->
+    <path d="M 355 170 C 365 150 385 90 395 75 Q 390 110 375 180 Z" fill="#6c3631"/>
+    <!-- Right Ear Fluff -->
+    <path d="M 365 180 Q 385 130 370 110" fill="none" stroke="#ffeadd" stroke-width="3" stroke-linecap="round" filter="url(#furSoft)"/>
+    <path d="M 375 185 Q 395 135 390 100" fill="none" stroke="#ffebd4" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 355 175 Q 365 140 355 120" fill="none" stroke="#e8a874" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- UNClipped Sharp Features (No edge distortion) -->
+  <g id="FaceFeatures">
+    
+    <!-- LEFT EYE -->
+    <g id="LeftEye">
+      <!-- Dark outline base -->
+      <path d="M 233 213 C 243 198, 265 208, 275 225 C 265 235, 245 232, 233 213 Z" fill="#000000" stroke="#140600" stroke-width="4" stroke-linejoin="round"/>
+      <!-- Sclera / Iris -->
+      <path d="M 236 215 C 245 202, 263 211, 272 225 C 262 232, 246 230, 236 215 Z" fill="url(#gEye)"/>
+      <!-- Pupil -->
+      <ellipse cx="256" cy="221" rx="4.5" ry="11" fill="#110500" transform="rotate(-15 256 221)"/>
+      <!-- Inner shadow top -->
+      <path d="M 236 215 C 245 202, 263 211, 272 225 C 265 220, 250 215, 236 215 Z" fill="#140600" opacity="0.6"/>
+      <!-- Caruncle (Pink inner corner) -->
+      <polygon points="271,223 276,226 272,228" fill="#bc6660"/>
+      <!-- Catchlights -->
+      <path d="M 244 212 C 248 209, 255 210, 258 213 C 255 213, 248 213, 244 212 Z" fill="#ffffff" opacity="0.6"/>
+      <circle cx="260" cy="216" r="2.5" fill="#ffffff"/>
+      <circle cx="251" cy="225" r="0.8" fill="#ffffff" opacity="0.5"/>
+    </g>
+
+    <!-- RIGHT EYE -->
+    <g id="RightEye">
+      <path d="M 367 213 C 357 198, 335 208, 325 225 C 335 235, 355 232, 367 213 Z" fill="#000000" stroke="#140600" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M 364 215 C 355 202, 337 211, 328 225 C 338 232, 354 230, 364 215 Z" fill="url(#gEye)"/>
+      <ellipse cx="344" cy="221" rx="4.5" ry="11" fill="#110500" transform="rotate(15 344 221)"/>
+      <path d="M 364 215 C 355 202, 337 211, 328 225 C 335 220, 350 215, 364 215 Z" fill="#140600" opacity="0.6"/>
+      <polygon points="329,223 324,226 328,228" fill="#bc6660"/>
+      <path d="M 356 212 C 352 209, 345 210, 342 213 C 345 213, 352 213, 356 212 Z" fill="#ffffff" opacity="0.6"/>
+      <circle cx="340" cy="216" r="2.5" fill="#ffffff"/>
+      <circle cx="349" cy="225" r="0.8" fill="#ffffff" opacity="0.5"/>
+    </g>
+
+    <!-- NOSE -->
+    <g id="Nose">
+      <!-- Shadow base -->
+      <path d="M 285 262 Q 300 258, 315 262 Q 315 272, 300 279 Q 285 272, 285 262 Z" fill="#a44b41" filter="url(#furSoft)"/>
+      <!-- Primary shape -->
+      <path d="M 286 261 Q 300 256, 314 261 Q 314 269, 300 276 Q 286 269, 286 261 Z" fill="#ec958c"/>
+      <!-- Nose bridge highlight -->
+      <path d="M 288 261 Q 300 257, 312 261 Q 300 263, 288 261 Z" fill="#ffcdca"/>
+      <!-- Nose nostril lines -->
+      <path d="M 288 266 Q 295 265, 300 272" fill="none" stroke="#68211b" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M 312 266 Q 305 265, 300 272" fill="none" stroke="#68211b" stroke-width="1.8" stroke-linecap="round"/>
+    </g>
+
+    <!-- MOUTH -->
+    <g id="Mouth">
+      <!-- Lip split lines -->
+      <path d="M 300 276 L 300 286 Q 285 296 270 290" fill="none" stroke="#2d1100" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M 300 286 Q 315 296 330 290" fill="none" stroke="#2d1100" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- WHISKER PORES -->
+    <g id="WhiskerPores" fill="#36170d" opacity="0.75">
+      <!-- Left points -->
+      <circle cx="265" cy="270" r="1.3"/>
+      <circle cx="255" cy="272" r="1.5"/>
+      <circle cx="260" cy="277" r="1.5"/>
+      <circle cx="245" cy="275" r="1.2"/>
+      <circle cx="250" cy="282" r="1.4"/>
+      <circle cx="240" cy="280" r="1.2"/>
+      <!-- Right points -->
+      <circle cx="335" cy="270" r="1.3"/>
+      <circle cx="345" cy="272" r="1.5"/>
+      <circle cx="340" cy="277" r="1.5"/>
+      <circle cx="355" cy="275" r="1.2"/>
+      <circle cx="350" cy="282" r="1.4"/>
+      <circle cx="360" cy="280" r="1.2"/>
+    </g>
+
+  </g>
+
+  <!-- WHISKERS (Topmost sharp white layers) -->
+  <g id="Whiskers" fill="none" stroke="#ffffff" stroke-linecap="round">
+    <g opacity="0.85" stroke-width="1.2">
+      <!-- Left side long whiskers -->
+      <path d="M 260 270 Q 170 250 110 270"/>
+      <path d="M 255 273 Q 150 260 90 295"/>
+      <path d="M 250 278 Q 140 280 100 325"/>
+      <path d="M 245 281 Q 150 310 120 355"/>
+      <path d="M 250 286 Q 180 340 160 380"/>
+      
+      <!-- Right side long whiskers -->
+      <path d="M 340 270 Q 430 250 490 270"/>
+      <path d="M 345 273 Q 450 260 510 295"/>
+      <path d="M 350 278 Q 460 280 500 325"/>
+      <path d="M 355 281 Q 450 310 480 355"/>
+      <path d="M 350 286 Q 420 340 440 380"/>
+      
+      <!-- Eyebrow whiskers left -->
+      <path d="M 265 195 Q 230 140 170 140"/>
+      <path d="M 270 190 Q 240 130 190 125"/>
+
+      <!-- Eyebrow whiskers right -->
+      <path d="M 335 195 Q 370 140 430 140"/>
+      <path d="M 330 190 Q 360 130 410 125"/>
+    </g>
+
+    <g opacity="0.4" stroke-width="0.8">
+      <!-- Fine lower whiskers -->
+      <path d="M 245 286 Q 160 300 130 330"/>
+      <path d="M 355 286 Q 440 300 470 330"/>
+    </g>
+  </g>
+
+  <!-- PAW DETAILS (Overcoming the flat blur on the base layer) -->
+  <g id="PawLines" fill="none" stroke="#220900" stroke-width="2.5" stroke-linecap="round" opacity="0.8">
+    <!-- Front Left Toes -->
+    <path d="M 240 720 L 240 740"/>
+    <path d="M 255 722 L 255 743"/>
+    <path d="M 270 720 L 270 740"/>
+    
+    <!-- Front Right Toes -->
+    <path d="M 305 720 L 305 740"/>
+    <path d="M 320 722 L 320 743"/>
+    <path d="M 335 720 L 335 740"/>
+
+    <!-- Light crest strokes inside toes -->
+    <g stroke="#ffddb3" stroke-width="1.5" opacity="0.6">
+      <path d="M 245 715 Q 248 725 248 735"/>
+      <path d="M 262 715 Q 262 725 262 735"/>
+      <path d="M 312 715 Q 312 725 312 735"/>
+      <path d="M 328 715 Q 328 725 328 735"/>
+    </g>
+  </g>
+
+</svg>

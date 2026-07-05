@@ -1,0 +1,49 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bicycle -->
+  <!-- Back wheel -->
+  <circle cx="120" cy="220" r="35" fill="none" stroke="#333" stroke-width="3"/>
+  <circle cx="120" cy="220" r="3" fill="#333"/>
+  <!-- Front wheel -->
+  <circle cx="280" cy="220" r="35" fill="none" stroke="#333" stroke-width="3"/>
+  <circle cx="280" cy="220" r="3" fill="#333"/>
+  <!-- Frame -->
+  <path d="M120 220 L180 160 L280 220 M180 160 L180 140 L160 130 M180 140 L200 145" fill="none" stroke="#333" stroke-width="3"/>
+  <!-- Handlebars -->
+  <path d="M275 160 L280 155 L290 155 M270 155 L280 155" fill="none" stroke="#333" stroke-width="3"/>
+  <!-- Seat -->
+  <ellipse cx="160" cy="130" rx="15" ry="5" fill="#333"/>
+  <!-- Pedals -->
+  <circle cx="180" cy="200" r="15" fill="none" stroke="#333" stroke-width="2"/>
+  <line x1="180" y1="200" x2="190" y2="210" stroke="#333" stroke-width="2"/>
+  <line x1="180" y1="200" x2="170" y2="190" stroke="#333" stroke-width="2"/>
+  
+  <!-- Cat -->
+  <!-- Body -->
+  <ellipse cx="170" cy="110" rx="30" ry="25" fill="#ff8c42" stroke="#333" stroke-width="2"/>
+  <!-- Head -->
+  <circle cx="200" cy="100" r="20" fill="#ff8c42" stroke="#333" stroke-width="2"/>
+  <!-- Ears -->
+  <path d="M185 90 L180 75 L190 85 Z" fill="#ff8c42" stroke="#333" stroke-width="2"/>
+  <path d="M215 90 L220 75 L210 85 Z" fill="#ff8c42" stroke="#333" stroke-width="2"/>
+  <!-- Eyes -->
+  <circle cx="195" cy="98" r="3" fill="#333"/>
+  <circle cx="208" cy="98" r="3" fill="#333"/>
+  <!-- Nose -->
+  <path d="M200 105 L198 107 L202 107 Z" fill="#ff69b4"/>
+  <!-- Whiskers -->
+  <line x1="185" y1="105" x2="170" y2="103" stroke="#333" stroke-width="1"/>
+  <line x1="185" y1="108" x2="170" y2="110" stroke="#333" stroke-width="1"/>
+  <line x1="215" y1="105" x2="230" y2="103" stroke="#333" stroke-width="1"/>
+  <line x1="215" y1="108" x2="230" y2="110" stroke="#333" stroke-width="1"/>
+  <!-- Front paws on handlebars -->
+  <ellipse cx="275" cy="155" rx="8" ry="12" fill="#ff8c42" stroke="#333" stroke-width="2" transform="rotate(-30 275 155)"/>
+  <ellipse cx="285" cy="155" rx="8" ry="12" fill="#ff8c42" stroke="#333" stroke-width="2" transform="rotate(30 285 155)"/>
+  <!-- Back paws on pedals -->
+  <ellipse cx="185" cy="195" rx="8" ry="12" fill="#ff8c42" stroke="#333" stroke-width="2" transform="rotate(45 185 195)"/>
+  <ellipse cx="175" cy="195" rx="8" ry="12" fill="#ff8c42" stroke="#333" stroke-width="2" transform="rotate(-45 175 195)"/>
+  <!-- Tail -->
+  <path d="M145 110 Q120 90 130 70" fill="none" stroke="#ff8c42" stroke-width="12" stroke-linecap="round"/>
+  <path d="M145 110 Q120 90 130 70" fill="none" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+  <!-- Stripes -->
+  <path d="M155 100 L160 100 M165 95 L170 95 M175 100 L180 100 M160 115 L165 115 M170 120 L175 120" stroke="#d2691e" stroke-width="3" stroke-linecap="round"/>
+</svg>

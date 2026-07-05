@@ -1,0 +1,9 @@
+{
+  "modelSlug": "deepseek/deepseek-r1",
+  "promptId": "animation",
+  "sample": 3,
+  "status": "ok",
+  "temperature": 1,
+  "rawPath": "generations/deepseek__deepseek-r1/animation/sample-3.raw.txt",
+  "svgPath": "generations/deepseek__deepseek-r1/animation/sample-3.svg"
+}

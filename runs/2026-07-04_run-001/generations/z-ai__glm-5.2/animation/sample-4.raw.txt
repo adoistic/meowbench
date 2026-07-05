@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" text-rendering="geometricPrecision">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#fdf6ec"/>
+      <stop offset="100%" stop-color="#e8d5c0"/>
+    </radialGradient>
+    <linearGradient id="fur" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbe3d0"/>
+      <stop offset="100%" stop-color="#e9a878"/>
+    </linearGradient>
+    <radialGradient id="belly" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#fff5ec"/>
+      <stop offset="100%" stop-color="#fbd9bd"/>
+    </radialGradient>
+    <linearGradient id="tail" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#e9a878"/>
+      <stop offset="60%" stop-color="#f4c39a"/>
+      <stop offset="100%" stop-color="#fff0e2"/>
+    </linearGradient>
+    <style>
+      @media (prefers-reduced-motion: reduce){
+        animate, animateTransform { display:none }
+      }
+    </style>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg)"/>
+
+  <!-- shadow -->
+  <ellipse cx="200" cy="355" rx="120" ry="14" fill="#000" opacity="0.08"/>
+
+  <!-- Tail (drawn behind body, anchored at base, sways via rotate around base) -->
+  <g id="tailgroup">
+    <path d="M 248 290
+             C 290 290, 330 260, 332 215
+             C 333 185, 318 168, 300 172
+             C 312 180, 318 198, 308 218
+             C 296 242, 270 250, 250 248 Z"
+          fill="url(#tail)" stroke="#c87a4a" stroke-width="1.5" stroke-linejoin="round"/>
+    <!-- tail stripes -->
+    <path d="M 300 175 Q 312 178 320 188" stroke="#c87a4a" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.6"/>
+    <path d="M 318 205 Q 326 212 326 222" stroke="#c87a4a" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.6"/>
+    <path d="M 318 240 Q 308 250 296 254" stroke="#c87a4a" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.6"/>
+    <path d="M 282 268 Q 270 276 258 280" stroke="#c87a4a" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.6"/>
+    <!-- tail tip -->
+    <circle cx="300" cy="172" r="6" fill="#fff0e2" stroke="#c87a4a" stroke-width="1.5"/>
+    <animateTransform attributeName="transform" type="rotate"
+      values="-10 248 290; 14 248 290; -10 248 290"
+      keyTimes="0;0.5;1"
+      calcMode="spline"
+      keySplines="0.42 0 0.58 1; 0.42 0 0.58 1"
+      dur="2.4s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Hind leg -->
+  <ellipse cx="168" cy="320" rx="26" ry="34" fill="url(#fur)" stroke="#c87a4a" stroke-width="1.5"/>
+  <ellipse cx="168" cy="338" rx="22" ry="10" fill="#fff5ec" stroke="#c87a4a" stroke-width="1.2"/>
+
+  <!-- Front leg -->
+  <ellipse cx="232" cy="320" rx="24" ry="34" fill="url(#fur)" stroke="#c87a4a" stroke-width="1.5"/>
+  <ellipse cx="232" cy="338" rx="20" ry="9" fill="#fff5ec" stroke="#c87a4a" stroke-width="1.2"/>
+
+  <!-- Body -->
+  <path d="M 130 260
+           C 120 215, 150 175, 200 175
+           C 250 175, 280 215, 270 260
+           C 280 305, 250 335, 200 335
+           C 150 335, 120 305, 130 260 Z"
+        fill="url(#fur)" stroke="#c87a4a" stroke-width="2"/>
+
+  <!-- Belly -->
+  <path d="M 160 250
+           C 165 215, 200 205, 200 205
+           C 200 205, 235 215, 240 250
+           C 245 295, 220 320, 200 320
+           C 180 320, 155 295, 160 250 Z"
+        fill="url(#belly)" opacity="0.9"/>
+
+  <!-- Head -->
+  <g id="head">
+    <!-- ears -->
+    <path d="M 138 150 L 122 110 L 168 138 Z" fill="url(#fur)" stroke="#c87a4a" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M 262 150 L 278 110 L 232 138 Z" fill="url(#fur)" stroke="#c87a4a" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M 144 142 L 134 122 L 160 138 Z" fill="#f6b5a0"/>
+    <path d="M 256 142 L 266 122 L 240 138 Z" fill="#f6b5a0"/>
+
+    <!-- head shape -->
+    <ellipse cx="200" cy="160" rx="66" ry="58" fill="url(#fur)" stroke="#c87a4a" stroke-width="2"/>
+
+    <!-- cheek fluff -->
+    <path d="M 138 170 Q 120 180 134 188 Q 124 196 140 198" fill="none" stroke="#c87a4a" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M 262 170 Q 280 180 266 188 Q 276 196 260 198" fill="none" stroke="#c87a4a" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- forehead stripes -->
+    <path d="M 188 118 Q 184 130 188 140" stroke="#c87a4a" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/>
+    <path d="M 200 116 Q 200 130 200 142" stroke="#c87a4a" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/>
+    <path d="M 212 118 Q 216 130 212 140" stroke="#c87a4a" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/>
+
+    <!-- eyes -->
+    <g>
+      <ellipse cx="176" cy="162" rx="11" ry="13" fill="#fff"/>
+      <ellipse cx="224" cy="162" rx="11" ry="13" fill="#fff"/>
+      <ellipse cx="176" cy="163" rx="6" ry="11" fill="#5b3a1e"/>
+      <ellipse cx="224" cy="163" rx="6" ry="11" fill="#5b3a1e"/>
+      <circle cx="176" cy="161" r="2.4" fill="#fff"/>
+      <circle cx="224" cy="161" r="2.4" fill="#fff"/>
+      <circle cx="178" cy="167" r="1.1" fill="#fff" opacity="0.7"/>
+      <circle cx="226" cy="167" r="1.1" fill="#fff" opacity="0.7"/>
+      <!-- blink -->
+      <animate attributeName="opacity" values="1;1;1;1;0;1;1;1;1;1;1;1;0;1"
+               keyTimes="0;0.2;0.25;0.3;0.32;0.34;0.5;0.7;0.75;0.8;0.82;0.84;0.86;1"
+               dur="6s" repeatCount="indefinite"/>
+    </g>
+    <rect x="165" y="158" width="22" height="0" fill="url(#fur)">
+      <animate attributeName="height" values="0;0;0;0;22;0;0;0;0;0;0;0;22;0"
+               keyTimes="0;0.2;0.25;0.3;0.32;0.34;0.5;0.7;0.75;0.8;0.82;0.84;0.86;1"
+               dur="6s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="213" y="158" width="22" height="0" fill="url(#fur)">
+      <animate attributeName="height" values="0;0;0;0;22;0;0;0;0;0;0;0;22;0"
+               keyTimes="0;0.2;0.25;0.3;0.32;0.34;0.5;0.7;0.75;0.8;0.82;0.84;0.86;1"
+               dur="6s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- nose -->
+    <path d="M 194 180 Q 200 176 206 180 Q 206 186 200 190 Q 194 186 194 180 Z"
+          fill="#e07a8a" stroke="#b5566a" stroke-width="1.2"/>
+
+    <!-- mouth -->
+    <path d="M 200 190 L 200 196" stroke="#7a4a2a" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M 200 196 Q 190 204 184 198" fill="none" stroke="#7a4a2a" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M 200 196 Q 210 204 216 198" fill="none" stroke="#7a4a2a" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- whiskers -->
+    <g stroke="#7a4a2a" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.8">
+      <path d="M 168 184 Q 140 180 120 184"/>
+      <path d="M 168 190 Q 138 192 118 198"/>
+      <path d="M 232 184 Q 260 180 280 184"/>
+      <path d="M 232 190 Q 262 192 282 198"/>
+    </g>
+  </g>
+</svg>

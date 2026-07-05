@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="300" height="300">
+  <defs>
+    <clipPath id="body-clip">
+      <path d="M30 90 Q15 90 15 75 Q15 50 50 50 Q85 50 85 75 Q85 90 70 90 Z" />
+    </clipPath>
+  </defs>
+
+  <!-- Tail -->
+  <path d="M70 85 Q 90 85 90 65 Q 90 45 75 50" 
+        stroke="#2c3e50" 
+        stroke-width="8" 
+        fill="none" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+
+  <!-- Body -->
+  <use href="#body-clip" fill="#2c3e50" />
+
+  <!-- Head -->
+  <circle cx="50" cy="40" r="24" fill="#2c3e50" />
+
+  <!-- Ears -->
+  <path d="M32 18 L44 32 L26 32 Z" fill="#2c3e50" stroke-linejoin="round" stroke-width="2" stroke="#2c3e50"/>
+  <path d="M68 18 L56 32 L74 32 Z" fill="#2c3e50" stroke-linejoin="round" stroke-width="2" stroke="#2c3e50"/>
+
+  <!-- Face -->
+  <!-- Eyes -->
+  <circle cx="42" cy="38" r="2.5" fill="#ffffff" />
+  <circle cx="58" cy="38" r="2.5" fill="#ffffff" />
+  <!-- Nose -->
+  <path d="M48 46 L52 46 L50 49 Z" fill="#e67e22" />
+</svg>

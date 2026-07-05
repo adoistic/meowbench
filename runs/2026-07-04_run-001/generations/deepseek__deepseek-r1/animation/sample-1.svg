@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150">
+  <!-- Cat body -->
+  <ellipse cx="100" cy="90" rx="40" ry="30" fill="#a0a0a0"/>
+  
+  <!-- Head -->
+  <circle cx="100" cy="60" r="25" fill="#a0a0a0"/>
+  
+  <!-- Ears -->
+  <path d="M85 40 L75 25 L90 35 Z" fill="#a0a0a0"/>
+  <path d="M115 40 L125 25 L110 35 Z" fill="#a0a0a0"/>
+  
+  <!-- Eyes -->
+  <circle cx="90" cy="55" r="3" fill="black"/>
+  <circle cx="110" cy="55" r="3" fill="black"/>
+  
+  <!-- Nose -->
+  <path d="M100 65 L95 70 L105 70 Z" fill="pink"/>
+  
+  <!-- Whiskers -->
+  <line x1="95" y1="70" x2="80" y2="65" stroke="black" stroke-width="1"/>
+  <line x1="95" y1="73" x2="80" y2="75" stroke="black" stroke-width="1"/>
+  <line x1="105" y1="70" x2="120" y2="65" stroke="black" stroke-width="1"/>
+  <line x1="105" y1="73" x2="120" y2="75" stroke="black" stroke-width="1"/>
+  
+  <!-- Animated tail -->
+  <g transform="translate(140,90)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="-25;25;-25" keyTimes="0;0.5;1" dur="1.5s" repeatCount="indefinite" calcMode="spline" keySplines="0.5 0 0.5 1; 0.5 0 0.5 1"/>
+      <path d="M0,0 C15,-15 30,-25 45,-35 S70,-45 60,-60" stroke="#a0a0a0" stroke-width="8" fill="none" stroke-linecap="round"/>
+    </g>
+  </g>
+  
+  <!-- Legs -->
+  <rect x="85" y="115" width="8" height="20" fill="#a0a0a0" rx="3"/>
+  <rect x="107" y="115" width="8" height="20" fill="#a0a0a0" rx="3"/>
+</svg>

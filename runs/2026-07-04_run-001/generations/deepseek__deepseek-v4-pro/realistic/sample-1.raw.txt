@@ -1,0 +1,307 @@
+I’ll generate a realistic sitting cat in SVG with visible fur shading, a wrapped tail, and carefully modeled facial detail.
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="70%" fx="50%" fy="30%">
+      <stop offset="0%" stop-color="#2a3b4c" />
+      <stop offset="60%" stop-color="#141e28" />
+      <stop offset="100%" stop-color="#0a0f15" />
+    </radialGradient>
+
+    <!-- Shadow Filter -->
+    <filter id="shadowBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" />
+    </filter>
+
+    <!-- Fur Edge Displacement Filter -->
+    <filter id="furEdge" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.08 0.04" numOctaves="4" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="12" xChannelSelector="R" yChannelSelector="G" result="displaced" />
+      <feComposite in="displaced" in2="SourceGraphic" operator="over" />
+    </filter>
+
+    <!-- Grain Texture for Fur Shading -->
+    <filter id="grainTexture" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" result="noise" />
+      <feColorMatrix type="matrix" values="1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.12 0" in="noise" result="coloredNoise" />
+      <feBlend in="SourceGraphic" in2="coloredNoise" mode="multiply" />
+    </filter>
+
+    <!-- Cat Base Colors -->
+    <radialGradient id="bodyGrad" cx="50%" cy="40%" r="60%" fx="50%" fy="30%">
+      <stop offset="0%" stop-color="#F39C12" />
+      <stop offset="60%" stop-color="#D35400" />
+      <stop offset="100%" stop-color="#873600" />
+    </radialGradient>
+
+    <radialGradient id="chestGrad" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FFF9E6" />
+      <stop offset="70%" stop-color="#FAD7A1" />
+      <stop offset="100%" stop-color="#E59866" />
+    </radialGradient>
+
+    <radialGradient id="headGrad" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#F39C12" />
+      <stop offset="60%" stop-color="#E67E22" />
+      <stop offset="100%" stop-color="#A04000" />
+    </radialGradient>
+
+    <!-- Eye Gradients -->
+    <radialGradient id="irisGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F1C40F" />
+      <stop offset="40%" stop-color="#52BE80" />
+      <stop offset="80%" stop-color="#1E8449" />
+      <stop offset="100%" stop-color="#071A0D" />
+    </radialGradient>
+
+    <radialGradient id="eyeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- CSS Styles for fur strokes -->
+    <style>
+      .fur-stroke { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .fur-dark { stroke: #6E2C00; stroke-width: 5; opacity: 0.7; }
+      .fur-mid { stroke: #D35400; stroke-width: 5; opacity: 0.8; }
+      .fur-light { stroke: #F5B041; stroke-width: 4; opacity: 0.9; }
+      .fur-white { stroke: #FDEBD0; stroke-width: 5; opacity: 0.9; }
+      .fur-accent { stroke: #FFF9E6; stroke-width: 3; opacity: 0.8; }
+      .whisker { fill: none; stroke: #FFFFFF; stroke-linecap: round; opacity: 0.7; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="800" fill="url(#bgGrad)" />
+
+  <!-- Floor Shadow -->
+  <ellipse cx="400" cy="720" rx="280" ry="45" fill="#000000" opacity="0.6" filter="url(#shadowBlur)" />
+
+  <!-- Tail (Behind the body) -->
+  <g filter="url(#furEdge)">
+    <path d="M 320 650 Q 120 750 100 600 Q 80 450 220 420 Q 280 460 200 520 Q 160 580 250 650 Z" fill="url(#bodyGrad)" />
+    <!-- Tail texture strokes -->
+    <path d="M 120 700 Q 170 650 200 580" class="fur-stroke fur-dark" />
+    <path d="M 100 650 Q 140 580 180 500" class="fur-stroke fur-mid" />
+    <path d="M 90 580 Q 120 500 220 440" class="fur-stroke fur-light" />
+  </g>
+
+  <!-- Back Legs -->
+  <g filter="url(#furEdge)">
+    <path d="M 220 500 C 150 600, 160 700, 220 740 L 300 740 C 280 700, 280 600, 340 500 Z" fill="url(#bodyGrad)" />
+    <path d="M 580 500 C 650 600, 640 700, 580 740 L 500 740 C 520 700, 520 600, 460 500 Z" fill="url(#bodyGrad)" />
+  </g>
+
+  <!-- Main Body -->
+  <g filter="url(#furEdge)">
+    <path d="M 240 440 C 180 540, 150 650, 200 740 L 600 740 C 650 650, 620 540, 560 440 Z" fill="url(#bodyGrad)" />
+  </g>
+
+  <!-- Chest Fluff -->
+  <g filter="url(#furEdge)">
+    <path d="M 310 460 C 280 550, 250 680, 300 730 C 350 680, 380 580, 490 460 Z" fill="url(#chestGrad)" />
+  </g>
+
+  <!-- Front Paws -->
+  <g filter="url(#furEdge)">
+    <!-- Left Paw -->
+    <path d="M 250 710 C 240 740, 280 750, 320 750 C 340 750, 350 730, 330 710 C 310 690, 270 690, 250 710 Z" fill="url(#chestGrad)" />
+    <!-- Right Paw -->
+    <path d="M 470 710 C 480 740, 520 750, 550 750 C 570 750, 580 730, 560 710 C 540 690, 500 690, 470 710 Z" fill="url(#chestGrad)" />
+    <!-- Paw Lines -->
+    <path d="M 280 730 L 280 750" class="fur-stroke fur-dark" />
+    <path d="M 300 735 L 300 752" class="fur-stroke fur-dark" />
+    <path d="M 500 730 L 500 750" class="fur-stroke fur-dark" />
+    <path d="M 520 735 L 520 752" class="fur-stroke fur-dark" />
+  </g>
+
+  <!-- Head Base -->
+  <g filter="url(#furEdge)">
+    <path d="M 270 300 C 270 160, 530 160, 530 300 C 530 430, 480 460, 400 460 C 320 460, 270 430, 270 300 Z" fill="url(#headGrad)" />
+  </g>
+
+  <!-- Ears -->
+  <g filter="url(#furEdge)">
+    <!-- Left Ear Base -->
+    <path d="M 285 220 L 200 100 L 330 160 Z" fill="url(#headGrad)" />
+    <!-- Right Ear Base -->
+    <path d="M 515 220 L 600 100 L 470 160 Z" fill="url(#headGrad)" />
+  </g>
+  <!-- Inner Ears (Sharp, no filter) -->
+  <g>
+    <!-- Left Inner Ear -->
+    <path d="M 285 205 L 215 115 L 320 165 Z" fill="#FADBD8" />
+    <path d="M 285 205 L 215 115 L 320 165 Z" fill="none" stroke="#F5B7B1" stroke-width="3" />
+    <!-- Right Inner Ear -->
+    <path d="M 515 205 L 585 115 L 480 165 Z" fill="#FADBD8" />
+    <path d="M 515 205 L 585 115 L 480 165 Z" fill="none" stroke="#F5B7B1" stroke-width="3" />
+  </g>
+
+  <!-- Ear Tufts (Sharp strokes) -->
+  <g>
+    <path d="M 230 140 Q 220 100 200 90" class="fur-stroke fur-mid" />
+    <path d="M 240 130 Q 235 90 220 80" class="fur-stroke fur-dark" />
+    <path d="M 250 125 Q 250 85 240 75" class="fur-stroke fur-light" />
+    <path d="M 570 140 Q 580 100 600 90" class="fur-stroke fur-mid" />
+    <path d="M 560 130 Q 565 90 580 80" class="fur-stroke fur-dark" />
+    <path d="M 550 125 Q 550 85 560 75" class="fur-stroke fur-light" />
+  </g>
+
+  <!-- Forehead "M" Tabby Markings -->
+  <g>
+    <path d="M 330 190 L 370 230 L 400 180 L 430 230 L 470 190" class="fur-stroke fur-dark" stroke-width="6" />
+    <path d="M 370 230 L 400 260 L 430 230" class="fur-stroke fur-dark" stroke-width="6" />
+    <!-- Forehead stripes -->
+    <path d="M 310 210 Q 330 200 340 220" class="fur-stroke fur-dark" />
+    <path d="M 490 210 Q 470 200 460 220" class="fur-stroke fur-dark" />
+    <path d="M 320 230 Q 340 220 350 240" class="fur-stroke fur-dark" />
+    <path d="M 480 230 Q 460 220 450 240" class="fur-stroke fur-dark" />
+  </g>
+
+  <!-- Cheek Fluff & Face Shading (Sharp Strokes) -->
+  <g>
+    <!-- Left Cheek -->
+    <path d="M 280 310 Q 220 300 180 330" class="fur-stroke fur-mid" />
+    <path d="M 275 320 Q 210 310 170 340" class="fur-stroke fur-dark" />
+    <path d="M 270 330 Q 200 325 160 350" class="fur-stroke fur-light" />
+    <path d="M 275 340 Q 190 340 150 370" class="fur-stroke fur-mid" />
+    <path d="M 280 350 Q 180 360 140 390" class="fur-stroke fur-dark" />
+    <path d="M 285 360 Q 200 380 160 410" class="fur-stroke fur-light" />
+    <path d="M 290 370 Q 220 400 180 430" class="fur-stroke fur-mid" />
+    <path d="M 300 380 Q 240 420 200 450" class="fur-stroke fur-dark" />
+    
+    <!-- Right Cheek -->
+    <path d="M 520 310 Q 580 300 620 330" class="fur-stroke fur-mid" />
+    <path d="M 525 320 Q 590 310 630 340" class="fur-stroke fur-dark" />
+    <path d="M 530 330 Q 600 325 640 350" class="fur-stroke fur-light" />
+    <path d="M 525 340 Q 610 340 650 370" class="fur-stroke fur-mid" />
+    <path d="M 520 350 Q 620 360 660 390" class="fur-stroke fur-dark" />
+    <path d="M 515 360 Q 600 380 640 410" class="fur-stroke fur-light" />
+    <path d="M 510 370 Q 580 400 620 430" class="fur-stroke fur-mid" />
+    <path d="M 500 380 Q 560 420 600 450" class="fur-stroke fur-dark" />
+
+    <!-- Chin Fluff -->
+    <path d="M 340 450 Q 380 480 360 500" class="fur-stroke fur-white" />
+    <path d="M 400 460 Q 400 490 400 510" class="fur-stroke fur-white" />
+    <path d="M 460 450 Q 420 480 440 500" class="fur-stroke fur-white" />
+    <path d="M 370 455 Q 390 490 380 510" class="fur-stroke fur-accent" />
+    <path d="M 430 455 Q 410 490 420 510" class="fur-stroke fur-accent" />
+  </g>
+
+  <!-- Eye Shadows / Depth -->
+  <g>
+    <ellipse cx="320" cy="300" rx="35" ry="28" fill="#000000" opacity="0.3" filter="url(#shadowBlur)" />
+    <ellipse cx="480" cy="300" rx="35" ry="28" fill="#000000" opacity="0.3" filter="url(#shadowBlur)" />
+  </g>
+
+  <!-- Eyes -->
+  <g>
+    <!-- Left Eye Background -->
+    <path d="M 285 300 Q 320 270 355 300 Q 320 330 285 300 Z" fill="url(#irisGrad)" />
+    <!-- Left Pupil -->
+    <path d="M 308 300 Q 320 280 332 300 Q 320 320 308 300 Z" fill="#000000" />
+    <!-- Left Eye Highlights -->
+    <circle cx="310" cy="290" r="6" fill="#FFFFFF" />
+    <circle cx="325" cy="295" r="3" fill="#FFFFFF" />
+    <!-- Left Eye Liner -->
+    <path d="M 283 300 Q 320 278 357 300" fill="none" stroke="#1A0A00" stroke-width="4" stroke-linecap="round" />
+    <path d="M 285 302 Q 320 328 355 302" fill="none" stroke="#1A0A00" stroke-width="3" stroke-linecap="round" />
+
+    <!-- Right Eye Background -->
+    <path d="M 445 300 Q 480 270 515 300 Q 480 330 445 300 Z" fill="url(#irisGrad)" />
+    <!-- Right Pupil -->
+    <path d="M 468 300 Q 480 280 492 300 Q 480 320 468 300 Z" fill="#000000" />
+    <!-- Right Eye Highlights -->
+    <circle cx="470" cy="290" r="6" fill="#FFFFFF" />
+    <circle cx="485" cy="295" r="3" fill="#FFFFFF" />
+    <!-- Right Eye Liner -->
+    <path d="M 443 300 Q 480 278 517 300" fill="none" stroke="#1A0A00" stroke-width="4" stroke-linecap="round" />
+    <path d="M 445 302 Q 480 328 515 302" fill="none" stroke="#1A0A00" stroke-width="3" stroke-linecap="round" />
+  </g>
+
+  <!-- Eyebrow Whiskers -->
+  <g>
+    <path d="M 300 270 Q 280 250 260 240" class="whisker" stroke-width="3" />
+    <path d="M 310 260 Q 300 240 290 220" class="whisker" stroke-width="3" />
+    <path d="M 320 255 Q 320 230 320 210" class="whisker" stroke-width="3" />
+    <path d="M 500 270 Q 520 250 540 240" class="whisker" stroke-width="3" />
+    <path d="M 490 260 Q 500 240 510 220" class="whisker" stroke-width="3" />
+    <path d="M 480 255 Q 480 230 480 210" class="whisker" stroke-width="3" />
+  </g>
+
+  <!-- Nose -->
+  <g>
+    <path d="M 385 370 L 415 370 L 400 388 Z" fill="#F1948A" stroke="#C0392B" stroke-width="2" stroke-linejoin="round" />
+    <!-- Nose Highlight -->
+    <path d="M 392 374 L 408 374 L 400 384 Z" fill="#FADBD8" />
+  </g>
+
+  <!-- Mouth -->
+  <g>
+    <path d="M 400 388 L 400 405" fill="none" stroke="#1A0A00" stroke-width="3" stroke-linecap="round" />
+    <path d="M 400 405 Q 375 420 355 410" fill="none" stroke="#1A0A00" stroke-width="3" stroke-linecap="round" />
+    <path d="M 400 405 Q 425 420 445 410" fill="none" stroke="#1A0A00" stroke-width="3" stroke-linecap="round" />
+    <!-- Chin detail -->
+    <path d="M 395 430 Q 400 440 405 430" fill="none" stroke="#1A0A00" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <!-- Body Fur Strokes (Sharp) -->
+  <g>
+    <!-- Left Shoulder -->
+    <path d="M 260 460 Q 220 480 180 500" class="fur-stroke fur-dark" />
+    <path d="M 250 480 Q 210 520 160 550" class="fur-stroke fur-mid" />
+    <path d="M 240 500 Q 190 560 140 600" class="fur-stroke fur-light" />
+    <path d="M 230 520 Q 180 600 130 650" class="fur-stroke fur-dark" />
+    <path d="M 220 550 Q 170 640 120 690" class="fur-stroke fur-mid" />
+    
+    <!-- Right Shoulder -->
+    <path d="M 540 460 Q 580 480 620 500" class="fur-stroke fur-dark" />
+    <path d="M 550 480 Q 590 520 640 550" class="fur-stroke fur-mid" />
+    <path d="M 560 500 Q 610 560 660 600" class="fur-stroke fur-light" />
+    <path d="M 570 520 Q 620 600 670 650" class="fur-stroke fur-dark" />
+    <path d="M 580 550 Q 630 640 680 690" class="fur-stroke fur-mid" />
+
+    <!-- Chest Details -->
+    <path d="M 350 480 Q 330 520 300 550" class="fur-stroke fur-accent" />
+    <path d="M 450 480 Q 470 520 500 550" class="fur-stroke fur-accent" />
+    <path d="M 370 500 Q 350 550 320 600" class="fur-stroke fur-white" />
+    <path d="M 430 500 Q 450 550 480 600" class="fur-stroke fur-white" />
+    <path d="M 360 540 Q 350 600 330 650" class="fur-stroke fur-accent" />
+    <path d="M 440 540 Q 450 600 470 650" class="fur-stroke fur-accent" />
+  </g>
+
+  <!-- Whiskers -->
+  <g>
+    <!-- Left Whiskers -->
+    <path d="M 310 380 Q 250 370 120 360" class="whisker" />
+    <path d="M 315 390 Q 250 390 110 390" class="whisker" />
+    <path d="M 310 400 Q 250 410 120 420" class="whisker" />
+    <path d="M 290 410 Q 230 440 130 460" class="whisker" />
+    
+    <!-- Right Whiskers -->
+    <path d="M 490 380 Q 550 370 680 360" class="whisker" />
+    <path d="M 485 390 Q 550 390 690 390" class="whisker" />
+    <path d="M 490 400 Q 550 410 680 420" class="whisker" />
+    <path d="M 510 410 Q 570 440 670 460" class="whisker" />
+  </g>
+
+  <!-- Highlights / Lighting Glints -->
+  <g>
+    <!-- Top of Head Highlight -->
+    <ellipse cx="400" cy="190" rx="80" ry="30" fill="#FFFFFF" opacity="0.15" filter="url(#shadowBlur)" />
+    <!-- Back Highlight -->
+    <path d="M 450 460 Q 550 420 600 480" fill="none" stroke="#FFFFFF" stroke-width="15" opacity="0.1" filter="url(#shadowBlur)" stroke-linecap="round" />
+    <!-- Eye Glow Overlay -->
+    <circle cx="320" cy="300" r="40" fill="url(#eyeGlow)" />
+    <circle cx="480" cy="300" r="40" fill="url(#eyeGlow)" />
+  </g>
+
+  <!-- Apply Grain Texture to the whole cat (Optional overlay) -->
+  <g filter="url(#grainTexture)" opacity="0.4" pointer-events="none">
+    <rect width="800" height="800" fill="none" />
+  </g>
+
+</svg>
+```
+The composition centers the cat against a deep navy background, with warm orange tones, lighter chest and muzzle areas, and layered fur strokes that suggest texture and depth. The eyes, whiskers, ear tufts, and subtle highlights are handled sharply, while the soft shadow and grain overlay add realism.

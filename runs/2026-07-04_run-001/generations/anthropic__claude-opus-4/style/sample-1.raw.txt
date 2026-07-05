@@ -1,0 +1,55 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="fold1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5f5f5" />
+      <stop offset="100%" style="stop-color:#e0e0e0" />
+    </linearGradient>
+    <linearGradient id="fold2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8e8e8" />
+      <stop offset="100%" style="stop-color:#d0d0d0" />
+    </linearGradient>
+    <linearGradient id="fold3" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" style="stop-color:#fafafa" />
+      <stop offset="100%" style="stop-color:#e5e5e5" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Head base -->
+  <polygon points="100,40 140,80 100,120 60,80" fill="url(#fold1)" stroke="#999" stroke-width="0.5"/>
+  
+  <!-- Left ear -->
+  <polygon points="60,80 50,50 80,60" fill="url(#fold2)" stroke="#999" stroke-width="0.5"/>
+  
+  <!-- Right ear -->
+  <polygon points="140,80 150,50 120,60" fill="url(#fold2)" stroke="#999" stroke-width="0.5"/>
+  
+  <!-- Face fold -->
+  <polygon points="100,80 80,90 100,120" fill="#f0f0f0" stroke="#999" stroke-width="0.5"/>
+  <polygon points="100,80 120,90 100,120" fill="#e5e5e5" stroke="#999" stroke-width="0.5"/>
+  
+  <!-- Body -->
+  <polygon points="100,120 80,140 80,180 100,190 120,180 120,140" fill="url(#fold3)" stroke="#999" stroke-width="0.5"/>
+  
+  <!-- Body center fold -->
+  <line x1="100" y1="120" x2="100" y2="190" stroke="#999" stroke-width="0.5"/>
+  
+  <!-- Legs -->
+  <polygon points="80,180 70,190 80,200" fill="#e0e0e0" stroke="#999" stroke-width="0.5"/>
+  <polygon points="120,180 130,190 120,200" fill="#e0e0e0" stroke="#999" stroke-width="0.5"/>
+  
+  <!-- Tail -->
+  <polygon points="120,160 140,150 135,180 120,180" fill="url(#fold2)" stroke="#999" stroke-width="0.5"/>
+  
+  <!-- Eyes -->
+  <circle cx="88" cy="85" r="2" fill="#333"/>
+  <circle cx="112" cy="85" r="2" fill="#333"/>
+  
+  <!-- Nose -->
+  <polygon points="100,95 95,100 105,100" fill="#999"/>
+  
+  <!-- Whiskers -->
+  <line x1="65" y1="90" x2="45" y2="88" stroke="#666" stroke-width="0.5"/>
+  <line x1="65" y1="95" x2="45" y2="95" stroke="#666" stroke-width="0.5"/>
+  <line x1="135" y1="90" x2="155" y2="88" stroke="#666" stroke-width="0.5"/>
+  <line x1="135" y1="95" x2="155" y2="95" stroke="#666" stroke-width="0.5"/>
+</svg>

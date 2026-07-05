@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Ground -->
+  <ellipse cx="200" cy="360" rx="140" ry="20" fill="#dfe6e9"/>
+
+  <!-- Tail (animated) -->
+  <g transform="translate(285,300)">
+    <path d="M0,0 C40,10 70,-20 55,-70 C48,-95 20,-100 15,-80 C25,-88 40,-80 40,-60 C40,-25 15,-5 0,10 Z"
+          fill="#f0a95c" stroke="#d98b3a" stroke-width="2">
+      <animateTransform attributeName="transform"
+        type="rotate" values="-15;15;-15" keyTimes="0;0.5;1"
+        dur="2.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Body -->
+  <ellipse cx="200" cy="290" rx="90" ry="65" fill="#f5b869" stroke="#d98b3a" stroke-width="3"/>
+
+  <!-- Front legs -->
+  <rect x="150" y="320" width="24" height="45" rx="12" fill="#f5b869" stroke="#d98b3a" stroke-width="3"/>
+  <rect x="200" y="320" width="24" height="45" rx="12" fill="#f5b869" stroke="#d98b3a" stroke-width="3"/>
+
+  <!-- Head -->
+  <circle cx="200" cy="180" r="70" fill="#f5b869" stroke="#d98b3a" stroke-width="3"/>
+
+  <!-- Ears -->
+  <polygon points="140,140 130,80 185,120" fill="#f5b869" stroke="#d98b3a" stroke-width="3"/>
+  <polygon points="260,140 270,80 215,120" fill="#f5b869" stroke="#d98b3a" stroke-width="3"/>
+  <polygon points="145,130 140,95 172,120" fill="#f7c9a0"/>
+  <polygon points="255,130 260,95 228,120" fill="#f7c9a0"/>
+
+  <!-- Eyes -->
+  <ellipse cx="172" cy="175" rx="14" ry="18" fill="#fff"/>
+  <ellipse cx="228" cy="175" rx="14" ry="18" fill="#fff"/>
+  <circle cx="172" cy="178" r="8" fill="#2d3436">
+    <animate attributeName="ry" values="8;8;1;8;8" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="228" cy="178" r="8" fill="#2d3436">
+    <animate attributeName="ry" values="8;8;1;8;8" dur="4s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Nose -->
+  <polygon points="200,195 190,205 210,205" fill="#e77c7c"/>
+
+  <!-- Mouth -->
+  <path d="M200,205 Q200,215 188,216" fill="none" stroke="#d98b3a" stroke-width="2"/>
+  <path d="M200,205 Q200,215 212,216" fill="none" stroke="#d98b3a" stroke-width="2"/>
+
+  <!-- Whiskers -->
+  <g stroke="#c9a065" stroke-width="2">
+    <line x1="150" y1="195" x2="105" y2="188"/>
+    <line x1="150" y1="203" x2="105" y2="205"/>
+    <line x1="250" y1="195" x2="295" y2="188"/>
+    <line x1="250" y1="203" x2="295" y2="205"/>
+  </g>
+</svg>

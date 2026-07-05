@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <style>
+    #tail {
+      transform-origin: 60px 120px;
+      animation: sway 2s infinite ease-in-out;
+    }
+    @keyframes sway {
+      0% { transform: rotate(0deg); }
+      20% { transform: rotate(-10deg); }
+      40% { transform: rotate(0deg); }
+      60% { transform: rotate(10deg); }
+      80% { transform: rotate(0deg); }
+      100% { transform: rotate(0deg); }
+    }
+  </style>
+  <circle cx="100" cy="100" r="50" fill="#FFC499" />
+  <path id="head" fill="#FFC499" d="M100,50C120,30 150,60 100,70C50,60 80,30 100,50" />
+  <path id="ear1" fill="#FFC499" d="M80,40C90,20 110,20 100,10C90,0 70,0 80,10C80,20 60,20 70,30" />
+  <path id="ear2" fill="#FFC499" d="M120,40C110,20 90,20 100,10C110,0 130,0 120,10C120,20 140,20 130,30" />
+  <path id="eye1" fill="#000" d="M85,55C85,50 90,45 95,50C100,55 95,60 90,55" />
+  <path id="eye2" fill="#000" d="M115,55C115,50 110,45 105,50C100,55 105,60 110,55" />
+  <path id="nose" fill="#000" d="M100,75C100,70 105,65 110,70C115,75 110,80 105,75" />
+  <path id="whiskers" stroke="#000" d="M85,70L100,80M115,70L130,80M85,80L100,90M115,80L130,90" stroke-width="1" />
+  <path id="mouth" stroke="#000" d="M85,90L115,90" stroke-width="2" />
+  <path id="body" fill="#FFC499" d="M50,150C70,120 130,120 150,150C150,180 50,180 50,150" />
+  <path id="leg1" fill="#FFC499" d="M70,170C50,200 50,220 70,250C90,220 90,200 70,170" />
+  <path id="leg2" fill="#FFC499" d="M130,170C150,200 150,220 130,250C110,220 110,200 130,170" />
+  <path id="tail" fill="#FFC499" d="M60,200C40,230 90,230 60,200" />
+</svg>

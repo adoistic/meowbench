@@ -1,0 +1,18 @@
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="300px" height="300px">
+    <path style="fill:#FFDB92;" d="M349.867,269.721c-36.036-17.254-23.301-64.083-23.301-64.083s67.65-6.498,95.23,19.983  c27.194,26.21,1.619,44.723,1.619,44.723s24.068-20.932,23.531-44.101c-0.718-31.025-34.279-47.033-65.701-40.91  c-46.547,9.054-73.902,61.772-34.915,82.143c39.348,20.558,67.328-32.188,67.328-32.188s-43.682,41.957-67.64,20.513l0,0z" data-original="#000000" class="active-path" data-old_color="#000000" id="MgZ-P4Z" fill="#d8deeb"></path>
+    <path style="fill:#FFCB61;" d="M349.867,269.721c-36.036-17.254-23.301-64.083-23.301-64.083s67.707-3.087,95.23,19.983  c27.194,26.21,1.619,44.723,1.619,44.723s26.199-14.22,23.531-44.101c-3.55-39.914-34.279-38.042-65.701-40.91  c-46.547,9.054-73.861,55.782-34.915,82.143c39.348,20.558,59.217-32.188,67.328-32.188s-43.643,37.457-67.64,20.513l0,0z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#d8deeb"></path>
+    <g>
+        <animateTransform attributeName="transform" begin="0s" dur="2s" type="rotate" from="0 100 100" to="60 100 100" repeatCount="indefinite" />
+        <path style="fill:#EF7F4A;" d="M166.036,304.345c30.744-30.51,81.182-30.374,111.68,0.305c30.498-30.68,80.936-30.815,111.68-0.305  c0,0-36.109,78.436-111.68,78.436S166.036,304.345,166.036,304.345z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#d8deeb"></path>
+        <animateTransform attributeName="transform" begin="0s" dur="2s" type="rotate" from="60 100 100" to="0 100 100" repeatCount="indefinite" />
+    </g>
+    <circle style="fill:#FFFFFF;" cx="214.066" cy="171.878" r="23.91" data-original="#000000" class="active-path" data-old_color="#000000"></circle>
+    <circle style="fill:#333333;" cx="214.066" cy="171.878" r="10.577" data-original="#000000" class="active-path" data-old_color="#000000"></circle>
+    <circle style="fill:#FFFFFF;" cx="297.934" cy="171.878" r="23.91" data-original="#000000" class="active-path" data-old_color="#000000"></circle>
+    <circle style="fill:#333333;" cx="297.934" cy="171.878" r="10.577" data-original="#000000" class="active-path" data-old_color="#000000"></circle>
+    
+    <animateTransform attributeName="transform" begin="0s" dur="2s" type="rotate" from="0 50 50" to="60 50 50" repeatCount="indefinite" />
+    <path style="fill:#EF7F4A;" d="M256,223.213c-17.673,0-31.978,14.305-31.978,31.978s14.305,31.978,31.978,31.978s31.978-14.305,31.978-31.978  S273.673,223.213,256,223.213z M256,271.044c-8.284,0-15.021-6.737-15.021-15.021s6.737-15.021,15.021-15.021  s15.021,6.737,15.021,15.021S264.284,271.044,256,271.044z" data-original="#000000" class="active-path" data-old_color="#000000"></path>
+</svg>
+```

@@ -1,0 +1,36 @@
+{
+  "valid": true,
+  "reasons": [],
+  "stats": {
+    "bytes": 13935,
+    "elements": 207,
+    "paths": 141,
+    "colors": [
+      "#000",
+      "#0c0c0c",
+      "#1a1a1a",
+      "#3d1e0c",
+      "#5e3014",
+      "#6f3818",
+      "#7d4421",
+      "#a04f4f",
+      "#b56060",
+      "#b89868",
+      "#c66a6a",
+      "#d98a8a",
+      "#ecd9b6",
+      "#f0c089",
+      "#f4e6c5",
+      "#fbf3e2",
+      "#fff",
+      "url(#bg)",
+      "url(#chest)",
+      "url(#eye)",
+      "url(#furbody)",
+      "url(#furhead)",
+      "url(#furleg)",
+      "url(#furtail)",
+      "url(#shadow)"
+    ]
+  }
+}
