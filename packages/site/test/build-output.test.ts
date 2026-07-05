@@ -1,5 +1,5 @@
 import { execSync } from 'node:child_process'
-import { readFileSync } from 'node:fs'
+import { existsSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { beforeAll, expect, test } from 'vitest'
@@ -60,6 +60,19 @@ test('arena page ships the fighter manifest and offline fallback', () => {
   expect(arena).toContain('CAT FIGHT')
   expect(arena).toContain('id="fighter-manifest"')
   expect(arena).toContain('ARCADE OFFLINE')
+})
+
+test('every page ships brand meta, icons, and the sound toggle', () => {
+  expect(html).toContain('href="/favicon.svg"')
+  expect(html).toContain('rel="apple-touch-icon"')
+  expect(html).toContain('content="https://meowbench.com/og/meowbench-og.png"')
+  expect(html).toContain('name="twitter:card"')
+  expect(html).toContain('id="sound-toggle"')
+  for (const f of ['favicon.svg', 'favicon.ico', 'favicon-32.png', 'apple-touch-icon.png', 'site.webmanifest', 'og/meowbench-og.png', 'icons/icon-512.png']) {
+    expect(existsSync(join(SITE, 'dist', f)), f).toBe(true)
+  }
+  // messenger preview fetchers reject heavyweight cards; keep it well under 300KB
+  expect(readFileSync(join(SITE, 'dist', 'og', 'meowbench-og.png')).length).toBeLessThan(300_000)
 })
 
 test('methodology documents the full protocol', () => {

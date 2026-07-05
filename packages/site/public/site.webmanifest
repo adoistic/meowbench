@@ -1,0 +1,20 @@
+{
+  "name": "meowbench",
+  "short_name": "meowbench",
+  "description": "Which AI draws the best cat? An unreasonably rigorous benchmark.",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#120a26",
+  "background_color": "#120a26",
+  "display": "browser"
+}

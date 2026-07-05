@@ -51,6 +51,9 @@ importers:
         specifier: ^5.1.0
         version: 5.18.2(@types/node@20.19.43)(rollup@4.62.2)(tsx@4.23.0)(typescript@5.9.3)
     devDependencies:
+      '@resvg/resvg-js':
+        specifier: ^2.6.2
+        version: 2.6.2
       '@types/node':
         specifier: ^20.17.0
         version: 20.19.43

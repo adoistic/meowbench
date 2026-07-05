@@ -317,6 +317,34 @@ summary:focus-visible {
 .site-nav .nav-ico { display: none; }
 .site-nav .nav-short { display: none; }
 
+/* 8-bit sound toggle — the cabinet's volume knob */
+.sound-toggle {
+  font-family: var(--font-pixel);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  color: var(--ink-dim);
+  background: none;
+  border: 1px solid var(--panel-edge);
+  border-radius: 6px;
+  padding: 0.35rem 0.6rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  line-height: 1;
+}
+.sound-toggle:hover { color: var(--mint); border-color: var(--mint); }
+.sound-toggle[aria-pressed='true'] {
+  color: var(--mint);
+  border-color: var(--mint);
+  box-shadow: var(--glow-mint);
+}
+.sound-toggle[aria-pressed='true'] .st-ico { animation: note-bob 0.54s steps(2) infinite; }
+@keyframes note-bob { 50% { transform: translateY(-2px); } }
+@media (prefers-reduced-motion: reduce) {
+  .sound-toggle[aria-pressed='true'] .st-ico { animation: none; }
+}
+
 @media (max-width: 720px) {
   /* backdrop-filter creates a containing block for fixed descendants — it would
      pin the bottom deck to the header instead of the viewport. Solid bg instead. */
@@ -360,6 +388,16 @@ summary:focus-visible {
   .site-nav .links a[aria-current='page'] .nav-ico { filter: drop-shadow(0 0 5px rgba(255, 222, 89, 0.8)); }
   /* keep content and footer clear of the deck */
   body { padding-bottom: 84px; }
+  /* logo stays centered; the volume knob rides the right edge of the header */
+  .site-nav { position: relative; }
+  .sound-toggle {
+    position: absolute;
+    right: 0.9rem;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0.3rem 0.5rem;
+  }
+  .sound-toggle .st-label { display: none; }
 }
 .site-footer { max-width: 68rem; margin: 4rem auto 0; padding: 1.5rem 1.25rem 2.5rem; border-top: 2px dashed var(--panel-edge); font-family: var(--font-pixel); font-size: 0.75rem; color: var(--ink-dim); display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; }
 

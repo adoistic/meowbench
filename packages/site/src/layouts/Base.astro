@@ -12,6 +12,11 @@ interface Props {
 }
 const { title, description = 'Which AI draws the best cat as an SVG? An unreasonably rigorous benchmark.', current = '' } = Astro.props
 
+const site = Astro.site ?? new URL('https://meowbench.com')
+const canonical = new URL(Astro.url.pathname, site)
+const ogImage = new URL('/og/meowbench-og.png', site)
+const fullTitle = `${title} · meowbench`
+
 // 12x12 pixel icons, drawn as rects so they match the Silkscreen aesthetic.
 const ICONS: Record<string, string> = {
   trophy:
@@ -40,7 +45,29 @@ const nav = [
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
-    <title>{title} · meowbench</title>
+    <title>{fullTitle}</title>
+
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#120a26" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="meowbench" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="meowbench — which AI draws the best cat? 29 models, 675 cats, 1 champion." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
   </head>
   <body>
     <header class="site-header">
@@ -55,6 +82,11 @@ const nav = [
             </a>
           ))}
         </div>
+        <button id="sound-toggle" class="sound-toggle" aria-pressed="false" title="8-bit sound: off" hidden>
+          <span class="st-ico" aria-hidden="true">♪</span>
+          <span class="st-label">SOUND</span>
+          <span class="st-state">OFF</span>
+        </button>
       </nav>
     </header>
     <main>
@@ -64,5 +96,8 @@ const nav = [
       <span>© 2026 meowbench · no cats were harmed. several were poorly drawn.</span>
       <span><a href="https://github.com/adoistic/meowbench">source</a> · <span class="blink">INSERT CAT TO CONTINUE</span></span>
     </footer>
+    <script>
+      import '../scripts/arcade-audio.ts'
+    </script>
   </body>
 </html>
