@@ -28,6 +28,7 @@ export interface GenerationRecord {
   temperature: number
   rawPath: string // relative to run dir
   svgPath?: string
+  finishReason?: string // OpenRouter finish_reason ('stop'|'length'|...) for truncation diagnostics
 }
 
 export interface SvgStats {

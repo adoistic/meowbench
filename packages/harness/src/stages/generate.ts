@@ -46,8 +46,9 @@ export async function runGenerate(opts: GenerateOpts): Promise<GenerationRecord[
     let status: SampleStatus
     let raw = ''
     let svg: string | null = null
+    let finishReason: string | undefined
     try {
-      raw = await client.chat({
+      const res = await client.chat({
         model: model.slug,
         messages: [
           { role: 'system', content: suite.system },
@@ -55,6 +56,8 @@ export async function runGenerate(opts: GenerateOpts): Promise<GenerationRecord[
         ],
         temperature: TEMPERATURE,
       })
+      raw = res.content
+      finishReason = res.finishReason
       svg = extractSvg(raw)
       status = svg ? 'ok' : REFUSAL_RE.test(raw) ? 'refusal' : 'no-svg'
     } catch (err) {
@@ -73,6 +76,7 @@ export async function runGenerate(opts: GenerateOpts): Promise<GenerationRecord[
       temperature: TEMPERATURE,
       rawPath: paths.raw,
       ...(svg ? { svgPath: paths.svg } : {}),
+      ...(finishReason ? { finishReason } : {}),
     }
     writeFileSync(ensureDirFor(runDir, paths.record), JSON.stringify(record, null, 2))
     log(`${model.slug} ${prompt.id} #${sample}: ${status}`)

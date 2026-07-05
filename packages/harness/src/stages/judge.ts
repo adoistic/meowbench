@@ -103,11 +103,11 @@ export async function runJudge(opts: JudgeOpts): Promise<number> {
 
     const judgments: Judgment[] = []
     for (const judgeSlug of judgeSlugs) {
-      const reply = await client.chat({
+      const reply = (await client.chat({
         model: judgeSlug,
         messages: [{ role: 'user', content: judgeUserContent(prompt.user, png, svg) }],
         temperature: 0,
-      })
+      })).content
       const scores = parseJudgeReply(reply)
       if (scores) judgments.push({ judgeSlug, scores })
       else log(`judge ${judgeSlug} gave unparseable reply for ${sampleKey(r)}`)
