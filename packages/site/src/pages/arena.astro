@@ -13,14 +13,21 @@ const manifest = Object.fromEntries(
     ])
     .filter(([, list]) => new Set((list as { model: string }[]).map((f) => f.model)).size >= 2),
 )
+const promptText = Object.fromEntries(run.prompts.map((p) => [p.id, p.user]))
 const voteApi = import.meta.env.PUBLIC_VOTE_API ?? ''
 ---
 <Base title="Arena" current="/arena/">
   <h1 style="margin-top: 1.5rem; text-align: center;">CAT FIGHT</h1>
-  <p class="pixel" style="text-align: center; color: var(--mint);">two cats. same assignment. <span class="blink">CHOOSE YOUR FIGHTER</span></p>
+  <p class="pixel" style="text-align: center; color: var(--mint); max-width: 42rem; margin: 0.5rem auto 0; line-height: 1.7;">
+    two AI models got the <span style="color: var(--yellow);">same</span> cat-drawing assignment. you don't know which models — just pick the better cat. your votes build the crowd score (an Elo rating), kept separate from the judges' meowscore.
+  </p>
+  <p class="pixel" style="text-align: center; margin: 0.6rem 0 0;"><span class="blink" style="color: var(--pink);">▸ CHOOSE YOUR FIGHTER ◂</span></p>
 
   <div id="arena-stage" style="display: none;">
-    <p class="pixel dim" id="arena-prompt" style="text-align: center;"></p>
+    <div class="panel" style="text-align: center; margin-top: 1.2rem; padding: 0.9rem 1.2rem;">
+      <div class="pixel dim" style="font-size: 0.7rem; letter-spacing: 0.12em;">BOTH CATS WERE ASKED TO DRAW</div>
+      <div class="pixel" id="arena-prompt" style="color: var(--yellow); font-size: 1.05rem; margin-top: 0.35rem;"></div>
+    </div>
     <div style="display: grid; grid-template-columns: 1fr auto 1fr; gap: 1rem; align-items: center; margin-top: 1rem;">
       <button class="cat-card" id="fighter-a" style="cursor: pointer;"><img alt="fighter A" /></button>
       <span class="pixel" style="color: var(--pink); font-size: 1.4rem; text-shadow: var(--glow-pink);">VS</span>
@@ -43,9 +50,11 @@ const voteApi = import.meta.env.PUBLIC_VOTE_API ?? ''
   </div>
 
   <script type="application/json" id="fighter-manifest" set:html={JSON.stringify(manifest)} />
+  <script type="application/json" id="prompt-texts" set:html={JSON.stringify(promptText)} />
   <script type="application/json" id="vote-api" set:html={JSON.stringify(voteApi)} />
   <script>
     const manifest = JSON.parse(document.getElementById('fighter-manifest')!.textContent!) as Record<string, { id: string; model: string; name: string; svg: string }[]>
+    const promptTexts = JSON.parse(document.getElementById('prompt-texts')!.textContent!) as Record<string, string>
     const VOTE_API = JSON.parse(document.getElementById('vote-api')!.textContent!) as string
     const stage = document.getElementById('arena-stage')!
     const offline = document.getElementById('arena-offline')!
@@ -67,7 +76,7 @@ const voteApi = import.meta.env.PUBLIC_VOTE_API ?? ''
       while (b.model === a.model && guard++ < 50) b = pool[Math.floor(Math.random() * pool.length)]
       if (b.model === a.model) return pick()
       current = { promptId, a, b }
-      promptEl.textContent = `assignment: ${promptId}`
+      promptEl.textContent = `“${promptTexts[promptId] ?? promptId}”`
       ;(btnA.querySelector('img') as HTMLImageElement).src = a.svg
       ;(btnB.querySelector('img') as HTMLImageElement).src = b.svg
       result.style.display = 'none'
