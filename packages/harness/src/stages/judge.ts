@@ -107,7 +107,6 @@ export async function runJudge(opts: JudgeOpts): Promise<number> {
         model: judgeSlug,
         messages: [{ role: 'user', content: judgeUserContent(prompt.user, png, svg) }],
         temperature: 0,
-        maxTokens: 300,
       })
       const scores = parseJudgeReply(reply)
       if (scores) judgments.push({ judgeSlug, scores })

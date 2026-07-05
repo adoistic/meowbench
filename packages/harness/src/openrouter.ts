@@ -11,7 +11,6 @@ export interface ChatRequest {
   model: string
   messages: ChatMessage[]
   temperature?: number
-  maxTokens?: number
 }
 
 export interface ChatClient {
@@ -47,7 +46,6 @@ export class OpenRouterClient implements ChatClient {
             model: req.model,
             messages: req.messages,
             temperature: req.temperature,
-            max_tokens: req.maxTokens,
           }),
           signal: AbortSignal.timeout(this.opts.timeoutMs ?? 240_000),
         })

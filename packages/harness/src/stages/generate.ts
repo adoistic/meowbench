@@ -54,7 +54,6 @@ export async function runGenerate(opts: GenerateOpts): Promise<GenerationRecord[
           { role: 'user', content: prompt.user },
         ],
         temperature: TEMPERATURE,
-        maxTokens: 8192,
       })
       svg = extractSvg(raw)
       status = svg ? 'ok' : REFUSAL_RE.test(raw) ? 'refusal' : 'no-svg'
