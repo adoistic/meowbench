@@ -87,6 +87,20 @@ test('every page ships brand meta, icons, and the sound toggle', () => {
   expect(readFileSync(join(SITE, 'dist', 'og', 'meowbench-og.png')).length).toBeLessThan(300_000)
 })
 
+test('view transitions keep the audio engine alive across navigation', () => {
+  // ClientRouter enables SPA navigation so the AudioContext (and running music)
+  // survives page changes instead of restarting on every load.
+  expect(html).toContain('astro-view-transitions-enabled')
+  // the sound toggle persists across the swap so its state/animation don't flash
+  expect(html).toMatch(/id="sound-toggle"[^>]*data-astro-transition-persist/)
+  // page scripts must re-wire on astro:page-load, or they'd break on back-nav
+  const js = readdirSync(join(SITE, 'dist', '_astro'))
+    .filter((f) => f.endsWith('.js'))
+    .map((f) => readFileSync(join(SITE, 'dist', '_astro', f), 'utf8'))
+    .join('')
+  expect(js).toContain('astro:page-load')
+})
+
 test('methodology documents the full protocol', () => {
   const m = readFileSync(join(SITE, 'dist', 'methodology', 'index.html'), 'utf8')
   for (const s of ['meowscore', 'K=32', 'OpenRouter', 'resvg', 'prompt_fidelity', 'rate limit']) {

@@ -4,6 +4,7 @@ import '@fontsource/silkscreen'
 import '@fontsource/rubik'
 import '@fontsource/rubik/500.css'
 import '../styles/arcade.css'
+import { ClientRouter } from 'astro:transitions'
 
 interface Props {
   title: string
@@ -68,6 +69,7 @@ const nav = [
     <meta name="twitter:title" content={fullTitle} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
+    <ClientRouter />
   </head>
   <body>
     <header class="site-header">
@@ -82,7 +84,7 @@ const nav = [
             </a>
           ))}
         </div>
-        <button id="sound-toggle" class="sound-toggle" aria-pressed="false" title="8-bit sound: off" hidden>
+        <button id="sound-toggle" class="sound-toggle" aria-pressed="false" title="8-bit sound: off" transition:persist hidden>
           <span class="st-ico" aria-hidden="true">♪</span>
           <span class="st-label">SOUND</span>
           <span class="st-state">OFF</span>

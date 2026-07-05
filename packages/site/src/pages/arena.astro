@@ -53,7 +53,13 @@ const voteApi = import.meta.env.PUBLIC_VOTE_API ?? ''
   <script type="application/json" id="prompt-texts" set:html={JSON.stringify(promptText)} />
   <script type="application/json" id="vote-api" set:html={JSON.stringify(voteApi)} />
   <script>
-    const manifest = JSON.parse(document.getElementById('fighter-manifest')!.textContent!) as Record<string, { id: string; model: string; name: string; svg: string }[]>
+    // Re-runs on first load and after every ClientRouter navigation. All state
+    // and listeners are local to this page's fresh DOM, so re-initialising on
+    // return to the arena is clean — no globals to leak.
+    function initArena() {
+    const manifestEl = document.getElementById('fighter-manifest')
+    if (!manifestEl) return // not on the arena page after this navigation
+    const manifest = JSON.parse(manifestEl.textContent!) as Record<string, { id: string; model: string; name: string; svg: string }[]>
     const promptTexts = JSON.parse(document.getElementById('prompt-texts')!.textContent!) as Record<string, string>
     const VOTE_API = JSON.parse(document.getElementById('vote-api')!.textContent!) as string
     const stage = document.getElementById('arena-stage')!
@@ -139,5 +145,8 @@ const voteApi = import.meta.env.PUBLIC_VOTE_API ?? ''
     } else {
       pick()
     }
+    }
+
+    document.addEventListener('astro:page-load', initArena)
   </script>
 </Base>

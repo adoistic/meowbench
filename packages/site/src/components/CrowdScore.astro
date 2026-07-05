@@ -3,8 +3,13 @@ const voteApi = import.meta.env.PUBLIC_VOTE_API ?? ''
 ---
 <script type="application/json" id="crowd-api" set:html={JSON.stringify(voteApi)} />
 <script>
-  const api = JSON.parse(document.getElementById('crowd-api')!.textContent!) as string
-  if (api) {
+  // Runs on first load and after every ClientRouter navigation back to a page
+  // with a crowd column. Fetches live standings and fills the cells.
+  function loadCrowd() {
+    const apiEl = document.getElementById('crowd-api')
+    if (!apiEl || !document.querySelector('[data-crowd]')) return // no crowd column here
+    const api = JSON.parse(apiEl.textContent!) as string
+    if (!api) return
     const ctrl = new AbortController()
     const timer = setTimeout(() => ctrl.abort(), 4000)
     fetch(`${api}/api/standings`, { signal: ctrl.signal })
@@ -18,4 +23,5 @@ const voteApi = import.meta.env.PUBLIC_VOTE_API ?? ''
       })
       .catch(() => {/* column stays "—" — the crowd is asleep */})
   }
+  document.addEventListener('astro:page-load', loadCrowd)
 </script>

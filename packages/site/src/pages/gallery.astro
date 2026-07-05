@@ -101,7 +101,12 @@ const models = run.entries
   </div>
 
   <script>
-    const grid = document.getElementById('gallery-grid')!
+    // Re-runs on first load and after every ClientRouter navigation, binding to
+    // whatever gallery DOM is on the page now. Everything here is page-local; the
+    // one document-level listener (Escape) is registered once and guarded.
+    function initGallery() {
+    const grid = document.getElementById('gallery-grid')
+    if (!grid) return // not on the gallery page after this navigation
     const cards = [...grid.querySelectorAll<HTMLAnchorElement>('.cat-card')]
     const form = document.getElementById('gallery-filters') as HTMLFormElement
     const search = document.getElementById('f-search') as HTMLInputElement
@@ -167,6 +172,20 @@ const models = run.entries
     const closeQv = () => qv.classList.remove('open')
     document.getElementById('qv-close')!.addEventListener('click', (e) => { e.preventDefault(); closeQv() })
     qv.addEventListener('click', (e) => { if (e.target === qv) closeQv() })
-    addEventListener('keydown', (e) => { if (e.key === 'Escape') closeQv() })
+    }
+
+    // Escape closes the quick-view. Registered once on the persistent document
+    // (guarded so repeat gallery visits don't stack listeners); it no-ops when
+    // no dialog is open or we're not on the gallery.
+    const w = window as unknown as { __galleryEsc?: boolean }
+    if (!w.__galleryEsc) {
+      w.__galleryEsc = true
+      document.addEventListener('keydown', (e) => {
+        if (e.key !== 'Escape') return
+        document.getElementById('quick-view')?.classList.remove('open')
+      })
+    }
+
+    document.addEventListener('astro:page-load', initGallery)
   </script>
 </Base>

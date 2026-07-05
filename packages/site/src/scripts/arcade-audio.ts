@@ -205,10 +205,18 @@ function sweep(from: number, to: number, dur: number) {
 }
 
 // ---- toggle + wiring ----
-const btn = document.getElementById('sound-toggle') as HTMLButtonElement | null
+// With Astro's ClientRouter, navigation swaps the DOM but this module is
+// evaluated only once — so the audio engine above (context, scheduler, buses)
+// survives page changes and the music keeps playing. The toggle button and
+// arena hooks, however, are fresh elements on every page, so they get re-wired
+// on `astro:page-load` (which also fires on the very first load). Always query
+// the button live rather than caching a stale reference.
+const toggle = () => document.getElementById('sound-toggle') as HTMLButtonElement | null
 
 function setUI(state: boolean) {
+  const btn = toggle()
   if (!btn) return
+  btn.hidden = false
   btn.setAttribute('aria-pressed', String(state))
   const s = btn.querySelector('.st-state')
   if (s) s.textContent = state ? 'ON' : 'OFF'
@@ -232,53 +240,75 @@ function disable() {
   setTimeout(() => void ctx?.suspend(), 300)
 }
 
-if (btn) {
-  btn.hidden = false // rendered hidden: the toggle is meaningless without JS
-  let lastToggle = 0
-  btn.addEventListener('click', () => {
-    // debounce: synthetic double-fires (and trigger-happy double-clicks)
-    // shouldn't flip the switch twice
-    const now = performance.now()
-    if (now - lastToggle < 250) return
-    lastToggle = now
-    if (prefOn() && running()) disable()
-    else void enable(true)
-  })
-}
-
 // tiny debug handle — also a devtools easter egg for the curious
 ;(window as unknown as Record<string, unknown>).__meow = {
   sound: () => (running() ? 'on' : 'off'),
   music: () => (musicTimer ? 'playing' : 'stopped'),
+  // continuity probes: both keep climbing while the engine lives, and reset to
+  // ~0 only if the AudioContext is torn down and rebuilt (a full page reload).
+  step: () => step,
+  t: () => ctx?.currentTime ?? -1,
 }
 
-// Returning visitor with sound on: a fresh page load usually starts the
-// context suspended (autoplay policy), so arm a one-time gesture to resume.
-if (prefOn()) {
-  setUI(true)
-  const arm = () => void enable(false)
-  const c = ensureCtx()
-  if (c.state === 'running') startMusic()
-  else {
-    document.addEventListener('pointerdown', arm, { once: true })
-    document.addEventListener('keydown', arm, { once: true })
-  }
-}
+// ---- listeners that live on the document (persist across navigation) ----
+// Attached once at module eval. `document` survives ClientRouter swaps, so
+// these must NOT be re-added per page or they'd stack up.
 
-// Delegated click sounds. pointerdown feels tighter than click.
+let lastToggle = 0
+// One delegated handler on the persistent document covers the toggle, the
+// autoplay-resume, and all the click SFX — so nothing needs rebinding when the
+// body is swapped by ClientRouter.
 document.addEventListener('pointerdown', (e) => {
-  if (!running() || !prefOn()) return
   const el = e.target as HTMLElement
-  if (el.closest('#sound-toggle')) return // toggle plays its own sweep
+  if (el.closest('#sound-toggle')) {
+    const now = performance.now()
+    if (now - lastToggle < 250) return // debounce synthetic/double fires
+    lastToggle = now
+    // The switch tracks the *preference*, not the context state. A returning
+    // visitor lands with sound-on but a suspended context (autoplay policy);
+    // clicking the ON button must turn it OFF, not resume it.
+    if (prefOn()) disable()
+    else void enable(true)
+    return // the toggle plays its own sweep
+  }
+  if (!prefOn()) return
+  // Sound is on but the context may still be suspended from a fresh load —
+  // this first gesture resumes it (that click just won't get an SFX).
+  if (!running()) return void enable(false)
   if (el.closest('#fighter-a, #fighter-b')) return coin()
   if (el.closest('.cat-card')) return select()
   if (el.closest('a, button, summary, .pill, .model-row, select, input')) return blip()
 })
 
-// Arena: a little fanfare when the round result appears.
-const arenaResult = document.getElementById('arena-result')
-if (arenaResult) {
-  new MutationObserver(() => {
-    if (arenaResult.style.display !== 'none') win()
-  }).observe(arenaResult, { attributes: true, attributeFilter: ['style'] })
+// Keyboard-only visitors get the same one-time resume when sound is on.
+document.addEventListener('keydown', () => {
+  if (prefOn() && !running()) void enable(false)
+})
+
+// ---- per-page wiring: runs on first load and after every navigation ----
+let arenaObserver: MutationObserver | null = null
+
+function wirePage() {
+  setUI(prefOn()) // reflect current state on this page's fresh toggle button
+
+  // Arena fanfare when a round result appears. Re-observe the new element.
+  arenaObserver?.disconnect()
+  arenaObserver = null
+  const arenaResult = document.getElementById('arena-result')
+  if (arenaResult) {
+    arenaObserver = new MutationObserver(() => {
+      if (arenaResult.style.display !== 'none') win()
+    })
+    arenaObserver.observe(arenaResult, { attributes: true, attributeFilter: ['style'] })
+  }
+}
+
+document.addEventListener('astro:page-load', wirePage)
+
+// A returning visitor with sound on can't have music auto-start (autoplay
+// policy) — the first pointer/key gesture above resumes it. If the context is
+// somehow already running (e.g. a soft SPA re-entry), start the loop now.
+if (prefOn()) {
+  const c = ensureCtx()
+  if (c.state === 'running') startMusic()
 }
