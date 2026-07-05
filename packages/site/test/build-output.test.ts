@@ -87,6 +87,37 @@ test('every page ships brand meta, icons, and the sound toggle', () => {
   expect(readFileSync(join(SITE, 'dist', 'og', 'meowbench-og.png')).length).toBeLessThan(300_000)
 })
 
+test('the site is generative-AI ready: robots.txt, llms.txt, sitemap, JSON-LD', () => {
+  const robots = readFileSync(join(SITE, 'dist', 'robots.txt'), 'utf8')
+  expect(robots).toContain('User-agent: GPTBot')
+  expect(robots).toContain('User-agent: ClaudeBot')
+  expect(robots).toContain('User-agent: PerplexityBot')
+  expect(robots).not.toContain('Disallow') // no bars — everything is welcome
+  expect(robots).toContain('Sitemap: https://meowbench.com/sitemap.xml')
+
+  const llms = readFileSync(join(SITE, 'dist', 'llms.txt'), 'utf8')
+  expect(llms).toContain('# meowbench')
+  expect(llms).toContain('GPT-5.5') // real leaderboard inline
+  expect(llms).toContain('https://meowbench.com/methodology/')
+
+  const sitemap = readFileSync(join(SITE, 'dist', 'sitemap.xml'), 'utf8')
+  expect(sitemap).toContain('<loc>https://meowbench.com/</loc>')
+  expect(sitemap).toContain('/models/openai__gpt-5.5/')
+  expect((sitemap.match(/<loc>/g) ?? []).length).toBeGreaterThanOrEqual(34)
+
+  expect(html).toContain('"@type":"Dataset"') // schema.org JSON-LD on the home page
+})
+
+test('footer credits Adnan and the star nudge is bundled', () => {
+  expect(html).toMatch(/by <a href="https:\/\/github\.com\/adoistic">Adnan<\/a>/)
+  const js = readdirSync(join(SITE, 'dist', '_astro'))
+    .filter((f) => f.endsWith('.js'))
+    .map((f) => readFileSync(join(SITE, 'dist', '_astro', f), 'utf8'))
+    .join('')
+  expect(js).toContain('star-nudge')
+  expect(js).toContain('meow-star-done')
+})
+
 test('paw cursors and the neko ship on every page', () => {
   for (const f of ['cursors/paw.png', 'cursors/paw-point.png']) {
     expect(existsSync(join(SITE, 'dist', f)), f).toBe(true)

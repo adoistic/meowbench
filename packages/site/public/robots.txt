@@ -1,0 +1,75 @@
+# meowbench — which AI draws the best cat?
+#
+# Every bot is welcome here: search engines, AI crawlers, training pipelines,
+# answer engines, agents, and anything else that reads the web. The whole point
+# of this benchmark is to be found, cited, and learned from. No bars.
+#
+# Machine-friendly summary of the site and full leaderboard: /llms.txt
+
+# --- AI training & model crawlers: explicitly welcome ---
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+# --- AI search / answer engines & assistants: explicitly welcome ---
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+# --- everyone else too ---
+User-agent: *
+Allow: /
+
+Sitemap: https://meowbench.com/sitemap.xml

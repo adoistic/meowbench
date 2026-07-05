@@ -347,6 +347,67 @@ summary:focus-visible {
   #meow-cat { display: none; }
 }
 
+/* ---- star nudge: the neko asks nicely, once in a while ---- */
+.star-nudge {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 996;
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+  max-width: 21rem;
+  background: var(--panel);
+  border: 2px solid var(--yellow);
+  border-radius: 12px;
+  padding: 0.9rem 2.2rem 0.9rem 1rem;
+  box-shadow: 0 0 14px rgba(255, 222, 89, 0.28), 0 18px 40px rgba(0, 0, 0, 0.55);
+  transform: translateY(130%);
+  opacity: 0;
+  transition: transform 0.25s ease-out, opacity 0.25s ease-out;
+}
+.star-nudge.in { transform: translateY(0); opacity: 1; }
+.star-nudge .sn-cat { width: 48px; height: 48px; image-rendering: pixelated; flex-shrink: 0; }
+.star-nudge .sn-title { font-family: var(--font-pixel); color: var(--yellow); font-size: 0.85rem; margin: 0; }
+.star-nudge .sn-text { font-family: var(--font-pixel); color: var(--ink-dim); font-size: 0.68rem; line-height: 1.6; margin: 0.25rem 0 0; }
+.star-nudge .sn-actions { display: flex; align-items: center; gap: 0.9rem; margin: 0.7rem 0 0; }
+.star-nudge .sn-star { font-size: 0.62rem; padding: 0.5rem 0.8rem; }
+.star-nudge .sn-later {
+  font-family: var(--font-pixel);
+  font-size: 0.65rem;
+  color: var(--ink-dim);
+  background: none;
+  border: 0;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.star-nudge .sn-later:hover { color: var(--mint); }
+.star-nudge .sn-x {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.5rem;
+  font-family: var(--font-pixel);
+  font-size: 0.8rem;
+  color: var(--ink-dim);
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 0.2rem;
+}
+.star-nudge .sn-x:hover { color: var(--pink); }
+@media (max-width: 720px) {
+  /* bottom sheet riding above the arcade deck */
+  .star-nudge {
+    left: 0.75rem;
+    right: 0.75rem;
+    bottom: calc(92px + env(safe-area-inset-bottom));
+    max-width: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .star-nudge { transition: none; }
+}
+
 /* 8-bit sound toggle — the cabinet's volume knob */
 .sound-toggle {
   font-family: var(--font-pixel);

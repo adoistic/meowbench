@@ -4,8 +4,29 @@ import LeaderboardTable from '../components/LeaderboardTable.astro'
 import CrowdScore from '../components/CrowdScore.astro'
 import { loadRun } from '../lib/run-data'
 const run = loadRun()
+
+// schema.org Dataset — machine-readable description of the benchmark for
+// search and AI systems (pairs with /llms.txt and the wide-open robots.txt)
+const site = Astro.site ?? new URL('https://meowbench.com')
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Dataset',
+  name: 'meowbench',
+  description: `Which AI draws the best cat? ${run.entries.length} models (2023-2026) each drew 6 cat assignments as SVG code, 4 attempts each, scored by a 3-model vision-judge panel. Run ${run.runId}: ${run.allSamples.length} samples, all prompts, judgments, and scores included.`,
+  url: site.href,
+  sameAs: 'https://github.com/adoistic/meowbench',
+  license: 'https://github.com/adoistic/meowbench/blob/main/LICENSE',
+  isAccessibleForFree: true,
+  creator: { '@type': 'Person', name: 'Adnan', url: 'https://github.com/adoistic' },
+  distribution: {
+    '@type': 'DataDownload',
+    encodingFormat: 'application/json',
+    contentUrl: `https://github.com/adoistic/meowbench/tree/main/runs/${run.runId}`,
+  },
+}
 ---
 <Base title="Leaderboard" current="/">
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   <section class="marquee" style="text-align: center; margin-top: 1rem;">
     <h1>WHICH AI DRAWS THE BEST CAT?</h1>
     <p class="pixel" style="color: var(--mint); margin: 1rem 0 0.4rem;">
