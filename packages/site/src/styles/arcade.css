@@ -208,12 +208,78 @@ summary:focus-visible {
 .gameover blockquote { font-family: var(--font-pixel); font-size: 0.85rem; color: var(--mint); background: #06110c; border: 1px solid #1d4030; border-radius: 6px; padding: 0.9rem; margin: 0.8rem 0 0; }
 .gameover blockquote::before { content: '> '; color: var(--ink-dim); }
 
-/* Nav + footer */
-.site-nav { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 1.4rem; row-gap: 0.5rem; padding: 1.2rem 1.25rem; max-width: 68rem; margin: 0 auto; }
-.site-nav .logo { font-family: var(--font-marquee); font-size: 1.5rem; color: var(--yellow); text-shadow: var(--glow-yellow); text-decoration: none; }
-.site-nav a:not(.logo) { font-family: var(--font-pixel); font-size: 0.85rem; color: var(--ink); text-decoration: none; }
-.site-nav a:not(.logo):hover { color: var(--mint); }
-.site-nav a[aria-current='page'] { color: var(--pink); }
+/* Nav — cabinet header on desktop, control deck on mobile */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 980;
+  background: rgba(18, 10, 38, 0.88);
+  backdrop-filter: blur(6px);
+  border-bottom: 2px solid var(--panel-edge);
+}
+.site-nav { display: flex; align-items: center; gap: 1.4rem; padding: 0.85rem 1.25rem; max-width: 68rem; margin: 0 auto; }
+.site-nav .logo { font-family: var(--font-marquee); font-size: 1.4rem; color: var(--yellow); text-shadow: var(--glow-yellow); text-decoration: none; line-height: 1; }
+.site-nav .links { margin-left: auto; display: flex; align-items: center; gap: 1.5rem; }
+.site-nav .links a {
+  font-family: var(--font-pixel);
+  font-size: 0.82rem;
+  color: var(--ink);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.25rem 0;
+  border-bottom: 2px solid transparent;
+}
+.site-nav .links a:hover { color: var(--mint); }
+.site-nav .links a[aria-current='page'] { color: var(--pink); border-bottom-color: var(--pink); }
+.site-nav .nav-ico { display: none; }
+.site-nav .nav-short { display: none; }
+
+@media (max-width: 720px) {
+  /* backdrop-filter creates a containing block for fixed descendants — it would
+     pin the bottom deck to the header instead of the viewport. Solid bg instead. */
+  .site-header { backdrop-filter: none; background: rgba(18, 10, 38, 0.96); }
+  .site-nav { justify-content: center; padding: 0.75rem 1rem; }
+  .site-nav .logo { font-size: 1.5rem; }
+  /* Links become a fixed bottom control deck — five arcade buttons, thumb height */
+  .site-nav .links {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 985;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+    background: linear-gradient(#251753, var(--panel) 55%);
+    border-top: 2px solid var(--panel-edge);
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.55);
+    padding: 0.5rem 0.35rem calc(0.5rem + env(safe-area-inset-bottom));
+  }
+  .site-nav .links a {
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    font-size: 0.55rem;
+    letter-spacing: 0.02em;
+    color: var(--ink-dim);
+    border-bottom: 0;
+    padding: 0.3rem 0;
+    border-radius: 8px;
+  }
+  .site-nav .links a .nav-ico { display: block; width: 17px; height: 17px; }
+  .site-nav .nav-full { display: none; }
+  .site-nav .nav-short { display: block; }
+  .site-nav .links a[aria-current='page'] {
+    color: var(--yellow);
+    text-shadow: var(--glow-yellow);
+  }
+  .site-nav .links a[aria-current='page'] .nav-ico { filter: drop-shadow(0 0 5px rgba(255, 222, 89, 0.8)); }
+  /* keep content and footer clear of the deck */
+  body { padding-bottom: 84px; }
+}
 .site-footer { max-width: 68rem; margin: 4rem auto 0; padding: 1.5rem 1.25rem 2.5rem; border-top: 2px dashed var(--panel-edge); font-family: var(--font-pixel); font-size: 0.75rem; color: var(--ink-dim); display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; }
 
 @media (max-width: 640px) {

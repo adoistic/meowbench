@@ -11,12 +11,27 @@ interface Props {
   current?: string
 }
 const { title, description = 'Which AI draws the best cat as an SVG? An unreasonably rigorous benchmark.', current = '' } = Astro.props
+
+// 12x12 pixel icons, drawn as rects so they match the Silkscreen aesthetic.
+const ICONS: Record<string, string> = {
+  trophy:
+    '<rect x="1" y="1" width="10" height="1"/><rect x="2" y="2" width="8" height="4"/><rect x="0" y="2" width="1" height="3"/><rect x="11" y="2" width="1" height="3"/><rect x="5" y="6" width="2" height="3"/><rect x="3" y="9" width="6" height="1"/><rect x="2" y="10" width="8" height="2"/>',
+  grid:
+    '<rect x="1" y="1" width="4" height="4"/><rect x="7" y="1" width="4" height="4"/><rect x="1" y="7" width="4" height="4"/><rect x="7" y="7" width="4" height="4"/>',
+  joystick:
+    '<rect x="4" y="0" width="4" height="1"/><rect x="3" y="1" width="6" height="2"/><rect x="4" y="3" width="4" height="1"/><rect x="5" y="4" width="2" height="4"/><rect x="2" y="8" width="8" height="2"/><rect x="1" y="10" width="10" height="2"/>',
+  skull:
+    '<rect x="2" y="0" width="8" height="2"/><rect x="1" y="2" width="2" height="2"/><rect x="5" y="2" width="2" height="2"/><rect x="9" y="2" width="2" height="2"/><rect x="1" y="4" width="10" height="2"/><rect x="2" y="6" width="8" height="1"/><rect x="3" y="7" width="1" height="2"/><rect x="5" y="7" width="1" height="2"/><rect x="7" y="7" width="1" height="2"/>',
+  doc:
+    '<rect x="2" y="0" width="8" height="1"/><rect x="2" y="11" width="8" height="1"/><rect x="2" y="1" width="1" height="10"/><rect x="9" y="1" width="1" height="10"/><rect x="4" y="3" width="4" height="1"/><rect x="4" y="5" width="4" height="1"/><rect x="4" y="7" width="4" height="1"/>',
+}
+
 const nav = [
-  ['/', 'leaderboard'],
-  ['/gallery/', 'gallery'],
-  ['/arena/', 'arena'],
-  ['/shame/', 'hall of shame'],
-  ['/methodology/', 'methodology'],
+  { href: '/', label: 'leaderboard', short: 'scores', icon: 'trophy' },
+  { href: '/gallery/', label: 'gallery', short: 'gallery', icon: 'grid' },
+  { href: '/arena/', label: 'arena', short: 'arena', icon: 'joystick' },
+  { href: '/shame/', label: 'hall of shame', short: 'shame', icon: 'skull' },
+  { href: '/methodology/', label: 'methodology', short: 'method', icon: 'doc' },
 ]
 ---
 <!doctype html>
@@ -28,12 +43,20 @@ const nav = [
     <title>{title} · meowbench</title>
   </head>
   <body>
-    <nav class="site-nav">
-      <a class="logo" href="/">meowbench</a>
-      {nav.map(([href, label]) => (
-        <a href={href} aria-current={current === href ? 'page' : undefined}>{label}</a>
-      ))}
-    </nav>
+    <header class="site-header">
+      <nav class="site-nav" aria-label="main">
+        <a class="logo" href="/">meowbench</a>
+        <div class="links">
+          {nav.map((item) => (
+            <a href={item.href} aria-current={current === item.href ? 'page' : undefined}>
+              <svg class="nav-ico" viewBox="0 0 12 12" width="14" height="14" fill="currentColor" shape-rendering="crispEdges" aria-hidden="true" set:html={ICONS[item.icon]} />
+              <span class="nav-full">{item.label}</span>
+              <span class="nav-short">{item.short}</span>
+            </a>
+          ))}
+        </div>
+      </nav>
+    </header>
     <main>
       <slot />
     </main>
