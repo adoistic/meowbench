@@ -202,10 +202,13 @@ summary:focus-visible {
 
 /* Gallery — sticky control panel + dense grid */
 .gallery-layout { display: grid; grid-template-columns: 250px 1fr; gap: 1.4rem; align-items: start; margin-top: 1.2rem; }
+/* Desktop: the drawer is the sticky grid item. `align-items: start` keeps it at
+   its content height, and its containing block (the grid) is as tall as the long
+   cat-grid, so it has room to travel and pins under the header. Mobile turns it
+   back into a static collapsible below. */
+.filter-drawer { position: sticky; top: 74px; }
 .filter-drawer summary { display: none; }
 .filter-panel {
-  position: sticky;
-  top: 74px;
   background: var(--panel);
   border: 2px solid var(--panel-edge);
   border-radius: 10px;
@@ -261,6 +264,8 @@ summary:focus-visible {
 
 @media (max-width: 900px) {
   .gallery-layout { grid-template-columns: 1fr; }
+  /* drawer collapses normally on mobile — no sticky */
+  .filter-drawer { position: static; }
   .filter-drawer summary {
     display: block;
     font-size: 0.85rem;
