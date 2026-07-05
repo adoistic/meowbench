@@ -34,12 +34,17 @@ test('model pages exist with all samples and lightboxes', () => {
   expect(model).toMatch(/&#x3C;<\/span><span[^>]*>svg/)
 })
 
-test('gallery groups every valid cat by prompt', () => {
+test('gallery ships the filter panel and a card per valid cat', () => {
   const gallery = readFileSync(join(SITE, 'dist', 'gallery', 'index.html'), 'utf8')
+  expect(gallery).toContain('id="gallery-filters"')
+  expect(gallery).toContain('id="f-search"')
   for (const p of ['minimal', 'realistic', 'action', 'style', 'constraint', 'animation']) {
-    expect(gallery).toContain(`id="${p}"`)
+    expect(gallery).toContain(`data-prompt="${p}"`)
   }
   expect((gallery.match(/class="cat-card"/g) ?? []).length).toBeGreaterThanOrEqual(200)
+  // cards deep-link to model pages (no-JS fallback) instead of embedding lightboxes
+  expect((gallery.match(/class="lightbox"/g) ?? []).length).toBe(1) // just the shared quick-view
+  expect(gallery).not.toContain('astro-code') // no Shiki blocks on the gallery anymore
 })
 
 test('hall of shame shows game-over cards and refusal quotes', () => {

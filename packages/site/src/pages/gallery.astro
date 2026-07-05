@@ -1,27 +1,172 @@
 ---
 import Base from '../layouts/Base.astro'
-import CatCard from '../components/CatCard.astro'
 import { loadRun } from '../lib/run-data'
 import { modelDir } from '../lib/slug'
+
 const run = loadRun()
-const byPrompt = run.prompts.map((p) => ({
-  prompt: p,
-  samples: run.allSamples.filter((s) => s.promptId === p.id && s.valid && s.svgUrl).sort((a, b) => b.score - a.score),
-}))
+const cats = run.allSamples
+  .filter((s) => s.valid && s.svgUrl)
+  .sort((a, b) => b.score - a.score)
+
+const promptCounts = new Map<string, number>()
+const modelCounts = new Map<string, number>()
+for (const c of cats) {
+  promptCounts.set(c.promptId, (promptCounts.get(c.promptId) ?? 0) + 1)
+  modelCounts.set(c.modelSlug, (modelCounts.get(c.modelSlug) ?? 0) + 1)
+}
+const models = run.entries
+  .filter((e) => modelCounts.has(e.slug))
+  .map((e) => ({ slug: e.slug, name: e.name, count: modelCounts.get(e.slug)! }))
 ---
 <Base title="Gallery" current="/gallery/">
   <h1 style="margin-top: 1.5rem;">THE GALLERY</h1>
-  <p class="pixel dim">every cat, every attempt. sorted by score. judge for yourself — literally, in the <a href="/arena/">arena</a>.</p>
-  <nav class="pixel" style="display: flex; gap: 1rem; flex-wrap: wrap; font-size: 0.85rem;">
-    {run.prompts.map((p) => <a href={`#${p.id}`}>{p.id}</a>)}
-  </nav>
-  {byPrompt.map(({ prompt, samples }) => (
-    <section id={prompt.id} style="scroll-margin-top: 1rem;">
-      <h2 style="margin-top: 2.4rem;">{prompt.id}</h2>
-      <p class="dim" style="margin-top: -0.5rem;">“{prompt.user}” · {samples.length} survivors</p>
-      <div class="cat-grid">
-        {samples.map((s) => <CatCard sample={s} anchor={`g-${modelDir(s.modelSlug)}-${s.promptId}-${s.sample}`} />)}
+  <p class="pixel dim" style="margin-top: 0.2rem;">
+    every cat from the latest run. click one for its scores.
+  </p>
+
+  <div class="gallery-layout">
+    <details class="filter-drawer" open>
+      <summary class="pixel">FILTERS <span class="dim" id="drawer-count"></span></summary>
+      <form id="gallery-filters" class="filter-panel" autocomplete="off">
+        <label class="f-label" for="f-search">SEARCH</label>
+        <input type="search" id="f-search" placeholder="model name…" />
+
+        <span class="f-label">ASSIGNMENT</span>
+        <div class="pill-row">
+          {run.prompts.map((p) => (
+            <label class="pill" title={p.user}>
+              <input type="checkbox" name="prompt" value={p.id} />
+              <span>{p.id} <i>{promptCounts.get(p.id) ?? 0}</i></span>
+            </label>
+          ))}
+        </div>
+
+        <span class="f-label">MODELS</span>
+        <div class="model-list">
+          {models.map((m) => (
+            <label class="model-row">
+              <input type="checkbox" name="model" value={m.slug} />
+              <span class="mr-name">{m.name}</span>
+              <span class="mr-count">{m.count}</span>
+            </label>
+          ))}
+        </div>
+
+        <label class="f-label" for="f-sort">SORT</label>
+        <select id="f-sort">
+          <option value="score-desc" selected>best first</option>
+          <option value="score-asc">worst first</option>
+          <option value="name">by model</option>
+        </select>
+
+        <p class="pixel" id="f-count" style="color: var(--yellow); font-size: 0.75rem; margin: 1rem 0 0;">
+          showing {cats.length} of {cats.length}
+        </p>
+        <button type="reset" class="btn btn--mint" id="f-reset" style="margin-top: 0.8rem; font-size: 0.75rem; padding: 0.5rem 1rem;">RESET</button>
+        <noscript><p class="pixel dim" style="font-size: 0.7rem; margin-top: 0.8rem;">filters need js. every cat is shown below.</p></noscript>
+      </form>
+    </details>
+
+    <div class="cat-grid cat-grid--gallery" id="gallery-grid">
+      {cats.map((s) => (
+        <a
+          class="cat-card"
+          href={`/models/${modelDir(s.modelSlug)}/#cat-${modelDir(s.modelSlug)}-${s.promptId}-${s.sample}`}
+          data-name={s.modelName.toLowerCase()}
+          data-model={s.modelSlug}
+          data-prompt={s.promptId}
+          data-score={s.score}
+          data-title={`${s.modelName} · ${s.promptId} · attempt ${s.sample}`}
+          data-axes={JSON.stringify(s.axisMedians ?? {})}
+          data-svg={s.svgUrl}
+        >
+          <img src={s.svgUrl} alt={`${s.modelName}, ${s.promptId} attempt ${s.sample}`} loading="lazy" width="360" height="360" />
+          <span class="label"><span class="lbl-model">{s.modelName}</span><span class="score">{s.score.toFixed(1)}</span></span>
+          <span class="label sub"><span>{s.promptId} #{s.sample}</span></span>
+        </a>
+      ))}
+    </div>
+  </div>
+
+  <div class="lightbox" id="quick-view" role="dialog" aria-modal="true" aria-label="cat details">
+    <a class="close" href="#!" id="qv-close">✕ CLOSE</a>
+    <div class="frame" style="max-width: 34rem;">
+      <img id="qv-img" src="" alt="" />
+      <div class="panel" style="margin-top: 1rem;">
+        <p class="pixel" id="qv-title" style="margin: 0 0 0.6rem; color: var(--yellow);"></p>
+        <div class="pixel dim" id="qv-axes" style="display: flex; gap: 1.2rem; flex-wrap: wrap;"></div>
+        <p class="pixel" style="margin: 0.9rem 0 0; font-size: 0.78rem;"><a id="qv-more" href="#">full breakdown + svg source →</a></p>
       </div>
-    </section>
-  ))}
+    </div>
+  </div>
+
+  <script>
+    const grid = document.getElementById('gallery-grid')!
+    const cards = [...grid.querySelectorAll<HTMLAnchorElement>('.cat-card')]
+    const form = document.getElementById('gallery-filters') as HTMLFormElement
+    const search = document.getElementById('f-search') as HTMLInputElement
+    const sort = document.getElementById('f-sort') as HTMLSelectElement
+    const count = document.getElementById('f-count')!
+    const drawerCount = document.getElementById('drawer-count')!
+    const drawer = document.querySelector('.filter-drawer') as HTMLDetailsElement
+
+    // drawer starts closed on small screens
+    if (matchMedia('(max-width: 900px)').matches) drawer.open = false
+
+    function apply() {
+      const q = search.value.trim().toLowerCase()
+      const prompts = new Set([...form.querySelectorAll<HTMLInputElement>('input[name=prompt]:checked')].map((i) => i.value))
+      const models = new Set([...form.querySelectorAll<HTMLInputElement>('input[name=model]:checked')].map((i) => i.value))
+      let shown = 0
+      for (const c of cards) {
+        const ok =
+          (!q || c.dataset.name!.includes(q)) &&
+          (prompts.size === 0 || prompts.has(c.dataset.prompt!)) &&
+          (models.size === 0 || models.has(c.dataset.model!))
+        c.hidden = !ok
+        if (ok) shown++
+      }
+      const order = sort.value
+      const sorted = [...cards].sort((a, b) =>
+        order === 'name'
+          ? a.dataset.name!.localeCompare(b.dataset.name!) || Number(b.dataset.score) - Number(a.dataset.score)
+          : order === 'score-asc'
+            ? Number(a.dataset.score) - Number(b.dataset.score)
+            : Number(b.dataset.score) - Number(a.dataset.score),
+      )
+      grid.append(...sorted)
+      count.textContent = `showing ${shown} of ${cards.length}`
+      drawerCount.textContent = shown === cards.length ? '' : `· ${shown}`
+    }
+    form.addEventListener('input', apply)
+    form.addEventListener('reset', () => setTimeout(apply, 0))
+
+    // quick-view dialog
+    const qv = document.getElementById('quick-view')!
+    const qvImg = document.getElementById('qv-img') as HTMLImageElement
+    const qvTitle = document.getElementById('qv-title')!
+    const qvAxes = document.getElementById('qv-axes')!
+    const qvMore = document.getElementById('qv-more') as HTMLAnchorElement
+
+    grid.addEventListener('click', (e) => {
+      const card = (e.target as HTMLElement).closest<HTMLAnchorElement>('.cat-card')
+      if (!card) return
+      e.preventDefault()
+      qvImg.src = card.dataset.svg!
+      qvTitle.textContent = `${card.dataset.title} · score ${Number(card.dataset.score).toFixed(1)}`
+      qvAxes.replaceChildren(
+        ...Object.entries(JSON.parse(card.dataset.axes || '{}') as Record<string, number>).map(([k, v]) => {
+          const s = document.createElement('span')
+          s.textContent = `${k.replace('_', ' ')}: ${Number(v).toFixed(1)}`
+          return s
+        }),
+      )
+      qvMore.href = card.href
+      qv.classList.add('open')
+    })
+    const closeQv = () => qv.classList.remove('open')
+    document.getElementById('qv-close')!.addEventListener('click', (e) => { e.preventDefault(); closeQv() })
+    qv.addEventListener('click', (e) => { if (e.target === qv) closeQv() })
+    addEventListener('keydown', (e) => { if (e.key === 'Escape') closeQv() })
+  </script>
 </Base>
