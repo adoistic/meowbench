@@ -19,7 +19,7 @@ const voteApi = import.meta.env.PUBLIC_VOTE_API ?? ''
 <Base title="Arena" current="/arena/">
   <h1 style="margin-top: 1.5rem; text-align: center;">CAT FIGHT</h1>
   <p class="pixel" style="text-align: center; color: var(--mint); max-width: 42rem; margin: 0.5rem auto 0; line-height: 1.7;">
-    two AI models got the <span style="color: var(--yellow);">same</span> cat-drawing assignment. you don't know which models — just pick the better cat. your votes build the crowd score (an Elo rating), kept separate from the judges' meowscore.
+    two models, <span style="color: var(--yellow);">one assignment</span>, names hidden. pick the cat you'd rather own. votes feed the crowd score, an Elo rating the judges have no say in.
   </p>
   <p class="pixel" style="text-align: center; margin: 0.6rem 0 0;"><span class="blink" style="color: var(--pink);">▸ CHOOSE YOUR FIGHTER ◂</span></p>
 
@@ -40,13 +40,13 @@ const voteApi = import.meta.env.PUBLIC_VOTE_API ?? ''
   <noscript>
     <div class="gameover" style="margin-top: 2rem; text-align: center;">
       <span class="go-title">ARCADE NEEDS JAVASCRIPT</span>
-      <p class="pixel dim">voting requires js — everything else on this site works without it.</p>
+      <p class="pixel dim">voting needs js. everything else here works without it.</p>
     </div>
   </noscript>
 
   <div id="arena-offline" class="gameover" style="display: none; margin-top: 2rem; text-align: center;">
     <span class="go-title">ARCADE OFFLINE</span>
-    <p class="pixel dim">the vote machine is unplugged. scores are safe. try again later.</p>
+    <p class="pixel dim">the vote machine is unplugged right now. nothing you click here gets counted.</p>
   </div>
 
   <script type="application/json" id="fighter-manifest" set:html={JSON.stringify(manifest)} />
@@ -115,13 +115,13 @@ const voteApi = import.meta.env.PUBLIC_VOTE_API ?? ''
         if (!res.ok) throw new Error(String(res.status))
         const data = (await res.json()) as { winner: { model: string; rating: number }; loser: { model: string; rating: number } }
         renderResult(
-          [span(`WINNER: ${w.name}`, 'win'), span(` — new rating ${data.winner.rating}`)],
+          [span(`WINNER: ${w.name}`, 'win'), span(` · new rating ${data.winner.rating}`)],
           [span(`${l.name} falls to ${data.loser.rating}`, 'dim')],
         )
       } catch {
         renderResult(
           [span(`WINNER: ${w.name}`, 'win')],
-          [span('(vote not recorded — the machine blinked. it happens.)', 'dim')],
+          [span('(vote not recorded. the machine blinked. it happens.)', 'dim')],
         )
       }
       result.style.display = 'block'
