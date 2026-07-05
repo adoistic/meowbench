@@ -1,9 +1,0 @@
-{
-  "modelSlug": "deepseek/deepseek-chat-v3-0324",
-  "promptId": "realistic",
-  "sample": 3,
-  "status": "ok",
-  "temperature": 1,
-  "rawPath": "generations/deepseek__deepseek-chat-v3-0324/realistic/sample-3.raw.txt",
-  "svgPath": "generations/deepseek__deepseek-chat-v3-0324/realistic/sample-3.svg"
-}

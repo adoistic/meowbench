@@ -1,9 +1,0 @@
-{
-  "modelSlug": "meta-llama/llama-2-70b-chat",
-  "promptId": "action",
-  "sample": 1,
-  "status": "ok",
-  "temperature": 1,
-  "rawPath": "generations/meta-llama__llama-2-70b-chat/action/sample-1.raw.txt",
-  "svgPath": "generations/meta-llama__llama-2-70b-chat/action/sample-1.svg"
-}

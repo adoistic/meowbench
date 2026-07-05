@@ -4,7 +4,6 @@ import LeaderboardTable from '../components/LeaderboardTable.astro'
 import CrowdScore from '../components/CrowdScore.astro'
 import { loadRun } from '../lib/run-data'
 const run = loadRun()
-const isFixture = run.runId.includes('fixture')
 ---
 <Base title="Leaderboard" current="/">
   <section class="marquee" style="text-align: center; margin-top: 1rem;">
@@ -19,12 +18,6 @@ const isFixture = run.runId.includes('fixture')
       <a class="btn" href="/arena/">VOTE IN THE ARENA</a>
     </p>
   </section>
-
-  {isFixture && (
-    <p class="pixel" style="text-align:center; color: var(--pink); font-size: 0.8rem; margin-top: 1rem;">
-      ⚠ DEMO MODE · synthetic data until the first real run lands
-    </p>
-  )}
 
   <h2 style="margin-top: 3rem;">HIGH SCORES</h2>
   <p class="pixel dim" style="font-size: 0.8rem; margin-top: -0.6rem;">

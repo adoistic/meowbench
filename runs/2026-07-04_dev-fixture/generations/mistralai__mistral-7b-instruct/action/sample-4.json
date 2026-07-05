@@ -1,9 +1,0 @@
-{
-  "modelSlug": "mistralai/mistral-7b-instruct",
-  "promptId": "action",
-  "sample": 4,
-  "status": "ok",
-  "temperature": 1,
-  "rawPath": "generations/mistralai__mistral-7b-instruct/action/sample-4.raw.txt",
-  "svgPath": "generations/mistralai__mistral-7b-instruct/action/sample-4.svg"
-}

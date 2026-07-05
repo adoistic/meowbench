@@ -4,24 +4,70 @@ import CatCard from '../components/CatCard.astro'
 import { loadRun } from '../lib/run-data'
 import { modelDir } from '../lib/slug'
 const run = loadRun()
-const { worstCats, refusals } = run.shame()
+const { worstCats, refusals, failures } = run.shame()
+
+// plain-English gloss for the validation reasons on failed samples
+const REASON: Record<string, string> = {
+  'render-failed': "wouldn't render",
+  'not-xml': "wasn't valid XML",
+  'css-url': 'tried to phone home for a remote asset',
+  'forbidden-tag:script': 'smuggled in a <script> tag',
+  'no-svg': 'never produced an <svg>',
+}
+const gloss = (reasons: string[]) => reasons.map((r) => REASON[r] ?? r).join(', ') || 'failed validation'
 ---
 <Base title="Hall of Shame" current="/shame/">
   <h1 style="margin-top: 1.5rem; color: var(--pink); text-shadow: var(--glow-pink);">HALL OF SHAME</h1>
-  <p class="pixel dim">all of these passed validation. that was the high point.</p>
+  <p class="pixel dim">the worst cats that still counted, and the ones that couldn't even render.</p>
 
   <h2 style="margin-top: 2rem;">LOWEST SURVIVING SCORES</h2>
+  <p class="pixel dim" style="font-size: 0.8rem;">these passed validation. that was the high point.</p>
   <div class="cat-grid">
     {worstCats.map((s) => <CatCard sample={s} anchor={`shame-${modelDir(s.modelSlug)}-${s.promptId}-${s.sample}`} />)}
   </div>
 
-  <h2 style="margin-top: 3rem;">THE CONSCIENTIOUS OBJECTORS</h2>
-  <p class="pixel dim" style="font-size: 0.8rem;">models that declined the assignment, quoted verbatim.</p>
-  {refusals.map((r) => (
-    <div class="gameover" style="margin-top: 1rem;">
-      <span class="go-title">GAME OVER — {r.modelName}</span>
-      <p class="pixel dim" style="margin: 0.3rem 0 0; font-size: 0.75rem;">asked for: {r.promptId}</p>
-      <blockquote>{r.quote}</blockquote>
-    </div>
-  ))}
+  {failures.length > 0 && (
+    <>
+      <h2 style="margin-top: 3rem;">DID NOT FINISH</h2>
+      <p class="pixel dim" style="font-size: 0.8rem;">
+        {failures.length} attempts that never scored. nobody refused the assignment. they just fumbled it.
+      </p>
+      <div class="dnf-grid">
+        {failures.map((f) => (
+          <div class="gameover">
+            <span class="go-title">GAME OVER</span>
+            <p class="pixel" style="margin: 0.4rem 0 0; color: var(--yellow); font-size: 0.85rem;">{f.modelName}</p>
+            <p class="pixel dim" style="margin: 0.2rem 0 0; font-size: 0.72rem;">{f.promptId}: {gloss(f.reasons)}</p>
+          </div>
+        ))}
+      </div>
+    </>
+  )}
+
+  {refusals.length > 0 && (
+    <>
+      <h2 style="margin-top: 3rem;">THE CONSCIENTIOUS OBJECTORS</h2>
+      <p class="pixel dim" style="font-size: 0.8rem;">models that declined the assignment, quoted verbatim.</p>
+      {refusals.map((r) => (
+        <div class="gameover" style="margin-top: 1rem;">
+          <span class="go-title">GAME OVER — {r.modelName}</span>
+          <p class="pixel dim" style="margin: 0.3rem 0 0; font-size: 0.75rem;">asked for: {r.promptId}</p>
+          <blockquote>{r.quote}</blockquote>
+        </div>
+      ))}
+    </>
+  )}
 </Base>
+
+<style>
+  .dnf-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .dnf-grid .gameover {
+    margin: 0;
+    text-align: center;
+  }
+</style>

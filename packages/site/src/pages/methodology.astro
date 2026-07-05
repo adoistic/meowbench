@@ -24,7 +24,7 @@ const run = loadRun()
     <p>The <a href="/arena/">arena</a> shows two anonymous cats from the same assignment; you pick the better one. Ratings use Elo with K=32 from a 1500 start, updated atomically per vote. The crowd column is deliberately separate from the meowscore. The judges and the crowd are allowed to disagree, and the disagreement is the interesting part. Votes are rate limited (10 per minute per IP, stored as a salted hash, never the raw address). The rate limit is a soft cap: a burst can slip a vote or two past it, which we consider acceptable for a cat-drawing leaderboard and disclose anyway.</p>
 
     <h2>Reproduce it</h2>
-    <p>The whole harness is open source. Clone <a href="https://github.com/adoistic/meowbench">the repository</a>, set an OpenRouter key, and run <code>pnpm -F @meowbench/harness cli run --run-dir runs/my-run --estimate</code> to see what it would cost before spending a cent. Current run on this site: <code>{run.runId}</code>{run.runId.includes('fixture') && ' (synthetic demo data, and the machine is honest about it)'}.</p>
+    <p>The whole harness is open source. Clone <a href="https://github.com/adoistic/meowbench">the repository</a>, set an OpenRouter key, and run <code>pnpm -F @meowbench/harness cli run --run-dir runs/my-run --estimate</code> to see what it would cost before spending a cent. Current run on this site: <code>{run.runId}</code>.</p>
 
     <h2>Known limitations</h2>
     <ul>

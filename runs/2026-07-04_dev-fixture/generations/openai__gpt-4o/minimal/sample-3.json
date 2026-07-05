@@ -1,9 +1,0 @@
-{
-  "modelSlug": "openai/gpt-4o",
-  "promptId": "minimal",
-  "sample": 3,
-  "status": "ok",
-  "temperature": 1,
-  "rawPath": "generations/openai__gpt-4o/minimal/sample-3.raw.txt",
-  "svgPath": "generations/openai__gpt-4o/minimal/sample-3.svg"
-}

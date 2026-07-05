@@ -1,4 +1,0 @@
-Here is your cat!
-```svg
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><circle cx="105" cy="115" r="40" fill="#7c919c"/><circle cx="88" cy="105" r="6" fill="#333"/><circle cx="120" cy="107" r="5" fill="#333"/><path d="M70 62 L82 88 M140 62 L126 88" stroke="#7c919c" stroke-width="10"/><path d="M150 150 Q175 130 168 105" stroke="#7c919c" stroke-width="9" fill="none" stroke-linecap="round"><animateTransform attributeName="transform" type="rotate" values="-8 150 150;8 150 150;-8 150 150" dur="1.6s" repeatCount="indefinite"/></path></svg>
-```

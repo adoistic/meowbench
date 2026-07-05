@@ -1,9 +1,0 @@
-{
-  "modelSlug": "anthropic/claude-3-haiku",
-  "promptId": "constraint",
-  "sample": 3,
-  "status": "ok",
-  "temperature": 1,
-  "rawPath": "generations/anthropic__claude-3-haiku/constraint/sample-3.raw.txt",
-  "svgPath": "generations/anthropic__claude-3-haiku/constraint/sample-3.svg"
-}

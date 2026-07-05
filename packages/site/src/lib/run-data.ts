@@ -22,6 +22,7 @@ export interface Sample {
   status: string
 }
 export interface Refusal { modelSlug: string; modelName: string; promptId: string; quote: string }
+export interface Failure { modelSlug: string; modelName: string; promptId: string; sample: number; reasons: string[] }
 
 export interface RunData {
   runId: string
@@ -31,26 +32,36 @@ export interface RunData {
   allSamples: Sample[]
   samplesFor(slug: string): Sample[]
   bestCatFor(slug: string): Sample | null
-  shame(): { worstCats: Sample[]; refusals: Refusal[] }
+  shame(): { worstCats: Sample[]; refusals: Refusal[]; failures: Failure[] }
 }
 
-function pickRunId(): string {
+// Directory names we will never auto-select. This is the guardrail: the site
+// shows real benchmark data or it fails the build — it does not quietly fall
+// back to synthetic "demo" cats. An explicit MEOWBENCH_RUN can still point at
+// anything on purpose, but nothing placeholder wins by default.
+const PLACEHOLDER = /fixture|demo|placeholder|synthetic|mock|sample/i
+
+export function resolveRunId(): string {
   if (process.env.MEOWBENCH_RUN) return process.env.MEOWBENCH_RUN
-  // Invariant: run directory names must sort lexically in chronological order (YYYY-MM-DD prefix);
-  // a same-date name sorting before the fixture would silently lose.
-  const dirs = readdirSync(RUNS, { withFileTypes: true })
+  const withBoard = readdirSync(RUNS, { withFileTypes: true })
     .filter((d) => d.isDirectory() && existsSync(join(RUNS, d.name, 'leaderboard.json')))
     .map((d) => d.name)
-    .sort()
-  if (dirs.length === 0) throw new Error('no runs with a leaderboard.json found under runs/')
-  return dirs[dirs.length - 1]
+  // Invariant: run directory names sort lexically in chronological order
+  // (YYYY-MM-DD prefix), so the newest real run is the last one after sorting.
+  const real = withBoard.filter((n) => !PLACEHOLDER.test(n)).sort()
+  if (real.length) return real[real.length - 1]
+  throw new Error(
+    withBoard.length
+      ? `runs/ contains only placeholder data (${withBoard.join(', ')}). The site refuses to build on synthetic cats — commit a real benchmark run, or set MEOWBENCH_RUN to select one deliberately.`
+      : 'no benchmark run with a leaderboard.json found under runs/ — commit a real run before building the site.',
+  )
 }
 
 let cached: RunData | null = null
 
 export function loadRun(): RunData {
   if (cached && !process.env.MEOWBENCH_RUN) return cached
-  const runId = pickRunId()
+  const runId = resolveRunId()
   const dir = join(RUNS, runId)
   const lb = JSON.parse(readFileSync(join(dir, 'leaderboard.json'), 'utf8')) as { suiteVersion: number; runId: string; entries: Entry[] }
   const scores = JSON.parse(readFileSync(join(dir, 'scores.json'), 'utf8')) as {
@@ -109,7 +120,21 @@ export function loadRun(): RunData {
         .filter((r): r is Refusal => r !== null)
       // dedupe identical quotes from repeated samples
       const seen = new Set<string>()
-      return { worstCats, refusals: refusals.filter((r) => !seen.has(r.quote) && seen.add(r.quote)) }
+      // Samples that didn't survive validation — the modern failure mode. No
+      // model refuses anymore; they just occasionally ship SVGs that won't
+      // render, aren't valid XML, or smuggle in a <script>. The reason comes
+      // from the validation record, never from model output.
+      const failures: Failure[] = allSamples
+        .filter((s) => !s.valid)
+        .map((s) => {
+          const vAbs = join(dir, 'validation', modelDir(s.modelSlug), s.promptId, `sample-${s.sample}.json`)
+          const reasons = existsSync(vAbs)
+            ? ((JSON.parse(readFileSync(vAbs, 'utf8')) as { reasons?: string[] }).reasons ?? [])
+            : []
+          return { modelSlug: s.modelSlug, modelName: s.modelName, promptId: s.promptId, sample: s.sample, reasons }
+        })
+        .sort((a, b) => a.modelName.localeCompare(b.modelName) || a.promptId.localeCompare(b.promptId))
+      return { worstCats, refusals: refusals.filter((r) => !seen.has(r.quote) && seen.add(r.quote)), failures }
     },
   }
   if (!process.env.MEOWBENCH_RUN) cached = run

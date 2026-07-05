@@ -14,8 +14,9 @@ beforeAll(() => {
 
 test('home page renders the full leaderboard', () => {
   expect(html).toContain('WHICH AI DRAWS THE BEST CAT?')
-  expect(html).toContain('Claude Sonnet 4') // fixture top entry
-  expect((html.match(/score-row/g) ?? []).length).toBeGreaterThanOrEqual(10)
+  expect(html).toContain('GPT-5.5') // real run top entry
+  expect(html).not.toContain('DEMO MODE') // no placeholder banner on real data
+  expect((html.match(/score-row/g) ?? []).length).toBeGreaterThanOrEqual(20)
 })
 
 test('rows carry per-prompt bars and best-cat images without JS', () => {
@@ -25,8 +26,8 @@ test('rows carry per-prompt bars and best-cat images without JS', () => {
 })
 
 test('model pages exist with all samples and lightboxes', () => {
-  const model = readFileSync(join(SITE, 'dist', 'models', 'anthropic__claude-sonnet-4', 'index.html'), 'utf8')
-  expect(model).toContain('Claude Sonnet 4')
+  const model = readFileSync(join(SITE, 'dist', 'models', 'openai__gpt-5.5', 'index.html'), 'utf8')
+  expect(model).toContain('GPT-5.5')
   expect((model.match(/class="cat-card"/g) ?? []).length).toBeGreaterThanOrEqual(20)
   expect(model).toContain('class="lightbox"') // :target lightbox, no JS
   expect(model).toContain('astro-code synthwave-84') // Shiki-highlighted SVG source present
@@ -47,10 +48,11 @@ test('gallery ships the filter panel and a card per valid cat', () => {
   expect(gallery).not.toContain('astro-code') // no Shiki blocks on the gallery anymore
 })
 
-test('hall of shame shows game-over cards and refusal quotes', () => {
+test('hall of shame shows lowest scores and did-not-finish cards', () => {
   const shame = readFileSync(join(SITE, 'dist', 'shame', 'index.html'), 'utf8')
+  expect(shame).toContain('LOWEST SURVIVING SCORES')
+  expect(shame).toContain('DID NOT FINISH') // the real run's failed-validation samples
   expect(shame).toContain('GAME OVER')
-  expect(shame).toContain('cannot create an animated SVG') // fixture refusal quote
 })
 
 test('arena page ships the fighter manifest and offline fallback', () => {

@@ -1,22 +1,11 @@
-import { copyFileSync, existsSync, mkdirSync, readdirSync, rmSync } from 'node:fs'
+import { copyFileSync, mkdirSync, readdirSync, rmSync } from 'node:fs'
 import { dirname, join, relative } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { resolveRunId } from '../src/lib/run-data.js'
 
 const SITE = fileURLToPath(new URL('..', import.meta.url))
 const ROOT = join(SITE, '..', '..')
 const RUNS = join(ROOT, 'runs')
-
-function latestRunId(): string {
-  if (process.env.MEOWBENCH_RUN) return process.env.MEOWBENCH_RUN
-  // Invariant: run directory names must sort lexically in chronological order (YYYY-MM-DD prefix);
-  // a same-date name sorting before the fixture would silently lose.
-  const dirs = readdirSync(RUNS, { withFileTypes: true })
-    .filter((d) => d.isDirectory() && existsSync(join(RUNS, d.name, 'leaderboard.json')))
-    .map((d) => d.name)
-    .sort()
-  if (!dirs.length) throw new Error('no runs found')
-  return dirs[dirs.length - 1]
-}
 
 /**
  * Copy the latest run's generated .svg files into public/run/svg/, mirroring the
@@ -25,7 +14,7 @@ function latestRunId(): string {
  * Returns the SVG count.
  */
 export function syncAssets(): number {
-  const runId = latestRunId()
+  const runId = resolveRunId()
   const src = join(RUNS, runId, 'generations')
   const dest = join(SITE, 'public', 'run', 'svg')
   rmSync(join(SITE, 'public', 'run'), { recursive: true, force: true })

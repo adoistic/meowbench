@@ -1,4 +1,0 @@
-Here is your cat!
-```svg
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><ellipse cx="100" cy="120" rx="50" ry="30" fill="#baa998"/><circle cx="90" cy="112" r="4" fill="#444"/><path d="M60 80 L75 100 M150 84 L132 102" stroke="#baa998" stroke-width="8"/></svg>
-```

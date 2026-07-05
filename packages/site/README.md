@@ -12,10 +12,15 @@ pnpm -F @meowbench/site build      # prebuild syncs renders into public/run/
 
 ## Data
 
-The site builds from the lexically-latest `runs/<id>/` containing a leaderboard.json.
-Override with `MEOWBENCH_RUN=<run-id>`. The committed `2026-07-04_dev-fixture` run is
-synthetic demo data; the home page shows a DEMO MODE banner while it's the latest run —
-the banner disappears automatically when a real run lands.
+The site builds from the newest real `runs/<id>/` containing a leaderboard.json
+(directory names are `YYYY-MM-DD_*`, so newest sorts last). `resolveRunId()` in
+`src/lib/run-data.ts` skips any directory whose name looks synthetic
+(`fixture`, `demo`, `synthetic`, `mock`, …) and throws if no real run exists — the
+site will fail its build rather than quietly serve placeholder data. Point it at a
+specific run on purpose with `MEOWBENCH_RUN=<run-id>`.
+
+The live run is `2026-07-04_run-001`: 29 models, 2023–2026, 696 samples, judged and
+committed into the repo.
 
 ## Deploy (Cloudflare Pages)
 

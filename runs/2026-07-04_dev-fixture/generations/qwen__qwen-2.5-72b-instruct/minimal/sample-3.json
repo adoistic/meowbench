@@ -1,9 +1,0 @@
-{
-  "modelSlug": "qwen/qwen-2.5-72b-instruct",
-  "promptId": "minimal",
-  "sample": 3,
-  "status": "ok",
-  "temperature": 1,
-  "rawPath": "generations/qwen__qwen-2.5-72b-instruct/minimal/sample-3.raw.txt",
-  "svgPath": "generations/qwen__qwen-2.5-72b-instruct/minimal/sample-3.svg"
-}
