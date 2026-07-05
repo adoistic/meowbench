@@ -188,6 +188,25 @@ function win() {
   ;[69, 73, 76, 81].forEach((n, i) => voice(midi(n), t + i * 0.09, 0.12, 'square', 0.08, sfxBus)) // A major arpeggio
 }
 
+/** 8-bit meow — for the neko. Rises "me…" then falls away "…ow". */
+export function meow() {
+  if (!running() || !prefOn()) return
+  const t = ctx!.currentTime
+  const o = ctx!.createOscillator()
+  o.type = 'square'
+  o.frequency.setValueAtTime(620, t)
+  o.frequency.linearRampToValueAtTime(1080, t + 0.07) // me…
+  o.frequency.exponentialRampToValueAtTime(440, t + 0.28) // …ow
+  const g = ctx!.createGain()
+  g.gain.setValueAtTime(0.001, t)
+  g.gain.linearRampToValueAtTime(0.07, t + 0.03)
+  g.gain.exponentialRampToValueAtTime(0.0001, t + 0.3)
+  o.connect(g)
+  g.connect(sfxBus)
+  o.start(t)
+  o.stop(t + 0.32)
+}
+
 function sweep(from: number, to: number, dur: number) {
   if (!running()) return
   const t = ctx!.currentTime

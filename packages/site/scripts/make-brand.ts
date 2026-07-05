@@ -105,6 +105,36 @@ function pixelText(text: string, cell: number, x0: number, y0: number, fill: str
   return { svg: `<g fill="${fill}">${out.join('')}</g>`, width: cx - x0 - cell }
 }
 
+// ---- paw cursors: pixel paw with a void outline so it reads on any bg ----
+// Y-cells take the paw color, P-cells the pad color, O the outline.
+const PAW = [
+  '.OO..OO..OO.',
+  'OYYOOYYOOYYO',
+  'OYYOOYYOOYYO',
+  '.OO..OO..OO.',
+  '..OOOOOOOO..',
+  '.OYYYYYYYYO.',
+  'OYYYYYYYYYYO',
+  'OYYYYPPYYYYO',
+  '.OYYYPPYYYO.',
+  '..OYYYYYYO..',
+  '...OOOOOO...',
+  '............',
+]
+
+function pawSvg(fur: string, pads: string): string {
+  const out: string[] = []
+  PAW.forEach((row, y) => {
+    for (let x = 0; x < row.length; x++) {
+      const c = row[x]
+      if (c === '.') continue
+      const fill = c === 'O' ? VOID : c === 'P' ? pads : fur
+      out.push(`<rect x="${x * 2}" y="${y * 2}" width="2" height="2" fill="${fill}"/>`)
+    }
+  })
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" shape-rendering="crispEdges">${out.join('')}</svg>`
+}
+
 // ---- favicon SVG: cat on the void, rounded like a cabinet button ----
 const faviconSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" shape-rendering="crispEdges">
 <rect width="48" height="48" rx="9" fill="${VOID}"/>
@@ -176,6 +206,11 @@ function icoFromPng(pngBuf: Buffer, size: number): Buffer {
 // ---- emit everything ----
 mkdirSync(join(PUB, 'icons'), { recursive: true })
 mkdirSync(join(PUB, 'og'), { recursive: true })
+mkdirSync(join(PUB, 'cursors'), { recursive: true })
+
+// PNG (not SVG) cursors — Safari doesn't take SVG in cursor: url()
+writeFileSync(join(PUB, 'cursors', 'paw.png'), png(pawSvg(YELLOW, PINK), 24))
+writeFileSync(join(PUB, 'cursors', 'paw-point.png'), png(pawSvg(PINK, YELLOW), 24))
 
 writeFileSync(join(PUB, 'favicon.svg'), faviconSvg)
 writeFileSync(join(PUB, 'favicon-32.png'), png(faviconSvg, 32))

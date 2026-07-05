@@ -326,6 +326,27 @@ summary:focus-visible {
 .site-nav .nav-ico { display: none; }
 .site-nav .nav-short { display: none; }
 
+/* ---- paw cursors + the neko (desktop pointers only) ---- */
+@media (pointer: fine) {
+  body { cursor: url('/cursors/paw.png') 7 3, auto; }
+  a, button, summary, select, label, .pill, .model-row, .cat-card {
+    cursor: url('/cursors/paw-point.png') 7 3, pointer;
+  }
+}
+#meow-cat {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 48px;
+  height: 66px; /* 16x22 logical px at 3x — includes z-headroom */
+  pointer-events: none;
+  z-index: 900; /* above content, below the header (980) and mobile deck (985) */
+  image-rendering: pixelated;
+}
+@media (prefers-reduced-motion: reduce) {
+  #meow-cat { display: none; }
+}
+
 /* 8-bit sound toggle — the cabinet's volume knob */
 .sound-toggle {
   font-family: var(--font-pixel);

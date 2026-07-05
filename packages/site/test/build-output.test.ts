@@ -87,6 +87,24 @@ test('every page ships brand meta, icons, and the sound toggle', () => {
   expect(readFileSync(join(SITE, 'dist', 'og', 'meowbench-og.png')).length).toBeLessThan(300_000)
 })
 
+test('paw cursors and the neko ship on every page', () => {
+  for (const f of ['cursors/paw.png', 'cursors/paw-point.png']) {
+    expect(existsSync(join(SITE, 'dist', f)), f).toBe(true)
+  }
+  const cssDir = join(SITE, 'dist', '_astro')
+  const css = readdirSync(cssDir)
+    .filter((f) => f.endsWith('.css'))
+    .map((f) => readFileSync(join(cssDir, f), 'utf8'))
+    .join('')
+  expect(css).toContain("cursor:url(/cursors/paw.png)")
+  expect(css).toContain("cursor:url(/cursors/paw-point.png)")
+  const js = readdirSync(cssDir)
+    .filter((f) => f.endsWith('.js'))
+    .map((f) => readFileSync(join(cssDir, f), 'utf8'))
+    .join('')
+  expect(js).toContain('meow-cat') // the chasing neko is bundled
+})
+
 test('view transitions keep the audio engine alive across navigation', () => {
   // ClientRouter enables SPA navigation so the AudioContext (and running music)
   // survives page changes instead of restarting on every load.
